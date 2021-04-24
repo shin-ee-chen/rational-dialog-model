@@ -10,12 +10,15 @@ import torch.nn.functional as F
 from torch.nn.utils.rnn import PackedSequence
 import numpy as np
 
+from modules.packed import PackedEmbedding, PackedReLU, PackedLinear
+
+
 class PackedLSTMLM(nn.Module):
     ''''
     A simple lstm language model
     '''
 
-    def __init__(self, num_embeddings, num_layers=2, embedding_dim=256, hidden_state_size=256):
+    def __init__(self, num_embeddings=1024, num_layers=2, embedding_dim=256, hidden_state_size=256):
         super().__init__()
         self.num_embeddings = num_embeddings
         self.num_layers = num_layers
@@ -25,17 +28,27 @@ class PackedLSTMLM(nn.Module):
         self.embedding = PackedEmbedding(num_embeddings=num_embeddings, embedding_dim=embedding_dim)
         self.lstm = nn.LSTM(input_size=embedding_dim, hidden_size=hidden_state_size, num_layers=num_layers,
                             batch_first=True, dropout=0.5)
+
         self.relu = PackedReLU()
         self.classification_layer = PackedLinear(hidden_state_size, num_embeddings)
 
     def to_embedding(self, x):
-        return self.embedding(x)
+        if type(x) == PackedSequence:
+            return self.embedding(x)
+        else:
+            return self.embedding.forward_unpacked(x)
 
     def forward(self, x):
-        embedded = self.to_embedding(x)
+        embedding = self.to_embedding(x)
 
-        out, hidden = self.lstm(embedded)
+        return self.forward_embedding(embedding)
 
+    def forward_embedding(self, embedding):
+        '''
+        Function that forward the embedding through the rest of the model.
+        (Used in tendem with RE)
+        '''
+        out, hidden = self.lstm(embedding)
         out = self.relu.forward(out)
         classification = self.classification_layer(out, )
 
@@ -78,80 +91,31 @@ class PackedLSTMLM(nn.Module):
         logits = logits.flatten().detach().cpu().numpy()
         top_indices = logits.argsort()[::-1][:top]
         top_logits = logits[top_indices]
-        p = np.exp(top_logits)/sum(np.exp(top_logits))
+        p = np.exp(top_logits) / sum(np.exp(top_logits))
 
         index = np.random.choice(top_indices, p=p)
 
         return index
 
+    def save(self, location):
+        torch.save({
+            'model_state_dict': self.state_dict(),
+            'kwargs': {
+                'num_embeddings': self.num_embeddings,
+                'num_layers': self.num_layers,
+                'embedding_dim': self.embedding_dim,
+                'hidden_state_size': self.hidden_state_size,
+            }
+
+        }, location)
+
+    @classmethod
+    def load(self, location):
+        info = torch.load(location)
+        model = PackedLSTMLM(**info['kwargs'])
+
+        model.load_state_dict(info['model_state_dict'])
+        model.train()
+        return model
 
 
-class PackedEmbedding(nn.Module):
-
-    def __init__(self, num_embeddings, embedding_dim):
-        super().__init__()
-        self.num_embeddings = num_embeddings
-        self.embedding_dim = embedding_dim
-        self.embedding = nn.Embedding(num_embeddings=num_embeddings, embedding_dim=embedding_dim)
-
-    def forward(self, x):
-        data = x.data
-
-        embedding = self.embedding(data)
-
-        return PackedSequence(embedding, x.batch_sizes, sorted_indices=x.sorted_indices,
-                              unsorted_indices=x.unsorted_indices)
-
-
-class PackedReLU(nn.Module):
-
-    def forward(self, x):
-        out = F.relu(x.data)
-        return PackedSequence(out, x.batch_sizes, sorted_indices=x.sorted_indices,
-                              unsorted_indices=x.unsorted_indices)
-
-
-class PackedLinear(nn.Module):
-    def __init__(self, in_features, out_features):
-        super().__init__()
-        self.in_features = in_features
-        self.out_features = out_features
-        self.classification_layer = nn.Linear(in_features, out_features)
-
-    def forward(self, x):
-        data = x.data
-        result = self.classification_layer(data.reshape(-1, self.in_features))
-        return PackedSequence(result, x.batch_sizes, sorted_indices=x.sorted_indices,
-                              unsorted_indices=x.unsorted_indices)
-
-
-class LSTMLM(nn.Module):
-    ''''
-    A simple lstm language model
-    '''
-
-    def __init__(self, num_embeddings, num_layers=2, embedding_dim=128, hidden_state_size=128):
-        super().__init__()
-        self.num_embeddings = num_embeddings
-        self.num_layers = num_layers
-        self.embedding_dim = embedding_dim
-        self.hidden_state_size = hidden_state_size
-
-        self.embedding = nn.Embedding(num_embeddings=num_embeddings, embedding_dim=embedding_dim)
-        self.lstm = nn.LSTM(input_size=embedding_dim, hidden_size=hidden_state_size, num_layers=num_layers,
-                            batch_first=True)
-        self.relu = F.relu
-        self.classification_layer = nn.Linear(hidden_state_size, num_embeddings)
-
-    def to_embedding(self, x):
-        return self.embedding(x)
-
-    def forward(self, x):
-        embedded = self.to_embedding(x)
-
-        out, hidden = self.lstm(embedded)
-
-        out = self.relu(out)
-        classification = self.classification_layer(out, )
-
-        return classification

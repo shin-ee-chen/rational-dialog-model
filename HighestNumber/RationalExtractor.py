@@ -86,3 +86,59 @@ def sample_hardkurma(x, a, b, l, r):
     return h
 
 
+
+class RationalExtractorGumbell(nn.Module):
+
+    def __init__(self, embedding_input=11, embedding_size=32, out_size=5):
+        super().__init__()
+        self.embedding_size = embedding_size
+        self.embedding = Embedding(embedding_input, embedding_size)
+
+        self.rational_lstm = LSTM(embedding_size, hidden_size=int(embedding_size / 2), bidirectional=True, num_layers=2)
+
+
+
+        self.prediction_LSTM = LSTM(embedding_size, hidden_size=embedding_size)
+
+
+
+        self.gumbel_select_layer = GumbelSelectLayer(embedding_size)
+
+        self.output_layer = nn.Linear(embedding_size, out_size)
+        self.softmax = nn.LogSoftmax(dim=-1)
+
+    def forward(self, x):
+        embedding = self.embedding(x)
+
+        lstm_out, (hidden, cell) = self.rational_lstm(embedding)
+        h = self.gumbel_select_layer.forward(lstm_out)
+        h_repeated = h.unsqueeze(-1).repeat(1, 1, self.embedding_size)
+
+        embedding = h_repeated * embedding
+
+        lstm_out, (hidden, cell) = self.prediction_LSTM(embedding)
+        out = self.output_layer(hidden)
+        return {"logits": out.squeeze(0), "h": h}
+
+    def sample(self, probabilities):
+        pass
+
+
+class GumbelSelectLayer(nn.Module):
+
+    def __init__(self, in_features,):
+        super().__init__()
+        self.in_features = in_features
+
+        self.to_binary_logits = nn.Linear(in_features, 2)
+        self.gumbel_softmax = nn.functional.gumbel_softmax
+
+    def forward(self, x):
+
+        logits = self.to_binary_logits(x)
+        print("use gumbel")
+        probs = self.gumbel_softmax(logits)
+
+        h = probs[:,:, -1]
+
+        return h

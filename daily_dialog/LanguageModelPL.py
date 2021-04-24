@@ -25,6 +25,7 @@ class LMPL(pl.LightningModule):
 
     def complete_sentence(self, sentence, max_length):
         encoding = self.tokenizer.encode(sentence)
+
         ids_tensor = torch.tensor(encoding.ids).to(self.device)
 
         completed_sentence_tokens = self.language_model.complete_sentence(ids_tensor, max_length)

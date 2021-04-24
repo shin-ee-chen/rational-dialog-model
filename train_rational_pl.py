@@ -8,11 +8,19 @@ from torch.utils.data import DataLoader
 import pytorch_lightning as pl
 
 from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
-from daily_dialog.RationalLanguageModelPL import PackedRationalLSTMLM, RationalLMPL
+
+from daily_dialog.RationalLanguageModelPL import RationalLMPL
 from daily_dialog.callbacks import FinishSentenceCallback
+from daily_dialog.language_model import PackedLSTMLM
+from modules.RationalExtractor import PackedRationalExtractor
 from utils import collate_fn
 torch.autograd.set_detect_anomaly(True)
+
+save_path = './small_lm.pt'
+load_pretrained = False
+max_epochs = 50
 batch_size = 32
+embedding_dim=256
 
 learning_rate = 1e-3
 
@@ -29,24 +37,25 @@ dataloader_train = DataLoader(dataset_train, batch_size=32, collate_fn=collate_f
 dataloader_test = DataLoader(dataset_test, batch_size=32, collate_fn=collate_fn)
 device = "cuda"
 
-language_model = PackedRationalLSTMLM(my_tokenizer.get_vocab_size()).to(device)
+if load_pretrained:
+    print("load pretrained_model")
+
+    language_model = PackedLSTMLM.load(save_path).to(device)
+else:
+    print("load fresh model")
+    language_model = PackedLSTMLM(my_tokenizer.get_vocab_size()).to(device)
 
 callbacks = [
     FinishSentenceCallback(["[START] How ", "[START] What are you upto? "])
 ]
 
-max_epochs = 30
-hparams = {'learning_rate': learning_rate}
+
+rational_extractor = PackedRationalExtractor(embedding_dim)
+
 
 loss_module = torch.nn.CrossEntropyLoss()
 
-model = RationalLMPL(language_model, my_tokenizer, loss_module, hparams=hparams)
-
-# images = torch.stack([mnist_train[i][0] for i in range(8)])
-#
-# callbacks = [
-#     ShowReconstructedCallback(images)
-# ]
+model = RationalLMPL(language_model, rational_extractor, my_tokenizer, loss_module, hparams=hparams)
 
 trainer = pl.Trainer(default_root_dir='logs',
                      checkpoint_callback=False,

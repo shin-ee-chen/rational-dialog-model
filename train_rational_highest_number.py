@@ -5,7 +5,7 @@ import torch
 from torch.utils.data import DataLoader
 import pytorch_lightning as pl
 from HighestNumber.HighestDataset import HighestDataset
-from daily_dialog.RationalExtractor import RationalExtractor
+from HighestNumber.RationalExtractor import RationalExtractorGumbell
 from HighestNumber.model import LstmPL
 torch.autograd.set_detect_anomaly(True)
 max_epochs = 10
@@ -22,7 +22,7 @@ dataloader_test = DataLoader(dataset_test, shuffle=True, batch_size=32)
 
 loss_module = torch.nn.CrossEntropyLoss()
 
-model = RationalExtractor()
+model = RationalExtractorGumbell()
 
 hparams = {
     "learning_rate": 1e-3
