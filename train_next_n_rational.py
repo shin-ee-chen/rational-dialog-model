@@ -6,11 +6,12 @@ import torch
 from torch.utils.data import DataLoader
 import pytorch_lightning as pl
 
-from PredictionDataset import PredictionDataset
+from daily_dialog.PredictionDataset import PredictionDataset
 from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
 
-from daily_dialog.callbacks import FinishSentenceCallback, FinishSentenceRationalizedCallback
-from modules.PredictionLMPL import LSTMLM, PredictionLMPL
+from daily_dialog.callbacks import FinishSentenceRationalizedCallback
+from modules.LanguageModel import LSTMLM
+from modules.PredictionLMPL import PredictionLMPL
 from modules.RationalExtractor import RationalExtractor
 
 save_path = './small_lm_pretrained.pt'

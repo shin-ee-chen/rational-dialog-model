@@ -4,14 +4,13 @@ from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 import numpy as np
 
 
-
 def to_packed_sequence(tensor, target=0):
     np_tensor = tensor.detach().cpu().numpy()
     indices = np_tensor == 0
 
-    lengths = [np.where(ind == 0)[0][-1] + 1 + target for ind in indices ]
-
-    return pack_padded_sequence(tensor, lengths, enforce_sorted=False, batch_first=True)
+    lengths = [np.where(ind == 0)[0][-1] + 1 + target for ind in indices]
+    tensor = tensor.permute(1,0)
+    return pack_padded_sequence(tensor, lengths, enforce_sorted=False)
 
 
 def collate_fn(dialogues):
@@ -37,5 +36,3 @@ def get_packed_mean(t):
     mean = torch.sum(padded_sequence[0]) / total_length
 
     return mean
-
-

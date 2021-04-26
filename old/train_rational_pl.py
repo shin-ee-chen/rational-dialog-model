@@ -9,14 +9,14 @@ import pytorch_lightning as pl
 
 from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
 
-from daily_dialog.RationalLanguageModelPL import RationalLMPL
+from old.RationalLanguageModelPL import RationalLMPL
 from daily_dialog.callbacks import FinishSentenceCallback
 from daily_dialog.language_model import PackedLSTMLM
 from modules.RationalExtractor import PackedRationalExtractor
 from utils import collate_fn
 torch.autograd.set_detect_anomaly(True)
 
-save_path = './small_lm.pt'
+save_path = '../small_lm.pt'
 load_pretrained = False
 max_epochs = 50
 batch_size = 32
@@ -30,8 +30,8 @@ hparams = {
 
 my_tokenizer = get_daily_dialog_tokenizer(tokenizer_location='./daily_dialog/tokenizer.json', )
 
-dataset_train = datasets.load_dataset("daily_dialog", split="train", )
-dataset_test = datasets.load_dataset("daily_dialog", split="test", )
+dataset_train = datasets.load_dataset("../daily_dialog", split="train", )
+dataset_test = datasets.load_dataset("../daily_dialog", split="test", )
 
 dataloader_train = DataLoader(dataset_train, batch_size=32, collate_fn=collate_fn)
 dataloader_test = DataLoader(dataset_test, batch_size=32, collate_fn=collate_fn)
@@ -57,7 +57,7 @@ loss_module = torch.nn.CrossEntropyLoss()
 
 model = RationalLMPL(language_model, rational_extractor, my_tokenizer, loss_module, hparams=hparams)
 
-trainer = pl.Trainer(default_root_dir='logs',
+trainer = pl.Trainer(default_root_dir='../logs',
                      checkpoint_callback=False,
                      # checkpoint_callback=ModelCheckpoint(save_weights_only=True, mode="min", monitor="val_loss"),
                      gpus=1 if torch.cuda.is_available() else 0,

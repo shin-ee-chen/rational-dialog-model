@@ -7,14 +7,15 @@ from torch.utils.data import DataLoader
 import pytorch_lightning as pl
 
 from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
-from daily_dialog.LanguageModelPL import LMPL
+from modules.LanguageModel import LSTMLM
+from modules.LanguageModelPL import LMPL
 from daily_dialog.callbacks import FinishSentenceCallback
 
-from modules.PredictionLMPL import LSTMLM
+
 from utils import collate_fn
 
-save_path = './small_lm_pretrained.pt'
-load_pretrained = True
+save_path = './small_lm_pretrained_2.pt'
+load_pretrained = False
 batch_first = True
 max_epochs = 250
 batch_size = 128
@@ -37,18 +38,16 @@ device = "cuda"
 
 if load_pretrained:
     print("load pretrained_model")
-
     language_model = LSTMLM.load(save_path).to(device)
 else:
     print("load fresh model")
-    language_model = LSTMLM(my_tokenizer.get_vocab_size(), embedding_dim=embedding_dim, batch_first=batch_first).to(device)
+    language_model = LSTMLM(my_tokenizer.get_vocab_size(), embedding_dim=embedding_dim,).to(device)
 
 callbacks = [
     FinishSentenceCallback(["[START] How are you doing today?", "[START] What are you upto? "])
 ]
 
-print(my_tokenizer.encode("[START] How ").ids)
-print(my_tokenizer.decode( my_tokenizer.encode("[START] How ").ids, skip_special_tokens=False))
+
 hparams = {'learning_rate': learning_rate}
 
 loss_module = torch.nn.CrossEntropyLoss()
