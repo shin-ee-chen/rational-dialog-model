@@ -1,16 +1,9 @@
-from collections import Counter
-
 import datasets
 import torch
 from torch.nn.utils.rnn import pad_sequence
 from torch.utils.data import Dataset, DataLoader
 import itertools
-
-from tqdm import tqdm
-
 flatten = itertools.chain.from_iterable
-
-from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
 
 
 class PredictionDataset(Dataset):
