@@ -5,24 +5,19 @@ import torch
 from torch.utils.data import DataLoader
 import pytorch_lightning as pl
 from HighestNumber.HighestDataset import HighestDataset
-from HighestNumber.RationalExtractor import RationalExtractorGumbell
+from HighestNumber.RationalExtractor import RationalExtractorGumbell, RationalExtractor
 from HighestNumber.model import LstmPL
 torch.autograd.set_detect_anomaly(True)
-max_epochs = 10
+max_epochs = 3
 
 dataset_train = HighestDataset(n_examples=int(10e3))
-
 dataloader_train = DataLoader(dataset_train, shuffle=True, batch_size=32)
 
-
 dataset_test = HighestDataset(n_examples=int(10e3))
-
 dataloader_test = DataLoader(dataset_test, shuffle=True, batch_size=32)
 
-
 loss_module = torch.nn.CrossEntropyLoss()
-
-model = RationalExtractorGumbell()
+model = RationalExtractor()
 
 hparams = {
     "learning_rate": 1e-3
@@ -39,5 +34,4 @@ trainer = pl.Trainer(default_root_dir='logs',
                      gradient_clip_val=2,
                      )
 trainer.logger._default_hp_metric = None  # Optional logging argument that we don't need
-
 trainer.fit(model_pl, dataloader_train, dataloader_test)
