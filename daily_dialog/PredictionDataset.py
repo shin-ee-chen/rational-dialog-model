@@ -16,7 +16,7 @@ class PredictionDataset(Dataset):
             transform (callable, optional): Optional transform to be applied
                 on a sample.
         """
-        self.original_dataset = datasets.load_dataset("", split=split, )
+        self.original_dataset = datasets.load_dataset("daily_dialog", split=split, )
         self.tokenizer = tokenizer
         # Next we process the dataset to split it up properly.
         self.size = size
