@@ -3,11 +3,13 @@ import torch
 import pytorch_lightning as pl
 
 from daily_dialog.PredictionDataset import postprocess_dataloader_out
+from utils import fussed_lasso
 
 
 class PredictionLMPL(pl.LightningModule):
 
-    def __init__(self, lstm, rational_extractor, tokenizer, loss_module, hparams=None, ):
+    def __init__(self, lstm, rational_extractor, tokenizer, loss_module, hparams=None, sparsity_weight=0.5,
+                 fussed_lasso_weight=0.05):
         super().__init__()
         self.hparams = hparams
         self.lstm = lstm
@@ -15,8 +17,11 @@ class PredictionLMPL(pl.LightningModule):
         self.loss_module = loss_module
         self.tokenizer = tokenizer
 
+        self.sparsity_weight = sparsity_weight
+        self.fussed_lasso_weight = fussed_lasso_weight
+
         self.log_list = [
-            "loss", "acc", "h_loss", "h_mean"
+            "loss", "acc", "h_loss", "h_mean", "fussed_lasso"
         ]
 
     def forward(self, x, targets):
@@ -50,16 +55,18 @@ class PredictionLMPL(pl.LightningModule):
         predictions = out["logits"][-(n_targets + 1):-1]
         h_loss = 0
         h_mean = 0
+        fussed_lasso_loss = 0
         if "h" in out.keys():
             h = out["h"].permute(1, 0)
             h_mean = torch.mean(h)
+            fussed_lasso_loss = fussed_lasso(h)
 
-            h_loss = torch.abs(0.5 - h_mean)
+            h_loss = self.sparsity_weight * h_mean + self.fussed_lasso_weight * fussed_lasso_loss
 
         loss = self.loss_module(predictions.view(-1, self.tokenizer.get_vocab_size()), targets.flatten()) + h_loss
 
         acc = self.calc_acc(predictions, targets)
-        return {"loss": loss, "acc": acc, "h_loss": h_loss, "h_mean": h_mean}
+        return {"loss": loss, "acc": acc, "h_loss": h_loss, "h_mean": h_mean, "fussed_lasso": fussed_lasso_loss}
 
     def training_step(self, batch, batch_idx):
 
