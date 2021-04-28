@@ -7,8 +7,8 @@ from torch.utils.data import DataLoader
 import pytorch_lightning as pl
 
 from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
-from modules.LanguageModel import LSTMLM
-from modules.LanguageModelPL import LMPL
+from modules.LanguageModels.LstmLanguageModel import LSTMLM
+from modules.LanguageModels.LanguageModelPL import LMPL
 from daily_dialog.callbacks import FinishSentenceCallback
 
 
@@ -50,7 +50,7 @@ callbacks = [
 
 hparams = {'learning_rate': learning_rate}
 
-loss_module = torch.nn.CrossEntropyLoss()
+loss_module = torch.nn.CrossEntropyLoss(ignore_index=0)
 
 model = LMPL(language_model, my_tokenizer, loss_module, hparams=hparams)
 

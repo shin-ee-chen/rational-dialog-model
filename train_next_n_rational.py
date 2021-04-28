@@ -10,7 +10,7 @@ from daily_dialog.PredictionDataset import PredictionDataset
 from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
 
 from daily_dialog.callbacks import FinishSentenceRationalizedCallback
-from modules.LanguageModel import LSTMLM
+from modules.LanguageModels.LstmLanguageModel import LSTMLM
 from modules.PredictionLMPL import PredictionLMPL
 from modules.RationalExtractor import RationalExtractor
 

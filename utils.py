@@ -15,6 +15,9 @@ def collate_fn(dialogues):
     return ['[START] ' + '[SEP]'.join(dialogue["dialog"]) for dialogue in dialogues]
 
 
+def warmup_schedule():
+    pass
+
 '''
 Old functions start here:
 '''
