@@ -11,7 +11,7 @@ from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
 
 from old.RationalLanguageModelPL import RationalLMPL
 from daily_dialog.callbacks import FinishSentenceCallback
-from daily_dialog.language_model import PackedLSTMLM
+from old.language_model import PackedLSTMLM
 from modules.RationalExtractor import PackedRationalExtractor
 from utils import collate_fn
 torch.autograd.set_detect_anomaly(True)

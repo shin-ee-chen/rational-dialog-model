@@ -8,8 +8,7 @@ import numpy as np
 from torch import nn
 from torch.nn.utils.rnn import PackedSequence, pad_packed_sequence, pack_padded_sequence
 import torch.nn.functional as F
-from HighestNumber.RationalExtractor import sample_hardkurma
-from daily_dialog.language_model import PackedEmbedding, PackedReLU, PackedLinear
+from old.language_model import PackedEmbedding, PackedReLU, PackedLinear
 from modules.packed import PackedGumbellLayer
 from utils import to_packed_sequence, get_next_input_ids, get_packed_mean
 
