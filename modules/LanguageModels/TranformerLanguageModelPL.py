@@ -29,7 +29,7 @@ class TransformerLMPL(BaseLanguageModelPL):
 
         loss = self.loss_module(predictions.reshape(-1, self.tokenizer.get_vocab_size()), target_tensor.flatten(), )
 
-        perplexity = torch.exp(loss)
+        perplexity = 0 #torch.exp(loss)
 
         return {"loss": loss, 'predictions': predictions, "perplexity": perplexity}
 

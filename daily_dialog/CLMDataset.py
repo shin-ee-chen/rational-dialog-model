@@ -9,33 +9,33 @@ import torch
 
 from torch.utils.data import Dataset, DataLoader
 import itertools
+import numpy as np
 
 flatten = itertools.chain.from_iterable
 
 
 class CLMDataset(Dataset):
 
-    def __init__(self, tokenizer, size=None, transform=None, split="train"):
+    def __init__(self, tokenizer, size=None, transform=None, split="train", batch_size=16):
         self.original_dataset = datasets.load_dataset("daily_dialog", split=split, )
         self.tokenizer = tokenizer
         # Next we process the dataset to split it up properly.
         self.size = size
+        self.batch_size = batch_size
         self.dataset = self.process_dataset()
+
+
 
     def process_dataset(self):
         '''
         Batch same sizes together. To get minimal overhead when applying padding.
         '''
         ### First we tokenize each example
-        dialogues = ['[START] ' + '[SEP]'.join(dialogue["dialog"]) for dialogue in self.original_dataset]
-        tokenized_dataset = [self.tokenizer.encode(sample).tokens for sample in dialogues]
 
-        sorted_results = sorted(tokenized_dataset, key=lambda x: len(x))
-
+        sorted_results = self.get_sorted_samples()
 
         #### Naive way: pick
         final_samples = []
-        batch_size = 16
 
         current_sample_len = 0
         current_batch = []
@@ -45,7 +45,7 @@ class CLMDataset(Dataset):
             if len(current_batch) == 0:
                 current_batch.append(r)
             # If either we have not the same length or the batch is full. Start the new ba
-            elif len(current_batch) >= batch_size:
+            elif len(current_batch) >= self.batch_size:
                 final_samples.append(current_batch)
                 current_batch = [r]
             # We simply add to the batch
@@ -62,6 +62,33 @@ class CLMDataset(Dataset):
             result.append(torch.stack([torch.tensor(enc.ids) for enc in self.tokenizer.encode_batch(temp)]))
 
         return result
+
+    def get_sorted_samples(self):
+        dialogues = ['[START] ' + '[SEP]'.join(dialogue["dialog"]) for dialogue in self.original_dataset]
+        tokenized_dataset = [self.tokenizer.encode(sample).tokens for sample in dialogues]
+
+        sorted_results = sorted(tokenized_dataset, key=lambda x: len(x))
+
+        # Next we create batches of the same size and shuffle them around.
+        results = []
+        current = []
+        current_len = len(sorted_results[0])
+        for r in sorted_results:
+            if abs(current_len - len(r)) <= 15:
+                current.append(r)
+            else:
+                # shuffle
+                np.random.shuffle(current)
+                results += current
+                current = [r]
+                current_len = len(r)
+        return results
+
+    def reshuffle_dataset(self):
+        '''
+        Reshuffles the dataset
+        '''
+        self.dataset = self.process_dataset()
 
     def __len__(self):
         return len(self.dataset)
