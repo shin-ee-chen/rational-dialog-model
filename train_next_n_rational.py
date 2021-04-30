@@ -9,7 +9,7 @@ import pytorch_lightning as pl
 from daily_dialog.PredictionDataset import PredictionDataset
 from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
 
-from daily_dialog.callbacks import FinishSentenceRationalizedCallback
+from daily_dialog.callbacks import FinishSentenceRationalizedCallback, ReshuffleDatasetCallback
 from modules.LanguageModels.LstmLanguageModel import LSTMLM
 from modules.PredictionLMPL import PredictionLMPL
 from modules.RationalExtractor import RationalExtractor
@@ -47,7 +47,7 @@ else:
     language_model = LSTMLM(my_tokenizer.get_vocab_size(), embedding_dim=embedding_dim).to(device)
 
 callbacks = [
-    FinishSentenceRationalizedCallback(["[START] How ", "[START] What are you upto? "])
+    FinishSentenceRationalizedCallback(["[START] How ", "[START] What are you upto? "]),
 ]
 
 hparams = {'learning_rate': learning_rate}

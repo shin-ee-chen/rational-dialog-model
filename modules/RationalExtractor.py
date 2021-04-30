@@ -64,8 +64,7 @@ class RationalExtractor(nn.Module):
         if self.training:
             probs = self.gumbel_softmax(binary_logits, hard=True, dim=-1)
         else:
-            print("eval")
-            probs = self.gumbel_softmax(binary_logits, hard=False, dim=-1)
+            probs = self.gumbel_softmax(binary_logits, hard=True, dim=-1)
         h = (probs[:, :, 1] + 1 - probs[:, :, 0]) / 2
         h_repeated = h.unsqueeze(-1).repeat(1, 1, embedding.shape[-1])
 

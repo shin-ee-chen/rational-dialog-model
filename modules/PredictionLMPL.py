@@ -8,7 +8,7 @@ from utils import fussed_lasso
 
 class PredictionLMPL(pl.LightningModule):
 
-    def __init__(self, lstm, rational_extractor, tokenizer, loss_module, hparams=None, sparsity_weight=0.05,
+    def __init__(self, lstm, rational_extractor, tokenizer, loss_module, hparams=None, sparsity_weight=5,
                  fussed_lasso_weight=0.5):
         super().__init__()
         self.hparams = hparams
