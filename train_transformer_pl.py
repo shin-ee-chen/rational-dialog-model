@@ -8,7 +8,7 @@ import pytorch_lightning as pl
 
 from daily_dialog.CLMDataset import CLMDataset
 from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
-from daily_dialog.callbacks import FinishSentenceCallback
+from daily_dialog.callbacks import FinishSentenceCallback, ReshuffleDatasetCallback
 from modules.LanguageModels.TranformerLanguageModelPL import TransformerLMPL
 from modules.LanguageModels.TransformerLanguageModel import TransformerLM
 
@@ -49,7 +49,8 @@ else:
 lr_monitor = LearningRateMonitor(logging_interval='step')
 callbacks = [
     FinishSentenceCallback(["[START] How are you doing today?", "[START] What are you upto? "]),
-    lr_monitor
+    lr_monitor,
+    ReshuffleDatasetCallback(dataset_train) # To reshuffle the dataset.
 ]
 
 
@@ -59,7 +60,6 @@ model = TransformerLMPL(language_model, my_tokenizer, loss_module, hparams=hpara
 
 trainer = pl.Trainer(default_root_dir='logs',
                      checkpoint_callback=False,
-
                      gpus=1 if torch.cuda.is_available() else 0,
                      max_epochs=max_epochs,
                      log_every_n_steps=1,

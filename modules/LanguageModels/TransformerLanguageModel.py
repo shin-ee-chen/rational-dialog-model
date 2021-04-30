@@ -2,10 +2,8 @@ import math
 
 import torch
 from torch import nn
-import torch.nn.functional as F
 from torch.nn import TransformerEncoderLayer, TransformerEncoder
 
-from torch.nn.utils.rnn import PackedSequence
 import numpy as np
 
 from modules.LanguageModels.BaseLanguageModel import BaseLanguageModel

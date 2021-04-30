@@ -1,7 +1,8 @@
 '''
 Pytorch lightning version of the language model.
 '''
-import pytorch_lightning as pl
+import math
+
 import torch
 
 from modules.LanguageModels.BaseLanguageModelPL import BaseLanguageModelPL
@@ -18,15 +19,21 @@ class LMPL(BaseLanguageModelPL):
         :return: dict with {"loss": loss} and other values once finds relevant
         '''
 
-        encodings = self.tokenizer.encode_batch(batch)
+        batch = batch[0].permute(1, 0).to(self.device)
 
-        ids_tensor = torch.tensor([encoding.ids for encoding in encodings]).to(self.device)
+        input_tensor = batch[:-1, :]
 
-        input_tensor = to_packed_sequence(ids_tensor[:, :-1]).to(self.device)
+        target_tensor = batch[1:, :]
 
-        target_tensor = to_packed_sequence(ids_tensor[:, 1:], target=1).to(self.device)
+        #ids_tensor = torch.tensor([encoding.ids for encoding in encodings]).to(self.device)
+        #
+        # input_tensor = to_packed_sequence(ids_tensor[:, :-1]).to(self.device)
+        #
+        # target_tensor = to_packed_sequence(ids_tensor[:, 1:], target=1).to(self.device)
         predictions = self.language_model.forward(input_tensor)
-        loss = self.loss_module(predictions.data, target_tensor.data, )
-        perplexity = torch.exp(loss)
+
+        loss = self.loss_module(predictions.reshape(-1, self.tokenizer.get_vocab_size()), target_tensor.flatten(), )
+
+        perplexity = 0 #math.exp(loss) #torch.exp(loss)
 
         return {"loss": loss, 'predictions': predictions, "perplexity": perplexity}
