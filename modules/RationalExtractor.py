@@ -3,7 +3,7 @@ Contains the Kumarasqamy layer and a rational extractor (which is currently used
 '''
 import torch
 from torch import nn
-from torch.nn import Embedding, LSTM, Linear
+from torch.nn import LSTM
 import pytorch_lightning as pl
 from torch.nn.utils.rnn import PackedSequence
 
@@ -61,8 +61,11 @@ class RationalExtractor(nn.Module):
 
         lstm_out, (hidden, cell) = self.lstm(embedding)
         binary_logits = self.to_binary_logits(lstm_out)
-        probs = self.gumbel_softmax(binary_logits, hard=self.hard, dim=-1)
-
+        if self.training:
+            probs = self.gumbel_softmax(binary_logits, hard=True, dim=-1)
+        else:
+            print("eval")
+            probs = self.gumbel_softmax(binary_logits, hard=False, dim=-1)
         h = (probs[:, :, 1] + 1 - probs[:, :, 0]) / 2
         h_repeated = h.unsqueeze(-1).repeat(1, 1, embedding.shape[-1])
 
