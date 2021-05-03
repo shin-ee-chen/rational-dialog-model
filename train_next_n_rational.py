@@ -16,6 +16,8 @@ from modules.RationalExtractor import RationalExtractor
 
 save_path = './small_lm_pretrained.pt'
 load_pretrained = True
+
+teacher_forcing = True
 size = int(5e2)
 test_size = int(1e2)
 
@@ -25,7 +27,9 @@ embedding_dim = 128
 learning_rate = 1e-3
 
 hparams = {
-    "learning_rate": learning_rate
+    "learning_rate": learning_rate,
+    "teacher_forcing": teacher_forcing,
+    "freeze_language_ml": True
 }
 
 my_tokenizer = get_daily_dialog_tokenizer(tokenizer_location='./daily_dialog/tokenizer.json', )
@@ -49,8 +53,6 @@ else:
 callbacks = [
     FinishSentenceRationalizedCallback(["[START] How ", "[START] What are you upto? "]),
 ]
-
-hparams = {'learning_rate': learning_rate}
 
 loss_module = torch.nn.CrossEntropyLoss()
 
