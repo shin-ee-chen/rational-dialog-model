@@ -17,7 +17,8 @@ from datasets import load_dataset
 
 model_checkpoint = 'microsoft/DialoGPT-small'
 fine_tune_dataset = 'daily_dialog'
-max_epochs = 1
+max_epochs = 3
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 datasets = load_dataset(fine_tune_dataset)
 tokenizer = AutoTokenizer.from_pretrained(model_checkpoint, use_fast=True)
@@ -50,14 +51,13 @@ def group_texts(examples):
 lm_datasets = tokenized_datasets.map(
     group_texts,
     batched=True,
-    batch_size=2000,
+    batch_size=256,
     num_proc=4,
 )
 
 print(tokenizer.decode(lm_datasets["train"][1]["input_ids"]))
 
-model = AutoModelForCausalLM.from_pretrained(model_checkpoint)
-
+model = AutoModelForCausalLM.from_pretrained(model_checkpoint).to(device)
 
 training_args = TrainingArguments(
     "dailoGPT_model",
@@ -66,16 +66,18 @@ training_args = TrainingArguments(
     evaluation_strategy="steps",
     learning_rate=1e-3,
     weight_decay=0.01,
-    max_steps=1,
+    #max_steps=10, #only for debugging
     num_train_epochs=max_epochs,
     load_best_model_at_end = True
 )
 class CompleteDialogueCallback(TrainerCallback):
     def on_evaluate(self, args, state, control, logs=None, **kwargs):
-        sentence = 'Hi, what are you up to?'
-        for step in range(1):
+        chat_history_ids = None
+        sentence = ('Believe it or not, I can do 30 push-ups a minute.' + tokenizer.eos_token)
+        print('[START] ' + sentence)
+        for step in range(4):
             #encode the new user input, add the eos_token and return a tensor in Pytorch
-            new_user_input_ids = tokenizer.encode(sentence + tokenizer.eos_token, return_tensors='pt')
+            new_user_input_ids = tokenizer.encode(sentence, return_tensors='pt').to(device)
             #append the new user input tokens to the chat history
             bot_input_ids = torch.cat([chat_history_ids, new_user_input_ids], dim=-1) if step > 0 else new_user_input_ids
             #generated a response while limiting the total chat history to 1000 tokens, 
