@@ -15,7 +15,7 @@ special_tokens = {"unk_token": "[UNK]", "sep_token": "[SEP]", "pad_token": "[PAD
 
 def get_daily_dialog_tokenizer(tokenizer_location=None):
     '''
-    Get the daily diolog tokenizer. Trains a new one if no location is provided
+    Get the daily dialog tokenizer. Trains a new one if no location is provided
     :param tokenizer_location: Json containing information about the tokenizer.
     :return:
     '''

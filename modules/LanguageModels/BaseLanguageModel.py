@@ -8,7 +8,7 @@ import numpy as np
 
 class BaseLanguageModel(nn.Module):
     ''''
-    A simple lstm language model
+    The base language model.
     '''
 
     def to_embedding(self, x):
@@ -26,7 +26,7 @@ class BaseLanguageModel(nn.Module):
     def generate_next_token(self, tokens):
         raise NotImplementedError()
 
-    def complete_sentence(self, sentence_ids, max_length=100):
+    def complete_dialogue(self, sentence_ids, max_length=100):
         tokens = sentence_ids.clone()
         while len(tokens) < max_length:
             next_token = self.generate_next_token(tokens)
