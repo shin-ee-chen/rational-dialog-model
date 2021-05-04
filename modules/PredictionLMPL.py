@@ -1,18 +1,19 @@
 import torch
-
 import pytorch_lightning as pl
-
-from daily_dialog.PredictionDataset import postprocess_dataloader_out
+from daily_dialog.NextNPredictionDataset import postprocess_dataloader_out
 from utils import fussed_lasso
 
 
 class PredictionLMPL(pl.LightningModule):
+    '''
+    PL wrapper for training a language model together with a rational extractor.
+    '''
 
-    def __init__(self, lstm, rational_extractor, tokenizer, loss_module, hparams=None, sparsity_weight=1,
+    def __init__(self, language_model, rational_extractor, tokenizer, loss_module, hparams=None, sparsity_weight=1,
                  fussed_lasso_weight=0.5, ):
         super().__init__()
         self.hparams = hparams
-        self.lstm = lstm
+        self.language_model = language_model
         self.rational_extractor = rational_extractor
         self.loss_module = loss_module
         self.tokenizer = tokenizer
@@ -35,19 +36,19 @@ class PredictionLMPL(pl.LightningModule):
         ## Concatenate the two together and put through the lstm
 
         if self.teacher_forcing:
-            target_embedding = self.lstm.to_embedding(targets)
+            target_embedding = self.language_model.to_embedding(targets)
             lstm_in = torch.cat([masked_embedding, target_embedding])
-            prediction = self.lstm.forward_embedding(lstm_in)
+            prediction = self.language_model.forward_embedding(lstm_in)
         else:
             ## Forward without teacher forcing
-
             n_to_predict = len(targets)
-            prediction = self.lstm.forward_embedding(masked_embedding, teacher_forcing=False, n_to_predict=n_to_predict)
+            prediction = self.language_model.forward_embedding(masked_embedding, teacher_forcing=False,
+                                                               n_to_predict=n_to_predict)
 
         return {"logits": prediction, **rational}
 
     def get_rational(self, x):
-        rational_embedding = self.lstm.to_embedding(x)
+        rational_embedding = self.language_model.to_embedding(x)
         rational = self.rational_extractor.forward(rational_embedding)
         return rational
 
@@ -94,10 +95,10 @@ class PredictionLMPL(pl.LightningModule):
 
         return batch_out["loss"]
 
-    def complete_sentences(self, sentences, total_length):
-        return [self.complete_sentence(sentence, total_length=total_length) for sentence in sentences]
+    def complete_dialogues(self, sentences, total_length):
+        return [self.complete_dialogue(sentence, total_length=total_length) for sentence in sentences]
 
-    def complete_sentence(self, sentence, n_rational=10, total_length=100, with_rational=True):
+    def complete_dialogue(self, sentence, n_rational=10, total_length=100, with_rational=True):
 
         encoding = self.tokenizer.encode(sentence)
         all_tokens = encoding.ids
@@ -128,9 +129,9 @@ class PredictionLMPL(pl.LightningModule):
                     "#", "")
                 rationalized_input.append(rational_input)
                 rationals.append(torch.tensor([]))
-                embedding = self.lstm.to_embedding(ids_tensor)
+                embedding = self.language_model.to_embedding(ids_tensor)
 
-            next_ids = self.lstm.generate_next_tokens_from_embedding(embedding, n_tokens=n_rational)
+            next_ids = self.language_model.generate_next_tokens_from_embedding(embedding, n_tokens=n_rational)
 
             all_tokens += next_ids
             sentences.append(
@@ -148,7 +149,7 @@ class PredictionLMPL(pl.LightningModule):
             self,
     ):
         if not self.freeze_language_model:
-            parameters = list(self.lstm.parameters()) + list(self.rational_extractor.parameters())
+            parameters = list(self.language_model.parameters()) + list(self.rational_extractor.parameters())
         else:
             parameters = list(self.rational_extractor.parameters())
 

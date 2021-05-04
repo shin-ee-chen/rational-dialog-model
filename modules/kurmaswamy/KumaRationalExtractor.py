@@ -27,13 +27,9 @@ class KumaRationalExtractor(nn.Module):
         if self.training:
             h = kuma_dist.sample()
         else:
-
+            # TODO: this does not work properly I think.
             h = kuma_dist.sample()
-
             h = torch.round(h)
-
-
-
 
         h_repeated = h.repeat(1, 1, embedding.shape[-1])
 
@@ -41,10 +37,3 @@ class KumaRationalExtractor(nn.Module):
         h = h.squeeze(-1)
 
         return {"masked_embedding": masked_embedding, "h": h}
-    #
-    # def train(self, mode):
-    #     super(KumaRationalExtractor, self).train(mode)
-    #     # self.kuma_gate.dist_type = "kuma"
-    #
-    # def eval(self):
-    #     super(KumaRationalExtractor, self).eval()

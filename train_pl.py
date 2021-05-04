@@ -10,7 +10,7 @@ from daily_dialog.CLMDataset import CLMDataset
 from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
 from modules.LanguageModels.LstmLanguageModel import LSTMLM
 from modules.LanguageModels.LanguageModelPL import LMPL
-from daily_dialog.callbacks import FinishSentenceCallback, ReshuffleDatasetCallback
+from daily_dialog.callbacks import FinishDialogueCallback, ReshuffleDatasetCallback
 
 from utils import collate_fn
 
@@ -46,7 +46,7 @@ else:
                             hidden_state_size=hidden_state_size).to(device)
 
 callbacks = [
-    FinishSentenceCallback(["[START] How are you doing today?", "[START] What are you upto? "]),
+    FinishDialogueCallback(["[START] How are you doing today?", "[START] What are you upto? "]),
     ReshuffleDatasetCallback(dataset_train) # To reshuffle the dataset.
 ]
 

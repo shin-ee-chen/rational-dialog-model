@@ -1,4 +1,9 @@
+'''
+Code taken from: https://github.com/bastings/interpretable_predictions
+'''
+
 # coding: utf-8
+
 import torch
 import torch.nn as nn
 from torch.nn import Linear, Sequential, Softplus

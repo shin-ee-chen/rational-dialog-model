@@ -1,15 +1,15 @@
 '''
-Trains a language model on the daily dialog set.
+Trains a language model with a rational on the daily dialog set.
 '''
 
 import torch
 from torch.utils.data import DataLoader
 import pytorch_lightning as pl
 
-from daily_dialog.PredictionDataset import PredictionDataset
+from daily_dialog.NextNPredictionDataset import NextNPredictionDataset
 from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
 
-from daily_dialog.callbacks import FinishSentenceRationalizedCallback, ReshuffleDatasetCallback
+from daily_dialog.callbacks import FinishDialogueRationalizedCallback
 from modules.LanguageModels.LstmLanguageModel import LSTMLM
 from modules.PredictionLMPL import PredictionLMPL
 from modules.RationalExtractor import RationalExtractor
@@ -34,10 +34,10 @@ hparams = {
 
 my_tokenizer = get_daily_dialog_tokenizer(tokenizer_location='./daily_dialog/tokenizer.json', )
 
-train_dataset = PredictionDataset(my_tokenizer, size=size)
+train_dataset = NextNPredictionDataset(my_tokenizer, size=size)
 dataloader_train = DataLoader(train_dataset, shuffle=True)
 
-test_dataset = PredictionDataset(my_tokenizer, size=test_size, split="test")
+test_dataset = NextNPredictionDataset(my_tokenizer, size=test_size, split="test")
 dataloader_test = DataLoader(test_dataset, )
 
 device = "cuda"
@@ -51,7 +51,7 @@ else:
     language_model = LSTMLM(my_tokenizer.get_vocab_size(), embedding_dim=embedding_dim).to(device)
 
 callbacks = [
-    FinishSentenceRationalizedCallback(["[START] How ", "[START] What are you upto? "]),
+    FinishDialogueRationalizedCallback(["[START] How ", "[START] What are you upto? "]),
 ]
 
 loss_module = torch.nn.CrossEntropyLoss()
