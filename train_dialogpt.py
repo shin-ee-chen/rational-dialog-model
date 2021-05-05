@@ -9,11 +9,12 @@ from datasets import load_dataset
 
 model_checkpoint = 'microsoft/DialoGPT-small'
 fine_tune_dataset = 'daily_dialog'
-max_epochs = 100
+max_epochs = 10
+batch_size = 1000
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 datasets = load_dataset(fine_tune_dataset)
-tokenizer = AutoTokenizer.from_pretrained(model_checkpoint, use_fast=True)
+tokenizer = AutoTokenizer.from_pretrained(model_checkpoint)
 
 def tokenize_function(dialogues):
     dialogues = [(tokenizer.eos_token).join(dialog) for dialog in dialogues["dialog"]]
@@ -43,7 +44,7 @@ def group_texts(dialogues):
 lm_datasets = tokenized_datasets.map(
     group_texts,
     batched=True,
-    batch_size=256,
+    batch_size=batch_size,
     num_proc=4,
 )
 
@@ -55,12 +56,13 @@ training_args = TrainingArguments(
     "dialoGPT_dailyDialog_model",
     do_train= True,
     do_eval= True,
-    evaluation_strategy="steps",
+    evaluation_strategy="epoch", #steps or epoch
     learning_rate=1e-3,
-    weight_decay=0.01,
     #max_steps=2, #only for debugging
     num_train_epochs=max_epochs,
-    load_best_model_at_end = True
+    load_best_model_at_end = True,
+    save_strategy='epoch',
+    save_total_limit=5
 )
 class CompleteDialogueCallback(TrainerCallback):
     def on_evaluate(self, args, state, control, logs=None, **kwargs):
@@ -68,15 +70,19 @@ class CompleteDialogueCallback(TrainerCallback):
         sentence = 'Believe it or not, I can do 30 push-ups a minute.'
         print('Input: ' + sentence)
         sentence += tokenizer.eos_token #add separation token
-        for step in range(4):
+        for step in range(3):
             #encode the new user input, add the eos_token and return a tensor in Pytorch
             new_user_input_ids = tokenizer.encode(sentence, return_tensors='pt').to(device)
             #append the new user input tokens to the chat history
             bot_input_ids = torch.cat([chat_history_ids, new_user_input_ids], dim=-1) if step > 0 else new_user_input_ids
             #generated a response while limiting the total chat history to 1000 tokens, 
-            chat_history_ids = model.generate(bot_input_ids, max_length=2000, pad_token_id=tokenizer.eos_token_id)
+            chat_history_ids = model.generate(bot_input_ids, max_length=1000, pad_token_id=tokenizer.eos_token_id)
             #pretty print last ouput tokens from bot
-            print("DialoGPT: {}".format(tokenizer.decode(chat_history_ids[:, bot_input_ids.shape[-1]:][0], skip_special_tokens=True)))
+            try:
+                print("DialoGPT: {}".format(tokenizer.decode(chat_history_ids[:, bot_input_ids.shape[-1]:][0], skip_special_tokens=True)))
+            except:
+                #UnicodeEncodeError: 'latin-1' codec can't encode character '\u2019' in position 21: ordinal not in range(256)
+                print("DialoGPT: [can't generate response!]")
 
 trainer = Trainer(
     model=model,

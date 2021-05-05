@@ -6,7 +6,7 @@
 #SBATCH --cpus-per-task=4
 #SBATCH --time=12:00:00
 #SBATCH --mem=32000M
-#SBATCH --output=dialoGPT.out
+#SBATCH --output=dialoGPT_%A.out
 #SBATCH --ntasks=1
 
 module purge
