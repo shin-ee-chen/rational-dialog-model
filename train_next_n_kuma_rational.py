@@ -14,6 +14,7 @@ from modules.LanguageModels.LstmLanguageModel import LSTMLM
 from modules.PredictionLMPL import PredictionLMPL
 from modules.kurmaswamy.KumaRationalExtractor import KumaRationalExtractor
 
+
 save_path = './small_lm_pretrained.pt'
 load_pretrained = True
 size = int(5e2)
@@ -25,7 +26,9 @@ embedding_dim = 128
 learning_rate = 1e-3
 
 hparams = {
-    "learning_rate": learning_rate
+    "learning_rate": learning_rate,
+    "teacher_forcing": True,
+    "freeze_language_ml": True
 }
 
 my_tokenizer = get_daily_dialog_tokenizer(tokenizer_location='./daily_dialog/tokenizer.json', )
@@ -49,8 +52,6 @@ else:
 callbacks = [
     FinishDialogueRationalizedCallback(["[START] How ", "[START] What are you upto? "])
 ]
-
-hparams = {'learning_rate': learning_rate}
 
 loss_module = torch.nn.CrossEntropyLoss()
 

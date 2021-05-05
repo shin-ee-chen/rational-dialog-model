@@ -12,7 +12,7 @@ from modules.LanguageModels.LstmLanguageModel import LSTMLM
 from modules.LanguageModels.LanguageModelPL import LMPL
 from daily_dialog.callbacks import FinishDialogueCallback, ReshuffleDatasetCallback
 
-from utils import collate_fn
+
 
 save_path = './lm_pretrained_2.pt'
 load_pretrained = False

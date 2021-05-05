@@ -1,8 +1,6 @@
 import torch
 from torch import nn
-import torch.nn.functional as F
 
-from torch.nn.utils.rnn import PackedSequence
 import numpy as np
 
 
@@ -24,7 +22,14 @@ class BaseLanguageModel(nn.Module):
         raise NotImplementedError()
 
     def generate_next_token(self, tokens):
-        raise NotImplementedError()
+        tokens = tokens.view(-1, 1)
+        logits = self.forward(tokens)[-1, 0, :]
+
+        next_token = self.get_next_from_logits(logits)
+
+        next_token = torch.tensor([next_token]).to(tokens.device)
+
+        return next_token
 
     def complete_dialogue(self, sentence_ids, max_length=100):
         tokens = sentence_ids.clone()
