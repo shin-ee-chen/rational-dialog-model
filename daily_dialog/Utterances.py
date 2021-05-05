@@ -29,10 +29,10 @@ class Utterances(Dataset):
         n = self.size if self.size else len(self.original_dataset)
 
         # Split all the dialogues in subdialogues
-        dialogue_samples = itertools.chain.from_iterable([
+        dialogue_samples = list(itertools.chain.from_iterable([
             self.subdialogues(dialogue["dialog"], subsets) 
             for i, dialogue in enumerate(self.original_dataset) if i < n  
-        ])
+        ]))
 
         # Tokenize the samples
         tokenized_samples = [
@@ -42,7 +42,7 @@ class Utterances(Dataset):
 
         # Now shuffle samples and sort on length (to prevent amount of padding in batches)
         random.shuffle(tokenized_samples)
-        sorted_samples = sorted(tokenized_samples, key=lambda x: len(x[0]))
+        sorted_samples = sorted(tokenized_samples, key=lambda x: len(x[0])+len(x[1]))
         return sorted_samples
 
     def subdialogues(self, utterances, subsets):
@@ -58,7 +58,7 @@ class Utterances(Dataset):
             return None
         startrange = 1 if subsets == "start" else num - 1
         subsets = [
-            ('[SEP]'.join(utterances[start:end]), utterances[end])
+            ('[SEP]'.join(utterances[start:end]) + '[SEP]', utterances[end] + '[SEP]')
             for start in range(0, startrange, 1)
             for end in range(start + 1, num, 1)
         ]
@@ -81,12 +81,12 @@ class Utterances(Dataset):
         inputs = pad_sequence(
             [torch.tensor(sample[0]) for sample in items],
             batch_first = True, 
-            padding_value = torch.tensor(2) # Padding code
+            padding_value = torch.tensor(0) # Padding code
         ) 
         targets = pad_sequence(
             [torch.tensor(sample[1]) for sample in items], 
             batch_first = True, 
-            padding_value = torch.tensor(2) # Padding code
+            padding_value = torch.tensor(0) # Padding code
         )
 
         return inputs, targets

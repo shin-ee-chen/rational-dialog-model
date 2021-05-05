@@ -19,7 +19,7 @@ save_path = './lm_pretrained_3.pt'
 load_pretrained = False
 batch_first = True
 max_epochs = 10
-batch_size = 64
+batch_size = 256
 embedding_dim = 128
 num_layers = 2
 hidden_state_size = 128
@@ -29,8 +29,8 @@ print("get tokenizer")
 #my_tokenizer = get_daily_dialog_tokenizer(tokenizer_location='./daily_dialog/tokenizer.json', )
 my_tokenizer = get_daily_dialog_tokenizer()
 
-dataset_train = Utterances(my_tokenizer, split="train")
-dataset_test = Utterances(my_tokenizer, split="test")
+dataset_train = Utterances(my_tokenizer, subsets="full", split="train")
+dataset_test = Utterances(my_tokenizer, subsets="full", split="test")
 
 dataloader_train = DataLoader(dataset_train, batch_size=batch_size, collate_fn=Utterances.collate_fn)
 dataloader_test = DataLoader(dataset_test, batch_size=batch_size, collate_fn=Utterances.collate_fn)
@@ -50,7 +50,7 @@ else:
     ).to(device)
 
 callbacks = [
-    FinishSentenceCallback(["[START] How are you doing today?", "[START] What are you upto? "]),
+    FinishSentenceCallback(["How are you doing today?", "What are you upto? "]),
     ReshuffleDatasetCallback(dataset_train) # To reshuffle the dataset.
 ]
 
