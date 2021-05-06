@@ -1,5 +1,5 @@
 '''
-Trains a language model with a rational on the daily dialog set.
+Trains a language model on the daily dialog set with rational extraction.
 '''
 
 import torch
@@ -12,12 +12,10 @@ from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
 from daily_dialog.callbacks import FinishDialogueRationalizedCallback
 from modules.LanguageModels.LstmLanguageModel import LSTMLM
 from modules.PredictionLMPL import PredictionLMPL
-from modules.RationalExtractor import RationalExtractor
+from modules.kurmaswamy.KumaRationalExtractor import KumaRationalExtractor
 
 save_path = './small_lm_pretrained.pt'
 load_pretrained = True
-
-teacher_forcing = True
 size = int(5e2)
 test_size = int(1e2)
 
@@ -27,9 +25,7 @@ embedding_dim = 128
 learning_rate = 1e-3
 
 hparams = {
-    "learning_rate": learning_rate,
-    "teacher_forcing": teacher_forcing,
-    "freeze_language_ml": True
+    "learning_rate": learning_rate
 }
 
 my_tokenizer = get_daily_dialog_tokenizer(tokenizer_location='./daily_dialog/tokenizer.json', )
@@ -51,12 +47,14 @@ else:
     language_model = LSTMLM(my_tokenizer.get_vocab_size(), embedding_dim=embedding_dim).to(device)
 
 callbacks = [
-    FinishDialogueRationalizedCallback(["[START] How ", "[START] What are you upto? "]),
+    FinishDialogueRationalizedCallback(["[START] How ", "[START] What are you upto? "])
 ]
+
+hparams = {'learning_rate': learning_rate}
 
 loss_module = torch.nn.CrossEntropyLoss()
 
-rational_extractor = RationalExtractor(embedding_dim)
+rational_extractor = KumaRationalExtractor(embedding_dim)
 
 model = PredictionLMPL(language_model, rational_extractor, my_tokenizer, loss_module, hparams=hparams)
 

@@ -30,11 +30,37 @@ class LSTMLM(BaseLanguageModel):
     def to_embedding(self, x):
         return self.embedding(x)
 
-    def forward_embedding(self, embedding):
-        out, hidden = self.lstm(embedding)
+    def forward_embedding(self, embedding, teacher_forcing=True, n_to_predict=0):
+        if teacher_forcing:
+            out, hidden = self.lstm(embedding)
+            out = self.relu(out)
+            classification = self.classification_layer(out, )
 
-        out = self.relu(out)
-        classification = self.classification_layer(out, )
+        else:
+            # Generate up to n tokens
+            out, hidden = self.lstm(embedding)
+
+            # hidden = (hidden[0][-1:, :, :].contiguous(), hidden[1][-1:, :, :].contiguous())
+            out = F.relu(out[-1:, :, :])  # Get the latest token
+
+            next_out = self.classification_layer(out)
+            next_token = torch.argmax(next_out, dim=-1)
+            next_embedding = self.embedding(next_token)
+            outs = [next_out]
+
+            for i in range(n_to_predict - 1):
+                next_embedding = next_embedding.reshape(1, embedding.shape[1], -1)
+
+                out, hidden = self.lstm(next_embedding, hidden)
+                out = F.relu(out)
+
+                next_out = self.classification_layer(out)
+
+                next_token = torch.argmax(next_out, dim=-1)
+                next_embedding = self.embedding(next_token)
+                outs.append(next_out)
+
+            classification = torch.cat(outs)
 
         return classification
 

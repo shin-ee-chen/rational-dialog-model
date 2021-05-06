@@ -1,3 +1,7 @@
+'''
+Contains code for packed layers:
+(Not used at the moment because of the code cluttering and overhead of transforming from packedSequence to Tensors and back again.
+'''
 from torch import nn
 from torch.nn.utils.rnn import PackedSequence
 import torch.nn.functional as F
@@ -15,7 +19,6 @@ class PackedEmbedding(nn.Module):
 
     def forward(self, x):
         data = x.data
-
         embedding = self.embedding(data)
 
         return PackedSequence(embedding, x.batch_sizes, sorted_indices=x.sorted_indices,
