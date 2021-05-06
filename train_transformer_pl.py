@@ -37,7 +37,7 @@ dataset_test = CLMDataset(my_tokenizer, split="test", size=size)
 
 dataloader_train = DataLoader(dataset_train, )
 dataloader_test = DataLoader(dataset_test, )
-device = "cuda"
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 if load_pretrained:
     print("load pretrained_model")
