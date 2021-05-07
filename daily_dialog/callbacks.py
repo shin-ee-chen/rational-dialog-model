@@ -21,7 +21,8 @@ class FinishSentenceCallback(pl.Callback):
         pl_module.eval()
         if (trainer.current_epoch + 1) % self.every_n_epochs == 0:
             completed_sentences = pl_module.complete_sentences(self.sentences, self.reaction_length)
-            print(completed_sentences)
+            for i, s in enumerate(completed_sentences):
+                print("----- ",i, '\n', s)
         pl_module.train()
 
 
