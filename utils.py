@@ -1,5 +1,8 @@
 import torch
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
+import glob
+import os
+import time
 
 import numpy as np
 
@@ -51,3 +54,12 @@ def get_packed_mean(t):
     mean = torch.sum(padded_sequence[0]) / total_length
 
     return mean
+
+def get_lastest_model_name(path):
+    list_of_files = glob.glob(path+'*')
+    latest_file = max(list_of_files, key=os.path.getctime)
+    return(latest_file)
+
+def generate_model_name(path):
+    timestr = time.strftime("%Y%m%d_%H%M%S")
+    return(path + 'model_' + timestr)
