@@ -2,6 +2,7 @@ from torch.utils.data import Dataset
 import datasets
 import torch
 from torch.nn.utils.rnn import pad_sequence
+import numpy as np
 import itertools
 import random
 
@@ -103,11 +104,11 @@ class Utterances(Dataset):
 
     def collate_fn(items):
 
-        inputs = pad_sequence(
-            [torch.tensor(sample[0]) for sample in items],
+        inputs = torch.fliplr(pad_sequence(
+            [torch.tensor(list(reversed(sample[0]))) for sample in items],
             batch_first = True, 
             padding_value = torch.tensor(0) # Padding code
-        ) 
+        )) 
         targets = pad_sequence(
             [torch.tensor(sample[1]) for sample in items], 
             batch_first = True, 
