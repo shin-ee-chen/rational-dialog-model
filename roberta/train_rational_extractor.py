@@ -47,7 +47,6 @@ weights = torch.ones(tokenizer.vocab_size)
 #Makes sure to ignore certain indices.
 weights[0:10] = 0
 weights[17487] = 0
-print(weights)
 loss_module = torch.nn.CrossEntropyLoss(weight=weights)
 
 rational_extractor = RationalExtractor(embedding_dim)
