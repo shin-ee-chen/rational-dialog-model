@@ -18,7 +18,7 @@ class ReinforceRationalExtractorLM(nn.Module):
         self.embedding = Embedding(embedding_input, embedding_size)
 
         # Layers for prediction
-        self.prediction_LSTM = LSTM(embedding_size, hidden_size=embedding_size)
+        self.prediction_LSTM = LSTM(embedding_size, hidden_size=int(embedding_size/2), bidirectional=True)
         self.output_layer = nn.Linear(embedding_size, 2)
         self.mask_token = mask_token
 
@@ -119,13 +119,15 @@ class RELMPL(pl.LightningModule):
             rewards = self.loss_module(predictions.view(-1, self.tokenizer.vocab_size), targets.flatten(),
                                        reduce=False) + h_loss
 
-        loss = torch.mean(rewards.detach() * torch.log(out["chosen_policy"]))
         # Get the policy loss.
+        loss = torch.mean(rewards.detach() * torch.log(out["chosen_policy"]))
+
         if not self.freeze_language_model:
             loss += torch.mean(rewards)
 
         acc = self.calc_acc(predictions, targets)
-        return {"loss": loss, "acc": acc, "h_loss": h_loss.mean(), "h_mean": h_mean.mean(), "fussed_lasso": fussed_lasso_loss.mean()}
+        return {"loss": loss, "acc": acc, "h_loss": h_loss.mean(), "h_mean": h_mean.mean(),
+                "fussed_lasso": fussed_lasso_loss.mean()}
 
     def training_step(self, batch, batch_idx):
 
@@ -143,59 +145,69 @@ class RELMPL(pl.LightningModule):
 
         return batch_out["loss"]
 
-    def complete_dialogues(self, sentences, total_length):
-        return [self.complete_dialogue(sentence, total_length=total_length) for sentence in sentences]
+    def complete_dialogues(self, sentences, total_length, with_rational=True, greedy_rationals=True):
+        return [self.complete_dialogue(sentence, total_length=total_length, with_rational=with_rational, greedy_rationals=greedy_rationals) for sentence in
+                sentences]
 
-    def complete_dialogue(self, sentence, n_rational=10, total_length=100, with_rational=True):
+    def complete_dialogue(self, completed_dialogue, n_rational=10, total_length=100, with_rational=True, greedy_rationals=True):
 
         if type(self.tokenizer) == Tokenizer:
-            encoding = self.tokenizer.encode(sentence).ids
+            encoding = self.tokenizer.encode(completed_dialogue).ids
         else:
-            encoding = self.tokenizer.encode(sentence)
+            encoding = self.tokenizer.encode(completed_dialogue)
 
-        all_tokens = encoding
+        all_tokens = torch.tensor(encoding).to(self.device).unsqueeze(1)
 
-        ids_tensor = torch.tensor(all_tokens).to(self.device)
-        ids_tensor = ids_tensor.unsqueeze(1)
+        ids_tensor = all_tokens
         rationals = []
-        sentences = []
+        responses = []
         rationalized_input = []
         while (len(ids_tensor)) < total_length:
 
-            # Extract rationals if needed.
-            if with_rational and len(ids_tensor) > n_rational:
-                rational = self.get_rational(ids_tensor)
+            if with_rational:
+                # Get the rational
+                rational = self.rational_extractor(ids_tensor, greedy=greedy_rationals)
 
-                rational_input = (ids_tensor * rational["h"]).int().flatten().detach().cpu().numpy()
-                rational_input = self.tokenizer.decode(rational_input, skip_special_tokens=False).replace(" #",
-                                                                                                          "").replace(
-                    "#", "")
-                rationalized_input.append(rational_input)
-
-                rationals.append(rational["h"].flatten())
-                embedding = rational["masked_embedding"]
-            else:
-                rational_input = self.tokenizer.decode(ids_tensor.flatten().flatten().detach().cpu().numpy(),
+                # Map back to tokens
+                rational_input = self.tokenizer.decode(rational["masked_input"].long().view(-1).detach().cpu().numpy(),
                                                        skip_special_tokens=False).replace(" #",
                                                                                           "").replace(
                     "#", "")
-                rationalized_input.append(rational_input)
-                rationals.append(torch.tensor([]))
-                embedding = self.language_model.to_embedding(ids_tensor)
+                next_input = rational["masked_input"]
+                # The mask
+                rationals.append(rational["mask"].flatten())
 
-            next_ids = self.language_model.generate_next_tokens_from_embedding(embedding, n_tokens=n_rational)
 
-            all_tokens += next_ids
-            sentences.append(
-                self.tokenizer.decode(next_ids, skip_special_tokens=False).replace(" #", "").replace("#", ""))
-            ids_tensor = torch.tensor(all_tokens).to(self.device)
+            else:
+                next_input = ids_tensor
+                rational_input = self.tokenizer.decode(ids_tensor.long().view(-1).detach().cpu().numpy(),
+                                                       skip_special_tokens=False).replace(" #",
+                                                                                          "").replace(
+                    "#", "")
+            rationalized_input.append(rational_input)
 
-            ids_tensor = ids_tensor.unsqueeze(1)
+            # Generate next ids based on the masked input
+            next_ids = self.language_model.generate_next_tokens(next_input, n_tokens=n_rational)
 
-        sentence = self.tokenizer.decode(all_tokens, skip_special_tokens=False).replace(" #", "").replace("#", "")
+            # Add to all tokens
+            all_tokens = torch.cat([all_tokens, next_ids])
 
-        return {"complete_sentence": sentence, "rationals": rationals, "rationalized_input": rationalized_input,
-                "response": sentences}
+            # Map back to the sentence
+            responses.append(
+                self.tokenizer.decode(next_ids.reshape(-1).detach().cpu().numpy(), skip_special_tokens=False).replace(
+                    " #", "").replace("#", ""))
+
+            # Map back to tensor
+            ids_tensor = all_tokens
+
+        completed_dialogue = self.tokenizer.decode(all_tokens.reshape(-1).detach().cpu().numpy(),
+                                                   skip_special_tokens=False).replace(" #", "").replace("#", "")
+
+        result = {"completed_dialogue": completed_dialogue, "rationals": rationals,
+                "rationalized_input": rationalized_input,
+                "response": responses}
+
+        return result
 
     def configure_optimizers(
             self,

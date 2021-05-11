@@ -11,7 +11,6 @@ from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
 
 from daily_dialog.callbacks import FinishDialogueRationalizedCallback
 from modules.LanguageModels.LstmLanguageModel import LSTMLM
-from modules.PredictionLMPL import PredictionLMPL
 from modules.ReinforceRationalExtractorLM import ReinforceRationalExtractorLM, RELMPL
 
 save_path = './small_lm_pretrained.pt'
@@ -50,10 +49,12 @@ else:
 
 callbacks = [
     FinishDialogueRationalizedCallback(["[START] How ", "[START] What are you upto? "]),
+    FinishDialogueRationalizedCallback(["[START] How ", "[START] What are you upto? "], with_rational=False),
+    FinishDialogueRationalizedCallback(["[START] How ", "[START] What are you upto? "], with_rational=True, greedy_policy=True),
 ]
-loss_module = torch.nn.CrossEntropyLoss()
-
-rational_extractor = ReinforceRationalExtractorLM(embedding_size=embedding_dim, embedding_input=my_tokenizer.get_vocab_size())
+loss_module = torch.nn.CrossEntropyLoss(ignore_index=4)
+rational_extractor = ReinforceRationalExtractorLM(embedding_size=embedding_dim,
+                                                  embedding_input=my_tokenizer.get_vocab_size(), mask_token=4)
 
 model = RELMPL(language_model, rational_extractor, my_tokenizer, loss_module, hparams=hparams)
 
@@ -62,7 +63,7 @@ trainer = pl.Trainer(default_root_dir='logs',
                      gpus=1 if torch.cuda.is_available() else 0,
                      max_epochs=max_epochs,
                      log_every_n_steps=1,
-                    #callbacks=callbacks,
+                     callbacks=callbacks,
                      progress_bar_refresh_rate=1,
                      gradient_clip_val=2.0
                      )

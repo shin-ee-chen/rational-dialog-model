@@ -36,8 +36,21 @@ class BaseLanguageModel(nn.Module):
         while len(tokens) < max_length:
             next_token = self.generate_next_token(tokens)
 
+
             tokens = torch.cat([tokens, next_token], dim=-1)
         return tokens.detach().cpu().numpy()
+
+    def generate_next_tokens(self, sentence_ids, n_tokens=10):
+        tokens = sentence_ids.clone()
+        next_tokens = torch.tensor([]).to(sentence_ids.device)
+        while len(next_tokens) < n_tokens:
+            next_token = self.generate_next_token(tokens)
+
+
+            next_token = next_token.reshape(-1, 1)
+            next_tokens = torch.cat([next_tokens, next_token])
+            tokens = torch.cat([tokens, next_token])
+        return next_tokens.long()
 
 
     def get_next_from_logits(self, logits, top=10):
