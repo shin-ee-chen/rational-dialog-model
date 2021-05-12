@@ -26,11 +26,31 @@ class BaseLanguageModelPL(pl.LightningModule):
         encoding = self.tokenizer.encode(sentence)
         ids_tensor = torch.tensor(encoding.ids).to(self.device)
 
-        completed_sentence_tokens = self.language_model.complete_dialogue(ids_tensor, max_length)
-        new_sentence = str(
-            self.tokenizer.decode(completed_sentence_tokens, skip_special_tokens=False)).replace(" #", "").replace("#",
-                                                                                                                   "")
+
+        completed_sentence_tokens = self.language_model.complete_sentence(ids_tensor, max_length)
+        new_sentence = str(self.tokenizer.decode(
+            completed_sentence_tokens, 
+            skip_special_tokens=False
+        )).replace(" #", "").replace("#", "")
+
         return new_sentence
+
+    def next_utterance(self, sentence, sep_token):
+        encoding = self.tokenizer.encode(sentence)
+        ids_tensor = torch.tensor(encoding.ids).to(self.device)
+
+        next_utterance_tokens = self.language_model.next_utterance(ids_tensor, sep_token)
+        new_sentence = str(self.tokenizer.decode(
+            next_utterance_tokens, 
+            skip_special_tokens=False
+        )).replace(" #", "").replace("#", "")
+
+#        original_length = len(sentence)
+#        new_sentence = self.complete_sentence(sentence, max_length=100)
+#        print("[DEBUG]\n", sentence, '\n', new_sentence)
+        sep = new_sentence.find('[SEP]')
+#       print("DEBUG: ", sep)
+        return new_sentence[:sep]
 
     def batch_to_out(self, batch):
         '''
