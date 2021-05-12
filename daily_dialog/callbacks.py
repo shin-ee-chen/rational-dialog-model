@@ -3,9 +3,10 @@ import os
 import pytorch_lightning as pl
 
 
-class FinishSentenceCallback(pl.Callback):
+class FinishDialogueCallback(pl.Callback):
     '''
-    Callback that Lets the model finish the given sentences.
+    Callback that Lets the model finish the given dialogue.
+    Print out the results
     '''
 
     def __init__(self, sentences, every_n_epochs=1):
@@ -15,9 +16,7 @@ class FinishSentenceCallback(pl.Callback):
         self.reaction_length = 100
 
     def on_epoch_end(self, trainer, pl_module):
-        """
-        This function is called after every epoch.
-        """
+
         pl_module.eval()
         if (trainer.current_epoch + 1) % self.every_n_epochs == 0:
             completed_sentences = pl_module.complete_sentences(self.sentences, self.reaction_length)
@@ -27,6 +26,9 @@ class FinishSentenceCallback(pl.Callback):
 
 
 class ReshuffleDatasetCallback(pl.Callback):
+    '''
+    A callback that can reshuffle certain datasets that allow it.
+    '''
     def __init__(self, dataset, every_n_epochs=1):
         super().__init__()
         self.every_n_epochs = every_n_epochs
@@ -41,15 +43,16 @@ class ReshuffleDatasetCallback(pl.Callback):
             self.dataset.reshuffle_dataset()
 
 
-class FinishSentenceRationalizedCallback(pl.Callback):
+class FinishDialogueRationalizedCallback(pl.Callback):
     '''
-    Callback that Lets the model finish the given sentences.
+    Callback that Lets the model finish the given dialogue it extracts a rational at the same time.
+    The resulted dialogue get's put into a text file in the log directory
     '''
 
-    def __init__(self, sentences, every_n_epochs=1):
+    def __init__(self, start_of_dialogues, every_n_epochs=1):
         super().__init__()
         self.every_n_epochs = every_n_epochs
-        self.sentences = sentences
+        self.start_of_dialogues = start_of_dialogues
         self.reaction_length = 100
 
     def on_epoch_end(self, trainer, pl_module):
@@ -63,8 +66,8 @@ class FinishSentenceRationalizedCallback(pl.Callback):
         pl_module.eval()
         if (trainer.current_epoch + 1) % self.every_n_epochs == 0:
             if (trainer.current_epoch + 1) % self.every_n_epochs == 0:
-                completed_sentences = pl_module.complete_sentences(self.sentences, self.reaction_length)
-                for i, (completed_sentence, sentence) in enumerate(zip(completed_sentences, self.sentences)):
+                completed_sentences = pl_module.complete_sentences(self.start_of_dialogues, self.reaction_length)
+                for i, (completed_sentence, sentence) in enumerate(zip(completed_sentences, self.start_of_dialogues)):
                     title = '_'.join(sentence[7:].replace("?", "").split())
 
                     text_file = '.\\' + log_dir + "\{}_{}.txt".format(title, trainer.current_epoch)
