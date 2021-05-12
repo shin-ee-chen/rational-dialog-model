@@ -10,6 +10,7 @@ import torch
 from torch.utils.data import Dataset, DataLoader
 import itertools
 import numpy as np
+from transformers import RobertaTokenizerFast
 
 flatten = itertools.chain.from_iterable
 
@@ -24,14 +25,10 @@ class CLMDataset(Dataset):
         self.batch_size = batch_size
         self.dataset = self.process_dataset()
 
-
-
     def process_dataset(self):
         '''
         Batch same sizes together. To get minimal overhead when applying padding.
         '''
-        ### First we tokenize each example
-
         sorted_results = self.get_sorted_samples()
 
         #### Naive way: pick
@@ -41,10 +38,9 @@ class CLMDataset(Dataset):
         current_batch = []
         for r in sorted_results:
 
-            ## If there is no
             if len(current_batch) == 0:
                 current_batch.append(r)
-            # If either we have not the same length or the batch is full. Start the new ba
+            # Keep adding until the batch is full
             elif len(current_batch) >= self.batch_size:
                 final_samples.append(current_batch)
                 current_batch = [r]
@@ -55,21 +51,35 @@ class CLMDataset(Dataset):
         if self.size:
             final_samples = final_samples[:self.size]
 
-        ### Lastly we must make sure the padding is there. Hence we decode and then do batch encode
+        ### Lastly we must make sure the padding is there. Hence we decode and than batch encode to automatically pad the samples.
         result = []
         for final_sample in final_samples:
             temp = [' '.join(s) for s in final_sample]
-            result.append(torch.stack([torch.tensor(enc.ids) for enc in self.tokenizer.encode_batch(temp)]))
+            if type(self.tokenizer) != RobertaTokenizerFast:
 
+                result.append(torch.stack([enc.ids for enc in self.tokenizer.encode_batch(temp)]))
+            else:
+                result.append(torch.tensor(self.tokenizer(temp, padding=True, add_special_tokens=False).input_ids))
         return result
 
     def get_sorted_samples(self):
+        '''
+        Sorts the samples in lists of approximatly the same size.
+        '''
         dialogues = ['[START] ' + '[SEP]'.join(dialogue["dialog"]) for dialogue in self.original_dataset]
-        tokenized_dataset = [self.tokenizer.encode(sample).tokens for sample in dialogues]
 
+        if type(self.tokenizer) != RobertaTokenizerFast:
+            dialogues = ['[START] ' + '[SEP]'.join(dialogue["dialog"]) for dialogue in self.original_dataset]
+
+            tokenized_dataset = [self.tokenizer.encode(sample).tokens for sample in dialogues]
+        else:
+            dialogues = ['[START] ' + '<s>'.join(dialogue["dialog"]) for dialogue in self.original_dataset]
+
+            tokenized_dataset = [self.tokenizer.tokenize(sample) for sample in dialogues]
         sorted_results = sorted(tokenized_dataset, key=lambda x: len(x))
 
-        # Next we create batches of the same size and shuffle them around.
+        # Next we create lists of utterances that are approximatly the same size. We shuffle the utterances within such a list.
+        # This has a result that when we batch them we end up with batches that have utterances of approximatly the same length.
         results = []
         current = []
         current_len = len(sorted_results[0])
@@ -77,7 +87,7 @@ class CLMDataset(Dataset):
             if abs(current_len - len(r)) <= 15:
                 current.append(r)
             else:
-                # shuffle
+                # shuffle the set itself.
                 np.random.shuffle(current)
                 results += current
                 current = [r]

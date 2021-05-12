@@ -35,7 +35,7 @@ class RationalLMPL(pl.LightningModule):
         encoding = self.tokenizer.encode(sentence)
         ids_tensor = torch.tensor(encoding.ids).to(self.device)
 
-        completed_sentence_tokens = self.language_model.complete_sentence(ids_tensor, max_length)
+        completed_sentence_tokens = self.language_model.complete_dialogue(ids_tensor, max_length)
         new_sentence = sentence + str(
             self.tokenizer.decode(completed_sentence_tokens, skip_special_tokens=False)).replace(" #", "").replace("#",
                                                                                                                    "")

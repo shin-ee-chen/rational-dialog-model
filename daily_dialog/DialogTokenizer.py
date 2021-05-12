@@ -15,7 +15,7 @@ special_tokens = {"unk_token": "[UNK]", "sep_token": "[SEP]", "pad_token": "[PAD
 
 def get_daily_dialog_tokenizer(tokenizer_location=None):
     '''
-    Get the daily diolog tokenizer. Trains a new one if no location is provided
+    Get the daily dialog tokenizer. Trains a new one if no location is provided
     :param tokenizer_location: Json containing information about the tokenizer.
     :return:
     '''
@@ -25,7 +25,7 @@ def get_daily_dialog_tokenizer(tokenizer_location=None):
         return tokenizer
     else:
 
-        dataset_train = datasets.load_dataset("", split="train", )
+        dataset_train = datasets.load_dataset("daily_dialog", split="train", )
 
         utterances = ['[SEP]'.join(dialogue["dialog"]) for dialogue in dataset_train]
 
@@ -34,7 +34,7 @@ def get_daily_dialog_tokenizer(tokenizer_location=None):
         location = './daily_dialog/'
 
         trainer = WordPieceTrainer(
-            vocab_size=2096, special_tokens=["[UNK]", "[SEP]", "[PAD]", "[MASK]", "[RMASK]"]  # RMASK = rational mask
+            vocab_size=2096, special_tokens=["[PAD]", "[UNK]", "[SEP]", "[MASK]", "[RMASK]"]  # RMASK = rational mask
         )
 
         custom_tokenizer = Tokenizer(WordPiece(unk_token="[UNK]", ))

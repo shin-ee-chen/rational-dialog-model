@@ -1,5 +1,5 @@
 '''
-Trains a language model on the daily dialog set.
+Trains a tranformer language model on the daily dialog set.
 '''
 import torch
 from pytorch_lightning.callbacks import LearningRateMonitor
@@ -8,7 +8,7 @@ import pytorch_lightning as pl
 
 from daily_dialog.CLMDataset import CLMDataset
 from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
-from daily_dialog.callbacks import FinishSentenceCallback, ReshuffleDatasetCallback
+from daily_dialog.callbacks import FinishDialogueCallback, ReshuffleDatasetCallback
 from modules.LanguageModels.TranformerLanguageModelPL import TransformerLMPL
 from modules.LanguageModels.TransformerLanguageModel import TransformerLM
 
@@ -37,7 +37,7 @@ dataset_test = CLMDataset(my_tokenizer, split="test", size=size)
 
 dataloader_train = DataLoader(dataset_train, )
 dataloader_test = DataLoader(dataset_test, )
-device = "cuda"
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 if load_pretrained:
     print("load pretrained_model")
@@ -48,7 +48,7 @@ else:
                                    num_hid=num_hid, num_layers=num_layers, dropout=dropout).to(device)
 lr_monitor = LearningRateMonitor(logging_interval='step')
 callbacks = [
-    FinishSentenceCallback(["[START] How are you doing today?", "[START] What are you upto? "]),
+    FinishDialogueCallback(["[START] How are you doing today?", "[START] What are you upto? "]),
     lr_monitor,
     ReshuffleDatasetCallback(dataset_train) # To reshuffle the dataset.
 ]

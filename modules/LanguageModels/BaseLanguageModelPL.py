@@ -1,5 +1,5 @@
 '''
-Pytorch lightning version of the language model.
+Pytorch lightning version for training a language model.
 '''
 import pytorch_lightning as pl
 import torch
@@ -19,18 +19,38 @@ class BaseLanguageModelPL(pl.LightningModule):
         ]
         self.hparams = hparams
 
-    def complete_sentences(self, sentences, max_length):
-        return [self.complete_sentence(sentence, max_length) for sentence in sentences]
+    def complete_dialogues(self, sentences, max_length):
+        return [self.complete_dialogue(sentence, max_length) for sentence in sentences]
 
-    def complete_sentence(self, sentence, max_length):
+    def complete_dialogue(self, sentence, max_length):
         encoding = self.tokenizer.encode(sentence)
         ids_tensor = torch.tensor(encoding.ids).to(self.device)
 
+
         completed_sentence_tokens = self.language_model.complete_sentence(ids_tensor, max_length)
-        new_sentence = str(
-            self.tokenizer.decode(completed_sentence_tokens, skip_special_tokens=False)).replace(" #", "").replace("#",
-                                                                                                                   "")
+        new_sentence = str(self.tokenizer.decode(
+            completed_sentence_tokens, 
+            skip_special_tokens=False
+        )).replace(" #", "").replace("#", "")
+
         return new_sentence
+
+    def next_utterance(self, sentence, sep_token):
+        encoding = self.tokenizer.encode(sentence)
+        ids_tensor = torch.tensor(encoding.ids).to(self.device)
+
+        next_utterance_tokens = self.language_model.next_utterance(ids_tensor, sep_token)
+        new_sentence = str(self.tokenizer.decode(
+            next_utterance_tokens, 
+            skip_special_tokens=False
+        )).replace(" #", "").replace("#", "")
+
+#        original_length = len(sentence)
+#        new_sentence = self.complete_sentence(sentence, max_length=100)
+#        print("[DEBUG]\n", sentence, '\n', new_sentence)
+        sep = new_sentence.find('[SEP]')
+#       print("DEBUG: ", sep)
+        return new_sentence[:sep]
 
     def batch_to_out(self, batch):
         '''

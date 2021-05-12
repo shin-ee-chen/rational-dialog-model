@@ -1,7 +1,7 @@
 '''
 Trains a language model on the daily dialog set.
 '''
-import datasets
+
 import torch
 from torch.utils.data import DataLoader
 import pytorch_lightning as pl
@@ -10,9 +10,9 @@ from daily_dialog.CLMDataset import CLMDataset
 from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
 from modules.LanguageModels.LstmLanguageModel import LSTMLM
 from modules.LanguageModels.LanguageModelPL import LMPL
-from daily_dialog.callbacks import FinishSentenceCallback, ReshuffleDatasetCallback
+from daily_dialog.callbacks import FinishDialogueCallback, ReshuffleDatasetCallback
 
-from utils import collate_fn
+
 
 save_path = './lm_pretrained_2.pt'
 load_pretrained = False
@@ -35,7 +35,7 @@ dataset_test = CLMDataset(my_tokenizer, split="test", batch_size=batch_size)
 
 dataloader_train = DataLoader(dataset_train, batch_size=1, )
 dataloader_test = DataLoader(dataset_test, batch_size=1, )
-device = "cuda"
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 if load_pretrained:
     print("load pretrained_model")
@@ -46,11 +46,9 @@ else:
                             hidden_state_size=hidden_state_size).to(device)
 
 callbacks = [
-    FinishSentenceCallback(["[START] How are you doing today?", "[START] What are you upto? "]),
+    FinishDialogueCallback(["[START] How are you doing today?", "[START] What are you upto? "]),
     ReshuffleDatasetCallback(dataset_train) # To reshuffle the dataset.
 ]
-
-
 
 loss_module = torch.nn.CrossEntropyLoss(ignore_index=0)
 
@@ -58,7 +56,6 @@ model = LMPL(language_model, my_tokenizer, loss_module, hparams=hparams)
 
 trainer = pl.Trainer(default_root_dir='logs',
                      checkpoint_callback=False,
-
                      gpus=1 if torch.cuda.is_available() else 0,
                      max_epochs=max_epochs,
                      log_every_n_steps=1,

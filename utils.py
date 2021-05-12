@@ -1,13 +1,21 @@
 import torch
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
+import glob
+import os
+import time
 
 import numpy as np
 
 
 # From: https://github.com/bastings/interpretable_predictions/blob/master/latent_rationale/beer/models/rl.py
-def fussed_lasso(t):
+# With a small modification to introduce the mean.
+def fussed_lasso(t, reduce=True):
     zdiff = t[:, 1:] - t[:, :-1]
-    zdiff = zdiff.abs().mean()  # [B]
+    zdiff = zdiff.abs()  # [B]
+    if reduce:
+        zdiff = zdiff.mean()
+    else:
+        zdiff = zdiff.mean(dim=-1)
     return zdiff
 
 
@@ -51,3 +59,12 @@ def get_packed_mean(t):
     mean = torch.sum(padded_sequence[0]) / total_length
 
     return mean
+
+def get_lastest_model_name(path):
+    list_of_files = glob.glob(path+'*')
+    latest_file = max(list_of_files, key=os.path.getctime)
+    return(latest_file)
+
+def generate_model_name(path):
+    timestr = time.strftime("%Y%m%d_%H%M%S")
+    return(path + 'model_' + timestr)
