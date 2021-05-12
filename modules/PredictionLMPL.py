@@ -1,5 +1,8 @@
 import torch
 import pytorch_lightning as pl
+from tokenizers import Tokenizer
+from transformers import AdamW
+
 from daily_dialog.NextNPredictionDataset import postprocess_dataloader_out
 from utils import fussed_lasso
 
@@ -9,8 +12,9 @@ class PredictionLMPL(pl.LightningModule):
     PL wrapper for training a language model together with a rational extractor.
     '''
 
-    def __init__(self, language_model, rational_extractor, tokenizer, loss_module, hparams=None, sparsity_weight=1,
-                 fussed_lasso_weight=0.5, ):
+    def __init__(self, language_model, rational_extractor, tokenizer, loss_module, hparams=None,
+                 sparsity_weight=0.000001,
+                 fussed_lasso_weight=0.00001, ):
         super().__init__()
         self.hparams = hparams
         self.language_model = language_model
@@ -74,8 +78,10 @@ class PredictionLMPL(pl.LightningModule):
 
             h_loss = self.sparsity_weight * h_mean + self.fussed_lasso_weight * fussed_lasso_loss
 
-        loss = self.loss_module(predictions.view(-1, self.tokenizer.get_vocab_size()), targets.flatten()) + h_loss
-
+        if type(self.tokenizer) == Tokenizer:
+            loss = self.loss_module(predictions.view(-1, self.tokenizer.get_vocab_size()), targets.flatten()) + h_loss
+        else:
+            loss = self.loss_module(predictions.view(-1, self.tokenizer.vocab_size), targets.flatten()) + h_loss
         acc = self.calc_acc(predictions, targets)
         return {"loss": loss, "acc": acc, "h_loss": h_loss, "h_mean": h_mean, "fussed_lasso": fussed_lasso_loss}
 
@@ -100,8 +106,12 @@ class PredictionLMPL(pl.LightningModule):
 
     def complete_dialogue(self, sentence, n_rational=10, total_length=100, with_rational=True):
 
-        encoding = self.tokenizer.encode(sentence)
-        all_tokens = encoding.ids
+        if type(self.tokenizer) == Tokenizer:
+            encoding = self.tokenizer.encode(sentence).ids
+        else:
+            encoding = self.tokenizer.encode(sentence)
+
+        all_tokens = encoding
 
         ids_tensor = torch.tensor(all_tokens).to(self.device)
         ids_tensor = ids_tensor.unsqueeze(1)
@@ -153,7 +163,7 @@ class PredictionLMPL(pl.LightningModule):
         else:
             parameters = list(self.rational_extractor.parameters())
 
-        optimizer = torch.optim.Adam(
+        optimizer = AdamW(
             parameters,
             lr=self.hparams['learning_rate'])
         return optimizer

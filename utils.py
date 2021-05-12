@@ -8,9 +8,14 @@ import numpy as np
 
 
 # From: https://github.com/bastings/interpretable_predictions/blob/master/latent_rationale/beer/models/rl.py
-def fussed_lasso(t):
+# With a small modification to introduce the mean.
+def fussed_lasso(t, reduce=True):
     zdiff = t[:, 1:] - t[:, :-1]
-    zdiff = zdiff.abs().mean()  # [B]
+    zdiff = zdiff.abs()  # [B]
+    if reduce:
+        zdiff = zdiff.mean()
+    else:
+        zdiff = zdiff.mean(dim=-1)
     return zdiff
 
 

@@ -1,8 +1,6 @@
 import torch
 from torch import nn
-import torch.nn.functional as F
 
-from torch.nn.utils.rnn import PackedSequence
 import numpy as np
 
 
@@ -24,12 +22,31 @@ class BaseLanguageModel(nn.Module):
         raise NotImplementedError()
 
     def generate_next_token(self, tokens):
-        raise NotImplementedError()
+        tokens = tokens.view(-1, 1)
+        logits = self.forward(tokens)[-1, 0, :]
+
+        next_token = self.get_next_from_logits(logits)
+
+        next_token = torch.tensor([next_token]).to(tokens.device)
+
+        return next_token
 
     def complete_dialogue(self, sentence_ids, max_length=100):
         tokens = sentence_ids.clone()
         while len(tokens) < max_length:
             next_token = self.generate_next_token(tokens)
+            tokens = torch.cat([tokens, next_token], dim=-1)
+        return tokens.detach().cpu().numpy()
+
+    def generate_next_tokens(self, sentence_ids, n_tokens=10):
+        tokens = sentence_ids.clone()
+        next_tokens = torch.tensor([]).to(sentence_ids.device)
+        while len(next_tokens) < n_tokens:
+            next_token = self.generate_next_token(tokens)
+            next_token = next_token.reshape(-1, 1)
+            next_tokens = torch.cat([next_tokens, next_token])
+            tokens = torch.cat([tokens, next_token])
+        return next_tokens.long()
             tokens = torch.cat([tokens, next_token], dim=-1)
         return tokens.detach().cpu().numpy()
 
@@ -44,6 +61,7 @@ class BaseLanguageModel(nn.Module):
             next_token = self.generate_next_token(tokens)
             #print(next_token, end=' ')
         return utterances.numpy()
+
 
     def get_next_from_logits(self, logits, top=10):
         logits = logits.flatten().detach().cpu().numpy()
