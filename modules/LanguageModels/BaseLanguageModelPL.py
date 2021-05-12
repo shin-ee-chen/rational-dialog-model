@@ -27,9 +27,9 @@ class BaseLanguageModelPL(pl.LightningModule):
         ids_tensor = torch.tensor(encoding.ids).to(self.device)
 
 
-        completed_sentence_tokens = self.language_model.complete_sentence(ids_tensor, max_length)
+        completed_dialogue_tokens = self.language_model.complete_dialogue(ids_tensor, max_length)
         new_sentence = str(self.tokenizer.decode(
-            completed_sentence_tokens, 
+            completed_dialogue_tokens,
             skip_special_tokens=False
         )).replace(" #", "").replace("#", "")
 

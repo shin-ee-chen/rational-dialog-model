@@ -5,8 +5,6 @@ import torch
 from torch.utils.data import DataLoader
 import pytorch_lightning as pl
 from HighestNumber.HighestDataset import HighestDataset
-from HighestNumber.RationalExtractor import RationalExtractorGumbell, RationalExtractor
-from HighestNumber.model import LstmPL
 from HighestNumber.reinforce_rational_extraction import ReinforceRationalExtractor, HighestNumberLSTM, ReinforceModelPL
 
 max_epochs = 3
