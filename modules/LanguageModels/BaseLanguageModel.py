@@ -30,10 +30,20 @@ class BaseLanguageModel(nn.Module):
         tokens = sentence_ids.clone()
         while len(tokens) < max_length:
             next_token = self.generate_next_token(tokens)
-
             tokens = torch.cat([tokens, next_token], dim=-1)
         return tokens.detach().cpu().numpy()
 
+    def next_utterance(self, sentence_ids, sep_token, max_length=100):
+        tokens = sentence_ids.clone()
+        utterances = torch.tensor([], dtype = torch.int)
+        next_token = self.generate_next_token(tokens)
+        #print("next token: ", next_token)
+        while len(utterances) < max_length and next_token != sep_token:
+            tokens = torch.cat([tokens, next_token], dim=-1)
+            utterances = torch.cat([utterances, next_token], dim=-1)
+            next_token = self.generate_next_token(tokens)
+            #print(next_token, end=' ')
+        return utterances.numpy()
 
     def get_next_from_logits(self, logits, top=10):
         logits = logits.flatten().detach().cpu().numpy()
