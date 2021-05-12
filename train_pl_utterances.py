@@ -6,7 +6,7 @@ import torch
 from torch.utils.data import DataLoader
 import pytorch_lightning as pl
 
-from daily_dialog.Utterances import Utterances
+from daily_dialog.UtterancesDataset import UtterancesDataset
 from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
 from modules.LanguageModels.LstmLanguageModel import LSTMLM
 from modules.LanguageModels.LanguageModelPL import LMPL
@@ -29,11 +29,11 @@ print("get tokenizer")
 my_tokenizer = get_daily_dialog_tokenizer(tokenizer_location='./daily_dialog/tokenizer.json', )
 #my_tokenizer = get_daily_dialog_tokenizer()
 
-dataset_train = Utterances(my_tokenizer, subsets="full", split="train")
-dataset_test = Utterances(my_tokenizer, subsets="start", split="test")
+dataset_train = UtterancesDataset(my_tokenizer, subsets="full", split="train")
+dataset_test = UtterancesDataset(my_tokenizer, subsets="start", split="test")
 
-dataloader_train = DataLoader(dataset_train, batch_size=batch_size, collate_fn=Utterances.collate_fn)
-dataloader_test = DataLoader(dataset_test, batch_size=batch_size, collate_fn=Utterances.collate_fn)
+dataloader_train = DataLoader(dataset_train, batch_size=batch_size, collate_fn=UtterancesDataset.collate_fn)
+dataloader_test = DataLoader(dataset_test, batch_size=batch_size, collate_fn=UtterancesDataset.collate_fn)
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 if load_pretrained:

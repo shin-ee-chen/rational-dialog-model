@@ -2,7 +2,7 @@
 Experiment with Daily Dialog dataset
 '''
 from torch.utils.data import DataLoader
-from daily_dialog.Utterances import Utterances
+from daily_dialog.UtterancesDataset import UtterancesDataset
 from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
 import datasets
 
@@ -34,7 +34,7 @@ my_tokenizer = get_daily_dialog_tokenizer(tokenizer_location='./daily_dialog/tok
 # decoded_example = my_tokenizer.decode(tokenized_example)
 # print("decoded:   ", decoded_example)
 
-dataset_train = Utterances(my_tokenizer, split="train", batch_size=batch_size, subsets="full")
+dataset_train = UtterancesDataset(my_tokenizer, split="train", batch_size=batch_size, subsets="full")
 dataloader_train = DataLoader(dataset_train, batch_size=1, )
 
 def verify_batches(dl):

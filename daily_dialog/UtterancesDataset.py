@@ -2,21 +2,13 @@ from torch.utils.data import Dataset
 import datasets
 import torch
 from torch.nn.utils.rnn import pad_sequence
-import numpy as np
 import itertools
 import random
 
 
-class Utterances(Dataset):
+class UtterancesDataset(Dataset):
 
     def __init__(self, tokenizer, size=None, subsets="start", split="train"):
-        """
-        Args:
-            csv_file (string): Path to the csv file with annotations.
-            root_dir (string): Directory with all the images.
-            transform (callable, optional): Optional transform to be applied
-                on a sample.
-        """
         assert subsets in ["start", "end", "single", "full"], "subsets should be 'start', 'end', 'single, or 'full'"
         self.original_dataset = datasets.load_dataset("daily_dialog", split=split, )
         self.tokenizer = tokenizer
@@ -34,8 +26,8 @@ class Utterances(Dataset):
 
         # Split all the dialogues in subdialogues
         dialogue_samples = list(itertools.chain.from_iterable([
-            self.subdialogues(dialogue["dialog"], subsets) 
-            for i, dialogue in enumerate(self.original_dataset) if i < n  
+            self.subdialogues(dialogue["dialog"], subsets)
+            for i, dialogue in enumerate(self.original_dataset) if i < n
         ]))
 
         # Tokenize the samples
@@ -46,7 +38,7 @@ class Utterances(Dataset):
 
         # Now shuffle samples and sort on length (to prevent amount of padding in batches)
         random.shuffle(tokenized_samples)
-        sorted_samples = sorted(tokenized_samples, key=lambda x: len(x[0])*10 + len(x[1]) + random.randint(0,10) )
+        sorted_samples = sorted(tokenized_samples, key=lambda x: len(x[0]) * 10 + len(x[1]) + random.randint(0, 10))
         return sorted_samples
 
     def subdialogues(self, utterances, subsets):
@@ -66,10 +58,10 @@ class Utterances(Dataset):
             results = [
                 (utterances[start] + '[SEP]', utterances[start + 1] + '[SEP]')
                 for start in range(0, l - 1)
-            ] 
+            ]
         elif subsets == "start":
             results = [
-                ('[SEP]'.join(utterances[0:end])+ '[SEP]', utterances[end] + '[SEP]')
+                ('[SEP]'.join(utterances[0:end]) + '[SEP]', utterances[end] + '[SEP]')
                 for end in range(1, l)
             ]
         elif subsets == "end":
@@ -100,20 +92,19 @@ class Utterances(Dataset):
         '''
         Reshuffles the dataset
         '''
-        self.dataset = sorted(self.dataset, key=lambda x: len(x[0])*10 + len(x[1]) + random.randint(0,10) )
+        self.dataset = sorted(self.dataset, key=lambda x: len(x[0]) * 10 + len(x[1]) + random.randint(0, 10))
 
+    @staticmethod
     def collate_fn(items):
 
         inputs = torch.fliplr(pad_sequence(
             [torch.tensor(list(reversed(sample[0]))) for sample in items],
-            batch_first = True, 
-            padding_value = torch.tensor(0) # Padding code
-        )) 
+            batch_first=True,
+            padding_value=torch.tensor(0)  # Padding code
+        ))
         targets = pad_sequence(
-            [torch.tensor(sample[1]) for sample in items], 
-            batch_first = True, 
-            padding_value = torch.tensor(0) # Padding code
+            [torch.tensor(sample[1]) for sample in items],
+            batch_first=True,
+            padding_value=torch.tensor(0)  # Padding code
         )
         return inputs, targets
-
-
