@@ -9,7 +9,8 @@ import pytorch_lightning as pl
 from daily_dialog.NextNPredictionDataset import NextNPredictionDataset
 from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
 
-from daily_dialog.callbacks import FinishDialogueRationalizedCallback
+from daily_dialog.callbacks import FinishDialogueRationalizedCallback, ChangeInPerplexityCallback
+
 from modules.LanguageModels.LstmLanguageModel import LSTMLM
 from modules.ReinforceRationalExtractorLM import ReinforceRationalExtractorLM, RELMPL
 
@@ -20,7 +21,7 @@ size = int(5e2)
 test_size = int(1e2)
 
 max_epochs = 50
-batch_size = 32
+batch_size = 16
 embedding_dim = 128
 learning_rate = 1e-3
 
@@ -32,10 +33,10 @@ hparams = {
 
 my_tokenizer = get_daily_dialog_tokenizer(tokenizer_location='./daily_dialog/tokenizer.json', )
 
-train_dataset = NextNPredictionDataset(my_tokenizer, size=size)
+train_dataset = NextNPredictionDataset(my_tokenizer, size=size, batch_size=batch_size)
 dataloader_train = DataLoader(train_dataset, shuffle=True)
 
-test_dataset = NextNPredictionDataset(my_tokenizer, size=test_size, split="test")
+test_dataset = NextNPredictionDataset(my_tokenizer, size=test_size, split="test",  batch_size=batch_size)
 dataloader_test = DataLoader(test_dataset, )
 
 device = "cuda"
@@ -46,13 +47,19 @@ if load_pretrained:
 else:
     print("load fresh model")
     language_model = LSTMLM(my_tokenizer.get_vocab_size(), embedding_dim=embedding_dim).to(device)
-
+#Index 4 is the rmask token
+weights = torch.ones(my_tokenizer.get_vocab_size()).to(device)
+weights[4] = 0
+weights[0] = 0
 callbacks = [
+    ChangeInPerplexityCallback(dataloader_test, weight=weights),
     FinishDialogueRationalizedCallback(["[START] How ", "[START] What are you upto? "]),
     FinishDialogueRationalizedCallback(["[START] How ", "[START] What are you upto? "], with_rational=False),
     FinishDialogueRationalizedCallback(["[START] How ", "[START] What are you upto? "], with_rational=True, greedy_policy=True),
 ]
-loss_module = torch.nn.CrossEntropyLoss(ignore_index=4)
+
+
+loss_module = torch.nn.CrossEntropyLoss(weight=weights)
 rational_extractor = ReinforceRationalExtractorLM(embedding_size=embedding_dim,
                                                   embedding_input=my_tokenizer.get_vocab_size(), mask_token=4)
 
