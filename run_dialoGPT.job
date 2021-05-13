@@ -23,7 +23,7 @@ cd $HOME/rational-dialog-model
 source activate cdm
 # Run your code
 echo "running finetune_dialogpt.py"
-srun python -u finetune_dialogpt.py --model_checkpoint microsoft/DialoGPT-medium --max_epochs 8 --fine_tune_dataset mutual_friends --save_path finetuned/ialoGPT-mutual_friends-model
+srun python -u finetune_dialogpt.py --model_checkpoint microsoft/DialoGPT-medium --max_epochs 8 --fine_tune_dataset mutual_friends --save_path finetuned/dialoGPT-mutual_friends-model
 srun python -u finetune_dialogpt.py --model_checkpoint microsoft/DialoGPT-medium --max_epochs 8 --fine_tune_dataset daily_dialog --save_path finetuned/dialoGPT-daily_dialog-model
 echo "finish"
 

@@ -107,7 +107,7 @@ def finetune_model(config):
         args=training_args,
         train_dataset=lm_datasets["train"],
         eval_dataset=lm_datasets["validation"],
-        callbacks=[CompleteDialogueCallback]
+        callbacks=[]#[CompleteDialogueCallback]
     )
 
     trainer.train()
