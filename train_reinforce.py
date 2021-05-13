@@ -9,8 +9,8 @@ import pytorch_lightning as pl
 from daily_dialog.NextNPredictionDataset import NextNPredictionDataset
 from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
 
-from daily_dialog.callbacks import FinishDialogueRationalizedCallback
-from daily_dialog.callbacks_gerson import ChangeInPerplexityCallback
+from daily_dialog.callbacks import FinishDialogueRationalizedCallback, ChangeInPerplexityCallback
+
 from modules.LanguageModels.LstmLanguageModel import LSTMLM
 from modules.ReinforceRationalExtractorLM import ReinforceRationalExtractorLM, RELMPL
 
