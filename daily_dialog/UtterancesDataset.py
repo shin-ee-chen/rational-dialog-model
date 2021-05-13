@@ -8,38 +8,81 @@ import random
 
 class UtterancesDataset(Dataset):
 
-    def __init__(self, tokenizer, size=None, subsets="start", split="train"):
+    def __init__(self, tokenizer, size=None, subsets="start", perturbation=None, split="train"):
         assert subsets in ["start", "end", "single", "full"], "subsets should be 'start', 'end', 'single, or 'full'"
+        assert perturbation in [None, "utterance_dialogue", "words_dialogue", "words_utterance"]
         self.original_dataset = datasets.load_dataset("daily_dialog", split=split, )
+        self.dialogues = [item["dialog"] for item in self.original_dataset]
+        self.size = len(self.dialogues)
+        if (size != None) and (size > 0) and (size < self.size):
+            self.dialogues = random.sample(self.dialogues, size)
+            self.size = size
         self.tokenizer = tokenizer
-        self.size = size
         self.subsets = subsets
-        self.dataset = self.process_dataset(subsets)
+        self.dataset = self.process_dataset(subsets, perturbation)
 
-    def process_dataset(self, subsets):
+    def process_dataset(self, subsets, perturbation):
         '''
         Returns tokenized subsets of the dataset.
         Output is a list with (context, response) pairs, sorted on combined length
         '''
 
-        n = self.size if self.size else len(self.original_dataset)
-
-        # Split all the dialogues in subdialogues
+        # Split all the dialogues in subdialogues --> ([utterances in context], reponse)
         dialogue_samples = list(itertools.chain.from_iterable([
-            self.subdialogues(dialogue["dialog"], subsets)
-            for i, dialogue in enumerate(self.original_dataset) if i < n
+            self.subdialogues(dialogue, subsets)
+            for dialogue in self.dialogues
         ]))
+
+        # Perturn the context, based on specified perturbation option
+        perturbed_samples = self.perturb_dataset(dialogue_samples, perturbation)
 
         # Tokenize the samples
         tokenized_samples = [
-            (self.tokenizer.encode(context).ids, self.tokenizer.encode(response).ids)
-            for (context, response) in dialogue_samples
+            (self.tokenizer.encode((' [SEP] ').join(context) + ' [SEP] ').ids, self.tokenizer.encode(response + ' [SEP] ').ids)
+            for (context, response) in perturbed_samples
         ]
 
         # Now shuffle samples and sort on length (to prevent amount of padding in batches)
         random.shuffle(tokenized_samples)
         sorted_samples = sorted(tokenized_samples, key=lambda x: len(x[0]) * 10 + len(x[1]) + random.randint(0, 10))
         return sorted_samples
+
+    def perturb_dataset(self, samples, perturbation):
+        # print("DEBUG: Perturbation = ", perturbation)
+
+        if perturbation == None:
+
+            # No perturbation, so just return the dialogues in normal order
+            result = samples
+
+        elif perturbation == "utterance_dialogue":
+
+            # Shuffle order of utterances within dialogue
+            result = [(random.sample(context, len(context)), response) for (context, response) in samples]
+
+        elif perturbation == "words_utterance":
+
+            # Shuffle order of words within utterance, but keep order of utterances
+            result = [
+                ([self.shuffled_utterance(u) for u in context], response) 
+                for (context, response) in samples
+            ]
+
+        elif perturbation == "words_dialogue":
+
+            # Shuffle order of words accross the whole dialogue
+            result = [
+                ([self.shuffled_utterance(" ".join(context))], response) 
+                for (context, response) in samples
+            ]
+
+        else:
+            raise AssertionError("Unkown perturbation: " + perturbation)
+
+        # print("DEBUG: result of perturbations")
+        # print(result)
+        return result
+
 
     def subdialogues(self, utterances, subsets):
         '''
@@ -51,42 +94,49 @@ class UtterancesDataset(Dataset):
         If subsets == 'end', the all subsets END at utterance length-1
         If subsets == 'single', context is just a single utterance
         '''
+        # print("DEBUG subdialogues ", subsets, '\n', utterances)
         l = len(utterances)
         if l < 2:
             return None
         if subsets == "single":
             results = [
-                (utterances[start] + '[SEP]', utterances[start + 1] + '[SEP]')
+                ([utterances[start]], utterances[start + 1])
                 for start in range(0, l - 1)
             ]
         elif subsets == "start":
             results = [
-                ('[SEP]'.join(utterances[0:end]) + '[SEP]', utterances[end] + '[SEP]')
+                (utterances[0:end], utterances[end])
                 for end in range(1, l)
             ]
         elif subsets == "end":
             results = [
-                ('[SEP]'.join(utterances[start:l - 1]) + '[SEP]', utterances[l - 1] + '[SEP]')
+                (utterances[start:l - 1], utterances[l - 1])
                 for start in range(0, l - 1)
             ]
         elif subsets == "full":
             results = [
-                ('[SEP]'.join(utterances[start:end]) + '[SEP]', utterances[end] + '[SEP]')
+                (utterances[start:end], utterances[end])
                 for start in range(0, l - 1)
                 for end in range(start + 1, l)
             ]
         else:
             results = None
-        # print(subsets, '\n', utterances)
+
         # for i, s in enumerate(results):
         #     print(i, s)
         return results
+
+    def shuffled_utterance(self, utterance):
+        words = utterance.split()
+        random.shuffle(words)
+        return(' '.join(words))
 
     def __len__(self):
         return len(self.dataset)
 
     def __getitem__(self, idx):
         return self.dataset[idx]
+
 
     def reshuffle_dataset(self):
         '''
@@ -96,6 +146,7 @@ class UtterancesDataset(Dataset):
 
     @staticmethod
     def collate_fn(items):
+        # print(items)
 
         inputs = torch.fliplr(pad_sequence(
             [torch.tensor(list(reversed(sample[0]))) for sample in items],
@@ -107,4 +158,7 @@ class UtterancesDataset(Dataset):
             batch_first=True,
             padding_value=torch.tensor(0)  # Padding code
         )
+        # print("Result of collate")
+        # print("Inputs: ", inputs)
+        # print("Targets: ", targets)
         return inputs, targets
