@@ -76,9 +76,12 @@ class FinishDialogueRationalizedCallback(pl.Callback):
                         zip(completed_sentences, self.start_of_dialogues)):
                     title = '_'.join(start_dialogue[7:].replace("?", "").split())
 
-                    text_file = '.\\' + log_dir + "\{}_{}_{}_{}.txt".format(title, trainer.current_epoch,
+                    #text_file = '.\\' + log_dir + "\{}_{}_{}_{}.txt".format(title, trainer.current_epoch,
+                    #                                                        "with_rational" if self.with_rational else "no_rational",
+                    #                                                        "greedy" if self.greedy_policy else "probs")
+                    text_file = os.path.join(log_dir, "\{}_{}_{}_{}.txt".format(title, trainer.current_epoch,
                                                                             "with_rational" if self.with_rational else "no_rational",
-                                                                            "greedy" if self.greedy_policy else "probs")
+                                                                            "greedy" if self.greedy_policy else "probs"))
                     ### We write it to a text file:
                     print(text_file)
                     with open(text_file, 'w+', encoding='utf-8') as f:
