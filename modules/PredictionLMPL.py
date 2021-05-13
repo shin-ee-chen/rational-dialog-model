@@ -101,8 +101,8 @@ class PredictionLMPL(pl.LightningModule):
 
         return batch_out["loss"]
 
-    def complete_dialogues(self, sentences, total_length):
-        return [self.complete_dialogue(sentence, total_length=total_length) for sentence in sentences]
+    def complete_dialogues(self, sentences, total_length, with_rational=True, greedy_rationals=True):
+        return [self.complete_dialogue(sentence, total_length=total_length, with_rational=with_rational) for sentence in sentences]
 
     def complete_dialogue(self, sentence, n_rational=10, total_length=100, with_rational=True):
 
@@ -152,7 +152,7 @@ class PredictionLMPL(pl.LightningModule):
 
         sentence = self.tokenizer.decode(all_tokens, skip_special_tokens=False).replace(" #", "").replace("#", "")
 
-        return {"complete_sentence": sentence, "rationals": rationals, "rationalized_input": rationalized_input,
+        return {"completed_dialogue": sentence, "rationals": rationals, "rationalized_input": rationalized_input,
                 "response": sentences}
 
     def configure_optimizers(
