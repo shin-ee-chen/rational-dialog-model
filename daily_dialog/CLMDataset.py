@@ -10,6 +10,7 @@ import torch
 from torch.utils.data import Dataset, DataLoader
 import itertools
 import numpy as np
+from transformers import RobertaTokenizerFast
 
 flatten = itertools.chain.from_iterable
 
@@ -54,8 +55,11 @@ class CLMDataset(Dataset):
         result = []
         for final_sample in final_samples:
             temp = [' '.join(s) for s in final_sample]
-            result.append(torch.stack([torch.tensor(enc.ids) for enc in self.tokenizer.encode_batch(temp)]))
+            if type(self.tokenizer) != RobertaTokenizerFast:
 
+                result.append(torch.stack([enc.ids for enc in self.tokenizer.encode_batch(temp)]))
+            else:
+                result.append(torch.tensor(self.tokenizer(temp, padding=True, add_special_tokens=False).input_ids))
         return result
 
     def get_sorted_samples(self):
@@ -63,8 +67,15 @@ class CLMDataset(Dataset):
         Sorts the samples in lists of approximatly the same size.
         '''
         dialogues = ['[START] ' + '[SEP]'.join(dialogue["dialog"]) for dialogue in self.original_dataset]
-        tokenized_dataset = [self.tokenizer.encode(sample).tokens for sample in dialogues]
 
+        if type(self.tokenizer) != RobertaTokenizerFast:
+            dialogues = ['[START] ' + '[SEP]'.join(dialogue["dialog"]) for dialogue in self.original_dataset]
+
+            tokenized_dataset = [self.tokenizer.encode(sample).tokens for sample in dialogues]
+        else:
+            dialogues = ['[START] ' + '<s>'.join(dialogue["dialog"]) for dialogue in self.original_dataset]
+
+            tokenized_dataset = [self.tokenizer.tokenize(sample) for sample in dialogues]
         sorted_results = sorted(tokenized_dataset, key=lambda x: len(x))
 
         # Next we create lists of utterances that are approximatly the same size. We shuffle the utterances within such a list.

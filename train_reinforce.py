@@ -1,5 +1,5 @@
 '''
-Trains a language model on the daily dialog set with rational extraction.
+Trains a language model with a rational on the daily dialog set.
 '''
 
 import torch
@@ -11,12 +11,11 @@ from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
 
 from daily_dialog.callbacks import FinishDialogueRationalizedCallback
 from modules.LanguageModels.LstmLanguageModel import LSTMLM
-from modules.PredictionLMPL import PredictionLMPL
-from modules.kurmaswamy.KumaRationalExtractor import KumaRationalExtractor
-
+from modules.ReinforceRationalExtractorLM import ReinforceRationalExtractorLM, RELMPL
 
 save_path = './small_lm_pretrained.pt'
 load_pretrained = True
+teacher_forcing = True
 size = int(5e2)
 test_size = int(1e2)
 
@@ -27,8 +26,8 @@ learning_rate = 1e-3
 
 hparams = {
     "learning_rate": learning_rate,
-    "teacher_forcing": True,
-    "freeze_language_ml": True
+    "teacher_forcing": teacher_forcing,
+    "freeze_language_ml": False
 }
 
 my_tokenizer = get_daily_dialog_tokenizer(tokenizer_location='./daily_dialog/tokenizer.json', )
@@ -43,21 +42,21 @@ device = "cuda"
 
 if load_pretrained:
     print("load pretrained_model")
-
     language_model = LSTMLM.load(save_path).to(device)
 else:
     print("load fresh model")
     language_model = LSTMLM(my_tokenizer.get_vocab_size(), embedding_dim=embedding_dim).to(device)
 
 callbacks = [
-    FinishDialogueRationalizedCallback(["[START] How ", "[START] What are you upto? "])
+    FinishDialogueRationalizedCallback(["[START] How ", "[START] What are you upto? "]),
+    FinishDialogueRationalizedCallback(["[START] How ", "[START] What are you upto? "], with_rational=False),
+    FinishDialogueRationalizedCallback(["[START] How ", "[START] What are you upto? "], with_rational=True, greedy_policy=True),
 ]
+loss_module = torch.nn.CrossEntropyLoss(ignore_index=4)
+rational_extractor = ReinforceRationalExtractorLM(embedding_size=embedding_dim,
+                                                  embedding_input=my_tokenizer.get_vocab_size(), mask_token=4)
 
-loss_module = torch.nn.CrossEntropyLoss()
-
-rational_extractor = KumaRationalExtractor(embedding_dim)
-
-model = PredictionLMPL(language_model, rational_extractor, my_tokenizer, loss_module, hparams=hparams)
+model = RELMPL(language_model, rational_extractor, my_tokenizer, loss_module, hparams=hparams)
 
 trainer = pl.Trainer(default_root_dir='logs',
                      checkpoint_callback=False,

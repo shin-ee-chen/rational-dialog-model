@@ -4,6 +4,8 @@ from torch.nn.utils.rnn import pad_sequence
 from torch.utils.data import Dataset, DataLoader
 import itertools
 
+from transformers import RobertaTokenizerFast
+
 flatten = itertools.chain.from_iterable
 
 
@@ -13,22 +15,24 @@ class NextNPredictionDataset(Dataset):
 
     '''
 
-    def __init__(self, tokenizer, size=None, transform=None, split="train", prediction_size=10, batch_size=64):
-        """
+    def __init__(self, tokenizer, size=None, split="train", prediction_size=10, batch_size=64):
 
-        """
         self.original_dataset = datasets.load_dataset("daily_dialog", split=split, )
         self.tokenizer = tokenizer
         # Next we process the dataset to split it up properly.
         self.size = size
         self.prediction_size = prediction_size
-        self.dataset = self.process_dataset()
         self.batch_size = batch_size
+        self.dataset = self.process_dataset()
 
     def process_dataset(self):
         ### First we tokenize each example
         dialogues = ['[START] ' + '[SEP]'.join(dialogue["dialog"]) for dialogue in self.original_dataset]
-        tokenized_dataset = [self.tokenizer.encode(sample).ids for sample in dialogues]
+
+        if type(self.tokenizer) != RobertaTokenizerFast:
+            tokenized_dataset = [self.tokenizer.encode(sample).ids for sample in dialogues]
+        else:
+            tokenized_dataset = [self.tokenizer.encode(sample) for sample in dialogues]
 
         ### Next we split it up
         result = []
@@ -40,9 +44,7 @@ class NextNPredictionDataset(Dataset):
 
         sorted_results = sorted(result, key=lambda x: len(x[0]))
 
-
         final_samples = []
-
 
         current_sample_len = 0
         current_batch = []
