@@ -8,8 +8,8 @@ import pytorch_lightning as pl
 
 from daily_dialog.CLMDataset import CLMDataset
 from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
-from daily_dialog.callbacks import FinishDialogueCallback, ReshuffleDatasetCallback
-from modules.LanguageModels.TranformerLanguageModelPL import TransformerLMPL
+from utils.callbacks import FinishDialogueCallback, ReshuffleDatasetCallback
+from modules.pytorch_lightning.TranformerLanguageModelPL import TransformerLMPL
 from modules.LanguageModels.TransformerLanguageModel import TransformerLM
 
 save_path = './transformer_lm_pretrained_2.pt'

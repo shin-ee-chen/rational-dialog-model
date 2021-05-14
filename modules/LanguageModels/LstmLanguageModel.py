@@ -9,7 +9,7 @@ from torch.nn.utils.rnn import PackedSequence
 from modules.LanguageModels.BaseLanguageModel import BaseLanguageModel
 
 
-class LSTMLM(BaseLanguageModel):
+class LSTMLanguageModel(BaseLanguageModel):
     ''''
     A simple lstm language model
     '''
@@ -26,9 +26,6 @@ class LSTMLM(BaseLanguageModel):
                             )
         self.relu = F.relu
         self.classification_layer = nn.Linear(hidden_state_size, num_embeddings)
-
-    def to_embedding(self, x):
-        return self.embedding(x)
 
     def forward_embedding(self, embedding, teacher_forcing=True, n_to_predict=0):
         if teacher_forcing:
@@ -65,8 +62,6 @@ class LSTMLM(BaseLanguageModel):
         return classification
 
     def forward(self, x):
-        if type(x) == PackedSequence:
-            return self.packed_forward(x)
         embedding = self.to_embedding(x)
 
         out, hidden = self.lstm(embedding)
@@ -76,19 +71,6 @@ class LSTMLM(BaseLanguageModel):
 
         return classification
 
-    def packed_forward(self, x):
-        data = x.data
-
-        embedding = self.embedding(data)
-
-        embedding = PackedSequence(embedding, x.batch_sizes, sorted_indices=x.sorted_indices,
-                                   unsorted_indices=x.unsorted_indices)
-        out, hidden = self.lstm(embedding)
-        out = F.relu(out.data)
-        result = self.classification_layer(out.reshape(-1, self.hidden_state_size))
-        return PackedSequence(result, x.batch_sizes, sorted_indices=x.sorted_indices,
-                              unsorted_indices=x.unsorted_indices)
-
     def generate_next_tokens_from_embedding(self, embedding, n_tokens=10):
         tokens = []
         ## Initialize:
@@ -97,7 +79,7 @@ class LSTMLM(BaseLanguageModel):
         out = F.relu(out[-1, 0])  # Get the latest token
 
         logits = self.classification_layer(out)
-        next_token = self.get_next_from_logits(logits)
+        next_token = self.get_next_token_from_logits(logits)
 
         tokens.append(next_token)
         next_token_tensor = torch.tensor([[next_token]]).to(embedding.device)
@@ -109,22 +91,12 @@ class LSTMLM(BaseLanguageModel):
 
             out = F.relu(out)
             logits = self.classification_layer(out)
-            next_token = self.get_next_from_logits(logits)
+            next_token = self.get_next_token_from_logits(logits)
 
             tokens.append(next_token)
             next_token_tensor = torch.tensor([[next_token]]).to(embedding.device)
             next_embedding = self.embedding(next_token_tensor)
         return tokens
-
-    def generate_next_token(self, tokens):
-        tokens = tokens.view(-1, 1)
-        logits = self.forward(tokens)[-1, 0, :]
-
-        next_token = self.get_next_from_logits(logits)
-
-        next_token = torch.tensor([next_token]).to(tokens.device)
-
-        return next_token
 
     def save(self, location):
         torch.save({
@@ -141,7 +113,7 @@ class LSTMLM(BaseLanguageModel):
     @classmethod
     def load(self, location):
         info = torch.load(location)
-        model = LSTMLM(**info['kwargs'])
+        model = LSTMLanguageModel(**info['kwargs'])
         model.load_state_dict(info['model_state_dict'])
         model.train()
         return model

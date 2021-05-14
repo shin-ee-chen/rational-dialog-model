@@ -10,7 +10,7 @@ import pytorch_lightning as pl
 from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
 
 from old.RationalLanguageModelPL import RationalLMPL
-from daily_dialog.callbacks import FinishDialogueCallback
+from utils.callbacks import FinishDialogueCallback
 from old.language_model import PackedLSTMLM
 from modules.RationalExtractor import PackedRationalExtractor
 from utils import collate_fn

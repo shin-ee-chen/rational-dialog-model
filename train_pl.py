@@ -8,9 +8,9 @@ import pytorch_lightning as pl
 
 from daily_dialog.CLMDataset import CLMDataset
 from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
-from modules.LanguageModels.LstmLanguageModel import LSTMLM
-from modules.LanguageModels.LanguageModelPL import LMPL
-from daily_dialog.callbacks import FinishDialogueCallback, ReshuffleDatasetCallback
+from modules.LanguageModels.LstmLanguageModel import LSTMLanguageModel
+from modules.pytorch_lightning.LightningLanguageModel import LightningLanguageModel
+from utils.callbacks import FinishDialogueCallback, ReshuffleDatasetCallback
 
 
 
@@ -39,11 +39,11 @@ device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 if load_pretrained:
     print("load pretrained_model")
-    language_model = LSTMLM.load(save_path).to(device)
+    language_model = LSTMLanguageModel.load(save_path).to(device)
 else:
     print("load fresh model")
-    language_model = LSTMLM(my_tokenizer.get_vocab_size(), embedding_dim=embedding_dim, num_layers=num_layers,
-                            hidden_state_size=hidden_state_size).to(device)
+    language_model = LSTMLanguageModel(my_tokenizer.get_vocab_size(), embedding_dim=embedding_dim, num_layers=num_layers,
+                                       hidden_state_size=hidden_state_size).to(device)
 
 callbacks = [
     FinishDialogueCallback(["[START] How are you doing today?", "[START] What are you upto? "]),
@@ -52,7 +52,7 @@ callbacks = [
 
 loss_module = torch.nn.CrossEntropyLoss(ignore_index=0)
 
-model = LMPL(language_model, my_tokenizer, loss_module, hparams=hparams)
+model = LightningLanguageModel(language_model, my_tokenizer, loss_module, hparams=hparams)
 
 trainer = pl.Trainer(default_root_dir='logs',
                      checkpoint_callback=False,

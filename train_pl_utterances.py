@@ -7,11 +7,11 @@ import pytorch_lightning as pl
 
 from daily_dialog.UtterancesDataset import UtterancesDataset
 from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
-from modules.LanguageModels.LstmLanguageModel import LSTMLM
-from modules.LanguageModels.LanguageModelPL import LMPL
-from daily_dialog.callbacks import ReshuffleDatasetCallback, FinishDialogueCallback
+from modules.LanguageModels.LstmLanguageModel import LSTMLanguageModel
+from modules.pytorch_lightning.LightningLanguageModel import LightningLanguageModel
+from utils.callbacks import ReshuffleDatasetCallback, FinishDialogueCallback
 
-from utils import get_lastest_model_name, generate_model_name
+from utils.utils import get_lastest_model_name, generate_model_name
 
 save_path = r'./saved_models/'
 load_pretrained = True
@@ -31,17 +31,17 @@ my_tokenizer = get_daily_dialog_tokenizer(tokenizer_location='./daily_dialog/tok
 dataset_train = UtterancesDataset(my_tokenizer, subsets="start", split="train", size=size)
 dataset_test = UtterancesDataset(my_tokenizer, subsets="start", split="test", )
 
-dataloader_train = DataLoader(dataset_train, batch_size=batch_size, collate_fn=UtterancesDataset.collate_fn)
-dataloader_test = DataLoader(dataset_test, batch_size=batch_size, collate_fn=UtterancesDataset.collate_fn)
+dataloader_train = DataLoader(dataset_train, batch_size=batch_size, collate_fn=UtterancesDataset.get_collate_fn())
+dataloader_test = DataLoader(dataset_test, batch_size=batch_size, collate_fn=UtterancesDataset.get_collate_fn())
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 if load_pretrained:
     model_name = get_lastest_model_name(save_path)
     print("load pretrained_model: ", model_name)
-    language_model = LSTMLM.load(model_name).to(device)
+    language_model = LSTMLanguageModel.load(model_name).to(device)
 else:
     print("load fresh model")
-    language_model = LSTMLM(
+    language_model = LSTMLanguageModel(
         my_tokenizer.get_vocab_size(),
         embedding_dim=embedding_dim,
         num_layers=num_layers,
@@ -55,7 +55,7 @@ callbacks = [
 
 loss_module = torch.nn.CrossEntropyLoss(ignore_index=0)
 hparams = {"learning_rate": learning_rate}
-model = LMPL(language_model, my_tokenizer, loss_module, hparams=hparams).to(device)
+model = LightningLanguageModel(language_model, my_tokenizer, loss_module, hparams=hparams).to(device)
 
 print("training")
 trainer = pl.Trainer(
@@ -66,7 +66,6 @@ trainer = pl.Trainer(
     log_every_n_steps=1,
     progress_bar_refresh_rate=0 if on_lisa else 1,
     callbacks=[] if on_lisa else callbacks,
-    gradient_clip_val=2.0
 )
 trainer.logger._default_hp_metric = None  # Optional logging argument that we don't need
 

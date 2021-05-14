@@ -8,7 +8,7 @@ import random
 
 class UtterancesDataset(Dataset):
 
-    def __init__(self, tokenizer, size=None, subsets="start", perturbation=None, split="train"):
+    def __init__(self, tokenizer, size=None, subsets="start", perturbation=None, split="train", ):
         assert subsets in ["start", "end", "single", "full"], "subsets should be 'start', 'end', 'single, or 'full'"
         assert perturbation in [None, "utterance_dialogue", "words_dialogue", "words_utterance"]
         self.original_dataset = datasets.load_dataset("daily_dialog", split=split, )
@@ -20,6 +20,7 @@ class UtterancesDataset(Dataset):
         self.tokenizer = tokenizer
         self.subsets = subsets
         self.dataset = self.process_dataset(subsets, perturbation)
+
 
     def process_dataset(self, subsets, perturbation):
         '''
@@ -44,7 +45,7 @@ class UtterancesDataset(Dataset):
 
         # Now shuffle samples and sort on length (to prevent amount of padding in batches)
         random.shuffle(tokenized_samples)
-        sorted_samples = sorted(tokenized_samples, key=lambda x: len(x[0]) * 10 + len(x[1]) + random.randint(0, 10))
+        sorted_samples = sorted(tokenized_samples, key=lambda x: len(x[0]) +  len(x[1]) + random.randint(0, 10))
         return sorted_samples
 
     def perturb_dataset(self, samples, perturbation):
@@ -145,20 +146,20 @@ class UtterancesDataset(Dataset):
         self.dataset = sorted(self.dataset, key=lambda x: len(x[0]) * 10 + len(x[1]) + random.randint(0, 10))
 
     @staticmethod
-    def collate_fn(items):
-        # print(items)
-
-        inputs = torch.fliplr(pad_sequence(
-            [torch.tensor(list(reversed(sample[0]))) for sample in items],
-            batch_first=True,
-            padding_value=torch.tensor(0)  # Padding code
-        ))
-        targets = pad_sequence(
-            [torch.tensor(sample[1]) for sample in items],
-            batch_first=True,
-            padding_value=torch.tensor(0)  # Padding code
-        )
-        # print("Result of collate")
-        # print("Inputs: ", inputs)
-        # print("Targets: ", targets)
-        return inputs, targets
+    def get_collate_fn(padding_value=2):
+        def collate_fn(items):
+            inputs = torch.fliplr(pad_sequence(
+                [torch.tensor(list(reversed(sample[0]))) for sample in items],
+                batch_first=True,
+                padding_value=padding_value  # Padding code
+            ))
+            targets = pad_sequence(
+                [torch.tensor(sample[1]) for sample in items],
+                batch_first=True,
+                padding_value=padding_value  # Padding code
+            )
+            # print("Result of collate")
+            # print("Inputs: ", inputs)
+            # print("Targets: ", targets)
+            return inputs, targets
+        return collate_fn

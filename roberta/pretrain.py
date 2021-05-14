@@ -1,18 +1,14 @@
 '''
 Trains a language model on the daily dialog set.
 '''
-import datasets
 import torch
 from torch.utils.data import DataLoader
 import pytorch_lightning as pl
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 from daily_dialog.CLMDataset import CLMDataset
-from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
-from daily_dialog.NextNPredictionDataset import NextNPredictionDataset
-from modules.LanguageModels.LstmLanguageModel import LSTMLM
-from modules.LanguageModels.LanguageModelPL import LMPL, RobertaMLPL
-from daily_dialog.callbacks import FinishDialogueCallback, ReshuffleDatasetCallback
+from modules.pytorch_lightning.LightningLanguageModel import RobertaMLPL
+from utils.callbacks import FinishDialogueCallback
 from roberta.wrapper import PretrainedWrapper
 
 tokenizer = AutoTokenizer.from_pretrained("distilroberta-base")

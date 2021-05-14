@@ -4,10 +4,10 @@ from torch.utils.data import DataLoader
 import pytorch_lightning as pl
 
 from daily_dialog.NextNPredictionDataset import NextNPredictionDataset
-from daily_dialog.callbacks import FinishDialogueRationalizedCallback
+from utils.callbacks import FinishDialogueRationalizedCallback
 from roberta.wrapper import PretrainedWrapper
 
-from modules.PredictionLMPL import PredictionLMPL
+from modules.pytorch_lightning.PredictionLMPL import PredictionLMPL
 from modules.RationalExtractor import RationalExtractor
 
 tokenizer = AutoTokenizer.from_pretrained("distilroberta-base")

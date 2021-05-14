@@ -9,9 +9,9 @@ import pytorch_lightning as pl
 from daily_dialog.NextNPredictionDataset import NextNPredictionDataset
 from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
 
-from daily_dialog.callbacks import FinishDialogueRationalizedCallback
-from modules.LanguageModels.LstmLanguageModel import LSTMLM
-from modules.PredictionLMPL import PredictionLMPL
+from utils.callbacks import FinishDialogueRationalizedCallback
+from modules.LanguageModels.LstmLanguageModel import LSTMLanguageModel
+from modules.pytorch_lightning.PredictionLMPL import PredictionLMPL
 from modules.RationalExtractor import RationalExtractor
 
 save_path = './small_lm_pretrained.pt'
@@ -45,10 +45,10 @@ device = "cuda"
 if load_pretrained:
     print("load pretrained_model")
 
-    language_model = LSTMLM.load(save_path).to(device)
+    language_model = LSTMLanguageModel.load(save_path).to(device)
 else:
     print("load fresh model")
-    language_model = LSTMLM(my_tokenizer.get_vocab_size(), embedding_dim=embedding_dim).to(device)
+    language_model = LSTMLanguageModel(my_tokenizer.get_vocab_size(), embedding_dim=embedding_dim).to(device)
 
 callbacks = [
     FinishDialogueRationalizedCallback(["[START] How ", "[START] What are you upto? "]),

@@ -2,7 +2,7 @@
 The dataset of causal language modelling.
 Batch same sizes together such that we use minimal padding.
 '''
-from collections import Counter
+
 
 import datasets
 import torch
