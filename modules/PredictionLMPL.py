@@ -106,7 +106,7 @@ class PredictionLMPL(pl.LightningModule):
 
     def complete_dialogue(self, sentence, n_rational=10, total_length=100, with_rational=True):
 
-        if type(self.tokenizer) == Tokenizer:
+        if type(self.tokenizer) == Tokenizer: #huggingface tokenizer
             encoding = self.tokenizer.encode(sentence).ids
         else:
             encoding = self.tokenizer.encode(sentence)
@@ -134,9 +134,7 @@ class PredictionLMPL(pl.LightningModule):
                 embedding = rational["masked_embedding"]
             else:
                 rational_input = self.tokenizer.decode(ids_tensor.flatten().flatten().detach().cpu().numpy(),
-                                                       skip_special_tokens=False).replace(" #",
-                                                                                          "").replace(
-                    "#", "")
+                                                       skip_special_tokens=False).replace(" #","").replace("#", "")
                 rationalized_input.append(rational_input)
                 rationals.append(torch.tensor([]))
                 embedding = self.language_model.to_embedding(ids_tensor)
@@ -144,8 +142,7 @@ class PredictionLMPL(pl.LightningModule):
             next_ids = self.language_model.generate_next_tokens_from_embedding(embedding, n_tokens=n_rational)
 
             all_tokens += next_ids
-            sentences.append(
-                self.tokenizer.decode(next_ids, skip_special_tokens=False).replace(" #", "").replace("#", ""))
+            sentences.append(self.tokenizer.decode(next_ids, skip_special_tokens=False).replace(" #", "").replace("#", ""))
             ids_tensor = torch.tensor(all_tokens).to(self.device)
 
             ids_tensor = ids_tensor.unsqueeze(1)

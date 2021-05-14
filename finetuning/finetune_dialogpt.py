@@ -99,7 +99,7 @@ def finetune_model(config):
         num_train_epochs=config.max_epochs,
         load_best_model_at_end = True,
         save_strategy='epoch',
-        save_total_limit=5
+        save_total_limit=2
     )
 
     trainer = Trainer(
