@@ -81,11 +81,12 @@ class FinishDialogueRationalizedCallback(pl.Callback):
                     ### We write it to a text file:
                     print(text_file)
                     with open(text_file, 'w+', encoding='utf-8') as f:
+                        f.write('Rationalized input ------> Response\n')
                         for rationalized_input, response in zip(completed_sentence["rationalized_input"],
                                                                 completed_sentence["response"]):
-                            f.write(rationalized_input + '->' + response + '\n')
+                            f.write(rationalized_input + ' ------> ' + response + '\n')
+                        f.write('\n\nCompleted dialogue:\n')    
                         f.write(completed_sentence["completed_dialogue"])
-
         pl_module.train()
 
 

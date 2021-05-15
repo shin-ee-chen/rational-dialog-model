@@ -44,5 +44,5 @@ class PretrainedWrapper(BaseLanguageModel):
             next_embedding = self.embedding(next_token_tensor)
         return tokens
 
-    def generate(self, tokenized_sentence):
-        return self.lm.generate(tokenized_sentence, max_length=1000)
+    def generate_sentence_from_tokenized_input(self, tokenized_sentence):
+        return self.lm.generate(tokenized_sentence, max_length=50, num_beams=5, early_stopping=True)
