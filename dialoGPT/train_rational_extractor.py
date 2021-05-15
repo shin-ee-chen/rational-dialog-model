@@ -14,8 +14,9 @@ from roberta.wrapper import PretrainedWrapper
 from modules.PredictionLMPL import PredictionLMPL
 from modules.RationalExtractor import RationalExtractor #Rational extractor using the gumbal softmax trick 
 
-pretrained_model = 'microsoft/DialoGPT-small'
-tokenizer = AutoTokenizer.from_pretrained(pretrained_model)
+pretrained_tokenizer = 'microsoft/DialoGPT-small'
+pretrained_model = './finetuning/saved_models/dialoGPT-daily_dialog-model'
+tokenizer = AutoTokenizer.from_pretrained(pretrained_tokenizer)
 language_model = AutoModelForCausalLM.from_pretrained(pretrained_model)
 
 lm = PretrainedWrapper(language_model)
