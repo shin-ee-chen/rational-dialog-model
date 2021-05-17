@@ -1,6 +1,10 @@
 import os
+from typing import Any
 
 import pytorch_lightning as pl
+from pytorch_lightning import LightningModule
+
+from misc.old.NextNPredictionDataset import postprocess_dataloader_out
 
 
 class FinishDialogueCallback(pl.Callback):
@@ -15,13 +19,14 @@ class FinishDialogueCallback(pl.Callback):
         self.sentences = sentences
         self.reaction_length = 100
 
-    def on_epoch_end(self, trainer, pl_module):
+
+    def on_train_epoch_end(self, trainer, pl_module: LightningModule, outputs: Any):
         pl_module.eval()
         if (trainer.current_epoch + 1) % self.every_n_epochs == 0:
 
             completed_sentences = pl_module.complete_dialogues(self.sentences, self.reaction_length)
             for i, s in enumerate(completed_sentences):
-                print("----- ",i, '\n', s)
+                print("----- ", i, '\n', s)
         pl_module.train()
 
 
@@ -58,7 +63,7 @@ class FinishDialogueRationalizedCallback(pl.Callback):
         self.with_rational = with_rational
         self.greedy_policy = greedy_policy
 
-    def on_epoch_end(self, trainer, pl_module):
+    def on_train_epoch_end(self, trainer, pl_module, outputs):
         """
         This function is called after every epoch.
         """

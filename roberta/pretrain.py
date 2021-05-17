@@ -6,7 +6,7 @@ from torch.utils.data import DataLoader
 import pytorch_lightning as pl
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
-from daily_dialog.CLMDataset import CLMDataset
+from misc.old.CLMDataset import CLMDataset
 from modules.pytorch_lightning.LightningLanguageModel import RobertaMLPL
 from utils.callbacks import FinishDialogueCallback
 from roberta.wrapper import PretrainedWrapper

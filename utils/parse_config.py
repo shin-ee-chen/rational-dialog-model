@@ -8,6 +8,8 @@ from modules.LanguageModels.LstmLanguageModel import LSTMLanguageModel
 from modules.pytorch_lightning.LightningLanguageModel import LightningLanguageModel
 import pytorch_lightning as pl
 
+from utils.callbacks import FinishDialogueCallback
+
 
 def parse_config(config_ref):
     with open(config_ref, 'r') as f:
@@ -87,17 +89,20 @@ def get_loss_module(config, tokenizer):
 
 def get_trainer(config):
     # TODO add callbacks
-    callbacks = []
-    trainer = pl.Trainer(
-        default_root_dir='logs',
-        checkpoint_callback=False,
-        gpus=1 if torch.cuda.is_available() else 0,
-        max_epochs=config["max_epochs"],
-        log_every_n_steps=1,
-        progress_bar_refresh_rate=1,
-        callbacks=callbacks
+    if config["type"] == "normal":
+        callbacks = [
+            FinishDialogueCallback(["[START] How are you doing today?", "[START] What are you upto? "]),
+        ]
+        trainer = pl.Trainer(
+            default_root_dir='logs',
+            checkpoint_callback=False,
+            gpus=1 if torch.cuda.is_available() else 0,
+            max_epochs=config["max_epochs"],
+            log_every_n_steps=1,
+            progress_bar_refresh_rate=1,
+            callbacks=callbacks
 
-    )
-    trainer.logger._default_hp_metric = None  # Optional logging argument that we don't need
+        )
+        trainer.logger._default_hp_metric = None  # Optional logging argument that we don't need
 
-    return trainer
+        return trainer
