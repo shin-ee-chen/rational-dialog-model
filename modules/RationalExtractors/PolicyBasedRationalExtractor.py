@@ -39,7 +39,7 @@ class PolicyBasedRationalExtractor(nn.Module):
 
         mask = mask.reshape(x.shape[0], -1)
 
-        masked_input = torch.mul(x, ~mask) + mask * self.mask_token
+        masked_input = torch.mul(x, mask) + ~mask * self.mask_token
 
         # Selects the probabilities of the actual chosen policy.
         mask_to_gather = mask.reshape(x.shape[0], -1, 1).long()

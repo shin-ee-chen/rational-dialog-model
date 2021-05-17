@@ -3,8 +3,8 @@ import pytorch_lightning as pl
 from tokenizers import Tokenizer
 from transformers import AdamW
 
-from misc.old.NextNPredictionDataset import postprocess_dataloader_out
-from utils.utils import fussed_lasso
+import torch.nn.functional as F
+from utils.utils import fussed_lasso, calc_acc
 
 
 class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
@@ -18,7 +18,7 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
 
     def __init__(self, language_model, rational_extractor, tokenizer, loss_module, hparams=None,
                  sparsity_weight=0.1,
-                 fussed_lasso_weight=0.1, ):
+                 fussed_lasso_weight=0.1, padding_token=2):
         super().__init__()
         self.hparams = hparams
         self.language_model = language_model
@@ -32,7 +32,7 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
         self.log_list = [
             "loss", "acc", "h_loss", "h_mean", "fussed_lasso", "cross_entropy_loss", "perplexity"
         ]
-
+        self.padding_token = padding_token
         self.freeze_language_model = hparams["freeze_language_model"]
 
     def forward(self, x, targets, ):
@@ -49,8 +49,9 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
 
     def forward_masked_input(self, masked_input, targets):
         ## Concatenate the two together and put through the lstm
-        lstm_in = torch.cat([masked_input, targets])
-        prediction = self.language_model(lstm_in)
+        lm_in = torch.cat([masked_input, targets])
+
+        prediction = self.language_model(lm_in)
         return prediction
 
     def get_perplexity(self, prediction_logits, targets, reduce=False, weights=None):
@@ -98,14 +99,15 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
         if not self.freeze_language_model:
             total_loss += torch.mean(rewards)
 
-        acc = self.calc_acc(predictions, targets)
+        acc = calc_acc(predictions, targets, exclude=self.padding_token)
 
         return {"loss": total_loss, "acc": acc, "h_loss": h_loss.mean(), "h_mean": h_mean.mean(),
                 "fussed_lasso": fussed_lasso_loss.mean(), "cross_entropy_loss": cross_entropy_loss.mean(),
                 "perplexity": perplexity}
 
     def batch_out(self, batch):
-        rational_in, targets = postprocess_dataloader_out(batch)
+        rational_in = batch[0].permute(1, 0)
+        targets = batch[1].permute(1, 0)
 
         out = self.forward(rational_in, targets)
 
@@ -213,8 +215,3 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
         for k in self.log_list:
             self.log(prepend + k, result[k], on_step=True, on_epoch=True)
 
-    def calc_acc(self, predictions, targets):
-        indices = torch.argmax(predictions, dim=-1)
-
-        correct = indices == targets
-        return torch.mean(correct.float())

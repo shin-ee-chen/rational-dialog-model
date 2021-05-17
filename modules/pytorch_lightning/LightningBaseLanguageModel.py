@@ -9,14 +9,15 @@ from utils.utils import decode
 
 class LightningBaseLanguageModel(pl.LightningModule):
 
-    def __init__(self, language_model, tokenizer, loss_module=None, hparams=None, ):
+    def __init__(self, language_model, tokenizer, loss_module=None, hparams=None, padding_token=2):
         super().__init__()
         self.language_model = language_model
         self.tokenizer = tokenizer
         self.loss_module = loss_module
         self.log_list = [
-            "loss", "perplexity"
+            "loss", "perplexity", "acc"
         ]
+        self.padding_token = padding_token
         self.hparams = hparams
 
     def complete_dialogues(self, sentences, max_length):

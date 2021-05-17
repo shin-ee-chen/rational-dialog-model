@@ -21,7 +21,6 @@ class UtterancesDataset(Dataset):
         self.subsets = subsets
         self.dataset = self.process_dataset(subsets, perturbation)
 
-
     def process_dataset(self, subsets, perturbation):
         '''
         Returns tokenized subsets of the dataset.
@@ -39,13 +38,14 @@ class UtterancesDataset(Dataset):
 
         # Tokenize the samples
         tokenized_samples = [
-            (self.tokenizer.encode((' [SEP] ').join(context) + ' [SEP] ').ids, self.tokenizer.encode(response + ' [SEP] ').ids)
+            (self.tokenizer.encode((' [SEP] ').join(context) + ' [SEP] ').ids,
+             self.tokenizer.encode(response + ' [SEP] ').ids)
             for (context, response) in perturbed_samples
         ]
 
         # Now shuffle samples and sort on length (to prevent amount of padding in batches)
         random.shuffle(tokenized_samples)
-        sorted_samples = sorted(tokenized_samples, key=lambda x: len(x[0]) +  len(x[1]) + random.randint(0, 10))
+        sorted_samples = sorted(tokenized_samples, key=lambda x: len(x[0]) + len(x[1]) + random.randint(0, 10))
         return sorted_samples
 
     def perturb_dataset(self, samples, perturbation):
@@ -65,7 +65,7 @@ class UtterancesDataset(Dataset):
 
             # Shuffle order of words within utterance, but keep order of utterances
             result = [
-                ([self.shuffled_utterance(u) for u in context], response) 
+                ([self.shuffled_utterance(u) for u in context], response)
                 for (context, response) in samples
             ]
 
@@ -73,7 +73,7 @@ class UtterancesDataset(Dataset):
 
             # Shuffle order of words accross the whole dialogue
             result = [
-                ([self.shuffled_utterance(" ".join(context))], response) 
+                ([self.shuffled_utterance(" ".join(context))], response)
                 for (context, response) in samples
             ]
 
@@ -83,7 +83,6 @@ class UtterancesDataset(Dataset):
         # print("DEBUG: result of perturbations")
         # print(result)
         return result
-
 
     def subdialogues(self, utterances, subsets):
         '''
@@ -130,14 +129,13 @@ class UtterancesDataset(Dataset):
     def shuffled_utterance(self, utterance):
         words = utterance.split()
         random.shuffle(words)
-        return(' '.join(words))
+        return (' '.join(words))
 
     def __len__(self):
         return len(self.dataset)
 
     def __getitem__(self, idx):
         return self.dataset[idx]
-
 
     def reshuffle_dataset(self):
         '''
@@ -148,6 +146,10 @@ class UtterancesDataset(Dataset):
     @staticmethod
     def get_collate_fn(padding_value=2):
         def collate_fn(items):
+            '''
+            Pads the context from the left and the response from the right.
+            Makes sure it is batch second.
+            '''
             inputs = torch.fliplr(pad_sequence(
                 [torch.tensor(list(reversed(sample[0]))) for sample in items],
                 batch_first=True,
@@ -158,8 +160,7 @@ class UtterancesDataset(Dataset):
                 batch_first=True,
                 padding_value=padding_value  # Padding code
             )
-            # print("Result of collate")
-            # print("Inputs: ", inputs)
-            # print("Targets: ", targets)
+
             return inputs, targets
+
         return collate_fn

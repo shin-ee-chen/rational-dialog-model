@@ -17,6 +17,20 @@ def fussed_lasso(t, reduce=True):
     return zdiff
 
 
+def calc_acc(predictions, targets, exclude=None):
+
+    indices = torch.argmax(predictions, dim=-1)
+
+    if exclude != None:
+        to_use = targets != exclude
+        total_to_use = to_use.float().sum()
+        correct = (indices == targets).float() * to_use
+        return correct.sum()/total_to_use
+    else:
+        correct = (indices == targets).float()
+        return torch.mean(correct)
+
+
 def collate_fn(dialogues):
     return ['[START] ' + '[SEP]'.join(dialogue["dialog"]) for dialogue in dialogues]
 

@@ -93,7 +93,7 @@ def get_datasets(config, tokenizer):
 def get_language_model(config, tokenizer):
     if config["type"] == "LSTM":
         if config["pretrained"]:
-            model_name = config["path"]
+            model_name = config["save_location"]
             print("load pretrained_model: ", model_name)
             language_model = LSTMLanguageModel.load(model_name)
         else:

@@ -5,6 +5,7 @@ Pytorch lightning version of the language model.
 import torch
 
 from modules.pytorch_lightning.LightningBaseLanguageModel import LightningBaseLanguageModel
+from utils.utils import calc_acc
 
 
 class LightningLanguageModel(LightningBaseLanguageModel):
@@ -23,15 +24,15 @@ class LightningLanguageModel(LightningBaseLanguageModel):
 
         target_tensor = batch[1:, :]
 
-
         predictions = self.language_model.forward(input_tensor)
 
         loss = self.loss_module(predictions.reshape(-1, self.tokenizer.get_vocab_size()), target_tensor.flatten(), )
+        acc = calc_acc(predictions.reshape(-1, self.tokenizer.get_vocab_size()), target_tensor.flatten(), exclude=self.padding_token)
 
-        perplexity = 0 #math.exp(loss) #torch.exp(loss)
+        ### TODO need to check if this is calculated correctly.
+        perplexity = torch.exp(loss)  # math.exp(loss) #torch.exp(loss)
 
-        return {"loss": loss, 'predictions': predictions, "perplexity": perplexity}
-
+        return {"loss": loss, 'predictions': predictions, "perplexity": perplexity, "acc": acc}
 
 
 class RobertaMLPL(LightningBaseLanguageModel):
@@ -50,9 +51,10 @@ class RobertaMLPL(LightningBaseLanguageModel):
         predictions = self.language_model.forward(input_tensor)
         loss = self.loss_module(predictions.reshape(-1, self.tokenizer.vocab_size), target_tensor.flatten(), )
 
-        perplexity = 0 #math.exp(loss) #torch.exp(loss)
+        perplexity = torch.exp(loss) # math.exp(loss) #torch.exp(loss)
+        acc = calc_acc(predictions.reshape(-1, self.tokenizer.vocab_size), target_tensor)
 
-        return {"loss": loss, 'predictions': predictions, "perplexity": perplexity}
+        return {"loss": loss, 'predictions': predictions, "perplexity": perplexity, "acc": acc}
 
     def complete_dialogue(self, context, max_length):
         encoding = self.tokenizer(context)

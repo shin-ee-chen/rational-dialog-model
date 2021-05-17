@@ -1,6 +1,6 @@
 language_model:
   type: LSTM
-  pretrained: False
+  pretrained: True
   embedding_dim: 128
   num_layers: 2
   hidden_state_size: 128
@@ -18,8 +18,8 @@ hparams:
   learning_rate: 0.001
 loss_module: crossentropyloss
 trainer:
-  type: normal #normal vs rationalized
-  max_epochs: 50
+  type: normal #normal vs rationalized type
+  max_epochs: 5
   log_every_n_steps: 1
 
 

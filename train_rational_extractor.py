@@ -30,4 +30,3 @@ dataloader_test = parameters["dataloader_test"]
 trainer.fit(model, dataloader_train, dataloader_test)
 
 # Next we save the language model
-model.language_model.save(parameters["config"]["language_model"]["save_location"])

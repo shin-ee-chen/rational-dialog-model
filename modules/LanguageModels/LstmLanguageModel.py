@@ -99,6 +99,7 @@ class LSTMLanguageModel(BaseLanguageModel):
         return tokens
 
     def save(self, location):
+        print("save")
         torch.save({
             'model_state_dict': self.state_dict(),
             'kwargs': {
