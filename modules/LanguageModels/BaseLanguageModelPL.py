@@ -72,14 +72,12 @@ class BaseLanguageModelPL(pl.LightningModule):
         result = self.batch_to_out(batch)
         self.log_results(result, prepend="val ")
 
-    def configure_optimizers(
-            self,
-    ):
+    def configure_optimizers(self,):
         parameters = list(self.language_model.parameters())
-
         optimizer = torch.optim.Adam(
             parameters,
-            lr=self.hparams['learning_rate'])
+            lr=self.hparams['learning_rate']
+        )
         return optimizer
 
     def log_results(self, result, prepend=""):
