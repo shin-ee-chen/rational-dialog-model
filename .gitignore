@@ -133,3 +133,4 @@ dmypy.json
 runs
 dailoGPT_model
 saved_models
+finetuning/saved_models

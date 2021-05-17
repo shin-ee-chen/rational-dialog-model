@@ -77,24 +77,21 @@ class FinishDialogueRationalizedCallback(pl.Callback):
                 completed_sentences = pl_module.complete_dialogues(self.start_of_dialogues, self.reaction_length,
                                                                    with_rational=self.with_rational,
                                                                    greedy_rationals=self.greedy_policy)
-                for i, (completed_sentence, start_dialogue) in enumerate(
-                        zip(completed_sentences, self.start_of_dialogues)):
+                for i, (completed_sentence, start_dialogue) in enumerate(zip(completed_sentences, self.start_of_dialogues)):
                     title = '_'.join(start_dialogue[7:].replace("?", "").split())
 
-                    #text_file = '.\\' + log_dir + "\{}_{}_{}_{}.txt".format(title, trainer.current_epoch,
-                    #                                                        "with_rational" if self.with_rational else "no_rational",
-                    #                                                        "greedy" if self.greedy_policy else "probs")
-                    text_file = os.path.join(log_dir, "\{}_{}_{}_{}.txt".format(title, trainer.current_epoch,
+                    text_file = os.path.join(log_dir, "{}_{}_{}_{}.txt".format(title, trainer.current_epoch,
                                                                             "with_rational" if self.with_rational else "no_rational",
                                                                             "greedy" if self.greedy_policy else "probs"))
                     ### We write it to a text file:
                     print(text_file)
                     with open(text_file, 'w+', encoding='utf-8') as f:
+                        f.write('Rationalized input ------> Response\n')
                         for rationalized_input, response in zip(completed_sentence["rationalized_input"],
                                                                 completed_sentence["response"]):
-                            f.write(rationalized_input + '->' + response + '\n')
+                            f.write(rationalized_input + ' ------> ' + response + '\n')
+                        f.write('\n\nCompleted dialogue:\n')    
                         f.write(completed_sentence["completed_dialogue"])
-
         pl_module.train()
 
 
