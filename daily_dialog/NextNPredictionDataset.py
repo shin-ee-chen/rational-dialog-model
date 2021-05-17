@@ -4,7 +4,7 @@ from torch.nn.utils.rnn import pad_sequence
 from torch.utils.data import Dataset, DataLoader
 import itertools
 
-from transformers import RobertaTokenizerFast
+from transformers import RobertaTokenizerFast, GPT2TokenizerFast
 
 flatten = itertools.chain.from_iterable
 
@@ -15,10 +15,12 @@ class NextNPredictionDataset(Dataset):
 
     '''
 
-    def __init__(self, tokenizer, size=None, split="train", prediction_size=10, batch_size=64):
+    def __init__(self, tokenizer, size=None, split="train", prediction_size=10, batch_size=64, start_token='[START]', sep_token='[SEP]'):
 
         self.original_dataset = datasets.load_dataset("daily_dialog", split=split, )
         self.tokenizer = tokenizer
+        self.start_token = start_token
+        self.sep_token = sep_token
         # Next we process the dataset to split it up properly.
         self.size = size
         self.prediction_size = prediction_size
@@ -27,9 +29,9 @@ class NextNPredictionDataset(Dataset):
 
     def process_dataset(self):
         ### First we tokenize each example
-        dialogues = ['[START] ' + '[SEP]'.join(dialogue["dialog"]) for dialogue in self.original_dataset]
+        dialogues = [self.start_token + self.sep_token.join(dialogue["dialog"]) for dialogue in self.original_dataset]
 
-        if type(self.tokenizer) != RobertaTokenizerFast:
+        if type(self.tokenizer) not in [RobertaTokenizerFast, GPT2TokenizerFast]:
             tokenized_dataset = [self.tokenizer.encode(sample).ids for sample in dialogues]
         else:
             tokenized_dataset = [self.tokenizer.encode(sample) for sample in dialogues]
