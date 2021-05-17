@@ -86,8 +86,8 @@ class RationaleAnalysisCallback(pl.Callback):
                 average_relative = average_absolute / num_positions
                 # print("Average absolute: ", average_absolute)
                 # print("Average relative: ", average_relative)
-                abs_averages += torch.mean(average_absolute)
-                rel_averages += torch.mean(average_relative)
+                abs_averages += torch.sum(average_absolute)
+                rel_averages += torch.sum(average_relative)
                 n += len(context)
 
             trainer.logger.log_metrics({
