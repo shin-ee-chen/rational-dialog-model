@@ -6,8 +6,8 @@ import torch.nn.functional as F
 import pytorch_lightning as pl
 from transformers import AdamW
 
-from daily_dialog.NextNPredictionDataset import postprocess_dataloader_out
-from utils import fussed_lasso
+from misc.old.NextNPredictionDataset import postprocess_dataloader_out
+from utils.utils import fussed_lasso
 
 
 class ReinforceRationalExtractorLM(nn.Module):

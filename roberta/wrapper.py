@@ -35,7 +35,7 @@ class PretrainedWrapper(BaseLanguageModel):
         ## Initialize:
         logits = self.forward_embedding(embedding)
         logits = logits[-1]
-        next_token = self.get_next_from_logits(logits)
+        next_token = self.get_next_token_from_logits(logits)
 
         tokens.append(next_token)
         next_token_tensor = torch.tensor([[next_token]]).to(embedding.device)
@@ -45,7 +45,7 @@ class PretrainedWrapper(BaseLanguageModel):
 
             logits = self.forward_embedding(next_embedding)
 
-            next_token = self.get_next_from_logits(logits)
+            next_token = self.get_next_token_from_logits(logits)
 
             tokens.append(next_token)
             next_token_tensor = torch.tensor([[next_token]]).to(embedding.device)

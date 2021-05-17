@@ -3,12 +3,12 @@ import torch
 from torch.utils.data import DataLoader
 import pytorch_lightning as pl
 
-from daily_dialog.NextNPredictionDataset import NextNPredictionDataset
-from daily_dialog.callbacks import FinishDialogueRationalizedCallback
+from misc.old.NextNPredictionDataset import NextNPredictionDataset
+from utils.callbacks import FinishDialogueRationalizedCallback
 from roberta.wrapper import PretrainedWrapper
 
-from modules.PredictionLMPL import PredictionLMPL
-from modules.RationalExtractor import RationalExtractor
+from modules.pytorch_lightning.LightingBaseRationalizedLanguageModel import LightingBaseRationalizedLanguageModel
+from modules.RationalExtractors import RationalExtractor
 
 tokenizer = AutoTokenizer.from_pretrained("distilroberta-base")
 language_model = AutoModelForCausalLM.from_pretrained("distilroberta-base")
@@ -51,7 +51,7 @@ loss_module = torch.nn.CrossEntropyLoss(weight=weights)
 
 rational_extractor = RationalExtractor(embedding_dim)
 
-model = PredictionLMPL(lm, rational_extractor, tokenizer, loss_module, hparams=hparams)
+model = LightingBaseRationalizedLanguageModel(lm, rational_extractor, tokenizer, loss_module, hparams=hparams)
 
 trainer = pl.Trainer(default_root_dir='logs',
                      checkpoint_callback=False,
