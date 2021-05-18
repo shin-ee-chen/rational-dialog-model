@@ -1,0 +1,25 @@
+language_model:
+  type: dialoGPT
+  checkpoint: microsoft/DialoGPT-small
+  pretrained: True
+  save_location: './models/dialoGPT_dailyDialog_finetuned_.pt'
+dataset:
+  type: 'daily_dialogue'
+  size_train: 10000
+  size_test: 10000
+  batch_size: 32
+  subsets: start
+tokenizer:
+  type: 'daily_dialogue'
+  link: './daily_dialog/tokenizer.json'
+hparams:
+  learning_rate: 0.001
+loss_module: crossentropyloss
+trainer:
+  type: normal #normal vs rationalized type
+  max_epochs: 5
+  log_every_n_steps: 1
+
+
+
+

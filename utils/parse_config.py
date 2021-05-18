@@ -5,6 +5,7 @@ from torch.utils.data import DataLoader
 from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
 from daily_dialog.UtterancesDataset import UtterancesDataset
 from modules.LanguageModels.LstmLanguageModel import LSTMLanguageModel
+from modules.LanguageModels.DialoGPTLanguageModel import DailoGPTLanguageModel
 from modules.RationalExtractors.PolicyBasedRationalExtractor import PolicyBasedRationalExtractor
 from modules.pytorch_lightning.LightningLanguageModel import LightningLanguageModel
 import pytorch_lightning as pl
@@ -105,6 +106,8 @@ def get_language_model(config, tokenizer):
                 hidden_state_size=config['hidden_state_size']
             )
         return language_model
+    elif config["type"] == "dialoGPT":
+        language_model = DailoGPTLanguageModel(pretrained_model=config['checkpoint'])
     else:
         raise ValueError("type not found", config["type"])
 
