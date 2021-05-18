@@ -37,9 +37,15 @@ class UtterancesDataset(Dataset):
         perturbed_samples = self.perturb_dataset(dialogue_samples, perturbation)
 
         # Tokenize the samples
+        # no ids after tokenizer for gpt
+        # tokenized_samples = [
+        #     (self.tokenizer.encode((' [SEP] ').join(context) + ' [SEP] ').ids,
+        #      self.tokenizer.encode(response + ' [SEP] ').ids)
+        #     for (context, response) in perturbed_samples
+        # ]
         tokenized_samples = [
-            (self.tokenizer.encode((' [SEP] ').join(context) + ' [SEP] ').ids,
-             self.tokenizer.encode(response + ' [SEP] ').ids)
+            (self.tokenizer.encode((' [SEP] ').join(context) + ' [SEP] '),
+             self.tokenizer.encode(response + ' [SEP] '))
             for (context, response) in perturbed_samples
         ]
 
