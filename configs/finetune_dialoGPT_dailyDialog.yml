@@ -10,7 +10,7 @@ dataset:
   batch_size: 32
   subsets: start
 tokenizer:
-  type: 'daily_dialogue'
+  type: 'microsoft/DialoGPT-small'
   link: './daily_dialog/tokenizer.json'
 hparams:
   learning_rate: 0.001
