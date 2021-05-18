@@ -8,13 +8,17 @@ class DailoGPTLanguageModel(BaseLanguageModel):
     Load a pretrained DialoGPT language model
     '''
 
-    def __init__(self, pretrained_model='microsoft/DialoGPT-small'):
+    def __init__(self, pretrained_model='microsoft/DialoGPT-small',tokenizer=None):
         super().__init__()
         self.model = AutoModelForCausalLM.from_pretrained(pretrained_model)
-        self.tokenizer = AutoTokenizer.from_pretrained(pretrained_model)
+        # if tokenizer == None:
+        #     self.tokenizer = AutoTokenizer.from_pretrained(pretrained_model)
+        # else:
+        self.tokenizer = tokenizer
 
     def forward(self, tokenized_input_ids):
-        return self.pretrained_model.generate(tokenized_input_ids, max_length=1000, pad_token_id=self.pretrained_tokenizer.eos_token_id)
+        # return self.model.generate(tokenized_input_ids, max_length=1000, pad_token_id=self.tokenizer.eos_token_id)
+        return self.model(tokenized_input_ids).logits
 
     def save(self, location):
         print("save")

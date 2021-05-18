@@ -9,6 +9,7 @@ from modules.LanguageModels.DialoGPTLanguageModel import DailoGPTLanguageModel
 from modules.RationalExtractors.PolicyBasedRationalExtractor import PolicyBasedRationalExtractor
 from modules.pytorch_lightning.LightningLanguageModel import LightningLanguageModel
 import pytorch_lightning as pl
+from transformers import AutoTokenizer
 
 from modules.pytorch_lightning.LightningReinforceRationalizedLanguageModel import LightingReinforceRationalizedLanguageModel
 from utils.callbacks import FinishDialogueCallback
@@ -68,12 +69,14 @@ def parse_config_RE(config_ref):
 
 
 def get_tokenizer(tokenizer_config):
-    if tokenizer_config["type"] == "daily_dialogue":
+    if tokenizer_config["type"] == "microsoft/DialoGPT-small":
+        tokenizer = AutoTokenizer.from_pretrained(tokenizer_config["type"])
+    elif tokenizer_config["type"] == "daily_dialogue":
         print(tokenizer_config["link"])
         tokenizer = get_daily_dialog_tokenizer(tokenizer_location=tokenizer_config["link"], )
-        return tokenizer
     else:
         raise ValueError("type not found", tokenizer_config["type"])
+    return tokenizer
 
 
 def get_datasets(config, tokenizer):
@@ -105,17 +108,18 @@ def get_language_model(config, tokenizer):
                 num_layers=config['num_layers'],
                 hidden_state_size=config['hidden_state_size']
             )
-        return language_model
     elif config["type"] == "dialoGPT":
-        language_model = DailoGPTLanguageModel(pretrained_model=config['checkpoint'])
+        language_model = DailoGPTLanguageModel(pretrained_model=config['checkpoint'], tokenizer=tokenizer)
     else:
         raise ValueError("type not found", config["type"])
+    return language_model
 
 
 def get_loss_module(config, tokenizer):
     # TODO make sure we exclude the padding (Is now set 2 as a default)
     pad_id = 2
-    weight = torch.ones(tokenizer.get_vocab_size())
+    # weight = torch.ones(tokenizer.get_vocab_size())
+    weight = torch.ones(tokenizer.vocab_size)
     weight[pad_id] = 0
     return torch.nn.CrossEntropyLoss(weight=weight)
 

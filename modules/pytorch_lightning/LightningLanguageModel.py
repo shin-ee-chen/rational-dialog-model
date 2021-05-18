@@ -26,8 +26,12 @@ class LightningLanguageModel(LightningBaseLanguageModel):
 
         predictions = self.language_model.forward(input_tensor)
 
-        loss = self.loss_module(predictions.reshape(-1, self.tokenizer.get_vocab_size()), target_tensor.flatten(), )
-        acc = calc_acc(predictions.reshape(-1, self.tokenizer.get_vocab_size()), target_tensor.flatten(), exclude=self.padding_token)
+        # loss = self.loss_module(predictions.reshape(-1, self.tokenizer.get_vocab_size()), target_tensor.flatten(), )
+        # acc = calc_acc(predictions.reshape(-1, self.tokenizer.get_vocab_size()), target_tensor.flatten(), exclude=self.padding_token)
+
+        # modify for pretrained tokenizer
+        loss = self.loss_module(predictions.reshape(-1, self.tokenizer.vocab_size), target_tensor.flatten(), )
+        acc = calc_acc(predictions.reshape(-1, self.tokenizer.vocab_size), target_tensor.flatten(), exclude=self.padding_token)
 
         ### TODO need to check if this is calculated correctly.
         perplexity = torch.exp(loss)  # math.exp(loss) #torch.exp(loss)
