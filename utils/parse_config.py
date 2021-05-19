@@ -5,7 +5,7 @@ from torch.utils.data import DataLoader
 from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
 from daily_dialog.UtterancesDataset import UtterancesDataset
 from modules.LanguageModels.LstmLanguageModel import LSTMLanguageModel
-from modules.LanguageModels.DialoGPTLanguageModel import DailoGPTLanguageModel
+from modules.LanguageModels.PretrainedLanguageModel import PretrainedLanguageModel
 from modules.RationalExtractors.PolicyBasedRationalExtractor import PolicyBasedRationalExtractor
 from modules.pytorch_lightning.LightningLanguageModel import LightningLanguageModel
 import pytorch_lightning as pl
@@ -69,8 +69,8 @@ def parse_config_RE(config_ref):
 
 
 def get_tokenizer(tokenizer_config):
-    if tokenizer_config["type"] == "microsoft/DialoGPT-small":
-        tokenizer = AutoTokenizer.from_pretrained(tokenizer_config["type"])
+    if tokenizer_config["type"] == "transformers":
+        tokenizer = AutoTokenizer.from_pretrained(tokenizer_config["checkpoint"])
     elif tokenizer_config["type"] == "daily_dialogue":
         print(tokenizer_config["link"])
         tokenizer = get_daily_dialog_tokenizer(tokenizer_location=tokenizer_config["link"], )
@@ -110,8 +110,8 @@ def get_language_model(config, tokenizer):
                 num_layers=config['num_layers'],
                 hidden_state_size=config['hidden_state_size']
             )
-    elif config["type"] == "dialoGPT":
-        language_model = DailoGPTLanguageModel(pretrained_model=config['checkpoint'], tokenizer=tokenizer)
+    elif config["type"] == "transformers":
+        language_model = PretrainedLanguageModel(pretrained_model=config['checkpoint'])
     else:
         raise ValueError("type not found", config["type"])
     return language_model
