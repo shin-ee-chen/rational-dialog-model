@@ -26,7 +26,11 @@ class FinishDialogueCallback(pl.Callback):
 
             completed_sentences = pl_module.complete_dialogues(self.sentences, self.reaction_length)
             for i, s in enumerate(completed_sentences):
-                print("----- ", i, '\n', s)
+                try:
+                    print("----- ", i, '\n', s)
+                except:
+                    #UnicodeEncodeError: 'latin-1' codec can't encode character '\u2019' in position 21: ordinal not in range(256)
+                    print("[can't generate response!]")
         pl_module.train()
 
 

@@ -1,25 +1,25 @@
 language_model:
   type: transformers
-  checkpoint: roberta-base
+  checkpoint: 'roberta-base'
   pretrained: True
   save_location: './models/roberta_dailyDialog_finetuned/'
 dataset:
   type: 'daily_dialogue'
-  size_train: 10
-  size_test: 10
+  size_train: 10000
+  size_test: 10000
   batch_size: 8
   subsets: start
-  remove_top_n: 1
+  remove_top_n: 10
 tokenizer:
   type: transformers
-  checkpoint: roberta-base
+  checkpoint: 'roberta-base'
   # link: './daily_dialog/tokenizer.json'
 hparams:
   learning_rate: 0.001
 loss_module: crossentropyloss
 trainer:
   type: normal #normal vs rationalized type
-  max_epochs: 1
+  max_epochs: 5
   log_every_n_steps: 1
 
 
