@@ -81,8 +81,10 @@ def get_tokenizer(tokenizer_config):
 
 def get_datasets(config, tokenizer):
     if config["type"] == 'daily_dialogue':
-        dataset_train = UtterancesDataset(tokenizer, subsets="start", split="train", size=config["size_train"])
-        dataset_test = UtterancesDataset(tokenizer, subsets="start", split="test", size=config["size_test"])
+        dataset_train = UtterancesDataset(tokenizer, subsets="start", split="train", 
+                                          size=config["size_train"], remove_top_n=config["remove_top_n"])
+        dataset_test = UtterancesDataset(tokenizer, subsets="start", split="test", 
+                                         size=config["size_test"],remove_top_n=config["remove_top_n"])
 
         dataloader_train = DataLoader(dataset_train, batch_size=config["batch_size"],
                                       collate_fn=UtterancesDataset.get_collate_fn())

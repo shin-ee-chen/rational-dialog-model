@@ -4,11 +4,11 @@ import torch
 from torch.nn.utils.rnn import pad_sequence
 import itertools
 import random
-
+from tokenizers import Tokenizer
 
 class UtterancesDataset(Dataset):
 
-    def __init__(self, tokenizer, size=None, subsets="start", perturbation=None, split="train", ):
+    def __init__(self, tokenizer, size=None, subsets="start", perturbation=None, split="train", remove_top_n=-1):
         assert subsets in ["start", "end", "single", "full"], "subsets should be 'start', 'end', 'single, or 'full'"
         assert perturbation in [None, "utterance_dialogue", "words_dialogue", "words_utterance"]
         self.original_dataset = datasets.load_dataset("daily_dialog", split=split, )
@@ -19,7 +19,9 @@ class UtterancesDataset(Dataset):
             self.size = size
         self.tokenizer = tokenizer
         self.subsets = subsets
+        self.remove_top_n = remove_top_n
         self.dataset = self.process_dataset(subsets, perturbation)
+       
 
     def process_dataset(self, subsets, perturbation):
         '''
@@ -37,21 +39,24 @@ class UtterancesDataset(Dataset):
         perturbed_samples = self.perturb_dataset(dialogue_samples, perturbation)
 
         # Tokenize the samples
-        # no ids after tokenizer for gpt
-        # tokenized_samples = [
-        #     (self.tokenizer.encode((' [SEP] ').join(context) + ' [SEP] ').ids,
-        #      self.tokenizer.encode(response + ' [SEP] ').ids)
-        #     for (context, response) in perturbed_samples
-        # ]
-        tokenized_samples = [
-            (self.tokenizer.encode((' [SEP] ').join(context) + ' [SEP] '),
-             self.tokenizer.encode(response + ' [SEP] '))
-            for (context, response) in perturbed_samples
-        ]
+        if type(self.tokenizer) == Tokenizer:
+              tokenized_samples = [
+                (self.tokenizer.encode((' [SEP] ').join(context) + ' [SEP] ').ids,
+                self.tokenizer.encode(response + ' [SEP] ').ids)
+                for (context, response) in perturbed_samples
+                ]
+        else:
+            tokenized_samples = [
+                (self.tokenizer.encode((' [SEP] ').join(context) + ' [SEP] '),
+                self.tokenizer.encode(response + ' [SEP] '))
+                for (context, response) in perturbed_samples
+            ]
 
         # Now shuffle samples and sort on length (to prevent amount of padding in batches)
         random.shuffle(tokenized_samples)
         sorted_samples = sorted(tokenized_samples, key=lambda x: len(x[0]) + len(x[1]) + random.randint(0, 10))
+        if self.remove_top_n > 0:
+            sorted_samples = sorted_samples[:int(-1 * self.remove_top_n)]
         return sorted_samples
 
     def perturb_dataset(self, samples, perturbation):
