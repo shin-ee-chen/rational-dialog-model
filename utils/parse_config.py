@@ -111,7 +111,8 @@ def get_language_model(config, tokenizer):
                 hidden_state_size=config['hidden_state_size']
             )
     elif config["type"] == "transformers":
-        language_model = PretrainedLanguageModel(pretrained_model=config['checkpoint'])
+        language_model = PretrainedLanguageModel(pretrained_model=config['checkpoint'], tokenizer=tokenizer)
+       
     else:
         raise ValueError("type not found", config["type"])
     return language_model
@@ -121,7 +122,7 @@ def get_loss_module(config, tokenizer):
     # TODO make sure we exclude the padding (Is now set 2 as a default)
     pad_id = 2
     # weight = torch.ones(tokenizer.get_vocab_size())
-    weight = torch.ones(tokenizer.vocab_size)
+    weight = torch.ones(len(tokenizer))
     weight[pad_id] = 0
     return torch.nn.CrossEntropyLoss(weight=weight)
 
@@ -136,7 +137,7 @@ def get_trainer(config):
     # TODO add callbacks somehow
     if config["type"] == "normal":
         callbacks = [
-            FinishDialogueCallback(["[START] How are you doing today?", "[START] What are you upto? "]),
+            FinishDialogueCallback(["How are you doing today? [SEP]", "What are you upto? [SEP]"]),
         ]
         trainer = pl.Trainer(
             default_root_dir='logs',

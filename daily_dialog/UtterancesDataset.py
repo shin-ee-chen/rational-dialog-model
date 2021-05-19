@@ -46,9 +46,10 @@ class UtterancesDataset(Dataset):
                 for (context, response) in perturbed_samples
                 ]
         else:
+            self.tokenizer.add_special_tokens({'sep_token': "[SEP]"})
             tokenized_samples = [
-                (self.tokenizer.encode((' [SEP] ').join(context) + ' [SEP] '),
-                self.tokenizer.encode(response + ' [SEP] '))
+                (self.tokenizer.encode((self.tokenizer.sep_token).join(context) + self.tokenizer.sep_token),
+                self.tokenizer.encode(response + self.tokenizer.sep_token))
                 for (context, response) in perturbed_samples
             ]
 

@@ -8,10 +8,10 @@ class PretrainedLanguageModel(BaseLanguageModel):
     Load a pretrained DialoGPT language model
     '''
 
-    def __init__(self, pretrained_model='microsoft/DialoGPT-small'):
+    def __init__(self, pretrained_model='microsoft/DialoGPT-small', tokenizer=None):
         super().__init__()
         self.lm = AutoModelForCausalLM.from_pretrained(pretrained_model)
-
+        self.lm.resize_token_embeddings(len(tokenizer))
         self.embedding = self.lm.get_input_embeddings()
         self.layers = self.lm.get_output_embeddings()
 
