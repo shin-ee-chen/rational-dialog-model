@@ -47,18 +47,20 @@ class UtterancesDataset(Dataset):
         if type(self.tokenizer) == Tokenizer:
 
             # For Tokenizer class, you need to extract the id's
+            sep_token = get_token(self.tokenizer, "sep_token")
             tokenized_samples = [
-                (self.tokenizer.encode((get_token(tokenizer, "sep_token")).join(context) + get_token(tokenizer, "sep_token")).ids,
-                self.tokenizer.encode(response + get_token(tokenizer, "sep_token")).ids)
+                (self.tokenizer.encode((sep_token).join(context) + sep_token).ids,
+                self.tokenizer.encode(response + sep_token).ids)
                 for (context, response) in perturbed_samples
             ]
         else:
 
             # For the other models, the encode function already gives the id's
             self.tokenizer.add_special_tokens({'sep_token': "[SEP]"})
+            sep_token = self.tokenizer.sep_token
             tokenized_samples = [
-                (self.tokenizer.encode((self.tokenizer.sep_token).join(context) + self.tokenizer.sep_token),
-                self.tokenizer.encode(response + self.tokenizer.sep_token))
+                (self.tokenizer.encode((sep_token).join(context) + sep_token),
+                self.tokenizer.encode(response + sep_token))
                 for (context, response) in perturbed_samples
             ]
 
