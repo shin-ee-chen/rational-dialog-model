@@ -11,7 +11,7 @@ from modules.LanguageModels.LstmLanguageModel import LSTMLanguageModel
 from modules.pytorch_lightning.LightningLanguageModel import LightningLanguageModel
 from utils.callbacks import ReshuffleDatasetCallback, FinishDialogueCallback
 
-from utils.utils import get_lastest_model_name, generate_model_name
+from utils.utils import get_latest_model_name, generate_model_name
 
 save_path = r'./saved_models/'
 load_pretrained = True
@@ -36,7 +36,7 @@ dataloader_test = DataLoader(dataset_test, batch_size=batch_size, collate_fn=Utt
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 if load_pretrained:
-    model_name = get_lastest_model_name(save_path)
+    model_name = get_latest_model_name(save_path)
     print("load pretrained_model: ", model_name)
     language_model = LSTMLanguageModel.load(model_name).to(device)
 else:

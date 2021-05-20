@@ -6,7 +6,7 @@ import argparse
 
 import torch
 
-from utils.parse_config import parse_config_lm
+from utils.parse_config import parse_config_lm, parse_config
 
 parser = argparse.ArgumentParser(description='Train a language model')
 parser.add_argument('--config', default="configs/finetune_dialoGPT_dailyDialog.yml", type=str, 
@@ -16,7 +16,7 @@ args = parser.parse_args()
 
 config_ref = args.config
 
-parameters = parse_config_lm(config_ref)
+parameters = parse_config(config_ref)
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 

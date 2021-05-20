@@ -6,7 +6,7 @@ import argparse
 
 import torch
 
-from utils.parse_config import parse_config_RE
+from utils.parse_config import parse_config_RE, parse_config
 
 parser = argparse.ArgumentParser(description='Train a language model')
 
@@ -17,7 +17,7 @@ args = parser.parse_args()
 
 config_ref = args.config
 
-parameters = parse_config_RE(config_ref)
+parameters = parse_config(config_ref)
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
