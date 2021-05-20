@@ -10,6 +10,7 @@ from modules.RationalExtractors.PolicyBasedRationalExtractor import PolicyBasedR
 from modules.pytorch_lightning.LightningLanguageModel import LightningLanguageModel
 import pytorch_lightning as pl
 from transformers import AutoTokenizer
+from tokenizers import Tokenizer
 
 from modules.pytorch_lightning.LightningReinforceRationalizedLanguageModel import LightingReinforceRationalizedLanguageModel
 from utils.callbacks import FinishDialogueCallback
@@ -84,7 +85,7 @@ def get_datasets(config, tokenizer):
         dataset_train = UtterancesDataset(tokenizer, subsets="start", split="train", 
                                           size=config["size_train"], remove_top_n=config["remove_top_n"])
         dataset_test = UtterancesDataset(tokenizer, subsets="start", split="test", 
-                                         size=config["size_test"],remove_top_n=config["remove_top_n"])
+                                         size=config["size_test"], remove_top_n=config["remove_top_n"])
 
         dataloader_train = DataLoader(dataset_train, batch_size=config["batch_size"],
                                       collate_fn=UtterancesDataset.get_collate_fn())
@@ -138,9 +139,9 @@ def get_loss_module(config, tokenizer):
 def get_rational_extractor(config, tokenizer):
     if config["type"] == "policy_based":
         # Mask token is at the moment 2
-        if type(tokenizer) == Tokenizer:
+        if type(tokenizer) == Tokenizer: #nltk tokenizer
             return PolicyBasedRationalExtractor(tokenizer.get_vocab_size(), mask_token=4)
-        else:
+        else: #transformers tokenizer
             return PolicyBasedRationalExtractor(len(tokenizer), mask_token=4)
 
 

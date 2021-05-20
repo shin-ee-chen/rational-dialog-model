@@ -125,7 +125,7 @@ class RELMPL(pl.LightningModule):
             )
         else:
             cross_entropy_loss = self.loss_module(
-                predictions.view(-1, self.tokenizer.vocab_size), targets.flatten(),
+                predictions.view(-1, len(self.tokenizer)), targets.flatten(),
                 reduce=False
             )
         rewards = cross_entropy_loss + h_loss

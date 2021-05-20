@@ -87,7 +87,7 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
             cross_entropy_loss = self.loss_module(predictions.view(-1, self.tokenizer.get_vocab_size()),
                                                   targets.flatten())
         else:
-            cross_entropy_loss = self.loss_module(predictions.view(-1, self.tokenizer.vocab_size), targets.flatten(),
+            cross_entropy_loss = self.loss_module(predictions.view(-1, len(self.tokenizer)), targets.flatten(),
                                                   reduce=False)
         rewards = cross_entropy_loss + h_loss
 
@@ -116,7 +116,7 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
         return scores
 
     def training_step(self, batch, batch_idx):
-
+        
         batch_out = self.batch_out(batch)
 
         self.log_results(batch_out)
@@ -125,6 +125,7 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
 
     @torch.no_grad()
     def validation_step(self, batch, batch_idx):
+
         batch_out = self.batch_out(batch)
 
         self.log_results(batch_out, prepend="val_")
