@@ -209,6 +209,7 @@ def get_language_model(config, tokenizer):
 def get_loss_module(config, tokenizer):
 
     pad_id = get_token_id(tokenizer, "pad_token")
+    
     if type(tokenizer) == Tokenizer:
         weight = torch.ones(tokenizer.get_vocab_size())
     else:

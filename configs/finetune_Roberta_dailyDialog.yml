@@ -1,7 +1,7 @@
 language_model:
   type: transformers
   checkpoint: 'roberta-base'
-  pretrained: True
+  pretrained: False
   save_location: './models/roberta_dailyDialog_finetuned/'
 dataset:
   type: 'daily_dialogue'
