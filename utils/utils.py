@@ -5,6 +5,7 @@ import time
 # From: https://github.com/bastings/interpretable_predictions/blob/master/latent_rationale/beer/models/rl.py
 # With a small modification to introduce the mean.
 import torch
+from tokenizers import Tokenizer 
 
 
 def fussed_lasso(tokens, t, reduce=True, pad_id=0):
@@ -81,6 +82,10 @@ def batch_decode(tokenizer, batch_of_tokens):
 
 
 def get_pad_id(tokenizer):
+    if type(tokenizer) == Tokenizer: #nltk tokenizer
+        print(tokenizer.token_to_id(tokenizer.padding["pad_token"]))
+        return tokenizer.token_to_id(tokenizer.padding["pad_token"])
+    else: #huggingface
+        print("pad token id: %d" % (tokenizer.pad_token_id))
+        return tokenizer.pad_token_id
 
-    print(tokenizer.token_to_id(tokenizer.padding["pad_token"]))
-    return tokenizer.token_to_id(tokenizer.padding["pad_token"])

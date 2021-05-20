@@ -56,7 +56,7 @@ class UtterancesDataset(Dataset):
         else:
 
             # For the other models, the encode function already gives the id's
-            self.tokenizer.add_special_tokens({'sep_token': "[SEP]",'pad_token': "[PAD]"})
+            self.tokenizer.add_special_tokens({'sep_token': "[SEP]",'pad_token': "[PAD]", 'mask_token': "[MASK]"})
             sep_token = self.tokenizer.sep_token
             tokenized_samples = [
                 (self.tokenizer.encode((sep_token).join(context) + sep_token),
