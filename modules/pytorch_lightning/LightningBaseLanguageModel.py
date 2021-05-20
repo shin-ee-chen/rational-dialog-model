@@ -9,7 +9,7 @@ from tokenizers import Tokenizer
 
 class LightningBaseLanguageModel(pl.LightningModule):
 
-    def __init__(self, language_model, tokenizer, loss_module=None, hparams=None, padding_token=2):
+    def __init__(self, language_model, tokenizer, loss_module=None, hparams=None):
         super().__init__()
         self.language_model = language_model
         self.tokenizer = tokenizer
@@ -17,7 +17,6 @@ class LightningBaseLanguageModel(pl.LightningModule):
         self.log_list = [
             "loss", "perplexity", "acc"
         ]
-        self.padding_token = padding_token
         self.hparams = hparams
 
     def complete_dialogues(self, sentences, max_length):
@@ -46,7 +45,7 @@ class LightningBaseLanguageModel(pl.LightningModule):
             next_utterance_tokens,
             skip_special_tokens=False
         )).replace(" #", "").replace("#", "")
-        sep = new_sentence.find('[SEP]')
+        sep = new_sentence.find(get_token(self.tokenizer, "sep_token"))
         return new_sentence[:sep]
 
     def batch_to_out(self, batch):

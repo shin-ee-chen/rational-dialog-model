@@ -6,10 +6,10 @@ import torch.nn.functional as F
 
 class PolicyBasedRationalExtractor(nn.Module):
 
-    def __init__(self, embedding_input, embedding_size=32, mask_token=0):
+    def __init__(self, embedding_input_size, embedding_size=32, mask_token=0):
         super().__init__()
         self.embedding_size = embedding_size
-        self.embedding = Embedding(embedding_input, embedding_size)
+        self.embedding = Embedding(embedding_input_size, embedding_size)
 
         # Layers for prediction
         self.prediction_LSTM = LSTM(embedding_size, hidden_size=int(embedding_size / 2), bidirectional=True)
@@ -38,7 +38,7 @@ class PolicyBasedRationalExtractor(nn.Module):
             mask = torch.multinomial(policy_reshaped, 1).bool()
 
         mask = mask.reshape(x.shape[0], -1)
-
+        
         masked_input = torch.mul(x, mask) + ~mask * self.mask_token
 
         # Selects the probabilities of the actual chosen policy.

@@ -95,7 +95,7 @@ class LSTMLanguageModel(BaseLanguageModel):
     def generate_next_token(self, tokens):
         tokens = tokens.view(-1, 1)
         logits = self.forward(tokens)[-1, 0, :]
-        next_token = self.get_next_from_logits(logits)
+        next_token = self.get_next_token_from_logits(logits)
         next_token = torch.tensor([next_token]).to(tokens.device)
         return next_token
 
