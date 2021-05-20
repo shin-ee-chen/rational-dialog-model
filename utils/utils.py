@@ -7,14 +7,28 @@ import time
 import torch
 
 
-def fussed_lasso(t, reduce=True):
+def fussed_lasso(tokens, t, reduce=True, pad_id=0):
     zdiff = t[:, 1:] - t[:, :-1]
     zdiff = zdiff.abs()  # [B]
     if reduce:
-        zdiff = zdiff.mean()
+        zdiff = zdiff.sum()
+        non_paddings = (tokens != pad_id).float().sum()
     else:
-        zdiff = zdiff.mean(dim=-1)
-    return zdiff
+        zdiff = zdiff.sum(dim=-1)
+        non_paddings = (tokens != pad_id).float().sum(dim=-1)
+    return zdiff/non_paddings
+
+
+def calculate_mask_percentage(tokens, mask, reduce=False, pad_id=None):
+    if reduce:
+        mask_sum = mask.sum()
+        non_paddings = (tokens != pad_id).float().sum()
+    else:
+        mask_sum = mask.sum(dim=-1)
+        non_paddings = (tokens != pad_id).float().sum(dim=-1)
+
+    mean = mask_sum / non_paddings
+    return mean
 
 
 def calc_acc(predictions, targets, exclude=None):
@@ -30,12 +44,7 @@ def calc_acc(predictions, targets, exclude=None):
         correct = (indices == targets).float()
         return torch.mean(correct)
 
-
-def collate_fn(dialogues):
-    return ['[START] ' + '[SEP]'.join(dialogue["dialog"]) for dialogue in dialogues]
-
-
-def get_lastest_model_name(path):
+def get_latest_model_name(path):
     list_of_files = glob.glob(path + '*')
     latest_file = max(list_of_files, key=os.path.getctime)
     return (latest_file)
@@ -69,3 +78,9 @@ def batch_decode(tokenizer, batch_of_tokens):
         batch_of_tokens = list(batch_of_tokens.detach().cpu().numpy())
 
     return [decode(tokenizer, tokens) for tokens in batch_of_tokens]
+
+
+def get_pad_id(tokenizer):
+
+    print(tokenizer.token_to_id(tokenizer.padding["pad_token"]))
+    return tokenizer.token_to_id(tokenizer.padding["pad_token"])

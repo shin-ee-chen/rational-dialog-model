@@ -124,7 +124,7 @@ class ChangeInPerplexityCallback(pl.Callback):
         if (trainer.current_epoch + 1) % self.every_n_epochs == 0:
 
             for batch in self.dataloader:
-                context, targets = postprocess_dataloader_out(batch)
+                context, targets =
 
                 context = context.to(pl_module.device)
                 targets = targets.to(pl_module.device)

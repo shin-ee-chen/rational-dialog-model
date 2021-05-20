@@ -11,7 +11,7 @@ dataset:
   size_test: 1000
   batch_size: 32
   subsets: start
-  remove_top_n: 0
+  remove_top_n: 10
 tokenizer:
   type: 'daily_dialogue'
   link: './daily_dialog/tokenizer.json'
