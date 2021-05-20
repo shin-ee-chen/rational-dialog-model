@@ -5,10 +5,15 @@ from torch.nn.utils.rnn import pad_sequence
 import itertools
 import random
 from tokenizers import Tokenizer
+from utils.token_utils import special_tokens, get_token, get_token_id
 
 class UtterancesDataset(Dataset):
 
     def __init__(self, tokenizer, size=None, subsets="start", perturbation=None, split="train", remove_top_n=-1):
+        '''
+        remove_top_n: is used to remove the longest samples from the dataset (to prevent memory problems)
+        size: is used to restrict the number of dialogues that is used
+        '''
         assert subsets in ["start", "end", "single", "full"], "subsets should be 'start', 'end', 'single, or 'full'"
         assert perturbation in [None, "utterance_dialogue", "words_dialogue", "words_utterance"]
         self.original_dataset = datasets.load_dataset("daily_dialog", split=split, )
@@ -40,12 +45,16 @@ class UtterancesDataset(Dataset):
 
         # Tokenize the samples
         if type(self.tokenizer) == Tokenizer:
-              tokenized_samples = [
-                (self.tokenizer.encode((' [SEP] ').join(context) + ' [SEP] ').ids,
-                self.tokenizer.encode(response + ' [SEP] ').ids)
+
+            # For Tokenizer class, you need to extract the id's
+            tokenized_samples = [
+                (self.tokenizer.encode((get_token(tokenizer, "sep_token")).join(context) + get_token(tokenizer, "sep_token")).ids,
+                self.tokenizer.encode(response + get_token(tokenizer, "sep_token")).ids)
                 for (context, response) in perturbed_samples
-                ]
+            ]
         else:
+
+            # For the other models, the encode function already gives the id's
             self.tokenizer.add_special_tokens({'sep_token': "[SEP]"})
             tokenized_samples = [
                 (self.tokenizer.encode((self.tokenizer.sep_token).join(context) + self.tokenizer.sep_token),
@@ -55,7 +64,7 @@ class UtterancesDataset(Dataset):
 
         # Now shuffle samples and sort on length (to prevent amount of padding in batches)
         random.shuffle(tokenized_samples)
-        sorted_samples = sorted(tokenized_samples, key=lambda x: len(x[0]) + len(x[1]) + random.randint(0, 10))
+        sorted_samples = sorted(tokenized_samples, key=lambda x: len(x[0]) * 10 + len(x[1]) + random.randint(0, 10))
         if self.remove_top_n > 0:
             sorted_samples = sorted_samples[:int(-1 * self.remove_top_n)]
         return sorted_samples
@@ -156,12 +165,13 @@ class UtterancesDataset(Dataset):
         self.dataset = sorted(self.dataset, key=lambda x: len(x[0]) * 10 + len(x[1]) + random.randint(0, 10))
 
     @staticmethod
-    def get_collate_fn(padding_value=2):
+    def get_collate_fn(padding_value=None): # make sure you provide the right id from the tokenizer, when get_collate_fn is called
         def collate_fn(items):
             '''
             Pads the context from the left and the response from the right.
             Makes sure it is batch second.
             '''
+            assert padding_value != None, "Please provide pad_token_id to use for padding"
             inputs = torch.fliplr(pad_sequence(
                 [torch.tensor(list(reversed(sample[0]))) for sample in items],
                 batch_first=True,

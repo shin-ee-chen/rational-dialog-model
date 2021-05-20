@@ -27,7 +27,7 @@ def get_token(tokenizer, token_type):
 def get_token_id(tokenizer, token_type):
 
     if type(tokenizer) == Tokenizer:
-        token_id = tokenizer.encode(special_tokens[token_type])
+        token_id = tokenizer.token_to_id(special_tokens[token_type])
     else:
         token_id = {
             "unk_token": tokenizer.unk_token_id, 
