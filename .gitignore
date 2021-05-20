@@ -134,3 +134,6 @@ runs
 dailoGPT_model
 saved_models
 finetuning/saved_models
+.vscode/
+*.job
+*.out

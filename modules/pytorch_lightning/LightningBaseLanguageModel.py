@@ -5,7 +5,7 @@ import pytorch_lightning as pl
 import torch
 
 from utils.utils import decode
-
+from tokenizers import Tokenizer
 
 class LightningBaseLanguageModel(pl.LightningModule):
 
@@ -25,7 +25,10 @@ class LightningBaseLanguageModel(pl.LightningModule):
 
     def complete_dialogue(self, context, max_length):
         encoding = self.tokenizer.encode(context)
-        ids_tensor = torch.tensor(encoding.ids).to(self.device)
+        if type(self.tokenizer) == Tokenizer:
+            ids_tensor = torch.tensor(encoding.ids).to(self.device)
+        else:
+            ids_tensor = torch.tensor(encoding).to(self.device)
 
         completed_dialogue_tokens = self.language_model.complete_dialogue(ids_tensor, max_length)
         completed_dialogue = decode(self.tokenizer, completed_dialogue_tokens)
@@ -33,7 +36,10 @@ class LightningBaseLanguageModel(pl.LightningModule):
 
     def next_utterance(self, context, sep_token):
         encoding = self.tokenizer.encode(context)
-        ids_tensor = torch.tensor(encoding.ids).to(self.device)
+        if type(self.tokenizer) == Tokenizer:
+            ids_tensor = torch.tensor(encoding.ids).to(self.device)
+        else:
+            ids_tensor = torch.tensor(encoding).to(self.device)
 
         next_utterance_tokens = self.language_model.next_utterance(ids_tensor, sep_token)
         new_sentence = str(self.tokenizer.decode(

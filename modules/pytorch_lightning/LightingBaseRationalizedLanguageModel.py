@@ -81,7 +81,7 @@ class LightingBaseRationalizedLanguageModel(pl.LightningModule):
         if type(self.tokenizer) == Tokenizer:
             loss = self.loss_module(predictions.view(-1, self.tokenizer.get_vocab_size()), targets.flatten()) + h_loss
         else:
-            loss = self.loss_module(predictions.view(-1, self.tokenizer.vocab_size), targets.flatten()) + h_loss
+            loss = self.loss_module(predictions.view(-1, len(self.tokenizer)), targets.flatten()) + h_loss
         acc = self.calc_acc(predictions, targets)
         return {"loss": loss, "acc": acc, "h_loss": h_loss, "h_mean": h_mean, "fussed_lasso": fussed_lasso_loss}
 

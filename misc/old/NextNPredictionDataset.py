@@ -29,11 +29,13 @@ class NextNPredictionDataset(Dataset):
 
     def process_dataset(self):
         ### First we tokenize each example
-        dialogues = [self.start_token + self.sep_token.join(dialogue["dialog"]) for dialogue in self.original_dataset]
-
         if type(self.tokenizer) not in [RobertaTokenizerFast, GPT2TokenizerFast]:
+            dialogues = [self.start_token + self.sep_token.join(dialogue["dialog"]) for dialogue in self.original_dataset]
             tokenized_dataset = [self.tokenizer.encode(sample).ids for sample in dialogues]
+        
         else:
+            self.tokenizer.add_special_tokens({'sep_token': self.sep_token})
+            dialogues = [self.tokenizer.sep_token.join(dialogue["dialog"]) for dialogue in self.original_dataset]
             tokenized_dataset = [self.tokenizer.encode(sample) for sample in dialogues]
 
         ### Next we split it up

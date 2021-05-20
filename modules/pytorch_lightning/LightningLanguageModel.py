@@ -6,7 +6,7 @@ import torch
 
 from modules.pytorch_lightning.LightningBaseLanguageModel import LightningBaseLanguageModel
 from utils.utils import calc_acc
-
+from tokenizers import Tokenizer
 
 class LightningLanguageModel(LightningBaseLanguageModel):
 
@@ -25,9 +25,13 @@ class LightningLanguageModel(LightningBaseLanguageModel):
         target_tensor = batch[1:, :]
 
         predictions = self.language_model.forward(input_tensor)
+        if type(self.tokenizer) == Tokenizer:
+            loss = self.loss_module(predictions.reshape(-1, self.tokenizer.get_vocab_size()), target_tensor.flatten(), )
+            acc = calc_acc(predictions.reshape(-1, self.tokenizer.get_vocab_size()), target_tensor.flatten(), exclude=self.padding_token)
 
-        loss = self.loss_module(predictions.reshape(-1, self.tokenizer.get_vocab_size()), target_tensor.flatten(), )
-        acc = calc_acc(predictions.reshape(-1, self.tokenizer.get_vocab_size()), target_tensor.flatten(), exclude=self.padding_token)
+        else:
+            loss = self.loss_module(predictions.reshape(-1, len(self.tokenizer)), target_tensor.flatten(), )
+            acc = calc_acc(predictions.reshape(-1, len(self.tokenizer)), target_tensor.flatten(), exclude=self.padding_token)
 
         ### TODO need to check if this is calculated correctly.
         perplexity = torch.exp(loss)  # math.exp(loss) #torch.exp(loss)
