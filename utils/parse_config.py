@@ -126,7 +126,8 @@ def get_language_model(config, tokenizer):
 
 def get_loss_module(config, tokenizer):
     # TODO make sure we exclude the padding (Is now set 2 as a default)
-    pad_id = 2
+    # pad_id = 2
+    pad_id = tokenizer.pad_token_id
     if type(tokenizer) == Tokenizer:
         weight = torch.ones(tokenizer.get_vocab_size())
     else:
