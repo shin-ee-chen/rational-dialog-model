@@ -9,7 +9,9 @@ import torch
 from utils.parse_config import parse_config_RE
 
 parser = argparse.ArgumentParser(description='Train a language model')
-parser.add_argument('--config', type=str, help='path to the config')
+
+parser.add_argument('--config', type=str, default="configs/dialoGPT_dailyDialog_RE_config.yml",
+                    help='path to the config')
 
 args = parser.parse_args()
 

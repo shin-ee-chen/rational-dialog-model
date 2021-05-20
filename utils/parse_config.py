@@ -14,7 +14,7 @@ from tokenizers import Tokenizer
 
 from modules.pytorch_lightning.LightningReinforceRationalizedLanguageModel import LightingReinforceRationalizedLanguageModel
 from utils.callbacks import FinishDialogueCallback
-
+from tokenizers import Tokenizer
 
 def parse_config_lm(config_ref):
     with open(config_ref, 'r') as f:
@@ -112,8 +112,14 @@ def get_language_model(config, tokenizer):
                 hidden_state_size=config['hidden_state_size']
             )
     elif config["type"] == "transformers":
-        language_model = PretrainedLanguageModel(pretrained_model=config['checkpoint'], tokenizer=tokenizer)
-       
+        if config["pretrained"]:
+            model_name = config["save_location"]
+            print("load pretrained_model: ", model_name)
+            language_model = PretrainedLanguageModel(pretrained_model=config['save_location'], 
+                                                     tokenizer=tokenizer)
+        else:
+            language_model = PretrainedLanguageModel(pretrained_model=config['checkpoint'], 
+                                                     tokenizer=tokenizer)
     else:
         raise ValueError("type not found", config["type"])
     return language_model
@@ -122,8 +128,10 @@ def get_language_model(config, tokenizer):
 def get_loss_module(config, tokenizer):
     # TODO make sure we exclude the padding (Is now set 2 as a default)
     pad_id = 2
-    # weight = torch.ones(tokenizer.get_vocab_size())
-    weight = torch.ones(len(tokenizer))
+    if type(tokenizer) == Tokenizer:
+        weight = torch.ones(tokenizer.get_vocab_size())
+    else:
+        weight = torch.ones(len(tokenizer))
     weight[pad_id] = 0
     return torch.nn.CrossEntropyLoss(weight=weight)
 
@@ -135,6 +143,7 @@ def get_rational_extractor(config, tokenizer):
             return PolicyBasedRationalExtractor(tokenizer.get_vocab_size(), mask_token=4)
         else: #transformers tokenizer
             return PolicyBasedRationalExtractor(len(tokenizer), mask_token=4)
+
 
 def get_trainer(config):
     # TODO add callbacks somehow
