@@ -18,11 +18,15 @@ class LightningLanguageModel(LightningBaseLanguageModel):
         :return: dict with {"loss": loss} and other values once finds relevant
         """
 
-        batch = batch[0].permute(1, 0).to(self.device)
+        input_tensor = batch[0].permute(1, 0)
+        target_tensor = batch[1].permute(1, 0)
 
-        input_tensor = batch[:-1, :]
+        cat_tensor = torch.cat([input_tensor, target_tensor])
 
-        target_tensor = batch[1:, :]
+        input_tensor = cat_tensor[:-1, :]
+        target_tensor = cat_tensor[1:, :]
+
+
 
         predictions = self.language_model.forward(input_tensor)
         if type(self.tokenizer) == Tokenizer:
