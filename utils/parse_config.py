@@ -134,7 +134,7 @@ def get_rational_extractor(config, tokenizer):
         if type(tokenizer) == Tokenizer: #nltk tokenizer
             return PolicyBasedRationalExtractor(tokenizer.get_vocab_size(), mask_token=4)
         else: #transformers tokenizer
-            return PolicyBasedRationalExtractor(tokenizer.vocab_size, mask_token=4)
+            return PolicyBasedRationalExtractor(len(tokenizer), mask_token=4)
 
 def get_trainer(config):
     # TODO add callbacks somehow

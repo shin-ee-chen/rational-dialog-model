@@ -53,10 +53,10 @@ class RobertaMLPL(LightningBaseLanguageModel):
         input_tensor = batch[:-1, :]
         target_tensor = batch[1:, :]
         predictions = self.language_model.forward(input_tensor)
-        loss = self.loss_module(predictions.reshape(-1, self.tokenizer.vocab_size), target_tensor.flatten(), )
+        loss = self.loss_module(predictions.reshape(-1, len(self.tokenizer)), target_tensor.flatten(), )
 
         perplexity = torch.exp(loss) # math.exp(loss) #torch.exp(loss)
-        acc = calc_acc(predictions.reshape(-1, self.tokenizer.vocab_size), target_tensor)
+        acc = calc_acc(predictions.reshape(-1, len(self.tokenizer)), target_tensor)
 
         return {"loss": loss, 'predictions': predictions, "perplexity": perplexity, "acc": acc}
 
