@@ -9,3 +9,16 @@ Still needs to be cleaned up a bit. But currently what works is:
 
 
 Currently the gumbell softmax is used for training. As this was easiest to implement.
+
+
+
+#### Training
+
+#### LSTM language model
+
+The training of the Rational Extractor consists of different steps.
+First we need to train the language model:
+
+1) `python train_language_model.py configs/simple_lm_config.yml`
+
+ 

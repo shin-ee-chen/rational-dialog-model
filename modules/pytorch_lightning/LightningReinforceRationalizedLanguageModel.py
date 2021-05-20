@@ -4,7 +4,7 @@ from tokenizers import Tokenizer
 from transformers import AdamW
 
 import torch.nn.functional as F
-from utils.utils import fussed_lasso, calc_acc
+from utils.utils import fussed_lasso, calc_acc, calculate_mask_percentage, get_pad_id
 
 
 class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
@@ -26,8 +26,11 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
         self.fussed_lasso_weight = fussed_lasso_weight
 
         self.log_list = [
-            "loss", "acc", "h_loss", "h_mean", "fussed_lasso", "cross_entropy_loss", "perplexity"
+            "total_loss", "acc", "total_mask_loss", "mask_mean", "mask_fussed_lasso", "cross_entropy_loss", "perplexity",
         ]
+
+        self.pad_token_id = get_pad_id(tokenizer)
+
         self.freeze_language_model = hparams["freeze_language_model"]
 
     def forward(self, x, targets, ):
@@ -37,7 +40,7 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
         masked_input = rational["masked_input"]
 
         prediction = self.forward_masked_input(masked_input, targets)
-        return {"logits": prediction, **rational}
+        return {"logits": prediction, **rational, "x": x}
 
     def get_rational(self, x):
         return self.rational_extractor(x)
@@ -68,23 +71,24 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
         n_targets = targets.shape[0]
         predictions = forward_dict["logits"][-(n_targets + 1):-1]
 
-        h_loss = 0
+        total_h_loss = 0
         h_mean = 0
         fussed_lasso_loss = 0
 
         if "mask" in forward_dict.keys():
-            h = forward_dict["mask"].permute(1, 0).float()
-            h_mean = torch.mean(h, dim=-1)
-            fussed_lasso_loss = fussed_lasso(h, reduce=False)
-            h_loss = self.sparsity_weight * h_mean + self.fussed_lasso_weight * fussed_lasso_loss
+            mask = forward_dict["mask"].permute(1, 0).float()
+            tokens = forward_dict["x"].permute(1, 0).float()
+            h_mean = calculate_mask_percentage(tokens, mask, reduce=False, pad_id=self.pad_token_id)
+            fussed_lasso_loss = fussed_lasso(tokens, mask, reduce=False, pad_id=self.pad_token_id)
+            total_h_loss = self.sparsity_weight * h_mean + self.fussed_lasso_weight * fussed_lasso_loss
 
         if type(self.tokenizer) == Tokenizer:
             cross_entropy_loss = self.loss_module(predictions.view(-1, self.tokenizer.get_vocab_size()),
                                                   targets.flatten())
         else:
-            cross_entropy_loss = self.loss_module(predictions.view(-1, self.tokenizer.vocab_size), targets.flatten(),
+            cross_entropy_loss = self.loss_module(predictions.view(-1, len(self.tokenizer)), targets.flatten(),
                                                   reduce=False)
-        rewards = cross_entropy_loss + h_loss
+        rewards = cross_entropy_loss + total_h_loss
 
         perplexity = torch.exp(cross_entropy_loss.mean(dim=-1)).mean()
 
@@ -94,10 +98,11 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
         if not self.freeze_language_model:
             total_loss += torch.mean(rewards)
 
-        acc = calc_acc(predictions, targets, exclude=self.tokenizer.pad_token_id)
+        acc = calc_acc(predictions, targets, exclude=self.pad_token_id)
 
-        return {"loss": total_loss, "acc": acc, "h_loss": h_loss.mean(), "h_mean": h_mean.mean(),
-                "fussed_lasso": fussed_lasso_loss.mean(), "cross_entropy_loss": cross_entropy_loss.mean(),
+
+        return {"total_loss": total_loss, "acc": acc, "total_mask_loss": total_h_loss.mean(), "mask_mean": h_mean.mean(),
+                "mask_fussed_lasso": fussed_lasso_loss.mean(), "cross_entropy_loss": cross_entropy_loss.mean(),
                 "perplexity": perplexity}
 
     def batch_out(self, batch):
@@ -116,15 +121,16 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
 
         self.log_results(batch_out)
 
-        return batch_out["loss"]
+        return batch_out["total_loss"]
 
     @torch.no_grad()
     def validation_step(self, batch, batch_idx):
+
         batch_out = self.batch_out(batch)
 
-        self.log_results(batch_out, prepend="val_")
+        self.log_results(batch_out, prepend="val ")
 
-        return batch_out["loss"]
+        return batch_out["total_loss"]
 
     def complete_dialogues(self, sentences, total_length, with_rational=True, greedy_rationals=True):
         return [self.complete_dialogue(sentence, total_length=total_length, with_rational=with_rational,
@@ -209,4 +215,3 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
 
         for k in self.log_list:
             self.log(prepend + k, result[k], on_step=True, on_epoch=True)
-
