@@ -12,10 +12,6 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
     PL wrapper for training a language model together with a rational extractor.
     '''
 
-    '''
-      PL wrapper for training a language model together with a rational extractor.
-      '''
-
     def __init__(self, language_model, rational_extractor, tokenizer, loss_module, hparams=None,
                  sparsity_weight=0.1,
                  fussed_lasso_weight=0.1):
@@ -32,7 +28,9 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
         self.log_list = [
             "total_loss", "acc", "total_mask_loss", "mask_mean", "mask_fussed_lasso", "cross_entropy_loss", "perplexity",
         ]
+
         self.pad_token_id = get_pad_id(tokenizer)
+
         self.freeze_language_model = hparams["freeze_language_model"]
 
     def forward(self, x, targets, ):
@@ -101,6 +99,7 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
             total_loss += torch.mean(rewards)
 
         acc = calc_acc(predictions, targets, exclude=self.pad_token_id)
+
 
         return {"total_loss": total_loss, "acc": acc, "total_mask_loss": total_h_loss.mean(), "mask_mean": h_mean.mean(),
                 "mask_fussed_lasso": fussed_lasso_loss.mean(), "cross_entropy_loss": cross_entropy_loss.mean(),
