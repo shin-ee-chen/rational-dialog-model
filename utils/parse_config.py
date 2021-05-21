@@ -13,7 +13,7 @@ from transformers import AutoTokenizer
 
 from modules.pytorch_lightning.LightningReinforceRationalizedLanguageModel import \
     LightingReinforceRationalizedLanguageModel
-from utils.callbacks import FinishDialogueCallback, ChangeInPerplexityCallback
+from utils.callbacks import FinishDialogueCallback, ChangeInPerplexityCallback, FinishDialogueRationalizedCallback
 from tokenizers import Tokenizer
 from utils.token_utils import get_token_id, get_vocab_size
 
@@ -183,7 +183,7 @@ def get_trainer(information):
 
     elif config["type"] == "policy":
         callbacks = [
-            FinishDialogueCallback(["How are you doing today?", "What are you upto? "]),
+            FinishDialogueRationalizedCallback(["How are you doing today?", "What are you upto? "]),
             # ChangeInPerplexityCallback(information["dataloader_test"]) #TODO maybe enable again
         ]
         trainer = pl.Trainer(
