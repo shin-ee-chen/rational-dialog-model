@@ -6,7 +6,7 @@ import argparse
 
 import torch
 
-from utils.parse_config import parse_config_lm, parse_config
+from utils.parse_config import parse_config
 
 parser = argparse.ArgumentParser(description='Train a language model')
 parser.add_argument('--config', default="configs/finetune_dialoGPT_dailyDialog.yml", type=str, 

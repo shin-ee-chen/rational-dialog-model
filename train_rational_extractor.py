@@ -6,7 +6,7 @@ import argparse
 
 import torch
 
-from utils.parse_config import parse_config_RE, parse_config
+from utils.parse_config import parse_config
 
 parser = argparse.ArgumentParser(description='Train a language model')
 
