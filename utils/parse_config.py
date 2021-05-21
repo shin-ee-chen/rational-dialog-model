@@ -175,7 +175,6 @@ def get_trainer(information):
             log_every_n_steps=1,
             progress_bar_refresh_rate=1,
             callbacks=callbacks
-
         )
         trainer.logger._default_hp_metric = None  # Optional logging argument that we don't need
 
@@ -184,8 +183,8 @@ def get_trainer(information):
     elif config["type"] == "policy":
         callbacks = [
             FinishDialogueRationalizedCallback(["How are you doing today?", "What are you upto? "]),
-            FinishDialogueRationalizedCallback(["How are you doing today?", "What are you upto? "], greedy_policy=True),
-            # ChangeInPerplexityCallback(information["dataloader_test"]) #TODO maybe enable again
+            #FinishDialogueRationalizedCallback(["How are you doing today?", "What are you upto? "], greedy_policy=True),
+            #ChangeInPerplexityCallback(information["dataloader_test"]) #TODO enable again
         ]
         trainer = pl.Trainer(
             default_root_dir='logs',

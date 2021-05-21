@@ -1,7 +1,8 @@
 language_model:
   type: transformers
+  load_location: './finetuning/saved_models/dialoGPT-daily_dialog-model'
   checkpoint: microsoft/DialoGPT-small
-  pretrained: False
+  pretrained: True
   save_location: './models/dialoGPT_dailyDialog_finetuned/'
 dataset:
   type: 'daily_dialogue'
@@ -19,8 +20,9 @@ hparams:
 loss_module: crossentropyloss
 trainer:
   type: policy #Type of the pytorch lighntning model we are training.
-  max_epochs: 10
+  max_epochs: 5
   log_every_n_steps: 1
 rational_extractor:
   pretrained: False
   type: policy_based
+  save_location: './models/REINFORCE_dialoGPT.pt'
