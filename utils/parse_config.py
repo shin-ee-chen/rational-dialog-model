@@ -22,30 +22,28 @@ def parse_config(config_ref):
 
     result = {"config": config}
 
-    # First we load the tokenizer
+    # First we load the tokenizer and the dataset
     tokenizer = get_tokenizer(config["tokenizer"])
-
     result["tokenizer"] = tokenizer
-
     datasets = get_datasets(config["dataset"], tokenizer)
-
     result = {**result, **datasets}
 
+    # Get language model and rationale extractor (if applicable)
     language_model = get_language_model(config["language_model"], tokenizer)
-
     result["language_model"] = language_model
-
     if "rational_extractor" in config.keys():
         RE = get_rational_extractor(config["rational_extractor"], tokenizer)
         result["rational_extractor"] = RE
 
+    # get loss module and hyper parameters for training
     hparams = config["hparams"]
     result["hparams"] = hparams
     loss_module = get_loss_module(config["loss_module"], tokenizer)
 
 
-    # Load the pytorch lightning module
+    # Load the pytorch lightning module and the trainer
     if "rational_extractor" in config.keys():
+
         lightning_language_model = LightingReinforceRationalizedLanguageModel(language_model, RE, tokenizer,
                                                                           hparams=hparams)
     else:
@@ -56,7 +54,6 @@ def parse_config(config_ref):
     result["lightning_language_model"] = lightning_language_model
 
     trainer = get_trainer(result)
-
     result["trainer"] = trainer
 
     return result
@@ -99,8 +96,6 @@ def get_datasets(config, tokenizer):
             batch_size=config["batch_size"],
             collate_fn=UtterancesDataset.get_collate_fn(padding_value=get_token_id(tokenizer, "pad_token"))
         )
-
-
         return {"dataloader_train": dataloader_train, "dataloader_test": dataloader_test}
     else:
         raise ValueError("type not found", config["type"])
@@ -124,11 +119,15 @@ def get_language_model(config, tokenizer):
         if config["pretrained"]:
             model_name = config["save_location"]
             print("load pretrained_model: ", model_name)
-            language_model = PretrainedLanguageModel(pretrained_model=config['save_location'], 
-                                                     tokenizer=tokenizer)
+            language_model = PretrainedLanguageModel(
+                pretrained_model=config['save_location'], 
+                tokenizer=tokenizer
+            )
         else:
-            language_model = PretrainedLanguageModel(pretrained_model=config['checkpoint'], 
-                                                     tokenizer=tokenizer)
+            language_model = PretrainedLanguageModel(
+                pretrained_model=config['checkpoint'], 
+                tokenizer=tokenizer
+            )
     else:
         raise ValueError("type not found", config["type"])
     return language_model
