@@ -171,7 +171,7 @@ class UtterancesDataset(Dataset):
         def collate_fn(items):
             '''
             Pads the context from the left and the response from the right.
-            Makes sure it is batch second.
+            Results in batches with (contexts, responses), with batch-first.
             '''
             assert padding_value != None, "Please provide pad_token_id to use for padding"
             inputs = torch.fliplr(pad_sequence(
