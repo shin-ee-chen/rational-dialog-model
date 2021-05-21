@@ -134,6 +134,7 @@ def calc_policy_loss(rewards, policy):
     ## We want to multiply rewards with policy based on the batch
 
     rewards = rewards.repeat(policy.shape[0], 1)
-    policy = policy.unsqueeze(dim=-1)
-
+    policy = policy.squeeze(dim=-1)
+    ## a safety check. 
+    assert policy.shape == rewards.shape, "policy and rewards should be of same size"
     return -torch.mean((rewards.detach() * torch.log(policy)).mean(dim=0))
