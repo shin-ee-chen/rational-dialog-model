@@ -4,6 +4,7 @@ Pytorch lightning version for training a language model.
 import pytorch_lightning as pl
 import torch
 
+from utils.token_utils import get_token
 from utils.utils import decode
 from tokenizers import Tokenizer
 

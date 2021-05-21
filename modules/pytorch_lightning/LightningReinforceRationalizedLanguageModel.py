@@ -4,6 +4,8 @@ from tokenizers import Tokenizer
 from transformers import AdamW
 
 import torch.nn.functional as F
+
+from utils.token_utils import get_vocab_size, get_token_id
 from utils.utils import fussed_lasso, calc_acc, calculate_mask_percentage, get_pad_id
 
 
@@ -12,21 +14,21 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
     PL wrapper for training a language model together with a rational extractor.
     '''
 
-    def __init__(self, language_model, rational_extractor, tokenizer, loss_module, hparams=None,
+    def __init__(self, language_model, rational_extractor, tokenizer, hparams=None,
                  sparsity_weight=0.1,
                  fussed_lasso_weight=0.1):
         super().__init__()
         self.hparams = hparams
         self.language_model = language_model
         self.rational_extractor = rational_extractor
-        self.loss_module = loss_module
         self.tokenizer = tokenizer
 
         self.sparsity_weight = sparsity_weight
         self.fussed_lasso_weight = fussed_lasso_weight
 
         self.log_list = [
-            "total_loss", "acc", "total_mask_loss", "mask_mean", "mask_fussed_lasso", "cross_entropy_loss", "perplexity",
+            "total_loss", "acc", "total_mask_loss", "mask_mean", "mask_fussed_lasso", "cross_entropy_loss",
+            "perplexity",
         ]
 
         self.pad_token_id = get_pad_id(tokenizer)
@@ -82,12 +84,10 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
             fussed_lasso_loss = fussed_lasso(tokens, mask, reduce=False, pad_id=self.pad_token_id)
             total_h_loss = self.sparsity_weight * h_mean + self.fussed_lasso_weight * fussed_lasso_loss
 
-        if type(self.tokenizer) == Tokenizer:
-            cross_entropy_loss = self.loss_module(predictions.view(-1, self.tokenizer.get_vocab_size()),
-                                                  targets.flatten())
-        else:
-            cross_entropy_loss = self.loss_module(predictions.view(-1, len(self.tokenizer)), targets.flatten(),
-                                                  reduce=False)
+        ##TODO construct weight vector.
+        cross_entropy_loss = F.cross_entropy(predictions.view(-1, get_vocab_size(self.tokenizer)), targets.flatten(),
+                                             reduce=False, exclude=get_token_id(self.tokenizer, "pad_token"))
+
         rewards = cross_entropy_loss + total_h_loss
 
         perplexity = torch.exp(cross_entropy_loss.mean(dim=-1)).mean()
@@ -100,8 +100,8 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
 
         acc = calc_acc(predictions, targets, exclude=self.pad_token_id)
 
-
-        return {"total_loss": total_loss, "acc": acc, "total_mask_loss": total_h_loss.mean(), "mask_mean": h_mean.mean(),
+        return {"total_loss": total_loss, "acc": acc, "total_mask_loss": total_h_loss.mean(),
+                "mask_mean": h_mean.mean(),
                 "mask_fussed_lasso": fussed_lasso_loss.mean(), "cross_entropy_loss": cross_entropy_loss.mean(),
                 "perplexity": perplexity}
 

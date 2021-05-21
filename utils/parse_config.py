@@ -10,7 +10,6 @@ from modules.RationalExtractors.PolicyBasedRationalExtractor import PolicyBasedR
 from modules.pytorch_lightning.LightningLanguageModel import LightningLanguageModel
 import pytorch_lightning as pl
 from transformers import AutoTokenizer
-from tokenizers import Tokenizer
 
 from modules.pytorch_lightning.LightningReinforceRationalizedLanguageModel import LightingReinforceRationalizedLanguageModel
 from utils.callbacks import FinishDialogueCallback, ChangeInPerplexityCallback
@@ -43,12 +42,11 @@ def parse_config(config_ref):
     hparams = config["hparams"]
     result["hparams"] = hparams
     loss_module = get_loss_module(config["loss_module"], tokenizer)
-    result["loss_module"] = loss_module
+
 
     # Load the pytorch lightning module
     if "rational_extractor" in config.keys():
         lightning_language_model = LightingReinforceRationalizedLanguageModel(language_model, RE, tokenizer,
-                                                                          loss_module=loss_module,
                                                                           hparams=hparams)
     else:
         lightning_language_model = LightningLanguageModel(language_model, tokenizer, loss_module=loss_module,
@@ -62,76 +60,6 @@ def parse_config(config_ref):
     result["trainer"] = trainer
 
     return result
-
-def parse_config_lm(config_ref):
-    with open(config_ref, 'r') as f:
-        config = yaml.load(f)
-
-
-    # First we load the tokenizer
-    tokenizer = get_tokenizer(config["tokenizer"])
-
-    datasets = get_datasets(config["dataset"], tokenizer)
-
-    language_model = get_language_model(config["language_model"], tokenizer)
-
-    hparams = config["hparams"]
-
-    loss_module = get_loss_module(config["loss_module"], tokenizer)
-
-    # Load the pytorch lightning module
-    lightning_language_model = LightningLanguageModel(language_model, tokenizer, loss_module=loss_module,
-                                                      hparams=hparams)
-
-    trainer = get_trainer(config["trainer"])
-
-    return {"tokenizer": tokenizer, **datasets, "language_model": language_model, "hparams": hparams,
-            "lightning_language_model": lightning_language_model, "trainer": trainer, "config": config}
-
-
-def parse_config_RE(config_ref):
-    with open(config_ref, 'r') as f:
-        config = yaml.load(f)
-
-
-    result = {"config": config}
-
-    # First we load the tokenizer
-    tokenizer = get_tokenizer(config["tokenizer"])
-
-    result["tokenizer"] = tokenizer
-
-
-
-    datasets = get_datasets(config["dataset"], tokenizer)
-
-    result = {**result, **datasets}
-
-    language_model = get_language_model(config["language_model"], tokenizer)
-
-    result["language_model"] = language_model
-
-    RE = get_rational_extractor(config["rational_extractor"], tokenizer)
-
-    result["rational_extractor"] = RE
-
-    hparams = config["hparams"]
-    result["hparams"] = hparams
-    loss_module = get_loss_module(config["loss_module"], tokenizer)
-    result["loss_module"] = loss_module
-
-    # Load the pytorch lightning module
-    lightning_language_model = LightingReinforceRationalizedLanguageModel(language_model, RE, tokenizer,
-                                                                     loss_module=loss_module,
-                                                                     hparams=hparams)
-    result["lightning_language_model"] = lightning_language_model
-
-    trainer = get_trainer(result)
-
-    result["trainer"] = trainer
-
-    return result
-
 
 def get_tokenizer(tokenizer_config):
     if tokenizer_config["type"] == "transformers":

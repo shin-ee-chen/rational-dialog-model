@@ -7,7 +7,8 @@ import torch
 from modules.pytorch_lightning.LightningBaseLanguageModel import LightningBaseLanguageModel
 from utils.utils import calc_acc
 from tokenizers import Tokenizer
-from utils.token_utils import get_token_id
+from utils.token_utils import get_token_id, get_vocab_size
+import torch.nn.functional as F
 
 class LightningLanguageModel(LightningBaseLanguageModel):
 
@@ -29,22 +30,17 @@ class LightningLanguageModel(LightningBaseLanguageModel):
 
         predictions = self.language_model.forward(input_tensor)
 
-        if type(self.tokenizer) == Tokenizer:
-            loss = self.loss_module(predictions.reshape(-1, self.tokenizer.get_vocab_size()), target_tensor.flatten(), )
-            acc = calc_acc(
-                predictions.reshape(-1, self.tokenizer.get_vocab_size()), 
-                target_tensor.flatten(), 
-                exclude=get_token_id(self.tokenizer, "pad_token")
-            )
-        else:
-            loss = self.loss_module(predictions.reshape(-1, len(self.tokenizer)), target_tensor.flatten(), )
-            acc = calc_acc(
-                predictions.reshape(-1, len(self.tokenizer)), 
-                target_tensor.flatten(), 
-                exclude=get_token_id(self.tokenizer, "pad_token")
-            )
+        vocab_size = get_vocab_size(self.tokenizer)
+        loss = F.cross_entropy(predictions.reshape(-1, vocab_size), target_tensor.flatten(), )
+        acc = calc_acc(
+            predictions.reshape(-1, vocab_size),
+            target_tensor.flatten(),
+            exclude=get_token_id(self.tokenizer, "pad_token")
+        )
+
 
         ### TODO need to check if this is calculated correctly.
+        ### TODO we need to not re
         perplexity = torch.exp(loss)  # math.exp(loss) #torch.exp(loss)
 
         return {"loss": loss, 'predictions': predictions, "perplexity": perplexity, "acc": acc}

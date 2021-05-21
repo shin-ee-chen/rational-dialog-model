@@ -1,5 +1,7 @@
 from tokenizers import Tokenizer
 
+
+
 special_tokens = {
     "unk_token": "[UNK]", 
     "sep_token": "[SEP]", 
@@ -38,3 +40,10 @@ def get_token_id(tokenizer, token_type):
         }[token_type]
 
     return token_id
+
+
+def get_vocab_size(tokenizer):
+    if type(tokenizer) == Tokenizer:
+        return tokenizer.get_vocab_size()
+    else:
+        return len(tokenizer)
