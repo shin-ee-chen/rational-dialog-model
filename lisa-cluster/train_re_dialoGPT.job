@@ -23,5 +23,5 @@ cd $HOME/rational-dialog-model
 source activate cdm
 # Run your code
 echo "running dialoGPT.train_rational_extractor.py"
-srun python -u -m dialoGPT.train_rational_extractor.py
+srun python -u train_rational_extractor.py --config configs/dialoGPT_REINFORCE_dailyDialog.yml
 echo "finish"

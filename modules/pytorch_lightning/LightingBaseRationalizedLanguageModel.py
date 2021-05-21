@@ -103,39 +103,9 @@ class LightingBaseRationalizedLanguageModel(pl.LightningModule):
 
     def complete_dialogues(self, sentences, total_reaction_length, with_rational=True, greedy_rationals=True):
         return [self.complete_dialogue(sentence, total_reaction_length=total_reaction_length, with_rational=with_rational) for sentence in sentences]
-
-    # def complete_dialogue(self, input_sentence, n_rational=10, total_reaction_length=100, with_rational=True):
-    #     total_reaction_length=20 #TODO remove
-    #     no_of_turns = 2
-    #     input_sentences = [input_sentence]
-        
-    #     rationals = []
-    #     generated_sentences = []
-    #     rationalized_input = []
-    #     while len(generated_sentences) < no_of_turns:
-
-    #         rationalized_input.append(self.tokenizer.eos_token.join(input_sentences))
-    #         rationals.append(torch.tensor([]))
-
-    #         if type(self.tokenizer) == Tokenizer:
-    #             tokenized_input = self.tokenizer.encode(input_sentence).ids
-    #         else:
-    #             tokenized_input = self.tokenizer.encode(input_sentence)
-            
-    #         tokenized_input = torch.tensor(tokenized_input).to(self.device).unsqueeze(1)
-    #         next_ids = self.language_model.generate_sentence_from_tokenized_input(tokenized_input)
-            
-    #         next_ids = next_ids.flatten().flatten().detach().cpu().numpy()
-    #         generated_sentence = self.tokenizer.decode(next_ids, skip_special_tokens=False)
-    #         generated_sentences.append(generated_sentence)
-    #         input_sentences.append(generated_sentence)
-
-    #     return {"completed_dialogue": '\n'.join(input_sentences), "rationals": rationals, "rationalized_input": rationalized_input,
-    #             "response": generated_sentences}
             
     def complete_dialogue(self, input_sentence, n_rational=10, total_reaction_length=100, with_rational=True):
-        total_reaction_length=20 #TODO remove
-        
+
         if type(self.tokenizer) == Tokenizer:
             input_encoding = self.tokenizer.encode(input_sentence).ids
         else:
@@ -153,7 +123,6 @@ class LightingBaseRationalizedLanguageModel(pl.LightningModule):
             if with_rational and len(dialogue_tokens_ids_tensor) > n_rational:
                 rational = self.get_rational(dialogue_tokens_ids_tensor)
                 binary_mask = rational["h"]
-                #TODO modify mask
                 rational_input = (dialogue_tokens_ids_tensor * binary_mask).int().flatten().detach().cpu().numpy()
                 rational_input = self.tokenizer.decode(rational_input, skip_special_tokens=False).replace(" #","").replace( "#", "")
                 rationalized_input.append(rational_input)
