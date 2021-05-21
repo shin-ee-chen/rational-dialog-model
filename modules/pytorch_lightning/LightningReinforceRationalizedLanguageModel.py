@@ -5,8 +5,9 @@ from transformers import AdamW
 
 import torch.nn.functional as F
 
-from utils.token_utils import get_vocab_size, get_token_id
-from utils.utils import fussed_lasso, calc_acc, calculate_mask_percentage, get_pad_id
+from utils.token_utils import get_vocab_size, get_token_id, get_weights
+from utils.utils import fussed_lasso, calc_acc, calculate_mask_percentage, get_pad_id, calc_perplexity, \
+    calc_cross_entropy_batch_wise
 
 
 class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
@@ -78,21 +79,20 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
         fussed_lasso_loss = 0
 
         if "mask" in forward_dict.keys():
+
+            ### Make sure batch first.
             mask = forward_dict["mask"].permute(1, 0).float()
             tokens = forward_dict["x"].permute(1, 0).float()
             h_mean = calculate_mask_percentage(tokens, mask, reduce=False, pad_id=self.pad_token_id)
             fussed_lasso_loss = fussed_lasso(tokens, mask, reduce=False, pad_id=self.pad_token_id)
             total_h_loss = self.sparsity_weight * h_mean + self.fussed_lasso_weight * fussed_lasso_loss
 
-
-        ##TODO construct weight vector.
-        cross_entropy_loss = F.cross_entropy(predictions.view(-1, get_vocab_size(self.tokenizer)), targets.flatten(),
-                                             reduce=False, exclude=get_token_id(self.tokenizer, "pad_token"))
-
+        cross_entropy_loss = calc_cross_entropy_batch_wise(predictions, targets, self.tokenizer)
+        ##Make sure it is mean per batch
 
         rewards = cross_entropy_loss + total_h_loss
 
-        perplexity = torch.exp(cross_entropy_loss.mean(dim=-1)).mean()
+        perplexity = calc_perplexity(predictions, targets, exclude=get_token_id(self.tokenizer, "pad_token"))
 
         # Get the policy loss.
         total_loss = -torch.mean(rewards.detach() * torch.log(forward_dict["chosen_policy"]))

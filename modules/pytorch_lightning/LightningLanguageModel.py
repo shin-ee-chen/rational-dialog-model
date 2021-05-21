@@ -5,10 +5,11 @@ Pytorch lightning version of the language model.
 import torch
 
 from modules.pytorch_lightning.LightningBaseLanguageModel import LightningBaseLanguageModel
-from utils.utils import calc_acc
+from utils.utils import calc_acc, calc_perplexity
 from tokenizers import Tokenizer
-from utils.token_utils import get_token_id, get_vocab_size
+from utils.token_utils import get_token_id, get_vocab_size, get_weights
 import torch.nn.functional as F
+
 
 class LightningLanguageModel(LightningBaseLanguageModel):
 
@@ -31,46 +32,16 @@ class LightningLanguageModel(LightningBaseLanguageModel):
         predictions = self.language_model.forward(input_tensor)
 
         vocab_size = get_vocab_size(self.tokenizer)
-        loss = F.cross_entropy(predictions.reshape(-1, vocab_size), target_tensor.flatten(), )
+        weights = get_weights(self.tokenizer).to(input_tensor.device)
+        loss = F.cross_entropy(predictions.reshape(-1, vocab_size), target_tensor.flatten(), weight=weights)
+
         acc = calc_acc(
             predictions.reshape(-1, vocab_size),
             target_tensor.flatten(),
             exclude=get_token_id(self.tokenizer, "pad_token")
         )
 
-
-        ### TODO need to check if this is calculated correctly.
-        ### TODO we need to not re
-        perplexity = torch.exp(loss)  # math.exp(loss) #torch.exp(loss)
+        perplexity = calc_perplexity(predictions, target_tensor, exclude=get_token_id(self.tokenizer,
+                                                                                      "pad_token"))  # math.exp(loss) #torch.exp(loss)
 
         return {"loss": loss, 'predictions': predictions, "perplexity": perplexity, "acc": acc}
-
-
-class RobertaMLPL(LightningBaseLanguageModel):
-
-    def batch_to_out(self, batch):
-        '''
-        Should return a dictionary with at least the loss inside
-        :param batch:
-        :param batch_idx:
-        :return: dict with {"loss": loss} and other values once finds relevant
-        '''
-
-        batch = batch[0].permute(1, 0).to(self.device)
-        input_tensor = batch[:-1, :]
-        target_tensor = batch[1:, :]
-        predictions = self.language_model.forward(input_tensor)
-        loss = self.loss_module(predictions.reshape(-1, len(self.tokenizer)), target_tensor.flatten(), )
-
-        perplexity = torch.exp(loss) # math.exp(loss) #torch.exp(loss)
-        acc = calc_acc(predictions.reshape(-1, len(self.tokenizer)), target_tensor)
-
-        return {"loss": loss, 'predictions': predictions, "perplexity": perplexity, "acc": acc}
-
-    def complete_dialogue(self, context, max_length):
-        encoding = self.tokenizer(context)
-        ids_tensor = torch.tensor(encoding.input_ids[1:-1]).to(self.device)
-
-        completed_sentence_tokens = self.language_model.complete_dialogue(ids_tensor, max_length)
-        new_sentence = self.tokenizer.decode(completed_sentence_tokens, skip_special_tokens=False)
-        return new_sentence

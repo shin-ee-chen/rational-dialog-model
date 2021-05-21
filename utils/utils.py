@@ -2,10 +2,15 @@ import glob
 import os
 import time
 
+
 # From: https://github.com/bastings/interpretable_predictions/blob/master/latent_rationale/beer/models/rl.py
 # With a small modification to introduce the mean.
 import torch
 from tokenizers import Tokenizer 
+
+import torch.nn.functional as F
+
+from utils.token_utils import get_weights, get_token_id
 
 
 def fussed_lasso(tokens, t, reduce=True, pad_id=0):
@@ -89,3 +94,36 @@ def get_pad_id(tokenizer):
         print("pad token id: %d" % (tokenizer.pad_token_id))
         return tokenizer.pad_token_id
 
+
+
+def calc_perplexity(predictions, targets,  exclude=0, batch_first=False):
+
+    if not batch_first:
+        predictions = predictions.permute(1, 0, 2)
+        targets = targets.permute(1,0)
+
+    loss = F.cross_entropy(predictions.reshape(-1, predictions.shape[2]), targets.flatten(), reduce=False)
+
+    targets = targets.reshape(predictions.shape[0], -1)
+    loss = loss.reshape(predictions.shape[0], -1)
+    # We need to make sure that we do not lose
+    to_use = targets != exclude
+    total_to_use = to_use.sum(dim=-1)
+    perplexity = torch.exp((loss * to_use).sum(dim=-1) / total_to_use).mean()
+    return perplexity
+
+
+def calc_cross_entropy_batch_wise(predictions, targets, tokenizer, batch_first=False):
+    if not batch_first:
+        predictions = predictions.permute(1, 0, 2)
+        targets = targets.permute(1,0)
+    weight = get_weights(tokenizer).to(targets.device)
+    loss = F.cross_entropy(predictions.reshape(-1, predictions.shape[2]), targets.flatten(),
+                    reduce=False, weight=weight)
+
+    #Make sure batch first.
+    loss = loss.reshape(predictions.shape[0], -1)
+    exclude = get_token_id(tokenizer, "pad_token")
+    to_use = (targets != exclude).float()
+    total_to_use = to_use.sum(dim=-1)
+    return loss.sum(dim=-1)/total_to_use
