@@ -3,10 +3,9 @@ File to train a language model.
 """
 
 import argparse
-
 import torch
-
 from utils.parse_config import parse_config
+from utils.utils import log_config
 
 parser = argparse.ArgumentParser(description='Train a language model')
 
@@ -22,6 +21,7 @@ parameters = parse_config(config_ref)
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 trainer = parameters["trainer"]
+log_config(trainer, config_ref)
 
 model = parameters["lightning_language_model"]
 

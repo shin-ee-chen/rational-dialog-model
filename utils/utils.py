@@ -1,13 +1,13 @@
 import glob
 import os
 import time
-
+import yaml
+import json
 
 # From: https://github.com/bastings/interpretable_predictions/blob/master/latent_rationale/beer/models/rl.py
 # With a small modification to introduce the mean.
 import torch
 from tokenizers import Tokenizer 
-
 import torch.nn.functional as F
 
 from utils.token_utils import get_weights, get_token_id
@@ -138,3 +138,8 @@ def calc_policy_loss(rewards, policy):
     ## a safety check. 
     assert policy.shape == rewards.shape, "policy and rewards should be of same size"
     return -torch.mean((rewards.detach() * torch.log(policy)).mean(dim=0))
+
+def log_config(trainer, config_ref):
+    with open(config_ref, 'r') as f:
+        config = yaml.load(f)
+    trainer.logger.experiment.add_text("config", str(json.dumps(config)))
