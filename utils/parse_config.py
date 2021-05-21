@@ -10,7 +10,6 @@ from modules.RationalExtractors.PolicyBasedRationalExtractor import PolicyBasedR
 from modules.pytorch_lightning.LightningLanguageModel import LightningLanguageModel
 import pytorch_lightning as pl
 from transformers import AutoTokenizer
-from tokenizers import Tokenizer
 
 from modules.pytorch_lightning.LightningReinforceRationalizedLanguageModel import LightingReinforceRationalizedLanguageModel
 from utils.callbacks import FinishDialogueCallback, ChangeInPerplexityCallback
@@ -40,30 +39,24 @@ def parse_config(config_ref):
     hparams = config["hparams"]
     result["hparams"] = hparams
     loss_module = get_loss_module(config["loss_module"], tokenizer)
-    result["loss_module"] = loss_module
+
 
     # Load the pytorch lightning module and the trainer
     if "rational_extractor" in config.keys():
-        lightning_language_model = LightingReinforceRationalizedLanguageModel(
-            language_model, 
-            RE, 
-            tokenizer,
-            loss_module=loss_module,
-            hparams=hparams
-        )
+
+        lightning_language_model = LightingReinforceRationalizedLanguageModel(language_model, RE, tokenizer,
+                                                                          hparams=hparams)
     else:
-        lightning_language_model = LightningLanguageModel(
-            language_model, 
-            tokenizer, 
-            loss_module=loss_module,
-            hparams=hparams
-        )
+        lightning_language_model = LightningLanguageModel(language_model, tokenizer, loss_module=loss_module,
+                                                          hparams=hparams)
+
+
     result["lightning_language_model"] = lightning_language_model
+
     trainer = get_trainer(result)
     result["trainer"] = trainer
 
     return result
-
 
 def get_tokenizer(tokenizer_config):
     if tokenizer_config["type"] == "transformers":

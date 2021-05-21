@@ -1,4 +1,7 @@
+import torch
 from tokenizers import Tokenizer
+
+
 
 special_tokens = {
     "unk_token": "[UNK]", 
@@ -38,3 +41,15 @@ def get_token_id(tokenizer, token_type):
         }[token_type]
 
     return token_id
+
+
+def get_vocab_size(tokenizer):
+    if type(tokenizer) == Tokenizer:
+        return tokenizer.get_vocab_size()
+    else:
+        return len(tokenizer)
+
+def get_weights(tokenizer):
+    weights = torch.ones(get_vocab_size(tokenizer))
+    weights[get_token_id(tokenizer, "pad_token")] = 0
+    return weights
