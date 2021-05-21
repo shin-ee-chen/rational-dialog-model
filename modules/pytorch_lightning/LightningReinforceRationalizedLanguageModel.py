@@ -86,8 +86,8 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
             cross_entropy_loss = self.loss_module(predictions.view(-1, self.tokenizer.get_vocab_size()),
                                                   targets.flatten())
         else:
-            cross_entropy_loss = self.loss_module(predictions.view(-1, len(self.tokenizer)), targets.flatten(),
-                                                  reduce=False)
+            cross_entropy_loss = self.loss_module(predictions.view(-1, len(self.tokenizer)), targets.flatten()) #,reduce=False) #TODO do we need reduce here?
+        
         rewards = cross_entropy_loss + total_h_loss
 
         perplexity = torch.exp(cross_entropy_loss.mean(dim=-1)).mean()
