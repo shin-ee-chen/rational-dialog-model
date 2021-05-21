@@ -137,3 +137,5 @@ finetuning/saved_models
 .vscode/
 *.job
 *.out
+
+todo.md

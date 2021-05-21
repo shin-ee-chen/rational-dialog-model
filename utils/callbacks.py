@@ -102,7 +102,7 @@ class FinishDialogueRationalizedCallback(pl.Callback):
                         for rationalized_input, response in zip(completed_sentence["rationalized_input"], completed_sentence["response"]):
                             f.write(rationalized_input + ' ------> ' + response + '\n')                        
                         f.write('\n\nCompleted dialogue:\n')    
-                        f.write(completed_sentence["completed_dialogue"])
+                        f.write('\n'.join(completed_sentence["completed_dialogue"].split('[SEP]')))
         pl_module.train()
 
 

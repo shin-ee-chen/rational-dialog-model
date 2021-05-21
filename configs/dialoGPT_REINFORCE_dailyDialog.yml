@@ -19,7 +19,8 @@ hparams:
 loss_module: crossentropyloss
 trainer:
   type: policy #Type of the pytorch lighntning model we are training.
-  max_epochs: 50
+  max_epochs: 10
   log_every_n_steps: 1
 rational_extractor:
+  pretrained: False
   type: policy_based
