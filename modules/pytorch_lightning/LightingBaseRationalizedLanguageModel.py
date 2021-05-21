@@ -3,7 +3,6 @@ import pytorch_lightning as pl
 from tokenizers import Tokenizer
 from transformers import AdamW
 
-from misc.old.NextNPredictionDataset import postprocess_dataloader_out
 from utils.utils import fussed_lasso
 
 
@@ -57,7 +56,10 @@ class LightingBaseRationalizedLanguageModel(pl.LightningModule):
         return rational
 
     def batch_out(self, batch):
-        rational_in, targets = postprocess_dataloader_out(batch)
+
+        # Make batch second
+        rational_in = batch[0].permute(1, 0)
+        targets = batch[1].permute(1, 0)
 
         out = self.forward(rational_in, targets)
 
