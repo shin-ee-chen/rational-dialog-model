@@ -7,7 +7,7 @@ import torch.nn.functional as F
 
 from utils.token_utils import get_vocab_size, get_token_id, get_weights
 from utils.utils import fussed_lasso, calc_acc, calculate_mask_percentage, get_pad_id, calc_perplexity, \
-    calc_cross_entropy_batch_wise
+    calc_cross_entropy_batch_wise, calc_policy_loss
 
 
 class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
@@ -16,8 +16,8 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
     '''
 
     def __init__(self, language_model, rational_extractor, tokenizer, hparams=None,
-                 sparsity_weight=0.1,
-                 fussed_lasso_weight=0.1):
+                 sparsity_weight=0.01,
+                 fussed_lasso_weight=0.01):
         super().__init__()
         self.hparams = hparams
         self.language_model = language_model
@@ -83,8 +83,8 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
             ### Make sure batch first.
             mask = forward_dict["mask"].permute(1, 0).float()
             tokens = forward_dict["x"].permute(1, 0).float()
-            h_mean = calculate_mask_percentage(tokens, mask, reduce=False, pad_id=self.pad_token_id)
-            fussed_lasso_loss = fussed_lasso(tokens, mask, reduce=False, pad_id=self.pad_token_id)
+            h_mean = calculate_mask_percentage(tokens, mask, reduce=False, pad_id=get_token_id(self.tokenizer, "pad_token"))
+            fussed_lasso_loss = fussed_lasso(tokens, mask, reduce=False, pad_id=get_token_id(self.tokenizer, "pad_token"))
             total_h_loss = self.sparsity_weight * h_mean + self.fussed_lasso_weight * fussed_lasso_loss
 
         cross_entropy_loss = calc_cross_entropy_batch_wise(predictions, targets, self.tokenizer)
@@ -94,8 +94,9 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
 
         perplexity = calc_perplexity(predictions, targets, exclude=get_token_id(self.tokenizer, "pad_token"))
 
-        # Get the policy loss.
-        total_loss = -torch.mean(rewards.detach() * torch.log(forward_dict["chosen_policy"]))
+        # Get the policy loss. (old one)
+        #total_loss = -torch.mean(rewards.detach() * torch.log(forward_dict["chosen_policy"]))
+        total_loss = calc_policy_loss(rewards, forward_dict["chosen_policy"])
 
         if not self.freeze_language_model:
             total_loss += torch.mean(rewards)
