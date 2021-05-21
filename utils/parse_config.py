@@ -11,10 +11,12 @@ from modules.pytorch_lightning.LightningLanguageModel import LightningLanguageMo
 import pytorch_lightning as pl
 from transformers import AutoTokenizer
 
-from modules.pytorch_lightning.LightningReinforceRationalizedLanguageModel import LightingReinforceRationalizedLanguageModel
+from modules.pytorch_lightning.LightningReinforceRationalizedLanguageModel import \
+    LightingReinforceRationalizedLanguageModel
 from utils.callbacks import FinishDialogueCallback, ChangeInPerplexityCallback
 from tokenizers import Tokenizer
-from utils.token_utils import get_token_id
+from utils.token_utils import get_token_id, get_vocab_size
+
 
 def parse_config(config_ref):
     with open(config_ref, 'r') as f:
@@ -40,16 +42,14 @@ def parse_config(config_ref):
     result["hparams"] = hparams
     loss_module = get_loss_module(config["loss_module"], tokenizer)
 
-
     # Load the pytorch lightning module and the trainer
     if "rational_extractor" in config.keys():
 
         lightning_language_model = LightingReinforceRationalizedLanguageModel(language_model, RE, tokenizer,
-                                                                          hparams=hparams)
+                                                                              hparams=hparams)
     else:
         lightning_language_model = LightningLanguageModel(language_model, tokenizer, loss_module=loss_module,
                                                           hparams=hparams)
-
 
     result["lightning_language_model"] = lightning_language_model
 
@@ -57,6 +57,7 @@ def parse_config(config_ref):
     result["trainer"] = trainer
 
     return result
+
 
 def get_tokenizer(tokenizer_config):
     if tokenizer_config["type"] == "transformers":
@@ -73,26 +74,26 @@ def get_datasets(config, tokenizer):
     if config["type"] == 'daily_dialogue':
 
         dataset_train = UtterancesDataset(
-            tokenizer, 
-            subsets="start", 
-            split="train", 
-            size=config["size_train"], 
+            tokenizer,
+            subsets="start",
+            split="train",
+            size=config["size_train"],
             remove_top_n=config["remove_top_n"]
         )
         dataset_test = UtterancesDataset(
-            tokenizer, 
-            subsets="start", 
-            split="test", 
+            tokenizer,
+            subsets="start",
+            split="test",
             size=config["size_test"],
             remove_top_n=config["remove_top_n"]
         )
         dataloader_train = DataLoader(
-            dataset_train, 
+            dataset_train,
             batch_size=config["batch_size"],
             collate_fn=UtterancesDataset.get_collate_fn(padding_value=get_token_id(tokenizer, "pad_token"))
         )
         dataloader_test = DataLoader(
-            dataset_test, 
+            dataset_test,
             batch_size=config["batch_size"],
             collate_fn=UtterancesDataset.get_collate_fn(padding_value=get_token_id(tokenizer, "pad_token"))
         )
@@ -104,9 +105,12 @@ def get_datasets(config, tokenizer):
 def get_language_model(config, tokenizer):
     if config["type"] == "LSTM":
         if config["pretrained"]:
-            model_name = config["save_location"]
-            print("load pretrained_model: ", model_name)
-            language_model = LSTMLanguageModel.load(model_name)
+            if "load_location" in config:
+                model_location = config["load_location"]
+            else:
+                model_location = config["save_location"]
+            print("load pretrained_model: ", model_location)
+            language_model = LSTMLanguageModel.load(model_location)
         else:
             print("load fresh model")
             language_model = LSTMLanguageModel(
@@ -117,15 +121,18 @@ def get_language_model(config, tokenizer):
             )
     elif config["type"] == "transformers":
         if config["pretrained"]:
-            model_name = config["save_location"]
-            print("load pretrained_model: ", model_name)
+            if "load_location" in config:
+                model_location = config["load_location"]
+            else:
+                model_location = config["save_location"]
+            print("load pretrained_model: ", model_location)
             language_model = PretrainedLanguageModel(
-                pretrained_model=config['save_location'], 
+                pretrained_model=model_location,
                 tokenizer=tokenizer
             )
         else:
             language_model = PretrainedLanguageModel(
-                pretrained_model=config['checkpoint'], 
+                pretrained_model=config['checkpoint'],
                 tokenizer=tokenizer
             )
     else:
@@ -134,9 +141,8 @@ def get_language_model(config, tokenizer):
 
 
 def get_loss_module(config, tokenizer):
-
     pad_id = get_token_id(tokenizer, "pad_token")
-    
+
     if type(tokenizer) == Tokenizer:
         weight = torch.ones(tokenizer.get_vocab_size())
     else:
@@ -147,16 +153,14 @@ def get_loss_module(config, tokenizer):
 
 def get_rational_extractor(config, tokenizer):
     if config["type"] == "policy_based":
-
-        if type(tokenizer) == Tokenizer:
-            return PolicyBasedRationalExtractor(tokenizer.get_vocab_size(), mask_token=get_token_id(tokenizer, "mask_token"))
+        if config["pretrained"]:
+            return PolicyBasedRationalExtractor.load(config["load_location"])
         else:
-            return PolicyBasedRationalExtractor(len(tokenizer), mask_token=get_token_id(tokenizer, "mask_token"))
-
+            return PolicyBasedRationalExtractor(get_vocab_size(tokenizer),
+                                                mask_token=get_token_id(tokenizer, "mask_token"))
 
 
 def get_trainer(information):
-
     config = information["config"]["trainer"]
     # TODO add callbacks somehow
     if config["type"] == "normal":
@@ -180,7 +184,7 @@ def get_trainer(information):
     elif config["type"] == "policy":
         callbacks = [
             FinishDialogueCallback(["How are you doing today?", "What are you upto? "]),
-            #ChangeInPerplexityCallback(information["dataloader_test"]) #TODO maybe enable again
+            # ChangeInPerplexityCallback(information["dataloader_test"]) #TODO maybe enable again
         ]
         trainer = pl.Trainer(
             default_root_dir='logs',
