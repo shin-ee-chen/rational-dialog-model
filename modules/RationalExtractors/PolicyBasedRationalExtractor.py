@@ -9,6 +9,7 @@ class PolicyBasedRationalExtractor(nn.Module):
     def __init__(self, embedding_input_size, embedding_size=32, mask_token=0):
         super().__init__()
         self.embedding_size = embedding_size
+        self.embedding_input_size = embedding_input_size
         self.embedding = Embedding(embedding_input_size, embedding_size)
 
         # Layers for prediction
@@ -47,3 +48,24 @@ class PolicyBasedRationalExtractor(nn.Module):
 
         return {"policy_logits": logits, "policy": policy, "chosen_policy": chosen_policy, "mask": mask,
                 "masked_input": masked_input}
+
+    def save(self, location):
+
+        torch.save({
+            'model_state_dict': self.state_dict(),
+            'kwargs': {
+                'embedding_input_size': self.embedding_input_size,
+                "embedding_size": self.embedding_size,
+                'mask_token': self.mask_token,
+
+            }
+        }, location)
+
+    @classmethod
+    def load(self, location):
+        
+        info = torch.load(location)
+        model = PolicyBasedRationalExtractor(**info['kwargs'])
+        model.load_state_dict(info['model_state_dict'])
+        model.train()
+        return model

@@ -2,6 +2,7 @@ import os
 from typing import Any
 
 import pytorch_lightning as pl
+import torch
 from pytorch_lightning import LightningModule
 import numpy as np
 
@@ -272,7 +273,7 @@ class RationaleAnalysisCallback(pl.Callback):
                 # print("Average relative: ", average_relative)
                 abs_averages += torch.sum(average_absolute)
                 rel_averages += torch.sum(average_relative)
-                n += len(context)
+                n += len(contexts)
 
             trainer.logger.log_metrics({
                 "Absolute mask position": abs_averages / n, 
