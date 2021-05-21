@@ -56,7 +56,7 @@ class UtterancesDataset(Dataset):
         else:
 
             # For the other models, the encode function already gives the id's
-            self.tokenizer.add_special_tokens({'sep_token': "[SEP]",'pad_token': "[PAD]"})
+            self.tokenizer.add_special_tokens({'sep_token': "[SEP]",'pad_token': "[PAD]", 'mask_token': "[MASK]"})
             sep_token = self.tokenizer.sep_token
             tokenized_samples = [
                 (self.tokenizer.encode((sep_token).join(context) + sep_token),
@@ -171,7 +171,7 @@ class UtterancesDataset(Dataset):
         def collate_fn(items):
             '''
             Pads the context from the left and the response from the right.
-            Makes sure it is batch second.
+            Results in batches with (contexts, responses), with batch-first.
             '''
             assert padding_value != None, "Please provide pad_token_id to use for padding"
             inputs = torch.fliplr(pad_sequence(

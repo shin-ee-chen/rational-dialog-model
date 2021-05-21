@@ -3,8 +3,7 @@ from typing import Any
 
 import pytorch_lightning as pl
 from pytorch_lightning import LightningModule
-
-from misc.old.NextNPredictionDataset import postprocess_dataloader_out
+import numpy as np
 
 
 class FinishDialogueCallback(pl.Callback):
@@ -24,9 +23,9 @@ class FinishDialogueCallback(pl.Callback):
         if (trainer.current_epoch + 1) % self.every_n_epochs == 0:
 
             completed_sentences = pl_module.complete_dialogues(self.sentences, self.reaction_length)
-            for i, s in enumerate(completed_sentences):
+            for index, sentence in enumerate(completed_sentences):
                 try:
-                    print("\n----- ", i, '\n', s)
+                    print("\n----- ", index, '\n', sentence)
                 except:
                     #UnicodeEncodeError: 'latin-1' codec can't encode character '\u2019' in position 21: ordinal not in range(256)
                     print("[can't generate response!]")
@@ -130,15 +129,18 @@ class ChangeInPerplexityCallback(pl.Callback):
         total_diff_perplexity = 0
         if (trainer.current_epoch + 1) % self.every_n_epochs == 0:
 
-            for batch in self.dataloader:
-                context, targets = postprocess_dataloader_out(batch)
+            for (contexts, targets) in self.dataloader:
 
-                context = context.to(pl_module.device)
+                contexts = contexts.to(pl_module.device)
                 targets = targets.to(pl_module.device)
+
+                # Make batch second
+                contexts = contexts.permute(1, 0, )
+                targets = targets.permute(1, 0, )
                 n_targets = targets.shape[0]
 
                 # Get the rational
-                rational = pl_module.get_rational(context)
+                rational = pl_module.get_rational(contexts)
 
                 # Mask n extra tokens (in each rational)
                 masked_input = rational["masked_input"]
@@ -247,15 +249,14 @@ class RationaleAnalysisCallback(pl.Callback):
             n = 0
             abs_averages = 0.0
             rel_averages = 0.0
-            for batch in self.dataloader:
+            for (contexts, _) in self.dataloader:
 
                 # This assumes a batch consists of a list of (context, response) pairs
-                context = torch.tensor([c for (c, _) in batch])
-                context = context.to(pl_module.device)
+                contexts = contexts.to(pl_module.device)
 #                print("Context: ", context)
 
                 # Get the mask
-                rational = pl_module.get_rational(context)
+                rational = pl_module.get_rational(contexts)
                 mask = rational["mask"]
 #                print("Mask: ", mask, mask.size(), len(mask[0]))
 

@@ -181,7 +181,7 @@ def get_trainer(information):
     elif config["type"] == "policy":
         callbacks = [
             FinishDialogueCallback(["How are you doing today?", "What are you upto? "]),
-            ChangeInPerplexityCallback(information["dataloader_test"])
+            #ChangeInPerplexityCallback(information["dataloader_test"]) #TODO maybe enable again
         ]
         trainer = pl.Trainer(
             default_root_dir='logs',

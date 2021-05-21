@@ -84,9 +84,11 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
             fussed_lasso_loss = fussed_lasso(tokens, mask, reduce=False, pad_id=self.pad_token_id)
             total_h_loss = self.sparsity_weight * h_mean + self.fussed_lasso_weight * fussed_lasso_loss
 
+
         ##TODO construct weight vector.
         cross_entropy_loss = F.cross_entropy(predictions.view(-1, get_vocab_size(self.tokenizer)), targets.flatten(),
                                              reduce=False, exclude=get_token_id(self.tokenizer, "pad_token"))
+
 
         rewards = cross_entropy_loss + total_h_loss
 
