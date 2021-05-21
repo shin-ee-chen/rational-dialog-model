@@ -184,6 +184,7 @@ def get_trainer(information):
     elif config["type"] == "policy":
         callbacks = [
             FinishDialogueRationalizedCallback(["How are you doing today?", "What are you upto? "]),
+            FinishDialogueRationalizedCallback(["How are you doing today?", "What are you upto? "], greedy_policy=True),
             # ChangeInPerplexityCallback(information["dataloader_test"]) #TODO maybe enable again
         ]
         trainer = pl.Trainer(
