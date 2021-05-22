@@ -16,8 +16,8 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
     '''
 
     def __init__(self, language_model, rational_extractor, tokenizer, hparams=None,
-                 sparsity_weight=0.01,
-                 fussed_lasso_weight=0.01):
+                 sparsity_weight=0.0001,
+                 fussed_lasso_weight=0.0001):
         super().__init__()
         self.hparams = hparams
         self.language_model = language_model

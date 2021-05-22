@@ -27,7 +27,7 @@ class PolicyBasedUtteranceRationalExtractor(nn.Module):
             the mask that was used and the masked x.
             x has dimensions L x B, where L is length of sequences, B is batch size
         '''
-        u, l = self.get_utterance_representations(x)
+        u, l = self.get_utterance_representations(x, device=x.device)
 
         # Calculate mask for utterances
         h, (h_n, c_n) = self.prediction_LSTM(u)
@@ -41,7 +41,7 @@ class PolicyBasedUtteranceRationalExtractor(nn.Module):
         u_mask = u_mask.reshape(-1, x.shape[1])
 
         # apply mask to input
-        mask = self.get_token_mask(u_mask, l)
+        mask = self.get_token_mask(u_mask, l, device=x.device)
         masked_input = torch.mul(x, mask) + ~mask * self.mask_token
 
         # Selects the probabilities of the actual chosen policy.
@@ -52,8 +52,7 @@ class PolicyBasedUtteranceRationalExtractor(nn.Module):
                 "masked_input": masked_input}
 
 
-    def get_utterance_representations(self, x):
-
+    def get_utterance_representations(self, x, device="cpu"):
         # Split batch in utterances. Utterances are separated by sep_token
         batch = torch.transpose(x, 0, 1).tolist()
         utterances_batch = [
@@ -66,29 +65,29 @@ class PolicyBasedUtteranceRationalExtractor(nn.Module):
         ]
 
         # Calculate the utterance representation by taking average of the token embeddings
-        utterance_reps_batch = [[self.utterance_rep(utterance) 
+        utterance_reps_batch = [[self.utterance_rep(utterance, device=x.device)
                 for utterance in context] 
                 for context in utterances_batch]
 
         # Add zero embeddings where necessary as padding
         max_utterances = max([len(context) for context in utterances_batch])
         padded_reps_batch = torch.stack([
-            torch.stack(context + [torch.zeros(self.embedding_size)] * (max_utterances - len(context)))
+            torch.stack(context + [torch.zeros(self.embedding_size).to(device)] * (max_utterances - len(context)))
             for context in utterance_reps_batch
         ]).transpose(1,0)
 
-        return (padded_reps_batch, utterance_lengths)
+        return (padded_reps_batch.to(x[0].device), utterance_lengths)
 
-    def utterance_rep(self, utterance):
+    def utterance_rep(self, utterance, device="cpu"):
         '''
         Calculates the representation of an utterance, as the mean of the embeddings of the tokens
         '''
-        u_embed = torch.stack([self.embedding(torch.tensor(token_id)) for token_id in utterance])
+        u_embed = torch.stack([self.embedding(torch.tensor(token_id).to(device)) for token_id in utterance])
         u_rep = torch.mean(u_embed, dim=0)
         return u_rep
 
 
-    def get_token_mask(self, mask_batch, length_batch):
+    def get_token_mask(self, mask_batch, length_batch, device="cpu"):
         '''
         mask_batch: list of True, False; True means whole utterance is masked
         length_batch: list of lenghts of the utterances in context
@@ -101,7 +100,7 @@ class PolicyBasedUtteranceRationalExtractor(nn.Module):
         ]
         token_masks = torch.tensor(token_masks_lst).transpose(1,0)
 
-        return token_masks
+        return token_masks.to(device)
 
 
     def split_on_sep(self, l):

@@ -7,6 +7,7 @@ from daily_dialog.UtterancesDataset import UtterancesDataset
 from modules.LanguageModels.LstmLanguageModel import LSTMLanguageModel
 from modules.LanguageModels.PretrainedLanguageModel import PretrainedLanguageModel
 from modules.RationalExtractors.PolicyBasedRationalExtractor import PolicyBasedRationalExtractor
+from modules.RationalExtractors.PolicyBasedUtteranceRationalExtractor import PolicyBasedUtteranceRationalExtractor
 from modules.pytorch_lightning.LightningLanguageModel import LightningLanguageModel
 import pytorch_lightning as pl
 from transformers import AutoTokenizer
@@ -158,6 +159,10 @@ def get_rational_extractor(config, tokenizer):
         else:
             return PolicyBasedRationalExtractor(get_vocab_size(tokenizer),
                                                 mask_token=get_token_id(tokenizer, "mask_token"))
+    if config["type"] == "policy_utterance":
+        return PolicyBasedUtteranceRationalExtractor(get_vocab_size(tokenizer),
+                                                mask_token=get_token_id(tokenizer, "mask_token"),
+                                                     sep_token=get_token_id(tokenizer, "sep_token"))
 
 
 def get_trainer(information):

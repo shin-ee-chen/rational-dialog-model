@@ -1,6 +1,6 @@
 language_model:
   type: LSTM
-  pretrained: False
+  pretrained: True
   embedding_dim: 128
   num_layers: 2
   hidden_state_size: 128
