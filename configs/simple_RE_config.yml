@@ -9,7 +9,7 @@ language_model:
 dataset:
   type: 'daily_dialogue'
   size_train: 1000
-  size_test: 1000
+  size_test: 25
   batch_size: 32
   subsets: start
   remove_top_n: 10
@@ -26,7 +26,7 @@ trainer:
   log_every_n_steps: 1
 rational_extractor:
   type: policy_based
-  pretrained: True
+  pretrained: False
   load_location: './models/policy_simple.pt'
   save_location: './models/policy_simple.pt'
 
