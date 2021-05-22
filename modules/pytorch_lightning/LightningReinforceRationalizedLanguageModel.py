@@ -55,13 +55,6 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
         prediction = self.language_model(lm_in)
         return prediction
 
-    def get_perplexity(self, prediction_logits, targets, reduce=False, weights=None):
-        cross_entropy = F.cross_entropy(prediction_logits.view(-1, self.tokenizer.get_vocab_size()),
-                                        targets.flatten(), weight=weights, reduce=reduce)
-
-        perplexity = torch.exp(cross_entropy.reshape(prediction_logits.shape[0], -1).mean(dim=-1))
-
-        return perplexity
 
     def get_scores(self, forward_dict, targets):
         """
@@ -79,36 +72,39 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
         fussed_lasso_loss = 0
 
         if "mask" in forward_dict.keys():
-
             ### Make sure batch first.
             mask = forward_dict["mask"].permute(1, 0).float()
             tokens = forward_dict["x"].permute(1, 0).float()
-            h_mean = calculate_mask_percentage(tokens, mask, reduce=False, pad_id=get_token_id(self.tokenizer, "pad_token"))
-            fussed_lasso_loss = fussed_lasso(tokens, mask, reduce=False, pad_id=get_token_id(self.tokenizer, "pad_token"))
+            h_mean = calculate_mask_percentage(tokens, mask, reduce=False,
+                                               pad_id=get_token_id(self.tokenizer, "pad_token"))
+            fussed_lasso_loss = fussed_lasso(tokens, mask, reduce=False,
+                                             pad_id=get_token_id(self.tokenizer, "pad_token"))
             total_h_loss = self.sparsity_weight * h_mean + self.fussed_lasso_weight * fussed_lasso_loss
 
         cross_entropy_loss = calc_cross_entropy_batch_wise(predictions, targets, self.tokenizer)
         ##Make sure it is mean per batch
 
         rewards = cross_entropy_loss + total_h_loss
-
-        perplexity = calc_perplexity(predictions, targets, exclude=get_token_id(self.tokenizer, "pad_token"))
+        vocab_size = get_vocab_size(self.tokenizer)
+        perplexity = calc_perplexity(predictions,
+                                     targets, self.tokenizer)
 
         # Get the policy loss. (old one)
-        #total_loss = -torch.mean(rewards.detach() * torch.log(forward_dict["chosen_policy"]))
+        # total_loss = -torch.mean(rewards.detach() * torch.log(forward_dict["chosen_policy"]))
         total_loss = calc_policy_loss(rewards, forward_dict["chosen_policy"])
 
         if not self.freeze_language_model:
             total_loss += torch.mean(rewards)
 
-        acc = calc_acc(predictions, targets, exclude=self.pad_token_id)
+        acc = calc_acc(predictions.reshape(-1, vocab_size),
+                       targets.flatten(), exclude=self.pad_token_id)
 
         return {"total_loss": total_loss, "acc": acc, "total_mask_loss": total_h_loss.mean(),
                 "mask_mean": h_mean.mean(),
                 "mask_fussed_lasso": fussed_lasso_loss.mean(), "cross_entropy_loss": cross_entropy_loss.mean(),
                 "perplexity": perplexity}
 
-    def batch_out(self, batch):
+    def batch_to_out(self, batch):
         rational_in = batch[0].permute(1, 0)
         targets = batch[1].permute(1, 0)
 
@@ -120,7 +116,7 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
 
     def training_step(self, batch, batch_idx):
 
-        batch_out = self.batch_out(batch)
+        batch_out = self.batch_to_out(batch)
 
         self.log_results(batch_out)
 
@@ -129,7 +125,7 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
     @torch.no_grad()
     def validation_step(self, batch, batch_idx):
 
-        batch_out = self.batch_out(batch)
+        batch_out = self.batch_to_out(batch)
 
         self.log_results(batch_out, prepend="val ")
 

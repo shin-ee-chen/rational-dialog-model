@@ -2,9 +2,7 @@ import os
 from typing import Any
 
 import pytorch_lightning as pl
-import torch
 from pytorch_lightning import LightningModule
-import numpy as np
 
 
 class FinishDialogueCallback(pl.Callback):
@@ -126,67 +124,14 @@ class ChangeInPerplexityCallback(pl.Callback):
 
     def on_train_epoch_end(self, trainer, pl_module, outputs):
         pl_module.eval()
-        print('change in perplexity')
         total_diff_perplexity = 0
         if (trainer.current_epoch + 1) % self.every_n_epochs == 0:
 
-            for (contexts, targets) in self.dataloader:
-
-                contexts = contexts.to(pl_module.device)
-                targets = targets.to(pl_module.device)
-
-                # Make batch second
-                contexts = contexts.permute(1, 0, )
-                targets = targets.permute(1, 0, )
-                n_targets = targets.shape[0]
-
-                # Get the rational
-                rational = pl_module.get_rational(contexts)
-
-                # Mask n extra tokens (in each rational)
-                masked_input = rational["masked_input"]
-
-                logits = pl_module.forward_masked_input(masked_input, targets)[-(n_targets + 1):-1]
-                extra_masked = self.mask_extra(masked_input, self.n_extra_mask)
-                logits_altered = pl_module.forward_masked_input(extra_masked, targets)[-(n_targets + 1):-1]
-
-                # Get the perplexity
-                perplexity_non_altered = pl_module.get_perplexity(logits, targets, weights=self.weight)
-                perplexity_altered = pl_module.get_perplexity(logits_altered, targets, weights=self.weight)
-
-                diff = (perplexity_non_altered - perplexity_altered).mean()
-                total_diff_perplexity += diff
-
-            mean_diff = total_diff_perplexity/len(self.dataloader)
+            mean_diff = calc_change_in_perplexity(pl_module, self.dataloader)
 
             trainer.logger.log_metrics({"mean_diff_perplexity": mean_diff}, step=(trainer.current_epoch + 1))
 
         pl_module.train()
-
-    def mask_extra(self, masked_input, n_extra_mask):
-        # First find all the locations in which there is no mask
-        result = masked_input
-
-        n_batches = masked_input.shape[1]
-        non_mask_indices = (masked_input != self.mask).nonzero().cpu().numpy()
-
-        # Next we extract for each batch extra tokens to mask
-        for batch_number in range(n_batches):
-
-            # Filter the possible locations
-            # Get sequence index of the current batch where we do not have a mask
-            mask = non_mask_indices[:, 1] == batch_number #THe mask
-            possible_locations = non_mask_indices[mask][:, 0] #The actual indices
-
-            # Pick a random_ones (make sure we do not pick more than there are available)
-            n_mask = min(len(possible_locations), n_extra_mask)
-            locations = np.random.choice(possible_locations, n_mask)
-
-            # Mask those locations
-            for location in locations:
-                result[location, batch_number] = self.mask
-
-        return result
 
 class PerturbationCallback(pl.Callback):
     '''
@@ -247,37 +192,11 @@ class RationaleAnalysisCallback(pl.Callback):
         pl_module.eval()
         if (trainer.current_epoch + 1) % self.every_n_epochs == 0:
 
-            n = 0
-            abs_averages = 0.0
-            rel_averages = 0.0
-            for (contexts, _) in self.dataloader:
-
-                # This assumes a batch consists of a list of (context, response) pairs
-                contexts = contexts.to(pl_module.device)
-#                print("Context: ", context)
-
-                # Get the mask
-                rational = pl_module.get_rational(contexts)
-                mask = rational["mask"]
-#                print("Mask: ", mask, mask.size(), len(mask[0]))
-
-                num_positions = len(mask[0])
-                positions_reversed = torch.tensor(list(range(num_positions, 0, -1)))
-#                print(positions_reversed)
-
-                mask_positions = torch.mul(mask, positions_reversed).float()
-#                print("Positions: ", mask_positions)
-                average_absolute = mask_positions.sum(dim=1)/mask.sum(dim=1)
-                average_relative = average_absolute / num_positions
-                # print("Average absolute: ", average_absolute)
-                # print("Average relative: ", average_relative)
-                abs_averages += torch.sum(average_absolute)
-                rel_averages += torch.sum(average_relative)
-                n += len(contexts)
+            analysis = rational_analysis(pl_module, self.dataloader)
 
             trainer.logger.log_metrics({
-                "Absolute mask position": abs_averages / n, 
-                "Relative mask position": rel_averages / n,
+                "Absolute mask position": analysis["abs_average"],
+                "Relative mask position": analysis["rel_average"],
             }, step=(trainer.current_epoch + 1))
 
         pl_module.train()
