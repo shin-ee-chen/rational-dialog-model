@@ -7,6 +7,7 @@ from daily_dialog.UtterancesDataset import UtterancesDataset
 from modules.LanguageModels.LstmLanguageModel import LSTMLanguageModel
 from modules.LanguageModels.PretrainedLanguageModel import PretrainedLanguageModel
 from modules.RationalExtractors.PolicyBasedRationalExtractor import PolicyBasedRationalExtractor
+from modules.RationalExtractors.PolicyBasedUtteranceRationalExtractor import PolicyBasedUtteranceRationalExtractor
 from modules.pytorch_lightning.LightningLanguageModel import LightningLanguageModel
 import pytorch_lightning as pl
 from transformers import AutoTokenizer
@@ -169,13 +170,21 @@ def get_rational_extractor(config, tokenizer, embedding_size=32):
         else:
             return PolicyBasedRationalExtractor(get_vocab_size(tokenizer), 
                                                 mask_token=get_token_id(tokenizer, "mask_token"))
-    elif config["type"] == "shared_embedding":
+    
+    if config["type"] == "shared_embedding":
         if config["pretrained"]:
             pass
         else:
             # return LightingRationalizedLanguageModel(get_vocab_size(tokenizer),
                                                 # mask_token=get_token_id(tokenizer, "mask_token"))
             return RationalExtractor(embedding_size)
+
+    if config["type"] == "policy_utterance":
+        return PolicyBasedUtteranceRationalExtractor(get_vocab_size(tokenizer),
+                                                mask_token=get_token_id(tokenizer, "mask_token"),
+                                                     sep_token=get_token_id(tokenizer, "sep_token"))
+
+
 
 def get_trainer(information):
     config = information["config"]["trainer"]
@@ -192,7 +201,6 @@ def get_trainer(information):
             log_every_n_steps=1,
             progress_bar_refresh_rate=1,
             callbacks=callbacks
-
         )
         trainer.logger._default_hp_metric = None  # Optional logging argument that we don't need
 
@@ -201,8 +209,8 @@ def get_trainer(information):
     elif config["type"] == "policy":
         callbacks = [
             FinishDialogueRationalizedCallback(["How are you doing today?", "What are you upto? "]),
-            FinishDialogueRationalizedCallback(["How are you doing today?", "What are you upto? "], greedy_policy=True),
-            # ChangeInPerplexityCallback(information["dataloader_test"]) #TODO maybe enable again
+            #FinishDialogueRationalizedCallback(["How are you doing today?", "What are you upto? "], greedy_policy=True),
+            #ChangeInPerplexityCallback(information["dataloader_test"]) #TODO enable again
         ]
         trainer = pl.Trainer(
             default_root_dir='logs',

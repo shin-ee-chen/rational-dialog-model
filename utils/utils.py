@@ -1,13 +1,13 @@
 import glob
 import os
 import time
-
+import yaml
+import json
 
 # From: https://github.com/bastings/interpretable_predictions/blob/master/latent_rationale/beer/models/rl.py
 # With a small modification to introduce the mean.
 import torch
 from tokenizers import Tokenizer 
-
 import torch.nn.functional as F
 
 from utils.token_utils import get_weights, get_token_id
@@ -96,21 +96,13 @@ def get_pad_id(tokenizer):
 
 
 
-def calc_perplexity(predictions, targets,  exclude=0, batch_first=False):
+def calc_perplexity(predictions, targets,  tokenizer, batch_first=False):
 
-    if not batch_first:
-        predictions = predictions.permute(1, 0, 2)
-        targets = targets.permute(1,0)
+    weight= get_weights(tokenizer).to(targets.device)
+    loss = F.cross_entropy(predictions.reshape(-1, predictions.shape[2]), targets.flatten(), weight=weight)
 
-    loss = F.cross_entropy(predictions.reshape(-1, predictions.shape[2]), targets.flatten(), reduce=False)
 
-    targets = targets.reshape(predictions.shape[0], -1)
-    loss = loss.reshape(predictions.shape[0], -1)
-    # We need to make sure that we do not lose
-    to_use = targets != exclude
-    total_to_use = to_use.sum(dim=-1)
-    perplexity = torch.exp((loss * to_use).sum(dim=-1) / total_to_use).mean()
-    return perplexity
+    return torch.exp(loss)
 
 
 def calc_cross_entropy_batch_wise(predictions, targets, tokenizer, batch_first=False):
@@ -138,3 +130,8 @@ def calc_policy_loss(rewards, policy):
     ## a safety check. 
     assert policy.shape == rewards.shape, "policy and rewards should be of same size"
     return -torch.mean((rewards.detach() * torch.log(policy)).mean(dim=0))
+
+def log_config(trainer, config_ref):
+    with open(config_ref, 'r') as f:
+        config = yaml.load(f)
+    trainer.logger.experiment.add_text("config", str(json.dumps(config)))

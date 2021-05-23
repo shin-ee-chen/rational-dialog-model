@@ -41,7 +41,6 @@ class LightningLanguageModel(LightningBaseLanguageModel):
             exclude=get_token_id(self.tokenizer, "pad_token")
         )
 
-        perplexity = calc_perplexity(predictions, target_tensor, exclude=get_token_id(self.tokenizer,
-                                                                                      "pad_token"))  # math.exp(loss) #torch.exp(loss)
+        perplexity = calc_perplexity(predictions, target_tensor, self.tokenizer)  # math.exp(loss) #torch.exp(loss)
 
         return {"loss": loss, 'predictions': predictions, "perplexity": perplexity, "acc": acc}
