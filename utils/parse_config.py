@@ -13,7 +13,14 @@ from transformers import AutoTokenizer
 
 from modules.pytorch_lightning.LightningReinforceRationalizedLanguageModel import \
     LightingReinforceRationalizedLanguageModel
-from utils.callbacks import FinishDialogueCallback, ChangeInPerplexityCallback, FinishDialogueRationalizedCallback
+from modules.pytorch_lightning.LightningRationalizedLanguageModel \
+    import LightingRationalizedLanguageModel
+from modules.pytorch_lightning.LightingBaseRationalizedLanguageModel \
+    import LightingBaseRationalizedLanguageModel
+
+from modules.RationalExtractor import RationalExtractor
+from utils.callbacks import FinishDialogueCallback, ChangeInPerplexityCallback, \
+    FinishDialogueRationalizedCallback
 from tokenizers import Tokenizer
 from utils.token_utils import get_token_id, get_vocab_size
 
@@ -34,7 +41,9 @@ def parse_config(config_ref):
     language_model = get_language_model(config["language_model"], tokenizer)
     result["language_model"] = language_model
     if "rational_extractor" in config.keys():
-        RE = get_rational_extractor(config["rational_extractor"], tokenizer)
+        if config['language_model']['type'] == "transformers":
+            embedding_size = language_model.embedding_size
+        RE = get_rational_extractor(config["rational_extractor"], tokenizer, embedding_size)
         result["rational_extractor"] = RE
 
     # get loss module and hyper parameters for training
@@ -45,8 +54,10 @@ def parse_config(config_ref):
     # Load the pytorch lightning module and the trainer
     if "rational_extractor" in config.keys():
 
-        lightning_language_model = LightingReinforceRationalizedLanguageModel(language_model, RE, tokenizer,
-                                                                              hparams=hparams)
+        # lightning_language_model = LightingReinforceRationalizedLanguageModel(language_model, RE, tokenizer,
+        #                                                                       hparams=hparams)
+        lightning_language_model = LightingBaseRationalizedLanguageModel(language_model, RE, tokenizer, 
+                                                                         loss_module, hparams=hparams)
     else:
         lightning_language_model = LightningLanguageModel(language_model, tokenizer, loss_module=loss_module,
                                                           hparams=hparams)
@@ -151,14 +162,20 @@ def get_loss_module(config, tokenizer):
     return torch.nn.CrossEntropyLoss(weight=weight)
 
 
-def get_rational_extractor(config, tokenizer):
+def get_rational_extractor(config, tokenizer, embedding_size=32):
     if config["type"] == "policy_based":
         if config["pretrained"]:
             return PolicyBasedRationalExtractor.load(config["load_location"])
         else:
-            return PolicyBasedRationalExtractor(get_vocab_size(tokenizer),
+            return PolicyBasedRationalExtractor(get_vocab_size(tokenizer), 
                                                 mask_token=get_token_id(tokenizer, "mask_token"))
-
+    elif config["type"] == "shared_embedding":
+        if config["pretrained"]:
+            pass
+        else:
+            # return LightingRationalizedLanguageModel(get_vocab_size(tokenizer),
+                                                # mask_token=get_token_id(tokenizer, "mask_token"))
+            return RationalExtractor(embedding_size)
 
 def get_trainer(information):
     config = information["config"]["trainer"]

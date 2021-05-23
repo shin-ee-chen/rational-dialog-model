@@ -73,10 +73,13 @@ class LightingBaseRationalizedLanguageModel(pl.LightningModule):
         h_loss = 0
         h_mean = 0
         fussed_lasso_loss = 0
+
         if "h" in out.keys():
             h = out["h"].permute(1, 0)
             h_mean = torch.mean(h)
-            fussed_lasso_loss = fussed_lasso(h)
+            # ToDo: what is parameter 't' for fussed_lasso?
+            # mask = out["masked_embedding"].permute(1, 0).float()
+            fussed_lasso_loss = fussed_lasso(h, mask)
 
             h_loss = self.sparsity_weight * h_mean + self.fussed_lasso_weight * fussed_lasso_loss
 

@@ -10,7 +10,7 @@ from utils.parse_config import parse_config
 
 parser = argparse.ArgumentParser(description='Train a language model')
 
-parser.add_argument('--config', type=str, default="configs/dialoGPT_dailyDialog_RE_config.yml",
+parser.add_argument('--config', type=str, default="configs/dialoGPT_RE_dailyDialog.yml",
                     help='path to the config')
 
 args = parser.parse_args()

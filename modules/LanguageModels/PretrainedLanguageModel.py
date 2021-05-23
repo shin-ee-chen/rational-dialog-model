@@ -14,6 +14,7 @@ class PretrainedLanguageModel(BaseLanguageModel):
         self.lm.resize_token_embeddings(len(tokenizer))
         self.embedding = self.lm.get_input_embeddings()
         self.layers = self.lm.get_output_embeddings()
+        self.embedding_size = self.layers.in_features
 
     def forward(self, tokenized_input_ids):
         # return self.model.generate(tokenized_input_ids, max_length=1000, pad_token_id=self.tokenizer.eos_token_id)
@@ -27,7 +28,7 @@ class PretrainedLanguageModel(BaseLanguageModel):
         return self.embedding(x)
 
     def forward_embedding(self, embedding):
-        return self.lm(inputs_embeds=embedding).logits
+        return self.layers(embedding)
 
     def complete_dialogue(self, context_tokens_ids, max_length=100):
         '''
