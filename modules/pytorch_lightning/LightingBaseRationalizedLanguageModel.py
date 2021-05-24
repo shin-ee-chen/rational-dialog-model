@@ -3,8 +3,8 @@ import pytorch_lightning as pl
 from tokenizers import Tokenizer
 from transformers import AdamW
 
-from utils.utils import fussed_lasso
-
+from utils.utils import calculate_mask_percentage, fussed_lasso, get_pad_id
+from utils.token_utils import get_vocab_size, get_token_id
 
 class LightingBaseRationalizedLanguageModel(pl.LightningModule):
     '''
@@ -20,6 +20,8 @@ class LightingBaseRationalizedLanguageModel(pl.LightningModule):
         self.rational_extractor = rational_extractor
         self.loss_module = loss_module
         self.tokenizer = tokenizer
+
+        self.pad_token_id = get_pad_id(tokenizer)
 
         self.sparsity_weight = sparsity_weight
         self.fussed_lasso_weight = fussed_lasso_weight
@@ -48,7 +50,7 @@ class LightingBaseRationalizedLanguageModel(pl.LightningModule):
             prediction = self.language_model.forward_embedding(masked_embedding, teacher_forcing=False,
                                                                n_to_predict=n_to_predict)
 
-        return {"logits": prediction, **rational}
+        return {"logits": prediction, **rational, "x": x}
 
     def get_rational(self, x):
         rational_embedding = self.language_model.to_embedding(x)
@@ -75,18 +77,20 @@ class LightingBaseRationalizedLanguageModel(pl.LightningModule):
         fussed_lasso_loss = 0
 
         if "h" in out.keys():
-            h = out["h"].permute(1, 0)
-            h_mean = torch.mean(h)
-            # ToDo: what is parameter 't' for fussed_lasso?
-            # mask = out["masked_embedding"].permute(1, 0).float()
-            fussed_lasso_loss = fussed_lasso(h, mask)
+            # batch first
+            h = out["h"].permute(1, 0).float()
+            tokens = out["x"].permute(1, 0).float()
+            h_mean = calculate_mask_percentage(tokens, h, reduce=True,
+                                               pad_id=self.pad_token_id)
+            fussed_lasso_loss = fussed_lasso(tokens, h, reduce=True,
+                                             pad_id=self.pad_token_id)
 
             h_loss = self.sparsity_weight * h_mean + self.fussed_lasso_weight * fussed_lasso_loss
 
-        if type(self.tokenizer) == Tokenizer:
-            loss = self.loss_module(predictions.view(-1, self.tokenizer.get_vocab_size()), targets.flatten()) + h_loss
-        else:
-            loss = self.loss_module(predictions.view(-1, len(self.tokenizer)), targets.flatten()) + h_loss
+        # if type(self.tokenizer) == Tokenizer:
+            # loss = self.loss_module(predictions.view(-1, get_vocab_size(self.tokenizer)), targets.flatten()) + h_loss
+        # else:
+        loss = self.loss_module(predictions.view(-1, get_vocab_size(self.tokenizer)), targets.flatten()) + h_loss
         acc = self.calc_acc(predictions, targets)
         return {"loss": loss, "acc": acc, "h_loss": h_loss, "h_mean": h_mean, "fussed_lasso": fussed_lasso_loss}
 
@@ -144,6 +148,8 @@ class LightingBaseRationalizedLanguageModel(pl.LightningModule):
             next_ids = self.language_model.generate_next_tokens_from_embedding(embedding, n_tokens=n_rational)
 
             dialogue_tokens += next_ids
+            # dialogue_tokens = torch.cat([dialogue_tokens, next_ids])
+            # dialogue_tokens.append(next_ids)
             sentences.append(self.tokenizer.decode(next_ids, skip_special_tokens=False).replace(" #", "").replace("#", ""))
             dialogue_tokens_ids_tensor = torch.tensor(dialogue_tokens).to(self.device).unsqueeze(1)
 

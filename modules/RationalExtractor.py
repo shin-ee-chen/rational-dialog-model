@@ -39,3 +39,15 @@ class RationalExtractor(nn.Module):
         masked_embedding = h_repeated * embedding
 
         return {"masked_embedding": masked_embedding, "h": h}
+
+    def save(self, location):
+    
+        torch.save({
+            'model_state_dict': self.state_dict(),
+            'kwargs': {
+                'embedding_input_size': self.n_features,
+                # "embedding_size": self.embedding_size,
+                # 'mask_token': self.mask_token,
+
+            }
+        }, location)

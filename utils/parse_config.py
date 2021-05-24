@@ -41,6 +41,8 @@ def parse_config(config_ref):
     if "rational_extractor" in config.keys():
         if config['language_model']['type'] == "transformers":
             embedding_size = language_model.embedding_size
+        else:
+            embedding_size = language_model.embedding_dim 
         RE = get_rational_extractor(config["rational_extractor"], tokenizer, embedding_size)
         result["rational_extractor"] = RE
 
@@ -51,11 +53,13 @@ def parse_config(config_ref):
 
     # Load the pytorch lightning module and the trainer
     if "rational_extractor" in config.keys():
-
-        # lightning_language_model = LightingReinforceRationalizedLanguageModel(language_model, RE, tokenizer,
-        #                                                                       hparams=hparams)
-        lightning_language_model = LightingBaseRationalizedLanguageModel(language_model, RE, tokenizer, 
-                                                                         loss_module, hparams=hparams)
+        if config["rational_extractor"]["type"] == "policy_based":
+            lightning_language_model = LightingReinforceRationalizedLanguageModel(language_model, 
+                                                                                  RE, tokenizer,
+                                                                                  hparams=hparams)
+        else:
+            lightning_language_model = LightingBaseRationalizedLanguageModel(language_model, RE, tokenizer, 
+                                                                             loss_module, hparams=hparams)
     else:
         lightning_language_model = LightningLanguageModel(language_model, tokenizer, loss_module=loss_module,
                                                           hparams=hparams)

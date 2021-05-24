@@ -1,7 +1,7 @@
 import math
 from modules.LanguageModels.BaseLanguageModel import BaseLanguageModel
 from transformers import AutoModelForCausalLM, AutoTokenizer
-
+import torch
 
 class PretrainedLanguageModel(BaseLanguageModel):
     ''''
@@ -39,30 +39,30 @@ class PretrainedLanguageModel(BaseLanguageModel):
         dialog = self.lm.generate(context_tokens_ids, max_length=max_length, num_beams=5, repetition_penalty=3.0)
         return dialog.squeeze()
 
-
     def generate_next_tokens_from_embedding(self, embedding, n_tokens=10):
-        pass
-        # tokens = []
-        # ## Initialize:
-        # logits = self.forward_embedding(embedding)
-        # logits = logits[-1]
-        # next_token = self.get_next_token_from_logits(logits)
+        tokens = []
+        ## Initialize:
+        logits = self.forward_embedding(embedding)
+        logits = logits[-1]
+        next_token = self.get_next_token_from_logits(logits)
+        
+        # torch.cat(tokens, next_token)
+        tokens.append(next_token)
+        next_token_tensor = torch.tensor([[next_token]]).to(embedding.device)
+        next_embedding = self.embedding(next_token_tensor)
+        for i in range(n_tokens - 1):
+            next_embedding = next_embedding.reshape(1, 1, -1)
 
-        # tokens.append(next_token)
-        # next_token_tensor = torch.tensor([[next_token]]).to(embedding.device)
-        # next_embedding = self.embedding(next_token_tensor)
-        # for i in range(n_tokens - 1):
-        #     next_embedding = next_embedding.reshape(1, 1, -1)
+            logits = self.forward_embedding(next_embedding)
 
-        #     logits = self.forward_embedding(next_embedding)
+            next_token = self.get_next_token_from_logits(logits)
+            # torch.cat(tokens, next_token)
+            tokens.append(next_token)
+            next_token_tensor = torch.tensor([[next_token]]).to(embedding.device)
+            next_embedding = self.embedding(next_token_tensor)
+        return tokens
+        # return torch.tensor(tokens).to(embedding.device)
 
-        #     next_token = self.get_next_token_from_logits(logits)
-
-        #     tokens.append(next_token)
-        #     next_token_tensor = torch.tensor([[next_token]]).to(embedding.device)
-        #     next_embedding = self.embedding(next_token_tensor)
-        # return tokens
-    
 
     @classmethod
     def load(self, location):
