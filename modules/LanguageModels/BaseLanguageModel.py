@@ -31,7 +31,8 @@ class BaseLanguageModel(nn.Module):
             raise ValueError("tokens ids should have 1 or 2 dim but found: " + str(len(tokens_ids.shape)))
         logits = self.forward(tokens_ids)[-1, 0, :]
         next_token = self.get_next_token_from_logits(logits)
-        return next_token
+        return torch.tensor([next_token]).to(logits.device)
+        # return next_token
 
     def complete_dialogue(self, context_tokens_ids, max_length=100):
         '''
@@ -78,7 +79,8 @@ class BaseLanguageModel(nn.Module):
         p = np.exp(top_logits) / sum(np.exp(top_logits))
 
         index = np.random.choice(top_indices, p=p)
-        return torch.tensor([index]).to(logits.device)
+        # return torch.tensor([index]).to(logits.device)
+        return index
 
     def save(self, location):
         raise NotImplementedError()
