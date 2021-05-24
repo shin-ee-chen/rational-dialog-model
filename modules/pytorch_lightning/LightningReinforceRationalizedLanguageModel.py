@@ -176,14 +176,21 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
 
             # Generate next ids based on the masked input
             next_ids = self.language_model.generate_next_tokens(next_input, n_tokens=n_rational)
-
+            # next_ids = self.language_model.lm.generate(next_input.reshape(1,-1), 
+            #                                             eos_token_id=self.tokenizer.sep_token_id,
+            #                                             num_beams=5,
+            #                                             min_length=5, 
+            #                                             max_length=1000,#(20+len(next_input)),
+            #                                             forced_eos_token_id=self.tokenizer.sep_token_id,
+            #                                             ).reshape(-1,1)
             # Add to all tokens
             all_tokens = torch.cat([all_tokens, next_ids])
 
             # Map back to the sentence
             responses.append(
-                self.tokenizer.decode(next_ids.reshape(-1).detach().cpu().numpy(), skip_special_tokens=False).replace(
-                    " #", "").replace("#", ""))
+                #self.tokenizer.decode(next_ids.reshape(-1).detach().cpu().numpy(), skip_special_tokens=False).replace(" #", "").replace("#", "")
+                self.tokenizer.decode(next_ids.reshape(-1).detach().cpu().numpy(), skip_special_tokens=False)
+                )
 
             # Map back to tensor
             ids_tensor = all_tokens
