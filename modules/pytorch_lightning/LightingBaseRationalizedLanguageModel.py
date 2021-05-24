@@ -3,7 +3,7 @@ import pytorch_lightning as pl
 from tokenizers import Tokenizer
 from transformers import AdamW
 
-from utils.utils import fussed_lasso
+from utils.utils import calculate_mask_percentage, fussed_lasso
 
 
 class LightingBaseRationalizedLanguageModel(pl.LightningModule):
@@ -76,7 +76,8 @@ class LightingBaseRationalizedLanguageModel(pl.LightningModule):
 
         if "h" in out.keys():
             h = out["h"].permute(1, 0)
-            h_mean = torch.mean(h)
+            h_mean = calculate_mask_percentage(, h, reduce=True, pad_id=)
+            # h_mean = torch.mean(h)
             # ToDo: what is parameter 't' for fussed_lasso?
             # mask = out["masked_embedding"].permute(1, 0).float()
             fussed_lasso_loss = fussed_lasso(h, mask)
