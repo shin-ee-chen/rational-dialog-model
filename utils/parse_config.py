@@ -41,6 +41,8 @@ def parse_config(config_ref):
     if "rational_extractor" in config.keys():
         if config['language_model']['type'] == "transformers":
             embedding_size = language_model.embedding_size
+        else:
+            embedding_size = language_model.embedding_dim 
         RE = get_rational_extractor(config["rational_extractor"], tokenizer, embedding_size)
         result["rational_extractor"] = RE
 

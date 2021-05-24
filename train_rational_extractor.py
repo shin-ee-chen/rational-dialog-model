@@ -12,6 +12,8 @@ parser = argparse.ArgumentParser(description='Train a language model')
 parser.add_argument('--config', type=str, default="configs/dialoGPT_RE_dailyDialog.yml",
                     help='path to the config')
 
+# parser.add_argument('--config', type=str, default="configs/simple_RE_config_shared.yml",
+#                     help='path to the config')
 args = parser.parse_args()
 
 config_ref = args.config
