@@ -12,9 +12,9 @@ from modules.pytorch_lightning.LightningLanguageModel import LightningLanguageMo
 import pytorch_lightning as pl
 from transformers import AutoTokenizer
 
+from modules.pytorch_lightning.LightningReinforceRationalizedLanguageModel import LightingReinforceRationalizedLanguageModel
 
-from modules.pytorch_lightning.LightingBaseRationalizedLanguageModel \
-    import LightingBaseRationalizedLanguageModel
+from modules.pytorch_lightning.LightingBaseRationalizedLanguageModel import LightingBaseRationalizedLanguageModel
 
 from modules.RationalExtractor import RationalExtractor
 from utils.callbacks import FinishDialogueCallback, ChangeInPerplexityCallback, \
@@ -53,13 +53,11 @@ def parse_config(config_ref):
 
     # Load the pytorch lightning module and the trainer
     if "rational_extractor" in config.keys():
-        if config["rational_extractor"]["type"] == "policy_based":
-            lightning_language_model = LightingReinforceRationalizedLanguageModel(language_model, 
-                                                                                  RE, tokenizer,
-                                                                                  hparams=hparams)
+        if config['rational_extractor']['type'] == 'policy_based':
+            lightning_language_model = LightingReinforceRationalizedLanguageModel(language_model, RE, tokenizer, hparams=hparams)
         else:
             lightning_language_model = LightingBaseRationalizedLanguageModel(language_model, RE, tokenizer, 
-                                                                             loss_module, hparams=hparams)
+                                                                         loss_module, hparams=hparams)
     else:
         lightning_language_model = LightningLanguageModel(language_model, tokenizer, loss_module=loss_module,
                                                           hparams=hparams)
