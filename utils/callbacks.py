@@ -41,14 +41,9 @@ class ReshuffleDatasetCallback(pl.Callback):
         self.every_n_epochs = every_n_epochs
         self.dataset = dataset
 
-    def on_epoch_end(self, trainer, pl_module):
-        """
-        This function is called after every epoch.
-        """
-
+    def on_train_epoch_end(self, trainer, pl_module, outputs):
         if (trainer.current_epoch + 1) % self.every_n_epochs == 0:
             self.dataset.reshuffle_dataset()
-
 
 class FinishDialogueRationalizedCallback(pl.Callback):
     '''

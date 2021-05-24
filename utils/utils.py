@@ -13,7 +13,8 @@ import torch.nn.functional as F
 from utils.token_utils import get_weights, get_token_id
 
 
-def fussed_lasso(tokens, t, reduce=True, pad_id=0):
+def fussed_lasso(tokens, t, reduce=True, pad_id=None):
+    assert pad_id != None, "Please provide pad_token_id to use for padding"
     zdiff = t[:, 1:] - t[:, :-1]
     zdiff = zdiff.abs()  # [B]
     if reduce:
