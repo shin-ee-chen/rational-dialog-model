@@ -12,16 +12,13 @@ from modules.pytorch_lightning.LightningLanguageModel import LightningLanguageMo
 import pytorch_lightning as pl
 from transformers import AutoTokenizer
 
-from modules.pytorch_lightning.LightningReinforceRationalizedLanguageModel import \
-    LightingReinforceRationalizedLanguageModel
-from modules.pytorch_lightning.LightningRationalizedLanguageModel \
-    import LightingRationalizedLanguageModel
+
 from modules.pytorch_lightning.LightingBaseRationalizedLanguageModel \
     import LightingBaseRationalizedLanguageModel
 
 from modules.RationalExtractor import RationalExtractor
 from utils.callbacks import FinishDialogueCallback, ChangeInPerplexityCallback, \
-    FinishDialogueRationalizedCallback
+    FinishDialogueRationalizedCallback, ReshuffleDatasetCallback
 from tokenizers import Tokenizer
 from utils.token_utils import get_token_id, get_vocab_size
 
@@ -192,6 +189,7 @@ def get_trainer(information):
     if config["type"] == "normal":
         callbacks = [
             FinishDialogueCallback(["How are you doing today? [SEP]", "What are you upto? [SEP]"]),
+            ReshuffleDatasetCallback(information["dataloader_test"].dataset),
         ]
         trainer = pl.Trainer(
             default_root_dir='logs',
@@ -209,6 +207,7 @@ def get_trainer(information):
     elif config["type"] == "policy":
         callbacks = [
             FinishDialogueRationalizedCallback(["How are you doing today?", "What are you upto? "]),
+            ReshuffleDatasetCallback(information["dataloader_test"].dataset),
             #FinishDialogueRationalizedCallback(["How are you doing today?", "What are you upto? "], greedy_policy=True),
             #ChangeInPerplexityCallback(information["dataloader_test"]) #TODO enable again
         ]
