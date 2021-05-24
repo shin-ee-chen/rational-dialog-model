@@ -60,6 +60,7 @@ class BaseLanguageModel(nn.Module):
         """
         Generate the next utterance given the context.
         """
+        assert(type(sep_token) == int)
         tokens = context_tokens_ids.clone()
         utterances = torch.tensor([], dtype=torch.int).to(context_tokens_ids.device)
         next_token = self.generate_next_token(tokens)
@@ -69,6 +70,8 @@ class BaseLanguageModel(nn.Module):
             utterances = torch.cat([utterances, next_token], dim=-1)
             next_token = self.generate_next_token(tokens)
             # print(next_token, end=' ')
+        #append sep token in the end
+        utterances = torch.cat([utterances, torch.tensor([sep_token])], dim=-1)
         return utterances.long()
 
     def get_next_token_from_logits(self, logits, top=10):

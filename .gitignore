@@ -139,3 +139,4 @@ finetuning/saved_models
 *.out
 
 todo.md
+.DS_store
