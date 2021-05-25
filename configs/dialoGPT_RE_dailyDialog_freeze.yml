@@ -1,7 +1,7 @@
 language_model:
   type: transformers
   checkpoint: microsoft/DialoGPT-small
-  pretrained: False
+  pretrained: True
   save_location: './models/dialoGPT_dailyDialog_finetuned/'
 dataset:
   type: 'daily_dialogue'
