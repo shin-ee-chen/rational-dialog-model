@@ -18,7 +18,7 @@ tokenizer:
   link: './daily_dialog/tokenizer.json'
 hparams:
   learning_rate: 0.001
-  freeze_language_ml: False
+  freeze_language_ml: True
   teacher_forcing: True
 loss_module: crossentropyloss
 trainer:
@@ -29,7 +29,7 @@ rational_extractor:
   type: shared_embedding
   pretrained: False
   # load_location: './models/shared_simple.pt'
-  save_location: './models/shared_simple.pt'
+  save_location: './models/shared_simple_freeze.pt'
 
 
 
