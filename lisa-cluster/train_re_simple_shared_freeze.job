@@ -2,11 +2,11 @@
 
 #SBATCH --partition=gpu_titanrtx_shared_course
 #SBATCH --gres=gpu:1
-#SBATCH --job-name=gpt_re_share
+#SBATCH --job-name=simple_shared_re
 #SBATCH --cpus-per-task=4
 #SBATCH --time=12:00:00
 #SBATCH --mem=32000M
-#SBATCH --output=gpt_re_share_%A.out
+#SBATCH --output=simple_shared_re_freeze_%A.out
 #SBATCH --ntasks=1
 
 module purge
@@ -22,6 +22,6 @@ cd $HOME/rational-dialog-model
 # Activate your environment
 source activate cdm
 # Run your code
-echo "running shared_embed RE"
-srun python train_rational_extractor.py --config configs/dialoGPT_RE_dailyDialog.yml
+echo "running shared_embed RE freeze"
+srun python train_rational_extractor.py --config configs/simple_RE_config_shared_freeze.yml
 echo "finish"

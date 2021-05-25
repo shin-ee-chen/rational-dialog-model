@@ -6,7 +6,7 @@
 #SBATCH --cpus-per-task=4
 #SBATCH --time=12:00:00
 #SBATCH --mem=32000M
-#SBATCH --output=gpt_re_share_%A.out
+#SBATCH --output=gpt_re_share_freeze_%A.out
 #SBATCH --ntasks=1
 
 module purge
@@ -22,6 +22,6 @@ cd $HOME/rational-dialog-model
 # Activate your environment
 source activate cdm
 # Run your code
-echo "running shared_embed RE"
-srun python train_rational_extractor.py --config configs/dialoGPT_RE_dailyDialog.yml
+echo "running shared_embed RE freeze"
+srun python train_rational_extractor.py --config configs/dialoGPT_RE_dailyDialog_freeze.yml.yml
 echo "finish"

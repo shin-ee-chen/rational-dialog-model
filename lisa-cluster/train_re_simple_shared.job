@@ -24,6 +24,4 @@ source activate cdm
 # Run your code
 echo "running shared_embed RE"
 srun python train_rational_extractor.py --config configs/simple_RE_config_shared.yml
-echo "running shared_embed RE freeze"
-srun python train_rational_extractor.py --config configs/simple_RE_config_shared_freeze.yml
 echo "finish"
