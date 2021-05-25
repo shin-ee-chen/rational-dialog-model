@@ -51,3 +51,12 @@ class RationalExtractor(nn.Module):
 
             }
         }, location)
+
+    @classmethod
+    def load(self, location):
+        
+        info = torch.load(location)
+        model = RationalExtractor(**info['kwargs'])
+        model.load_state_dict(info['model_state_dict'])
+        model.train()
+        return model

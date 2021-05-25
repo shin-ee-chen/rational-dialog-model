@@ -15,7 +15,7 @@ tokenizer:
   checkpoint: 'microsoft/DialoGPT-small'
 hparams:
   learning_rate: 0.001
-  freeze_language_ml: False
+  freeze_language_ml: True
   teacher_forcing: True
 loss_module: crossentropyloss
 trainer:
