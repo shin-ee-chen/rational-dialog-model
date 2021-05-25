@@ -31,14 +31,14 @@ class PretrainedLanguageModel(BaseLanguageModel):
     def forward_embedding(self, embedding):
         return self.layers(embedding)
 
-    def complete_dialogue(self, context_tokens_ids, max_length=100):
-        '''
-        Complete the dialogue given the context
-        '''
-        context_tokens_ids = context_tokens_ids.unsqueeze(dim = 0)
-        dialog = self.lm.generate(context_tokens_ids, max_length=max_length,
-                                  pad_token_id = self.eos_token_id)
-        return dialog.squeeze()
+    # def complete_dialogue(self, context_tokens_ids, max_length=100):
+    #     '''
+    #     Complete the dialogue given the context
+    #     '''
+    #     context_tokens_ids = context_tokens_ids.unsqueeze(dim = 0)
+    #     dialog = self.lm.generate(context_tokens_ids, max_length=max_length,
+    #                               pad_token_id = self.eos_token_id)
+    #     return dialog.squeeze()
 
     def generate_next_tokens_from_embedding(self, embedding, n_tokens=10):
         tokens = []
