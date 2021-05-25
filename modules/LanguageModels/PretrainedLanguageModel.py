@@ -15,6 +15,7 @@ class PretrainedLanguageModel(BaseLanguageModel):
         self.embedding = self.lm.get_input_embeddings()
         self.layers = self.lm.get_output_embeddings()
         self.embedding_size = self.layers.in_features
+        self.eos_token_id = tokenizer.eos_token_id
 
     def forward(self, tokenized_input_ids):
         # return self.model.generate(tokenized_input_ids, max_length=1000, pad_token_id=self.tokenizer.eos_token_id)
@@ -34,9 +35,9 @@ class PretrainedLanguageModel(BaseLanguageModel):
         '''
         Complete the dialogue given the context
         '''
-        # dialog = self.lm.generate(context_tokens_ids, max_length=max_length)
         context_tokens_ids = context_tokens_ids.unsqueeze(dim = 0)
-        dialog = self.lm.generate(context_tokens_ids, max_length=max_length, num_beams=5, repetition_penalty=3.0)
+        dialog = self.lm.generate(context_tokens_ids, max_length=max_length,
+                                  pad_token_id = self.eos_token_id)
         return dialog.squeeze()
 
     def generate_next_tokens_from_embedding(self, embedding, n_tokens=10):
