@@ -3,6 +3,7 @@ language_model:
   checkpoint: microsoft/DialoGPT-small
   pretrained: True
   load_location: './models/dialoGPT_dailyDialog_finetuned/'
+  save_location: './models/freeze_dialoGPT_dailyDialog__rationalized/'
 dataset:
   type: 'daily_dialogue'
   size_train: 1000
