@@ -32,7 +32,7 @@ class LightningBaseLanguageModel(pl.LightningModule):
 
         completed_dialogue_tokens = self.language_model.complete_dialogue(ids_tensor, max_length)
         completed_dialogue = decode(self.tokenizer, completed_dialogue_tokens)
-        return completed_dialogue
+        return completed_dialogue.encode('utf8')
 
     def next_utterance(self, context, sep_token):
         encoding = self.tokenizer.encode(context)

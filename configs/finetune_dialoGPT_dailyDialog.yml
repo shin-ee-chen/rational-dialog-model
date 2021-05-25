@@ -15,7 +15,7 @@ tokenizer:
   checkpoint: 'microsoft/DialoGPT-small'
   # link: './daily_dialog/tokenizer.json'
 hparams:
-  learning_rate: 2e-5
+  learning_rate: 0.00002
 loss_module: crossentropyloss
 trainer:
   type: normal #normal vs rationalized type
