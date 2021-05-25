@@ -15,7 +15,7 @@ tokenizer:
   checkpoint: 'roberta-base'
   # link: './daily_dialog/tokenizer.json'
 hparams:
-  learning_rate: 2e-5
+  learning_rate: 0.0002
 loss_module: crossentropyloss
 trainer:
   type: normal #normal vs rationalized type
