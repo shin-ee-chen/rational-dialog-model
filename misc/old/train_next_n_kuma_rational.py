@@ -12,7 +12,7 @@ from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
 from utils.callbacks import FinishDialogueRationalizedCallback
 from modules.LanguageModels.LstmLanguageModel import LSTMLanguageModel
 from modules.pytorch_lightning.LightingBaseRationalizedLanguageModel import LightingBaseRationalizedLanguageModel
-from modules.kurmaswamy.KumaRationalExtractor import KumaRationalExtractor
+from modules.RationalExtractors.KumaRationalExtractor import KumaRationalExtractor
 
 save_path = '../../models/small_lm_pretrained.pt'
 load_pretrained = True

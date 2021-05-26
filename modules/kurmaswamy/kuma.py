@@ -183,13 +183,13 @@ class StretchedVariable(RelaxedBinary):
             self.scale = self.params()[0].new_tensor([self.scale])
 
         # shrink the stretched variable
+
         x_ = (x - self.loc) / self.scale
         # and assess the stretched pdf using the original pdf
         # see eq 25 (left) of Louizos et al
         return self._dist.log_pdf(x_) - torch.log(self.scale)
 
     def log_cdf(self, x):
-
         if isinstance(x, float):
             x = self.params()[0].new_tensor([x])
 

@@ -13,29 +13,33 @@ import torch.nn.functional as F
 from utils.token_utils import get_weights, get_token_id
 
 
-def fussed_lasso(tokens, t, reduce=True, pad_id=None):
+def fussed_lasso(tokens, mask, reduce=True, pad_id=None):
     assert pad_id != None, "Please provide pad_token_id to use for padding"
-    zdiff = t[:, 1:] - t[:, :-1]
-    zdiff = zdiff.abs()  # [B]
+    non_paddings = (tokens != pad_id).float()
+
+    mask = non_paddings * mask
+    non_paddings = non_paddings.sum(dim=-1)
+
+
+    zdiff = mask[:, 1:] - mask[:, :-1]
+    zdiff = zdiff.abs().sum(dim=-1)  # [B]
+
     if reduce:
-        zdiff = zdiff.sum()
-        non_paddings = (tokens != pad_id).float().sum()
+        return (zdiff / non_paddings).mean()
     else:
-        zdiff = zdiff.sum(dim=-1)
-        non_paddings = (tokens != pad_id).float().sum(dim=-1)
-    return zdiff/non_paddings
+        return zdiff / non_paddings
 
 
 def calculate_mask_percentage(tokens, mask, reduce=False, pad_id=None):
-    if reduce:
-        mask_sum = mask.sum()
-        non_paddings = (tokens != pad_id).float().sum()
-    else:
-        mask_sum = mask.sum(dim=-1)
-        non_paddings = (tokens != pad_id).float().sum(dim=-1)
-
+    non_paddings = (tokens != pad_id).float()
+    mask = mask * non_paddings
+    mask_sum = mask.sum(dim=-1)
+    non_paddings = non_paddings.sum(dim=-1)
     mean = mask_sum / non_paddings
-    return mean
+    if reduce:
+        return mean.mean()
+    else:
+        return mean
 
 
 def calc_acc(predictions, targets, exclude=None):

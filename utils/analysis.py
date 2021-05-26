@@ -82,7 +82,10 @@ def get_results(model, dataloader):
     mean_mask_percentage = 0
     total_samples = len(dataloader.dataset)
     for batch in tqdm(dataloader):
-        results = model.batch_to_out(batch)
+
+        contexts = batch[0].to(model.device)
+        targets =  batch[1].to(model.device)
+        results = model.batch_to_out((contexts, targets))
         samples_in_batch = batch[0].shape[0]
         mean_acc += results["acc"] * (samples_in_batch) / total_samples
 
@@ -198,7 +201,7 @@ def rational_analysis(model, dataloader):
 
         #                print("Mask: ", mask, mask.size(), len(mask[0]))
         num_positions = len(mask[0])
-        positions_reversed = torch.tensor(list(range(num_positions, 0, -1)))
+        positions_reversed = torch.tensor(list(range(num_positions, 0, -1))).to(model.device)
         #                print(positions_reversed)
 
         mask_positions = torch.mul(mask, positions_reversed).float()

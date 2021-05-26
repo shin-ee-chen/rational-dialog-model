@@ -3,7 +3,7 @@ import pytorch_lightning as pl
 from tokenizers import Tokenizer
 from transformers import AdamW
 import torch.nn.functional as F
-from utils.utils import calculate_mask_percentage, fussed_lasso, get_pad_id, calc_perplexity
+from utils.utils import calculate_mask_percentage, fussed_lasso, get_pad_id, calc_perplexity, calc_acc
 from utils.token_utils import get_vocab_size, get_token_id, get_weights
 
 
@@ -21,7 +21,7 @@ class LightingBaseRationalizedLanguageModel(pl.LightningModule):
         self.rational_extractor = rational_extractor
         self.tokenizer = tokenizer
 
-        self.pad_token_id = get_pad_id(tokenizer)
+        self.pad_token_id = get_token_id(tokenizer, "pad_token")
         self.mask_token = get_token_id(tokenizer, "mask_token")
         self.sparsity_weight = sparsity_weight
         self.fussed_lasso_weight = fussed_lasso_weight
@@ -92,7 +92,13 @@ class LightingBaseRationalizedLanguageModel(pl.LightningModule):
         total_loss = cross_entropy_loss + total_mask_loss
         perplexity = calc_perplexity(predictions,
                                      targets, self.tokenizer)
-        acc = self.calc_acc(predictions, targets)
+        vocab_size = get_vocab_size(self.tokenizer)
+
+
+        acc = calc_acc(predictions.reshape(-1, vocab_size),
+                       targets.flatten(), exclude=self.pad_token_id)
+
+
         return {"total_loss": total_loss, "acc": acc, "total_mask_loss": total_mask_loss, "mask_mean": mask_mean,
                 "mask_fussed_lasso": fussed_lasso_loss, "cross_entropy_loss": cross_entropy_loss,
                 "perplexity": perplexity}
@@ -137,7 +143,7 @@ class LightingBaseRationalizedLanguageModel(pl.LightningModule):
             if with_rational and len(dialogue_tokens_ids_tensor) > n_rational:
                 rational = self.get_rational(dialogue_tokens_ids_tensor)
                 binary_mask = rational["mask"]
-                rational_input = (dialogue_tokens_ids_tensor * binary_mask).int().flatten().detach().cpu().numpy()
+                rational_input = (dialogue_tokens_ids_tensor * binary_mask + ~binary_mask * self.mask_token).int().flatten().detach().cpu().numpy()
                 rational_input = self.tokenizer.decode(rational_input, skip_special_tokens=False).replace(" #",
                                                                                                           "").replace(
                     "#", "")

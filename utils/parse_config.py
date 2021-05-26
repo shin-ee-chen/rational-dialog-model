@@ -6,6 +6,7 @@ from daily_dialog.DialogTokenizer import get_daily_dialog_tokenizer
 from daily_dialog.UtterancesDataset import UtterancesDataset
 from modules.LanguageModels.LstmLanguageModel import LSTMLanguageModel
 from modules.LanguageModels.PretrainedLanguageModel import PretrainedLanguageModel
+from modules.RationalExtractors.KumaRationalExtractor import KumaRationalExtractor
 from modules.RationalExtractors.PolicyBasedRationalExtractor import PolicyBasedRationalExtractor
 from modules.RationalExtractors.PolicyBasedUtteranceRationalExtractor import PolicyBasedUtteranceRationalExtractor
 from modules.pytorch_lightning.LightningLanguageModel import LightningLanguageModel
@@ -176,6 +177,13 @@ def get_rational_extractor(config, tokenizer, embedding_size=32):
             return RationalExtractor.load(config["load_location"])
         else:
             return RationalExtractor(embedding_size)
+
+    if config["type"] == "shared_embedding_kum":
+        if config["pretrained"]:
+            return KumaRationalExtractor.load(config["load_location"])
+        else:
+            return KumaRationalExtractor(embedding_size)
+
 
     if config["type"] == "policy_utterance":
         return PolicyBasedUtteranceRationalExtractor(get_vocab_size(tokenizer),
