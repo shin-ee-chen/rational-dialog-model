@@ -12,8 +12,8 @@ class LightingBaseRationalizedLanguageModel(pl.LightningModule):
     '''
 
     def __init__(self, language_model, rational_extractor, tokenizer, loss_module, hparams=None,
-                 sparsity_weight=0.000001,
-                 fussed_lasso_weight=0.00001, ):
+                 sparsity_weight=0.1,
+                 fussed_lasso_weight=0.1, ):
         super().__init__()
         self.hparams = hparams
         self.language_model = language_model
@@ -40,22 +40,20 @@ class LightingBaseRationalizedLanguageModel(pl.LightningModule):
 
         ## Concatenate the two together and put through the lstm
 
-        if self.teacher_forcing:
-            target_embedding = self.language_model.to_embedding(targets)
-            lstm_in = torch.cat([masked_embedding, target_embedding])
-            prediction = self.language_model.forward_embedding(lstm_in)
-        else:
-            ## Forward without teacher forcing
-            n_to_predict = len(targets)
-            prediction = self.language_model.forward_embedding(masked_embedding, teacher_forcing=False,
-                                                               n_to_predict=n_to_predict)
+        target_embedding = self.language_model.to_embedding(targets)
+        lstm_in = torch.cat([masked_embedding, target_embedding])
+        prediction = self.language_model.forward_embedding(lstm_in)
 
         return {"logits": prediction, **rational, "x": x}
 
     def get_rational(self, x):
         rational_embedding = self.language_model.to_embedding(x)
         rational = self.rational_extractor.forward(rational_embedding)
-        return rational
+        mask = rational["mask"]
+        ### Also apply the mask
+        masked_input = torch.mul(x, mask) + ~mask * self.mask_token
+
+        return {masked_input: masked_input, **rational}
 
     def batch_out(self, batch):
 

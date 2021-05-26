@@ -19,7 +19,6 @@ class RationalExtractor(nn.Module):
 
         self.gumbel_softmax = nn.functional.gumbel_softmax
 
-        self.hard = True
 
     def forward(self, embedding):
         '''
@@ -30,15 +29,15 @@ class RationalExtractor(nn.Module):
         lstm_out, (hidden, cell) = self.lstm(embedding)
         binary_logits = self.to_binary_logits(lstm_out)
         if self.training:
-            probs = self.gumbel_softmax(binary_logits, hard=True, dim=-1) ###TODO: Maybe set hard to false?
+            probs = self.gumbel_softmax(binary_logits, hard=False, dim=-1) ###TODO: Maybe set hard to false?
         else:
             probs = self.gumbel_softmax(binary_logits, hard=True, dim=-1)
-        h = (probs[:, :, 1] + 1 - probs[:, :, 0]) / 2
-        h_repeated = h.unsqueeze(-1).repeat(1, 1, embedding.shape[-1])
+        mask = (probs[:, :, 1] + 1 - probs[:, :, 0]) / 2
+        h_repeated = mask.unsqueeze(-1).repeat(1, 1, embedding.shape[-1])
 
         masked_embedding = h_repeated * embedding
 
-        return {"masked_embedding": masked_embedding, "h": h}
+        return {"masked_embedding": masked_embedding, "mask": mask}
 
     def save(self, location):
     
@@ -46,9 +45,6 @@ class RationalExtractor(nn.Module):
             'model_state_dict': self.state_dict(),
             'kwargs': {
                 'embedding_input_size': self.n_features,
-                # "embedding_size": self.embedding_size,
-                # 'mask_token': self.mask_token,
-
             }
         }, location)
 

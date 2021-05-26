@@ -17,7 +17,7 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
 
     def __init__(self, language_model, rational_extractor, tokenizer, hparams=None,
                  sparsity_weight=0.0001,
-                 fussed_lasso_weight=0.0001):
+                 fussed_lasso_weight=0.1):
         super().__init__()
         self.hparams = hparams
         self.language_model = language_model
@@ -35,6 +35,8 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
         self.pad_token_id = get_pad_id(tokenizer)
 
         self.freeze_language_model = hparams["freeze_language_model"]
+
+
 
     def forward(self, x, targets, ):
 
@@ -176,7 +178,7 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
 
             # Generate next ids based on the masked input
             #next_ids = self.language_model.generate_next_tokens(next_input, n_tokens=n_rational)
-            next_ids = self.language_model.next_utterance(next_input.flatten(), self.tokenizer.sep_token_id, max_length=20).reshape(-1, 1)
+            next_ids = self.language_model.next_utterance(next_input.flatten(), get_token_id(self.tokenizer, "sep_token"), max_length=20).reshape(-1, 1)
             # next_ids = self.language_model.lm.generate(next_input.reshape(1,-1), 
             #                                             eos_token_id=self.tokenizer.sep_token_id,
             #                                             num_beams=5,
