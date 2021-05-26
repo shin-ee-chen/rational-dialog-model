@@ -1,0 +1,23 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] ------> that would be great . [SEP]
+[MASK] [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ' m going to the doctor , i ’ ll see you out today . [SEP]
+[MASK] [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] m [MASK] to the doctor , i [MASK] [MASK] see [MASK] out [MASK] [MASK] [MASK] ------> i can ' t get a new job . i think i will . we can offer you the price [SEP]
+[MASK] [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] m [MASK] to the doctor , i [MASK] [MASK] see [MASK] out [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] a [MASK] [MASK] . i think i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> that ' s right . and you ? [SEP]
+[MASK] [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] m [MASK] to the doctor , i [MASK] [MASK] see [MASK] out [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] a [MASK] [MASK] . i think i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] right [MASK] [MASK] [MASK] [MASK] [MASK] ------> what about the interview ? [SEP]
+[MASK] [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] m [MASK] to the doctor , i [MASK] [MASK] see [MASK] out [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] a [MASK] [MASK] . i think i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] right [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> yes . that ' s right . [SEP]
+[MASK] [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] m [MASK] to the doctor , i [MASK] [MASK] see [MASK] out [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] a [MASK] [MASK] . i think i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] right [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] right [MASK] [MASK] ------> i ' m sure not sure . i ' m sorry ! [SEP]
+[MASK] [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] m [MASK] to the doctor , i [MASK] [MASK] see [MASK] out [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] a [MASK] [MASK] . i think i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] right [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] right [MASK] [MASK] [MASK] [MASK] m [MASK] [MASK] [MASK] [MASK] i [MASK] m sorry [MASK] [MASK] ------> how about the way you have any questions ? [SEP]
+[MASK] [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] m [MASK] to the doctor , i [MASK] [MASK] see [MASK] out [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] a [MASK] [MASK] . i think i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] right [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] right [MASK] [MASK] [MASK] [MASK] m [MASK] [MASK] [MASK] [MASK] i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] questions [MASK] [MASK] ------> you can ' t make your help . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+that would be great .
+i ' m going to the doctor , i ’ ll see you out today .
+i can ' t get a new job . i think i will . we can offer you the price
+that ' s right . and you ?
+what about the interview ?
+yes . that ' s right .
+i ' m sure not sure . i ' m sorry !
+how about the way you have any questions ?
+you can ' t make your help .

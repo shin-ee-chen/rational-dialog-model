@@ -1,0 +1,19 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] doing [MASK] [MASK] [MASK] ------> oh , yeah ! my wife will be not so easy . i can ' t help my best . [SEP]
+[MASK] [MASK] [MASK] doing today [MASK] [MASK] oh , yeah [MASK] my [MASK] will [MASK] not [MASK] [MASK] . [MASK] can [MASK] [MASK] help my best [MASK] [SEP] ------> yes , i know , doctor . [SEP]
+how are [MASK] [MASK] today ? [MASK] oh , [MASK] [MASK] my wife will [MASK] not [MASK] [MASK] [MASK] i [MASK] [MASK] t [MASK] my best . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] doctor [MASK] [MASK] ------> why do you say that ? [SEP]
+[MASK] are you [MASK] today [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] be not [MASK] [MASK] . i can [MASK] t [MASK] [MASK] best [MASK] [MASK] [MASK] [MASK] i [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] you [MASK] [MASK] [MASK] [SEP] ------> what do we have to do about it ? [SEP]
+[MASK] [MASK] [MASK] doing [MASK] [MASK] [SEP] oh , yeah ! my wife [MASK] be [MASK] so [MASK] . [MASK] can [MASK] t help [MASK] [MASK] . [MASK] [MASK] [MASK] i [MASK] , doctor [MASK] [SEP] why do [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] to [MASK] [MASK] [MASK] [MASK] [SEP] ------> no , not yet , but my parents are in the hosp ##ital to you . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] yeah ! [MASK] wife will be not so [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] best [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , doctor [MASK] [MASK] [MASK] do [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] no [MASK] [MASK] [MASK] , [MASK] my parents are [MASK] the [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> no , not yet . let me go and get the money to work with him . it is so [SEP]
+[MASK] [MASK] [MASK] [MASK] today [MASK] [SEP] oh [MASK] [MASK] [MASK] [MASK] wife [MASK] be [MASK] [MASK] [MASK] [MASK] i can ' [MASK] [MASK] my [MASK] . [MASK] yes , i [MASK] , doctor [MASK] [MASK] why [MASK] [MASK] [MASK] that [MASK] [MASK] [MASK] do we [MASK] to [MASK] about [MASK] [MASK] [SEP] no [MASK] not yet [MASK] [MASK] [MASK] [MASK] [MASK] in [MASK] [MASK] [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] yet . [MASK] me go [MASK] [MASK] [MASK] money [MASK] [MASK] with [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] ------> i ' ll do it if he was . and what ? [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+oh , yeah ! my wife will be not so easy . i can ' t help my best .
+yes , i know , doctor .
+why do you say that ?
+what do we have to do about it ?
+no , not yet , but my parents are in the hospital to you .
+no , not yet . let me go and get the money to work with him . it is so
+i ' ll do it if he was . and what ?

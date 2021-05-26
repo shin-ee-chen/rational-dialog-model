@@ -1,0 +1,31 @@
+Rationalized input ------> Response
+how [MASK] [MASK] [MASK] [MASK] ? [SEP] ------> i need to buy a book . [SEP]
+how [MASK] you doing today ? [MASK] [MASK] need [MASK] [MASK] [MASK] book [MASK] [SEP] ------> how much would you like to go with it ? [SEP]
+how are you [MASK] [MASK] [MASK] [SEP] [MASK] need [MASK] buy a book . [MASK] [MASK] [MASK] [MASK] [MASK] like to go with [MASK] [MASK] [MASK] ------> you ’ re right . [SEP]
+[MASK] [MASK] you doing today ? [SEP] [MASK] need to buy [MASK] book [MASK] [SEP] how [MASK] [MASK] you like to [MASK] with [MASK] [MASK] [MASK] [MASK] [MASK] re right [MASK] [MASK] ------> what do you have to do with a new student ? [SEP]
+how are [MASK] [MASK] [MASK] ? [MASK] i need [MASK] buy [MASK] book . [SEP] how much would [MASK] [MASK] to [MASK] with it ? [MASK] you ’ [MASK] [MASK] . [SEP] [MASK] do you have [MASK] [MASK] with [MASK] [MASK] student [MASK] [SEP] ------> thanks . [SEP]
+[MASK] [MASK] [MASK] doing [MASK] [MASK] [SEP] i need [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] with [MASK] ? [MASK] [MASK] ’ [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] new [MASK] [MASK] [SEP] thanks [MASK] [MASK] ------> that ' s ok . i will . [SEP]
+how [MASK] you [MASK] [MASK] [MASK] [MASK] i need [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] much [MASK] you like [MASK] [MASK] with it ? [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] to do with a new [MASK] [MASK] [SEP] thanks [MASK] [SEP] that ' [MASK] ok [MASK] [MASK] [MASK] [MASK] [MASK] ------> how much ? [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] [MASK] [MASK] [MASK] buy a book [MASK] [SEP] how [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] right . [MASK] [MASK] do you [MASK] [MASK] [MASK] with a new [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] that ' s [MASK] . i [MASK] . [SEP] how much ? [SEP] ------> i think i would get to the money for the same day . [SEP]
+how [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] i need to buy [MASK] [MASK] [MASK] [MASK] [MASK] much [MASK] you like [MASK] [MASK] with [MASK] ? [MASK] [MASK] [MASK] re right . [SEP] [MASK] do you [MASK] to [MASK] [MASK] a new [MASK] ? [MASK] thanks . [MASK] [MASK] ' s [MASK] . i will [MASK] [MASK] how much ? [SEP] i [MASK] i would [MASK] to the money for [MASK] same day . [MASK] ------> yes , of course . [SEP]
+[MASK] [MASK] you [MASK] today [MASK] [MASK] i need [MASK] [MASK] [MASK] book . [MASK] how much would [MASK] like to [MASK] with it [MASK] [MASK] [MASK] [MASK] re right [MASK] [SEP] what do [MASK] [MASK] [MASK] do [MASK] a new [MASK] [MASK] [SEP] thanks [MASK] [MASK] [MASK] [MASK] s ok [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] [MASK] think [MASK] [MASK] [MASK] to the money for the [MASK] [MASK] . [MASK] yes [MASK] of [MASK] [MASK] [MASK] ------> i ' ll go . [SEP]
+how [MASK] you doing [MASK] [MASK] [MASK] [MASK] need to buy [MASK] book [MASK] [MASK] [MASK] [MASK] [MASK] you like to [MASK] [MASK] [MASK] [MASK] [SEP] you ’ re right . [MASK] what do you [MASK] [MASK] [MASK] [MASK] a [MASK] [MASK] ? [MASK] [MASK] . [SEP] [MASK] ' s [MASK] [MASK] i will [MASK] [SEP] [MASK] much ? [SEP] i think i would get to the [MASK] for the [MASK] [MASK] . [MASK] [MASK] , [MASK] course . [SEP] [MASK] ' [MASK] [MASK] [MASK] [SEP] ------> ok . [SEP]
+[MASK] [MASK] [MASK] doing today [MASK] [SEP] i [MASK] [MASK] [MASK] a book . [MASK] how [MASK] would [MASK] like [MASK] go [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] re right [MASK] [MASK] what do you [MASK] [MASK] [MASK] with [MASK] new student [MASK] [MASK] thanks . [MASK] [MASK] ' [MASK] ok [MASK] i [MASK] [MASK] [MASK] how [MASK] [MASK] [MASK] [MASK] think [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] for the [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] course . [SEP] [MASK] [MASK] [MASK] go [MASK] [MASK] ok [MASK] [MASK] ------> thank you . [SEP]
+[MASK] are [MASK] doing today [MASK] [MASK] [MASK] need [MASK] [MASK] [MASK] book [MASK] [MASK] [MASK] much would [MASK] [MASK] to [MASK] with [MASK] [MASK] [SEP] you [MASK] re right [MASK] [MASK] [MASK] do you [MASK] [MASK] [MASK] [MASK] a new [MASK] [MASK] [SEP] [MASK] . [MASK] that [MASK] [MASK] ok . i [MASK] [MASK] [SEP] how much ? [MASK] i think i [MASK] [MASK] [MASK] the money [MASK] the same day . [SEP] [MASK] [MASK] [MASK] course [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] . [MASK] thank you [MASK] [MASK] ------> i ' m afraid we don ' t think that . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i need to buy a book .
+how much would you like to go with it ?
+you ’ re right .
+what do you have to do with a new student ?
+thanks .
+that ' s ok . i will .
+how much ?
+i think i would get to the money for the same day .
+yes , of course .
+i ' ll go .
+ok .
+thank you .
+i ' m afraid we don ' t think that .

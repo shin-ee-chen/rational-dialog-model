@@ -1,0 +1,29 @@
+Rationalized input ------> Response
+[MASK] are you [MASK] [MASK] ? [SEP] ------> no . you ’ d like to be a nice place , but i ’ d like a new job [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] you [MASK] [MASK] [MASK] to [MASK] a [MASK] [MASK] , but i ’ [MASK] [MASK] [MASK] new [MASK] [MASK] ------> you ’ re welcome . [SEP]
+how are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] ’ [MASK] like to be [MASK] [MASK] [MASK] , but i ’ [MASK] [MASK] a [MASK] [MASK] [SEP] you ’ [MASK] [MASK] . [SEP] ------> i didn ’ t know ! [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] you ’ [MASK] [MASK] [MASK] be [MASK] [MASK] [MASK] , but i [MASK] [MASK] like [MASK] [MASK] job [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] i didn ’ t [MASK] ! [SEP] ------> i ’ m glad i ’ ve been in my house . [SEP]
+how [MASK] you doing today ? [MASK] no [MASK] you [MASK] d [MASK] to [MASK] [MASK] nice place [MASK] but i ’ [MASK] [MASK] a [MASK] job [MASK] [MASK] ’ re welcome [MASK] [MASK] i didn [MASK] t know ! [SEP] i [MASK] m glad [MASK] ’ [MASK] been in [MASK] [MASK] . [MASK] ------> really ? [SEP]
+[MASK] are you doing today [MASK] [SEP] no . you [MASK] [MASK] [MASK] to be a nice place [MASK] [MASK] [MASK] [MASK] [MASK] like a [MASK] [MASK] [SEP] [MASK] [MASK] re welcome [MASK] [MASK] i [MASK] ’ t [MASK] [MASK] [SEP] [MASK] ’ m [MASK] i ’ ve [MASK] [MASK] [MASK] [MASK] . [MASK] really [MASK] [SEP] ------> oh , i see . i ’ ll see you now . [SEP]
+[MASK] [MASK] [MASK] doing today [MASK] [SEP] no . you ’ [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , but [MASK] ’ d [MASK] [MASK] [MASK] [MASK] [MASK] you [MASK] re [MASK] [MASK] [SEP] i [MASK] ’ t [MASK] ! [SEP] i [MASK] m glad i [MASK] [MASK] been in [MASK] house [MASK] [SEP] [MASK] [MASK] [SEP] [MASK] , [MASK] [MASK] [MASK] i [MASK] ll see [MASK] now . [MASK] ------> that sounds great . [SEP]
+how [MASK] [MASK] doing [MASK] [MASK] [SEP] [MASK] . you ’ d [MASK] [MASK] be [MASK] nice place , [MASK] i ’ d [MASK] a [MASK] job [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ’ [MASK] know [MASK] [SEP] i ’ [MASK] glad i [MASK] ve been [MASK] [MASK] house . [MASK] [MASK] [MASK] [SEP] [MASK] , i [MASK] . [MASK] [MASK] [MASK] see you [MASK] . [SEP] [MASK] [MASK] [MASK] [MASK] [SEP] ------> i see . [SEP]
+how [MASK] [MASK] doing [MASK] ? [MASK] [MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] be [MASK] [MASK] [MASK] , but i ’ [MASK] [MASK] [MASK] new job [SEP] [MASK] ’ [MASK] welcome [MASK] [MASK] [MASK] didn ’ [MASK] [MASK] ! [MASK] i ’ m [MASK] [MASK] [MASK] [MASK] [MASK] in my [MASK] . [SEP] really ? [SEP] [MASK] , i [MASK] . [MASK] ’ [MASK] see you now . [MASK] [MASK] sounds [MASK] [MASK] [MASK] [MASK] see [MASK] [SEP] ------> thank you . [SEP]
+how [MASK] [MASK] [MASK] today ? [SEP] [MASK] . [MASK] ’ [MASK] like [MASK] be [MASK] [MASK] place , but i ’ d like [MASK] new [MASK] [MASK] you [MASK] re [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] know [MASK] [SEP] [MASK] ’ [MASK] glad [MASK] ’ [MASK] been [MASK] my [MASK] [MASK] [MASK] [MASK] ? [SEP] [MASK] [MASK] i see [MASK] [MASK] ’ [MASK] [MASK] you now [MASK] [MASK] [MASK] sounds [MASK] [MASK] [MASK] [MASK] see [MASK] [MASK] [MASK] you . [MASK] ------> i ’ m sorry . that ’ s all right ! [SEP]
+how [MASK] [MASK] [MASK] [MASK] ? [SEP] no . you ’ d like to [MASK] [MASK] [MASK] [MASK] [MASK] but [MASK] ’ [MASK] like a new job [SEP] you [MASK] re welcome . [MASK] [MASK] [MASK] ’ [MASK] [MASK] [MASK] [MASK] i [MASK] m glad [MASK] [MASK] ve been [MASK] [MASK] [MASK] . [SEP] really [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] . i ’ [MASK] see [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] great [MASK] [MASK] i [MASK] . [MASK] thank [MASK] . [MASK] [MASK] ’ m [MASK] [MASK] that ’ s [MASK] [MASK] [MASK] [SEP] ------> thanks . [SEP]
+how are [MASK] doing today ? [MASK] [MASK] . [MASK] [MASK] [MASK] like [MASK] be a nice [MASK] , but i [MASK] d [MASK] [MASK] new job [SEP] you ’ re [MASK] [MASK] [MASK] i didn [MASK] t know [MASK] [MASK] [MASK] [MASK] m glad [MASK] [MASK] [MASK] [MASK] [MASK] my house [MASK] [SEP] really [MASK] [SEP] oh , [MASK] see . [MASK] ’ [MASK] [MASK] you now [MASK] [SEP] that sounds great [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] thank you [MASK] [MASK] [MASK] ’ m [MASK] [MASK] [MASK] [MASK] [MASK] all [MASK] ! [MASK] thanks [MASK] [MASK] ------> i don ’ t know . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+no . you ’ d like to be a nice place , but i ’ d like a new job
+you ’ re welcome .
+i didn ’ t know !
+i ’ m glad i ’ ve been in my house .
+really ?
+oh , i see . i ’ ll see you now .
+that sounds great .
+i see .
+thank you .
+i ’ m sorry . that ’ s all right !
+thanks .
+i don ’ t know .

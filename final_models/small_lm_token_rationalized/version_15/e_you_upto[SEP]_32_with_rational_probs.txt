@@ -1,0 +1,31 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK]o [MASK] [MASK] ------> good , mr . z ##as , mr . smith , and my name is li ##u . i ' [SEP]
+what [MASK] [MASK] [MASK]t [MASK] ? [MASK] good [MASK] mr [MASK] z [MASK] [MASK] [MASK] [MASK] smith [MASK] [MASK] [MASK] [MASK] [MASK] li [MASK] [MASK] [MASK] [MASK] [SEP] ------> i ' ve got a lot of work from beijing . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] , mr . z [MASK] , mr [MASK] smith , [MASK] [MASK] name [MASK] [MASK] [MASK] [MASK] i [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] lot [MASK] work [MASK] [MASK] [MASK] [MASK] ------> thank you ! bye . [SEP]
+what [MASK] [MASK] upto [MASK] [MASK] good , [MASK] [MASK] zas [MASK] mr [MASK] smith , and my [MASK] [MASK] li [MASK] . i [MASK] [SEP] [MASK] [MASK] ve got [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] thank [MASK] [MASK] [MASK] [MASK] [MASK] ------> that ' s a good idea . [SEP]
+what are you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] mr . [MASK] [MASK] , mr [MASK] [MASK] , [MASK] [MASK] name [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] i [MASK] [MASK] got [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] that [MASK] [MASK] a good [MASK] . [SEP] ------> good luck ! [SEP]
+what [MASK] [MASK] up [MASK] [MASK] [MASK] [MASK] good [MASK] mr [MASK] [MASK] [MASK] [MASK] [MASK] . smith , [MASK] [MASK] name [MASK] liu [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] work [MASK] [MASK] [MASK] [MASK] thank [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] good [MASK] . [SEP] [MASK] luck ! [MASK] ------> thank you . [SEP]
+[MASK] are you [MASK]t [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] , [MASK] . [MASK] , [MASK] my [MASK] is [MASK] [MASK] . i [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] lot of [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] that [MASK] s a [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> thank you , doctor . [SEP]
+what [MASK] [MASK] upto ? [MASK] good [MASK] mr [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] and [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] ' [MASK] [MASK] [MASK] [MASK] [MASK] a lot of work from [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] bye [MASK] [SEP] [MASK] [MASK] s [MASK] [MASK] [MASK] [MASK] [SEP] good [MASK] [MASK] [MASK] [MASK] you . [MASK] [MASK] [MASK] , doctor [MASK] [MASK] ------> i ' m really excited . [SEP]
+what are [MASK] [MASK]to [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] z [MASK] [MASK] mr [MASK] smith , [MASK] [MASK] [MASK] [MASK] li [MASK] [MASK] [MASK] ' [MASK] [MASK] ' [MASK] [MASK] [MASK] [MASK] [MASK] work [MASK] [MASK] [MASK] [MASK] thank [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] good [MASK] [MASK] [MASK] good [MASK] [MASK] [MASK] thank [MASK] [MASK] [MASK] [MASK] [MASK] , doctor . [SEP] i [MASK] [MASK] really [MASK] [MASK] [MASK] ------> good . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] zas , [MASK] . [MASK] [MASK] [MASK] [MASK] name [MASK] liu [MASK] [MASK] [MASK] [MASK] [MASK] ' ve [MASK] a [MASK] [MASK] work from beijing [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] a [MASK] [MASK] [MASK] [MASK] [MASK] luck [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] you , [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] really excited . [MASK] [MASK] [MASK] [MASK] ------> i ’ m sorry . [SEP]
+what [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] [MASK] [MASK] mr [MASK] [MASK]as , [MASK] [MASK] [MASK] , and [MASK] [MASK] [MASK] [MASK]u . i [MASK] [SEP] [MASK] [MASK] [MASK] got a [MASK] of [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] good [MASK] [MASK] [MASK] [MASK] [MASK] ! [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] ' m [MASK] excited [MASK] [MASK] good . [SEP] [MASK] ’ m [MASK] [MASK] [MASK] ------> what ’ re you going to do ? [SEP]
+[MASK] are [MASK] [MASK]to [MASK] [MASK] good , mr . [MASK] [MASK] , mr . smith , and my [MASK] [MASK] liu . i [MASK] [MASK] [MASK] ' ve got a [MASK] of work [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ' [MASK] [MASK] [MASK] idea [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] you [MASK] doctor [MASK] [MASK] [MASK] ' [MASK] [MASK] excited . [MASK] [MASK] . [SEP] [MASK] [MASK] [MASK] sorry . [MASK] [MASK] [MASK] re [MASK] going to [MASK] [MASK] [MASK] ------> no problem . [SEP]
+[MASK] are you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] z [MASK] [MASK] mr [MASK] [MASK] [MASK] and my [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] lot [MASK] [MASK] from [MASK] [MASK] [MASK] [MASK] you ! [MASK] . [MASK] that [MASK] [MASK] [MASK] [MASK] idea [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] thank [MASK] [MASK] [MASK] [MASK] you [MASK] doctor . [SEP] i [MASK] m really [MASK] . [MASK] good [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] what ’ [MASK] [MASK] [MASK] to do ? [MASK] no [MASK] [MASK] [SEP] ------> what ' s up ? [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+good , mr . zas , mr . smith , and my name is liu . i '
+i ' ve got a lot of work from beijing .
+thank you ! bye .
+that ' s a good idea .
+good luck !
+thank you .
+thank you , doctor .
+i ' m really excited .
+good .
+i ’ m sorry .
+what ’ re you going to do ?
+no problem .
+what ' s up ?

@@ -1,0 +1,25 @@
+Rationalized input ------> Response
+what are [MASK] upt [MASK] [MASK] [MASK] ------> do you have to drink for the weekend ? [SEP]
+what are [MASK] upt [MASK] [MASK] [MASK] do [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] weekend [MASK] [SEP] ------> thank you , mr . smith . [SEP]
+what are [MASK] upt [MASK] [MASK] [MASK] do [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] weekend [MASK] [SEP] thank [MASK] , mr . smith [MASK] [MASK] ------> yes . [SEP]
+what are [MASK] upt [MASK] [MASK] [MASK] do [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] weekend [MASK] [SEP] thank [MASK] , mr . smith [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ' m fine . thanks for your help . [SEP]
+what are [MASK] upt [MASK] [MASK] [MASK] do [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] weekend [MASK] [SEP] thank [MASK] , mr . smith [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] m fine [MASK] [MASK] [MASK] your [MASK] [MASK] [MASK] ------> what a wonderful day ! [SEP]
+what are [MASK] upt [MASK] [MASK] [MASK] do [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] weekend [MASK] [SEP] thank [MASK] , mr . smith [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] m fine [MASK] [MASK] [MASK] your [MASK] [MASK] [MASK] what a wonderful day ! [SEP] ------> oh , i ' ve got the same number yet . do you have your name ? [SEP]
+what are [MASK] upt [MASK] [MASK] [MASK] do [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] weekend [MASK] [SEP] thank [MASK] , mr . smith [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] m fine [MASK] [MASK] [MASK] your [MASK] [MASK] [MASK] what a wonderful day ! [SEP] oh , i [MASK] [MASK] got the same number yet . do [MASK] [MASK] [MASK] name [MASK] [MASK] ------> i can ' t believe it . [SEP]
+what are [MASK] upt [MASK] [MASK] [MASK] do [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] weekend [MASK] [SEP] thank [MASK] , mr . smith [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] m fine [MASK] [MASK] [MASK] your [MASK] [MASK] [MASK] what a wonderful day ! [SEP] oh , i [MASK] [MASK] got the same number yet . do [MASK] [MASK] [MASK] name [MASK] [SEP] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i don ’ t have enough time to make a good job tomorrow morning . [SEP]
+what are [MASK] upt [MASK] [MASK] [MASK] do [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] weekend [MASK] [SEP] thank [MASK] , mr . smith [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] m fine [MASK] [MASK] [MASK] your [MASK] [MASK] [MASK] what a wonderful day ! [SEP] oh , i [MASK] [MASK] got the same number yet . do [MASK] [MASK] [MASK] name [MASK] [SEP] i [MASK] [MASK] [MASK] believe [MASK] [MASK] [MASK] i [MASK] ’ [MASK] have [MASK] time to make a good job tomorrow morning [MASK] [MASK] ------> thank you . bye . [SEP]
+what are [MASK] upt [MASK] [MASK] [MASK] do [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] weekend [MASK] [SEP] thank [MASK] , mr . smith [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] m fine [MASK] [MASK] [MASK] your [MASK] [MASK] [MASK] what a wonderful day ! [SEP] oh , i [MASK] [MASK] got the same number yet . do [MASK] [MASK] [MASK] name [MASK] [SEP] i [MASK] [MASK] [MASK] believe [MASK] [MASK] [MASK] i [MASK] ’ [MASK] have [MASK] time to make a good job tomorrow morning [MASK] [MASK] thank [MASK] [MASK] [MASK] [MASK] [MASK] ------> how can i help you ? [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+do you have to drink for the weekend ?
+thank you , mr . smith .
+yes .
+i ' m fine . thanks for your help .
+what a wonderful day !
+oh , i ' ve got the same number yet . do you have your name ?
+i can ' t believe it .
+i don ’ t have enough time to make a good job tomorrow morning .
+thank you . bye .
+how can i help you ?

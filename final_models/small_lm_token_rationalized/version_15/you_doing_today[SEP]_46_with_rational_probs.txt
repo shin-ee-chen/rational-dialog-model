@@ -1,0 +1,19 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] ? [SEP] ------> i ' m not sure what the interview ##er should have been thinking of a new work ##er . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] not [MASK] what [MASK] interviewer [MASK] have [MASK] [MASK] [MASK] [MASK] [MASK] [MASK]er . [MASK] ------> i ' m really excited to see that , but i ' m sorry to know what i ' m [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] sure [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] been [MASK] [MASK] [MASK] new [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] really [MASK] to [MASK] that [MASK] [MASK] [MASK] ' [MASK] [MASK] [MASK] know [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ’ m very sorry , i ' m just looking . [SEP]
+how [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] not [MASK] [MASK] the interview [MASK] [MASK] [MASK] been [MASK] of [MASK] [MASK] worker [MASK] [MASK] i [MASK] m really excited to see [MASK] [MASK] but i [MASK] m [MASK] [MASK] [MASK] what i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> that is a nice day . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] not sure [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] been [MASK] [MASK] a [MASK] worker [MASK] [MASK] [MASK] [MASK] m really excited to [MASK] [MASK] [MASK] but i [MASK] m [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] [MASK] i [MASK] m very [MASK] , [MASK] ' [MASK] [MASK] [MASK] [MASK] [MASK] that is [MASK] [MASK] day [MASK] [MASK] ------> no , but my boy ##f ##riend is not too hard . and he has a new one , but [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] sure what the [MASK]er should [MASK] [MASK] [MASK] of [MASK] new [MASK]er [MASK] [MASK] i [MASK] m really [MASK] [MASK] see [MASK] [MASK] but i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] ' [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] sorry [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] , [MASK] [MASK] [MASK] [MASK]riend [MASK] [MASK] [MASK] hard [MASK] [MASK] he [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> you ' re kidding ! [SEP]
+[MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] sure [MASK] [MASK] interview [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] a new [MASK]er [MASK] [MASK] i [MASK] [MASK] [MASK] excited to see that , [MASK] [MASK] [MASK] [MASK] sorry to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m very sorry [MASK] [MASK] [MASK] m just [MASK] . [MASK] [MASK] [MASK] [MASK] nice [MASK] . [MASK] no [MASK] [MASK] my [MASK]f [MASK] [MASK] not too [MASK] [MASK] and [MASK] has [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] ------> i am really excited about yourself . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i ' m not sure what the interviewer should have been thinking of a new worker .
+i ' m really excited to see that , but i ' m sorry to know what i ' m
+i ’ m very sorry , i ' m just looking .
+that is a nice day .
+no , but my boyfriend is not too hard . and he has a new one , but
+you ' re kidding !
+i am really excited about yourself .

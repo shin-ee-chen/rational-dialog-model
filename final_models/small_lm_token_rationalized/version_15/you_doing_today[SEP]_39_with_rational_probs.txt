@@ -1,0 +1,21 @@
+Rationalized input ------> Response
+[MASK] [MASK] you [MASK] today ? [SEP] ------> oh , i am not interested in this morning . you ’ ve got no problem . [SEP]
+[MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] oh [MASK] i am [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] problem [MASK] [MASK] ------> yes , i am . you are welcome . [SEP]
+[MASK] [MASK] [MASK] doing [MASK] [MASK] [MASK] oh [MASK] [MASK] [MASK] not interested in this [MASK] [MASK] [MASK] ’ [MASK] got [MASK] [MASK] [MASK] [MASK] yes , [MASK] [MASK] . [MASK] [MASK] [MASK] . [MASK] ------> you can ’ t go ! [SEP]
+how [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] not [MASK] in [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] no [MASK] [MASK] [MASK] [MASK] , i [MASK] . [MASK] are [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] t [MASK] ! [MASK] ------> thanks for a long time . do you want to work ? [SEP]
+[MASK] [MASK] [MASK] [MASK] today [MASK] [SEP] oh , [MASK] [MASK] [MASK] [MASK] in [MASK] morning . [MASK] [MASK] [MASK] [MASK] no [MASK] [MASK] [MASK] yes [MASK] i am . [MASK] [MASK] welcome . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ! [MASK] [MASK] for a [MASK] time . do you want to work [MASK] [MASK] ------> well , i ' d love to . thank you very much . [SEP]
+[MASK] [MASK] [MASK] [MASK] today [MASK] [SEP] oh , [MASK] [MASK] not [MASK] [MASK] [MASK] [MASK] [MASK] you [MASK] ve got [MASK] problem . [MASK] [MASK] , i [MASK] . [MASK] are [MASK] [MASK] [MASK] [MASK] can [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] a [MASK] time [MASK] do you [MASK] to [MASK] [MASK] [MASK] [MASK] , i [MASK] d [MASK] [MASK] [MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] ------> yes , i am . [SEP]
+[MASK] [MASK] [MASK] [MASK] today [MASK] [MASK] oh , i am [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ve [MASK] no [MASK] [MASK] [MASK] [MASK] [MASK] i am [MASK] you are [MASK] [MASK] [MASK] [MASK] [MASK] ’ t [MASK] [MASK] [MASK] thanks [MASK] a [MASK] [MASK] [MASK] [MASK] [MASK] want to work [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] to [MASK] [MASK] [MASK] very much [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ’ m a little too bad . [SEP]
+[MASK] [MASK] [MASK] [MASK] today [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] this morning [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] problem . [MASK] yes , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] you can ’ [MASK] [MASK] [MASK] [MASK] [MASK] for [MASK] long [MASK] [MASK] [MASK] you want to work [MASK] [SEP] [MASK] [MASK] i [MASK] d [MASK] to [MASK] [MASK] [MASK] [MASK] much [MASK] [SEP] yes [MASK] [MASK] am . [MASK] i [MASK] m a [MASK] [MASK] bad [MASK] [MASK] ------> what are you doing ? can you tell me how to go to school ? [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+oh , i am not interested in this morning . you ’ ve got no problem .
+yes , i am . you are welcome .
+you can ’ t go !
+thanks for a long time . do you want to work ?
+well , i ' d love to . thank you very much .
+yes , i am .
+i ’ m a little too bad .
+what are you doing ? can you tell me how to go to school ?

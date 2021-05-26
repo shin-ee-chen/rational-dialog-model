@@ -1,0 +1,23 @@
+Rationalized input ------> Response
+[MASK] [MASK] you up [MASK]o ? [SEP] ------> yeah , i don ’ t mind . i ’ m a good job . [SEP]
+what [MASK] you [MASK]t [MASK] [MASK] [MASK] yeah [MASK] [MASK] don [MASK] t mind . i [MASK] m [MASK] [MASK] job [MASK] [MASK] ------> what is the weather like reading you had ? [SEP]
+what are [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] , [MASK] don ’ [MASK] mind [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] job . [SEP] [MASK] is [MASK] weather [MASK] [MASK] you [MASK] [MASK] [SEP] ------> what is he doing ? [SEP]
+[MASK] are you upt [MASK] [MASK] [MASK] yeah , [MASK] [MASK] [MASK] t [MASK] . i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] like reading [MASK] [MASK] ? [MASK] what [MASK] he doing [MASK] [SEP] ------> i guess so . i was in the movies on monday . [SEP]
+what are [MASK] upto [MASK] [MASK] yeah , [MASK] don [MASK] t [MASK] [MASK] [MASK] ’ [MASK] a good job . [MASK] what [MASK] the [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] is he doing ? [MASK] [MASK] [MASK] so [MASK] i was [MASK] the movies on [MASK] . [MASK] ------> you ’ re welcome . [SEP]
+what [MASK] you upto [MASK] [MASK] [MASK] [MASK] i don [MASK] [MASK] [MASK] [MASK] i ’ m [MASK] [MASK] job . [MASK] [MASK] [MASK] [MASK] weather like [MASK] you had ? [SEP] what [MASK] [MASK] [MASK] ? [SEP] [MASK] [MASK] so . [MASK] was in the movies on [MASK] [MASK] [SEP] [MASK] ’ [MASK] [MASK] . [MASK] ------> how about going to my parents to the city ? [SEP]
+[MASK] [MASK] [MASK] [MASK]to [MASK] [MASK] yeah [MASK] [MASK] don ’ t mind [MASK] i ’ [MASK] a good job . [SEP] what is [MASK] weather [MASK] reading [MASK] [MASK] ? [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] guess so . [MASK] [MASK] in [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] re [MASK] [MASK] [MASK] how [MASK] [MASK] [MASK] my parents to [MASK] [MASK] [MASK] [SEP] ------> do i know where it ’ s a good idea to pay the books ##t ##ore ? [SEP]
+what [MASK] [MASK] [MASK]to ? [SEP] yeah , i don [MASK] t [MASK] [MASK] [MASK] [MASK] m a good job [MASK] [MASK] [MASK] [MASK] [MASK] weather [MASK] reading you [MASK] ? [SEP] [MASK] is [MASK] doing [MASK] [MASK] i guess [MASK] . [MASK] [MASK] in [MASK] movies on [MASK] . [SEP] you [MASK] [MASK] welcome . [SEP] how [MASK] going [MASK] [MASK] parents [MASK] [MASK] [MASK] [MASK] [SEP] do i know [MASK] [MASK] ’ [MASK] [MASK] good idea to [MASK] [MASK] [MASK]tore [MASK] [MASK] ------> i see . [SEP]
+[MASK] are you [MASK]t [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] t [MASK] [MASK] [MASK] ’ [MASK] a good [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] like [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] he doing [MASK] [MASK] [MASK] [MASK] so [MASK] i was in [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] you [MASK] [MASK] welcome [MASK] [SEP] [MASK] about [MASK] to [MASK] [MASK] [MASK] the [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] ’ [MASK] a [MASK] idea to [MASK] [MASK] books [MASK] [MASK] [MASK] [SEP] [MASK] see . [MASK] ------> what was your son for this ? [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+yeah , i don ’ t mind . i ’ m a good job .
+what is the weather like reading you had ?
+what is he doing ?
+i guess so . i was in the movies on monday .
+you ’ re welcome .
+how about going to my parents to the city ?
+do i know where it ’ s a good idea to pay the bookstore ?
+i see .
+what was your son for this ?

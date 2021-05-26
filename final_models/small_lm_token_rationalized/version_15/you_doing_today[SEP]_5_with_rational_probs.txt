@@ -1,0 +1,33 @@
+Rationalized input ------> Response
+how are you doing [MASK] ? [SEP] ------> pretty good . what happened ? [SEP]
+[MASK] are [MASK] [MASK] today [MASK] [SEP] pretty [MASK] . [MASK] happened [MASK] [MASK] ------> well , i ' m glad i ' d have a problem . [SEP]
+how [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] good . [MASK] happened ? [SEP] well [MASK] [MASK] ' m glad [MASK] ' [MASK] have a [MASK] . [MASK] ------> i see . [SEP]
+[MASK] are [MASK] doing today [MASK] [MASK] [MASK] [MASK] . what [MASK] ? [MASK] [MASK] , [MASK] ' m glad [MASK] [MASK] d have [MASK] [MASK] . [SEP] i [MASK] . [MASK] ------> what are you looking for ? [SEP]
+[MASK] [MASK] [MASK] doing today [MASK] [MASK] [MASK] [MASK] [MASK] what [MASK] ? [SEP] [MASK] [MASK] i ' m glad [MASK] [MASK] [MASK] [MASK] a [MASK] . [MASK] [MASK] see [MASK] [MASK] [MASK] are you looking for ? [SEP] ------> i am sorry to hear that . [SEP]
+how are [MASK] doing today ? [MASK] [MASK] good . what happened ? [SEP] [MASK] , [MASK] ' m glad [MASK] [MASK] d [MASK] [MASK] problem . [MASK] i see [MASK] [MASK] what [MASK] [MASK] looking [MASK] [MASK] [SEP] [MASK] am [MASK] to hear that [MASK] [SEP] ------> i ' m sorry to hear that ! [SEP]
+how are [MASK] doing [MASK] ? [SEP] [MASK] good . [MASK] happened ? [SEP] well [MASK] [MASK] [MASK] m glad i ' d [MASK] [MASK] problem [MASK] [SEP] i [MASK] [MASK] [MASK] what are [MASK] [MASK] [MASK] ? [MASK] [MASK] [MASK] [MASK] to [MASK] [MASK] [MASK] [SEP] i [MASK] [MASK] [MASK] to hear that ! [MASK] ------> good luck , but i will . [SEP]
+how [MASK] [MASK] doing today [MASK] [MASK] [MASK] good . what happened ? [MASK] well [MASK] [MASK] ' [MASK] [MASK] i ' [MASK] [MASK] a [MASK] . [SEP] i see . [MASK] what [MASK] [MASK] looking for [MASK] [MASK] [MASK] [MASK] sorry [MASK] hear that . [SEP] i [MASK] [MASK] [MASK] [MASK] hear that [MASK] [SEP] [MASK] luck [MASK] but i will . [SEP] ------> ok , thank you . [SEP]
+how [MASK] you doing today ? [SEP] [MASK] good . [MASK] happened ? [MASK] well [MASK] [MASK] ' m glad i [MASK] [MASK] [MASK] a [MASK] [MASK] [MASK] i see [MASK] [MASK] what are [MASK] looking [MASK] ? [SEP] i [MASK] sorry [MASK] [MASK] that . [MASK] [MASK] [MASK] m sorry [MASK] [MASK] that [MASK] [SEP] [MASK] [MASK] , but [MASK] [MASK] . [SEP] ok [MASK] [MASK] [MASK] [MASK] [MASK] ------> thanks , i ' m so excited . [SEP]
+how are [MASK] doing [MASK] [MASK] [SEP] pretty [MASK] . what [MASK] [MASK] [SEP] well [MASK] [MASK] ' m glad [MASK] [MASK] d [MASK] a [MASK] . [SEP] i [MASK] [MASK] [SEP] what are you looking [MASK] ? [MASK] [MASK] [MASK] [MASK] to hear [MASK] [MASK] [MASK] [MASK] ' m sorry [MASK] hear [MASK] ! [MASK] [MASK] luck , but i [MASK] . [SEP] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] i ' [MASK] so excited [MASK] [SEP] ------> bye . [SEP]
+how [MASK] [MASK] doing today ? [SEP] pretty [MASK] . what [MASK] ? [SEP] [MASK] , i [MASK] m glad [MASK] [MASK] [MASK] have a [MASK] . [SEP] i [MASK] [MASK] [MASK] what are [MASK] [MASK] [MASK] [MASK] [SEP] i am sorry to [MASK] that [MASK] [SEP] i ' m sorry to hear that ! [MASK] good luck , but i [MASK] [MASK] [MASK] [MASK] , thank you . [MASK] [MASK] , i [MASK] [MASK] [MASK] excited . [SEP] bye [MASK] [SEP] ------> thanks . [SEP]
+[MASK] [MASK] [MASK] doing [MASK] [MASK] [MASK] pretty good . what [MASK] ? [MASK] [MASK] [MASK] i [MASK] m [MASK] i [MASK] d [MASK] a [MASK] . [SEP] [MASK] [MASK] . [MASK] what [MASK] you [MASK] [MASK] ? [MASK] i [MASK] sorry to hear [MASK] . [MASK] i [MASK] [MASK] [MASK] [MASK] hear [MASK] ! [SEP] good luck , but [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] thank [MASK] [MASK] [SEP] thanks , i ' [MASK] so excited . [SEP] bye [MASK] [MASK] [MASK] . [MASK] ------> thanks for it . thanks ! [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] pretty [MASK] [MASK] what happened ? [MASK] [MASK] [MASK] i ' m glad i [MASK] d [MASK] a [MASK] . [MASK] i see [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [SEP] [MASK] am sorry to [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] sorry [MASK] [MASK] [MASK] ! [MASK] [MASK] luck [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ok [MASK] thank you . [SEP] [MASK] [MASK] [MASK] ' m [MASK] excited [MASK] [SEP] bye [MASK] [SEP] [MASK] [MASK] [SEP] thanks for it . thanks ! [SEP] ------> i ' d like that . [SEP]
+[MASK] are you [MASK] today [MASK] [SEP] pretty [MASK] [MASK] what happened ? [SEP] [MASK] , [MASK] [MASK] [MASK] glad [MASK] [MASK] [MASK] have a [MASK] [MASK] [MASK] i [MASK] . [SEP] what are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] sorry [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] m [MASK] [MASK] [MASK] [MASK] ! [SEP] [MASK] luck , [MASK] i will . [MASK] ok , thank [MASK] [MASK] [SEP] [MASK] , [MASK] ' [MASK] so excited . [SEP] bye . [SEP] [MASK] . [SEP] thanks for it . [MASK] ! [MASK] i [MASK] d [MASK] that . [MASK] ------> thanks . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+pretty good . what happened ?
+well , i ' m glad i ' d have a problem .
+i see .
+what are you looking for ?
+i am sorry to hear that .
+i ' m sorry to hear that !
+good luck , but i will .
+ok , thank you .
+thanks , i ' m so excited .
+bye .
+thanks .
+thanks for it . thanks !
+i ' d like that .
+thanks .

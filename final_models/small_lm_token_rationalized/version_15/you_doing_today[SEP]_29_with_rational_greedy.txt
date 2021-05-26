@@ -1,0 +1,19 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> yes , this is the first i had just check in . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> yes , i have . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] ------> yes . i need to return a job or a computer manager . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] to [MASK] [MASK] [MASK] or [MASK] [MASK] [MASK] [MASK] [MASK] ------> yes , i would . the doctor is not in the library . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] to [MASK] [MASK] [MASK] or [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> thank you very much . i ’ m sure i will . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] to [MASK] [MASK] [MASK] or [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] much [MASK] i [MASK] m [MASK] i [MASK] [MASK] [MASK] ------> yes , we have many things in beijing . it will take a lot of money . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] to [MASK] [MASK] [MASK] or [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] much [MASK] i [MASK] m [MASK] i [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] things in [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ' m afraid i ' m going to go to the station to be at the station and a [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+yes , this is the first i had just check in .
+yes , i have .
+yes . i need to return a job or a computer manager .
+yes , i would . the doctor is not in the library .
+thank you very much . i ’ m sure i will .
+yes , we have many things in beijing . it will take a lot of money .
+i ' m afraid i ' m going to go to the station to be at the station and a

@@ -1,0 +1,21 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> well , i ’ d rather make a p ##cc - - - 3 - 7 ##8 . you want [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] rather make a pcc - - - 3 - 7 [MASK] [MASK] [MASK] [MASK] [MASK] ------> i can do that . i don ' t have to be in the back . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] rather make a pcc - - - 3 - 7 [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] t [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> yes , it ' s a problem , right ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] rather make a pcc - - - 3 - 7 [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] t [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] , right [MASK] [MASK] ------> yes , i can . i can ' t get any questions in the evening . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] rather make a pcc - - - 3 - 7 [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] t [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] , right [MASK] [MASK] [MASK] , i [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] questions [MASK] [MASK] [MASK] [MASK] [MASK] ------> thanks , but we should have a good day . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] rather make a pcc - - - 3 - 7 [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] t [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] , right [MASK] [MASK] [MASK] , i [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] questions [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , but [MASK] [MASK] have [MASK] [MASK] [MASK] [MASK] [MASK] ------> ok . thanks very much . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] rather make a pcc - - - 3 - 7 [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] t [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] , right [MASK] [MASK] [MASK] , i [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] questions [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , but [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> bye . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] rather make a pcc - - - 3 - 7 [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] t [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] , right [MASK] [MASK] [MASK] , i [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] questions [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , but [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> thanks a lot . i ’ m a student . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+well , i ’ d rather make a pcc - - - 3 - 78 . you want
+i can do that . i don ' t have to be in the back .
+yes , it ' s a problem , right ?
+yes , i can . i can ' t get any questions in the evening .
+thanks , but we should have a good day .
+ok . thanks very much .
+bye .
+thanks a lot . i ’ m a student .

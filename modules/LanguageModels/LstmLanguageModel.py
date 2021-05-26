@@ -21,6 +21,7 @@ class LSTMLanguageModel(BaseLanguageModel):
         self.lstm = nn.LSTM(input_size=embedding_dim, hidden_size=hidden_state_size, num_layers=num_layers, )
         self.relu = F.relu
         self.classification_layer = nn.Linear(hidden_state_size, num_embeddings)
+        self.embedding_size = embedding_dim
 
     def forward_embedding(self, embedding, teacher_forcing=True, n_to_predict=0):
         if teacher_forcing:

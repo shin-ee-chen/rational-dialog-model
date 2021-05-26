@@ -1,0 +1,27 @@
+Rationalized input ------> Response
+what [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ' m going to have to eat , too . [SEP]
+[MASK] [MASK] [MASK] up [MASK]o [MASK] [SEP] i [MASK] [MASK] going to [MASK] [MASK] eat [MASK] [MASK] . [SEP] ------> thanks , i ' m going to do that . [SEP]
+[MASK] [MASK] you [MASK] [MASK]o [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] eat , too [MASK] [MASK] [MASK] , [MASK] [MASK] m going [MASK] do [MASK] [MASK] [SEP] ------> i can go on the same . i don ’ t have any trouble . [SEP]
+what [MASK] you [MASK] [MASK]o [MASK] [MASK] [MASK] [MASK] m [MASK] to have [MASK] [MASK] , [MASK] [MASK] [MASK] thanks , [MASK] ' [MASK] going [MASK] do that . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] same [MASK] i [MASK] ’ [MASK] [MASK] any [MASK] [MASK] [SEP] ------> no , i don ’ t have any idea . [SEP]
+[MASK] [MASK] [MASK] up [MASK]o ? [SEP] i [MASK] [MASK] going [MASK] have to eat [MASK] too [MASK] [SEP] [MASK] , i [MASK] m going to [MASK] that [MASK] [MASK] i can [MASK] [MASK] the [MASK] [MASK] i [MASK] ’ [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] , [MASK] [MASK] ’ t [MASK] any idea . [MASK] ------> why not ? [SEP]
+what are you up [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] going to have to [MASK] , [MASK] [MASK] [MASK] [MASK] , i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] can [MASK] [MASK] [MASK] [MASK] . i don [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] don [MASK] t have any [MASK] [MASK] [SEP] why [MASK] ? [MASK] ------> i ' m afraid not ! [SEP]
+what [MASK] [MASK] upto [MASK] [MASK] [MASK] [MASK] [MASK] going [MASK] have to eat [MASK] too [MASK] [MASK] thanks [MASK] i [MASK] [MASK] going [MASK] do that . [MASK] [MASK] can [MASK] [MASK] the same . [MASK] [MASK] [MASK] t [MASK] any [MASK] [MASK] [SEP] no , [MASK] don [MASK] t have any [MASK] [MASK] [SEP] [MASK] not ? [SEP] i ' m [MASK] not ! [SEP] ------> thanks a lot . [SEP]
+[MASK] [MASK] you upto [MASK] [MASK] i [MASK] [MASK] [MASK] to [MASK] to [MASK] [MASK] too [MASK] [MASK] thanks , i [MASK] [MASK] going [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] on the [MASK] [MASK] [MASK] don [MASK] t have [MASK] trouble . [MASK] [MASK] , i don ’ t have any [MASK] . [MASK] why not ? [MASK] i [MASK] m afraid [MASK] [MASK] [MASK] thanks [MASK] lot [MASK] [SEP] ------> you are welcome . [SEP]
+[MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] going to have to eat , too [MASK] [MASK] [MASK] , i ' [MASK] [MASK] to [MASK] [MASK] [MASK] [MASK] i can [MASK] [MASK] [MASK] same [MASK] [MASK] [MASK] ’ t [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] , [MASK] [MASK] [MASK] t [MASK] any [MASK] [MASK] [MASK] [MASK] not [MASK] [MASK] i ' [MASK] [MASK] not [MASK] [MASK] [MASK] [MASK] [MASK] . [SEP] [MASK] are welcome . [MASK] ------> yes . but it ’ s just that . [SEP]
+[MASK] [MASK] [MASK] [MASK]t [MASK] ? [SEP] [MASK] [MASK] [MASK] going [MASK] [MASK] [MASK] [MASK] , [MASK] . [SEP] thanks , i [MASK] m going [MASK] do [MASK] . [SEP] i [MASK] go on [MASK] [MASK] . i don [MASK] t [MASK] any [MASK] [MASK] [MASK] [MASK] , [MASK] don [MASK] t have any [MASK] . [MASK] [MASK] not ? [MASK] [MASK] ' [MASK] afraid not ! [SEP] [MASK] a lot [MASK] [MASK] you [MASK] welcome . [SEP] [MASK] [MASK] [MASK] it ’ [MASK] just [MASK] . [MASK] ------> oh , i ’ m going to work . [SEP]
+[MASK] [MASK] you [MASK]t [MASK] ? [SEP] [MASK] ' m [MASK] [MASK] have [MASK] [MASK] , too [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] m [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] go [MASK] the same [MASK] [MASK] [MASK] ’ t have [MASK] trouble . [MASK] [MASK] , [MASK] [MASK] ’ [MASK] [MASK] [MASK] idea [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] i ' [MASK] afraid [MASK] ! [SEP] thanks a lot [MASK] [MASK] [MASK] [MASK] welcome [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ’ [MASK] just that [MASK] [MASK] [MASK] [MASK] i [MASK] m going to work . [SEP] ------> that ’ s right . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i ' m going to have to eat , too .
+thanks , i ' m going to do that .
+i can go on the same . i don ’ t have any trouble .
+no , i don ’ t have any idea .
+why not ?
+i ' m afraid not !
+thanks a lot .
+you are welcome .
+yes . but it ’ s just that .
+oh , i ’ m going to work .
+that ’ s right .

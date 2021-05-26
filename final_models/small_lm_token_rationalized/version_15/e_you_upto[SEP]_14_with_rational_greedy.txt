@@ -1,0 +1,21 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ’ m going to need it with you . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> yes , i do . i ' d like to have a room at home in the morning with my [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] at home in [MASK] [MASK] [MASK] my [MASK] ------> what about going to visit me in room or six years ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] at home in [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] me in [MASK] or six [MASK] [MASK] [MASK] ------> how long will that be ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] at home in [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] me in [MASK] or six [MASK] [MASK] [MASK] [MASK] [MASK] will that [MASK] [MASK] [MASK] ------> oh , i see . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] at home in [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] me in [MASK] or six [MASK] [MASK] [MASK] [MASK] [MASK] will that [MASK] [MASK] [MASK] oh , i [MASK] [MASK] [MASK] ------> i hope that you are a problem with you , so i don ' ve been in my car . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] at home in [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] me in [MASK] or six [MASK] [MASK] [MASK] [MASK] [MASK] will that [MASK] [MASK] [MASK] oh , i [MASK] [MASK] [MASK] i hope that [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] so i [MASK] [MASK] [MASK] been in my car [MASK] [MASK] ------> what are you going to do ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] at home in [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] me in [MASK] or six [MASK] [MASK] [MASK] [MASK] [MASK] will that [MASK] [MASK] [MASK] oh , i [MASK] [MASK] [MASK] i hope that [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] so i [MASK] [MASK] [MASK] been in my car [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ' m going on a nice day . it ' s my pleasure . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i ’ m going to need it with you .
+yes , i do . i ' d like to have a room at home in the morning with my
+what about going to visit me in room or six years ?
+how long will that be ?
+oh , i see .
+i hope that you are a problem with you , so i don ' ve been in my car .
+what are you going to do ?
+i ' m going on a nice day . it ' s my pleasure .

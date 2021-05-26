@@ -1,0 +1,21 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> what kind of job are you looking for ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> yes , i ' m looking for the phone next week . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> no wonder what i ’ m doing about it . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i am sure . how can i help you ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] ------> oh , you are so nice . thank you very nice . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] oh , [MASK] [MASK] [MASK] nice [MASK] [MASK] [MASK] [MASK] nice [MASK] [MASK] ------> i ' ll take it with you . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] oh , [MASK] [MASK] [MASK] nice [MASK] [MASK] [MASK] [MASK] nice [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> thanks for your help . i ' ll have to check it back ! [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] oh , [MASK] [MASK] [MASK] nice [MASK] [MASK] [MASK] [MASK] nice [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ’ m afraid that we should be able to make a decision to get on the bill . we [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+what kind of job are you looking for ?
+yes , i ' m looking for the phone next week .
+no wonder what i ’ m doing about it .
+i am sure . how can i help you ?
+oh , you are so nice . thank you very nice .
+i ' ll take it with you .
+thanks for your help . i ' ll have to check it back !
+i ’ m afraid that we should be able to make a decision to get on the bill . we

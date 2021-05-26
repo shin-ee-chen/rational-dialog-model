@@ -1,0 +1,17 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i am afraid not ... but i have no news . you can go to the store , i ’ [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i am [MASK] not ... but i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] store , i [MASK] [MASK] ------> sure . i ’ m going to get some rest , but we ’ ll find an apartment in a [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i am [MASK] not ... but i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] store , i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] [MASK] get some rest , but we [MASK] [MASK] [MASK] [MASK] [MASK] in a [MASK] ------> the internet is about a week ago . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i am [MASK] not ... but i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] store , i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] [MASK] get some rest , but we [MASK] [MASK] [MASK] [MASK] [MASK] in a [MASK] [MASK] internet [MASK] about a week [MASK] [MASK] [MASK] ------> how about a few more for you , sir ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i am [MASK] not ... but i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] store , i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] [MASK] get some rest , but we [MASK] [MASK] [MASK] [MASK] [MASK] in a [MASK] [MASK] internet [MASK] about a week [MASK] [MASK] [MASK] [MASK] about a few more for [MASK] , [MASK] [MASK] [MASK] ------> well , i think you ' re right . that ' s a problem , sir . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i am [MASK] not ... but i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] store , i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] [MASK] get some rest , but we [MASK] [MASK] [MASK] [MASK] [MASK] in a [MASK] [MASK] internet [MASK] about a week [MASK] [MASK] [MASK] [MASK] about a few more for [MASK] , [MASK] [MASK] [MASK] well , i [MASK] [MASK] [MASK] [MASK] right [MASK] that [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] ------> yes . i ’ m going to have a problem then with that . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i am afraid not ... but i have no news . you can go to the store , i ’
+sure . i ’ m going to get some rest , but we ’ ll find an apartment in a
+the internet is about a week ago .
+how about a few more for you , sir ?
+well , i think you ' re right . that ' s a problem , sir .
+yes . i ’ m going to have a problem then with that .

@@ -1,0 +1,21 @@
+Rationalized input ------> Response
+how are you [MASK] today ? [MASK] ------> i ’ m just thinking about that . how about yourself ? [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ’ m [MASK] thinking [MASK] [MASK] [MASK] how [MASK] yourself [MASK] [SEP] ------> you ' re welcome and we need to do something . [SEP]
+[MASK] are [MASK] [MASK] today [MASK] [SEP] [MASK] ’ [MASK] just thinking [MASK] that . [MASK] about yourself [MASK] [SEP] you ' re welcome and we [MASK] to [MASK] [MASK] [MASK] [MASK] ------> that ’ s great ! [SEP]
+[MASK] [MASK] [MASK] [MASK] today ? [MASK] i [MASK] [MASK] [MASK] thinking [MASK] that . how about [MASK] [MASK] [SEP] you [MASK] [MASK] [MASK] and we [MASK] to [MASK] [MASK] [MASK] [SEP] that ’ [MASK] [MASK] ! [MASK] ------> you ' d better be back and i ’ m going to the movies and then come in . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] ? [SEP] i ’ [MASK] [MASK] [MASK] about that [MASK] how about yourself ? [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] we need [MASK] [MASK] something . [SEP] that [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] d [MASK] [MASK] back [MASK] i ’ [MASK] [MASK] to the movies and [MASK] [MASK] in . [MASK] ------> thanks for your help ? [SEP]
+[MASK] are [MASK] [MASK] [MASK] ? [SEP] i ’ [MASK] just thinking [MASK] [MASK] [MASK] how about [MASK] ? [SEP] [MASK] [MASK] re [MASK] [MASK] [MASK] need [MASK] [MASK] something [MASK] [SEP] [MASK] [MASK] s [MASK] [MASK] [SEP] you ' [MASK] better [MASK] back and i [MASK] m going to the movies [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] your help [MASK] [MASK] ------> i ' m sure we are going to be late tomorrow . [SEP]
+[MASK] are [MASK] [MASK] today [MASK] [SEP] [MASK] [MASK] [MASK] just [MASK] about [MASK] . how [MASK] yourself [MASK] [MASK] [MASK] ' [MASK] [MASK] and [MASK] need to [MASK] something [MASK] [SEP] that ’ [MASK] great [MASK] [MASK] you [MASK] d [MASK] [MASK] back and [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] movies and then [MASK] [MASK] [MASK] [SEP] [MASK] for [MASK] [MASK] ? [SEP] [MASK] ' [MASK] [MASK] we [MASK] [MASK] [MASK] [MASK] late tomorrow [MASK] [MASK] ------> why ? that ’ s not bad . i ' ll have to get some rest . [SEP]
+how [MASK] you doing [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] just thinking about that . [MASK] about yourself [MASK] [MASK] you [MASK] re [MASK] and [MASK] [MASK] [MASK] [MASK] something [MASK] [MASK] that [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] d [MASK] [MASK] back and [MASK] ’ m [MASK] [MASK] the movies [MASK] [MASK] come in [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [SEP] [MASK] [MASK] [MASK] sure we are [MASK] [MASK] be [MASK] tomorrow . [SEP] why ? that [MASK] [MASK] not bad [MASK] [MASK] [MASK] ll have [MASK] [MASK] some rest . [SEP] ------> thank you very much . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i ’ m just thinking about that . how about yourself ?
+you ' re welcome and we need to do something .
+that ’ s great !
+you ' d better be back and i ’ m going to the movies and then come in .
+thanks for your help ?
+i ' m sure we are going to be late tomorrow .
+why ? that ’ s not bad . i ' ll have to get some rest .
+thank you very much .

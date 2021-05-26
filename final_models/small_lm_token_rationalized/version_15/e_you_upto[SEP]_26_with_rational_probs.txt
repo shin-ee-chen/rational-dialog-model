@@ -1,0 +1,31 @@
+Rationalized input ------> Response
+[MASK] are [MASK] up [MASK]o [MASK] [MASK] ------> no , thanks . [SEP]
+[MASK] [MASK] you [MASK]to ? [MASK] [MASK] , thanks [MASK] [MASK] ------> that ' s all ? [SEP]
+what are [MASK] [MASK]to [MASK] [MASK] no , [MASK] [MASK] [MASK] that [MASK] s [MASK] [MASK] [SEP] ------> that sounds great . [SEP]
+what [MASK] [MASK] [MASK]to [MASK] [SEP] no , [MASK] [MASK] [SEP] [MASK] ' [MASK] [MASK] [MASK] [SEP] that sounds great [MASK] [SEP] ------> that ' s great . [SEP]
+what are [MASK] upt [MASK] ? [SEP] [MASK] , [MASK] [MASK] [SEP] that [MASK] s [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] that [MASK] [MASK] great . [MASK] ------> i ’ m not sure . [SEP]
+what [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] no , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] [MASK] sounds great [MASK] [MASK] that [MASK] s great [MASK] [MASK] [MASK] [MASK] m not sure [MASK] [MASK] ------> it ’ s the first time we get your own . [SEP]
+what [MASK] [MASK] upt [MASK] [MASK] [SEP] [MASK] , thanks [MASK] [MASK] [MASK] [MASK] s [MASK] [MASK] [SEP] that sounds great . [MASK] [MASK] ' s [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] [MASK] . [MASK] it ’ [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] ------> why not ? [SEP]
+what [MASK] [MASK] upt [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] ? [SEP] [MASK] sounds great [MASK] [MASK] [MASK] ' s [MASK] [MASK] [SEP] [MASK] [MASK] m [MASK] sure [MASK] [SEP] it [MASK] [MASK] the [MASK] time we get your [MASK] . [SEP] [MASK] [MASK] [MASK] [MASK] ------> thanks . [SEP]
+[MASK] [MASK] [MASK] upt [MASK] [MASK] [SEP] no [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] s all [MASK] [SEP] that sounds great [MASK] [MASK] that [MASK] [MASK] great [MASK] [MASK] [MASK] [MASK] [MASK] not sure . [SEP] [MASK] [MASK] s the [MASK] [MASK] we [MASK] [MASK] own [MASK] [MASK] why not ? [MASK] [MASK] [MASK] [MASK] ------> you are not right now . i ’ ll take you . [SEP]
+what [MASK] [MASK] up [MASK]o [MASK] [MASK] no , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] all [MASK] [SEP] that [MASK] [MASK] [MASK] [MASK] that ' [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] it [MASK] [MASK] the [MASK] [MASK] [MASK] get your [MASK] [MASK] [SEP] [MASK] [MASK] ? [MASK] [MASK] [MASK] [MASK] [MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ll [MASK] [MASK] [MASK] [SEP] ------> thank you very much . [SEP]
+[MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [SEP] that [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ' s [MASK] [MASK] [MASK] [MASK] ’ [MASK] not sure [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] time we get your [MASK] [MASK] [MASK] [MASK] not ? [SEP] [MASK] . [MASK] you [MASK] not right now . i [MASK] [MASK] take you [MASK] [MASK] thank [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ’ m sure you might take it . [SEP]
+[MASK] [MASK] [MASK] up [MASK]o ? [MASK] [MASK] [MASK] thanks [MASK] [MASK] [MASK] [MASK] s all ? [SEP] [MASK] sounds great [MASK] [SEP] [MASK] ' [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] sure . [MASK] it [MASK] s [MASK] [MASK] time [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] right [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] you very much . [MASK] [MASK] [MASK] m [MASK] [MASK] [MASK] [MASK] it [MASK] [MASK] ------> yes , of course . [SEP]
+[MASK] are [MASK] up [MASK] [MASK] [MASK] [MASK] no [MASK] thanks . [MASK] that ' [MASK] [MASK] [MASK] [MASK] that sounds [MASK] . [MASK] that [MASK] [MASK] great [MASK] [SEP] i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] first [MASK] we get [MASK] [MASK] . [SEP] [MASK] not [MASK] [MASK] [MASK] . [SEP] you [MASK] [MASK] right now [MASK] i ’ [MASK] take you [MASK] [MASK] thank [MASK] [MASK] much . [MASK] [MASK] [MASK] m sure [MASK] [MASK] take [MASK] . [MASK] [MASK] , [MASK] course [MASK] [SEP] ------> oh , no . i ’ m sorry . i don ' t need that . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+no , thanks .
+that ' s all ?
+that sounds great .
+that ' s great .
+i ’ m not sure .
+it ’ s the first time we get your own .
+why not ?
+thanks .
+you are not right now . i ’ ll take you .
+thank you very much .
+i ’ m sure you might take it .
+yes , of course .
+oh , no . i ’ m sorry . i don ' t need that .

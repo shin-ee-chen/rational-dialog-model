@@ -1,0 +1,31 @@
+Rationalized input ------> Response
+[MASK] [MASK] you [MASK]to [MASK] [MASK] ------> no problem , thank you very much . [SEP]
+[MASK] [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] [MASK] [MASK] , thank you [MASK] much . [SEP] ------> that would not have to leave my room for you . [SEP]
+[MASK] [MASK] you upto ? [SEP] [MASK] problem , [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] not have to [MASK] my room [MASK] [MASK] . [SEP] ------> thank you at your time , sir . [SEP]
+[MASK] are you up [MASK] [MASK] ? [SEP] [MASK] problem , thank [MASK] [MASK] much [MASK] [MASK] that would [MASK] [MASK] [MASK] leave my room for [MASK] [MASK] [SEP] [MASK] [MASK] at [MASK] [MASK] , [MASK] . [SEP] ------> thank you very much . [SEP]
+[MASK] are you [MASK]to ? [MASK] no [MASK] , [MASK] you [MASK] [MASK] [MASK] [SEP] that would not have to [MASK] my [MASK] [MASK] [MASK] [MASK] [MASK] thank [MASK] at [MASK] time [MASK] [MASK] [MASK] [SEP] [MASK] you very much . [MASK] ------> ok . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK]o [MASK] [SEP] [MASK] problem [MASK] thank you very much . [MASK] that would [MASK] have to [MASK] my [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] you [MASK] your [MASK] , sir . [SEP] thank [MASK] very much . [MASK] ok [MASK] [SEP] ------> thank you . [SEP]
+what are you [MASK]t [MASK] [MASK] [SEP] no [MASK] , thank you [MASK] much . [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] leave [MASK] room [MASK] [MASK] . [SEP] thank you at [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] you very much . [MASK] [MASK] . [MASK] [MASK] [MASK] . [MASK] ------> thanks . [SEP]
+[MASK] are you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] problem [MASK] [MASK] you [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] have to [MASK] [MASK] room for you [MASK] [MASK] [MASK] [MASK] at [MASK] time [MASK] [MASK] [MASK] [MASK] thank you very much [MASK] [MASK] [MASK] . [MASK] thank [MASK] . [SEP] [MASK] . [SEP] ------> i see . what ’ s your name ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [SEP] [MASK] problem , [MASK] you [MASK] [MASK] [MASK] [SEP] that [MASK] not [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] thank you [MASK] your [MASK] [MASK] [MASK] . [SEP] thank [MASK] very [MASK] . [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s your name ? [SEP] ------> yes . [SEP]
+[MASK] are you [MASK] [MASK] [MASK] [MASK] [MASK] no [MASK] [MASK] thank you [MASK] [MASK] . [SEP] [MASK] [MASK] not have to [MASK] my [MASK] [MASK] you [MASK] [SEP] [MASK] you at your time , sir [MASK] [SEP] [MASK] you very much [MASK] [MASK] [MASK] . [MASK] thank [MASK] [MASK] [MASK] thanks . [MASK] i [MASK] [MASK] [MASK] ’ [MASK] [MASK] name [MASK] [MASK] yes [MASK] [MASK] ------> how nice ! you should see your call next week , please . [SEP]
+what [MASK] [MASK] up [MASK]o [MASK] [SEP] no [MASK] , thank [MASK] very much [MASK] [SEP] that [MASK] [MASK] have [MASK] leave [MASK] room [MASK] [MASK] . [SEP] thank [MASK] at [MASK] [MASK] , [MASK] . [MASK] thank you very much [MASK] [MASK] [MASK] . [SEP] [MASK] you . [SEP] [MASK] . [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] name [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] you should see [MASK] [MASK] [MASK] [MASK] [MASK] please . [SEP] ------> ok . [SEP]
+[MASK] are [MASK] up [MASK] [MASK] [MASK] [MASK] no [MASK] , thank you very much [MASK] [MASK] that [MASK] not have [MASK] leave [MASK] [MASK] [MASK] [MASK] . [SEP] [MASK] [MASK] at your [MASK] , [MASK] [MASK] [SEP] thank you [MASK] [MASK] . [SEP] [MASK] [MASK] [MASK] [MASK] you . [MASK] thanks . [MASK] i see . [MASK] [MASK] s [MASK] name ? [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] ! you [MASK] [MASK] your [MASK] next [MASK] , [MASK] . [SEP] [MASK] . [SEP] ------> bye ! [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK]o ? [MASK] no [MASK] , thank you very [MASK] [MASK] [MASK] that would [MASK] have [MASK] [MASK] [MASK] room [MASK] [MASK] [MASK] [MASK] [MASK] you [MASK] [MASK] time , [MASK] . [SEP] [MASK] you very much [MASK] [SEP] ok [MASK] [MASK] thank you . [SEP] [MASK] [MASK] [SEP] i see [MASK] [MASK] ’ s [MASK] name ? [MASK] [MASK] [MASK] [MASK] how nice ! you [MASK] see your call next week [MASK] [MASK] . [MASK] ok . [SEP] [MASK] [MASK] [MASK] ------> thank you . you ’ re all right . i ’ ll have your key for the bill ##s at [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+no problem , thank you very much .
+that would not have to leave my room for you .
+thank you at your time , sir .
+thank you very much .
+ok .
+thank you .
+thanks .
+i see . what ’ s your name ?
+yes .
+how nice ! you should see your call next week , please .
+ok .
+bye !
+thank you . you ’ re all right . i ’ ll have your key for the bills at

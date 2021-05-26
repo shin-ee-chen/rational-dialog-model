@@ -1,0 +1,23 @@
+Rationalized input ------> Response
+how [MASK] [MASK] [MASK] today [MASK] [SEP] ------> oh , thank you . i have to be able to do something for dinner . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] oh , thank you . i [MASK] to be [MASK] [MASK] do [MASK] [MASK] dinner [MASK] [SEP] ------> thank you ! what kind of wine do you have in your job ? [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] oh , thank you . i [MASK] to be [MASK] [MASK] do [MASK] [MASK] dinner [MASK] [SEP] thank [MASK] ! what kind of wine do you have in [MASK] job [MASK] [SEP] ------> you should make it . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] oh , thank you . i [MASK] to be [MASK] [MASK] do [MASK] [MASK] dinner [MASK] [SEP] thank [MASK] ! what kind of wine do you [MASK] in [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] make [MASK] [MASK] [MASK] ------> sure , let me see . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] oh , thank you . i [MASK] to be [MASK] [MASK] do [MASK] [MASK] dinner [MASK] [SEP] thank [MASK] ! what kind of wine do you [MASK] in [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] make [MASK] [MASK] [MASK] [MASK] , let me see [MASK] [SEP] ------> how many night ##s would you like to order ? [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] oh , thank you . i [MASK] to be [MASK] [MASK] do [MASK] [MASK] dinner [MASK] [SEP] thank [MASK] ! what kind of wine do you [MASK] in [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] make [MASK] [MASK] [MASK] [MASK] , let me see [MASK] [SEP] how many nights would [MASK] like [MASK] [MASK] [MASK] [SEP] ------> i need to buy some medic ##ine . you can take a new card to check out tonight . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] oh , thank you . i [MASK] to be [MASK] [MASK] do [MASK] [MASK] dinner [MASK] [SEP] thank [MASK] ! what kind of wine do you [MASK] in [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] make [MASK] [MASK] [MASK] [MASK] , let me see [MASK] [SEP] how many nights would [MASK] like [MASK] [MASK] [MASK] [SEP] i need to buy some medicine [MASK] [MASK] [MASK] [MASK] a new card to check out tonight [MASK] [SEP] ------> you can get a deposit deposit for that . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] oh , thank you . i [MASK] to be [MASK] [MASK] do [MASK] [MASK] dinner [MASK] [SEP] thank [MASK] ! what kind of wine do you [MASK] in [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] make [MASK] [MASK] [MASK] [MASK] , let me see [MASK] [SEP] how many nights would [MASK] like [MASK] [MASK] [MASK] [SEP] i need to buy some medicine [MASK] [MASK] [MASK] [MASK] a new card to check out tonight [MASK] [MASK] [MASK] [MASK] get a deposit deposit for that [MASK] [SEP] ------> what is the problem ? [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] oh , thank you . i [MASK] to be [MASK] [MASK] do [MASK] [MASK] dinner [MASK] [SEP] thank [MASK] ! what kind of wine do you [MASK] in [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] make [MASK] [MASK] [MASK] [MASK] , let me see [MASK] [SEP] how many nights would [MASK] like [MASK] [MASK] [MASK] [SEP] i need to buy some medicine [MASK] [MASK] [MASK] [MASK] a new card to check out tonight [MASK] [MASK] [MASK] [MASK] get a deposit deposit for that [MASK] [SEP] what is the [MASK] [MASK] [SEP] ------> how long ? [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+oh , thank you . i have to be able to do something for dinner .
+thank you ! what kind of wine do you have in your job ?
+you should make it .
+sure , let me see .
+how many nights would you like to order ?
+i need to buy some medicine . you can take a new card to check out tonight .
+you can get a deposit deposit for that .
+what is the problem ?
+how long ?

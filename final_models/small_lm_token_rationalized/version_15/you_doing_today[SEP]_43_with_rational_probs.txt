@@ -1,0 +1,19 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> yes . i ' m afraid we have been working to make a meeting . i ' ll be glad [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] yes . i [MASK] [MASK] [MASK] [MASK] have been [MASK] to make [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] be [MASK] [SEP] ------> how long do they want to have some other time ? [SEP]
+[MASK] are you [MASK] [MASK] [MASK] [MASK] yes [MASK] i [MASK] m [MASK] [MASK] have [MASK] [MASK] to [MASK] [MASK] meeting [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] how long do [MASK] want to [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] ------> i have a good opportun ##ity . i have some experience ##s for this job as well . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] yes . i [MASK] m [MASK] we [MASK] [MASK] [MASK] [MASK] make [MASK] [MASK] . [MASK] [MASK] ll be glad [MASK] [MASK] [MASK] do they want to [MASK] some other time [MASK] [MASK] i have [MASK] good [MASK] [MASK] . [MASK] have [MASK] [MASK] [MASK] for [MASK] [MASK] [MASK] [MASK] . [MASK] ------> thanks for your help . i ’ m not sure , you are very kind of you . i ’ [SEP]
+[MASK] [MASK] [MASK] [MASK] today [MASK] [MASK] [MASK] . [MASK] [MASK] m afraid [MASK] have [MASK] [MASK] to make [MASK] meeting . i ' [MASK] [MASK] glad [MASK] [MASK] long [MASK] they want [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] have a good opportun [MASK] . [MASK] have [MASK] [MASK] [MASK] for this job [MASK] well [MASK] [MASK] [MASK] [MASK] your [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] you are very kind of [MASK] [MASK] [MASK] [MASK] [MASK] ------> no problem ; i ' d like that with you . [SEP]
+how [MASK] [MASK] doing [MASK] [MASK] [MASK] yes . i [MASK] [MASK] [MASK] [MASK] [MASK] been [MASK] [MASK] [MASK] a [MASK] [MASK] [MASK] [MASK] [MASK] be glad [MASK] [MASK] [MASK] [MASK] they [MASK] to [MASK] some [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] good [MASK]ity . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] help [MASK] [MASK] [MASK] [MASK] [MASK] sure [MASK] [MASK] [MASK] [MASK] kind of [MASK] [MASK] i [MASK] [SEP] no [MASK] ; [MASK] [MASK] [MASK] [MASK] that [MASK] [MASK] [MASK] [MASK] ------> thank you . [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] to [MASK] a meeting . [MASK] [MASK] ll be [MASK] [SEP] [MASK] [MASK] do [MASK] want [MASK] have some [MASK] [MASK] [MASK] [SEP] i have [MASK] [MASK] opportun [MASK] . i [MASK] [MASK] [MASK]s [MASK] this [MASK] as [MASK] [MASK] [MASK] thanks [MASK] your help [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] you [MASK] very [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] i ' [MASK] like [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] you [MASK] [SEP] ------> thank you . i will do that for you . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+yes . i ' m afraid we have been working to make a meeting . i ' ll be glad
+how long do they want to have some other time ?
+i have a good opportunity . i have some experiences for this job as well .
+thanks for your help . i ’ m not sure , you are very kind of you . i ’
+no problem ; i ' d like that with you .
+thank you .
+thank you . i will do that for you .

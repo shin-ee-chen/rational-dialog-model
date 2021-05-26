@@ -1,0 +1,27 @@
+Rationalized input ------> Response
+[MASK] [MASK] you [MASK] [MASK]o ? [MASK] ------> i ' ve been to ##ug ##h at home . i ' m just waiting for me to get some [SEP]
+[MASK] [MASK] you [MASK]t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] tough [MASK] [MASK] . i [MASK] [MASK] just waiting [MASK] [MASK] to [MASK] [MASK] [SEP] ------> thank you very much . [SEP]
+[MASK] are you up [MASK]o ? [MASK] [MASK] ' ve been [MASK] [MASK]h at [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] me to get [MASK] [SEP] thank you [MASK] much [MASK] [SEP] ------> no problem . [SEP]
+what [MASK] [MASK] [MASK] [MASK]o ? [SEP] [MASK] [MASK] [MASK] [MASK] toug [MASK] at home [MASK] i ' [MASK] just [MASK] for [MASK] to [MASK] some [MASK] [MASK] you [MASK] much [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> what ’ s the problem ? [SEP]
+[MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] been [MASK]ug [MASK] [MASK] home . [MASK] [MASK] m [MASK] waiting for [MASK] [MASK] [MASK] [MASK] [SEP] thank [MASK] very [MASK] . [SEP] [MASK] [MASK] . [MASK] [MASK] ’ [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ’ m looking for a meeting today . [SEP]
+[MASK] [MASK] [MASK] up [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] been tough [MASK] home . i [MASK] m [MASK] waiting [MASK] me [MASK] [MASK] some [SEP] [MASK] [MASK] very [MASK] [MASK] [MASK] no [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] the [MASK] [MASK] [MASK] [MASK] [MASK] m looking [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] ------> what happened ? [SEP]
+what are you up [MASK] [MASK] [MASK] [MASK] i ' ve [MASK] [MASK] [MASK] [MASK] at home . i [MASK] m [MASK] waiting [MASK] me [MASK] [MASK] some [MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] a meeting [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] ------> i was just wondering when there were only you one . [SEP]
+[MASK] [MASK] you up [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK]ug [MASK] [MASK] home [MASK] i [MASK] m just [MASK] for [MASK] to [MASK] [MASK] [SEP] thank [MASK] [MASK] much [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] s [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] for a meeting [MASK] . [MASK] [MASK] [MASK] ? [MASK] [MASK] [MASK] [MASK] wondering [MASK] there [MASK] only [MASK] [MASK] [MASK] [MASK] ------> ok . here you are , ms . li ##nd ##ing . i ' ll go back later . [SEP]
+[MASK] [MASK] [MASK] up [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] been [MASK] [MASK]h at [MASK] . i ' m [MASK] [MASK] for me to [MASK] [MASK] [MASK] thank [MASK] [MASK] much [MASK] [MASK] no [MASK] [MASK] [MASK] [MASK] [MASK] s [MASK] problem ? [MASK] i ’ [MASK] looking [MASK] a [MASK] [MASK] . [SEP] what [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] there [MASK] [MASK] you [MASK] . [MASK] [MASK] [MASK] [MASK] you [MASK] , [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] ' ll go back [MASK] [MASK] [MASK] ------> ok ! [SEP]
+what [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] been to [MASK]h [MASK] home . i [MASK] m [MASK] [MASK] for me to [MASK] [MASK] [MASK] [MASK] [MASK] very much [MASK] [MASK] no [MASK] . [MASK] what [MASK] s [MASK] problem ? [MASK] [MASK] ’ m looking [MASK] [MASK] [MASK] today [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] just wondering [MASK] [MASK] [MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] . here [MASK] are [MASK] ms [MASK] [MASK] [MASK]ing . [MASK] ' ll go [MASK] [MASK] . [MASK] ok ! [MASK] ------> thank you ! [SEP]
+what [MASK] [MASK] [MASK] [MASK]o [MASK] [SEP] [MASK] ' [MASK] [MASK] [MASK] [MASK]h [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] waiting for [MASK] to get [MASK] [MASK] thank you [MASK] [MASK] . [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s [MASK] problem [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] a meeting [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] just wondering [MASK] [MASK] [MASK] only [MASK] one [MASK] [SEP] ok [MASK] here [MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] go [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [SEP] thank [MASK] ! [MASK] ------> thank you for your help . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i ' ve been tough at home . i ' m just waiting for me to get some
+thank you very much .
+no problem .
+what ’ s the problem ?
+i ’ m looking for a meeting today .
+what happened ?
+i was just wondering when there were only you one .
+ok . here you are , ms . linding . i ' ll go back later .
+ok !
+thank you !
+thank you for your help .

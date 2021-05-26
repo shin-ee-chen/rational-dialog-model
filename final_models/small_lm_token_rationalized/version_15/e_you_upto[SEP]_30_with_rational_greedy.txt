@@ -1,0 +1,19 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> you can have an ey ##e on the table on the first - to - war ##d company , and [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK]e on [MASK] [MASK] on [MASK] [MASK] - to [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] ------> i hope you can make my own hair . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK]e on [MASK] [MASK] on [MASK] [MASK] - to [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] i hope [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> well , that ' s the right . it ' s my first , the grand ##p ##a . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK]e on [MASK] [MASK] on [MASK] [MASK] - to [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] i hope [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] grand [MASK] [MASK] [MASK] [MASK] ------> thank you so much ! i have a bad head ##ach ##e . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK]e on [MASK] [MASK] on [MASK] [MASK] - to [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] i hope [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] grand [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] much ! i have [MASK] [MASK] [MASK]ach [MASK] [MASK] [MASK] ------> oh , yes . what kind of room do you have ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK]e on [MASK] [MASK] on [MASK] [MASK] - to [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] i hope [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] grand [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] much ! i have [MASK] [MASK] [MASK]ach [MASK] [MASK] [MASK] oh , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] [MASK] [MASK] [MASK] ------> i ’ m so glad you have a good time . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK]e on [MASK] [MASK] on [MASK] [MASK] - to [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] i hope [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] grand [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] much ! i have [MASK] [MASK] [MASK]ach [MASK] [MASK] [MASK] oh , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] glad [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i see . i ' m going to be a little longer to be . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+you can have an eye on the table on the first - to - ward company , and
+i hope you can make my own hair .
+well , that ' s the right . it ' s my first , the grandpa .
+thank you so much ! i have a bad headache .
+oh , yes . what kind of room do you have ?
+i ’ m so glad you have a good time .
+i see . i ' m going to be a little longer to be .

@@ -1,0 +1,17 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ’ d like to buy a cup of wine . my wife are all in ##j ##ure ##d as [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] a cup of wine [MASK] my wife [MASK] [MASK] inj [MASK] [MASK] [MASK] [MASK] ------> oh , i see , mr . brown . i don ' t know . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] a cup of wine [MASK] my wife [MASK] [MASK] inj [MASK] [MASK] [MASK] [MASK] oh , i [MASK] , mr [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ' m sorry , but i ' m just looking to tell me how to do you . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] a cup of wine [MASK] my wife [MASK] [MASK] inj [MASK] [MASK] [MASK] [MASK] oh , i [MASK] , mr [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] m sorry , but i [MASK] m just looking to tell me [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> sure , what are the interview ? please tell me if your name , mr . : [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] a cup of wine [MASK] my wife [MASK] [MASK] inj [MASK] [MASK] [MASK] [MASK] oh , i [MASK] , mr [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] m sorry , but i [MASK] m just looking to tell me [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] tell me [MASK] [MASK] [MASK] , mr [MASK] : [MASK] ------> here . i have a nice party on my office and ask myself . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] a cup of wine [MASK] my wife [MASK] [MASK] inj [MASK] [MASK] [MASK] [MASK] oh , i [MASK] , mr [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] m sorry , but i [MASK] m just looking to tell me [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] tell me [MASK] [MASK] [MASK] , mr [MASK] : [MASK] [MASK] [MASK] i [MASK] [MASK] nice party on my office and [MASK] [MASK] [MASK] [MASK] ------> thanks , and i ' m afraid not . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i ’ d like to buy a cup of wine . my wife are all injured as
+oh , i see , mr . brown . i don ' t know .
+i ' m sorry , but i ' m just looking to tell me how to do you .
+sure , what are the interview ? please tell me if your name , mr . :
+here . i have a nice party on my office and ask myself .
+thanks , and i ' m afraid not .

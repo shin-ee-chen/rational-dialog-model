@@ -1,0 +1,31 @@
+Rationalized input ------> Response
+what are you upt [MASK] [MASK] [MASK] ------> you can help you with my family . [SEP]
+what are you up [MASK] [MASK] ? [SEP] you can help you [MASK] [MASK] family . [SEP] ------> you have any questions about the job , but sometimes that ’ s good with you . [SEP]
+what are [MASK] upt [MASK] [MASK] [SEP] [MASK] [MASK] help [MASK] [MASK] my [MASK] . [SEP] [MASK] have [MASK] [MASK] about [MASK] [MASK] , but sometimes [MASK] ’ s [MASK] [MASK] you . [MASK] ------> i see . [SEP]
+[MASK] are [MASK] up [MASK]o ? [MASK] you [MASK] [MASK] you [MASK] [MASK] [MASK] . [SEP] you have any questions [MASK] the [MASK] [MASK] but sometimes that [MASK] [MASK] good [MASK] you . [SEP] i see . [SEP] ------> i see . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK]o [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] my [MASK] [MASK] [SEP] you have [MASK] [MASK] [MASK] the job , but [MASK] that ’ [MASK] good with you [MASK] [MASK] [MASK] [MASK] . [SEP] i see [MASK] [MASK] ------> how do you do , sir ? [SEP]
+[MASK] [MASK] you upt [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] my [MASK] [MASK] [SEP] you [MASK] [MASK] [MASK] [MASK] the [MASK] , but sometimes that [MASK] [MASK] good with you . [SEP] i [MASK] . [MASK] i see . [SEP] how [MASK] you [MASK] [MASK] sir [MASK] [MASK] ------> do you think you ' ll have to go home for a few minutes ? [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] you can help [MASK] with my family . [MASK] [MASK] [MASK] any [MASK] about [MASK] [MASK] [MASK] [MASK] sometimes that ’ s [MASK] [MASK] [MASK] . [SEP] i see . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do you do [MASK] [MASK] ? [SEP] do you think you [MASK] [MASK] [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] minutes ? [SEP] ------> i ' ve heard about it . [SEP]
+what are [MASK] upto [MASK] [MASK] [MASK] can [MASK] [MASK] [MASK] my [MASK] . [SEP] [MASK] [MASK] [MASK] questions about the job , [MASK] [MASK] that ’ [MASK] [MASK] with [MASK] [MASK] [SEP] [MASK] see . [SEP] i [MASK] . [SEP] [MASK] do [MASK] [MASK] , [MASK] ? [SEP] [MASK] you [MASK] [MASK] [MASK] [MASK] have [MASK] [MASK] [MASK] for a few minutes ? [SEP] i ' [MASK] heard about [MASK] [MASK] [SEP] ------> what about you ? [SEP]
+what [MASK] [MASK] up [MASK] [MASK] ? [MASK] you [MASK] [MASK] you [MASK] my [MASK] [MASK] [SEP] [MASK] have any questions about the job [MASK] but sometimes [MASK] [MASK] s [MASK] with [MASK] . [MASK] i see [MASK] [SEP] i [MASK] . [SEP] how [MASK] [MASK] [MASK] , [MASK] ? [SEP] do [MASK] [MASK] you [MASK] [MASK] have [MASK] [MASK] [MASK] for a [MASK] minutes ? [SEP] [MASK] ' ve [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] about you ? [MASK] ------> no , thank you . [SEP]
+what [MASK] you [MASK]t [MASK] [MASK] [MASK] you can [MASK] [MASK] with my family [MASK] [SEP] [MASK] [MASK] any questions about [MASK] job [MASK] [MASK] sometimes that [MASK] [MASK] good [MASK] [MASK] . [SEP] i [MASK] . [SEP] [MASK] [MASK] . [SEP] how do [MASK] do [MASK] sir [MASK] [SEP] do you [MASK] you [MASK] [MASK] have to go [MASK] [MASK] [MASK] few minutes [MASK] [MASK] [MASK] [MASK] [MASK] heard about it . [SEP] what [MASK] [MASK] ? [MASK] no [MASK] thank you [MASK] [MASK] ------> that ’ s fine . [SEP]
+[MASK] are you upt [MASK] [MASK] [SEP] you [MASK] [MASK] you with my [MASK] [MASK] [SEP] you [MASK] any questions [MASK] [MASK] [MASK] [MASK] [MASK] sometimes [MASK] ’ [MASK] good [MASK] you [MASK] [MASK] i see . [MASK] i [MASK] . [SEP] how [MASK] [MASK] do [MASK] [MASK] ? [SEP] do you think [MASK] ' ll [MASK] [MASK] go home [MASK] [MASK] [MASK] [MASK] ? [MASK] [MASK] ' ve [MASK] about [MASK] . [SEP] [MASK] about [MASK] ? [SEP] [MASK] [MASK] [MASK] you [MASK] [SEP] that ’ [MASK] fine [MASK] [SEP] ------> thanks . [SEP]
+what are you [MASK]to ? [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] family . [MASK] you [MASK] any [MASK] about [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ’ [MASK] good with you . [SEP] i see [MASK] [MASK] i see . [SEP] [MASK] [MASK] [MASK] do , [MASK] ? [SEP] do [MASK] [MASK] [MASK] ' ll [MASK] [MASK] [MASK] home for a few minutes ? [SEP] [MASK] [MASK] [MASK] heard [MASK] it . [MASK] what about you [MASK] [MASK] [MASK] , [MASK] you . [SEP] [MASK] ’ [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] ------> thanks . [SEP]
+what [MASK] you [MASK]t [MASK] [MASK] [SEP] [MASK] can help [MASK] [MASK] [MASK] [MASK] . [SEP] you have [MASK] [MASK] about the [MASK] , but sometimes [MASK] [MASK] s [MASK] [MASK] you [MASK] [SEP] i [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] think [MASK] ' ll [MASK] [MASK] [MASK] [MASK] for a few [MASK] [MASK] [SEP] [MASK] ' [MASK] heard about [MASK] . [MASK] what [MASK] you [MASK] [SEP] [MASK] , thank [MASK] . [MASK] [MASK] ’ [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> you ' ll see . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+you can help you with my family .
+you have any questions about the job , but sometimes that ’ s good with you .
+i see .
+i see .
+how do you do , sir ?
+do you think you ' ll have to go home for a few minutes ?
+i ' ve heard about it .
+what about you ?
+no , thank you .
+that ’ s fine .
+thanks .
+thanks .
+you ' ll see .

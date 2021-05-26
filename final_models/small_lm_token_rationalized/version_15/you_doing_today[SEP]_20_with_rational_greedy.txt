@@ -1,0 +1,19 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> that ' s great . i can just make a doctor . i am going to be back to it [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s great . i can [MASK] make a doctor [MASK] i [MASK] [MASK] to be [MASK] [MASK] [MASK] [MASK] ------> thank you very much . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s great . i can [MASK] make a doctor [MASK] i [MASK] [MASK] to be [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ’ m very sorry for you . let ’ s just get a little bit . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s great . i can [MASK] make a doctor [MASK] i [MASK] [MASK] to be [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] m very sorry for [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] a [MASK] [MASK] [MASK] [MASK] ------> i ’ m a great idea , i ' m sure you would have to get a reservation . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s great . i can [MASK] make a doctor [MASK] i [MASK] [MASK] to be [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] m very sorry for [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] a [MASK] [MASK] [MASK] [MASK] i [MASK] m a great idea , i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> yes , but i have no idea . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s great . i can [MASK] make a doctor [MASK] i [MASK] [MASK] to be [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] m very sorry for [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] a [MASK] [MASK] [MASK] [MASK] i [MASK] m a great idea , i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , but i [MASK] [MASK] idea [MASK] [MASK] ------> what are you doing ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s great . i can [MASK] make a doctor [MASK] i [MASK] [MASK] to be [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] m very sorry for [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] a [MASK] [MASK] [MASK] [MASK] i [MASK] m a great idea , i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , but i [MASK] [MASK] idea [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> that would take a p ##ity . what ' s the problem ? [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+that ' s great . i can just make a doctor . i am going to be back to it
+thank you very much .
+i ’ m very sorry for you . let ’ s just get a little bit .
+i ’ m a great idea , i ' m sure you would have to get a reservation .
+yes , but i have no idea .
+what are you doing ?
+that would take a pity . what ' s the problem ?

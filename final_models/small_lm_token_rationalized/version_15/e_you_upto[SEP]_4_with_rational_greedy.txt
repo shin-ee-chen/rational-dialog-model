@@ -1,0 +1,31 @@
+Rationalized input ------> Response
+what are [MASK] upt [MASK] [MASK] [MASK] ------> i want some more . [SEP]
+what are [MASK] upt [MASK] ? [SEP] i want some more . [MASK] ------> you ’ re welcome . [SEP]
+what are [MASK] upt [MASK] ? [SEP] i want some more . [MASK] [MASK] ’ [MASK] welcome . [MASK] ------> thanks for being all of the weekend . [SEP]
+what are [MASK] upt [MASK] ? [SEP] i want some more . [MASK] [MASK] ’ [MASK] welcome . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] the weekend . [MASK] ------> why not ? you can help . [SEP]
+what are [MASK] upt [MASK] ? [SEP] i want some more . [MASK] [MASK] ’ [MASK] welcome . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] the weekend . [MASK] why not ? [MASK] can help . [MASK] ------> well , i am very good ! [SEP]
+what are [MASK] upt [MASK] ? [SEP] i want some more . [MASK] [MASK] ’ [MASK] welcome . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] the weekend . [MASK] why not ? [MASK] can help [MASK] [MASK] [MASK] , i am very good ! [SEP] ------> well , i ’ m going to go to school today . [SEP]
+what are [MASK] upt [MASK] ? [SEP] i want some more . [MASK] [MASK] ’ [MASK] welcome . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] the weekend . [MASK] why not ? [MASK] can help [MASK] [MASK] [MASK] , i am very good ! [SEP] well , i ’ m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ' m glad i have . [SEP]
+what are [MASK] upt [MASK] ? [SEP] i want some more . [MASK] [MASK] ’ [MASK] welcome . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] the weekend . [MASK] why not ? [MASK] can help [MASK] [MASK] [MASK] , i am very good ! [SEP] well , i ’ m [MASK] [MASK] [MASK] [MASK] [MASK] today . [MASK] i [MASK] m glad i have [MASK] [MASK] ------> good idea . [SEP]
+what are [MASK] upt [MASK] ? [SEP] i want some more . [MASK] [MASK] ’ [MASK] welcome . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] the weekend . [MASK] why not ? [MASK] can help [MASK] [MASK] [MASK] , i am very good ! [SEP] well , i ’ m [MASK] [MASK] [MASK] [MASK] [MASK] today . [MASK] i [MASK] m glad i have [MASK] [MASK] good idea . [MASK] ------> what time do you want to go ? [SEP]
+what are [MASK] upt [MASK] ? [SEP] i want some more . [MASK] [MASK] ’ [MASK] welcome . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] the weekend . [MASK] why not ? [MASK] can help [MASK] [MASK] [MASK] , i am very good ! [SEP] well , i ’ m [MASK] [MASK] [MASK] [MASK] [MASK] today . [MASK] i [MASK] m glad i have [MASK] [MASK] good idea . [MASK] what time do you want [MASK] [MASK] [MASK] [MASK] ------> oh ! [SEP]
+what are [MASK] upt [MASK] ? [SEP] i want some more . [MASK] [MASK] ’ [MASK] welcome . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] the weekend . [MASK] why not ? [MASK] can help [MASK] [MASK] [MASK] , i am very good ! [SEP] well , i ’ m [MASK] [MASK] [MASK] [MASK] [MASK] today . [MASK] i [MASK] m glad i have [MASK] [MASK] good idea . [MASK] what time do you want [MASK] [MASK] [MASK] [MASK] oh ! [SEP] ------> thank you to me . [SEP]
+what are [MASK] upt [MASK] ? [SEP] i want some more . [MASK] [MASK] ’ [MASK] welcome . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] the weekend . [MASK] why not ? [MASK] can help [MASK] [MASK] [MASK] , i am very good ! [SEP] well , i ’ m [MASK] [MASK] [MASK] [MASK] [MASK] today . [MASK] i [MASK] m glad i have [MASK] [MASK] good idea . [MASK] what time do you want [MASK] [MASK] [MASK] [MASK] oh ! [SEP] thank you [MASK] me [MASK] [MASK] ------> i am looking for your help tonight . [SEP]
+what are [MASK] upt [MASK] ? [SEP] i want some more . [MASK] [MASK] ’ [MASK] welcome . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] the weekend . [MASK] why not ? [MASK] can help [MASK] [MASK] [MASK] , i am very good ! [SEP] well , i ’ m [MASK] [MASK] [MASK] [MASK] [MASK] today . [MASK] i [MASK] m glad i have [MASK] [MASK] good idea . [MASK] what time do you want [MASK] [MASK] [MASK] [MASK] oh ! [SEP] thank you [MASK] me . [MASK] i am looking for your help tonight [MASK] [MASK] ------> yes , thank you very much . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i want some more .
+you ’ re welcome .
+thanks for being all of the weekend .
+why not ? you can help .
+well , i am very good !
+well , i ’ m going to go to school today .
+i ' m glad i have .
+good idea .
+what time do you want to go ?
+oh !
+thank you to me .
+i am looking for your help tonight .
+yes , thank you very much .

@@ -1,0 +1,29 @@
+Rationalized input ------> Response
+[MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] ------> what did you get to work ? [SEP]
+[MASK] [MASK] [MASK] doing [MASK] ? [MASK] what [MASK] [MASK] [MASK] to [MASK] [MASK] [MASK] ------> well , i think you ’ re welcome . [SEP]
+how [MASK] you [MASK] today [MASK] [SEP] what [MASK] you get to [MASK] [MASK] [SEP] [MASK] [MASK] i think [MASK] ’ [MASK] [MASK] [MASK] [SEP] ------> why ? [SEP]
+how are [MASK] [MASK] [MASK] [MASK] [MASK] what [MASK] you [MASK] to work [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] welcome [MASK] [MASK] [MASK] ? [MASK] ------> no , i ’ m just looking to do that . [SEP]
+[MASK] are [MASK] [MASK] today ? [MASK] what [MASK] [MASK] get to [MASK] [MASK] [SEP] [MASK] , i think [MASK] [MASK] [MASK] [MASK] . [MASK] why [MASK] [SEP] no , [MASK] ’ [MASK] [MASK] [MASK] to do [MASK] [MASK] [SEP] ------> thank you , doctor . [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] what did [MASK] [MASK] to [MASK] [MASK] [SEP] [MASK] , [MASK] think [MASK] ’ [MASK] [MASK] . [SEP] why [MASK] [MASK] no , [MASK] ’ m [MASK] looking to do [MASK] [MASK] [SEP] [MASK] [MASK] , doctor [MASK] [SEP] ------> that sounds good . do you like it in the country ? [SEP]
+[MASK] are [MASK] doing [MASK] [MASK] [SEP] what [MASK] [MASK] [MASK] to work [MASK] [SEP] well , i think you ’ re [MASK] [MASK] [MASK] why ? [MASK] [MASK] [MASK] [MASK] ’ m [MASK] looking to [MASK] [MASK] . [SEP] thank you [MASK] doctor [MASK] [SEP] that sounds good . [MASK] you like it [MASK] [MASK] [MASK] ? [SEP] ------> yes . [SEP]
+[MASK] are you [MASK] today ? [SEP] what [MASK] [MASK] get [MASK] work [MASK] [MASK] well [MASK] [MASK] think you ’ [MASK] welcome . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i ’ [MASK] just looking [MASK] [MASK] [MASK] . [SEP] [MASK] you , [MASK] . [MASK] [MASK] [MASK] [MASK] . do [MASK] like it [MASK] [MASK] country ? [SEP] yes . [MASK] ------> what do you need in mind ? [SEP]
+how are you [MASK] today ? [SEP] [MASK] did [MASK] get to [MASK] ? [MASK] well , [MASK] think you ’ re welcome . [SEP] [MASK] [MASK] [SEP] no , i [MASK] [MASK] [MASK] [MASK] to [MASK] that [MASK] [MASK] thank you [MASK] [MASK] . [SEP] [MASK] sounds [MASK] [MASK] do you [MASK] [MASK] [MASK] [MASK] country [MASK] [MASK] [MASK] . [SEP] what [MASK] [MASK] need [MASK] [MASK] ? [SEP] ------> well , i ' m fine ! [SEP]
+how are you doing today ? [SEP] what [MASK] you [MASK] to work [MASK] [SEP] well [MASK] i think [MASK] ’ [MASK] welcome . [SEP] [MASK] ? [SEP] no [MASK] i ’ [MASK] just looking [MASK] [MASK] that [MASK] [MASK] thank you , [MASK] . [MASK] [MASK] [MASK] good [MASK] [MASK] [MASK] like [MASK] [MASK] [MASK] country [MASK] [SEP] yes [MASK] [MASK] [MASK] [MASK] you [MASK] [MASK] [MASK] ? [SEP] well [MASK] i ' [MASK] [MASK] [MASK] [SEP] ------> what time will you get a taxi ? [SEP]
+how are [MASK] doing [MASK] ? [SEP] what [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] , [MASK] think you [MASK] [MASK] welcome . [MASK] [MASK] [MASK] [MASK] no [MASK] i ’ [MASK] just [MASK] [MASK] do that [MASK] [SEP] [MASK] you , doctor . [SEP] [MASK] sounds [MASK] . [MASK] [MASK] like it in [MASK] country ? [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [SEP] [MASK] , [MASK] [MASK] [MASK] [MASK] ! [SEP] what [MASK] [MASK] [MASK] [MASK] a [MASK] ? [SEP] ------> i ’ ll have to go . [SEP]
+how are [MASK] [MASK] [MASK] ? [MASK] what [MASK] you get to work ? [SEP] well , [MASK] [MASK] you ’ [MASK] welcome . [MASK] why [MASK] [MASK] no , [MASK] [MASK] [MASK] just looking to do that [MASK] [MASK] [MASK] you , doctor . [MASK] that sounds [MASK] . do [MASK] [MASK] it in [MASK] country [MASK] [SEP] yes . [MASK] what do you need in [MASK] [MASK] [MASK] well , i ' [MASK] fine [MASK] [SEP] [MASK] time [MASK] you get [MASK] [MASK] [MASK] [SEP] i ’ ll [MASK] [MASK] [MASK] [MASK] [MASK] ------> that ’ s not bad . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+what did you get to work ?
+well , i think you ’ re welcome .
+why ?
+no , i ’ m just looking to do that .
+thank you , doctor .
+that sounds good . do you like it in the country ?
+yes .
+what do you need in mind ?
+well , i ' m fine !
+what time will you get a taxi ?
+i ’ ll have to go .
+that ’ s not bad .

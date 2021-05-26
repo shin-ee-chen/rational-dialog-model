@@ -1,0 +1,27 @@
+Rationalized input ------> Response
+how [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ' m going to have to pay for the library . [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] m going to [MASK] [MASK] pay [MASK] [MASK] library [MASK] [SEP] ------> how about these books ? [SEP]
+[MASK] [MASK] you doing [MASK] ? [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] have [MASK] [MASK] for the [MASK] . [MASK] how about these [MASK] ? [MASK] ------> no , but i ' m sure you should take it for me . [SEP]
+[MASK] [MASK] [MASK] doing [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] have to pay for the [MASK] . [MASK] [MASK] [MASK] these [MASK] ? [SEP] [MASK] , but i ' [MASK] sure [MASK] should [MASK] it for [MASK] [MASK] [SEP] ------> i ’ m very excited about that . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] going [MASK] have to pay [MASK] [MASK] [MASK] [MASK] [SEP] how [MASK] [MASK] books [MASK] [MASK] no , [MASK] i [MASK] m [MASK] you should take [MASK] [MASK] [MASK] . [SEP] [MASK] [MASK] m very excited [MASK] that . [SEP] ------> thanks for asking . thanks . [SEP]
+[MASK] [MASK] [MASK] doing today [MASK] [MASK] i ' m [MASK] [MASK] have [MASK] pay [MASK] [MASK] [MASK] . [MASK] [MASK] about these books [MASK] [SEP] no , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] should take [MASK] [MASK] me [MASK] [SEP] [MASK] [MASK] [MASK] very excited [MASK] that [MASK] [SEP] thanks for asking . [MASK] . [MASK] ------> i ' ve got it . i am going out of the last day . [SEP]
+[MASK] [MASK] you [MASK] today ? [MASK] [MASK] [MASK] [MASK] going to [MASK] to [MASK] for [MASK] library . [SEP] how [MASK] these [MASK] [MASK] [SEP] [MASK] , [MASK] [MASK] [MASK] [MASK] sure [MASK] [MASK] [MASK] it [MASK] [MASK] [MASK] [SEP] i [MASK] [MASK] [MASK] [MASK] about that [MASK] [MASK] [MASK] [MASK] asking [MASK] [MASK] [MASK] [MASK] i [MASK] ve got it . i [MASK] [MASK] [MASK] [MASK] [MASK] last day [MASK] [MASK] ------> thank you . [SEP]
+how [MASK] you doing [MASK] [MASK] [MASK] i ' [MASK] [MASK] [MASK] have to [MASK] [MASK] [MASK] [MASK] . [SEP] how about [MASK] books ? [MASK] no , [MASK] [MASK] [MASK] m sure you [MASK] [MASK] [MASK] for [MASK] . [MASK] i [MASK] [MASK] very excited about [MASK] . [SEP] thanks for asking [MASK] [MASK] . [MASK] [MASK] ' [MASK] [MASK] it . i [MASK] going out [MASK] [MASK] [MASK] day [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] ------> i was thinking about it . [SEP]
+how [MASK] [MASK] [MASK] today ? [MASK] i [MASK] m going to [MASK] [MASK] [MASK] for [MASK] library . [MASK] [MASK] about these [MASK] [MASK] [SEP] no , [MASK] [MASK] [MASK] [MASK] sure [MASK] should take it for me . [MASK] i ’ m [MASK] excited about that [MASK] [SEP] [MASK] for [MASK] . [MASK] [MASK] [SEP] [MASK] ' ve [MASK] it [MASK] i [MASK] going out of the last [MASK] . [SEP] thank you [MASK] [MASK] [MASK] [MASK] [MASK] about [MASK] . [SEP] ------> i ' m afraid not . [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] m [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [SEP] how [MASK] [MASK] books ? [SEP] no , but i ' m [MASK] [MASK] [MASK] take it for me . [SEP] [MASK] [MASK] m very [MASK] [MASK] [MASK] [MASK] [MASK] thanks for [MASK] [MASK] [MASK] . [SEP] [MASK] ' [MASK] [MASK] [MASK] . [MASK] am [MASK] out [MASK] [MASK] last [MASK] . [SEP] [MASK] [MASK] [MASK] [MASK] i [MASK] thinking [MASK] [MASK] [MASK] [MASK] [MASK] ' m [MASK] [MASK] . [SEP] ------> you ’ d better be happy ! [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] [MASK] [MASK] m going [MASK] [MASK] [MASK] pay for the [MASK] . [SEP] [MASK] [MASK] these books [MASK] [MASK] [MASK] , [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] take [MASK] for me . [MASK] [MASK] ’ m [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] for [MASK] . [MASK] [MASK] [SEP] [MASK] [MASK] ve [MASK] it . i am [MASK] out [MASK] the last day [MASK] [SEP] thank you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] it [MASK] [SEP] i [MASK] [MASK] afraid not [MASK] [SEP] you [MASK] [MASK] [MASK] be happy ! [MASK] ------> thank you . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i ' m going to have to pay for the library .
+how about these books ?
+no , but i ' m sure you should take it for me .
+i ’ m very excited about that .
+thanks for asking . thanks .
+i ' ve got it . i am going out of the last day .
+thank you .
+i was thinking about it .
+i ' m afraid not .
+you ’ d better be happy !
+thank you .

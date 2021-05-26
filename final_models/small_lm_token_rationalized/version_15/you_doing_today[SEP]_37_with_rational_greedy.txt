@@ -1,0 +1,21 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> what do you do to do for this morning ? i ’ ve just got the money . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] do to do [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> ok , i ' ll try to see you , sir . we ' ll be interested in that one [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] do to do [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] to see you , [MASK] [MASK] [MASK] [MASK] [MASK] be [MASK] [MASK] [MASK] [MASK] [MASK] ------> i think so . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] do to do [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] to see you , [MASK] [MASK] [MASK] [MASK] [MASK] be [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i am a student . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] do to do [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] to see you , [MASK] [MASK] [MASK] [MASK] [MASK] be [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] ------> no , thank you . i can ’ t seem to see you again somet ##ime . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] do to do [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] to see you , [MASK] [MASK] [MASK] [MASK] [MASK] be [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , thank you [MASK] i [MASK] [MASK] t seem to see you [MASK] [MASK] [MASK] [MASK] [MASK] ------> i have to have my first meeting you have . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] do to do [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] to see you , [MASK] [MASK] [MASK] [MASK] [MASK] be [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , thank you [MASK] i [MASK] [MASK] t seem to see you [MASK] [MASK] [MASK] [MASK] [MASK] i have to have [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> ok , sir . you ' ll see . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] do to do [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] to see you , [MASK] [MASK] [MASK] [MASK] [MASK] be [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , thank you [MASK] i [MASK] [MASK] t seem to see you [MASK] [MASK] [MASK] [MASK] [MASK] i have to have [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> sure . it ' s not that i can ' t help . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+what do you do to do for this morning ? i ’ ve just got the money .
+ok , i ' ll try to see you , sir . we ' ll be interested in that one
+i think so .
+i am a student .
+no , thank you . i can ’ t seem to see you again sometime .
+i have to have my first meeting you have .
+ok , sir . you ' ll see .
+sure . it ' s not that i can ' t help .

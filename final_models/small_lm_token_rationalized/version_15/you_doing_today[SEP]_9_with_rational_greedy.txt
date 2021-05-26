@@ -1,0 +1,29 @@
+Rationalized input ------> Response
+how [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] ------> i like that . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i like that [MASK] [SEP] ------> what do you mean ? [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i like that [MASK] [SEP] what do [MASK] mean [MASK] [SEP] ------> you ' re right . i ’ ve got some more about half time . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i like that [MASK] [SEP] what do [MASK] mean [MASK] [SEP] [MASK] [MASK] [MASK] right . i [MASK] [MASK] got some more about half time . [SEP] ------> how about going to a school ? [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i like that [MASK] [SEP] what do [MASK] mean [MASK] [SEP] [MASK] [MASK] [MASK] right . i [MASK] [MASK] got some more about half time . [SEP] [MASK] about [MASK] [MASK] a school [MASK] [SEP] ------> really ? [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i like that [MASK] [SEP] what do [MASK] mean [MASK] [SEP] [MASK] [MASK] [MASK] right . i [MASK] [MASK] got some more about half time . [SEP] [MASK] about [MASK] [MASK] a school [MASK] [SEP] really [MASK] [SEP] ------> yes . i am a student pass . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i like that [MASK] [SEP] what do [MASK] mean [MASK] [SEP] [MASK] [MASK] [MASK] right . i [MASK] [MASK] got some more about half time . [SEP] [MASK] about [MASK] [MASK] a school [MASK] [SEP] really [MASK] [SEP] [MASK] [MASK] i am a [MASK] pass [MASK] [SEP] ------> i think my wife would be a little trouble . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i like that [MASK] [SEP] what do [MASK] mean [MASK] [SEP] [MASK] [MASK] [MASK] right . i [MASK] [MASK] got some more about half time . [SEP] [MASK] about [MASK] [MASK] a school [MASK] [SEP] really [MASK] [SEP] [MASK] . i am a [MASK] pass [MASK] [SEP] i think my wife would be a [MASK] trouble [MASK] [SEP] ------> that ' s true . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i like that [MASK] [SEP] what do [MASK] mean [MASK] [SEP] [MASK] [MASK] [MASK] right . i [MASK] [MASK] got some more about half time . [SEP] [MASK] about [MASK] [MASK] a school [MASK] [SEP] really [MASK] [SEP] [MASK] . i am a [MASK] pass [MASK] [SEP] i think my wife would be a [MASK] trouble [MASK] [SEP] that [MASK] s true [MASK] [SEP] ------> what ’ s the matter ? [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i like that [MASK] [SEP] what do [MASK] mean [MASK] [SEP] [MASK] [MASK] [MASK] right . i [MASK] [MASK] got some more about half time . [SEP] [MASK] about [MASK] [MASK] a school [MASK] [SEP] really [MASK] [SEP] [MASK] . i am a [MASK] pass [MASK] [SEP] i think my wife would be a [MASK] trouble [MASK] [SEP] that [MASK] s true [MASK] [MASK] what ’ s the matter [MASK] [SEP] ------> it ’ s a good thing about you ! [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i like that [MASK] [SEP] what do [MASK] mean [MASK] [SEP] [MASK] [MASK] [MASK] right . i [MASK] [MASK] got some more about half time . [SEP] [MASK] about [MASK] [MASK] a school [MASK] [SEP] really [MASK] [SEP] [MASK] . i am a [MASK] pass [MASK] [SEP] i think my wife would be a [MASK] trouble [MASK] [SEP] that [MASK] s true [MASK] [MASK] what ’ s the matter [MASK] [SEP] [MASK] [MASK] s a good thing about [MASK] ! [SEP] ------> what did you do ? [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i like that [MASK] [SEP] what do [MASK] mean [MASK] [SEP] [MASK] [MASK] [MASK] right . i [MASK] [MASK] got some more about half time . [SEP] [MASK] about [MASK] [MASK] a school [MASK] [SEP] really [MASK] [SEP] [MASK] . i am a [MASK] pass [MASK] [SEP] i think my wife would be a [MASK] trouble [MASK] [SEP] that [MASK] s true [MASK] [MASK] what ’ s the matter [MASK] [SEP] [MASK] [MASK] s a good thing about [MASK] ! [SEP] what did [MASK] do [MASK] [SEP] ------> my parents are always so busy . but you ' re welcome . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i like that .
+what do you mean ?
+you ' re right . i ’ ve got some more about half time .
+how about going to a school ?
+really ?
+yes . i am a student pass .
+i think my wife would be a little trouble .
+that ' s true .
+what ’ s the matter ?
+it ’ s a good thing about you !
+what did you do ?
+my parents are always so busy . but you ' re welcome .

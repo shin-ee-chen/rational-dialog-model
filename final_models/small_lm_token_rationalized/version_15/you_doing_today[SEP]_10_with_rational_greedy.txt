@@ -1,0 +1,29 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] ------> yes ... [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] ------> good ! good morning , miss smith . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] good ! good [MASK] [MASK] miss smith [MASK] [SEP] ------> oh , good , that was a good idea . can i help you ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] good ! good morning [MASK] miss smith [MASK] [SEP] oh [MASK] [MASK] , that was a good idea . can i [MASK] [MASK] [MASK] [SEP] ------> thanks for asking . i am sure you ' ll have a problem . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] good ! good morning [MASK] miss smith [MASK] [SEP] oh [MASK] [MASK] , that was a good idea . can i [MASK] [MASK] [MASK] [SEP] [MASK] for asking . i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i would like to book a reservation for a few days and you can get you to your room in [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] good ! good morning [MASK] miss smith [MASK] [SEP] oh [MASK] [MASK] , that was a good idea . can i [MASK] [MASK] [MASK] [SEP] [MASK] for asking . i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] i [MASK] like [MASK] book a reservation for a few days and [MASK] [MASK] get [MASK] [MASK] [MASK] [MASK] in [SEP] ------> yes . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] good ! good morning [MASK] miss smith [MASK] [SEP] oh [MASK] [MASK] , that was a good idea . can i [MASK] [MASK] [MASK] [SEP] [MASK] for asking . i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] i [MASK] like [MASK] book a reservation for a few days and [MASK] [MASK] get [MASK] [MASK] [MASK] [MASK] in [SEP] [MASK] [MASK] [MASK] ------> you should be waiting . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] good ! good morning [MASK] miss smith [MASK] [SEP] oh [MASK] [MASK] , that was a good idea . can i [MASK] [MASK] [MASK] [SEP] [MASK] for asking . i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] i [MASK] like [MASK] book a reservation for a few days and [MASK] [MASK] get [MASK] [MASK] [MASK] [MASK] in [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] waiting [MASK] [SEP] ------> thank you , thanks . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] good ! good morning [MASK] miss smith [MASK] [SEP] oh [MASK] [MASK] , that was a good idea . can i [MASK] [MASK] [MASK] [SEP] [MASK] for asking . i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] i [MASK] like [MASK] book a reservation for a few days and [MASK] [MASK] get [MASK] [MASK] [MASK] [MASK] in [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] waiting [MASK] [MASK] thank [MASK] [MASK] [MASK] [MASK] [SEP] ------> thank you . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] good ! good morning [MASK] miss smith [MASK] [SEP] oh [MASK] [MASK] , that was a good idea . can i [MASK] [MASK] [MASK] [SEP] [MASK] for asking . i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] i [MASK] like [MASK] book a reservation for a few days and [MASK] [MASK] get [MASK] [MASK] [MASK] [MASK] in [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] waiting [MASK] [MASK] thank [MASK] [MASK] [MASK] [MASK] [MASK] thank [MASK] [MASK] [MASK] ------> thank you . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] good ! good morning [MASK] miss smith [MASK] [SEP] oh [MASK] [MASK] , that was a good idea . can i [MASK] [MASK] [MASK] [SEP] [MASK] for asking . i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] i [MASK] like [MASK] book a reservation for a few days and [MASK] [MASK] get [MASK] [MASK] [MASK] [MASK] in [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] waiting [MASK] [MASK] thank [MASK] [MASK] [MASK] [MASK] [MASK] thank [MASK] [MASK] [MASK] thank [MASK] [MASK] [MASK] ------> ok , thanks . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] good ! good morning [MASK] miss smith [MASK] [SEP] oh [MASK] [MASK] , that was a good idea . can i [MASK] [MASK] [MASK] [SEP] [MASK] for asking . i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] i [MASK] like [MASK] book a reservation for a few days and [MASK] [MASK] get [MASK] [MASK] [MASK] [MASK] in [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] waiting [MASK] [MASK] thank [MASK] [MASK] [MASK] [MASK] [MASK] thank [MASK] [MASK] [MASK] thank [MASK] [MASK] [MASK] ok [MASK] thanks [MASK] [SEP] ------> thank you very much . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+yes ...
+good ! good morning , miss smith .
+oh , good , that was a good idea . can i help you ?
+thanks for asking . i am sure you ' ll have a problem .
+i would like to book a reservation for a few days and you can get you to your room in
+yes .
+you should be waiting .
+thank you , thanks .
+thank you .
+thank you .
+ok , thanks .
+thank you very much .

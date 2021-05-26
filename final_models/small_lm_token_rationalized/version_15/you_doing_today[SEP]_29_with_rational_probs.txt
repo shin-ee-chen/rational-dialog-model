@@ -1,0 +1,25 @@
+Rationalized input ------> Response
+how [MASK] [MASK] doing today [MASK] [MASK] ------> i ’ m going to do some new york . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] to do some [MASK] [MASK] [MASK] [SEP] ------> i can ’ t get my best to say . [SEP]
+how [MASK] you doing [MASK] ? [MASK] i ’ m [MASK] to do some new [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] get [MASK] best [MASK] say [MASK] [SEP] ------> that ’ s good . [SEP]
+[MASK] are [MASK] [MASK] today [MASK] [MASK] [MASK] [MASK] [MASK] going [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] ’ t [MASK] my best [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] ------> thanks . i ’ ll have the new house for the first time . [SEP]
+[MASK] are you [MASK] [MASK] [MASK] [SEP] i ’ [MASK] going [MASK] [MASK] some new york . [MASK] i can ’ t [MASK] [MASK] best to say [MASK] [MASK] that [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] have the new [MASK] for the first time . [MASK] ------> thank you . you ’ re so excited , too . [SEP]
+how are [MASK] doing [MASK] ? [MASK] i [MASK] m going to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] t [MASK] my [MASK] to say [MASK] [SEP] that [MASK] [MASK] good [MASK] [MASK] thanks [MASK] i [MASK] [MASK] have [MASK] new house [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ’ [MASK] [MASK] excited , [MASK] [MASK] [SEP] ------> what ’ s the matter ? [SEP]
+[MASK] are you [MASK] today [MASK] [MASK] [MASK] ’ m [MASK] to [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] ’ [MASK] get [MASK] best to say [MASK] [MASK] [MASK] [MASK] s [MASK] [MASK] [MASK] thanks . [MASK] [MASK] [MASK] [MASK] [MASK] new house for [MASK] [MASK] [MASK] [MASK] [MASK] thank you [MASK] you [MASK] [MASK] [MASK] excited [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s the [MASK] [MASK] [MASK] ------> no problem . i ' m sorry . [SEP]
+[MASK] [MASK] [MASK] [MASK] today ? [MASK] [MASK] [MASK] [MASK] [MASK] to [MASK] some new [MASK] [MASK] [MASK] [MASK] can [MASK] [MASK] get [MASK] [MASK] to say [MASK] [MASK] [MASK] [MASK] [MASK] good [MASK] [MASK] [MASK] [MASK] i [MASK] ll [MASK] the new house [MASK] [MASK] [MASK] time . [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] excited , too [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] [MASK] [MASK] [MASK] [MASK] ' m [MASK] [MASK] [SEP] ------> no problem . [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] i ’ [MASK] going to [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] get my [MASK] to [MASK] . [SEP] [MASK] ’ [MASK] [MASK] [MASK] [MASK] thanks [MASK] [MASK] ’ ll [MASK] the new [MASK] [MASK] the [MASK] time [MASK] [MASK] [MASK] you [MASK] you ’ [MASK] so excited [MASK] [MASK] [MASK] [MASK] [MASK] ’ [MASK] the [MASK] [MASK] [MASK] [MASK] problem [MASK] [MASK] [MASK] m sorry [MASK] [MASK] no [MASK] [MASK] [SEP] ------> i ’ m not sure ! [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] going [MASK] do [MASK] [MASK] york [MASK] [SEP] [MASK] can ’ [MASK] [MASK] my best [MASK] say . [MASK] that ’ s good [MASK] [MASK] thanks . [MASK] [MASK] ll have [MASK] new [MASK] for [MASK] first [MASK] [MASK] [MASK] thank [MASK] [MASK] [MASK] [MASK] re [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] s the matter ? [SEP] no [MASK] [MASK] i [MASK] m [MASK] [MASK] [MASK] [MASK] problem . [MASK] [MASK] ’ [MASK] [MASK] sure [MASK] [MASK] ------> you ’ re welcome . how about the r ##iver today ? [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i ’ m going to do some new york .
+i can ’ t get my best to say .
+that ’ s good .
+thanks . i ’ ll have the new house for the first time .
+thank you . you ’ re so excited , too .
+what ’ s the matter ?
+no problem . i ' m sorry .
+no problem .
+i ’ m not sure !
+you ’ re welcome . how about the river today ?

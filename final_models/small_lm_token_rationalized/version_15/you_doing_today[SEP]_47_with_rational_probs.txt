@@ -1,0 +1,17 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] today [MASK] [MASK] ------> i ' m not sure how to get a party . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to [MASK] [MASK] party . [MASK] ------> i ’ d rather have a problem with my family . that ’ s my pleasure ! [SEP]
+[MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] get [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] family [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] ------> what did you do in beijing ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] rather [MASK] a [MASK] with [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] my [MASK] [MASK] [MASK] what [MASK] you do [MASK] [MASK] ? [MASK] ------> i have my girlfriend is a bit too cold and so as long as you said , he ' s [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] not [MASK] how [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] have [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] pleasure [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] in [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] girlfriend [MASK] a [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] he [MASK] [MASK] [SEP] ------> that ' s not very easy to get in touch with a r ##ing for your job now . the [SEP]
+[MASK] [MASK] [MASK] doing today ? [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] party [MASK] [MASK] [MASK] [MASK] d rather [MASK] [MASK] [MASK] with [MASK] [MASK] [MASK] [MASK] [MASK] s my [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] [MASK] [MASK] [MASK] girlfriend [MASK] [MASK] [MASK] too [MASK] [MASK] [MASK] as long [MASK] you [MASK] [MASK] [MASK] [MASK] s [MASK] [MASK] [MASK] s not very [MASK] to [MASK] in [MASK] [MASK] [MASK] [MASK] [MASK] for [MASK] [MASK] [MASK] . [MASK] [MASK] ------> what do you mean to eat ? i ' ll go with you again tonight . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i ' m not sure how to get a party .
+i ’ d rather have a problem with my family . that ’ s my pleasure !
+what did you do in beijing ?
+i have my girlfriend is a bit too cold and so as long as you said , he ' s
+that ' s not very easy to get in touch with a ring for your job now . the
+what do you mean to eat ? i ' ll go with you again tonight .

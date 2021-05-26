@@ -1,0 +1,25 @@
+Rationalized input ------> Response
+how [MASK] [MASK] [MASK] today [MASK] [MASK] ------> i ’ m a secret . why do ? [SEP]
+how are [MASK] [MASK] today ? [MASK] i ’ m a secret . why do ? [SEP] ------> i was looking forward to seeing you ! [SEP]
+how are [MASK] [MASK] today ? [MASK] i ’ m a secret . why do ? [SEP] i was looking forward to seeing [MASK] ! [SEP] ------> what about a job ? [SEP]
+how are [MASK] [MASK] today ? [MASK] i ’ m a secret . why do ? [SEP] i was looking forward to seeing [MASK] ! [SEP] what about a job ? [SEP] ------> i ’ m going to have to study at all . [SEP]
+how are [MASK] [MASK] today ? [MASK] i ’ m a secret . why do ? [SEP] i was looking forward to seeing [MASK] ! [SEP] what about a job ? [SEP] i ’ m [MASK] [MASK] [MASK] [MASK] study at all . [MASK] ------> i ' m so happy for that . [SEP]
+how are [MASK] [MASK] today ? [MASK] i ’ m a secret . why do ? [SEP] i was looking forward to seeing [MASK] ! [SEP] what about a job ? [SEP] i ’ m [MASK] [MASK] [MASK] [MASK] study at all . [MASK] i [MASK] m so happy for that . [MASK] ------> well . i am going to be a great time . [SEP]
+how are [MASK] [MASK] today ? [MASK] i ’ m a secret . why do ? [SEP] i was looking forward to seeing [MASK] ! [SEP] what about a job ? [SEP] i ’ m [MASK] [MASK] [MASK] [MASK] study at all . [MASK] i [MASK] m so happy for that . [SEP] [MASK] . i am [MASK] [MASK] [MASK] [MASK] great time . [MASK] ------> do you know what about you ? [SEP]
+how are [MASK] [MASK] today ? [MASK] i ’ m a secret . why do ? [SEP] i was looking forward to seeing [MASK] ! [SEP] what about a job ? [SEP] i ’ m [MASK] [MASK] [MASK] [MASK] study at all . [MASK] i [MASK] m so happy for that . [SEP] [MASK] . i am [MASK] [MASK] [MASK] [MASK] great time . [MASK] do [MASK] [MASK] what about you ? [SEP] ------> i ' m fine . thanks for your help . [SEP]
+how are [MASK] [MASK] today ? [MASK] i ’ m a secret . why do ? [SEP] i was looking forward to seeing [MASK] ! [SEP] what about a job ? [SEP] i ’ m [MASK] [MASK] [MASK] [MASK] study at all . [MASK] i [MASK] m so happy for that . [SEP] [MASK] . i am [MASK] [MASK] [MASK] [MASK] great time . [MASK] do [MASK] [MASK] what about you ? [SEP] i [MASK] m fine . [MASK] [MASK] your [MASK] [MASK] [MASK] ------> what ' s the matter today ? [SEP]
+how are [MASK] [MASK] today ? [MASK] i ’ m a secret . why do ? [SEP] i was looking forward to seeing [MASK] ! [SEP] what about a job ? [SEP] i ’ m [MASK] [MASK] [MASK] [MASK] study at all . [MASK] i [MASK] m so happy for that . [SEP] [MASK] . i am [MASK] [MASK] [MASK] [MASK] great time . [MASK] do [MASK] [MASK] what about you ? [SEP] i [MASK] m fine . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] what [MASK] s the matter today ? [SEP] ------> my parents and i ' ll have to go . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i ’ m a secret . why do ?
+i was looking forward to seeing you !
+what about a job ?
+i ’ m going to have to study at all .
+i ' m so happy for that .
+well . i am going to be a great time .
+do you know what about you ?
+i ' m fine . thanks for your help .
+what ' s the matter today ?
+my parents and i ' ll have to go .

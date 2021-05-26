@@ -1,0 +1,29 @@
+Rationalized input ------> Response
+[MASK] are you [MASK] today ? [MASK] ------> i am going to the g ##ar ##ch ##ed to the new house right up . [SEP]
+[MASK] [MASK] you doing today [MASK] [MASK] i [MASK] going to [MASK] [MASK]arched to the [MASK] [MASK] right [MASK] . [SEP] ------> you ' re right . [SEP]
+how are you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] gar [MASK]ed to [MASK] [MASK] [MASK] right up [MASK] [MASK] you [MASK] [MASK] [MASK] . [SEP] ------> so what ? [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [SEP] i am [MASK] [MASK] the g [MASK]ched to the [MASK] house [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] re [MASK] [MASK] [MASK] so what ? [MASK] ------> well , you ' re lucky . [SEP]
+how [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] going to [MASK] [MASK]ar [MASK] [MASK] to the [MASK] [MASK] right up [MASK] [MASK] you [MASK] [MASK] right [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] well , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> thank you . [SEP]
+how are [MASK] [MASK] today ? [MASK] [MASK] am [MASK] [MASK] the [MASK]ar [MASK]ed [MASK] the new house [MASK] [MASK] [MASK] [MASK] you ' re right [MASK] [MASK] [MASK] [MASK] ? [MASK] well [MASK] [MASK] [MASK] [MASK] lucky . [MASK] [MASK] you [MASK] [SEP] ------> i know , i am so sorry . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] i [MASK] [MASK] to the [MASK]arched [MASK] the [MASK] house right [MASK] . [MASK] you [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] , [MASK] ' re lucky [MASK] [SEP] [MASK] you . [MASK] i [MASK] , i [MASK] so [MASK] . [MASK] ------> thank you . [SEP]
+[MASK] are [MASK] [MASK] today [MASK] [MASK] [MASK] [MASK] [MASK] to [MASK] g [MASK]ched [MASK] [MASK] [MASK] [MASK] right [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] [MASK] , [MASK] ' [MASK] [MASK] [MASK] [MASK] thank [MASK] . [MASK] i [MASK] , i [MASK] [MASK] sorry [MASK] [MASK] thank you [MASK] [MASK] ------> yes . i ' ll call a room for my card and see it . [SEP]
+[MASK] [MASK] [MASK] [MASK] today [MASK] [SEP] [MASK] am [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to the [MASK] house [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] re right [MASK] [MASK] so [MASK] [MASK] [MASK] well [MASK] [MASK] [MASK] re [MASK] . [SEP] [MASK] you . [MASK] i know , i [MASK] [MASK] [MASK] [MASK] [MASK] thank [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] room [MASK] [MASK] [MASK] and see it [MASK] [MASK] ------> yes , i ' ll have a look . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i am [MASK] to [MASK] [MASK]ar [MASK] [MASK] to [MASK] new [MASK] [MASK] up [MASK] [MASK] [MASK] ' re [MASK] [MASK] [MASK] [MASK] what [MASK] [SEP] [MASK] , [MASK] [MASK] re [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] i know , [MASK] am so [MASK] [MASK] [MASK] [MASK] you [MASK] [MASK] [MASK] . i [MASK] ll [MASK] [MASK] room for my card [MASK] see it [MASK] [MASK] [MASK] , i [MASK] [MASK] have a look [MASK] [SEP] ------> ok , thanks ! bye ! [SEP]
+[MASK] [MASK] [MASK] [MASK] today [MASK] [MASK] [MASK] [MASK] going to the [MASK] [MASK] [MASK]ed [MASK] the [MASK] [MASK] right [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] what ? [SEP] well , [MASK] [MASK] [MASK] lucky [MASK] [MASK] thank [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i am so [MASK] [MASK] [MASK] thank [MASK] . [SEP] yes . [MASK] [MASK] [MASK] [MASK] [MASK] room for [MASK] card [MASK] see it [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] have a [MASK] . [MASK] ok [MASK] [MASK] [MASK] [MASK] ! [SEP] ------> thank you very much . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i am going to the g [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] right [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] so [MASK] [MASK] [MASK] well , you ' re lucky . [MASK] [MASK] [MASK] [MASK] [MASK] i know , [MASK] am so [MASK] [MASK] [MASK] thank [MASK] [MASK] [MASK] [MASK] . i ' [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] and [MASK] [MASK] [MASK] [SEP] yes , [MASK] ' [MASK] have a [MASK] . [MASK] ok , thanks ! [MASK] ! [MASK] [MASK] you [MASK] much [MASK] [MASK] ------> i ' m afraid , i ' ll take a look at it . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i am going to the garched to the new house right up .
+you ' re right .
+so what ?
+well , you ' re lucky .
+thank you .
+i know , i am so sorry .
+thank you .
+yes . i ' ll call a room for my card and see it .
+yes , i ' ll have a look .
+ok , thanks ! bye !
+thank you very much .
+i ' m afraid , i ' ll take a look at it .

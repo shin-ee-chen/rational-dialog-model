@@ -1,0 +1,23 @@
+Rationalized input ------> Response
+how [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> how many years have you worked for a day ? [SEP]
+[MASK] are you doing [MASK] ? [MASK] [MASK] many years [MASK] [MASK] worked [MASK] a day [MASK] [MASK] ------> i am not too good . [SEP]
+[MASK] are [MASK] [MASK] [MASK] ? [MASK] [MASK] [MASK] [MASK] have [MASK] [MASK] [MASK] a [MASK] [MASK] [MASK] i am [MASK] too [MASK] . [SEP] ------> that ' s why that ’ s right and have a nice day . [SEP]
+[MASK] [MASK] [MASK] doing [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] worked for a [MASK] [MASK] [MASK] i am not too good [MASK] [MASK] [MASK] [MASK] [MASK] why [MASK] ’ s [MASK] [MASK] [MASK] [MASK] nice day . [SEP] ------> i know , i think so . i have no idea . [SEP]
+how [MASK] [MASK] doing [MASK] ? [MASK] how many years have you worked [MASK] a [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s why [MASK] ’ [MASK] [MASK] and have a nice day [MASK] [MASK] i [MASK] [MASK] i think [MASK] . [MASK] have no [MASK] . [MASK] ------> what ? [SEP]
+how are [MASK] doing today ? [MASK] how many years [MASK] you worked [MASK] [MASK] [MASK] ? [SEP] i [MASK] not too good [MASK] [MASK] that [MASK] [MASK] [MASK] [MASK] ’ s right and [MASK] a nice [MASK] [MASK] [SEP] i know , [MASK] [MASK] so [MASK] i [MASK] [MASK] idea . [MASK] [MASK] [MASK] [MASK] ------> i am not going to get something to drink . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] how many years [MASK] you worked [MASK] [MASK] [MASK] ? [SEP] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ' [MASK] [MASK] that [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] . i have [MASK] [MASK] [MASK] [SEP] what [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to [MASK] something to [MASK] . [SEP] ------> that sounds good for you ! what do you do on vacation ? [SEP]
+[MASK] [MASK] [MASK] doing [MASK] ? [MASK] [MASK] many [MASK] [MASK] you [MASK] for a day [MASK] [SEP] i am [MASK] too good [MASK] [MASK] that [MASK] s [MASK] that ’ [MASK] [MASK] [MASK] have a nice day . [MASK] [MASK] know , [MASK] [MASK] [MASK] [MASK] [MASK] have no idea [MASK] [SEP] [MASK] ? [MASK] i am [MASK] going to [MASK] something [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] for [MASK] [MASK] what [MASK] [MASK] do on [MASK] [MASK] [MASK] ------> i ' m in a hurry . i have some good advice . [SEP]
+[MASK] are [MASK] doing today [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] for [MASK] [MASK] ? [SEP] i [MASK] [MASK] too good [MASK] [SEP] that [MASK] [MASK] [MASK] [MASK] ’ [MASK] [MASK] [MASK] [MASK] a nice [MASK] [MASK] [SEP] [MASK] [MASK] , [MASK] [MASK] [MASK] . i [MASK] no idea [MASK] [SEP] [MASK] [MASK] [SEP] [MASK] am [MASK] [MASK] [MASK] get [MASK] to drink [MASK] [SEP] that sounds good for you ! what [MASK] [MASK] do [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] in a hurry [MASK] i [MASK] some [MASK] advice [MASK] [MASK] ------> good - bye ! [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+how many years have you worked for a day ?
+i am not too good .
+that ' s why that ’ s right and have a nice day .
+i know , i think so . i have no idea .
+what ?
+i am not going to get something to drink .
+that sounds good for you ! what do you do on vacation ?
+i ' m in a hurry . i have some good advice .
+good - bye !

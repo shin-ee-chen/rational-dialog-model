@@ -1,0 +1,17 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> no , i don ' t really like the sp ##ir ##it . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] t really like [MASK] sp [MASK] [MASK] [MASK] [MASK] ------> well , i ’ d love to . but i ’ m not so happy , but i don ’ [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] t really like [MASK] sp [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] to [MASK] but [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , but [MASK] [MASK] [MASK] [MASK] ------> that sounds pretty good . let me see . i don ' t like a b ##icy ##cle , but [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] t really like [MASK] sp [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] to [MASK] but [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , but [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] t like [MASK] [MASK]icy [MASK] , but [MASK] ------> i ' ll take one more . that ' s good . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] t really like [MASK] sp [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] to [MASK] but [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , but [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] t like [MASK] [MASK]icy [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i see . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] t really like [MASK] sp [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] to [MASK] but [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , but [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] t like [MASK] [MASK]icy [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i have been here with a couple of months in china . i ’ ve got a lot of money [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+no , i don ' t really like the spirit .
+well , i ’ d love to . but i ’ m not so happy , but i don ’
+that sounds pretty good . let me see . i don ' t like a bicycle , but
+i ' ll take one more . that ' s good .
+i see .
+i have been here with a couple of months in china . i ’ ve got a lot of money

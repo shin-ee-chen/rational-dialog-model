@@ -1,0 +1,25 @@
+Rationalized input ------> Response
+how are [MASK] [MASK] today ? [MASK] ------> i was just wondering if you like to have your job or work for a few years . [SEP]
+[MASK] are you doing [MASK] ? [MASK] i was just [MASK] if you like to [MASK] [MASK] [MASK] or work [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> what about a good job ? [SEP]
+[MASK] are [MASK] [MASK] today [MASK] [SEP] i [MASK] just wondering if [MASK] like to [MASK] [MASK] [MASK] [MASK] [MASK] for [MASK] few years . [SEP] [MASK] [MASK] [MASK] good job [MASK] [SEP] ------> oh , good . [SEP]
+how are [MASK] [MASK] [MASK] ? [MASK] i was just [MASK] if you like to have your job [MASK] work for [MASK] few years [MASK] [SEP] [MASK] [MASK] a [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] . [MASK] ------> what about this ? [SEP]
+how [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] was just wondering if you [MASK] to [MASK] [MASK] job or [MASK] for a few [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] job [MASK] [MASK] oh [MASK] good [MASK] [MASK] [MASK] about [MASK] ? [SEP] ------> no , thanks . [SEP]
+[MASK] [MASK] you [MASK] today [MASK] [SEP] i was just wondering if [MASK] [MASK] to [MASK] [MASK] job or [MASK] [MASK] a few [MASK] . [SEP] what about [MASK] good [MASK] [MASK] [SEP] oh , [MASK] . [MASK] [MASK] about [MASK] ? [SEP] no , thanks . [MASK] ------> what do you have ? [SEP]
+[MASK] [MASK] [MASK] [MASK] today ? [SEP] i [MASK] [MASK] [MASK] [MASK] you [MASK] to [MASK] [MASK] [MASK] [MASK] work for [MASK] few years [MASK] [MASK] [MASK] about a good job [MASK] [SEP] [MASK] , good [MASK] [MASK] [MASK] [MASK] this [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] what [MASK] [MASK] have ? [MASK] ------> i ' m sorry , i was looking for some of you . [SEP]
+how are you [MASK] [MASK] [MASK] [SEP] i [MASK] just [MASK] [MASK] you like [MASK] have your job [MASK] work for a few [MASK] . [SEP] what about a good [MASK] ? [SEP] oh [MASK] good [MASK] [SEP] [MASK] about [MASK] ? [SEP] [MASK] , thanks [MASK] [MASK] what do you have [MASK] [MASK] i ' m sorry , [MASK] [MASK] looking [MASK] some of [MASK] . [SEP] ------> you ' d better go in for your vacation . [SEP]
+how [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] i [MASK] just [MASK] if you [MASK] to [MASK] your job or work for [MASK] [MASK] [MASK] [MASK] [MASK] what about a good [MASK] ? [MASK] oh , [MASK] . [MASK] [MASK] about this [MASK] [SEP] [MASK] [MASK] thanks . [MASK] [MASK] [MASK] [MASK] have [MASK] [SEP] [MASK] [MASK] m [MASK] , i [MASK] looking for [MASK] [MASK] you [MASK] [SEP] you [MASK] d better go in for [MASK] [MASK] [MASK] [MASK] ------> i ' ll take it . [SEP]
+[MASK] [MASK] you doing [MASK] [MASK] [SEP] [MASK] [MASK] just wondering if [MASK] [MASK] to [MASK] your job [MASK] [MASK] for a [MASK] [MASK] . [SEP] [MASK] about a good job [MASK] [SEP] oh , [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] no [MASK] thanks . [MASK] [MASK] [MASK] you [MASK] [MASK] [SEP] [MASK] [MASK] m sorry [MASK] [MASK] [MASK] looking [MASK] some of you [MASK] [MASK] [MASK] ' d better go [MASK] for [MASK] [MASK] [MASK] [MASK] i ' [MASK] [MASK] it [MASK] [SEP] ------> i ’ m sorry , i ' m going to be a job , i have to work in . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i was just wondering if you like to have your job or work for a few years .
+what about a good job ?
+oh , good .
+what about this ?
+no , thanks .
+what do you have ?
+i ' m sorry , i was looking for some of you .
+you ' d better go in for your vacation .
+i ' ll take it .
+i ’ m sorry , i ' m going to be a job , i have to work in .

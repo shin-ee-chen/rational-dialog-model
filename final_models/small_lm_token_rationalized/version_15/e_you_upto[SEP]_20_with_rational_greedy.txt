@@ -1,0 +1,17 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> that ’ s a great . i ’ ve lost the new car . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] a great [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i think so , i ’ m looking forward to a good job . i have to get a great [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] a great [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] , i [MASK] m [MASK] forward to a [MASK] job . i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> what do you think of your company ? do you know where the govern ##ment will have to go ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] a great [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] , i [MASK] m [MASK] forward to a [MASK] job [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] where [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> ok . i see . i ’ m in a ##ust ##ral ##ia . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] a great [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] , i [MASK] m [MASK] forward to a [MASK] job [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] where [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ok [MASK] i see [MASK] i [MASK] m in a [MASK] [MASK] [MASK] [MASK] [MASK] ------> i don ' t think so . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] a great [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] , i [MASK] m [MASK] forward to a [MASK] job [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] where [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ok [MASK] i see [MASK] i [MASK] m in a [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ' m not sure . i ' m looking for a few days . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+that ’ s a great . i ’ ve lost the new car .
+i think so , i ’ m looking forward to a good job . i have to get a great
+what do you think of your company ? do you know where the government will have to go ?
+ok . i see . i ’ m in australia .
+i don ' t think so .
+i ' m not sure . i ' m looking for a few days .

@@ -1,0 +1,21 @@
+Rationalized input ------> Response
+[MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ’ d love to go to my name in your house . [SEP]
+[MASK] [MASK] [MASK] [MASK] today ? [MASK] [MASK] ’ [MASK] love [MASK] [MASK] to my name [MASK] your [MASK] [MASK] [MASK] ------> yes , i was at home with you . [SEP]
+[MASK] are [MASK] [MASK] [MASK] ? [SEP] i [MASK] d [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] in [MASK] [MASK] . [MASK] yes , i was [MASK] [MASK] with [MASK] [MASK] [MASK] ------> i don ' t think i did . but i like my job . [SEP]
+[MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] ’ [MASK] [MASK] [MASK] [MASK] [MASK] my name in your [MASK] [MASK] [SEP] [MASK] [MASK] i [MASK] [MASK] [MASK] with you [MASK] [MASK] [MASK] don ' [MASK] [MASK] i [MASK] . [MASK] i like my job . [MASK] ------> what are you going to do ? [SEP]
+how [MASK] you [MASK] today [MASK] [MASK] i ’ d [MASK] to [MASK] [MASK] [MASK] [MASK] in your [MASK] . [MASK] [MASK] , i [MASK] [MASK] [MASK] with you . [MASK] i [MASK] ' t [MASK] [MASK] [MASK] . but i [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] to do [MASK] [MASK] ------> i would love the bus . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ’ [MASK] [MASK] [MASK] [MASK] to [MASK] name [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] was at home with [MASK] . [SEP] i [MASK] [MASK] t [MASK] i [MASK] [MASK] [MASK] i like [MASK] job [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] bus . [MASK] ------> i ’ m glad you enjoy ##red . i ’ m really looking forward to this . [SEP]
+[MASK] [MASK] [MASK] [MASK] today [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] to go [MASK] [MASK] name in [MASK] house [MASK] [MASK] [MASK] , [MASK] was [MASK] home [MASK] [MASK] [MASK] [SEP] [MASK] don ' [MASK] think [MASK] did [MASK] [MASK] i [MASK] my job [MASK] [MASK] [MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] would [MASK] [MASK] bus [MASK] [SEP] i ’ m [MASK] you enjoy [MASK] [MASK] [MASK] ’ [MASK] really [MASK] forward to [MASK] . [MASK] ------> you ’ d better go to the library ? [SEP]
+[MASK] [MASK] [MASK] [MASK] today ? [MASK] [MASK] ’ [MASK] [MASK] to [MASK] to [MASK] name in your [MASK] [MASK] [MASK] yes [MASK] [MASK] [MASK] [MASK] home with [MASK] [MASK] [SEP] [MASK] [MASK] ' t think i did [MASK] [MASK] i [MASK] my job [MASK] [MASK] what [MASK] you [MASK] [MASK] do [MASK] [SEP] i [MASK] [MASK] the [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i ’ m really looking forward [MASK] [MASK] [MASK] [SEP] you [MASK] d [MASK] [MASK] to [MASK] [MASK] ? [MASK] ------> not really . i think it ’ s a real promot ##ion . but i ’ ve been working on [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i ’ d love to go to my name in your house .
+yes , i was at home with you .
+i don ' t think i did . but i like my job .
+what are you going to do ?
+i would love the bus .
+i ’ m glad you enjoyred . i ’ m really looking forward to this .
+you ’ d better go to the library ?
+not really . i think it ’ s a real promotion . but i ’ ve been working on

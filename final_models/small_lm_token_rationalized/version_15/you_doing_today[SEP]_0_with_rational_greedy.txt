@@ -1,0 +1,25 @@
+Rationalized input ------> Response
+how [MASK] [MASK] [MASK] today [MASK] [SEP] ------> i am not sure if i could , please . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i am not sure if i [MASK] , please [MASK] [SEP] ------> how about this new shir ##t and go to an office ? i ' d like to buy it . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i am not sure if i [MASK] , please [MASK] [SEP] how about this new shirt and go [MASK] [MASK] office ? i ' [MASK] like [MASK] [MASK] [MASK] [MASK] [SEP] ------> how much is it ? [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i am not sure if i [MASK] , please [MASK] [SEP] how about this new shirt and go [MASK] [MASK] office ? i ' [MASK] like [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] much is [MASK] [MASK] [SEP] ------> thank you . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i am not sure if i [MASK] , please [MASK] [SEP] how about this new shirt and go [MASK] [MASK] office ? i ' [MASK] like [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] much is [MASK] [MASK] [SEP] thank you [MASK] [SEP] ------> yes . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i am not sure if i [MASK] , please [MASK] [SEP] how about this new shirt and go [MASK] [MASK] office ? i ' [MASK] like [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] much is [MASK] [MASK] [SEP] thank you [MASK] [SEP] [MASK] [MASK] [MASK] ------> i can see my mother . you will buy a new bedroom sign , i will . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i am not sure if i [MASK] , please [MASK] [SEP] how about this new shirt and go [MASK] [MASK] office ? i ' [MASK] like [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] much is [MASK] [MASK] [SEP] thank you [MASK] [SEP] [MASK] [MASK] [SEP] i can see my mother . you will buy a new [MASK] sign , i will . [SEP] ------> ok . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i am not sure if i [MASK] , please [MASK] [SEP] how about this new shirt and go [MASK] [MASK] office ? i ' [MASK] like [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] much is [MASK] [MASK] [SEP] thank you [MASK] [SEP] [MASK] [MASK] [SEP] i can see my mother . you will buy a new [MASK] sign , i will . [SEP] ok [MASK] [SEP] ------> yes , but you will fill out a little bit more for the time . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i am not sure if i [MASK] , please [MASK] [SEP] how about this new shirt and go [MASK] [MASK] office ? i ' [MASK] like [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] much is [MASK] [MASK] [SEP] thank you [MASK] [SEP] [MASK] [MASK] [SEP] i can see my mother . you will buy a new [MASK] sign , i will . [SEP] ok [MASK] [SEP] yes , but you will fill out a little bit more [MASK] the time . [SEP] ------> how about the air ##port ? [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i am not sure if i [MASK] , please [MASK] [SEP] how about this new shirt and go [MASK] [MASK] office ? i ' [MASK] like [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] much is [MASK] [MASK] [SEP] thank you [MASK] [SEP] [MASK] [MASK] [SEP] i can see my mother . you will buy a new [MASK] sign , i will . [SEP] ok [MASK] [SEP] yes , but you will fill out a little bit more [MASK] the time . [SEP] [MASK] [MASK] the airport [MASK] [SEP] ------> sure . but i ' m sure you ' ll get it . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i am not sure if i could , please .
+how about this new shirt and go to an office ? i ' d like to buy it .
+how much is it ?
+thank you .
+yes .
+i can see my mother . you will buy a new bedroom sign , i will .
+ok .
+yes , but you will fill out a little bit more for the time .
+how about the airport ?
+sure . but i ' m sure you ' ll get it .

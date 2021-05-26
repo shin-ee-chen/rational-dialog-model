@@ -1,0 +1,15 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> what ' s wrong ? i ’ m not . i don ’ t know what ’ s doing with [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> ok ! i ’ ve just put your room and a single room , you can call me on my [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ok [MASK] i [MASK] [MASK] [MASK] put [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> yes , i ’ ve been feeling . i have a problem for a couple weeks . my father is [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ok [MASK] i [MASK] [MASK] [MASK] put [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] been feeling [MASK] i have [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> thanks . i am not . i will . what are your job ##s ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ok [MASK] i [MASK] [MASK] [MASK] put [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] been feeling [MASK] i have [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> you are quite good . i am not sure what i do . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+what ' s wrong ? i ’ m not . i don ’ t know what ’ s doing with
+ok ! i ’ ve just put your room and a single room , you can call me on my
+yes , i ’ ve been feeling . i have a problem for a couple weeks . my father is
+thanks . i am not . i will . what are your jobs ?
+you are quite good . i am not sure what i do .

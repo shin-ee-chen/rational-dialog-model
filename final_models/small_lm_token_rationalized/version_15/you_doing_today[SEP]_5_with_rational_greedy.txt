@@ -1,0 +1,29 @@
+Rationalized input ------> Response
+how are [MASK] [MASK] today ? [SEP] ------> i am . [SEP]
+how are [MASK] [MASK] today ? [SEP] i am . [SEP] ------> thank you . [SEP]
+how are [MASK] [MASK] today ? [SEP] i am . [SEP] thank you . [MASK] ------> thank you . we ' re going to have to do something . [SEP]
+how are [MASK] [MASK] today ? [SEP] i am . [SEP] thank you . [MASK] thank you . we [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] . [SEP] ------> bye . [SEP]
+how are [MASK] [MASK] today ? [SEP] i am . [SEP] thank you . [MASK] thank you . we [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] . [SEP] bye [MASK] [MASK] ------> i ’ m going to have to do my best . [SEP]
+how are [MASK] [MASK] today ? [SEP] i am . [SEP] thank you . [MASK] thank you . we [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] . [SEP] bye . [MASK] i ’ m going [MASK] [MASK] [MASK] do my best . [SEP] ------> i ' m a little bit to me . [SEP]
+how are [MASK] [MASK] today ? [SEP] i am . [SEP] thank you . [MASK] thank you . we [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] . [SEP] bye . [MASK] i ’ m going [MASK] [MASK] [MASK] do my best . [SEP] i [MASK] m a little bit [MASK] me . [MASK] ------> what about tomorrow night ? [SEP]
+how are [MASK] [MASK] today ? [SEP] i am . [SEP] thank you . [MASK] thank you . we [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] . [SEP] bye . [MASK] i ’ m going [MASK] [MASK] [MASK] do my best . [SEP] i [MASK] m a little bit [MASK] me . [MASK] what about tomorrow night ? [SEP] ------> it ' s just a good job . [SEP]
+how are [MASK] [MASK] today ? [SEP] i am . [SEP] thank you . [MASK] thank you . we [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] . [SEP] bye . [MASK] i ’ m going [MASK] [MASK] [MASK] do my best . [SEP] i [MASK] m a little bit [MASK] me . [MASK] what about tomorrow night ? [MASK] [MASK] [MASK] s just a good job . [SEP] ------> do you like anything ? [SEP]
+how are [MASK] [MASK] today ? [SEP] i am . [SEP] thank you . [MASK] thank you . we [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] . [SEP] bye . [MASK] i ’ m going [MASK] [MASK] [MASK] do my best . [SEP] i [MASK] m a little bit [MASK] me . [MASK] what about tomorrow night ? [MASK] [MASK] [MASK] s just a good job . [SEP] do you like anything ? [SEP] ------> i ' m going to work . [SEP]
+how are [MASK] [MASK] today ? [SEP] i am . [SEP] thank you . [MASK] thank you . we [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] . [SEP] bye . [MASK] i ’ m going [MASK] [MASK] [MASK] do my best . [SEP] i [MASK] m a little bit [MASK] me . [MASK] what about tomorrow night ? [MASK] [MASK] [MASK] s just a good job . [SEP] do you like anything ? [SEP] i [MASK] m going to work . [SEP] ------> what do you think ? [SEP]
+how are [MASK] [MASK] today ? [SEP] i am . [SEP] thank you . [MASK] thank you . we [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] . [SEP] bye . [MASK] i ’ m going [MASK] [MASK] [MASK] do my best . [SEP] i [MASK] m a little bit [MASK] me . [MASK] what about tomorrow night ? [MASK] [MASK] [MASK] s just a good job . [SEP] do you like anything ? [SEP] i [MASK] m going to work . [SEP] what do you think ? [SEP] ------> i don ' t have any ho ##b ##b ##ies . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i am .
+thank you .
+thank you . we ' re going to have to do something .
+bye .
+i ’ m going to have to do my best .
+i ' m a little bit to me .
+what about tomorrow night ?
+it ' s just a good job .
+do you like anything ?
+i ' m going to work .
+what do you think ?
+i don ' t have any hobbies .

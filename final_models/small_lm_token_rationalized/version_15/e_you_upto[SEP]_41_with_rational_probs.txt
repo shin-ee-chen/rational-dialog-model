@@ -1,0 +1,21 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK]to ? [MASK] ------> it ' s the same thing ! how about you ? [SEP]
+[MASK] [MASK] you [MASK]t [MASK] ? [MASK] [MASK] [MASK] [MASK] the same thing [MASK] [MASK] [MASK] [MASK] ? [MASK] ------> i think the company will make a job i can find the work ##s and i can take it . [SEP]
+what [MASK] [MASK] upto [MASK] [MASK] [MASK] [MASK] s the same [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] the company will [MASK] a [MASK] [MASK] [MASK] [MASK] [MASK] [MASK]s and i [MASK] [MASK] it [MASK] [SEP] ------> what is your favorite case ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s [MASK] same thing [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] company will [MASK] [MASK] [MASK] i [MASK] find [MASK] works [MASK] [MASK] can [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> what ' s your favorite job ? [SEP]
+[MASK] [MASK] you upt [MASK] ? [MASK] [MASK] [MASK] [MASK] the same thing [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] company [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] the [MASK] [MASK] [MASK] [MASK] [MASK] take [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] [MASK] [MASK] s [MASK] [MASK] [MASK] [MASK] [MASK] ------> you ’ re right . what ' s your name , mr . wa ##n ##g ? i don ' [SEP]
+what [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s [MASK] [MASK] [MASK] [MASK] [MASK] about you [MASK] [MASK] i think the [MASK] [MASK] [MASK] a [MASK] i can find [MASK] work [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] job [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s your [MASK] [MASK] mr . [MASK] [MASK]g [MASK] i [MASK] ' [MASK] ------> that is not good idea . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i think [MASK] company [MASK] make [MASK] job [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] it [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ' [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] idea [MASK] [MASK] ------> i see . that ' s all right . [SEP]
+[MASK] [MASK] [MASK] upt [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] the same [MASK] [MASK] how [MASK] [MASK] ? [MASK] i [MASK] the [MASK] will make [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] work [MASK] [MASK] i [MASK] [MASK] it [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s [MASK] [MASK] job [MASK] [MASK] [MASK] ’ [MASK] right [MASK] what [MASK] s [MASK] [MASK] , mr . [MASK] [MASK] [MASK] ? i [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] good idea [MASK] [MASK] i see [MASK] that [MASK] [MASK] all right . [MASK] ------> oh , that ’ s all right ! [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+it ' s the same thing ! how about you ?
+i think the company will make a job i can find the works and i can take it .
+what is your favorite case ?
+what ' s your favorite job ?
+you ’ re right . what ' s your name , mr . wang ? i don '
+that is not good idea .
+i see . that ' s all right .
+oh , that ’ s all right !

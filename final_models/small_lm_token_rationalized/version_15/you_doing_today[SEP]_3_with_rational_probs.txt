@@ -1,0 +1,33 @@
+Rationalized input ------> Response
+how [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> good . what are you doing now ? [SEP]
+[MASK] [MASK] [MASK] [MASK] today ? [MASK] good . what [MASK] you [MASK] now ? [SEP] ------> i need to do some more . [SEP]
+how [MASK] you doing [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] you [MASK] now [MASK] [SEP] [MASK] need [MASK] do some more . [MASK] ------> that ' s true . i hope it was great . [SEP]
+how are [MASK] doing today [MASK] [SEP] [MASK] . what are you doing now [MASK] [SEP] i need to do some [MASK] [MASK] [MASK] that ' s [MASK] . i hope it was great . [SEP] ------> i think you will be going to work on the way . [SEP]
+how are you [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] are [MASK] [MASK] now [MASK] [MASK] [MASK] [MASK] [MASK] do some more [MASK] [SEP] that ' s true [MASK] i hope it [MASK] great [MASK] [SEP] i think you will be [MASK] to work [MASK] the way [MASK] [SEP] ------> i think i know that i would have to go out . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] what are you [MASK] now ? [MASK] i need to do [MASK] [MASK] [MASK] [SEP] that ' [MASK] true . i [MASK] it [MASK] great . [MASK] [MASK] think you will be going [MASK] work [MASK] [MASK] way [MASK] [SEP] i [MASK] [MASK] [MASK] that [MASK] would have [MASK] go [MASK] [MASK] [SEP] ------> thank you ! [SEP]
+how are [MASK] [MASK] [MASK] [MASK] [SEP] good . [MASK] [MASK] you doing now [MASK] [SEP] i [MASK] to do some more . [MASK] [MASK] [MASK] [MASK] true [MASK] [MASK] hope [MASK] was great . [MASK] [MASK] think you [MASK] [MASK] going to work [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i know that i [MASK] [MASK] to [MASK] out . [MASK] thank you ! [SEP] ------> thanks . [SEP]
+[MASK] [MASK] [MASK] [MASK] today [MASK] [MASK] good . [MASK] are you [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] do some more [MASK] [MASK] [MASK] ' [MASK] [MASK] . [MASK] hope [MASK] was great . [MASK] [MASK] [MASK] you will [MASK] [MASK] to [MASK] on [MASK] way [MASK] [MASK] i think [MASK] [MASK] that i would have [MASK] go out [MASK] [MASK] thank [MASK] ! [MASK] thanks . [SEP] ------> thank you for your help ! [SEP]
+[MASK] are [MASK] [MASK] [MASK] ? [SEP] [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] ? [SEP] [MASK] need [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] that [MASK] s [MASK] [MASK] i [MASK] it was [MASK] . [SEP] i think you [MASK] [MASK] going to work [MASK] the [MASK] . [MASK] [MASK] think i [MASK] [MASK] [MASK] would [MASK] [MASK] go [MASK] . [MASK] thank you [MASK] [SEP] [MASK] . [SEP] [MASK] you [MASK] your help ! [SEP] ------> ok . [SEP]
+how are you doing today [MASK] [SEP] good [MASK] [MASK] are [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] to do some more [MASK] [MASK] that ' [MASK] true [MASK] [MASK] hope it [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] you [MASK] be going [MASK] work on the way . [SEP] [MASK] think i [MASK] that [MASK] [MASK] have [MASK] go [MASK] [MASK] [SEP] thank [MASK] ! [MASK] [MASK] . [MASK] thank you [MASK] [MASK] help ! [MASK] ok [MASK] [SEP] ------> i see . [SEP]
+[MASK] are you doing [MASK] [MASK] [SEP] good . [MASK] [MASK] you [MASK] now ? [SEP] i need [MASK] do some [MASK] [MASK] [MASK] [MASK] ' s [MASK] . i [MASK] it [MASK] great [MASK] [SEP] i think you will be [MASK] [MASK] work on [MASK] way . [MASK] i think [MASK] [MASK] that i [MASK] have to go [MASK] . [SEP] thank you ! [MASK] thanks . [MASK] [MASK] you [MASK] [MASK] [MASK] ! [MASK] ok [MASK] [SEP] i see . [SEP] ------> bye . [SEP]
+how [MASK] [MASK] doing today [MASK] [MASK] [MASK] [MASK] what are [MASK] [MASK] now ? [MASK] i need to do [MASK] [MASK] . [MASK] [MASK] ' s true . [MASK] hope it [MASK] [MASK] . [MASK] i [MASK] you will be going [MASK] work on [MASK] [MASK] [MASK] [MASK] i think i know [MASK] [MASK] [MASK] [MASK] to [MASK] [MASK] [MASK] [SEP] thank you ! [MASK] thanks [MASK] [MASK] [MASK] [MASK] for your help [MASK] [MASK] ok [MASK] [MASK] i see . [SEP] [MASK] [MASK] [SEP] ------> you are welcome . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] good [MASK] [MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] some more [MASK] [MASK] [MASK] [MASK] s true . i [MASK] it was [MASK] [MASK] [SEP] [MASK] think [MASK] [MASK] [MASK] going [MASK] work [MASK] the [MASK] . [MASK] [MASK] [MASK] i know that i would [MASK] [MASK] go [MASK] [MASK] [MASK] thank you ! [MASK] thanks [MASK] [MASK] thank [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ok . [SEP] i see [MASK] [SEP] bye [MASK] [MASK] you [MASK] welcome [MASK] [SEP] ------> ok . thank you . [SEP]
+[MASK] [MASK] [MASK] doing today ? [SEP] good [MASK] what [MASK] you doing now ? [SEP] [MASK] need to [MASK] some [MASK] [MASK] [SEP] that ' s true . i hope [MASK] [MASK] [MASK] [MASK] [SEP] i [MASK] you will be going [MASK] [MASK] [MASK] [MASK] way . [SEP] i think [MASK] [MASK] that [MASK] [MASK] have to [MASK] out [MASK] [MASK] [MASK] you ! [MASK] [MASK] . [SEP] thank [MASK] [MASK] [MASK] [MASK] ! [MASK] ok [MASK] [MASK] i [MASK] . [MASK] bye [MASK] [SEP] you are [MASK] . [SEP] ok . [MASK] [MASK] . [MASK] ------> what do you think ? [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+good . what are you doing now ?
+i need to do some more .
+that ' s true . i hope it was great .
+i think you will be going to work on the way .
+i think i know that i would have to go out .
+thank you !
+thanks .
+thank you for your help !
+ok .
+i see .
+bye .
+you are welcome .
+ok . thank you .
+what do you think ?

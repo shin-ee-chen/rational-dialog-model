@@ -1,0 +1,15 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> not yet . but you know , i have nothing to do . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] yet [MASK] but [MASK] [MASK] , i [MASK] nothing to [MASK] [MASK] [MASK] ------> what happened ? i ' m so glad that my friend like ##d the time . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] yet [MASK] but [MASK] [MASK] , i [MASK] nothing to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] glad [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ’ m afraid of the new year ’ s birthday . i ’ m so happy to get a [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] yet [MASK] but [MASK] [MASK] , i [MASK] nothing to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] glad [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] year [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i am not sure . what about you ? i ' ve got an o ##v ##s of a r [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] yet [MASK] but [MASK] [MASK] , i [MASK] nothing to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] glad [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] year [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i know , but i ' m afraid i ' m afraid of time , but i am still busy [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+not yet . but you know , i have nothing to do .
+what happened ? i ' m so glad that my friend liked the time .
+i ’ m afraid of the new year ’ s birthday . i ’ m so happy to get a
+i am not sure . what about you ? i ' ve got an ovs of a r
+i know , but i ' m afraid i ' m afraid of time , but i am still busy

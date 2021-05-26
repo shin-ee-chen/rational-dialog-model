@@ -1,0 +1,23 @@
+Rationalized input ------> Response
+how [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i have a problem . [SEP]
+how [MASK] you doing [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] problem [MASK] [SEP] ------> what do you mean , you are right at seven years ? [SEP]
+[MASK] are you [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] . [MASK] what do [MASK] mean , you are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> what ? i just went to school with her ! [SEP]
+[MASK] are you [MASK] [MASK] [MASK] [MASK] [MASK] have a [MASK] [MASK] [SEP] what do [MASK] mean , you [MASK] [MASK] at [MASK] [MASK] ? [MASK] [MASK] [MASK] [MASK] [MASK] went [MASK] [MASK] with [MASK] ! [MASK] ------> i ' d love to . [SEP]
+[MASK] [MASK] [MASK] doing [MASK] ? [MASK] [MASK] [MASK] a problem [MASK] [MASK] [MASK] do [MASK] mean , you are [MASK] at [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] with her [MASK] [MASK] [MASK] [MASK] d [MASK] to [MASK] [MASK] ------> i don ’ t know . i can ’ t believe it ! [SEP]
+how are [MASK] doing [MASK] [MASK] [MASK] i have [MASK] [MASK] [MASK] [MASK] what [MASK] [MASK] mean , you [MASK] right [MASK] [MASK] [MASK] [MASK] [MASK] what [MASK] [MASK] just [MASK] [MASK] school with [MASK] [MASK] [MASK] i ' d love [MASK] . [MASK] [MASK] [MASK] ’ t [MASK] [MASK] [MASK] can ’ [MASK] [MASK] [MASK] [MASK] [SEP] ------> that ’ s a wonderful idea . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] ? [SEP] i [MASK] [MASK] problem . [MASK] what do [MASK] mean [MASK] you [MASK] right at [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i just [MASK] [MASK] [MASK] with her [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] to [MASK] [MASK] i don ’ t know . [MASK] [MASK] ’ [MASK] [MASK] it [MASK] [MASK] [MASK] ’ [MASK] a [MASK] [MASK] . [SEP] ------> oh , i guess i ' m sure you ’ re so busy . [SEP]
+[MASK] [MASK] you [MASK] today [MASK] [MASK] [MASK] [MASK] a [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] you are [MASK] at [MASK] years [MASK] [MASK] what [MASK] [MASK] [MASK] [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ' d [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] know . [MASK] [MASK] ’ [MASK] believe [MASK] [MASK] [MASK] [MASK] ’ s [MASK] [MASK] idea [MASK] [MASK] [MASK] [MASK] [MASK] guess i ' m sure you [MASK] [MASK] [MASK] [MASK] . [MASK] ------> you know ! you should go to the movies . [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] what do [MASK] mean , you [MASK] right [MASK] [MASK] [MASK] ? [SEP] [MASK] ? i just went [MASK] school with [MASK] ! [MASK] [MASK] [MASK] d [MASK] [MASK] . [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] can ’ t believe it ! [MASK] that [MASK] s [MASK] [MASK] idea [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] sure [MASK] [MASK] [MASK] [MASK] busy [MASK] [MASK] you know [MASK] you should [MASK] [MASK] the [MASK] . [MASK] ------> thank you for coming . let ' s get up . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i have a problem .
+what do you mean , you are right at seven years ?
+what ? i just went to school with her !
+i ' d love to .
+i don ’ t know . i can ’ t believe it !
+that ’ s a wonderful idea .
+oh , i guess i ' m sure you ’ re so busy .
+you know ! you should go to the movies .
+thank you for coming . let ' s get up .

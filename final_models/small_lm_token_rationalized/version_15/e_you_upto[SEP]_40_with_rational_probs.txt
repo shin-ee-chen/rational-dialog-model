@@ -1,0 +1,31 @@
+Rationalized input ------> Response
+what [MASK] you upt [MASK] [MASK] [SEP] ------> i want one for three weeks . [SEP]
+[MASK] [MASK] you up [MASK] [MASK] ? [MASK] i want one for three weeks . [MASK] ------> is that all you like ? [SEP]
+what are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] weeks [MASK] [SEP] is that [MASK] you [MASK] ? [MASK] ------> yes . [SEP]
+what [MASK] you upt [MASK] [MASK] [MASK] i want [MASK] for three [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> what kind of sports do do you like ? [SEP]
+[MASK] [MASK] you [MASK] [MASK]o ? [SEP] i [MASK] [MASK] [MASK] three [MASK] [MASK] [MASK] [MASK] [MASK] all [MASK] [MASK] [MASK] [MASK] yes [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do you like [MASK] [MASK] ------> yes , i do . [SEP]
+what [MASK] [MASK] [MASK] [MASK]o [MASK] [MASK] [MASK] [MASK] [MASK] for [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] yes [MASK] [MASK] [MASK] [MASK] [MASK] sports [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] yes , i [MASK] . [MASK] ------> that ' s a good idea . [SEP]
+[MASK] [MASK] you [MASK]t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] for [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] yes . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] ' s [MASK] [MASK] [MASK] . [MASK] ------> i see , thank you . [SEP]
+[MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] want [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] of sports do [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] a [MASK] idea [MASK] [MASK] i [MASK] , [MASK] [MASK] [MASK] [MASK] ------> sure . let me see ... here are the r ##ush hour . thank you . [SEP]
+what are you up [MASK] [MASK] [MASK] [MASK] i want one [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] all you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do do you [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s [MASK] good [MASK] [MASK] [MASK] [MASK] see , [MASK] [MASK] [MASK] [MASK] sure [MASK] let [MASK] [MASK] ... [MASK] are [MASK] [MASK] [MASK] hour [MASK] [MASK] [MASK] [MASK] [SEP] ------> thanks . [SEP]
+[MASK] [MASK] you upt [MASK] [MASK] [MASK] i want [MASK] [MASK] [MASK] weeks [MASK] [MASK] [MASK] [MASK] all [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] you [MASK] [MASK] [MASK] yes , i do . [MASK] [MASK] [MASK] [MASK] [MASK] good idea . [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] let [MASK] see ... [MASK] [MASK] [MASK] [MASK]ush hour [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> thanks a lot . [SEP]
+what are [MASK] up [MASK]o ? [MASK] [MASK] want one [MASK] three weeks [MASK] [SEP] [MASK] [MASK] all [MASK] [MASK] ? [MASK] [MASK] [MASK] [MASK] [MASK] kind [MASK] [MASK] do [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] a [MASK] [MASK] . [MASK] i [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] let me [MASK] [MASK] [MASK] are [MASK] r [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] a [MASK] [MASK] [SEP] ------> what ' s that ? [SEP]
+what [MASK] [MASK] up [MASK]o [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] weeks [MASK] [MASK] [MASK] that all you [MASK] ? [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] , [MASK] do . [MASK] [MASK] [MASK] [MASK] [MASK] good [MASK] [MASK] [MASK] i see [MASK] thank [MASK] [MASK] [MASK] [MASK] [MASK] let [MASK] see [MASK] here [MASK] [MASK] [MASK] [MASK] hour [MASK] thank [MASK] . [MASK] [MASK] . [MASK] [MASK] [MASK] lot [MASK] [MASK] [MASK] ' s [MASK] [MASK] [SEP] ------> thank you ! [SEP]
+[MASK] [MASK] [MASK] upt [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] what [MASK] [MASK] [MASK] [MASK] do [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] a good idea [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] let [MASK] [MASK] [MASK] [MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] thank you [MASK] [MASK] thanks [MASK] [MASK] thanks [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] you ! [MASK] ------> i ’ m sorry . i will try to help my money . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i want one for three weeks .
+is that all you like ?
+yes .
+what kind of sports do do you like ?
+yes , i do .
+that ' s a good idea .
+i see , thank you .
+sure . let me see ... here are the rush hour . thank you .
+thanks .
+thanks a lot .
+what ' s that ?
+thank you !
+i ’ m sorry . i will try to help my money .

@@ -18,18 +18,18 @@ tokenizer:
   link: './daily_dialog/tokenizer.json'
 hparams:
   learning_rate: 0.0001
-  freeze_language_ml: False
+  freeze_language_model: False
 loss_module: crossentropyloss
 trainer:
-  type: policy #Type of the pytorch lighntning model we are training.
-  max_epochs: 25
+  type: shared #Type of the pytorch lighntning model we are training.
+  max_epochs: 50
   log_every_n_steps: 1
 rational_extractor:
   type: shared_embedding
   pretrained: False
-  # load_location: './models/shared_simple.pt'
+  load_location: './models/shared_simple.pt'
   save_location: './models/shared_simple.pt'
-  paramaters:
+  parameters:
     fussed_lasso_weight: 0.01
     sparsity_weight: 0.1
 

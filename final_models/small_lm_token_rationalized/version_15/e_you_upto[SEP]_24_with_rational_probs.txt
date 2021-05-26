@@ -1,0 +1,25 @@
+Rationalized input ------> Response
+what are you [MASK] [MASK]o [MASK] [MASK] ------> good night ! [SEP]
+what [MASK] [MASK] [MASK] [MASK]o ? [MASK] [MASK] night [MASK] [SEP] ------> i have a great idea . [SEP]
+what are [MASK] [MASK]t [MASK] ? [MASK] [MASK] night ! [SEP] i [MASK] a [MASK] idea . [MASK] ------> i didn ’ t think that i ’ m getting up ##se ##t with it . [SEP]
+[MASK] are [MASK] up [MASK] [MASK] ? [SEP] [MASK] [MASK] [MASK] [SEP] i have [MASK] [MASK] idea [MASK] [SEP] i [MASK] ’ t [MASK] that i [MASK] m getting [MASK] [MASK] [MASK] with [MASK] [MASK] [MASK] ------> i see . [SEP]
+what are you [MASK]to ? [SEP] good [MASK] [MASK] [SEP] [MASK] have [MASK] [MASK] idea . [SEP] [MASK] [MASK] [MASK] t [MASK] that i ’ m getting up [MASK] [MASK] with it . [MASK] [MASK] see . [SEP] ------> i see . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] good [MASK] [MASK] [SEP] i [MASK] [MASK] [MASK] idea [MASK] [MASK] i didn ’ t think [MASK] [MASK] ’ m getting [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] . [MASK] i see . [MASK] ------> you are doing a good game in my mind . the doctor says he ’ s a very good job [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] good night ! [SEP] i have [MASK] [MASK] idea . [SEP] i didn [MASK] t [MASK] [MASK] i [MASK] [MASK] [MASK] upse [MASK] [MASK] it . [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] you [MASK] doing [MASK] good [MASK] in [MASK] [MASK] . [MASK] [MASK] says he ’ s [MASK] very [MASK] job [MASK] ------> you ’ re right . [SEP]
+[MASK] [MASK] [MASK] up [MASK]o [MASK] [SEP] good [MASK] ! [SEP] [MASK] [MASK] a great idea [MASK] [MASK] [MASK] [MASK] ’ [MASK] think [MASK] i [MASK] [MASK] getting up [MASK] [MASK] with [MASK] [MASK] [SEP] [MASK] [MASK] . [SEP] [MASK] see [MASK] [MASK] [MASK] are [MASK] a [MASK] game [MASK] my [MASK] . the [MASK] says [MASK] ’ [MASK] [MASK] very [MASK] job [MASK] [MASK] ’ re right . [SEP] ------> yes . and the weather has a lot of fun with me . [SEP]
+[MASK] are [MASK] upto [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] a [MASK] idea [MASK] [SEP] i didn ’ [MASK] think that i ’ m [MASK] up [MASK]t with [MASK] . [SEP] i see . [SEP] [MASK] [MASK] . [SEP] [MASK] are [MASK] a good [MASK] [MASK] [MASK] [MASK] [MASK] the doctor [MASK] [MASK] ’ s [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] right [MASK] [MASK] [MASK] [MASK] and [MASK] weather [MASK] [MASK] lot [MASK] fun with me [MASK] [SEP] ------> i see , so i know how to play . [SEP]
+[MASK] are [MASK] up [MASK] [MASK] [MASK] [MASK] [MASK] night ! [MASK] i have a [MASK] [MASK] . [MASK] [MASK] didn [MASK] [MASK] [MASK] [MASK] i ’ [MASK] [MASK] up [MASK]t with [MASK] . [MASK] [MASK] see . [MASK] [MASK] see [MASK] [SEP] you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . the [MASK] [MASK] [MASK] ’ [MASK] a [MASK] [MASK] job [SEP] [MASK] [MASK] re [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] the weather [MASK] [MASK] [MASK] of [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] so i [MASK] [MASK] [MASK] play [MASK] [MASK] ------> you ’ ve got the wrong number , isn ’ t it ? [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+good night !
+i have a great idea .
+i didn ’ t think that i ’ m getting upset with it .
+i see .
+i see .
+you are doing a good game in my mind . the doctor says he ’ s a very good job
+you ’ re right .
+yes . and the weather has a lot of fun with me .
+i see , so i know how to play .
+you ’ ve got the wrong number , isn ’ t it ?

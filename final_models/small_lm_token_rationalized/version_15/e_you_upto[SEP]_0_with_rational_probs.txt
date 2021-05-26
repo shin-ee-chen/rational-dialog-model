@@ -1,0 +1,29 @@
+Rationalized input ------> Response
+what are [MASK] up [MASK]o ? [MASK] ------> i have been fine . [SEP]
+what are you upt [MASK] ? [MASK] i have been fine [MASK] [SEP] ------> ok , i ' m not very much . [SEP]
+what are [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] i [MASK] [MASK] [MASK] . [MASK] [MASK] , i ' m [MASK] very much . [MASK] ------> why ? [SEP]
+what are [MASK] [MASK] [MASK] [MASK] ? [SEP] i [MASK] been fine [MASK] [MASK] [MASK] , i [MASK] [MASK] not [MASK] [MASK] [MASK] [SEP] [MASK] ? [SEP] ------> no , i have a lot of different kinds of people . [SEP]
+[MASK] [MASK] [MASK] up [MASK] [MASK] ? [MASK] [MASK] [MASK] been fine . [MASK] [MASK] , [MASK] [MASK] m not very much . [MASK] [MASK] [MASK] [SEP] no , i [MASK] [MASK] lot [MASK] [MASK] kinds [MASK] people [MASK] [SEP] ------> well , you can ' t go to the store tomorrow . i ' ll have an o ##cc ##as [SEP]
+[MASK] [MASK] you up [MASK]o ? [SEP] i have been [MASK] . [SEP] ok , i [MASK] [MASK] not very [MASK] . [SEP] why [MASK] [MASK] no [MASK] i [MASK] a lot of different [MASK] [MASK] [MASK] . [SEP] [MASK] , [MASK] can [MASK] [MASK] go [MASK] the store tomorrow . i ' [MASK] have [MASK] [MASK]cc [MASK] [SEP] ------> well i need the price . [SEP]
+[MASK] are you upt [MASK] ? [SEP] i [MASK] [MASK] fine [MASK] [MASK] ok , i ' [MASK] not very much [MASK] [SEP] [MASK] [MASK] [SEP] no , i [MASK] a lot [MASK] different kinds [MASK] [MASK] . [SEP] [MASK] , [MASK] can ' [MASK] [MASK] [MASK] the [MASK] tomorrow . [MASK] ' ll [MASK] an [MASK]ccas [SEP] well [MASK] need [MASK] [MASK] . [MASK] ------> how can we go there ? [SEP]
+what [MASK] [MASK] upto [MASK] [SEP] [MASK] have been fine [MASK] [SEP] [MASK] , [MASK] [MASK] m [MASK] very much [MASK] [SEP] why [MASK] [MASK] no [MASK] [MASK] [MASK] a lot [MASK] [MASK] [MASK] of people [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ' [MASK] [MASK] [MASK] the [MASK] tomorrow [MASK] [MASK] [MASK] [MASK] [MASK] an [MASK]ccas [MASK] [MASK] [MASK] [MASK] the [MASK] . [MASK] how can we [MASK] there ? [SEP] ------> ok , thanks . [SEP]
+what are [MASK] [MASK]t [MASK] ? [SEP] [MASK] [MASK] [MASK] fine . [MASK] [MASK] [MASK] i ' m not very much . [MASK] [MASK] ? [SEP] no [MASK] i have [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] , you [MASK] [MASK] t [MASK] to the [MASK] [MASK] . [MASK] ' [MASK] [MASK] [MASK] [MASK] [MASK]as [MASK] well [MASK] need the [MASK] . [MASK] [MASK] [MASK] we [MASK] [MASK] [MASK] [SEP] ok , thanks [MASK] [MASK] ------> i ' ll try . [SEP]
+[MASK] are [MASK] upt [MASK] ? [SEP] [MASK] [MASK] been [MASK] . [SEP] ok [MASK] [MASK] [MASK] m not [MASK] much . [SEP] [MASK] ? [MASK] [MASK] [MASK] [MASK] have a lot of different [MASK] of [MASK] [MASK] [SEP] [MASK] , [MASK] can [MASK] [MASK] [MASK] [MASK] the [MASK] tomorrow . [MASK] ' [MASK] [MASK] [MASK] o [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] the price . [SEP] how [MASK] [MASK] go [MASK] [MASK] [MASK] [MASK] , thanks . [MASK] [MASK] ' ll try . [SEP] ------> i will . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK]o [MASK] [SEP] i [MASK] [MASK] [MASK] . [SEP] ok [MASK] i [MASK] [MASK] not [MASK] [MASK] . [MASK] why [MASK] [SEP] [MASK] , i have [MASK] lot of [MASK] [MASK] [MASK] people [MASK] [SEP] well [MASK] [MASK] [MASK] [MASK] [MASK] go [MASK] the store [MASK] [MASK] [MASK] ' [MASK] have an [MASK]cc [MASK] [MASK] well i need the [MASK] . [MASK] how can we [MASK] [MASK] ? [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i ' [MASK] try . [SEP] i [MASK] . [SEP] ------> that ' s great . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK]o ? [SEP] [MASK] have [MASK] fine . [MASK] ok , i ' [MASK] [MASK] [MASK] much . [SEP] why ? [MASK] [MASK] , i [MASK] a lot of [MASK] kinds of [MASK] [MASK] [MASK] well , you [MASK] ' [MASK] [MASK] [MASK] the store tomorrow . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] well i need the [MASK] [MASK] [SEP] how [MASK] we [MASK] [MASK] ? [MASK] ok , thanks [MASK] [SEP] i ' [MASK] [MASK] . [MASK] i will [MASK] [SEP] [MASK] ' s [MASK] . [SEP] ------> how much ? [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i have been fine .
+ok , i ' m not very much .
+why ?
+no , i have a lot of different kinds of people .
+well , you can ' t go to the store tomorrow . i ' ll have an occas
+well i need the price .
+how can we go there ?
+ok , thanks .
+i ' ll try .
+i will .
+that ' s great .
+how much ?

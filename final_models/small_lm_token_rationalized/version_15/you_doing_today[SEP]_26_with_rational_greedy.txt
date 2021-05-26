@@ -1,0 +1,17 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ’ ve been thinking about that . i don ’ t have a good time . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] been thinking [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> no , thanks . i ' d be glad to be very interested here . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] been thinking [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] i [MASK] [MASK] [MASK] glad to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> well , i ' m going to do something else today . i ' ll be ready for the next [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] been thinking [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] i [MASK] [MASK] [MASK] glad to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] to [MASK] [MASK] else [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> that ’ s great . i ’ m going to have one at this month . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] been thinking [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] i [MASK] [MASK] [MASK] glad to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] to [MASK] [MASK] else [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] to [MASK] [MASK] at [MASK] [MASK] [MASK] [MASK] ------> i ’ ve been thinking about it , and i don ' t like it . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] been thinking [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] i [MASK] [MASK] [MASK] glad to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] to [MASK] [MASK] else [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] to [MASK] [MASK] at [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> that ' s true , but i haven ' t been so much . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i ’ ve been thinking about that . i don ’ t have a good time .
+no , thanks . i ' d be glad to be very interested here .
+well , i ' m going to do something else today . i ' ll be ready for the next
+that ’ s great . i ’ m going to have one at this month .
+i ’ ve been thinking about it , and i don ' t like it .
+that ' s true , but i haven ' t been so much .

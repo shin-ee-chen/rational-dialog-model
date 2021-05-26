@@ -1,0 +1,25 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] ------> it was a bit tired . i ’ ll see you now . [SEP]
+[MASK] are [MASK] doing today [MASK] [MASK] it was a [MASK] [MASK] [MASK] i ’ [MASK] [MASK] you now [MASK] [SEP] ------> that ’ s a great ! [SEP]
+[MASK] [MASK] you doing [MASK] [MASK] [MASK] it was a bit tired . [MASK] [MASK] ll [MASK] [MASK] [MASK] . [SEP] [MASK] [MASK] s a great [MASK] [SEP] ------> what are they ? [SEP]
+[MASK] are [MASK] [MASK] today ? [SEP] [MASK] was a bit [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s a [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] ? [SEP] ------> i ’ m a good choice . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] ? [SEP] [MASK] [MASK] [MASK] [MASK] tired . [MASK] [MASK] [MASK] see you [MASK] [MASK] [SEP] [MASK] [MASK] s a [MASK] ! [MASK] what [MASK] [MASK] ? [MASK] [MASK] ’ [MASK] a [MASK] [MASK] . [SEP] ------> what ’ s up ? [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [MASK] [MASK] [MASK] [MASK] bit [MASK] . i ’ [MASK] [MASK] [MASK] now [MASK] [MASK] that [MASK] [MASK] a [MASK] ! [MASK] what [MASK] they ? [MASK] i ’ [MASK] [MASK] [MASK] choice [MASK] [MASK] [MASK] [MASK] s [MASK] [MASK] [MASK] ------> that ’ s true . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] [MASK] was [MASK] [MASK] [MASK] . [MASK] ’ [MASK] see you [MASK] . [SEP] [MASK] [MASK] [MASK] a great [MASK] [MASK] [MASK] [MASK] [MASK] ? [SEP] i [MASK] [MASK] a good [MASK] [MASK] [MASK] [MASK] ’ s up [MASK] [MASK] that ’ s true [MASK] [SEP] ------> what is the p ##ip ##e ? [SEP]
+[MASK] [MASK] [MASK] doing [MASK] ? [SEP] it [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ’ ll [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s [MASK] [MASK] [MASK] [SEP] what are [MASK] [MASK] [MASK] i [MASK] [MASK] a [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] s [MASK] ? [SEP] that [MASK] [MASK] true [MASK] [MASK] [MASK] [MASK] the [MASK] [MASK] [MASK] [MASK] [SEP] ------> that ' s great ! we ’ re all so ##l ##it ##ud ##es , then . [SEP]
+[MASK] are [MASK] doing today [MASK] [MASK] it was a [MASK] tired . i [MASK] [MASK] see [MASK] now [MASK] [SEP] [MASK] [MASK] s a great [MASK] [SEP] what [MASK] [MASK] ? [MASK] [MASK] [MASK] [MASK] a [MASK] choice . [MASK] [MASK] [MASK] s up [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] what [MASK] [MASK] [MASK] [MASK]e [MASK] [SEP] that [MASK] s great [MASK] we [MASK] re [MASK] [MASK]lit [MASK]es , [MASK] . [MASK] ------> i ' ll get a job . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] it [MASK] a bit tired . [MASK] ’ [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] that [MASK] s [MASK] [MASK] [MASK] [MASK] [MASK] are they ? [MASK] [MASK] ’ [MASK] a [MASK] choice [MASK] [MASK] what ’ [MASK] up [MASK] [MASK] that [MASK] s [MASK] [MASK] [MASK] [MASK] is [MASK] [MASK]ip [MASK] [MASK] [MASK] that [MASK] s great [MASK] [MASK] [MASK] re all [MASK] [MASK]itud [MASK] , [MASK] . [MASK] [MASK] [MASK] ll get [MASK] job [MASK] [MASK] ------> i don ’ t have to get some of our time . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+it was a bit tired . i ’ ll see you now .
+that ’ s a great !
+what are they ?
+i ’ m a good choice .
+what ’ s up ?
+that ’ s true .
+what is the pipe ?
+that ' s great ! we ’ re all solitudes , then .
+i ' ll get a job .
+i don ’ t have to get some of our time .

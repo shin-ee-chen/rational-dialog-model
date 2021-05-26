@@ -1,0 +1,23 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ’ m a great idea . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m a great idea [MASK] [MASK] ------> i hope so . i am so excited about the last time you had been a good time . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m a great idea [MASK] [SEP] i hope so [MASK] i am so excited about the last time [MASK] [MASK] been a [MASK] time [MASK] [MASK] ------> i guess you ’ re going to be a problem . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m a great idea [MASK] [SEP] i hope so [MASK] i am so excited about the last time [MASK] [MASK] been a [MASK] time [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> what ’ s wrong with it ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m a great idea [MASK] [SEP] i hope so [MASK] i am so excited about the last time [MASK] [MASK] been a [MASK] time [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] wrong [MASK] [MASK] [MASK] [MASK] ------> thank you . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m a great idea [MASK] [SEP] i hope so [MASK] i am so excited about the last time [MASK] [MASK] been a [MASK] time [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] thank [MASK] [MASK] [MASK] ------> i have no idea , we have many things , but i can go to beijing . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m a great idea [MASK] [SEP] i hope so [MASK] i am so excited about the last time [MASK] [MASK] been a [MASK] time [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] thank [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] idea , we [MASK] many things , but i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> yes , it ' s great ! [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m a great idea [MASK] [SEP] i hope so [MASK] i am so excited about the last time [MASK] [MASK] been a [MASK] time [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] thank [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] idea , we [MASK] many things , but i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ! [SEP] ------> yes , i think so . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m a great idea [MASK] [SEP] i hope so [MASK] i am so excited about the last time [MASK] [MASK] been a [MASK] time [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] thank [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] idea , we [MASK] many things , but i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ! [MASK] [MASK] , i [MASK] so [MASK] [MASK] ------> that ’ s good . what about your brother ? [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i ’ m a great idea .
+i hope so . i am so excited about the last time you had been a good time .
+i guess you ’ re going to be a problem .
+what ’ s wrong with it ?
+thank you .
+i have no idea , we have many things , but i can go to beijing .
+yes , it ' s great !
+yes , i think so .
+that ’ s good . what about your brother ?

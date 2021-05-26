@@ -1,0 +1,23 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK]t [MASK] ? [SEP] ------> not bad idea . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [SEP] [MASK] bad [MASK] [MASK] [MASK] ------> yes , it ' s a great job . we don ' t allow your money with my wife . [SEP]
+what are [MASK] [MASK]t [MASK] ? [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] it ' s a [MASK] job . we [MASK] ' t [MASK] [MASK] money [MASK] my wife [MASK] [MASK] ------> no , thanks . [SEP]
+[MASK] are you [MASK]t [MASK] ? [MASK] not [MASK] idea . [SEP] [MASK] , it ' s [MASK] [MASK] [MASK] . [MASK] don [MASK] t allow your [MASK] with [MASK] [MASK] [MASK] [SEP] no [MASK] [MASK] . [MASK] ------> i ’ m sorry , i ’ ll do it . [SEP]
+[MASK] are [MASK] up [MASK]o [MASK] [MASK] not [MASK] [MASK] [MASK] [MASK] [MASK] , it ' [MASK] a [MASK] [MASK] . we [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] my wife [MASK] [MASK] no , [MASK] . [MASK] [MASK] ’ [MASK] [MASK] , i [MASK] [MASK] [MASK] [MASK] . [MASK] ------> yes , i am very happy for you . [SEP]
+[MASK] are you up [MASK]o ? [MASK] not bad idea . [MASK] yes , it [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] we [MASK] [MASK] [MASK] allow [MASK] [MASK] [MASK] [MASK] wife . [MASK] [MASK] , [MASK] . [SEP] i ’ m sorry [MASK] i ’ ll do [MASK] [MASK] [MASK] yes , i am very [MASK] [MASK] [MASK] [MASK] [MASK] ------> what are you doing ? [SEP]
+what [MASK] [MASK] upt [MASK] ? [SEP] not bad [MASK] . [MASK] [MASK] , [MASK] [MASK] s a great job . we don ' t [MASK] your [MASK] [MASK] my [MASK] [MASK] [SEP] [MASK] [MASK] thanks [MASK] [MASK] [MASK] [MASK] m [MASK] , [MASK] ’ ll [MASK] it [MASK] [SEP] [MASK] [MASK] i am very happy for [MASK] . [MASK] what [MASK] you [MASK] ? [MASK] ------> i have a great job . [SEP]
+[MASK] [MASK] [MASK] upto [MASK] [MASK] [MASK] bad idea . [SEP] [MASK] [MASK] [MASK] [MASK] s [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ' t allow your [MASK] [MASK] [MASK] wife . [MASK] no , thanks [MASK] [MASK] [MASK] ’ m sorry , i [MASK] ll [MASK] [MASK] . [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] for you . [SEP] [MASK] [MASK] [MASK] doing [MASK] [MASK] [MASK] [MASK] [MASK] great [MASK] . [MASK] ------> thank you . you ' re right ! i ’ ve just got it here . [SEP]
+what [MASK] you [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] bad idea . [MASK] yes [MASK] it [MASK] [MASK] [MASK] great job [MASK] [MASK] [MASK] ' [MASK] [MASK] your money [MASK] [MASK] wife [MASK] [MASK] no , thanks [MASK] [SEP] i [MASK] [MASK] sorry , [MASK] [MASK] ll [MASK] [MASK] . [MASK] [MASK] , i am [MASK] [MASK] [MASK] [MASK] . [MASK] what are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] great job [MASK] [MASK] thank [MASK] [MASK] you [MASK] [MASK] right ! [MASK] [MASK] ve [MASK] [MASK] it [MASK] [MASK] [SEP] ------> i ’ m not very busy . can you tell me how to get to the class ##ic office and [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+not bad idea .
+yes , it ' s a great job . we don ' t allow your money with my wife .
+no , thanks .
+i ’ m sorry , i ’ ll do it .
+yes , i am very happy for you .
+what are you doing ?
+i have a great job .
+thank you . you ' re right ! i ’ ve just got it here .
+i ’ m not very busy . can you tell me how to get to the classic office and

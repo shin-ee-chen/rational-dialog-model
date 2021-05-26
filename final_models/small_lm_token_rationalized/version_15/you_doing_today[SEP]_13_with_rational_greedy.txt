@@ -1,0 +1,27 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ’ d like to check on you then . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] check on [MASK] [MASK] [MASK] [MASK] ------> yes , we will . i ' m not sure , but i can ' t help you . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] check on [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] will [MASK] [MASK] [MASK] m [MASK] [MASK] , but i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> yes . but you need to pay my check . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] check on [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] will [MASK] [MASK] [MASK] m [MASK] [MASK] , but i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] my check [MASK] [MASK] ------> yes , sir . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] check on [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] will [MASK] [MASK] [MASK] m [MASK] [MASK] , but i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] my check [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> no . that is my pleasure ! [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] check on [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] will [MASK] [MASK] [MASK] m [MASK] [MASK] , but i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] my check [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] no [MASK] [MASK] [MASK] my pleasure ! [SEP] ------> thank you very much . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] check on [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] will [MASK] [MASK] [MASK] m [MASK] [MASK] , but i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] my check [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] no [MASK] [MASK] [MASK] my pleasure ! [SEP] thank [MASK] [MASK] [MASK] [MASK] [MASK] ------> yes , i do . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] check on [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] will [MASK] [MASK] [MASK] m [MASK] [MASK] , but i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] my check [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] no [MASK] [MASK] [MASK] my pleasure ! [SEP] thank [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] ------> i can help you with that . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] check on [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] will [MASK] [MASK] [MASK] m [MASK] [MASK] , but i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] my check [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] no [MASK] [MASK] [MASK] my pleasure ! [SEP] thank [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] that [MASK] [MASK] ------> thank you ! [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] check on [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] will [MASK] [MASK] [MASK] m [MASK] [MASK] , but i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] my check [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] no [MASK] [MASK] [MASK] my pleasure ! [SEP] thank [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] that [MASK] [MASK] thank [MASK] [MASK] [MASK] ------> ok . bye . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] check on [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] will [MASK] [MASK] [MASK] m [MASK] [MASK] , but i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] my check [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] no [MASK] [MASK] [MASK] my pleasure ! [SEP] thank [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] that [MASK] [MASK] thank [MASK] [MASK] [MASK] ok [MASK] [MASK] [MASK] [MASK] ------> thanks , i ' m not sure . i ’ ll be back for a week . what would you [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i ’ d like to check on you then .
+yes , we will . i ' m not sure , but i can ' t help you .
+yes . but you need to pay my check .
+yes , sir .
+no . that is my pleasure !
+thank you very much .
+yes , i do .
+i can help you with that .
+thank you !
+ok . bye .
+thanks , i ' m not sure . i ’ ll be back for a week . what would you

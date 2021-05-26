@@ -1,0 +1,23 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> you know what ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] what [MASK] [MASK] ------> you do ? that ' s a good idea . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] do [MASK] that [MASK] s a good idea [MASK] [MASK] ------> well , we can go for my house . i ’ ve been thinking about this . i hope i [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] do [MASK] that [MASK] s a good idea [MASK] [MASK] [MASK] , we [MASK] [MASK] [MASK] my [MASK] . i ’ [MASK] been thinking [MASK] [MASK] . i hope i [MASK] ------> that way i can go shopping on the summer in the field . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] do [MASK] that [MASK] s a good idea [MASK] [MASK] [MASK] , we [MASK] [MASK] [MASK] my [MASK] . i ’ [MASK] been thinking [MASK] [MASK] . i hope i [MASK] that [MASK] i [MASK] [MASK] shopping on [MASK] [MASK] in [MASK] [MASK] [MASK] [MASK] ------> i know . what do you want to eat ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] do [MASK] that [MASK] s a good idea [MASK] [MASK] [MASK] , we [MASK] [MASK] [MASK] my [MASK] . i ’ [MASK] been thinking [MASK] [MASK] . i hope i [MASK] that [MASK] i [MASK] [MASK] shopping on [MASK] [MASK] in [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] what do you want [MASK] eat [MASK] [MASK] ------> you don ’ t have to work in it . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] do [MASK] that [MASK] s a good idea [MASK] [MASK] [MASK] , we [MASK] [MASK] [MASK] my [MASK] . i ’ [MASK] been thinking [MASK] [MASK] . i hope i [MASK] that [MASK] i [MASK] [MASK] shopping on [MASK] [MASK] in [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] what do you want [MASK] eat [MASK] [MASK] [MASK] [MASK] ’ [MASK] have [MASK] work in [MASK] [MASK] [MASK] ------> i ’ ll do some money from school in my mind . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] do [MASK] that [MASK] s a good idea [MASK] [MASK] [MASK] , we [MASK] [MASK] [MASK] my [MASK] . i ’ [MASK] been thinking [MASK] [MASK] . i hope i [MASK] that [MASK] i [MASK] [MASK] shopping on [MASK] [MASK] in [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] what do you want [MASK] eat [MASK] [MASK] [MASK] [MASK] ’ [MASK] have [MASK] work in [MASK] [MASK] [MASK] i ’ [MASK] [MASK] some money [MASK] [MASK] in my mind [MASK] [MASK] ------> you are welcome . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] do [MASK] that [MASK] s a good idea [MASK] [MASK] [MASK] , we [MASK] [MASK] [MASK] my [MASK] . i ’ [MASK] been thinking [MASK] [MASK] . i hope i [MASK] that [MASK] i [MASK] [MASK] shopping on [MASK] [MASK] in [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] what do you want [MASK] eat [MASK] [MASK] [MASK] [MASK] ’ [MASK] have [MASK] work in [MASK] [MASK] [MASK] i ’ [MASK] [MASK] some money [MASK] [MASK] in my mind [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> well , i don ’ t have my girlfriend . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+you know what ?
+you do ? that ' s a good idea .
+well , we can go for my house . i ’ ve been thinking about this . i hope i
+that way i can go shopping on the summer in the field .
+i know . what do you want to eat ?
+you don ’ t have to work in it .
+i ’ ll do some money from school in my mind .
+you are welcome .
+well , i don ’ t have my girlfriend .

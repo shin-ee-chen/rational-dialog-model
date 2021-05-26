@@ -1,0 +1,25 @@
+Rationalized input ------> Response
+how [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ’ m going to have the job . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [MASK] i ’ m [MASK] [MASK] have [MASK] job [MASK] [MASK] ------> i ’ ll be here in my account . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [MASK] i ’ m [MASK] [MASK] have the job . [MASK] i ’ [MASK] [MASK] [MASK] in my account [MASK] [MASK] ------> that ’ s a good idea . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [MASK] i ’ m [MASK] [MASK] have the job . [MASK] i ’ [MASK] [MASK] [MASK] in my account [MASK] [MASK] that ’ s a good idea . [MASK] ------> i am afraid not . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [MASK] i ’ m [MASK] [MASK] have the job . [MASK] i ’ [MASK] [MASK] [MASK] in my account [MASK] [MASK] that ’ s a good idea . [SEP] i am afraid not [MASK] [MASK] ------> i see . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [MASK] i ’ m [MASK] [MASK] have the job . [MASK] i ’ [MASK] [MASK] [MASK] in my account [MASK] [MASK] that ’ s a good idea . [SEP] i am afraid not [MASK] [MASK] i [MASK] [MASK] [MASK] ------> thanks . i ’ m looking forward to seeing you . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [MASK] i ’ m [MASK] [MASK] have the job . [MASK] i ’ [MASK] [MASK] [MASK] in my account [MASK] [MASK] that ’ s a good idea . [SEP] i am afraid not [MASK] [MASK] i see [MASK] [MASK] thanks . i ’ m looking forward to [MASK] [MASK] [MASK] [MASK] ------> ok , i ' ll take it . thank you very much ! [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [MASK] i ’ m [MASK] [MASK] have the job . [MASK] i ’ [MASK] [MASK] [MASK] in my account [MASK] [MASK] that ’ s a good idea . [SEP] i am afraid not [MASK] [MASK] i see [MASK] [MASK] thanks . i ’ m looking forward to [MASK] [MASK] [MASK] [MASK] ok , i [MASK] [MASK] [MASK] [MASK] [MASK] thank [MASK] very much ! [SEP] ------> what is your flight ? [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [MASK] i ’ m [MASK] [MASK] have the job . [MASK] i ’ [MASK] [MASK] [MASK] in my account [MASK] [MASK] that ’ s a good idea . [SEP] i am afraid not [MASK] [MASK] i see [MASK] [MASK] thanks . i ’ m looking forward to [MASK] [MASK] [MASK] [MASK] ok , i [MASK] [MASK] [MASK] [MASK] [MASK] thank [MASK] very much ! [SEP] what is your [MASK] [MASK] [MASK] ------> we ' ve been working home ##work , but i ' m going to be a lot on the bus [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [MASK] i ’ m [MASK] [MASK] have the job . [MASK] i ’ [MASK] [MASK] [MASK] in my account [MASK] [MASK] that ’ s a good idea . [SEP] i am afraid not [MASK] [MASK] i see [MASK] [MASK] thanks . i ’ m looking forward to [MASK] [MASK] [MASK] [MASK] ok , i [MASK] [MASK] [MASK] [MASK] [MASK] thank [MASK] very much ! [SEP] what is your [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] been working homework , but i [MASK] m [MASK] to [MASK] a lot on the bus [SEP] ------> that is very kind [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i ’ m going to have the job .
+i ’ ll be here in my account .
+that ’ s a good idea .
+i am afraid not .
+i see .
+thanks . i ’ m looking forward to seeing you .
+ok , i ' ll take it . thank you very much !
+what is your flight ?
+we ' ve been working homework , but i ' m going to be a lot on the bus
+that is very kind

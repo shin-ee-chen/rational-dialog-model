@@ -6,7 +6,6 @@ import torch
 
 from modules.pytorch_lightning.LightningBaseLanguageModel import LightningBaseLanguageModel
 from utils.utils import calc_acc, calc_perplexity
-from tokenizers import Tokenizer
 from utils.token_utils import get_token_id, get_vocab_size, get_weights
 import torch.nn.functional as F
 

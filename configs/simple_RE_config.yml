@@ -8,8 +8,8 @@ language_model:
   save_location: './models/small_lm_token_rationalized.pt'
 dataset:
   type: 'daily_dialogue'
-  size_train: 1000
-  size_test: 25
+  size_train: 10000
+  size_test: 20
   batch_size: 32
   subsets: start
   remove_top_n: 10
@@ -29,7 +29,7 @@ rational_extractor:
   pretrained: False
   save_location: './models/policy_token_simple.pt'
   load_location: './models/policy_token_simple.pt'
-  paramaters:
+  parameters:
     fussed_lasso_weight: 0.01
     sparsity_weight: 0.1
 

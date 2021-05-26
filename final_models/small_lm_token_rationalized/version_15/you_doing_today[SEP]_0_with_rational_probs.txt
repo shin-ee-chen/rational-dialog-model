@@ -1,0 +1,27 @@
+Rationalized input ------> Response
+[MASK] are [MASK] [MASK] today [MASK] [SEP] ------> do you have some other day or to get a long deposit or time ? [SEP]
+how [MASK] [MASK] [MASK] today ? [MASK] do [MASK] have [MASK] other [MASK] or to [MASK] [MASK] long deposit [MASK] time ? [SEP] ------> i think so . [SEP]
+[MASK] are you doing [MASK] [MASK] [SEP] [MASK] you [MASK] [MASK] other [MASK] [MASK] to [MASK] a long [MASK] or time [MASK] [SEP] i [MASK] [MASK] [MASK] [SEP] ------> i think i have a good idea . [SEP]
+[MASK] are you doing today ? [MASK] [MASK] you have [MASK] [MASK] [MASK] or to get a long [MASK] [MASK] time [MASK] [SEP] [MASK] think so [MASK] [SEP] i [MASK] [MASK] have a good idea . [SEP] ------> i see . [SEP]
+how are you doing [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] other day or [MASK] [MASK] [MASK] [MASK] deposit [MASK] [MASK] [MASK] [MASK] i think so . [MASK] [MASK] think [MASK] [MASK] [MASK] good [MASK] . [MASK] [MASK] [MASK] . [MASK] ------> thank you . [SEP]
+how [MASK] you doing [MASK] [MASK] [SEP] [MASK] you [MASK] some other day [MASK] to [MASK] a long [MASK] or time ? [MASK] i [MASK] [MASK] [MASK] [SEP] [MASK] think [MASK] [MASK] a good [MASK] [MASK] [SEP] [MASK] see . [MASK] [MASK] you [MASK] [SEP] ------> what do you mean to do ? [SEP]
+how [MASK] you doing today ? [MASK] do you have [MASK] other day or [MASK] [MASK] [MASK] [MASK] deposit [MASK] time ? [SEP] i [MASK] [MASK] [MASK] [SEP] i [MASK] [MASK] have a [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] thank you [MASK] [SEP] [MASK] do [MASK] mean to [MASK] ? [SEP] ------> no , i think that i will need to see a book . [SEP]
+[MASK] are you [MASK] [MASK] [MASK] [SEP] [MASK] you have some other [MASK] [MASK] [MASK] [MASK] a long [MASK] [MASK] time ? [SEP] i think so [MASK] [MASK] [MASK] [MASK] i have a [MASK] idea [MASK] [SEP] i [MASK] . [SEP] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] mean to do ? [SEP] no [MASK] i think that i [MASK] [MASK] [MASK] see a [MASK] . [SEP] ------> i ' m going to the doctor , but i ' ll be late to work with that . [SEP]
+how [MASK] [MASK] doing today ? [MASK] do you [MASK] [MASK] other [MASK] [MASK] [MASK] [MASK] [MASK] long deposit [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] so [MASK] [SEP] i think i [MASK] [MASK] [MASK] idea [MASK] [SEP] i see [MASK] [MASK] thank [MASK] [MASK] [MASK] what do [MASK] mean [MASK] do [MASK] [SEP] no , i think [MASK] [MASK] will [MASK] [MASK] see a [MASK] [MASK] [MASK] i ' [MASK] [MASK] [MASK] the [MASK] , [MASK] i [MASK] ll be [MASK] to work [MASK] [MASK] . [MASK] ------> thank you . [SEP]
+how [MASK] [MASK] doing [MASK] [MASK] [MASK] do you [MASK] some other [MASK] [MASK] to [MASK] [MASK] long [MASK] or [MASK] ? [SEP] i think so . [SEP] i [MASK] [MASK] [MASK] [MASK] good [MASK] . [MASK] i see [MASK] [MASK] thank you [MASK] [SEP] what do you [MASK] to [MASK] [MASK] [MASK] [MASK] , i think that i [MASK] need [MASK] see [MASK] book [MASK] [MASK] [MASK] ' [MASK] going [MASK] the [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] with [MASK] [MASK] [SEP] [MASK] you . [SEP] ------> i ' ll check my best . [SEP]
+[MASK] [MASK] you doing [MASK] ? [MASK] [MASK] you have some other day or to get [MASK] [MASK] [MASK] or time ? [SEP] i [MASK] [MASK] . [MASK] i [MASK] [MASK] have a [MASK] idea [MASK] [MASK] i see [MASK] [MASK] thank [MASK] . [MASK] what do you mean [MASK] [MASK] [MASK] [SEP] no , i [MASK] that i will [MASK] [MASK] [MASK] a book [MASK] [MASK] [MASK] [MASK] m going to the doctor , but i ' [MASK] [MASK] [MASK] [MASK] work with [MASK] . [MASK] thank you . [MASK] i [MASK] [MASK] [MASK] [MASK] best [MASK] [MASK] ------> what do i do to get doing ? [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+do you have some other day or to get a long deposit or time ?
+i think so .
+i think i have a good idea .
+i see .
+thank you .
+what do you mean to do ?
+no , i think that i will need to see a book .
+i ' m going to the doctor , but i ' ll be late to work with that .
+thank you .
+i ' ll check my best .
+what do i do to get doing ?

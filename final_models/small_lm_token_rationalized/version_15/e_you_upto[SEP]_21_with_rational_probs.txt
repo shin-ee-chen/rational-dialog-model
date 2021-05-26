@@ -1,0 +1,29 @@
+Rationalized input ------> Response
+what are [MASK] [MASK]to [MASK] [SEP] ------> i ' m going to do the internet . [SEP]
+[MASK] [MASK] [MASK] [MASK]to ? [SEP] i [MASK] [MASK] [MASK] [MASK] do [MASK] internet [MASK] [MASK] ------> i don ' t have a good opportun ##ity . [SEP]
+what are you upt [MASK] ? [SEP] i [MASK] m going to [MASK] [MASK] internet . [SEP] i don ' t [MASK] [MASK] good [MASK]ity . [MASK] ------> you ' re really busy on the world . [SEP]
+what are you upto [MASK] [SEP] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] i [MASK] [MASK] [MASK] [MASK] a good [MASK]ity [MASK] [MASK] [MASK] ' re really [MASK] [MASK] the [MASK] [MASK] [MASK] ------> that ’ s a good idea . [SEP]
+[MASK] are [MASK] upt [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] to do [MASK] internet [MASK] [MASK] i don [MASK] t have [MASK] good [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] on [MASK] world [MASK] [SEP] that ’ s [MASK] [MASK] [MASK] . [SEP] ------> i will . [SEP]
+[MASK] [MASK] you upto [MASK] [MASK] i [MASK] m going to do [MASK] [MASK] [MASK] [MASK] i don ' t [MASK] a good [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] really [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] good idea . [SEP] i will . [MASK] ------> i know what you want . [SEP]
+[MASK] are you upto ? [MASK] [MASK] [MASK] [MASK] [MASK] to [MASK] the [MASK] . [SEP] [MASK] don [MASK] [MASK] [MASK] [MASK] good opportun [MASK] [MASK] [MASK] you [MASK] [MASK] really [MASK] [MASK] [MASK] world [MASK] [MASK] [MASK] ’ [MASK] a good [MASK] [MASK] [MASK] i will . [SEP] [MASK] know [MASK] [MASK] want [MASK] [MASK] ------> i am looking for a few questions . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK]o [MASK] [SEP] [MASK] ' [MASK] going to [MASK] [MASK] internet [MASK] [MASK] [MASK] [MASK] [MASK] t [MASK] a good [MASK]ity . [SEP] [MASK] [MASK] [MASK] really [MASK] on [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] a [MASK] idea [MASK] [MASK] [MASK] will . [MASK] [MASK] [MASK] what [MASK] want [MASK] [MASK] [MASK] am looking [MASK] a few questions [MASK] [SEP] ------> you need to pay my best for a few weeks . [SEP]
+[MASK] are [MASK] [MASK]t [MASK] ? [MASK] [MASK] ' [MASK] going to [MASK] the internet [MASK] [SEP] [MASK] [MASK] [MASK] t have a good [MASK] [MASK] [MASK] [MASK] you [MASK] re [MASK] busy [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] ’ [MASK] a [MASK] idea [MASK] [SEP] i will . [MASK] [MASK] know [MASK] [MASK] want [MASK] [MASK] i [MASK] [MASK] for a [MASK] questions [MASK] [SEP] [MASK] need to pay [MASK] [MASK] [MASK] [MASK] few [MASK] . [MASK] ------> thanks . [SEP]
+[MASK] [MASK] you [MASK]t [MASK] [MASK] [MASK] i ' m going to do [MASK] internet . [SEP] [MASK] don [MASK] t [MASK] [MASK] good opportun [MASK] [MASK] [SEP] [MASK] ' re really [MASK] on [MASK] [MASK] . [SEP] that [MASK] s a good [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] what [MASK] [MASK] . [MASK] i am looking [MASK] a [MASK] [MASK] [MASK] [MASK] you need [MASK] [MASK] [MASK] best for a few weeks . [MASK] thanks [MASK] [SEP] ------> i ’ d like to have some more cash . [SEP]
+what [MASK] [MASK] up [MASK] [MASK] ? [SEP] [MASK] [MASK] [MASK] [MASK] to do [MASK] internet . [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] good [MASK] [MASK] . [MASK] you [MASK] [MASK] really [MASK] on [MASK] world [MASK] [MASK] [MASK] ’ [MASK] a good [MASK] . [SEP] i [MASK] [MASK] [SEP] i know what you want . [MASK] i [MASK] looking for [MASK] few questions . [SEP] you [MASK] to pay [MASK] [MASK] for [MASK] [MASK] weeks [MASK] [SEP] thanks [MASK] [SEP] [MASK] ’ [MASK] like to [MASK] some more cash [MASK] [MASK] ------> yes . [SEP]
+[MASK] [MASK] [MASK] upt [MASK] [MASK] [SEP] [MASK] ' m [MASK] [MASK] do [MASK] internet [MASK] [SEP] i [MASK] [MASK] t [MASK] a good opportun [MASK] . [MASK] [MASK] [MASK] [MASK] really busy [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] s a good idea . [MASK] [MASK] will . [SEP] [MASK] know what [MASK] [MASK] [MASK] [MASK] i am [MASK] [MASK] [MASK] [MASK] questions [MASK] [SEP] you [MASK] to [MASK] my [MASK] for a [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] i ’ [MASK] like to have [MASK] more cash [MASK] [SEP] yes [MASK] [SEP] ------> ok . what about your parents ? [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i ' m going to do the internet .
+i don ' t have a good opportunity .
+you ' re really busy on the world .
+that ’ s a good idea .
+i will .
+i know what you want .
+i am looking for a few questions .
+you need to pay my best for a few weeks .
+thanks .
+i ’ d like to have some more cash .
+yes .
+ok . what about your parents ?

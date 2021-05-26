@@ -1,0 +1,31 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] today ? [MASK] ------> hi ! i ' m looking for a minute . [SEP]
+how [MASK] [MASK] doing [MASK] [MASK] [MASK] hi [MASK] i ' [MASK] looking for a [MASK] [MASK] [SEP] ------> sure . [SEP]
+[MASK] [MASK] [MASK] [MASK] today [MASK] [SEP] hi [MASK] i ' [MASK] [MASK] for [MASK] minute [MASK] [SEP] [MASK] . [MASK] ------> i ' m sorry , but the room must be good to you ! [SEP]
+how [MASK] [MASK] [MASK] today ? [SEP] [MASK] [MASK] [MASK] ' [MASK] [MASK] [MASK] [MASK] minute [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] , but the [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ! [MASK] ------> what about the same ? [SEP]
+how are [MASK] [MASK] today [MASK] [MASK] hi ! [MASK] [MASK] m [MASK] for a minute [MASK] [SEP] [MASK] . [SEP] i [MASK] [MASK] sorry [MASK] [MASK] [MASK] room [MASK] [MASK] [MASK] to [MASK] [MASK] [MASK] [MASK] about the same [MASK] [MASK] ------> you ’ re right . [SEP]
+[MASK] are you [MASK] [MASK] ? [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] for [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] i [MASK] m [MASK] , but the room must [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] the same [MASK] [MASK] you [MASK] [MASK] right . [MASK] ------> thanks . i will . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] ? [SEP] [MASK] [MASK] i ' [MASK] [MASK] for a [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] i [MASK] [MASK] [MASK] [MASK] but [MASK] [MASK] must be good [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [SEP] [MASK] [MASK] [MASK] right [MASK] [MASK] thanks . [MASK] will . [MASK] ------> thank you . i have a problem with my account . [SEP]
+how are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ' m [MASK] [MASK] [MASK] minute [MASK] [MASK] [MASK] [MASK] [SEP] i ' m [MASK] , [MASK] the [MASK] must [MASK] good to [MASK] [MASK] [MASK] what [MASK] the same ? [SEP] you [MASK] re right . [MASK] [MASK] . [MASK] [MASK] . [SEP] thank [MASK] . i have a [MASK] with [MASK] [MASK] [MASK] [MASK] ------> thanks . [SEP]
+[MASK] are [MASK] [MASK] today ? [MASK] hi ! [MASK] [MASK] [MASK] [MASK] [MASK] a minute [MASK] [MASK] [MASK] [MASK] [SEP] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] room must [MASK] [MASK] to [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] same ? [MASK] [MASK] ’ re [MASK] . [MASK] [MASK] . i [MASK] [MASK] [SEP] thank you . [MASK] have [MASK] problem with [MASK] [MASK] [MASK] [SEP] [MASK] . [SEP] ------> thanks . what time are you thinking of ? [SEP]
+[MASK] are you doing [MASK] ? [SEP] [MASK] ! i [MASK] m looking for [MASK] minute [MASK] [MASK] sure [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] but [MASK] room must [MASK] [MASK] to you [MASK] [SEP] [MASK] [MASK] [MASK] same ? [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] . i will . [SEP] [MASK] [MASK] [MASK] i [MASK] [MASK] problem with my account . [SEP] thanks . [MASK] [MASK] . what time [MASK] you thinking [MASK] [MASK] [MASK] ------> i don ’ t know ! [SEP]
+[MASK] [MASK] [MASK] [MASK] today ? [MASK] [MASK] [MASK] i ' [MASK] [MASK] for a minute . [MASK] [MASK] . [SEP] [MASK] ' [MASK] [MASK] [MASK] but the room [MASK] be [MASK] to [MASK] ! [SEP] what [MASK] [MASK] [MASK] ? [SEP] [MASK] [MASK] [MASK] right [MASK] [SEP] [MASK] . i will . [MASK] thank [MASK] [MASK] [MASK] have [MASK] [MASK] with my account . [SEP] [MASK] [MASK] [SEP] thanks [MASK] [MASK] [MASK] are [MASK] [MASK] [MASK] ? [MASK] [MASK] don ’ t know [MASK] [MASK] ------> thank you . [SEP]
+[MASK] [MASK] [MASK] doing today ? [MASK] hi ! [MASK] [MASK] m looking [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [SEP] [MASK] ' [MASK] [MASK] , [MASK] [MASK] room must be good [MASK] you [MASK] [MASK] what [MASK] [MASK] [MASK] ? [SEP] [MASK] [MASK] [MASK] [MASK] . [MASK] thanks . i [MASK] [MASK] [SEP] thank you [MASK] i have [MASK] [MASK] with my [MASK] . [MASK] [MASK] . [SEP] [MASK] . what time are you [MASK] of [MASK] [SEP] [MASK] don [MASK] t know [MASK] [MASK] thank [MASK] [MASK] [MASK] ------> thank you . bye . [SEP]
+how are [MASK] doing [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] ' m [MASK] for a minute [MASK] [MASK] [MASK] . [MASK] i [MASK] m sorry , [MASK] the [MASK] must be [MASK] to [MASK] [MASK] [SEP] what [MASK] [MASK] same [MASK] [MASK] [MASK] [MASK] re [MASK] . [SEP] [MASK] . [MASK] will [MASK] [SEP] thank you [MASK] i [MASK] [MASK] [MASK] with [MASK] [MASK] [MASK] [MASK] thanks . [SEP] [MASK] [MASK] what time [MASK] you [MASK] of ? [MASK] i don [MASK] [MASK] know ! [MASK] thank [MASK] . [SEP] thank you . bye [MASK] [MASK] ------> good luck . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+hi ! i ' m looking for a minute .
+sure .
+i ' m sorry , but the room must be good to you !
+what about the same ?
+you ’ re right .
+thanks . i will .
+thank you . i have a problem with my account .
+thanks .
+thanks . what time are you thinking of ?
+i don ’ t know !
+thank you .
+thank you . bye .
+good luck .

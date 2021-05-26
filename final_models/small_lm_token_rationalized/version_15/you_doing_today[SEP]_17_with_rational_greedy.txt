@@ -1,0 +1,19 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> what do we have for going along with the company ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] along [MASK] [MASK] [MASK] [MASK] [MASK] ------> you ’ re welcome . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] along [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ' m going to be my new apartment . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] along [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> well , i think so . i am a bit too good . you ' ve already been a little [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] along [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] so . i am a bit [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] already been a [MASK] [MASK] ------> i see , but i ’ ll have to get back to your job . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] along [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] so . i am a bit [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] already been a [MASK] [MASK] i see , but i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i have a great idea . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] along [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] so . i am a bit [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] already been a [MASK] [MASK] i see , but i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] great idea [MASK] [MASK] ------> oh , i don ' t think you ' re right . i ' ll just go back and then [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+what do we have for going along with the company ?
+you ’ re welcome .
+i ' m going to be my new apartment .
+well , i think so . i am a bit too good . you ' ve already been a little
+i see , but i ’ ll have to get back to your job .
+i have a great idea .
+oh , i don ' t think you ' re right . i ' ll just go back and then

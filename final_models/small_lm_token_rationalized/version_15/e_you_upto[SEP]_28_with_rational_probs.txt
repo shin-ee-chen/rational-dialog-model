@@ -1,0 +1,23 @@
+Rationalized input ------> Response
+what are [MASK] upt [MASK] [MASK] [MASK] ------> i was told that i ’ m going to need it . [SEP]
+[MASK] [MASK] you upto [MASK] [SEP] i was told that i [MASK] m going [MASK] need it [MASK] [MASK] ------> i hope so . it ’ s a good idea . [SEP]
+[MASK] [MASK] you upto [MASK] [SEP] i was [MASK] that [MASK] ’ [MASK] [MASK] [MASK] need [MASK] [MASK] [MASK] [MASK] hope [MASK] [MASK] [MASK] [MASK] s a [MASK] [MASK] [MASK] [SEP] ------> yes , i ’ ve got some more with my parents . [SEP]
+[MASK] are you [MASK]to [MASK] [SEP] i [MASK] told [MASK] [MASK] [MASK] [MASK] going [MASK] need it [MASK] [MASK] [MASK] hope [MASK] [MASK] [MASK] [MASK] s [MASK] [MASK] [MASK] . [MASK] [MASK] , i [MASK] ve got [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> sure . [SEP]
+[MASK] [MASK] you up [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i ’ m [MASK] to [MASK] [MASK] [MASK] [MASK] i [MASK] so . [MASK] ’ [MASK] [MASK] good [MASK] [MASK] [MASK] [MASK] , i ’ [MASK] got [MASK] [MASK] with [MASK] [MASK] . [SEP] [MASK] [MASK] [SEP] ------> i ’ m going to do that , but i ’ m going to be back soon . [SEP]
+[MASK] are you [MASK]to ? [MASK] i [MASK] [MASK] that i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] . it ’ [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] some [MASK] with [MASK] [MASK] [MASK] [MASK] sure [MASK] [SEP] [MASK] [MASK] m going [MASK] do [MASK] [MASK] but i [MASK] m going [MASK] [MASK] [MASK] soon . [MASK] ------> how about you ? [SEP]
+[MASK] [MASK] you up [MASK]o ? [MASK] [MASK] was told that [MASK] [MASK] [MASK] [MASK] to need it [MASK] [MASK] i hope [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] idea . [MASK] [MASK] , i [MASK] [MASK] got some [MASK] [MASK] [MASK] [MASK] . [MASK] sure . [SEP] [MASK] ’ m [MASK] to [MASK] that [MASK] [MASK] i [MASK] [MASK] [MASK] to be back [MASK] [MASK] [MASK] how [MASK] [MASK] [MASK] [MASK] ------> a night of good . [SEP]
+[MASK] are [MASK] up [MASK]o [MASK] [MASK] [MASK] [MASK] told [MASK] i ’ [MASK] [MASK] [MASK] [MASK] it [MASK] [MASK] [MASK] hope [MASK] . [MASK] ’ [MASK] [MASK] [MASK] idea [MASK] [MASK] yes [MASK] i [MASK] [MASK] [MASK] some [MASK] [MASK] [MASK] parents [MASK] [MASK] [MASK] . [MASK] i [MASK] m going [MASK] do that , but [MASK] [MASK] m going [MASK] [MASK] [MASK] soon [MASK] [MASK] how [MASK] you [MASK] [MASK] [MASK] [MASK] of [MASK] . [SEP] ------> i know . i ’ d love to . [SEP]
+[MASK] are [MASK] [MASK]to [MASK] [MASK] i [MASK] told [MASK] i ’ m [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] a [MASK] [MASK] . [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] more with my [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to [MASK] [MASK] [MASK] but i [MASK] m [MASK] [MASK] be [MASK] [MASK] . [MASK] how [MASK] [MASK] ? [SEP] a [MASK] [MASK] good [MASK] [MASK] [MASK] [MASK] [MASK] i ’ [MASK] love [MASK] . [SEP] ------> you ’ re going to have the same way that i ’ m just looking . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i was told that i ’ m going to need it .
+i hope so . it ’ s a good idea .
+yes , i ’ ve got some more with my parents .
+sure .
+i ’ m going to do that , but i ’ m going to be back soon .
+how about you ?
+a night of good .
+i know . i ’ d love to .
+you ’ re going to have the same way that i ’ m just looking .

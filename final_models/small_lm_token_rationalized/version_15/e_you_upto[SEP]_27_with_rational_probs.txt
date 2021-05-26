@@ -1,0 +1,23 @@
+Rationalized input ------> Response
+[MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] ------> i am sure you would really get a problem . [SEP]
+what are you [MASK] [MASK] [MASK] ? [SEP] i [MASK] sure [MASK] would [MASK] get [MASK] [MASK] . [MASK] ------> i ’ m glad for you . [SEP]
+[MASK] are [MASK] up [MASK] [MASK] [MASK] [SEP] i [MASK] [MASK] [MASK] [MASK] really get [MASK] problem . [SEP] [MASK] [MASK] m glad [MASK] [MASK] [MASK] [MASK] ------> you ' re so good . thanks for the job you want . [SEP]
+what [MASK] [MASK] upt [MASK] [MASK] [MASK] i am [MASK] you [MASK] [MASK] [MASK] a problem . [MASK] [MASK] [MASK] [MASK] [MASK] for [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] good [MASK] [MASK] for [MASK] job [MASK] want [MASK] [MASK] ------> what do they need best ? [SEP]
+what [MASK] you [MASK] [MASK]o ? [MASK] [MASK] [MASK] sure [MASK] [MASK] [MASK] get a [MASK] . [MASK] [MASK] [MASK] [MASK] glad for [MASK] . [SEP] [MASK] ' [MASK] [MASK] [MASK] . thanks for the job you want . [MASK] [MASK] [MASK] [MASK] [MASK] best ? [MASK] ------> i ’ m a new car . [SEP]
+what [MASK] you [MASK]t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] would [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] m glad for [MASK] [MASK] [MASK] [MASK] [MASK] re so [MASK] [MASK] thanks [MASK] the [MASK] you want [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] best ? [SEP] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> what ? [SEP]
+[MASK] are you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] am [MASK] you [MASK] really get [MASK] problem [MASK] [SEP] [MASK] [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] re [MASK] good . [MASK] for the job you [MASK] . [MASK] [MASK] [MASK] they [MASK] [MASK] [MASK] [SEP] [MASK] ’ m a new [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> oh , i am not interested in doing anything about that , but i don ’ t feel like going [SEP]
+what [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] sure you would [MASK] [MASK] a problem . [MASK] [MASK] [MASK] m glad for [MASK] [MASK] [SEP] you [MASK] [MASK] so good [MASK] thanks for [MASK] [MASK] you want [MASK] [MASK] [MASK] [MASK] they [MASK] best ? [MASK] [MASK] [MASK] m a new [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] oh , i [MASK] not [MASK] [MASK] [MASK] anything [MASK] [MASK] [MASK] [MASK] i [MASK] ’ [MASK] [MASK] like [MASK] [SEP] ------> what time ? [SEP]
+[MASK] [MASK] [MASK] [MASK]t [MASK] [MASK] [SEP] [MASK] [MASK] sure [MASK] [MASK] really [MASK] [MASK] problem . [MASK] i ’ m [MASK] [MASK] [MASK] [MASK] [MASK] you ' [MASK] so good [MASK] [MASK] [MASK] the [MASK] you want [MASK] [MASK] what do they [MASK] best ? [SEP] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] not interested in [MASK] [MASK] [MASK] that , but [MASK] don [MASK] t feel like going [SEP] what time ? [MASK] ------> i think i ' d go on a little longer , i ' m not too busy , because i [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i am sure you would really get a problem .
+i ’ m glad for you .
+you ' re so good . thanks for the job you want .
+what do they need best ?
+i ’ m a new car .
+what ?
+oh , i am not interested in doing anything about that , but i don ’ t feel like going
+what time ?
+i think i ' d go on a little longer , i ' m not too busy , because i

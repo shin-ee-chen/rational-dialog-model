@@ -49,18 +49,17 @@ def parse_config(config_ref):
     # get loss module and hyper parameters for training
     hparams = config["hparams"]
     result["hparams"] = hparams
-    loss_module = get_loss_module(config["loss_module"], tokenizer)
 
     # Load the pytorch lightning module and the trainer
     if "rational_extractor" in config.keys():
-        if config['rational_extractor']['type'] == 'policy_based':
+        if config['rational_extractor']['type'] == 'policy_based' or config['rational_extractor']['type'] == 'policy_utterance':
             lightning_language_model = LightingReinforceRationalizedLanguageModel(language_model, RE, tokenizer,
-                                                                                  hparams=hparams)
+                                                                                  hparams=hparams, **config["rational_extractor"]["parameters"])
         else:
             lightning_language_model = LightingBaseRationalizedLanguageModel(language_model, RE, tokenizer,
-                                                                             loss_module, hparams=hparams)
+                                                                             hparams=hparams, **config["rational_extractor"]["parameters"])
     else:
-        lightning_language_model = LightningLanguageModel(language_model, tokenizer, loss_module=loss_module,
+        lightning_language_model = LightningLanguageModel(language_model, tokenizer,
                                                           hparams=hparams)
 
     result["lightning_language_model"] = lightning_language_model
@@ -170,11 +169,11 @@ def get_rational_extractor(config, tokenizer, embedding_size=32):
         else:
             return PolicyBasedRationalExtractor(get_vocab_size(tokenizer),
                                                 mask_token=get_token_id(tokenizer, "mask_token"),
-                                                **config["parameters"])
+                                                )
 
     if config["type"] == "shared_embedding":
         if config["pretrained"]:
-            pass
+            return RationalExtractor.load(config["load_location"])
         else:
             return RationalExtractor(embedding_size)
 
@@ -182,12 +181,12 @@ def get_rational_extractor(config, tokenizer, embedding_size=32):
         return PolicyBasedUtteranceRationalExtractor(get_vocab_size(tokenizer),
                                                      mask_token=get_token_id(tokenizer, "mask_token"),
                                                      sep_token=get_token_id(tokenizer, "sep_token"),
-                                                     **config["parameters"])
+                                                    )
 
 
 def get_trainer(information):
     config = information["config"]["trainer"]
-    # TODO add callbacks somehow
+
     if config["type"] == "normal":
         callbacks = [
             FinishDialogueCallback(["How are you doing today? [SEP]", "What are you upto? [SEP]"]),
@@ -213,6 +212,24 @@ def get_trainer(information):
                                                greedy_policy=True),
             ReshuffleDatasetCallback(information["dataloader_test"].dataset),
             # ChangeInPerplexityCallback(information["dataloader_test"]) #TODO enable again
+        ]
+        trainer = pl.Trainer(
+            default_root_dir='logs',
+            checkpoint_callback=False,
+            gpus=1 if torch.cuda.is_available() else 0,
+            max_epochs=config["max_epochs"],
+            log_every_n_steps=1,
+            progress_bar_refresh_rate=1,
+            callbacks=callbacks
+
+        )
+        trainer.logger._default_hp_metric = None  # Optional logging argument that we don't need
+
+        return trainer
+
+    elif config["type"] == "shared":
+        callbacks = [
+            ReshuffleDatasetCallback(information["dataloader_test"].dataset),
         ]
         trainer = pl.Trainer(
             default_root_dir='logs',

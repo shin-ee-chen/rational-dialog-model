@@ -1,0 +1,25 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] ? [SEP] ------> no problem . what about the same se ##l ##b ? [SEP]
+how [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] no [MASK] [MASK] [MASK] about [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] ------> why would you have any other questions ? [SEP]
+[MASK] [MASK] [MASK] doing [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK]l [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] questions ? [MASK] ------> yeah , it ’ s very nice to meet you , but i think i ’ m in love , [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] about the [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] would [MASK] have [MASK] [MASK] questions ? [MASK] [MASK] , [MASK] [MASK] s very nice [MASK] [MASK] you [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] in [MASK] [MASK] [MASK] ------> i ' d like to know about the job . [SEP]
+[MASK] [MASK] [MASK] doing [MASK] [MASK] [MASK] [MASK] problem . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] other [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] nice [MASK] [MASK] [MASK] [MASK] but i [MASK] [MASK] [MASK] [MASK] in [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] like [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i am not very busy ! [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] about [MASK] [MASK] [MASK]l [MASK] [MASK] [MASK] [MASK] would [MASK] have [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , it [MASK] [MASK] very [MASK] [MASK] [MASK] you , but [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i am not very [MASK] [MASK] [MASK] ------> i am sorry , and you would have to do . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] [MASK] [MASK] [MASK] what about [MASK] [MASK] se [MASK] [MASK] [MASK] [MASK] why [MASK] [MASK] have [MASK] [MASK] [MASK] [MASK] [MASK] yeah [MASK] [MASK] [MASK] s [MASK] nice [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] think [MASK] [MASK] [MASK] in [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] am sorry [MASK] [MASK] [MASK] would have to [MASK] [MASK] [MASK] ------> i know , but you know . [SEP]
+[MASK] [MASK] you doing [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] about [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] other questions ? [MASK] yeah [MASK] it [MASK] s very nice [MASK] [MASK] [MASK] [MASK] but [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] about the [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] very [MASK] [MASK] [MASK] i [MASK] [MASK] , [MASK] you [MASK] [MASK] [MASK] [MASK] . [SEP] i [MASK] [MASK] [MASK] you [MASK] . [MASK] ------> thanks . [SEP]
+[MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] problem [MASK] [MASK] [MASK] [MASK] [MASK] [MASK]l [MASK] [MASK] [MASK] why would [MASK] [MASK] any [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ’ s very [MASK] [MASK] [MASK] [MASK] , but i think [MASK] [MASK] [MASK] [MASK] love [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] not [MASK] [MASK] ! [MASK] i [MASK] sorry [MASK] [MASK] [MASK] would [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , but [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> you have a little late with me . [SEP]
+[MASK] are you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] what [MASK] the [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] you [MASK] any [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] very nice to [MASK] you [MASK] [MASK] [MASK] think [MASK] [MASK] m [MASK] [MASK] , [MASK] [MASK] [MASK] d like to [MASK] [MASK] [MASK] job . [SEP] [MASK] [MASK] not [MASK] [MASK] [MASK] [MASK] [MASK] am [MASK] [MASK] [MASK] you [MASK] [MASK] to do . [MASK] i [MASK] [MASK] [MASK] [MASK] know . [MASK] thanks [MASK] [MASK] you have [MASK] [MASK] late [MASK] [MASK] [MASK] [SEP] ------> well , you can ' t be very good . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+no problem . what about the same selb ?
+why would you have any other questions ?
+yeah , it ’ s very nice to meet you , but i think i ’ m in love ,
+i ' d like to know about the job .
+i am not very busy !
+i am sorry , and you would have to do .
+i know , but you know .
+thanks .
+you have a little late with me .
+well , you can ' t be very good .

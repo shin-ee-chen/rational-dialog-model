@@ -2,35 +2,36 @@ import torch
 import pytorch_lightning as pl
 from tokenizers import Tokenizer
 from transformers import AdamW
+import torch.nn.functional as F
+from utils.utils import calculate_mask_percentage, fussed_lasso, get_pad_id, calc_perplexity
+from utils.token_utils import get_vocab_size, get_token_id, get_weights
 
-from utils.utils import calculate_mask_percentage, fussed_lasso, get_pad_id
-from utils.token_utils import get_vocab_size, get_token_id
 
 class LightingBaseRationalizedLanguageModel(pl.LightningModule):
     '''
     PL wrapper for training a language model together with a rational extractor.
     '''
 
-    def __init__(self, language_model, rational_extractor, tokenizer, loss_module, hparams=None,
+    def __init__(self, language_model, rational_extractor, tokenizer, hparams=None,
                  sparsity_weight=0.1,
                  fussed_lasso_weight=0.1, ):
         super().__init__()
         self.hparams = hparams
         self.language_model = language_model
         self.rational_extractor = rational_extractor
-        self.loss_module = loss_module
         self.tokenizer = tokenizer
 
         self.pad_token_id = get_pad_id(tokenizer)
-
+        self.mask_token = get_token_id(tokenizer, "mask_token")
         self.sparsity_weight = sparsity_weight
         self.fussed_lasso_weight = fussed_lasso_weight
 
         self.log_list = [
-            "loss", "acc", "h_loss", "h_mean", "fussed_lasso"
+            "total_loss", "acc", "total_mask_loss", "mask_mean", "mask_fussed_lasso", "cross_entropy_loss",
+            "perplexity",
         ]
-        self.teacher_forcing = hparams["teacher_forcing"]
-        self.freeze_language_model = hparams["freeze_language_ml"]
+        self.freeze_language_model = hparams["freeze_language_model"]
+        self.hard = False
 
     def forward(self, x, targets, ):
 
@@ -48,14 +49,17 @@ class LightingBaseRationalizedLanguageModel(pl.LightningModule):
 
     def get_rational(self, x):
         rational_embedding = self.language_model.to_embedding(x)
-        rational = self.rational_extractor.forward(rational_embedding)
+        rational = self.rational_extractor.forward(rational_embedding, hard=self.hard)
         mask = rational["mask"]
         ### Also apply the mask
-        masked_input = torch.mul(x, mask) + ~mask * self.mask_token
+
+        # We need to binarize
+        binarized_mask = (mask > 0.5)
+        masked_input = torch.mul(x, binarized_mask) + ~binarized_mask * self.mask_token
 
         return {masked_input: masked_input, **rational}
 
-    def batch_out(self, batch):
+    def batch_to_out(self, batch):
 
         # Make batch second
         rational_in = batch[0].permute(1, 0)
@@ -66,52 +70,55 @@ class LightingBaseRationalizedLanguageModel(pl.LightningModule):
         targets = targets.long()
 
         n_targets = targets.shape[0]
-        if self.teacher_forcing:
-            predictions = out["logits"][-(n_targets + 1):-1]
-        else:
-            predictions = out["logits"]
+        predictions = out["logits"][-(n_targets + 1):-1]
         h_loss = 0
-        h_mean = 0
+        mask_mean = 0
         fussed_lasso_loss = 0
 
-        if "h" in out.keys():
+        if "mask" in out.keys():
             # batch first
-            h = out["h"].permute(1, 0).float()
+            h = out["mask"].permute(1, 0).float()
             tokens = out["x"].permute(1, 0).float()
-            h_mean = calculate_mask_percentage(tokens, h, reduce=True,
-                                               pad_id=self.pad_token_id)
+            mask_mean = calculate_mask_percentage(tokens, h, reduce=True,
+                                                  pad_id=self.pad_token_id)
             fussed_lasso_loss = fussed_lasso(tokens, h, reduce=True,
                                              pad_id=self.pad_token_id)
 
-            h_loss = self.sparsity_weight * h_mean + self.fussed_lasso_weight * fussed_lasso_loss
+            total_mask_loss = self.sparsity_weight * mask_mean + self.fussed_lasso_weight * fussed_lasso_loss
 
-        # if type(self.tokenizer) == Tokenizer:
-            # loss = self.loss_module(predictions.view(-1, get_vocab_size(self.tokenizer)), targets.flatten()) + h_loss
-        # else:
-        loss = self.loss_module(predictions.view(-1, get_vocab_size(self.tokenizer)), targets.flatten()) + h_loss
+        weight = get_weights(self.tokenizer).to(targets.device)
+        cross_entropy_loss = F.cross_entropy(predictions.view(-1, get_vocab_size(self.tokenizer)), targets.flatten(),
+                                             weight=weight)
+        total_loss = cross_entropy_loss + total_mask_loss
+        perplexity = calc_perplexity(predictions,
+                                     targets, self.tokenizer)
         acc = self.calc_acc(predictions, targets)
-        return {"loss": loss, "acc": acc, "h_loss": h_loss, "h_mean": h_mean, "fussed_lasso": fussed_lasso_loss}
+        return {"total_loss": total_loss, "acc": acc, "total_mask_loss": total_mask_loss, "mask_mean": mask_mean,
+                "mask_fussed_lasso": fussed_lasso_loss, "cross_entropy_loss": cross_entropy_loss,
+                "perplexity": perplexity}
 
     def training_step(self, batch, batch_idx):
 
-        batch_out = self.batch_out(batch)
+        batch_out = self.batch_to_out(batch)
 
         self.log_results(batch_out)
 
-        return batch_out["loss"]
+        return batch_out["total_loss"]
 
     @torch.no_grad()
     def validation_step(self, batch, batch_idx):
-        batch_out = self.batch_out(batch)
+        batch_out = self.batch_to_out(batch)
 
-        self.log_results(batch_out, prepend="val_")
+        self.log_results(batch_out, prepend="val ")
 
-        return batch_out["loss"]
+        return batch_out["total_loss"]
 
-    def complete_dialogues(self, sentences, total_reaction_length, with_rational=True, greedy_rationals=True):
-        return [self.complete_dialogue(sentence, total_reaction_length=total_reaction_length, with_rational=with_rational) for sentence in sentences]
-            
-    def complete_dialogue(self, input_sentence, n_rational=10, total_reaction_length=100, with_rational=True):
+    def complete_dialogues(self, sentences, total_length, with_rational=True, greedy_rationals=True):
+        return [
+            self.complete_dialogue(sentence, total_length=total_length, with_rational=with_rational)
+            for sentence in sentences]
+
+    def complete_dialogue(self, input_sentence, n_rational=10, total_length=100, with_rational=True):
 
         if type(self.tokenizer) == Tokenizer:
             input_encoding = self.tokenizer.encode(input_sentence).ids
@@ -124,21 +131,24 @@ class LightingBaseRationalizedLanguageModel(pl.LightningModule):
         rationals = []
         sentences = []
         rationalized_input = []
-        while (len(dialogue_tokens_ids_tensor)) < total_reaction_length:
+        while (len(dialogue_tokens_ids_tensor)) < total_length:
 
             # Extract rationals if needed.
             if with_rational and len(dialogue_tokens_ids_tensor) > n_rational:
                 rational = self.get_rational(dialogue_tokens_ids_tensor)
-                binary_mask = rational["h"]
+                binary_mask = rational["mask"]
                 rational_input = (dialogue_tokens_ids_tensor * binary_mask).int().flatten().detach().cpu().numpy()
-                rational_input = self.tokenizer.decode(rational_input, skip_special_tokens=False).replace(" #","").replace( "#", "")
+                rational_input = self.tokenizer.decode(rational_input, skip_special_tokens=False).replace(" #",
+                                                                                                          "").replace(
+                    "#", "")
                 rationalized_input.append(rational_input)
 
                 rationals.append(binary_mask.flatten())
                 embedding = rational["masked_embedding"]
             else:
-                rational_input = self.tokenizer.decode(dialogue_tokens_ids_tensor.flatten().flatten().detach().cpu().numpy(),
-                                                       skip_special_tokens=False).replace(" #","").replace("#", "")
+                rational_input = self.tokenizer.decode(
+                    dialogue_tokens_ids_tensor.flatten().flatten().detach().cpu().numpy(),
+                    skip_special_tokens=False).replace(" #", "").replace("#", "")
                 rationalized_input.append(rational_input)
                 rationals.append(torch.tensor([]))
                 embedding = self.language_model.to_embedding(dialogue_tokens_ids_tensor)
@@ -148,7 +158,8 @@ class LightingBaseRationalizedLanguageModel(pl.LightningModule):
             dialogue_tokens += next_ids
             # dialogue_tokens = torch.cat([dialogue_tokens, next_ids])
             # dialogue_tokens.append(next_ids)
-            sentences.append(self.tokenizer.decode(next_ids, skip_special_tokens=False).replace(" #", "").replace("#", ""))
+            sentences.append(
+                self.tokenizer.decode(next_ids, skip_special_tokens=False).replace(" #", "").replace("#", ""))
             dialogue_tokens_ids_tensor = torch.tensor(dialogue_tokens).to(self.device).unsqueeze(1)
 
         sentence = self.tokenizer.decode(dialogue_tokens, skip_special_tokens=False).replace(" #", "").replace("#", "")

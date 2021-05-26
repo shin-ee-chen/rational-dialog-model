@@ -10,29 +10,29 @@ class RationalExtractor(nn.Module):
     Rational extractor using the gumbal softmax trick.
     '''
 
-    def __init__(self, n_features):
+    def __init__(self, embedding_input_size):
         super().__init__()
-        self.n_features = n_features
-        self.lstm = LSTM(n_features, hidden_size=int(n_features / 2), bidirectional=True, num_layers=2)
+        self.n_features = embedding_input_size
+        self.lstm = LSTM(embedding_input_size, hidden_size=int(embedding_input_size / 2), bidirectional=True, num_layers=2)
 
-        self.to_binary_logits = nn.Linear(n_features, 2)
+        self.to_binary_logits = nn.Linear(embedding_input_size, 2)
 
         self.gumbel_softmax = nn.functional.gumbel_softmax
 
 
-    def forward(self, embedding):
+    def forward(self, embedding, hard=False):
         '''
         Creates a rational for the given embedding.
         end_index is upto which index we need to get the rational (for the rest of the index we do not create a rational
         '''
-
         lstm_out, (hidden, cell) = self.lstm(embedding)
         binary_logits = self.to_binary_logits(lstm_out)
-        if self.training:
-            probs = self.gumbel_softmax(binary_logits, hard=False, dim=-1) ###TODO: Maybe set hard to false?
+        if self.training and hard == False:
+            probs = self.gumbel_softmax(binary_logits, hard=True, dim=-1) ###TODO: Maybe set hard to false?
+            mask = (probs[:, :, 1] + 1 - probs[:, :, 0]) / 2
         else:
             probs = self.gumbel_softmax(binary_logits, hard=True, dim=-1)
-        mask = (probs[:, :, 1] + 1 - probs[:, :, 0]) / 2
+            mask = ((probs[:, :, 1] + 1 - probs[:, :, 0]) / 2).bool()
         h_repeated = mask.unsqueeze(-1).repeat(1, 1, embedding.shape[-1])
 
         masked_embedding = h_repeated * embedding

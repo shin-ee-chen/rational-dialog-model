@@ -1,0 +1,17 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> hello ! is this that we can help you ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i am glad to hear that . i ’ d like to know what you have to do that . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i am glad to hear [MASK] . i [MASK] [MASK] like to [MASK] [MASK] you have to [MASK] [MASK] [MASK] [MASK] ------> oh , that ’ s a problem . let ' s get back to you . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i am glad to hear [MASK] . i [MASK] [MASK] like to [MASK] [MASK] you have to [MASK] [MASK] [MASK] [MASK] oh , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to [MASK] [MASK] [MASK] ------> you ' re right . i ' ll just have that at the end of this evening . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i am glad to hear [MASK] . i [MASK] [MASK] like to [MASK] [MASK] you have to [MASK] [MASK] [MASK] [MASK] oh , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] have [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> thanks . i ' d better be in the office in a m ##ir ##ro ##r . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i am glad to hear [MASK] . i [MASK] [MASK] like to [MASK] [MASK] you have to [MASK] [MASK] [MASK] [MASK] oh , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] have [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] be [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> yes , i do . you need to get a look at this . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+hello ! is this that we can help you ?
+i am glad to hear that . i ’ d like to know what you have to do that .
+oh , that ’ s a problem . let ' s get back to you .
+you ' re right . i ' ll just have that at the end of this evening .
+thanks . i ' d better be in the office in a mirror .
+yes , i do . you need to get a look at this .

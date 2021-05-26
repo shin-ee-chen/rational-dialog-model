@@ -1,0 +1,31 @@
+Rationalized input ------> Response
+what [MASK] you [MASK]to [MASK] [SEP] ------> what ' s that about you ? [SEP]
+[MASK] are [MASK] [MASK]to [MASK] [MASK] [MASK] ' s [MASK] about you [MASK] [SEP] ------> i see . i ' d like to speak to you in english tomorrow , please . [SEP]
+what [MASK] [MASK] up [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] that about [MASK] ? [SEP] [MASK] see [MASK] i [MASK] d like to [MASK] to you in [MASK] [MASK] , [MASK] . [SEP] ------> thanks for you . [SEP]
+what [MASK] you [MASK]t [MASK] ? [SEP] [MASK] [MASK] [MASK] [MASK] about [MASK] ? [SEP] i see . [MASK] ' d like to speak to [MASK] [MASK] english tomorrow , please . [SEP] [MASK] for you . [MASK] ------> thanks . [SEP]
+[MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] you ? [MASK] [MASK] see . i [MASK] [MASK] [MASK] [MASK] [MASK] to [MASK] [MASK] [MASK] [MASK] , please . [MASK] [MASK] [MASK] [MASK] . [SEP] [MASK] [MASK] [SEP] ------> thanks a lot , thank you . [SEP]
+[MASK] [MASK] you [MASK] [MASK]o [MASK] [MASK] [MASK] ' s that [MASK] [MASK] [MASK] [SEP] [MASK] see [MASK] [MASK] [MASK] d [MASK] to speak [MASK] you [MASK] [MASK] tomorrow , [MASK] . [SEP] thanks for [MASK] . [MASK] [MASK] . [SEP] thanks [MASK] [MASK] [MASK] thank [MASK] [MASK] [SEP] ------> ok . here you are . [SEP]
+[MASK] [MASK] [MASK] [MASK]to [MASK] [SEP] what ' [MASK] that about you [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] d [MASK] [MASK] [MASK] to [MASK] [MASK] [MASK] [MASK] , please . [SEP] thanks [MASK] [MASK] [MASK] [MASK] thanks . [SEP] [MASK] [MASK] lot , thank you [MASK] [SEP] [MASK] . [MASK] [MASK] [MASK] . [SEP] ------> thanks . [SEP]
+what are you [MASK] [MASK]o ? [SEP] what [MASK] [MASK] [MASK] about you [MASK] [SEP] i [MASK] . i ' d like to [MASK] to you [MASK] [MASK] tomorrow , [MASK] . [SEP] thanks [MASK] [MASK] . [MASK] thanks [MASK] [MASK] [MASK] [MASK] lot , thank you [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] ------> thank you , mr . smith . [SEP]
+[MASK] [MASK] you upt [MASK] [MASK] [MASK] what [MASK] s that [MASK] [MASK] [MASK] [SEP] i see [MASK] [MASK] [MASK] [MASK] like [MASK] [MASK] [MASK] you in english [MASK] [MASK] please [MASK] [MASK] [MASK] for [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , thank you [MASK] [MASK] ok . [MASK] you [MASK] [MASK] [SEP] thanks . [MASK] thank you [MASK] mr [MASK] smith [MASK] [SEP] ------> thank you . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK]o [MASK] [MASK] [MASK] ' s that [MASK] you [MASK] [SEP] i see [MASK] i [MASK] d [MASK] to speak to [MASK] in english [MASK] [MASK] please . [MASK] thanks [MASK] you [MASK] [MASK] thanks . [MASK] thanks [MASK] [MASK] [MASK] [MASK] you [MASK] [SEP] [MASK] . here [MASK] [MASK] . [SEP] [MASK] [MASK] [MASK] thank you , [MASK] . [MASK] [MASK] [MASK] thank [MASK] . [MASK] ------> thank you . [SEP]
+[MASK] [MASK] you [MASK]t [MASK] [MASK] [SEP] what [MASK] s [MASK] about [MASK] ? [SEP] i see . [MASK] ' d [MASK] [MASK] speak [MASK] [MASK] [MASK] english tomorrow [MASK] [MASK] [MASK] [MASK] [MASK] for you . [MASK] thanks [MASK] [SEP] thanks [MASK] [MASK] [MASK] [MASK] you . [SEP] [MASK] . here you are [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] , mr [MASK] smith . [SEP] [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] ------> i ’ m sorry to hear that . thank you very long , thanks . [SEP]
+what are [MASK] [MASK]to [MASK] [MASK] what [MASK] s that [MASK] you [MASK] [SEP] [MASK] see . [MASK] [MASK] [MASK] [MASK] [MASK] speak [MASK] [MASK] in [MASK] tomorrow [MASK] [MASK] . [SEP] [MASK] [MASK] you . [SEP] [MASK] [MASK] [MASK] [MASK] a [MASK] , thank you . [SEP] [MASK] [MASK] here [MASK] are . [MASK] [MASK] [MASK] [SEP] [MASK] you , mr [MASK] smith [MASK] [MASK] [MASK] [MASK] . [SEP] thank [MASK] [MASK] [SEP] i [MASK] [MASK] [MASK] [MASK] [MASK] that . [MASK] you very long [MASK] thanks [MASK] [SEP] ------> good idea . [SEP]
+what are [MASK] [MASK]to [MASK] [MASK] what ' [MASK] that about you ? [SEP] i [MASK] . [MASK] [MASK] [MASK] like [MASK] speak [MASK] [MASK] [MASK] english tomorrow [MASK] please . [SEP] [MASK] for you . [MASK] [MASK] . [SEP] [MASK] a [MASK] [MASK] thank [MASK] . [MASK] ok [MASK] [MASK] you [MASK] [MASK] [SEP] thanks . [SEP] [MASK] you , mr . smith . [SEP] [MASK] you . [SEP] thank [MASK] . [SEP] i ’ [MASK] sorry [MASK] hear that . thank you [MASK] [MASK] [MASK] thanks . [SEP] [MASK] idea [MASK] [MASK] ------> thanks . bye ! [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+what ' s that about you ?
+i see . i ' d like to speak to you in english tomorrow , please .
+thanks for you .
+thanks .
+thanks a lot , thank you .
+ok . here you are .
+thanks .
+thank you , mr . smith .
+thank you .
+thank you .
+i ’ m sorry to hear that . thank you very long , thanks .
+good idea .
+thanks . bye !

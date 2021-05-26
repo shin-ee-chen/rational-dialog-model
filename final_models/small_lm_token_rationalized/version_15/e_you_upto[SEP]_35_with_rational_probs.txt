@@ -1,0 +1,21 @@
+Rationalized input ------> Response
+[MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ' d like to get a job . i can ' t find your job . [SEP]
+what are [MASK] up [MASK] [MASK] [MASK] [MASK] i ' d [MASK] [MASK] [MASK] a job [MASK] i [MASK] ' t find [MASK] [MASK] [MASK] [SEP] ------> good , i will . [SEP]
+what [MASK] you [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] ' d like to get [MASK] [MASK] [MASK] [MASK] [MASK] ' [MASK] find [MASK] job [MASK] [MASK] [MASK] [MASK] [MASK] will [MASK] [MASK] ------> no problem . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ' [MASK] [MASK] [MASK] get [MASK] job . [MASK] can [MASK] [MASK] find [MASK] job . [MASK] good [MASK] [MASK] [MASK] [MASK] [MASK] no [MASK] [MASK] [MASK] ------> no . i ' m going to go with the first time . what is your favorite ? [SEP]
+what [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] i ' [MASK] like to get a job [MASK] i [MASK] [MASK] [MASK] [MASK] your job [MASK] [MASK] good , [MASK] will [MASK] [MASK] no problem . [SEP] [MASK] . i [MASK] [MASK] going to [MASK] with the [MASK] time [MASK] [MASK] [MASK] [MASK] favorite [MASK] [MASK] ------> good , you should give it by one - bedroom apartment . [SEP]
+what [MASK] you up [MASK]o [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] get [MASK] job . i [MASK] [MASK] t [MASK] your [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] no [MASK] [MASK] [MASK] [MASK] . i [MASK] m [MASK] to [MASK] [MASK] [MASK] first [MASK] . [MASK] [MASK] [MASK] [MASK] ? [MASK] good [MASK] you [MASK] [MASK] it [MASK] one [MASK] bedroom [MASK] [MASK] [MASK] ------> how about tomorrow afternoon , please ? [SEP]
+what [MASK] you up [MASK]o ? [MASK] i [MASK] d [MASK] to [MASK] a job . [MASK] [MASK] [MASK] [MASK] find [MASK] job . [SEP] [MASK] , i [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] no . i [MASK] m [MASK] to [MASK] with [MASK] first [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] - [MASK] apartment [MASK] [SEP] how [MASK] [MASK] afternoon [MASK] [MASK] [MASK] [MASK] ------> i don ’ t have any more more , but i have to be there . [SEP]
+what are you upto ? [SEP] [MASK] [MASK] d [MASK] to [MASK] [MASK] [MASK] . i can [MASK] t [MASK] [MASK] [MASK] . [SEP] good , i [MASK] . [MASK] [MASK] problem [MASK] [MASK] no [MASK] [MASK] [MASK] [MASK] going [MASK] [MASK] [MASK] the first time [MASK] [MASK] is [MASK] [MASK] ? [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] it [MASK] [MASK] [MASK] bedroom apartment . [MASK] how [MASK] [MASK] [MASK] , please [MASK] [MASK] [MASK] don ’ [MASK] have any more [MASK] , but i [MASK] to be there [MASK] [SEP] ------> i ’ ll see you tomorrow . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i ' d like to get a job . i can ' t find your job .
+good , i will .
+no problem .
+no . i ' m going to go with the first time . what is your favorite ?
+good , you should give it by one - bedroom apartment .
+how about tomorrow afternoon , please ?
+i don ’ t have any more more , but i have to be there .
+i ’ ll see you tomorrow .

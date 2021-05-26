@@ -1,0 +1,21 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> yes , i want to check out the room and the air condition ##er ! [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i want [MASK] check out [MASK] [MASK] and the air conditioner ! [SEP] ------> ok . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i want [MASK] check out [MASK] [MASK] and the air conditioner ! [SEP] ok [MASK] [MASK] ------> thank you . i will call me again . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i want [MASK] check out [MASK] [MASK] and the air conditioner ! [SEP] ok [MASK] [MASK] thank [MASK] [MASK] i will call me again [MASK] [MASK] ------> yes . i can make it . i can ' t see anything to me . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i want [MASK] check out [MASK] [MASK] and the air conditioner ! [SEP] ok [MASK] [MASK] thank [MASK] [MASK] i will call me again [MASK] [MASK] [MASK] [MASK] i can [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] see anything [MASK] [MASK] [MASK] [MASK] ------> yes , it ’ s just about a new room . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i want [MASK] check out [MASK] [MASK] and the air conditioner ! [SEP] ok [MASK] [MASK] thank [MASK] [MASK] i will call me again [MASK] [MASK] [MASK] [MASK] i can [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] see anything [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] just about a [MASK] [MASK] [MASK] [MASK] ------> what ’ s the problem ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i want [MASK] check out [MASK] [MASK] and the air conditioner ! [SEP] ok [MASK] [MASK] thank [MASK] [MASK] i will call me again [MASK] [MASK] [MASK] [MASK] i can [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] see anything [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] just about a [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> thank you . you ' re going to be there , don ’ t you ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i want [MASK] check out [MASK] [MASK] and the air conditioner ! [SEP] ok [MASK] [MASK] thank [MASK] [MASK] i will call me again [MASK] [MASK] [MASK] [MASK] i can [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] see anything [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] just about a [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] thank [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , don [MASK] [MASK] [MASK] [MASK] [MASK] ------> thanks . i ’ m not sure , but i ’ m sure you ’ re welcome . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+yes , i want to check out the room and the air conditioner !
+ok .
+thank you . i will call me again .
+yes . i can make it . i can ' t see anything to me .
+yes , it ’ s just about a new room .
+what ’ s the problem ?
+thank you . you ' re going to be there , don ’ t you ?
+thanks . i ’ m not sure , but i ’ m sure you ’ re welcome .

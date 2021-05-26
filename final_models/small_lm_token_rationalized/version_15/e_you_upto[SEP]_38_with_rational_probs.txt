@@ -1,0 +1,25 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] ------> i am sorry to hear that . i ’ m sure you will . [SEP]
+[MASK] are you up [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] sorry [MASK] [MASK] that [MASK] i [MASK] [MASK] sure [MASK] [MASK] . [MASK] ------> you can go , please . [SEP]
+what are you up [MASK]o [MASK] [MASK] [MASK] am sorry to hear [MASK] . i ’ m [MASK] you will [MASK] [SEP] you [MASK] [MASK] , [MASK] . [SEP] ------> how many years would you recommend ? [SEP]
+[MASK] are you up [MASK] [MASK] [MASK] [MASK] i am [MASK] to hear that [MASK] [MASK] [MASK] m [MASK] [MASK] will [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] ------> yes , i am . [SEP]
+what [MASK] you [MASK]to [MASK] [MASK] [MASK] am [MASK] to hear [MASK] . i [MASK] [MASK] sure [MASK] will . [SEP] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] yes , i [MASK] [MASK] [SEP] ------> do you like this music ? [SEP]
+[MASK] are you up [MASK] [MASK] [MASK] [MASK] i am sorry to [MASK] that . [MASK] [MASK] [MASK] [MASK] [MASK] will [MASK] [SEP] [MASK] can go , [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] recommend [MASK] [MASK] yes [MASK] [MASK] [MASK] [MASK] [SEP] do you [MASK] this [MASK] [MASK] [MASK] ------> sure . [SEP]
+what are you up [MASK]o [MASK] [MASK] [MASK] am sorry to [MASK] that [MASK] i ’ m sure [MASK] [MASK] . [MASK] you can [MASK] , please [MASK] [MASK] [MASK] many years would [MASK] recommend [MASK] [SEP] yes , [MASK] [MASK] . [MASK] [MASK] you [MASK] [MASK] music [MASK] [SEP] [MASK] [MASK] [MASK] ------> you ' d do the p ##ian ##o , you can go to my name and i have . [SEP]
+[MASK] [MASK] you [MASK] [MASK]o [MASK] [SEP] [MASK] [MASK] [MASK] to [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] please [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] yes , i [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] music [MASK] [MASK] [MASK] . [SEP] [MASK] [MASK] [MASK] do [MASK] p [MASK]o , you [MASK] [MASK] to [MASK] name [MASK] i have [MASK] [MASK] ------> do you want to know about the new one ? [SEP]
+what are you [MASK]to ? [MASK] i [MASK] sorry to hear [MASK] [MASK] i [MASK] m [MASK] you [MASK] [MASK] [MASK] [MASK] can go [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] would [MASK] [MASK] [MASK] [MASK] yes [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] you like this [MASK] [MASK] [SEP] [MASK] [MASK] [SEP] you [MASK] [MASK] do the [MASK]ian [MASK] , [MASK] can go [MASK] [MASK] [MASK] and [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] want to [MASK] about [MASK] [MASK] [MASK] [MASK] [MASK] ------> that ' s great , i ' d appreciate that . [SEP]
+[MASK] are [MASK] up [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] that . [MASK] ’ [MASK] [MASK] you [MASK] [MASK] [SEP] you [MASK] go [MASK] [MASK] [MASK] [MASK] [MASK] many [MASK] [MASK] [MASK] recommend [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] sure [MASK] [MASK] [MASK] ' d [MASK] [MASK] pian [MASK] [MASK] you [MASK] [MASK] to my [MASK] and i have . [MASK] do [MASK] [MASK] [MASK] know [MASK] [MASK] new one [MASK] [SEP] that [MASK] s [MASK] , i ' [MASK] [MASK] that [MASK] [MASK] ------> thank you ! [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i am sorry to hear that . i ’ m sure you will .
+you can go , please .
+how many years would you recommend ?
+yes , i am .
+do you like this music ?
+sure .
+you ' d do the piano , you can go to my name and i have .
+do you want to know about the new one ?
+that ' s great , i ' d appreciate that .
+thank you !

@@ -1,0 +1,23 @@
+Rationalized input ------> Response
+how [MASK] you [MASK] [MASK] [MASK] [SEP] ------> i ’ m going to have to go with my new job . [SEP]
+how are [MASK] doing today [MASK] [SEP] [MASK] [MASK] [MASK] going [MASK] have [MASK] [MASK] with my [MASK] [MASK] [MASK] [MASK] ------> i ’ m sure you ' ll see it . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [MASK] [MASK] ’ [MASK] going [MASK] have [MASK] [MASK] [MASK] my [MASK] job [MASK] [MASK] i [MASK] [MASK] sure you ' ll [MASK] it . [MASK] ------> thank you , i ' d rather miss it . [SEP]
+[MASK] are [MASK] doing [MASK] [MASK] [SEP] [MASK] ’ [MASK] [MASK] [MASK] have to go [MASK] my new [MASK] . [MASK] i [MASK] m [MASK] you [MASK] [MASK] see it . [MASK] thank you [MASK] i [MASK] d rather [MASK] it . [SEP] ------> i ' m glad i am thinking about it ! [SEP]
+how [MASK] [MASK] [MASK] today ? [SEP] [MASK] ’ m going [MASK] have [MASK] [MASK] [MASK] my [MASK] [MASK] [MASK] [MASK] i ’ [MASK] [MASK] you [MASK] [MASK] [MASK] it . [SEP] [MASK] you [MASK] [MASK] ' d rather [MASK] [MASK] . [SEP] i [MASK] m [MASK] i am thinking [MASK] it [MASK] [MASK] ------> what kind of movie is it ? [SEP]
+[MASK] [MASK] [MASK] [MASK] today ? [MASK] [MASK] [MASK] [MASK] going to [MASK] [MASK] go [MASK] [MASK] new [MASK] [MASK] [SEP] i ’ [MASK] sure [MASK] ' ll see [MASK] [MASK] [SEP] [MASK] you , i [MASK] d rather [MASK] [MASK] [MASK] [SEP] [MASK] ' m glad i [MASK] [MASK] [MASK] it ! [MASK] [MASK] [MASK] of [MASK] [MASK] [MASK] ? [SEP] ------> you know the same ! i think she ’ d better be very nice ! [SEP]
+how are [MASK] doing today [MASK] [MASK] i [MASK] m [MASK] [MASK] have [MASK] go [MASK] [MASK] [MASK] [MASK] . [SEP] [MASK] ’ m [MASK] [MASK] [MASK] [MASK] [MASK] it [MASK] [SEP] thank you , i [MASK] d [MASK] miss [MASK] [MASK] [MASK] i ' m glad [MASK] [MASK] thinking [MASK] it ! [SEP] what kind of [MASK] [MASK] it [MASK] [MASK] you know the [MASK] ! [MASK] [MASK] she [MASK] d [MASK] be very [MASK] ! [SEP] ------> thanks . but i ' m not sure . [SEP]
+how [MASK] you doing today ? [SEP] i [MASK] [MASK] going [MASK] [MASK] to [MASK] with [MASK] [MASK] job . [MASK] [MASK] [MASK] m [MASK] you ' ll [MASK] [MASK] . [MASK] thank [MASK] [MASK] i [MASK] [MASK] rather [MASK] [MASK] [MASK] [MASK] i ' [MASK] [MASK] i am [MASK] [MASK] [MASK] [MASK] [SEP] what kind [MASK] [MASK] is [MASK] ? [SEP] [MASK] know [MASK] [MASK] [MASK] i [MASK] [MASK] ’ [MASK] [MASK] be [MASK] nice [MASK] [SEP] thanks [MASK] but [MASK] [MASK] m not sure . [SEP] ------> you ' re welcome . [SEP]
+how [MASK] [MASK] doing today ? [MASK] i [MASK] m [MASK] to [MASK] [MASK] go [MASK] my new [MASK] [MASK] [SEP] i [MASK] m [MASK] [MASK] [MASK] [MASK] see [MASK] [MASK] [MASK] [MASK] you , [MASK] ' [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] m glad i am thinking [MASK] it [MASK] [MASK] what [MASK] [MASK] movie [MASK] it ? [MASK] you know the [MASK] ! i think she [MASK] d better [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] but i ' m not sure . [MASK] [MASK] [MASK] re welcome . [SEP] ------> i ' m sorry that you should go to see that . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i ’ m going to have to go with my new job .
+i ’ m sure you ' ll see it .
+thank you , i ' d rather miss it .
+i ' m glad i am thinking about it !
+what kind of movie is it ?
+you know the same ! i think she ’ d better be very nice !
+thanks . but i ' m not sure .
+you ' re welcome .
+i ' m sorry that you should go to see that .

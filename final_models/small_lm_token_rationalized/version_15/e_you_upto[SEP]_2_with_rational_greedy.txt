@@ -1,0 +1,23 @@
+Rationalized input ------> Response
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] ------> i was thinking about a long time . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] i was thinking about a long time [MASK] [MASK] ------> i see . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] i was thinking about a long time . [MASK] i [MASK] [MASK] [MASK] ------> that ’ s my pleasure to see what time i ’ d like to go with me . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] i was thinking about a long time . [MASK] i [MASK] [MASK] [MASK] that ’ s my pleasure to see what time i ’ [MASK] like [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> thank you very much . i ’ m looking for a few days . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] i was thinking about a long time . [MASK] i [MASK] [MASK] [MASK] that ’ s my pleasure to see what time i ’ [MASK] like [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] thank [MASK] [MASK] much . i ’ m looking for a few [MASK] [MASK] [MASK] ------> that ' s what you need . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] i was thinking about a long time . [MASK] i [MASK] [MASK] [MASK] that ’ s my pleasure to see what time i ’ [MASK] like [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] thank [MASK] [MASK] much . i ’ m looking [MASK] a few [MASK] [MASK] [MASK] that [MASK] s what [MASK] need [MASK] [MASK] ------> that ’ s great . how do you get along or something ? [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] i was thinking about a long time . [MASK] i [MASK] [MASK] [MASK] that ’ s my pleasure to see what time i ’ [MASK] like [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] thank [MASK] [MASK] much . i ’ m looking for a few [MASK] [MASK] [MASK] that [MASK] s what [MASK] need [MASK] [MASK] that ’ s [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] along or [MASK] [MASK] [MASK] ------> how would you be able to do that that ? [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] i was thinking about a long time . [MASK] i [MASK] [MASK] [MASK] that ’ s my pleasure to see what time i ’ [MASK] like [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] thank [MASK] [MASK] much . i ’ m looking for a few [MASK] [MASK] [MASK] that [MASK] s what [MASK] need [MASK] [MASK] that ’ s [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] along or [MASK] [MASK] [MASK] [MASK] would you [MASK] [MASK] [MASK] [MASK] that that [MASK] [MASK] ------> what about the internet ? [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] i was thinking about a long time . [MASK] i [MASK] [MASK] [MASK] that ’ s my pleasure to see what time i ’ [MASK] like [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] thank [MASK] [MASK] much . i ’ m looking for a few [MASK] [MASK] [MASK] that [MASK] s what [MASK] need [MASK] [MASK] that ’ s [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] along or [MASK] [MASK] [MASK] [MASK] would you [MASK] [MASK] [MASK] [MASK] that that [MASK] [MASK] what about [MASK] internet [MASK] [MASK] ------> you ’ re a good idea . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i was thinking about a long time .
+i see .
+that ’ s my pleasure to see what time i ’ d like to go with me .
+thank you very much . i ’ m looking for a few days .
+that ' s what you need .
+that ’ s great . how do you get along or something ?
+how would you be able to do that that ?
+what about the internet ?
+you ’ re a good idea .

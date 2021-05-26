@@ -1,0 +1,25 @@
+Rationalized input ------> Response
+[MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ' d like to know if i can get it yet . [SEP]
+what [MASK] [MASK] up [MASK] [MASK] [MASK] [SEP] i ' d like to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] ------> ok . i want to take some time . [SEP]
+what [MASK] you upt [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to know if [MASK] [MASK] [MASK] [MASK] yet [MASK] [MASK] ok [MASK] [MASK] [MASK] to take some time [MASK] [MASK] ------> ok ! [SEP]
+[MASK] are you upt [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to take some [MASK] . [MASK] [MASK] [MASK] [SEP] ------> i ' m not going to tell her . [SEP]
+[MASK] [MASK] [MASK] [MASK]to [MASK] [MASK] [MASK] [MASK] [MASK] like to [MASK] if [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ok [MASK] [MASK] [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] ------> thank you , ms . li . [SEP]
+[MASK] are [MASK] [MASK] [MASK]o [MASK] [SEP] [MASK] ' d [MASK] to know [MASK] [MASK] [MASK] [MASK] [MASK] yet [MASK] [MASK] [MASK] [MASK] [MASK] want to [MASK] some time . [MASK] [MASK] [MASK] [MASK] i ' [MASK] not [MASK] [MASK] tell [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] ------> i hope you ' d better go . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK]o [MASK] [SEP] [MASK] ' d [MASK] [MASK] [MASK] if [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] ok . [MASK] [MASK] to [MASK] some [MASK] [MASK] [SEP] ok [MASK] [MASK] i ' m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] thank [MASK] , ms . li [MASK] [SEP] [MASK] hope [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> thanks for everything ! we ' ve got your address . thank you . [SEP]
+[MASK] [MASK] you [MASK] [MASK]o [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] if [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] some [MASK] [MASK] [MASK] ok [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] to tell [MASK] [MASK] [SEP] thank [MASK] , [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] d [MASK] go . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ' ve got [MASK] [MASK] [MASK] thank [MASK] . [MASK] ------> thank you ! [SEP]
+what [MASK] you [MASK]t [MASK] [MASK] [MASK] i ' d like [MASK] know if [MASK] [MASK] [MASK] it [MASK] . [MASK] ok [MASK] i [MASK] [MASK] [MASK] [MASK] time [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ' [MASK] not going [MASK] tell her [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] you . [MASK] thank [MASK] [MASK] [MASK] ------> thank you so much . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i ' [MASK] like to [MASK] [MASK] [MASK] can [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] want [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] not [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] d [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] ! [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] ------> thank you , mr . w ##r ##k . how long would you like to call you to make a [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i ' d like to know if i can get it yet .
+ok . i want to take some time .
+ok !
+i ' m not going to tell her .
+thank you , ms . li .
+i hope you ' d better go .
+thanks for everything ! we ' ve got your address . thank you .
+thank you !
+thank you so much .
+thank you , mr . wrk . how long would you like to call you to make a

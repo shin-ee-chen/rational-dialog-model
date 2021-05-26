@@ -1,0 +1,27 @@
+Rationalized input ------> Response
+how are [MASK] doing [MASK] [MASK] [SEP] ------> i ' m doing that . thank you today is . [SEP]
+[MASK] are [MASK] doing today [MASK] [MASK] i [MASK] m doing that . [MASK] you today is [MASK] [SEP] ------> i guess it ’ s a great day and get me . [SEP]
+[MASK] [MASK] [MASK] [MASK] today [MASK] [MASK] i [MASK] [MASK] [MASK] that . thank [MASK] today is . [MASK] [MASK] guess it [MASK] [MASK] [MASK] [MASK] day [MASK] [MASK] [MASK] [MASK] [MASK] ------> i would have a look . thanks . [SEP]
+how [MASK] [MASK] doing [MASK] [MASK] [SEP] i [MASK] [MASK] doing that [MASK] thank [MASK] [MASK] [MASK] [MASK] [MASK] i guess it ’ s a [MASK] day [MASK] [MASK] [MASK] . [SEP] i would have [MASK] look . thanks . [MASK] ------> good ! [SEP]
+[MASK] are [MASK] doing today ? [SEP] i [MASK] m doing that [MASK] [MASK] [MASK] today is . [SEP] [MASK] [MASK] it [MASK] [MASK] [MASK] [MASK] [MASK] and [MASK] me [MASK] [SEP] [MASK] [MASK] [MASK] a [MASK] [MASK] thanks . [MASK] [MASK] [MASK] [SEP] ------> thanks . [SEP]
+how [MASK] you [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] it [MASK] [MASK] a [MASK] day [MASK] get me [MASK] [SEP] [MASK] would [MASK] a [MASK] [MASK] thanks [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] . [SEP] ------> ok , i will see you later . [SEP]
+[MASK] are you [MASK] [MASK] [MASK] [SEP] i [MASK] m doing [MASK] . thank [MASK] [MASK] is . [SEP] i guess it [MASK] [MASK] a [MASK] [MASK] [MASK] get me [MASK] [SEP] i [MASK] [MASK] [MASK] look [MASK] thanks . [MASK] [MASK] [MASK] [MASK] thanks [MASK] [MASK] ok , [MASK] [MASK] [MASK] you [MASK] [MASK] [SEP] ------> yes , we haven ’ t got a nice time to see a doctor . [SEP]
+[MASK] [MASK] [MASK] [MASK] today ? [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . thank [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] it [MASK] [MASK] [MASK] [MASK] day and get me . [SEP] [MASK] would [MASK] a [MASK] . [MASK] . [MASK] good ! [MASK] [MASK] [MASK] [MASK] ok , [MASK] [MASK] [MASK] [MASK] later [MASK] [MASK] yes [MASK] we haven ’ [MASK] [MASK] [MASK] [MASK] time [MASK] see a doctor . [MASK] ------> i ’ d love to . see you for my passport . [SEP]
+[MASK] are you [MASK] [MASK] ? [SEP] i [MASK] m [MASK] [MASK] [MASK] thank you [MASK] [MASK] [MASK] [SEP] [MASK] guess [MASK] [MASK] [MASK] a great [MASK] and [MASK] [MASK] . [SEP] i [MASK] have [MASK] look . [MASK] . [SEP] [MASK] [MASK] [MASK] [MASK] . [SEP] [MASK] , [MASK] will see [MASK] [MASK] . [MASK] yes [MASK] we [MASK] [MASK] [MASK] [MASK] a [MASK] [MASK] [MASK] [MASK] a doctor . [MASK] [MASK] ’ [MASK] love [MASK] [MASK] [MASK] you [MASK] my [MASK] [MASK] [SEP] ------> what ’ s wrong ? [SEP]
+[MASK] are you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m doing that . thank you [MASK] [MASK] . [MASK] [MASK] guess it [MASK] [MASK] [MASK] [MASK] day and [MASK] me . [MASK] [MASK] would [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] ! [MASK] thanks [MASK] [SEP] ok [MASK] i will see [MASK] [MASK] [MASK] [MASK] yes [MASK] we [MASK] ’ [MASK] [MASK] [MASK] [MASK] [MASK] to see [MASK] doctor [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] you [MASK] my passport . [MASK] [MASK] [MASK] s [MASK] ? [SEP] ------> yes . thank you very much . [SEP]
+[MASK] are [MASK] [MASK] today ? [MASK] [MASK] ' m doing that . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] it [MASK] s [MASK] [MASK] day [MASK] get me . [SEP] [MASK] [MASK] have [MASK] look . [MASK] [MASK] [MASK] good [MASK] [MASK] thanks [MASK] [MASK] [MASK] , i [MASK] see [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] haven [MASK] [MASK] [MASK] [MASK] nice time to [MASK] [MASK] doctor [MASK] [SEP] [MASK] [MASK] [MASK] love [MASK] [MASK] see you for [MASK] passport . [MASK] [MASK] [MASK] s [MASK] [MASK] [MASK] yes [MASK] thank [MASK] very [MASK] [MASK] [SEP] ------> well , what ' s the matter ? [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i ' m doing that . thank you today is .
+i guess it ’ s a great day and get me .
+i would have a look . thanks .
+good !
+thanks .
+ok , i will see you later .
+yes , we haven ’ t got a nice time to see a doctor .
+i ’ d love to . see you for my passport .
+what ’ s wrong ?
+yes . thank you very much .
+well , what ' s the matter ?

@@ -1,0 +1,29 @@
+Rationalized input ------> Response
+what are [MASK] upt [MASK] ? [MASK] ------> i ' d like a ticket to my house . [SEP]
+what are [MASK] upt [MASK] ? [SEP] i [MASK] d like a ticket to my house . [MASK] ------> what ’ s up ? [SEP]
+what are [MASK] upt [MASK] ? [SEP] i [MASK] d like a ticket to my [MASK] . [MASK] what ’ s up ? [SEP] ------> i was thinking of going home ? [SEP]
+what are [MASK] upt [MASK] ? [SEP] i [MASK] d like a ticket to my [MASK] . [MASK] what ’ s up ? [SEP] i was thinking of [MASK] home ? [SEP] ------> yeah . [SEP]
+what are [MASK] upt [MASK] ? [SEP] i [MASK] d like a ticket to my [MASK] . [MASK] what ’ s up ? [SEP] i was thinking of [MASK] home ? [SEP] yeah . [SEP] ------> what happened ? [SEP]
+what are [MASK] upt [MASK] ? [SEP] i [MASK] d like a ticket to my [MASK] . [MASK] what ’ s up ? [SEP] i was thinking of [MASK] home ? [SEP] yeah . [SEP] what [MASK] ? [MASK] ------> i ' m going to be back to the class . [SEP]
+what are [MASK] upt [MASK] ? [SEP] i [MASK] d like a ticket to my [MASK] . [MASK] what ’ s up ? [SEP] i was thinking of [MASK] home ? [SEP] yeah . [SEP] what [MASK] ? [SEP] i [MASK] m going to be [MASK] [MASK] the class . [SEP] ------> how about you ? [SEP]
+what are [MASK] upt [MASK] ? [SEP] i [MASK] d like a ticket to my [MASK] . [MASK] what ’ s up ? [SEP] i was thinking of [MASK] home ? [SEP] yeah . [SEP] what [MASK] ? [SEP] i [MASK] m going to be [MASK] [MASK] the class . [SEP] how about you ? [SEP] ------> i ’ m fine to tell you . i ' ll have to leave . [SEP]
+what are [MASK] upt [MASK] ? [SEP] i [MASK] d like a ticket to my [MASK] . [MASK] what ’ s up ? [SEP] i was thinking of [MASK] home ? [SEP] yeah . [SEP] what [MASK] ? [SEP] i [MASK] m going to be [MASK] [MASK] the class . [SEP] how about you ? [SEP] i ’ m fine to tell you . i [MASK] ll [MASK] [MASK] [MASK] . [MASK] ------> i ' m glad for you . [SEP]
+what are [MASK] upt [MASK] ? [SEP] i [MASK] d like a ticket to my [MASK] . [MASK] what ’ s up ? [SEP] i was thinking of [MASK] home ? [SEP] yeah . [SEP] what [MASK] ? [SEP] i [MASK] m going to be [MASK] [MASK] the class . [SEP] how about you ? [SEP] i ’ m fine to tell you . i [MASK] ll [MASK] to [MASK] . [SEP] i [MASK] m glad for [MASK] . [MASK] ------> you have to go with that . [SEP]
+what are [MASK] upt [MASK] ? [SEP] i [MASK] d like a ticket to my [MASK] . [MASK] what ’ s up ? [SEP] i was thinking of [MASK] home ? [SEP] yeah . [SEP] what [MASK] ? [SEP] i [MASK] m going to be [MASK] [MASK] the class . [SEP] how about you ? [SEP] i ’ m fine to tell you . i [MASK] ll [MASK] to [MASK] . [SEP] i [MASK] m glad for [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] that . [SEP] ------> how long is the job ? [SEP]
+what are [MASK] upt [MASK] ? [SEP] i [MASK] d like a ticket to my [MASK] . [MASK] what ’ s up ? [SEP] i was thinking of [MASK] home ? [SEP] yeah . [SEP] what [MASK] ? [SEP] i [MASK] m going to be [MASK] [MASK] the class . [SEP] how about you ? [SEP] i ’ m fine to tell you . i [MASK] ll [MASK] to [MASK] . [SEP] i [MASK] m glad for [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] that . [MASK] [MASK] long is the job ? [SEP] ------> yes . i ' ll have to pay my money back . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i ' d like a ticket to my house .
+what ’ s up ?
+i was thinking of going home ?
+yeah .
+what happened ?
+i ' m going to be back to the class .
+how about you ?
+i ’ m fine to tell you . i ' ll have to leave .
+i ' m glad for you .
+you have to go with that .
+how long is the job ?
+yes . i ' ll have to pay my money back .

@@ -1,0 +1,23 @@
+Rationalized input ------> Response
+[MASK] are [MASK] [MASK] today ? [MASK] ------> no , i don ' t know how to do . i can ' t believe what for the same [SEP]
+[MASK] [MASK] [MASK] [MASK] today ? [MASK] no , i don [MASK] t know how to [MASK] [MASK] [MASK] [MASK] ' t believe [MASK] [MASK] [MASK] same [SEP] ------> yes , we have a few days . i am looking forward to your help ! [SEP]
+how are you doing [MASK] [MASK] [MASK] no , [MASK] [MASK] [MASK] t know how [MASK] do [MASK] i can ' t [MASK] what for the same [MASK] [MASK] , [MASK] have a few [MASK] [MASK] [MASK] am [MASK] forward to your [MASK] ! [MASK] ------> why not ? [SEP]
+[MASK] are you [MASK] today ? [MASK] [MASK] [MASK] i don [MASK] t know [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] what for the same [SEP] yes , we [MASK] a few days [MASK] i am [MASK] forward to your help [MASK] [MASK] why not [MASK] [SEP] ------> i ' ll take a look at the same . bye . [SEP]
+[MASK] [MASK] you [MASK] [MASK] ? [SEP] [MASK] , [MASK] [MASK] ' t know how [MASK] [MASK] [MASK] i can [MASK] [MASK] believe what [MASK] the same [SEP] yes , we [MASK] [MASK] [MASK] [MASK] . i am looking forward to [MASK] help ! [SEP] why [MASK] ? [SEP] i [MASK] ll take [MASK] look [MASK] [MASK] same . bye [MASK] [SEP] ------> thanks , too . [SEP]
+how [MASK] [MASK] doing today [MASK] [SEP] [MASK] , i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] i [MASK] [MASK] [MASK] [MASK] what [MASK] [MASK] same [MASK] [MASK] [MASK] [MASK] [MASK] a [MASK] days . i [MASK] looking forward to [MASK] help ! [MASK] why not [MASK] [SEP] [MASK] [MASK] [MASK] take [MASK] look at the [MASK] [MASK] bye [MASK] [MASK] [MASK] , too [MASK] [SEP] ------> sure . it ’ s about to be a good day . [SEP]
+[MASK] are [MASK] [MASK] [MASK] ? [SEP] no , i [MASK] ' [MASK] know how [MASK] do . i can [MASK] t [MASK] what for [MASK] same [MASK] yes , we [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] forward to your [MASK] ! [MASK] why [MASK] [MASK] [SEP] i [MASK] [MASK] [MASK] [MASK] look [MASK] [MASK] [MASK] . bye [MASK] [MASK] thanks [MASK] too [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] good day . [SEP] ------> how long did you get your vacation ? [SEP]
+[MASK] are [MASK] doing today [MASK] [MASK] [MASK] [MASK] i don ' t know [MASK] to do [MASK] [MASK] [MASK] [MASK] t [MASK] what [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] a few [MASK] [MASK] i [MASK] [MASK] forward [MASK] [MASK] [MASK] [MASK] [SEP] why not [MASK] [SEP] i [MASK] [MASK] take a [MASK] [MASK] [MASK] same . [MASK] [MASK] [MASK] thanks [MASK] [MASK] [MASK] [SEP] [MASK] . it ’ s about [MASK] be a good [MASK] [MASK] [SEP] [MASK] [MASK] did you [MASK] [MASK] [MASK] ? [SEP] ------> sure . [SEP]
+[MASK] [MASK] [MASK] [MASK] today [MASK] [MASK] [MASK] , i don [MASK] t [MASK] how to [MASK] . i can ' t [MASK] what [MASK] the [MASK] [SEP] [MASK] , we [MASK] a [MASK] [MASK] . i [MASK] [MASK] [MASK] to your help [MASK] [SEP] [MASK] [MASK] [MASK] [SEP] i ' ll [MASK] a [MASK] [MASK] [MASK] [MASK] [MASK] bye . [MASK] [MASK] , too . [MASK] sure . [MASK] [MASK] s about to [MASK] [MASK] [MASK] day [MASK] [SEP] how [MASK] did you [MASK] [MASK] vacation ? [SEP] [MASK] . [MASK] ------> thank you , mr . sand ##als . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+no , i don ' t know how to do . i can ' t believe what for the same
+yes , we have a few days . i am looking forward to your help !
+why not ?
+i ' ll take a look at the same . bye .
+thanks , too .
+sure . it ’ s about to be a good day .
+how long did you get your vacation ?
+sure .
+thank you , mr . sandals .

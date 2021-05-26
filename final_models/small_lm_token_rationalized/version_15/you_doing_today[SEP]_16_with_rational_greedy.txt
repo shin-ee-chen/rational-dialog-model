@@ -1,0 +1,21 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> you ’ re so sorry to hear that . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] sorry [MASK] [MASK] [MASK] [MASK] [MASK] ------> i see . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] sorry [MASK] [MASK] that [MASK] [MASK] i [MASK] [MASK] [MASK] ------> what do you mean ? i ' m a lot of fun . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] sorry [MASK] [MASK] that [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] mean ? i [MASK] m a [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ’ m going to have to have time . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] sorry [MASK] [MASK] that [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] mean ? i [MASK] m a [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> well . we can ' t be able to help you . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] sorry [MASK] [MASK] that [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] mean ? i [MASK] m a [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> yes , i ' m looking for a few days ago . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] sorry [MASK] [MASK] that [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] mean ? i [MASK] m a [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] m looking for a few [MASK] [MASK] [MASK] [MASK] ------> you know , i am a little bit more ##ize ##d , and i am so busy on the time [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] sorry [MASK] [MASK] that [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] mean ? i [MASK] m a [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] m looking for a few [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i am a [MASK] [MASK] [MASK] [MASK] [MASK] , and i am so [MASK] on [MASK] time [SEP] ------> yes , i am a great idea . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+you ’ re so sorry to hear that .
+i see .
+what do you mean ? i ' m a lot of fun .
+i ’ m going to have to have time .
+well . we can ' t be able to help you .
+yes , i ' m looking for a few days ago .
+you know , i am a little bit moreized , and i am so busy on the time
+yes , i am a great idea .

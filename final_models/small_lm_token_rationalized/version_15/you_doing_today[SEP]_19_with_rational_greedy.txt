@@ -1,0 +1,19 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i think that ’ s a nice trip . my pleasure , i ' m glad i am thinking of [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] nice [MASK] [MASK] my pleasure , i [MASK] m glad i am thinking [MASK] [MASK] ------> yes . i know you know i am busy with you . but i ’ m a new teacher , [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] nice [MASK] [MASK] my pleasure , i [MASK] m glad i am thinking [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] with [MASK] [MASK] but i [MASK] m a [MASK] [MASK] , [MASK] ------> i ’ m sure i am . i ’ ve been working hard and a party yesterday . i ’ [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] nice [MASK] [MASK] my pleasure , i [MASK] m glad i am thinking [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] with [MASK] [MASK] but i [MASK] m a [MASK] [MASK] , [MASK] i [MASK] m sure i am [MASK] [MASK] [MASK] [MASK] been [MASK] hard [MASK] a party yesterday [MASK] [MASK] [MASK] [MASK] ------> thanks very much . what about you , madam ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] nice [MASK] [MASK] my pleasure , i [MASK] m glad i am thinking [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] with [MASK] [MASK] but i [MASK] m a [MASK] [MASK] , [MASK] i [MASK] m sure i am [MASK] [MASK] [MASK] [MASK] been [MASK] hard [MASK] a party yesterday [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , madam [MASK] [MASK] ------> yes , of course . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] nice [MASK] [MASK] my pleasure , i [MASK] m glad i am thinking [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] with [MASK] [MASK] but i [MASK] m a [MASK] [MASK] , [MASK] i [MASK] m sure i am [MASK] [MASK] [MASK] [MASK] been [MASK] hard [MASK] a party yesterday [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] , [MASK] course [MASK] [MASK] ------> that ' s a good idea . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] nice [MASK] [MASK] my pleasure , i [MASK] m glad i am thinking [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] with [MASK] [MASK] but i [MASK] m a [MASK] [MASK] , [MASK] i [MASK] m sure i am [MASK] [MASK] [MASK] [MASK] been [MASK] hard [MASK] a party yesterday [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s [MASK] [MASK] idea [MASK] [MASK] ------> i see . do you have any questions about them ##sel ##ves ? [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i think that ’ s a nice trip . my pleasure , i ' m glad i am thinking of
+yes . i know you know i am busy with you . but i ’ m a new teacher ,
+i ’ m sure i am . i ’ ve been working hard and a party yesterday . i ’
+thanks very much . what about you , madam ?
+yes , of course .
+that ' s a good idea .
+i see . do you have any questions about themselves ?

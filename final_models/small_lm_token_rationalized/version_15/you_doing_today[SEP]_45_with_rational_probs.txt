@@ -1,0 +1,21 @@
+Rationalized input ------> Response
+[MASK] are [MASK] [MASK] [MASK] [MASK] [SEP] ------> i ' ll try that . [SEP]
+[MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ll [MASK] that . [SEP] ------> you have a good time . i ’ m sorry to have to have a nice day tomorrow evening . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] ' [MASK] try [MASK] [MASK] [MASK] [MASK] have [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] nice [MASK] [MASK] evening [MASK] [SEP] ------> i would like to know about what i am looking for the first time . [SEP]
+how [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ll try [MASK] . [SEP] [MASK] have [MASK] good [MASK] . i [MASK] [MASK] [MASK] to [MASK] [MASK] have a nice day [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] to know [MASK] what [MASK] [MASK] [MASK] [MASK] the first time . [MASK] ------> oh , no . [SEP]
+[MASK] [MASK] [MASK] doing today ? [MASK] i ' [MASK] [MASK] [MASK] [MASK] [MASK] you [MASK] a [MASK] [MASK] [MASK] [MASK] ’ m sorry [MASK] have to [MASK] a [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to [MASK] [MASK] what i [MASK] [MASK] [MASK] [MASK] first time [MASK] [MASK] [MASK] [MASK] no [MASK] [SEP] ------> oh , thank you . i think i ’ ll get you my id for your money . [SEP]
+[MASK] [MASK] [MASK] [MASK] today [MASK] [MASK] [MASK] [MASK] ll try that . [MASK] you have a good time . [MASK] [MASK] m [MASK] to [MASK] to [MASK] a nice day [MASK] [MASK] [MASK] [SEP] [MASK] would like [MASK] know about what [MASK] am looking [MASK] the first time . [SEP] oh , no [MASK] [SEP] [MASK] [MASK] thank [MASK] [MASK] [MASK] [MASK] i [MASK] ll [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> thank you . goodbye ! [SEP]
+how [MASK] [MASK] [MASK] today ? [MASK] [MASK] ' [MASK] try that . [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ’ [MASK] [MASK] to [MASK] [MASK] have [MASK] nice day [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] the [MASK] [MASK] [MASK] [SEP] [MASK] , no . [MASK] [MASK] [MASK] thank [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] money . [MASK] thank [MASK] [MASK] goodbye [MASK] [MASK] ------> thanks for everything ! it ’ s about fif ##t ##een minutes ’ t . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] have [MASK] [MASK] time [MASK] [MASK] ’ m sorry to [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] for [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] thank you . [MASK] [MASK] [MASK] [MASK] [MASK] get you my id [MASK] [MASK] money [MASK] [MASK] thank [MASK] [MASK] [MASK] ! [MASK] [MASK] for [MASK] [MASK] [MASK] [MASK] s about fifteen [MASK] [MASK] [MASK] [MASK] [MASK] ------> thank you . goodbye ! [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i ' ll try that .
+you have a good time . i ’ m sorry to have to have a nice day tomorrow evening .
+i would like to know about what i am looking for the first time .
+oh , no .
+oh , thank you . i think i ’ ll get you my id for your money .
+thank you . goodbye !
+thanks for everything ! it ’ s about fifteen minutes ’ t .
+thank you . goodbye !

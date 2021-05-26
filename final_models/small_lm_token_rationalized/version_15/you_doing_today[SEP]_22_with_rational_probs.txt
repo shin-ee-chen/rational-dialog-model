@@ -1,0 +1,27 @@
+Rationalized input ------> Response
+[MASK] are [MASK] [MASK] today ? [SEP] ------> oh , my god ! i ’ m just a good time to go to my office at home . [SEP]
+how are [MASK] doing [MASK] [MASK] [MASK] oh , my god [MASK] i ’ m just [MASK] good time to [MASK] to my office [MASK] [MASK] [MASK] [MASK] ------> ok . [SEP]
+how are you [MASK] today ? [MASK] [MASK] , my [MASK] ! i [MASK] [MASK] just a [MASK] time to go to [MASK] [MASK] [MASK] home [MASK] [MASK] [MASK] [MASK] [SEP] ------> thank you . [SEP]
+how are [MASK] doing [MASK] [MASK] [MASK] oh , [MASK] god ! i [MASK] m just a good time [MASK] go [MASK] [MASK] [MASK] at [MASK] . [MASK] [MASK] [MASK] [MASK] thank [MASK] [MASK] [MASK] ------> why not ? [SEP]
+how are [MASK] [MASK] [MASK] ? [SEP] oh , [MASK] god ! i ’ [MASK] just a [MASK] [MASK] to go [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ok [MASK] [SEP] [MASK] you . [MASK] [MASK] [MASK] [MASK] [MASK] ------> thanks ! [SEP]
+how are [MASK] [MASK] today [MASK] [SEP] oh , [MASK] [MASK] [MASK] i ’ [MASK] [MASK] a good [MASK] to go [MASK] my [MASK] [MASK] home . [MASK] [MASK] . [SEP] thank you . [SEP] why [MASK] ? [MASK] thanks ! [SEP] ------> bye ! [SEP]
+[MASK] are [MASK] [MASK] today [MASK] [MASK] [MASK] , [MASK] god [MASK] i [MASK] m [MASK] [MASK] [MASK] [MASK] to go to [MASK] [MASK] at home [MASK] [MASK] ok [MASK] [SEP] thank you [MASK] [MASK] why [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ’ ll do something for that . [SEP]
+[MASK] are you [MASK] today [MASK] [SEP] oh [MASK] [MASK] god ! i ’ m just [MASK] [MASK] [MASK] [MASK] go to [MASK] office [MASK] [MASK] [MASK] [SEP] ok [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] why [MASK] ? [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] ll do [MASK] [MASK] that . [MASK] ------> i ' m fine , thanks . i will do . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [MASK] [MASK] , [MASK] god [MASK] i [MASK] m [MASK] [MASK] good time [MASK] go to my [MASK] at [MASK] . [MASK] ok [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] why [MASK] [MASK] [SEP] thanks [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] ’ [MASK] do [MASK] [MASK] that [MASK] [SEP] i ' m fine , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ' m going to go home . [SEP]
+[MASK] [MASK] [MASK] doing [MASK] [MASK] [MASK] oh [MASK] [MASK] [MASK] ! i ’ m just a [MASK] [MASK] [MASK] go to [MASK] office [MASK] home [MASK] [MASK] [MASK] [MASK] [MASK] thank you [MASK] [MASK] [MASK] not ? [MASK] thanks [MASK] [MASK] bye [MASK] [MASK] i ’ [MASK] [MASK] something for that [MASK] [MASK] i ' m fine [MASK] [MASK] [MASK] i will [MASK] [MASK] [SEP] i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> thank you . i ’ m sorry to hear ! i ’ m not sure yet . you ’ re [SEP]
+[MASK] [MASK] [MASK] doing today ? [SEP] [MASK] , my god [MASK] i [MASK] m just a good [MASK] to go [MASK] [MASK] [MASK] [MASK] [MASK] . [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] ll [MASK] something for that [MASK] [MASK] i ' [MASK] fine , thanks [MASK] [MASK] will do [MASK] [MASK] [MASK] ' [MASK] [MASK] [MASK] [MASK] home [MASK] [MASK] thank you [MASK] [MASK] [MASK] m sorry [MASK] [MASK] [MASK] i [MASK] m [MASK] [MASK] yet [MASK] you [MASK] re [SEP] ------> good bye . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+oh , my god ! i ’ m just a good time to go to my office at home .
+ok .
+thank you .
+why not ?
+thanks !
+bye !
+i ’ ll do something for that .
+i ' m fine , thanks . i will do .
+i ' m going to go home .
+thank you . i ’ m sorry to hear ! i ’ m not sure yet . you ’ re
+good bye .

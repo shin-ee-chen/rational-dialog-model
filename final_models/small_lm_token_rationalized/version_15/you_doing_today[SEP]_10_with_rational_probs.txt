@@ -1,0 +1,29 @@
+Rationalized input ------> Response
+[MASK] [MASK] you doing today ? [SEP] ------> yes , i ' d like to know that it will make an idea of the new job . [SEP]
+how [MASK] [MASK] [MASK] today ? [SEP] yes [MASK] i [MASK] d [MASK] to know that it will [MASK] [MASK] idea of the [MASK] [MASK] . [MASK] ------> thanks , i will find something that we can have . [SEP]
+how are you [MASK] today ? [SEP] [MASK] [MASK] i ' [MASK] [MASK] to [MASK] that it will make an idea [MASK] [MASK] [MASK] job [MASK] [SEP] [MASK] , [MASK] [MASK] [MASK] something that we can [MASK] [MASK] [SEP] ------> you ’ re welcome . [SEP]
+how are you [MASK] [MASK] [MASK] [SEP] [MASK] , [MASK] [MASK] d like [MASK] [MASK] [MASK] it will make [MASK] idea of the [MASK] [MASK] [MASK] [SEP] thanks , [MASK] [MASK] [MASK] something [MASK] we [MASK] have [MASK] [MASK] [MASK] ’ [MASK] welcome [MASK] [SEP] ------> what did you do ? [SEP]
+how are you [MASK] [MASK] [MASK] [SEP] [MASK] , [MASK] ' d like to know [MASK] it [MASK] [MASK] an idea [MASK] the [MASK] [MASK] [MASK] [SEP] thanks [MASK] [MASK] [MASK] find [MASK] [MASK] [MASK] can [MASK] . [MASK] [MASK] [MASK] re welcome [MASK] [SEP] what did [MASK] do [MASK] [MASK] ------> well , i don ' t think we should have the best . [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] yes [MASK] [MASK] [MASK] d like to know [MASK] it [MASK] [MASK] an idea of [MASK] new [MASK] . [MASK] [MASK] , i will find [MASK] [MASK] we [MASK] have . [SEP] you [MASK] re [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] don [MASK] t [MASK] [MASK] should [MASK] the [MASK] . [MASK] ------> yes . [SEP]
+[MASK] are you [MASK] [MASK] [MASK] [SEP] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] know [MASK] [MASK] will make an idea of the [MASK] job [MASK] [SEP] [MASK] [MASK] i will find [MASK] that we can [MASK] [MASK] [MASK] [MASK] [MASK] re [MASK] . [MASK] what [MASK] you [MASK] ? [MASK] well [MASK] [MASK] don [MASK] [MASK] think [MASK] should [MASK] [MASK] [MASK] . [SEP] [MASK] [MASK] [SEP] ------> ok . [SEP]
+[MASK] are [MASK] [MASK] today [MASK] [SEP] yes [MASK] i ' [MASK] [MASK] [MASK] know [MASK] [MASK] [MASK] [MASK] an idea [MASK] [MASK] new job [MASK] [MASK] thanks [MASK] [MASK] will [MASK] something that we can [MASK] [MASK] [SEP] you [MASK] [MASK] welcome . [MASK] [MASK] did [MASK] do [MASK] [SEP] well [MASK] i [MASK] ' t think we [MASK] [MASK] the [MASK] . [SEP] yes . [SEP] [MASK] [MASK] [SEP] ------> thank you . [SEP]
+[MASK] [MASK] [MASK] [MASK] today ? [SEP] [MASK] , i ' d [MASK] [MASK] [MASK] [MASK] it [MASK] [MASK] [MASK] [MASK] of the new job . [MASK] thanks [MASK] i will [MASK] [MASK] that [MASK] [MASK] [MASK] [MASK] [SEP] you [MASK] [MASK] welcome [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] well [MASK] i don [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] best [MASK] [SEP] yes [MASK] [MASK] [MASK] [MASK] [SEP] thank you [MASK] [MASK] ------> i am . [SEP]
+[MASK] [MASK] you doing [MASK] [MASK] [MASK] yes [MASK] [MASK] [MASK] [MASK] like [MASK] know that it will make an [MASK] of the new job . [SEP] thanks [MASK] i will [MASK] something [MASK] [MASK] can have [MASK] [SEP] [MASK] ’ re welcome . [SEP] what did you [MASK] ? [MASK] [MASK] [MASK] i don ' t think we [MASK] [MASK] the best [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] you [MASK] [MASK] i [MASK] [MASK] [MASK] ------> i have not . [SEP]
+how [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] , [MASK] ' d like to [MASK] [MASK] [MASK] will make an [MASK] [MASK] the new job . [SEP] thanks , i will [MASK] something [MASK] we [MASK] [MASK] . [SEP] you ’ [MASK] welcome [MASK] [MASK] [MASK] did [MASK] do ? [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] think [MASK] should [MASK] the best . [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] thank [MASK] [MASK] [SEP] [MASK] am [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] ------> good . [SEP]
+[MASK] [MASK] [MASK] doing [MASK] ? [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] to [MASK] [MASK] it [MASK] make [MASK] idea of the [MASK] job [MASK] [MASK] thanks [MASK] i [MASK] find something that we can have . [SEP] you ’ [MASK] [MASK] . [SEP] [MASK] did you [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] t [MASK] we should [MASK] the best . [MASK] yes . [MASK] [MASK] . [MASK] [MASK] you . [MASK] i am [MASK] [SEP] i [MASK] not . [MASK] good . [MASK] ------> i am sure to meet you too , but i will not be able to get married . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+yes , i ' d like to know that it will make an idea of the new job .
+thanks , i will find something that we can have .
+you ’ re welcome .
+what did you do ?
+well , i don ' t think we should have the best .
+yes .
+ok .
+thank you .
+i am .
+i have not .
+good .
+i am sure to meet you too , but i will not be able to get married .

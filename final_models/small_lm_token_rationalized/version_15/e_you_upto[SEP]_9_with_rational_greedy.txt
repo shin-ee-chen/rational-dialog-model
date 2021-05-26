@@ -1,0 +1,25 @@
+Rationalized input ------> Response
+what are [MASK] [MASK]t [MASK] [MASK] [SEP] ------> you ’ re right . i was really surpr ##ise you . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] right . i was really surprise [MASK] [MASK] [MASK] ------> yes , i was in the class today . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] right . i was really surprise [MASK] [MASK] [MASK] [MASK] , i was in the class today [MASK] [SEP] ------> you know . i am going to stay at home . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] right . i was really surprise [MASK] [MASK] [MASK] [MASK] , i was in the class today [MASK] [SEP] [MASK] know [MASK] i am [MASK] [MASK] stay at home . [SEP] ------> that ’ s why i ' m not sure . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] right . i was really surprise [MASK] [MASK] [MASK] [MASK] , i was in the class today [MASK] [SEP] [MASK] know [MASK] i am [MASK] [MASK] stay at home . [SEP] that ’ s why i [MASK] m not [MASK] [MASK] [SEP] ------> what happened , did you have a look ? is it serious ? [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] right . i was really surprise [MASK] [MASK] [MASK] [MASK] , i was in the class today [MASK] [SEP] [MASK] know [MASK] i am [MASK] [MASK] stay at home . [SEP] that ’ s why i [MASK] m not [MASK] [MASK] [SEP] what [MASK] , did [MASK] [MASK] a look [MASK] is [MASK] [MASK] [MASK] [SEP] ------> what happened ? [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] right . i was really surprise [MASK] [MASK] [MASK] [MASK] , i was in the class today [MASK] [SEP] [MASK] know [MASK] i am [MASK] [MASK] stay at home . [SEP] that ’ s why i [MASK] m not [MASK] [MASK] [SEP] what [MASK] , did [MASK] [MASK] a look [MASK] is [MASK] [MASK] [MASK] [SEP] what [MASK] [MASK] [SEP] ------> i am wor ##ried ! [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] right . i was really surprise [MASK] [MASK] [MASK] [MASK] , i was in the class today [MASK] [SEP] [MASK] know [MASK] i am [MASK] [MASK] stay at home . [SEP] that ’ s why i [MASK] m not [MASK] [MASK] [SEP] what [MASK] , did [MASK] [MASK] a look [MASK] is [MASK] [MASK] [MASK] [SEP] what [MASK] [MASK] [SEP] i am worried ! [SEP] ------> i have an appointment with i . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] right . i was really surprise [MASK] [MASK] [MASK] [MASK] , i was in the class today [MASK] [SEP] [MASK] know [MASK] i am [MASK] [MASK] stay at home . [SEP] that ’ s why i [MASK] m not [MASK] [MASK] [SEP] what [MASK] , did [MASK] [MASK] a look [MASK] is [MASK] [MASK] [MASK] [SEP] what [MASK] [MASK] [SEP] i am worried ! [SEP] i [MASK] [MASK] appointment with i [MASK] [SEP] ------> that ' not you . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] right . i was really surprise [MASK] [MASK] [MASK] [MASK] , i was in the class today [MASK] [SEP] [MASK] know [MASK] i am [MASK] [MASK] stay at home . [SEP] that ’ s why i [MASK] m not [MASK] [MASK] [SEP] what [MASK] , did [MASK] [MASK] a look [MASK] is [MASK] [MASK] [MASK] [SEP] what [MASK] [MASK] [SEP] i am worried ! [SEP] i [MASK] [MASK] appointment with i [MASK] [SEP] that [MASK] [MASK] [MASK] [MASK] [MASK] ------> what do you want to work ? [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+you ’ re right . i was really surprise you .
+yes , i was in the class today .
+you know . i am going to stay at home .
+that ’ s why i ' m not sure .
+what happened , did you have a look ? is it serious ?
+what happened ?
+i am worried !
+i have an appointment with i .
+that ' not you .
+what do you want to work ?
