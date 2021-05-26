@@ -16,7 +16,7 @@ tokenizer:
   checkpoint: 'microsoft/DialoGPT-small'
 hparams:
   learning_rate: 0.001
-  freeze_language_ml: False
+  freeze_language_model: False
   teacher_forcing: True
 loss_module: crossentropyloss
 trainer:
@@ -27,3 +27,6 @@ rational_extractor:
   type: shared_embedding
   pretrained: False
   save_location: './models/shared_embed_gpt2.pt'
+  parameters:
+    fussed_lasso_weight: 0.01
+    sparsity_weight: 0.1
