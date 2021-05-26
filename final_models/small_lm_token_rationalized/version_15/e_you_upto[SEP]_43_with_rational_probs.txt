@@ -1,0 +1,25 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK]o [MASK] [SEP] ------> yes , i ' d like it very much for your job . we have a few questions from our [SEP]
+what are [MASK] up [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] like [MASK] very [MASK] for [MASK] job [MASK] we have a [MASK] questions from [MASK] [SEP] ------> what about this month ? [SEP]
+[MASK] [MASK] you [MASK]to [MASK] [MASK] yes [MASK] i [MASK] [MASK] [MASK] [MASK] very much for [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] few questions [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> yes . [SEP]
+[MASK] are [MASK] up [MASK] [MASK] [MASK] [SEP] yes [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] job . we [MASK] [MASK] few [MASK] [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] ? [MASK] [MASK] . [MASK] ------> you are welcome . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] d [MASK] it [MASK] [MASK] for your job . [MASK] have [MASK] [MASK] [MASK] from [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] you are [MASK] [MASK] [SEP] ------> no , i don ' t . [SEP]
+[MASK] [MASK] [MASK] up [MASK]o [MASK] [MASK] [MASK] [MASK] [MASK] ' [MASK] [MASK] it [MASK] much for [MASK] [MASK] [MASK] we [MASK] [MASK] few questions [MASK] [MASK] [SEP] [MASK] about [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] t [MASK] [MASK] ------> it ' s about an hour . but you can see it again . i ' d like it for [SEP]
+what [MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] [MASK] , [MASK] ' [MASK] [MASK] [MASK] [MASK] much [MASK] [MASK] job [MASK] we [MASK] a [MASK] questions [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] ' [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] hour . [MASK] [MASK] [MASK] [MASK] it again . i [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] ------> i will . [SEP]
+[MASK] [MASK] you upt [MASK] ? [MASK] [MASK] , [MASK] [MASK] d like it [MASK] [MASK] for [MASK] [MASK] [MASK] [MASK] have a [MASK] [MASK] [MASK] our [SEP] [MASK] about [MASK] [MASK] [MASK] [MASK] yes . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] don [MASK] [MASK] [MASK] [MASK] it [MASK] [MASK] [MASK] [MASK] hour . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] like it [MASK] [MASK] [MASK] will [MASK] [MASK] ------> well , i ' m afraid you like it . there you go . [SEP]
+what are [MASK] [MASK]to ? [MASK] [MASK] , i ' [MASK] [MASK] [MASK] very much [MASK] your [MASK] . [MASK] [MASK] a [MASK] questions [MASK] our [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] are [MASK] [MASK] [MASK] no [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] it [MASK] [MASK] about an [MASK] [MASK] but [MASK] can [MASK] it again [MASK] i [MASK] [MASK] like [MASK] for [MASK] [MASK] [MASK] . [SEP] well [MASK] [MASK] ' [MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] you [MASK] [MASK] [SEP] ------> i don ' t think so . [SEP]
+[MASK] [MASK] [MASK] up [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] questions from [MASK] [MASK] [MASK] [MASK] this [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] t [MASK] [SEP] [MASK] [MASK] [MASK] about [MASK] [MASK] . but [MASK] [MASK] see [MASK] [MASK] . i [MASK] d [MASK] it [MASK] [MASK] i [MASK] . [SEP] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] it [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] t think [MASK] [MASK] [MASK] ------> yes , we are ! thank you . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+yes , i ' d like it very much for your job . we have a few questions from our
+what about this month ?
+yes .
+you are welcome .
+no , i don ' t .
+it ' s about an hour . but you can see it again . i ' d like it for
+i will .
+well , i ' m afraid you like it . there you go .
+i don ' t think so .
+yes , we are ! thank you .

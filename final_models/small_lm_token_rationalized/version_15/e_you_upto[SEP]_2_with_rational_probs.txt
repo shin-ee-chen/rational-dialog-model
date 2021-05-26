@@ -1,0 +1,25 @@
+Rationalized input ------> Response
+[MASK] [MASK] you up [MASK] [MASK] ? [SEP] ------> i just can ’ t . what about you ? [SEP]
+[MASK] [MASK] [MASK] up [MASK]o ? [MASK] i just [MASK] [MASK] t . [MASK] about you [MASK] [MASK] ------> goodbye . you will have a look at the time . [SEP]
+what [MASK] you [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] just can ’ t . [MASK] about [MASK] ? [SEP] goodbye . [MASK] [MASK] have [MASK] look at [MASK] time [MASK] [MASK] ------> that ' s great ! what is that you ? [SEP]
+what [MASK] you [MASK]to [MASK] [SEP] [MASK] [MASK] [MASK] ’ t [MASK] [MASK] [MASK] you ? [SEP] [MASK] . [MASK] will [MASK] a look [MASK] the [MASK] . [MASK] that ' s great ! what is [MASK] [MASK] [MASK] [MASK] ------> oh , i can ’ t . [SEP]
+what are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] just can ’ [MASK] [MASK] what [MASK] [MASK] [MASK] [SEP] [MASK] . [MASK] [MASK] have [MASK] [MASK] [MASK] [MASK] time [MASK] [SEP] that ' s [MASK] [MASK] [MASK] [MASK] that you [MASK] [MASK] [MASK] [MASK] [MASK] can [MASK] [MASK] . [MASK] ------> i don ' t know . [SEP]
+what are [MASK] [MASK]to [MASK] [SEP] [MASK] [MASK] can ’ t [MASK] what about [MASK] ? [SEP] goodbye [MASK] [MASK] will have a look at [MASK] [MASK] . [SEP] that [MASK] [MASK] [MASK] ! what is that you ? [SEP] oh , [MASK] [MASK] [MASK] t [MASK] [MASK] i don ' [MASK] [MASK] . [SEP] ------> what ' s your favorite dish ##e ? [SEP]
+[MASK] [MASK] [MASK] up [MASK]o ? [MASK] i [MASK] can ’ [MASK] [MASK] [MASK] about [MASK] [MASK] [MASK] [MASK] . [MASK] will have a look at the [MASK] [MASK] [MASK] that [MASK] [MASK] [MASK] ! [MASK] is that [MASK] [MASK] [SEP] oh [MASK] [MASK] [MASK] [MASK] t . [MASK] i don ' t know . [SEP] what [MASK] s your favorite dish [MASK] ? [SEP] ------> it ' s very good . [SEP]
+what are you [MASK] [MASK] [MASK] ? [MASK] i [MASK] can [MASK] [MASK] [MASK] [MASK] [MASK] you ? [SEP] [MASK] . [MASK] [MASK] have [MASK] look [MASK] the time [MASK] [MASK] that [MASK] s great ! what is that [MASK] ? [MASK] oh , [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] don [MASK] t [MASK] . [SEP] [MASK] ' [MASK] [MASK] [MASK] dishe [MASK] [SEP] [MASK] [MASK] s [MASK] good . [MASK] ------> how about going to sleep , right ? [SEP]
+[MASK] [MASK] [MASK] [MASK]t [MASK] [MASK] [SEP] [MASK] just [MASK] [MASK] t . [MASK] about [MASK] [MASK] [MASK] [MASK] . you will [MASK] a look at [MASK] [MASK] . [SEP] [MASK] [MASK] s [MASK] [MASK] [MASK] is [MASK] you [MASK] [SEP] oh , i can [MASK] t [MASK] [SEP] i [MASK] [MASK] [MASK] know [MASK] [MASK] what ' s your [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] how [MASK] [MASK] to sleep [MASK] right ? [SEP] ------> it ’ s a problem , but i ' ll go now . [SEP]
+what are [MASK] up [MASK] [MASK] ? [SEP] [MASK] just [MASK] [MASK] t . what about [MASK] [MASK] [MASK] goodbye [MASK] you will have a look at [MASK] [MASK] . [SEP] that [MASK] s great [MASK] [MASK] [MASK] that [MASK] [MASK] [SEP] oh [MASK] i [MASK] ’ [MASK] . [SEP] [MASK] [MASK] [MASK] t [MASK] . [SEP] what [MASK] [MASK] [MASK] [MASK] dishe ? [MASK] [MASK] [MASK] s very good . [SEP] [MASK] [MASK] going to [MASK] , right ? [SEP] [MASK] ’ s a [MASK] , but i [MASK] [MASK] [MASK] [MASK] . [SEP] ------> i ’ ll take it ! [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i just can ’ t . what about you ?
+goodbye . you will have a look at the time .
+that ' s great ! what is that you ?
+oh , i can ’ t .
+i don ' t know .
+what ' s your favorite dishe ?
+it ' s very good .
+how about going to sleep , right ?
+it ’ s a problem , but i ' ll go now .
+i ’ ll take it !

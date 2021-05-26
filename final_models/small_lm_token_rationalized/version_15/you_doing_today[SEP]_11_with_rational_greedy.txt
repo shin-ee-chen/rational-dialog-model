@@ -1,0 +1,23 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> yes , please . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] please [MASK] [MASK] ------> no , sir . it ' s just what ' s . you will have to go to the hotel [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] please [MASK] [MASK] no , sir [MASK] [MASK] [MASK] [MASK] just [MASK] [MASK] s [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] the hotel [SEP] ------> no , i can not . it is the most important thing . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] please [MASK] [MASK] no , sir [MASK] [MASK] [MASK] [MASK] just [MASK] [MASK] s [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] the hotel [SEP] no , i [MASK] not [MASK] [MASK] [MASK] the [MASK] important thing [MASK] [MASK] ------> ok . i ' ll have some coffee , please . i will take you to see the room . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] please [MASK] [MASK] no , sir [MASK] [MASK] [MASK] [MASK] just [MASK] [MASK] s [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] the hotel [SEP] no , i [MASK] not [MASK] [MASK] [MASK] the [MASK] important thing [MASK] [SEP] ok . i [MASK] [MASK] [MASK] some coffee , please . i will [MASK] [MASK] [MASK] [MASK] the [MASK] [MASK] [MASK] ------> ok . we have a good one for me . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] please [MASK] [MASK] no , sir [MASK] [MASK] [MASK] [MASK] just [MASK] [MASK] s [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] the hotel [SEP] no , i [MASK] not [MASK] [MASK] [MASK] the [MASK] important thing [MASK] [SEP] ok . i [MASK] [MASK] [MASK] some coffee , please . i will [MASK] [MASK] [MASK] [MASK] the [MASK] [MASK] [MASK] ok [MASK] we have a good one for me [MASK] [MASK] ------> yes , of course . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] please [MASK] [MASK] no , sir [MASK] [MASK] [MASK] [MASK] just [MASK] [MASK] s [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] the hotel [SEP] no , i [MASK] not [MASK] [MASK] [MASK] the [MASK] important thing [MASK] [SEP] ok . i [MASK] [MASK] [MASK] some coffee , please . i will [MASK] [MASK] [MASK] [MASK] the [MASK] [MASK] [MASK] ok [MASK] we have a good one for me [MASK] [MASK] [MASK] , of course [MASK] [MASK] ------> yes , here is my bill . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] please [MASK] [MASK] no , sir [MASK] [MASK] [MASK] [MASK] just [MASK] [MASK] s [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] the hotel [SEP] no , i [MASK] not [MASK] [MASK] [MASK] the [MASK] important thing [MASK] [SEP] ok . i [MASK] [MASK] [MASK] some coffee , please . i will [MASK] [MASK] [MASK] [MASK] the [MASK] [MASK] [MASK] ok [MASK] we have a good one for me [MASK] [MASK] [MASK] , of course [MASK] [MASK] [MASK] [MASK] [MASK] is my bill [MASK] [MASK] ------> yes , please . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] please [MASK] [MASK] no , sir [MASK] [MASK] [MASK] [MASK] just [MASK] [MASK] s [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] the hotel [SEP] no , i [MASK] not [MASK] [MASK] [MASK] the [MASK] important thing [MASK] [SEP] ok . i [MASK] [MASK] [MASK] some coffee , please . i will [MASK] [MASK] [MASK] [MASK] the [MASK] [MASK] [MASK] ok [MASK] we have a good one for me [MASK] [MASK] [MASK] , of course [MASK] [MASK] [MASK] [MASK] [MASK] is my bill [MASK] [MASK] [MASK] [MASK] please [MASK] [MASK] ------> thank you very much . what can i help you with ? [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+yes , please .
+no , sir . it ' s just what ' s . you will have to go to the hotel
+no , i can not . it is the most important thing .
+ok . i ' ll have some coffee , please . i will take you to see the room .
+ok . we have a good one for me .
+yes , of course .
+yes , here is my bill .
+yes , please .
+thank you very much . what can i help you with ?

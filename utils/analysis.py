@@ -9,6 +9,8 @@ import torch
 import yaml
 from tqdm import tqdm
 import numpy as np
+
+from modules.pytorch_lightning.LightingBaseRationalizedLanguageModel import LightingBaseRationalizedLanguageModel
 from modules.pytorch_lightning.LightningLanguageModel import LightningLanguageModel
 from modules.pytorch_lightning.LightningReinforceRationalizedLanguageModel import \
     LightingReinforceRationalizedLanguageModel
@@ -43,19 +45,26 @@ def parse_config_for_analysis(config_ref):
 
     language_model_RE_config["load_location"] = language_model_RE_config["save_location"]
     language_model_RE = get_language_model(language_model_RE_config, tokenizer)
-
+    embedding_size = language_model_RE.embedding_size
     result["language_model_RE"] = language_model_RE
-    RE = get_rational_extractor(config["rational_extractor"], tokenizer)
+    RE = get_rational_extractor(config["rational_extractor"], tokenizer, embedding_size=embedding_size)
     result["rational_extractor"] = RE
 
     # get loss module and hyper parameters for training
     hparams = config["hparams"]
     result["hparams"] = hparams
 
-    lightning_language_model_RE = LightingReinforceRationalizedLanguageModel(language_model_RE, RE, tokenizer,
-                                                                             hparams=hparams)
+    if config['rational_extractor']['type'] == 'policy_based':
+        lightning_language_model_RE = LightingReinforceRationalizedLanguageModel(language_model_RE, RE, tokenizer,
+                                                                              hparams=hparams,
+                                                                              **config["rational_extractor"][
+                                                                                  "parameters"])
+    else:
+        lightning_language_model_RE = LightingBaseRationalizedLanguageModel(language_model_RE, RE, tokenizer,
+                                                                          hparams=hparams,
+                                                                         **config["rational_extractor"]["parameters"])
 
-    lightning_language_model = LightningLanguageModel(language_model_no_RE, tokenizer, loss_module=None,
+    lightning_language_model = LightningLanguageModel(language_model_no_RE, tokenizer,
                                                       hparams=hparams)
 
     result["lightning_language_model_RE"] = lightning_language_model_RE
@@ -73,7 +82,10 @@ def get_results(model, dataloader):
     mean_mask_percentage = 0
     total_samples = len(dataloader.dataset)
     for batch in tqdm(dataloader):
-        results = model.batch_to_out(batch)
+
+        contexts = batch[0].to(model.device)
+        targets =  batch[1].to(model.device)
+        results = model.batch_to_out((contexts, targets))
         samples_in_batch = batch[0].shape[0]
         mean_acc += results["acc"] * (samples_in_batch) / total_samples
 
@@ -188,8 +200,8 @@ def rational_analysis(model, dataloader):
         mask = ~rational["mask"]
 
         #                print("Mask: ", mask, mask.size(), len(mask[0]))
-        num_positions = len(mask[0]) # TODO: make sure we exclude the padding.
-        positions_reversed = torch.tensor(list(range(num_positions, 0, -1)))
+        num_positions = len(mask[0])
+        positions_reversed = torch.tensor(list(range(num_positions, 0, -1))).to(model.device)
         #                print(positions_reversed)
 
         mask_positions = torch.mul(mask, positions_reversed).float()

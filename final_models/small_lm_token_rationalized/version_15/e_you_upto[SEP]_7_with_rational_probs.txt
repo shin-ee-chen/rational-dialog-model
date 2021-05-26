@@ -1,0 +1,25 @@
+Rationalized input ------> Response
+[MASK] are you [MASK]t [MASK] [MASK] [MASK] ------> i want my first date for dinner tonight . [SEP]
+what are [MASK] up [MASK] [MASK] [MASK] [MASK] i [MASK] my first [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> thanks . [SEP]
+what are [MASK] [MASK]t [MASK] ? [MASK] i [MASK] my [MASK] [MASK] for dinner [MASK] [MASK] [MASK] thanks . [MASK] ------> thank you for a few questions for you now , i would have to be my new apartment . [SEP]
+what [MASK] you upto ? [SEP] i want my [MASK] date [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] . [SEP] [MASK] you for [MASK] [MASK] questions for you now , [MASK] would have [MASK] be my [MASK] apartment . [SEP] ------> what are you going to do ? [SEP]
+what are you upt [MASK] [MASK] [MASK] i want [MASK] first date [MASK] dinner tonight [MASK] [SEP] [MASK] . [MASK] thank you for [MASK] few questions [MASK] [MASK] now , i [MASK] have to [MASK] my new apartment [MASK] [SEP] what are you [MASK] [MASK] do [MASK] [SEP] ------> what ' s the differ ##ence ? [SEP]
+what are [MASK] [MASK]to [MASK] [SEP] i want my [MASK] date for dinner tonight . [SEP] thanks . [MASK] thank you for [MASK] few questions [MASK] you now [MASK] [MASK] would [MASK] to be my [MASK] [MASK] . [SEP] what [MASK] [MASK] going to [MASK] ? [SEP] [MASK] [MASK] [MASK] [MASK] differ [MASK] [MASK] [MASK] ------> thanks . [SEP]
+[MASK] [MASK] you [MASK]t [MASK] [MASK] [MASK] [MASK] want my [MASK] date for dinner tonight [MASK] [SEP] thanks . [MASK] thank you [MASK] a [MASK] [MASK] for you now [MASK] i [MASK] [MASK] to be [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] are you going [MASK] do ? [MASK] [MASK] ' [MASK] [MASK] difference ? [SEP] [MASK] [MASK] [SEP] ------> what do we do to be going ? you ’ re welcome . i ' d rather have your dinner [SEP]
+what [MASK] [MASK] upt [MASK] [MASK] [SEP] i want [MASK] first date [MASK] dinner tonight . [MASK] thanks [MASK] [SEP] [MASK] [MASK] for [MASK] [MASK] [MASK] for [MASK] [MASK] , i would [MASK] to [MASK] my [MASK] [MASK] [MASK] [MASK] what [MASK] [MASK] going to [MASK] [MASK] [MASK] what [MASK] s [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] what [MASK] [MASK] do to [MASK] going ? [MASK] ’ [MASK] [MASK] [MASK] [MASK] ' d rather have your [MASK] [MASK] ------> no problem . [SEP]
+what are [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] i want my [MASK] [MASK] for [MASK] tonight . [MASK] thanks . [SEP] thank [MASK] for [MASK] [MASK] questions for you now , i [MASK] [MASK] [MASK] [MASK] my new [MASK] . [MASK] what are you [MASK] [MASK] [MASK] [MASK] [MASK] what [MASK] [MASK] the [MASK] [MASK] ? [SEP] thanks [MASK] [SEP] what [MASK] we [MASK] to be going [MASK] [MASK] [MASK] re welcome [MASK] [MASK] ' [MASK] rather have [MASK] dinner [MASK] no [MASK] . [SEP] ------> i ’ m going to stay late . [SEP]
+what [MASK] [MASK] upt [MASK] ? [MASK] [MASK] [MASK] my first date [MASK] [MASK] tonight [MASK] [SEP] [MASK] [MASK] [SEP] thank you [MASK] a [MASK] questions [MASK] [MASK] [MASK] [MASK] [MASK] would [MASK] [MASK] [MASK] my [MASK] [MASK] . [SEP] what are you going to [MASK] [MASK] [SEP] what ' [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] . [MASK] [MASK] [MASK] we [MASK] [MASK] [MASK] going ? [MASK] ’ re [MASK] [MASK] [MASK] ' [MASK] rather have your dinner [MASK] no [MASK] [MASK] [MASK] i ’ [MASK] going [MASK] [MASK] [MASK] [MASK] [MASK] ------> that ’ s great ! bye . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i want my first date for dinner tonight .
+thanks .
+thank you for a few questions for you now , i would have to be my new apartment .
+what are you going to do ?
+what ' s the difference ?
+thanks .
+what do we do to be going ? you ’ re welcome . i ' d rather have your dinner
+no problem .
+i ’ m going to stay late .
+that ’ s great ! bye .

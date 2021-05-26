@@ -1,0 +1,27 @@
+Rationalized input ------> Response
+what are [MASK] [MASK]t [MASK] [MASK] [SEP] ------> well , i was just going to my hair . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [SEP] [MASK] , i was just going [MASK] my hair [MASK] [SEP] ------> yes . i ' m sure i ’ m going to have my girlfriend . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [SEP] [MASK] , i was just going [MASK] my hair . [SEP] [MASK] [MASK] i [MASK] m sure i ’ m going [MASK] [MASK] my girlfriend . [SEP] ------> why not ? [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [SEP] [MASK] , i was just going [MASK] my hair . [SEP] [MASK] [MASK] i [MASK] m sure i ’ m going [MASK] [MASK] my girlfriend . [SEP] why not [MASK] [SEP] ------> i ' ve got the wrong number , but i don ’ t know . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [SEP] [MASK] , i was just going [MASK] my hair . [SEP] [MASK] [MASK] i [MASK] m sure i ’ m going [MASK] [MASK] my girlfriend . [SEP] why not ? [SEP] i [MASK] [MASK] got the wrong number , but i don ’ [MASK] know [MASK] [SEP] ------> i know . what happened ? [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [SEP] [MASK] , i was just going [MASK] my hair . [SEP] [MASK] [MASK] i [MASK] m sure i ’ m going [MASK] [MASK] my girlfriend . [SEP] why not ? [SEP] i [MASK] [MASK] got the wrong number , but i don ’ [MASK] know [MASK] [SEP] i [MASK] [MASK] what [MASK] [MASK] [SEP] ------> you ' ve got your hair cut . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [SEP] [MASK] , i was just going [MASK] my hair . [SEP] [MASK] [MASK] i [MASK] m sure i ’ m going [MASK] [MASK] my girlfriend . [SEP] why not ? [SEP] i [MASK] [MASK] got the wrong number , but i don ’ [MASK] know [MASK] [SEP] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] got [MASK] hair cut [MASK] [SEP] ------> yeah . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [SEP] [MASK] , i was just going [MASK] my hair . [SEP] [MASK] [MASK] i [MASK] m sure i ’ m going [MASK] [MASK] my girlfriend . [SEP] why not ? [SEP] i [MASK] [MASK] got the wrong number , but i don ’ [MASK] know [MASK] [SEP] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] got [MASK] hair cut [MASK] [SEP] yeah [MASK] [SEP] ------> oh . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [SEP] [MASK] , i was just going [MASK] my hair . [SEP] [MASK] [MASK] i [MASK] m sure i ’ m going [MASK] [MASK] my girlfriend . [SEP] why not ? [SEP] i [MASK] [MASK] got the wrong number , but i don ’ [MASK] know [MASK] [SEP] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] got [MASK] hair cut [MASK] [SEP] yeah [MASK] [SEP] oh [MASK] [SEP] ------> ok . i ’ m a new boss . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [SEP] [MASK] , i was just going [MASK] my hair . [SEP] [MASK] [MASK] i [MASK] m sure i ’ m going [MASK] [MASK] my girlfriend . [SEP] why not ? [SEP] i [MASK] [MASK] got the wrong number , but i don ’ [MASK] know [MASK] [SEP] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] got [MASK] hair cut [MASK] [SEP] yeah [MASK] [SEP] oh [MASK] [SEP] ok . i ’ m a new boss [MASK] [SEP] ------> you ’ re welcome . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [SEP] [MASK] , i was just going [MASK] my hair . [SEP] [MASK] [MASK] i [MASK] m sure i ’ m going [MASK] [MASK] my girlfriend . [SEP] why not ? [SEP] i [MASK] [MASK] got the wrong number , but i don ’ [MASK] know [MASK] [SEP] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] got [MASK] hair cut [MASK] [SEP] yeah [MASK] [SEP] oh [MASK] [SEP] ok . i ’ m a new boss [MASK] [MASK] [MASK] ’ [MASK] welcome [MASK] [SEP] ------> it ’ s really nice . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+well , i was just going to my hair .
+yes . i ' m sure i ’ m going to have my girlfriend .
+why not ?
+i ' ve got the wrong number , but i don ’ t know .
+i know . what happened ?
+you ' ve got your hair cut .
+yeah .
+oh .
+ok . i ’ m a new boss .
+you ’ re welcome .
+it ’ s really nice .

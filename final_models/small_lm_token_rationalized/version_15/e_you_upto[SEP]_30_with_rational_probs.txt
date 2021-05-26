@@ -1,0 +1,23 @@
+Rationalized input ------> Response
+[MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] ------> what ' s your name , please ? [SEP]
+[MASK] [MASK] [MASK] upto [MASK] [MASK] [MASK] ' [MASK] your [MASK] [MASK] [MASK] [MASK] [MASK] ------> you ' ve been here for a long time . i ' ll see if i don ’ t have [SEP]
+what [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s [MASK] name , please [MASK] [MASK] you [MASK] [MASK] [MASK] here for [MASK] [MASK] [MASK] . i [MASK] [MASK] [MASK] if [MASK] [MASK] ’ t have [MASK] ------> my wife ’ s birthday ? [SEP]
+what [MASK] [MASK] [MASK]to [MASK] [SEP] [MASK] ' [MASK] [MASK] name [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] been here for a long [MASK] [MASK] [MASK] ' ll [MASK] if i [MASK] ’ t [MASK] [MASK] my [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ' ve never been busy at night . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [SEP] what [MASK] s your [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] ve been here [MASK] a [MASK] [MASK] [MASK] i [MASK] ll see if i [MASK] [MASK] t [MASK] [SEP] my [MASK] [MASK] s [MASK] [MASK] [MASK] i ' [MASK] [MASK] been busy [MASK] [MASK] . [MASK] ------> oh , no . [SEP]
+what [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] your name [MASK] please [MASK] [MASK] you ' ve [MASK] [MASK] for [MASK] [MASK] [MASK] . i [MASK] ll see if [MASK] don [MASK] t have [MASK] my wife ’ [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] been [MASK] at [MASK] [MASK] [MASK] oh , no [MASK] [MASK] ------> ok . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] what [MASK] s [MASK] [MASK] [MASK] please [MASK] [MASK] [MASK] ' ve been [MASK] [MASK] [MASK] long time . [MASK] ' ll see if i [MASK] ’ t have [MASK] my [MASK] [MASK] s [MASK] ? [MASK] i ' ve [MASK] been [MASK] at [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ok [MASK] [MASK] ------> yes , i was . i have a terrible head of a great evening ! [SEP]
+[MASK] are [MASK] [MASK]to [MASK] [MASK] [MASK] [MASK] s [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] here for [MASK] long time [MASK] [MASK] ' ll [MASK] if i [MASK] ’ [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s birthday [MASK] [MASK] [MASK] [MASK] [MASK] never been busy [MASK] night [MASK] [MASK] oh [MASK] no [MASK] [MASK] ok [MASK] [MASK] [MASK] , [MASK] [MASK] . i have a [MASK] [MASK] of a [MASK] [MASK] ! [MASK] ------> what do you mean ? you look great ! [SEP]
+[MASK] [MASK] you upto [MASK] [SEP] [MASK] [MASK] s your [MASK] , [MASK] [MASK] [MASK] you ' ve been [MASK] for [MASK] long [MASK] [MASK] i ' ll [MASK] if [MASK] [MASK] ’ t have [MASK] [MASK] wife [MASK] s [MASK] [MASK] [MASK] i ' ve never [MASK] [MASK] at [MASK] [MASK] [MASK] oh , [MASK] . [MASK] ok [MASK] [MASK] [MASK] , [MASK] was [MASK] i have [MASK] [MASK] [MASK] [MASK] [MASK] great evening ! [SEP] what do you [MASK] [MASK] [MASK] look [MASK] [MASK] [MASK] ------> i ' ve been here for a while now . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+what ' s your name , please ?
+you ' ve been here for a long time . i ' ll see if i don ’ t have
+my wife ’ s birthday ?
+i ' ve never been busy at night .
+oh , no .
+ok .
+yes , i was . i have a terrible head of a great evening !
+what do you mean ? you look great !
+i ' ve been here for a while now .

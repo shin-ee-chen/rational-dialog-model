@@ -1,0 +1,27 @@
+Rationalized input ------> Response
+[MASK] [MASK] you up [MASK]o [MASK] [SEP] ------> what ' s the matter ? [SEP]
+[MASK] [MASK] you [MASK] [MASK] [MASK] ? [MASK] what ' [MASK] the matter [MASK] [SEP] ------> i ’ m a good movie at school ! [SEP]
+[MASK] are [MASK] upto ? [MASK] what [MASK] s the matter ? [MASK] [MASK] [MASK] m a [MASK] [MASK] at [MASK] [MASK] [SEP] ------> ok . i ' ll take that at that time . [SEP]
+what are [MASK] [MASK] [MASK] [MASK] ? [MASK] [MASK] [MASK] [MASK] the matter [MASK] [SEP] i [MASK] m [MASK] [MASK] [MASK] at school ! [SEP] ok . [MASK] [MASK] [MASK] [MASK] [MASK] at that time [MASK] [SEP] ------> i ' ll be glad for you ! [SEP]
+what are [MASK] upto [MASK] [SEP] [MASK] [MASK] s [MASK] [MASK] [MASK] [SEP] i [MASK] [MASK] a good [MASK] at [MASK] [MASK] [SEP] ok . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] time [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] glad [MASK] [MASK] ! [SEP] ------> ok . thank you for your reservation ! [SEP]
+what [MASK] you [MASK]t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] m [MASK] [MASK] movie [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ll take [MASK] [MASK] that [MASK] [MASK] [MASK] i ' ll [MASK] [MASK] for [MASK] [MASK] [SEP] ok [MASK] [MASK] you for your [MASK] ! [MASK] ------> thanks it ! [SEP]
+[MASK] [MASK] [MASK] up [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] [MASK] [MASK] at [MASK] ! [SEP] ok [MASK] i [MASK] [MASK] take [MASK] at [MASK] [MASK] . [MASK] i [MASK] ll be glad for you ! [SEP] ok . [MASK] you for [MASK] reservation ! [MASK] [MASK] it [MASK] [MASK] ------> thank you ! i have the wrong number . i ' ve got to get back from another room for [SEP]
+[MASK] are [MASK] [MASK]t [MASK] [MASK] [SEP] [MASK] [MASK] s the [MASK] ? [SEP] [MASK] ’ m a good movie [MASK] school [MASK] [MASK] ok . i [MASK] ll [MASK] [MASK] at [MASK] [MASK] [MASK] [MASK] i ' ll be glad for you ! [MASK] ok [MASK] [MASK] you for your reservation ! [MASK] [MASK] it ! [SEP] [MASK] you [MASK] [MASK] [MASK] [MASK] wrong number [MASK] [MASK] ' ve got to [MASK] [MASK] from another [MASK] for [MASK] ------> you ’ s a problem . thanks . [SEP]
+what [MASK] you [MASK]to ? [MASK] what [MASK] [MASK] the [MASK] [MASK] [MASK] [MASK] ’ [MASK] [MASK] [MASK] [MASK] at school ! [MASK] ok . i [MASK] ll take [MASK] at [MASK] time [MASK] [SEP] [MASK] [MASK] [MASK] be glad for [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] you [MASK] [MASK] reservation [MASK] [SEP] thanks [MASK] [MASK] [MASK] [MASK] you [MASK] i [MASK] [MASK] wrong number . [MASK] [MASK] [MASK] got to [MASK] [MASK] from [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] thanks . [MASK] ------> i will . [SEP]
+what are you [MASK]t [MASK] [MASK] [SEP] [MASK] [MASK] s the matter [MASK] [MASK] [MASK] [MASK] m a good [MASK] at school ! [MASK] ok . [MASK] [MASK] ll take that [MASK] [MASK] time [MASK] [SEP] [MASK] [MASK] ll [MASK] glad for you [MASK] [SEP] ok [MASK] thank you for [MASK] [MASK] [MASK] [SEP] thanks [MASK] [MASK] [MASK] thank you ! [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to get back from another room for [MASK] [MASK] ’ [MASK] [MASK] problem . thanks [MASK] [SEP] i will [MASK] [MASK] ------> thanks . [SEP]
+what are [MASK] [MASK]t [MASK] ? [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] ? [SEP] i ’ m a good movie at [MASK] [MASK] [MASK] ok . [MASK] [MASK] ll [MASK] that [MASK] that [MASK] [MASK] [SEP] i ' [MASK] be glad [MASK] [MASK] ! [MASK] ok [MASK] [MASK] you [MASK] your [MASK] [MASK] [SEP] thanks [MASK] ! [MASK] [MASK] [MASK] [MASK] [MASK] have [MASK] wrong [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] back [MASK] another room [MASK] [SEP] you ’ s a [MASK] [MASK] thanks . [MASK] [MASK] will [MASK] [MASK] [MASK] [MASK] [MASK] ------> ok , i ' ll go . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+what ' s the matter ?
+i ’ m a good movie at school !
+ok . i ' ll take that at that time .
+i ' ll be glad for you !
+ok . thank you for your reservation !
+thanks it !
+thank you ! i have the wrong number . i ' ve got to get back from another room for
+you ’ s a problem . thanks .
+i will .
+thanks .
+ok , i ' ll go .

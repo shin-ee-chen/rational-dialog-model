@@ -1,0 +1,19 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> it ' s a good idea ! i ’ ve been busy with the new school ##ers and the most [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] good idea ! i [MASK] [MASK] [MASK] [MASK] with [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> thanks ! we ’ re going to work in the interview . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] good idea ! i [MASK] [MASK] [MASK] [MASK] with [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to work in [MASK] [MASK] [MASK] [MASK] ------> i am sure i ' ve been looking forward to my friend ' s birthday , and i am still [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] good idea ! i [MASK] [MASK] [MASK] [MASK] with [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to work in [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] forward to [MASK] [MASK] [MASK] s birthday , and i am still [MASK] ------> i know we have been a bit . i ' m going to take a few minutes ago . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] good idea ! i [MASK] [MASK] [MASK] [MASK] with [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to work in [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] forward to [MASK] [MASK] [MASK] s birthday , and i am still [MASK] i [MASK] [MASK] have been a [MASK] [MASK] i [MASK] m [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> ok . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] good idea ! i [MASK] [MASK] [MASK] [MASK] with [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to work in [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] forward to [MASK] [MASK] [MASK] s birthday , and i am still [MASK] i [MASK] [MASK] have been a [MASK] [MASK] i [MASK] m [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> ok , i ’ ll get some exercise . thank you . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] good idea ! i [MASK] [MASK] [MASK] [MASK] with [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to work in [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] forward to [MASK] [MASK] [MASK] s birthday , and i am still [MASK] i [MASK] [MASK] have been a [MASK] [MASK] i [MASK] m [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ok , i [MASK] [MASK] [MASK] some [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> thanks for your help . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+it ' s a good idea ! i ’ ve been busy with the new schoolers and the most
+thanks ! we ’ re going to work in the interview .
+i am sure i ' ve been looking forward to my friend ' s birthday , and i am still
+i know we have been a bit . i ' m going to take a few minutes ago .
+ok .
+ok , i ’ ll get some exercise . thank you .
+thanks for your help .

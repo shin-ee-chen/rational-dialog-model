@@ -1,0 +1,21 @@
+Rationalized input ------> Response
+how [MASK] [MASK] [MASK] today [MASK] [MASK] ------> it ’ s a nice day party . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [MASK] [MASK] ’ s a nice day party [MASK] [MASK] ------> why not . thanks for your help . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [MASK] [MASK] ’ s a nice day party [MASK] [MASK] why not [MASK] [MASK] [MASK] your [MASK] [MASK] [MASK] ------> i ' m glad , thanks ! [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [MASK] [MASK] ’ s a nice day party [MASK] [MASK] why not [MASK] [MASK] [MASK] your [MASK] [MASK] [MASK] i [MASK] m glad , thanks ! [SEP] ------> how do you do , doctor ? you are the right thanks . i ' ll see you . thanks [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [MASK] [MASK] ’ s a nice day party [MASK] [MASK] why not [MASK] [MASK] [MASK] your [MASK] [MASK] [MASK] i [MASK] m glad , thanks ! [SEP] [MASK] do [MASK] do , doctor [MASK] [MASK] [MASK] the right thanks [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> how do you do , it ' s just my mother , or you ' ll find a p ##ip [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [MASK] [MASK] ’ s a nice day party [MASK] [MASK] why not [MASK] [MASK] [MASK] your [MASK] [MASK] [MASK] i [MASK] m glad , thanks ! [SEP] [MASK] do [MASK] do , doctor [MASK] [MASK] [MASK] the right thanks [MASK] i [MASK] [MASK] see [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do , [MASK] [MASK] s just my mother , or [MASK] [MASK] [MASK] find a pip [SEP] ------> yes . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [MASK] [MASK] ’ s a nice day party [MASK] [MASK] why not [MASK] [MASK] [MASK] your [MASK] [MASK] [MASK] i [MASK] m glad , thanks ! [SEP] [MASK] do [MASK] do , doctor [MASK] [MASK] [MASK] the right thanks [MASK] i [MASK] [MASK] see [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do , [MASK] [MASK] s just my mother , or [MASK] [MASK] [MASK] find a pip [SEP] [MASK] [MASK] [MASK] ------> oh , no . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [MASK] [MASK] ’ s a nice day party [MASK] [MASK] why not [MASK] [MASK] [MASK] your [MASK] [MASK] [MASK] i [MASK] m glad , thanks ! [SEP] [MASK] do [MASK] do , doctor [MASK] [MASK] [MASK] the right thanks [MASK] i [MASK] [MASK] see [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do , [MASK] [MASK] s just my mother , or [MASK] [MASK] [MASK] find a pip [SEP] [MASK] [MASK] [MASK] oh , no [MASK] [MASK] ------> you can make it any ##more . it is so hard , but it doesn ’ t . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+it ’ s a nice day party .
+why not . thanks for your help .
+i ' m glad , thanks !
+how do you do , doctor ? you are the right thanks . i ' ll see you . thanks
+how do you do , it ' s just my mother , or you ' ll find a pip
+yes .
+oh , no .
+you can make it anymore . it is so hard , but it doesn ’ t .

@@ -1,0 +1,21 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] today ? [SEP] ------> i ' m sorry . i ' m sorry , but i ’ m just thinking of yourself to your [SEP]
+how [MASK] [MASK] [MASK] [MASK] ? [MASK] [MASK] [MASK] [MASK] sorry . [MASK] [MASK] m sorry , but [MASK] [MASK] [MASK] just [MASK] [MASK] [MASK] to [MASK] [MASK] ------> yes , please . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i ' [MASK] sorry [MASK] [MASK] [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] ------> you ' re welcome . i ’ ll be back soon ! [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] ’ [MASK] [MASK] [MASK] of [MASK] to your [MASK] yes , please [MASK] [MASK] [MASK] [MASK] re [MASK] [MASK] i [MASK] ll [MASK] back soon [MASK] [SEP] ------> ok , i ’ m going to be back for dinner tonight and i ’ d like to go to [SEP]
+[MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] but [MASK] [MASK] [MASK] just [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] back [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] [MASK] be [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] d [MASK] to [MASK] [MASK] [SEP] ------> i ’ m so excited about your job ! [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m sorry [MASK] [MASK] [MASK] [MASK] sorry [MASK] [MASK] [MASK] ’ [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] be [MASK] [MASK] [MASK] [SEP] [MASK] , i [MASK] m [MASK] to be [MASK] [MASK] [MASK] [MASK] and [MASK] ’ [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] excited [MASK] [MASK] [MASK] [MASK] [MASK] ------> no . [SEP]
+[MASK] [MASK] [MASK] doing today [MASK] [MASK] [MASK] [MASK] m [MASK] [MASK] i [MASK] m [MASK] [MASK] but [MASK] ’ m [MASK] [MASK] of [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] to [MASK] [MASK] for dinner [MASK] [MASK] [MASK] [MASK] [MASK] like [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] ------> that ' s all i ’ m right . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ' m sorry [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] thinking [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] ’ ll be [MASK] [MASK] ! [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] ' [MASK] all i [MASK] m [MASK] . [MASK] ------> you ’ re going to get there . what time ? [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i ' m sorry . i ' m sorry , but i ’ m just thinking of yourself to your
+yes , please .
+you ' re welcome . i ’ ll be back soon !
+ok , i ’ m going to be back for dinner tonight and i ’ d like to go to
+i ’ m so excited about your job !
+no .
+that ' s all i ’ m right .
+you ’ re going to get there . what time ?

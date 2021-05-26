@@ -1,0 +1,31 @@
+Rationalized input ------> Response
+[MASK] [MASK] you [MASK]t [MASK] [MASK] [SEP] ------> what ’ s the problem ? [SEP]
+what are [MASK] upto [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] problem [MASK] [SEP] ------> i ' d be glad to hear that . [SEP]
+what [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] what [MASK] [MASK] the problem ? [MASK] i [MASK] d be [MASK] [MASK] [MASK] that [MASK] [SEP] ------> you ' re right . [SEP]
+what are you [MASK] [MASK] [MASK] [MASK] [MASK] what ’ s the [MASK] ? [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to hear [MASK] [MASK] [MASK] [MASK] ' [MASK] [MASK] [MASK] [SEP] ------> what happened ? [SEP]
+what [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] what ’ s [MASK] [MASK] [MASK] [MASK] [MASK] ' d [MASK] glad [MASK] hear that [MASK] [SEP] you [MASK] [MASK] [MASK] . [MASK] [MASK] happened ? [SEP] ------> no . i ’ m sure i don ’ t . [SEP]
+what are you [MASK] [MASK]o ? [MASK] [MASK] ’ [MASK] the problem ? [MASK] i [MASK] d [MASK] [MASK] [MASK] hear that [MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] happened [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] sure [MASK] [MASK] ’ [MASK] [MASK] [MASK] ------> why ? [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s the [MASK] [MASK] [MASK] i ' [MASK] [MASK] [MASK] to hear that . [SEP] [MASK] ' re right . [MASK] what [MASK] [MASK] [MASK] no . [MASK] [MASK] [MASK] sure i [MASK] [MASK] t [MASK] [MASK] [MASK] ? [MASK] ------> no . but i don ' t know what ? [SEP]
+[MASK] [MASK] you up [MASK]o [MASK] [SEP] what ’ s the problem ? [SEP] [MASK] ' d [MASK] [MASK] [MASK] hear that [MASK] [SEP] you ' re [MASK] [MASK] [SEP] what happened ? [SEP] no . i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] . [SEP] why ? [SEP] [MASK] . [MASK] [MASK] don ' t know [MASK] ? [MASK] ------> sure , what do you think about me ? [SEP]
+what are you upt [MASK] [MASK] [SEP] [MASK] [MASK] s the [MASK] [MASK] [SEP] [MASK] ' d be glad [MASK] hear that [MASK] [MASK] you ' re [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] . i ’ [MASK] sure [MASK] [MASK] ’ [MASK] [MASK] [MASK] [MASK] ? [MASK] no . [MASK] [MASK] [MASK] [MASK] [MASK] know [MASK] [MASK] [SEP] sure [MASK] what [MASK] you think about me ? [SEP] ------> i will try . [SEP]
+[MASK] [MASK] you up [MASK]o [MASK] [SEP] [MASK] ’ [MASK] [MASK] [MASK] ? [SEP] i ' [MASK] [MASK] glad [MASK] hear [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] right [MASK] [MASK] [MASK] happened ? [SEP] no [MASK] [MASK] ’ m sure i don ’ t . [MASK] [MASK] [MASK] [MASK] no [MASK] but [MASK] [MASK] [MASK] t [MASK] what ? [MASK] [MASK] , what do [MASK] think about [MASK] ? [MASK] [MASK] will [MASK] . [MASK] ------> i ' m sorry , i ’ ve heard of the weather . [SEP]
+what [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] what ’ s [MASK] problem ? [MASK] [MASK] [MASK] [MASK] [MASK] glad to [MASK] [MASK] . [SEP] you [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] no . i ’ [MASK] sure [MASK] don [MASK] [MASK] . [MASK] why [MASK] [MASK] no [MASK] [MASK] [MASK] don [MASK] [MASK] [MASK] [MASK] ? [SEP] sure , what do you think [MASK] me ? [MASK] i will [MASK] . [MASK] [MASK] ' [MASK] [MASK] , [MASK] ’ [MASK] heard of [MASK] [MASK] [MASK] [MASK] ------> thanks . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK]o ? [SEP] [MASK] [MASK] [MASK] [MASK] problem [MASK] [MASK] i [MASK] d be glad [MASK] hear [MASK] . [SEP] you [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] ? [MASK] [MASK] . [MASK] [MASK] [MASK] sure [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] no [MASK] [MASK] [MASK] don [MASK] [MASK] [MASK] [MASK] ? [SEP] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] [MASK] will try [MASK] [SEP] i ' m sorry [MASK] i [MASK] [MASK] heard of the weather . [SEP] thanks [MASK] [SEP] ------> i see . [SEP]
+[MASK] [MASK] [MASK] [MASK]t [MASK] [MASK] [SEP] [MASK] ’ [MASK] [MASK] [MASK] ? [SEP] i [MASK] d be glad to [MASK] [MASK] . [SEP] you ' [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [SEP] [MASK] [MASK] [MASK] ’ [MASK] [MASK] [MASK] [MASK] [MASK] t . [SEP] why ? [SEP] no [MASK] but i [MASK] ' [MASK] know [MASK] [MASK] [SEP] sure [MASK] [MASK] do you [MASK] [MASK] me [MASK] [SEP] [MASK] [MASK] try . [SEP] i [MASK] m sorry , i [MASK] [MASK] heard [MASK] [MASK] weather [MASK] [SEP] thanks . [MASK] [MASK] [MASK] [MASK] [MASK] ------> i can do that . i think we ’ re so busy that i ’ d know where that ’ [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+what ’ s the problem ?
+i ' d be glad to hear that .
+you ' re right .
+what happened ?
+no . i ’ m sure i don ’ t .
+why ?
+no . but i don ' t know what ?
+sure , what do you think about me ?
+i will try .
+i ' m sorry , i ’ ve heard of the weather .
+thanks .
+i see .
+i can do that . i think we ’ re so busy that i ’ d know where that ’

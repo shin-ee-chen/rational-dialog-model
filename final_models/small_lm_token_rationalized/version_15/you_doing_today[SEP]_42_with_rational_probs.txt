@@ -1,0 +1,17 @@
+Rationalized input ------> Response
+[MASK] [MASK] you doing [MASK] [MASK] [MASK] ------> yes , it ' s a little too hard to hear to her . i ’ m sure you ' [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] little [MASK] hard [MASK] [MASK] to her [MASK] [MASK] [MASK] [MASK] sure [MASK] [MASK] [MASK] ------> i ’ d rather try to be able to make a few friends . and you are not going to [SEP]
+[MASK] [MASK] [MASK] [MASK] today [MASK] [SEP] [MASK] , [MASK] [MASK] [MASK] [MASK] little [MASK] hard to [MASK] to [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] d rather [MASK] to be [MASK] to make [MASK] few [MASK] [MASK] [MASK] [MASK] are not going [MASK] [MASK] ------> we ’ ll just check out this book , then we have several time to do with us . [SEP]
+[MASK] [MASK] [MASK] doing [MASK] [MASK] [MASK] yes , it [MASK] [MASK] a little too [MASK] to [MASK] [MASK] her [MASK] i [MASK] [MASK] [MASK] [MASK] ' [MASK] i [MASK] d rather [MASK] to [MASK] able [MASK] [MASK] [MASK] few [MASK] . [MASK] you are not going to [SEP] [MASK] [MASK] ll [MASK] check [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] with [MASK] . [SEP] ------> ok , i am sure i will . [SEP]
+[MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] , it ' s a little [MASK] hard to hear [MASK] [MASK] [MASK] [MASK] ’ [MASK] [MASK] you ' [SEP] i [MASK] [MASK] rather try to be [MASK] to [MASK] a few [MASK] [MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ll [MASK] [MASK] [MASK] [MASK] book [MASK] [MASK] we have [MASK] time to do with [MASK] . [MASK] ok , i [MASK] sure [MASK] [MASK] [MASK] [SEP] ------> well , thanks , i ’ ve already been busy with my family . [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] yes [MASK] [MASK] [MASK] s a little too [MASK] to [MASK] to [MASK] [MASK] i [MASK] m [MASK] you [MASK] [SEP] [MASK] [MASK] d [MASK] [MASK] to [MASK] able [MASK] [MASK] [MASK] few [MASK] [MASK] [MASK] [MASK] [MASK] not [MASK] [MASK] [MASK] [MASK] ’ ll [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] time [MASK] [MASK] [MASK] us [MASK] [MASK] [MASK] , i [MASK] sure i [MASK] [MASK] [SEP] [MASK] , [MASK] [MASK] [MASK] ’ ve already [MASK] [MASK] with [MASK] family [MASK] [MASK] ------> that ’ s not a great idea . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+yes , it ' s a little too hard to hear to her . i ’ m sure you '
+i ’ d rather try to be able to make a few friends . and you are not going to
+we ’ ll just check out this book , then we have several time to do with us .
+ok , i am sure i will .
+well , thanks , i ’ ve already been busy with my family .
+that ’ s not a great idea .

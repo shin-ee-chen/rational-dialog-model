@@ -1,0 +1,19 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> you ' re welcome . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ’ ll have to get to my house and get some of it , so that i ’ ve [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] to [MASK] to [MASK] [MASK] [MASK] [MASK] some [MASK] [MASK] , so that i [MASK] [MASK] [MASK] ------> that ' s not good as long as it is , but i ' d have to make you some [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] to [MASK] to [MASK] [MASK] [MASK] [MASK] some [MASK] [MASK] , so that i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , but i [MASK] [MASK] [MASK] to make [MASK] some [MASK] ------> i have an appointment with i ##ll this friday , please . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] to [MASK] to [MASK] [MASK] [MASK] [MASK] some [MASK] [MASK] , so that i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , but i [MASK] [MASK] [MASK] to make [MASK] some [MASK] i [MASK] [MASK] appointment with ill [MASK] [MASK] , [MASK] [MASK] [MASK] ------> i ’ m looking forward to seeing you . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] to [MASK] to [MASK] [MASK] [MASK] [MASK] some [MASK] [MASK] , so that i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , but i [MASK] [MASK] [MASK] to make [MASK] some [MASK] i [MASK] [MASK] appointment with ill [MASK] [MASK] , [MASK] [MASK] [MASK] i [MASK] m [MASK] forward to [MASK] [MASK] [MASK] [MASK] ------> ok , see you then , please . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] to [MASK] to [MASK] [MASK] [MASK] [MASK] some [MASK] [MASK] , so that i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , but i [MASK] [MASK] [MASK] to make [MASK] some [MASK] i [MASK] [MASK] appointment with ill [MASK] [MASK] , [MASK] [MASK] [MASK] i [MASK] m [MASK] forward to [MASK] [MASK] [MASK] [MASK] ok , see [MASK] [MASK] , [MASK] [MASK] [MASK] ------> i ' m sorry , but the number isn ’ t it any ##more . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+you ' re welcome .
+i ’ ll have to get to my house and get some of it , so that i ’ ve
+that ' s not good as long as it is , but i ' d have to make you some
+i have an appointment with ill this friday , please .
+i ’ m looking forward to seeing you .
+ok , see you then , please .
+i ' m sorry , but the number isn ’ t it anymore .

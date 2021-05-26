@@ -1,0 +1,29 @@
+Rationalized input ------> Response
+what are [MASK] [MASK]t [MASK] [MASK] [SEP] ------> what ’ s that ? [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] what ’ s that [MASK] [SEP] ------> nothing special . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] what ’ s that [MASK] [SEP] nothing special [MASK] [SEP] ------> i ' m going to do it . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] what ’ s that [MASK] [SEP] nothing special [MASK] [SEP] i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> yes , but what are your english are going to work now ? [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] what ’ s that [MASK] [SEP] nothing special [MASK] [SEP] i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] but what are [MASK] english are [MASK] [MASK] work now ? [SEP] ------> i ' m a little bit of me to do . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] what ’ s that [MASK] [SEP] nothing special [MASK] [SEP] i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] but what are [MASK] english are [MASK] [MASK] work now ? [SEP] i [MASK] m a little bit of me [MASK] [MASK] [MASK] [SEP] ------> i see . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] what ’ s that [MASK] [SEP] nothing special [MASK] [SEP] i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] but what are [MASK] english are [MASK] [MASK] work now ? [SEP] i [MASK] m a little bit of me [MASK] [MASK] [MASK] [SEP] i [MASK] [MASK] [SEP] ------> i can ’ t get my hair cut . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] what ’ s that [MASK] [SEP] nothing special [MASK] [SEP] i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] but what are [MASK] english are [MASK] [MASK] work now ? [SEP] i [MASK] m a little bit of me [MASK] [MASK] [MASK] [SEP] i see [MASK] [SEP] i [MASK] [MASK] [MASK] get my hair cut [MASK] [SEP] ------> i think that you should be a v ##ide ##o game . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] what ’ s that [MASK] [SEP] nothing special [MASK] [SEP] i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] but what are [MASK] english are [MASK] [MASK] work now ? [SEP] i [MASK] m a little bit of me [MASK] [MASK] [MASK] [SEP] i see [MASK] [SEP] i [MASK] [MASK] [MASK] get my hair cut . [SEP] i think that you [MASK] be a vide [MASK] [MASK] [MASK] [SEP] ------> what ' s the matter ? [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] what ’ s that [MASK] [SEP] nothing special [MASK] [SEP] i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] but what are [MASK] english are [MASK] [MASK] work now ? [SEP] i [MASK] m a little bit of me [MASK] [MASK] [MASK] [SEP] i see [MASK] [SEP] i [MASK] [MASK] [MASK] get my hair cut . [SEP] i think that you [MASK] be a vide [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s the matter ? [SEP] ------> that will be great . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] what ’ s that [MASK] [SEP] nothing special [MASK] [SEP] i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] but what are [MASK] english are [MASK] [MASK] work now ? [SEP] i [MASK] m a little bit of me [MASK] [MASK] [MASK] [SEP] i see [MASK] [SEP] i [MASK] [MASK] [MASK] get my hair cut . [SEP] i think that you [MASK] be a vide [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s the matter ? [SEP] that will be [MASK] [MASK] [SEP] ------> what do you think ? [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] what ’ s that [MASK] [SEP] nothing special [MASK] [SEP] i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] but what are [MASK] english are [MASK] [MASK] work now ? [SEP] i [MASK] m a little bit of me [MASK] [MASK] [MASK] [SEP] i see [MASK] [SEP] i [MASK] [MASK] [MASK] get my hair cut . [SEP] i think that you [MASK] be a vide [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s the matter ? [SEP] that will be [MASK] [MASK] [SEP] what do [MASK] think [MASK] [SEP] ------> i ' m not going to do anything . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+what ’ s that ?
+nothing special .
+i ' m going to do it .
+yes , but what are your english are going to work now ?
+i ' m a little bit of me to do .
+i see .
+i can ’ t get my hair cut .
+i think that you should be a video game .
+what ' s the matter ?
+that will be great .
+what do you think ?
+i ' m not going to do anything .

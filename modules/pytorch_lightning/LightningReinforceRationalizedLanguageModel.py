@@ -3,8 +3,6 @@ import pytorch_lightning as pl
 from tokenizers import Tokenizer
 from transformers import AdamW
 
-import torch.nn.functional as F
-
 from utils.token_utils import get_vocab_size, get_token_id, get_weights
 from utils.utils import fussed_lasso, calc_acc, calculate_mask_percentage, get_pad_id, calc_perplexity, \
     calc_cross_entropy_batch_wise, calc_policy_loss
@@ -17,7 +15,7 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
 
     def __init__(self, language_model, rational_extractor, tokenizer, hparams=None,
                  sparsity_weight=0.0001,
-                 fussed_lasso_weight=0.0001):
+                 fussed_lasso_weight=0.1):
         super().__init__()
         self.hparams = hparams
         self.language_model = language_model
@@ -54,7 +52,6 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
 
         prediction = self.language_model(lm_in)
         return prediction
-
 
     def get_scores(self, forward_dict, targets):
         """
@@ -136,7 +133,7 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
                                        greedy_rationals=greedy_rationals) for sentence in
                 sentences]
 
-    def complete_dialogue(self, completed_dialogue, n_rational=10, total_length=100, with_rational=True,
+    def complete_dialogue(self, completed_dialogue, total_length=100, with_rational=True,
                           greedy_rationals=True):
 
         if type(self.tokenizer) == Tokenizer:
@@ -175,8 +172,10 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
             rationalized_input.append(rational_input)
 
             # Generate next ids based on the masked input
-            #next_ids = self.language_model.generate_next_tokens(next_input, n_tokens=n_rational)
-            next_ids = self.language_model.next_utterance(next_input.flatten(), self.tokenizer.sep_token_id, max_length=20).reshape(-1, 1)
+            # next_ids = self.language_model.generate_next_tokens(next_input, n_tokens=n_rational)
+            next_ids = self.language_model.next_utterance(next_input.flatten(),
+                                                          get_token_id(self.tokenizer, "sep_token"),
+                                                          max_length=20).reshape(-1, 1)
             # next_ids = self.language_model.lm.generate(next_input.reshape(1,-1), 
             #                                             eos_token_id=self.tokenizer.sep_token_id,
             #                                             num_beams=5,
@@ -189,9 +188,9 @@ class LightingReinforceRationalizedLanguageModel(pl.LightningModule):
 
             # Map back to the sentence
             responses.append(
-                #self.tokenizer.decode(next_ids.reshape(-1).detach().cpu().numpy(), skip_special_tokens=False).replace(" #", "").replace("#", "")
+                # self.tokenizer.decode(next_ids.reshape(-1).detach().cpu().numpy(), skip_special_tokens=False).replace(" #", "").replace("#", "")
                 self.tokenizer.decode(next_ids.reshape(-1).detach().cpu().numpy(), skip_special_tokens=False)
-                )
+            )
 
             # Map back to tensor
             ids_tensor = all_tokens

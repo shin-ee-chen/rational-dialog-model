@@ -1,0 +1,25 @@
+Rationalized input ------> Response
+[MASK] [MASK] you [MASK]t [MASK] [MASK] [MASK] ------> yes , i have to do something with it . you don ’ t get to help me , what [SEP]
+[MASK] [MASK] you [MASK] [MASK] [MASK] ? [MASK] [MASK] [MASK] i [MASK] [MASK] do something [MASK] [MASK] . [MASK] [MASK] ’ t [MASK] to help [MASK] , [MASK] [SEP] ------> yes . we can take a cup of coffee . [SEP]
+what are you [MASK] [MASK] [MASK] ? [MASK] [MASK] , [MASK] have [MASK] do something [MASK] [MASK] [MASK] you [MASK] ’ [MASK] [MASK] [MASK] help [MASK] , what [MASK] [MASK] [MASK] [MASK] can [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] ------> thank you very much . [SEP]
+[MASK] [MASK] you [MASK] [MASK] [MASK] ? [SEP] yes , [MASK] have [MASK] [MASK] [MASK] with it . [MASK] don [MASK] t [MASK] to [MASK] [MASK] , [MASK] [MASK] yes [MASK] [MASK] [MASK] [MASK] [MASK] cup [MASK] [MASK] [MASK] [MASK] thank you [MASK] [MASK] [MASK] [MASK] ------> ok . see you then . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] , [MASK] have to [MASK] something with [MASK] [MASK] [MASK] don ’ [MASK] [MASK] to [MASK] [MASK] , what [SEP] [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] of coffee [MASK] [SEP] [MASK] [MASK] very [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] you [MASK] . [MASK] ------> i ’ m going to do some new . i think you will need it . [SEP]
+what [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] to [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] get [MASK] [MASK] [MASK] [MASK] what [MASK] yes . [MASK] [MASK] [MASK] a cup [MASK] [MASK] [MASK] [MASK] thank you [MASK] much [MASK] [MASK] [MASK] [MASK] see you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] going [MASK] [MASK] some new . [MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] ------> thanks . [SEP]
+[MASK] [MASK] you [MASK]t [MASK] [MASK] [MASK] yes , [MASK] have to do [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] what [MASK] yes . [MASK] [MASK] [MASK] a cup of [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ok [MASK] see [MASK] [MASK] . [SEP] [MASK] ’ [MASK] [MASK] [MASK] do [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] thanks [MASK] [MASK] ------> i can ' t afford to do that . [SEP]
+[MASK] [MASK] [MASK] up [MASK] [MASK] ? [MASK] yes , [MASK] have [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] you [MASK] [MASK] t [MASK] to help [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] a [MASK] of coffee [MASK] [SEP] [MASK] you very [MASK] . [MASK] ok [MASK] see [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m going to do some [MASK] [MASK] i think [MASK] [MASK] need it [MASK] [MASK] thanks [MASK] [SEP] i [MASK] [MASK] [MASK] [MASK] [MASK] do that [MASK] [MASK] ------> that will be good . thank you very much . [SEP]
+[MASK] are you [MASK] [MASK]o ? [MASK] [MASK] , i [MASK] to [MASK] [MASK] with [MASK] [MASK] [MASK] [MASK] [MASK] t get [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] of [MASK] [MASK] [SEP] [MASK] [MASK] very much . [MASK] ok [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i think you will need [MASK] [MASK] [MASK] thanks [MASK] [SEP] [MASK] [MASK] ' [MASK] afford [MASK] do [MASK] [MASK] [MASK] that [MASK] be good [MASK] [MASK] you very much [MASK] [SEP] ------> yes . [SEP]
+[MASK] [MASK] [MASK] [MASK]to [MASK] [MASK] yes [MASK] i [MASK] to do [MASK] [MASK] [MASK] [MASK] you don [MASK] t get [MASK] [MASK] [MASK] [MASK] what [SEP] yes [MASK] we can [MASK] a [MASK] of [MASK] [MASK] [MASK] thank you very much [MASK] [MASK] [MASK] [MASK] see [MASK] then . [MASK] [MASK] [MASK] m [MASK] to do some new . i think [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] ' [MASK] [MASK] [MASK] do that [MASK] [MASK] that will [MASK] good [MASK] [MASK] you [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] ------> thank you very much . thank you for your help . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+yes , i have to do something with it . you don ’ t get to help me , what
+yes . we can take a cup of coffee .
+thank you very much .
+ok . see you then .
+i ’ m going to do some new . i think you will need it .
+thanks .
+i can ' t afford to do that .
+that will be good . thank you very much .
+yes .
+thank you very much . thank you for your help .

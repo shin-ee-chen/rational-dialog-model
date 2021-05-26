@@ -1,0 +1,19 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> yes , i ’ d like to order some ch ##at ##ting with you , so i have to get [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] to [MASK] some chatting with [MASK] , so i [MASK] [MASK] [MASK] [MASK] ------> no , i am . we ’ ve already got ##ten any other problems . what are your favorite ##ing [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] to [MASK] some chatting with [MASK] , so i [MASK] [MASK] [MASK] [MASK] no , i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK]ten [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> yes , of course , mr . brown . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] to [MASK] some chatting with [MASK] , so i [MASK] [MASK] [MASK] [MASK] no , i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK]ten [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] course , [MASK] [MASK] [MASK] [MASK] [MASK] ------> well . thanks for your help . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] to [MASK] some chatting with [MASK] , so i [MASK] [MASK] [MASK] [MASK] no , i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK]ten [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] course , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> oh , really to you . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] to [MASK] some chatting with [MASK] , so i [MASK] [MASK] [MASK] [MASK] no , i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK]ten [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] course , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] oh , really to [MASK] [MASK] [MASK] ------> i ' m sorry , but this time was a great place . i just can ’ t . we [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] to [MASK] some chatting with [MASK] , so i [MASK] [MASK] [MASK] [MASK] no , i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK]ten [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] course , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] oh , really to [MASK] [MASK] [MASK] i [MASK] m sorry , but [MASK] time was a great place [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> sure . i can ' t believe it . i will have a drink . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+yes , i ’ d like to order some chatting with you , so i have to get
+no , i am . we ’ ve already gotten any other problems . what are your favoriteing
+yes , of course , mr . brown .
+well . thanks for your help .
+oh , really to you .
+i ' m sorry , but this time was a great place . i just can ’ t . we
+sure . i can ' t believe it . i will have a drink .

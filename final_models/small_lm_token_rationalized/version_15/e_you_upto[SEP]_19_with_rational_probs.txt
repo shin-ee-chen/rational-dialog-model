@@ -1,0 +1,25 @@
+Rationalized input ------> Response
+[MASK] are you [MASK]t [MASK] [MASK] [SEP] ------> good idea . i ' m very excited about it . you have been getting more of my own food [SEP]
+what are [MASK] [MASK] [MASK] [MASK] ? [SEP] [MASK] idea [MASK] [MASK] ' m [MASK] excited [MASK] it [MASK] you [MASK] been [MASK] [MASK] of my [MASK] food [SEP] ------> how about these people ? [SEP]
+what [MASK] you [MASK]to ? [MASK] good idea [MASK] i ' [MASK] very [MASK] about it . [MASK] [MASK] [MASK] [MASK] [MASK] of [MASK] [MASK] food [MASK] [MASK] [MASK] [MASK] people [MASK] [MASK] ------> i think i can do that . [SEP]
+[MASK] are you [MASK] [MASK]o [MASK] [SEP] [MASK] idea . [MASK] [MASK] [MASK] very excited about [MASK] [MASK] [MASK] [MASK] been getting more of [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] people [MASK] [MASK] [MASK] [MASK] [MASK] can do that [MASK] [MASK] ------> well , i ’ m not sure why that was a few years ago . [SEP]
+what [MASK] [MASK] up [MASK] [MASK] [MASK] [MASK] good [MASK] . i [MASK] m [MASK] [MASK] about [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] how [MASK] [MASK] people [MASK] [MASK] i think i can [MASK] that . [MASK] well , i [MASK] [MASK] [MASK] [MASK] why [MASK] [MASK] a few years [MASK] [MASK] [SEP] ------> that ' s good . i ' ll have a bus pass . [SEP]
+[MASK] [MASK] you upt [MASK] ? [SEP] [MASK] idea . [MASK] [MASK] m very excited [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] own [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] i [MASK] i can do that . [SEP] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] why that [MASK] [MASK] [MASK] years [MASK] [MASK] [SEP] [MASK] ' [MASK] [MASK] . [MASK] [MASK] ll [MASK] a bus pass [MASK] [SEP] ------> i have a bad idea . [SEP]
+[MASK] are you up [MASK] [MASK] ? [MASK] good idea [MASK] i ' [MASK] very excited [MASK] it . you [MASK] [MASK] getting more [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] about [MASK] people [MASK] [SEP] [MASK] think [MASK] [MASK] [MASK] that [MASK] [MASK] [MASK] , i [MASK] m [MASK] [MASK] [MASK] that [MASK] [MASK] few years ago [MASK] [MASK] that [MASK] [MASK] [MASK] [MASK] i [MASK] ll have a bus pass . [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> thanks ! [SEP]
+what [MASK] you [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] idea . [MASK] [MASK] m very excited about [MASK] . you [MASK] been getting [MASK] of [MASK] [MASK] [MASK] [SEP] [MASK] about [MASK] [MASK] ? [SEP] i think [MASK] can do that [MASK] [SEP] [MASK] , [MASK] ’ m [MASK] [MASK] [MASK] [MASK] [MASK] a few [MASK] [MASK] . [SEP] [MASK] ' [MASK] [MASK] . i ' [MASK] [MASK] [MASK] bus [MASK] . [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] thanks [MASK] [MASK] ------> thanks . [SEP]
+[MASK] [MASK] [MASK] up [MASK]o ? [MASK] [MASK] idea . i ' m very excited about [MASK] [MASK] you [MASK] been [MASK] more of [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] people ? [SEP] i think i can do [MASK] . [SEP] [MASK] , i ’ [MASK] [MASK] sure why [MASK] was [MASK] [MASK] years ago [MASK] [MASK] that [MASK] s [MASK] . [MASK] [MASK] ll [MASK] a [MASK] pass . [MASK] [MASK] [MASK] a [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] thanks . [MASK] ------> thanks for your call . [SEP]
+[MASK] [MASK] you upto [MASK] [MASK] [MASK] idea [MASK] i ' m [MASK] excited [MASK] it [MASK] you [MASK] been getting more of [MASK] [MASK] food [MASK] [MASK] [MASK] these people [MASK] [MASK] [MASK] think [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] well , [MASK] [MASK] [MASK] not [MASK] why that [MASK] a [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ' [MASK] good [MASK] i [MASK] ll [MASK] a [MASK] pass [MASK] [MASK] [MASK] [MASK] a bad idea [MASK] [SEP] thanks [MASK] [SEP] thanks . [MASK] thanks [MASK] your [MASK] [MASK] [SEP] ------> yeah , i ' m sure you can see that . how much do i think ? [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+good idea . i ' m very excited about it . you have been getting more of my own food
+how about these people ?
+i think i can do that .
+well , i ’ m not sure why that was a few years ago .
+that ' s good . i ' ll have a bus pass .
+i have a bad idea .
+thanks !
+thanks .
+thanks for your call .
+yeah , i ' m sure you can see that . how much do i think ?

@@ -1,0 +1,23 @@
+Rationalized input ------> Response
+how [MASK] [MASK] [MASK] [MASK] ? [SEP] ------> my family has been working in school in a ##ust ##ral ##ia . [SEP]
+[MASK] are [MASK] doing [MASK] ? [MASK] [MASK] family [MASK] [MASK] [MASK] [MASK] school in a [MASK] [MASK]ia . [MASK] ------> what is he going ? [SEP]
+[MASK] are [MASK] doing [MASK] [MASK] [MASK] [MASK] [MASK] has [MASK] [MASK] [MASK] [MASK] [MASK] aust [MASK] [MASK] [MASK] [MASK] [MASK] is he going ? [SEP] ------> no problem . [SEP]
+how [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] my family [MASK] [MASK] [MASK] [MASK] school in a [MASK] [MASK] [MASK] . [SEP] what [MASK] [MASK] going ? [SEP] no [MASK] . [SEP] ------> you are going to get there for a week and then we need to get the best . [SEP]
+[MASK] [MASK] [MASK] [MASK] today [MASK] [MASK] [MASK] family [MASK] been working in school [MASK] a [MASK]ralia [MASK] [SEP] [MASK] is [MASK] going [MASK] [SEP] no problem . [SEP] you are [MASK] to get [MASK] [MASK] a week [MASK] then [MASK] need to [MASK] [MASK] best . [SEP] ------> i think so . i ’ m going to work . [SEP]
+[MASK] are [MASK] doing [MASK] ? [MASK] [MASK] family has been working [MASK] school in [MASK]ust [MASK] [MASK] [MASK] [SEP] what is [MASK] going [MASK] [MASK] no [MASK] . [SEP] [MASK] are [MASK] [MASK] get there [MASK] a week [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] think [MASK] . i [MASK] m going to work . [MASK] ------> well , that ' s what you know . [SEP]
+[MASK] are you [MASK] today ? [SEP] my [MASK] [MASK] been [MASK] in [MASK] [MASK] [MASK]ust [MASK] [MASK] . [MASK] [MASK] [MASK] he going [MASK] [SEP] no problem [MASK] [MASK] [MASK] are [MASK] to [MASK] there for a [MASK] and [MASK] we need [MASK] [MASK] the [MASK] [MASK] [MASK] i think [MASK] [MASK] [MASK] [MASK] m going [MASK] [MASK] [MASK] [MASK] well , that ' s what [MASK] know . [MASK] ------> i am glad to tell you that i ' d like to do to get some advice . [SEP]
+how are you [MASK] today ? [SEP] [MASK] family has been working in school [MASK] a [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] he [MASK] ? [SEP] [MASK] problem . [MASK] [MASK] are [MASK] to [MASK] there for [MASK] week and [MASK] [MASK] need [MASK] get the best [MASK] [SEP] i think [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] work [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] you [MASK] . [SEP] [MASK] am [MASK] to tell [MASK] [MASK] i [MASK] [MASK] like to [MASK] to [MASK] [MASK] [MASK] . [MASK] ------> how about this one ? [SEP]
+[MASK] are [MASK] doing today [MASK] [SEP] [MASK] family has been [MASK] [MASK] school [MASK] [MASK]ust [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] he going ? [SEP] [MASK] problem . [SEP] you are [MASK] [MASK] [MASK] [MASK] for a week and [MASK] we [MASK] to get [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] m going [MASK] [MASK] [MASK] [MASK] [MASK] , that [MASK] [MASK] what [MASK] know [MASK] [SEP] i [MASK] glad [MASK] [MASK] you that i [MASK] d like [MASK] do [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] ------> i am not sure , but why not ? [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+my family has been working in school in australia .
+what is he going ?
+no problem .
+you are going to get there for a week and then we need to get the best .
+i think so . i ’ m going to work .
+well , that ' s what you know .
+i am glad to tell you that i ' d like to do to get some advice .
+how about this one ?
+i am not sure , but why not ?

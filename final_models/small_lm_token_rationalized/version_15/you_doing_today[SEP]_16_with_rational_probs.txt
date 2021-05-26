@@ -1,0 +1,29 @@
+Rationalized input ------> Response
+[MASK] [MASK] you [MASK] [MASK] [MASK] [SEP] ------> thank you so much . [SEP]
+[MASK] [MASK] [MASK] [MASK] today ? [SEP] [MASK] you so much . [MASK] ------> well , let ' s start with the rest for this position yet . [SEP]
+how are you doing today [MASK] [MASK] [MASK] [MASK] so [MASK] . [MASK] [MASK] [MASK] [MASK] ' [MASK] [MASK] with [MASK] rest [MASK] this [MASK] yet . [MASK] ------> why ? [SEP]
+[MASK] are [MASK] [MASK] today ? [MASK] thank [MASK] so [MASK] . [MASK] [MASK] [MASK] [MASK] ' s start with [MASK] rest for this [MASK] yet . [SEP] why ? [SEP] ------> you can go to the office to the library . [SEP]
+[MASK] are you doing [MASK] ? [SEP] [MASK] you so much [MASK] [SEP] well , let ' [MASK] [MASK] [MASK] [MASK] rest for this [MASK] yet . [SEP] why ? [SEP] [MASK] [MASK] go [MASK] [MASK] office to [MASK] library [MASK] [MASK] ------> what happened ? [SEP]
+how [MASK] you doing [MASK] [MASK] [MASK] [MASK] you [MASK] much [MASK] [MASK] well , [MASK] [MASK] s start [MASK] the [MASK] [MASK] [MASK] [MASK] yet [MASK] [SEP] [MASK] ? [MASK] [MASK] [MASK] [MASK] to [MASK] [MASK] to [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ’ ll give you a call . [SEP]
+how [MASK] you [MASK] [MASK] [MASK] [SEP] thank [MASK] so much [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] start with the rest for this position [MASK] [MASK] [MASK] why ? [SEP] [MASK] can [MASK] [MASK] [MASK] office [MASK] [MASK] [MASK] . [SEP] what [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] give [MASK] [MASK] [MASK] [MASK] [SEP] ------> you are welcome . [SEP]
+how are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [SEP] [MASK] , [MASK] ' s [MASK] [MASK] the rest [MASK] this position yet . [SEP] why ? [SEP] you [MASK] go to the [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] what [MASK] [MASK] [SEP] [MASK] ’ ll give [MASK] a [MASK] [MASK] [SEP] you [MASK] [MASK] . [MASK] ------> thanks ! [SEP]
+how are [MASK] doing [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] well , [MASK] [MASK] s start [MASK] [MASK] rest [MASK] this position [MASK] [MASK] [MASK] why [MASK] [MASK] [MASK] can [MASK] to the office [MASK] the [MASK] [MASK] [MASK] what happened ? [MASK] i [MASK] [MASK] [MASK] [MASK] a call [MASK] [MASK] [MASK] [MASK] welcome . [MASK] thanks [MASK] [MASK] ------> thanks . [SEP]
+[MASK] [MASK] [MASK] doing today [MASK] [SEP] thank you [MASK] [MASK] [MASK] [SEP] well [MASK] [MASK] [MASK] s start with [MASK] [MASK] [MASK] [MASK] [MASK] yet [MASK] [SEP] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] the [MASK] [MASK] [MASK] library [MASK] [SEP] what happened ? [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] thanks [MASK] [SEP] thanks [MASK] [MASK] ------> i ’ d love you , i ’ d like to go to china . what about you ? [SEP]
+[MASK] [MASK] [MASK] doing [MASK] ? [SEP] thank [MASK] [MASK] [MASK] . [SEP] [MASK] [MASK] let ' s [MASK] with [MASK] rest for this position [MASK] [MASK] [SEP] [MASK] ? [SEP] [MASK] [MASK] [MASK] to the office [MASK] the [MASK] . [MASK] what happened [MASK] [SEP] i ’ [MASK] [MASK] [MASK] a call . [MASK] [MASK] [MASK] welcome . [MASK] thanks ! [MASK] [MASK] . [MASK] i [MASK] [MASK] love you , i ’ d like to [MASK] [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] [SEP] ------> the time i ’ ll have a call . [SEP]
+[MASK] [MASK] [MASK] doing [MASK] [MASK] [MASK] thank [MASK] so [MASK] . [SEP] [MASK] , let ' s [MASK] with [MASK] rest for this [MASK] [MASK] . [MASK] why ? [MASK] you [MASK] go to [MASK] [MASK] [MASK] [MASK] library . [MASK] what [MASK] [MASK] [SEP] i ’ ll [MASK] [MASK] [MASK] call [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] thanks ! [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] d love you , [MASK] [MASK] [MASK] like [MASK] [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] time i ’ ll have [MASK] [MASK] [MASK] [SEP] ------> you are welcome . we can get started in the back . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+thank you so much .
+well , let ' s start with the rest for this position yet .
+why ?
+you can go to the office to the library .
+what happened ?
+i ’ ll give you a call .
+you are welcome .
+thanks !
+thanks .
+i ’ d love you , i ’ d like to go to china . what about you ?
+the time i ’ ll have a call .
+you are welcome . we can get started in the back .

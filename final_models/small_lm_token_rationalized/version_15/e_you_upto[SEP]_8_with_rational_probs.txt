@@ -1,0 +1,23 @@
+Rationalized input ------> Response
+[MASK] [MASK] you [MASK]t [MASK] ? [MASK] ------> i ' m going home . [SEP]
+what are you upt [MASK] ? [SEP] [MASK] [MASK] [MASK] going [MASK] [MASK] [MASK] ------> yes , you can do . i have no help ##ing . [SEP]
+what [MASK] [MASK] up [MASK]o ? [MASK] i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] , you can do . i [MASK] [MASK] helping [MASK] [MASK] ------> that sounds fine . i don ' t have any plans . [SEP]
+what are you upt [MASK] ? [SEP] i ' m going home [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] . i have [MASK] helping [MASK] [SEP] that sounds fine [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] ------> i know . but i ' m sorry . i was really glad to go . [SEP]
+[MASK] [MASK] you up [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] home [MASK] [SEP] yes , [MASK] [MASK] do . [MASK] have [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] fine [MASK] [MASK] don [MASK] t [MASK] any plans . [MASK] [MASK] know . but [MASK] ' [MASK] sorry . i was [MASK] glad to go [MASK] [SEP] ------> what are you going on making ? [SEP]
+what [MASK] you up [MASK]o [MASK] [SEP] i [MASK] m [MASK] home [MASK] [MASK] yes , you [MASK] [MASK] . i [MASK] [MASK] helping [MASK] [MASK] [MASK] sounds [MASK] [MASK] i don ' [MASK] [MASK] any plans . [SEP] [MASK] know [MASK] but i ' [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [SEP] [MASK] are [MASK] going [MASK] making [MASK] [MASK] ------> it ’ s really fun ! i hope the doctor was too cold . [SEP]
+[MASK] [MASK] [MASK] up [MASK] [MASK] ? [MASK] [MASK] [MASK] m going home . [SEP] [MASK] [MASK] [MASK] can do [MASK] i [MASK] no helping [MASK] [MASK] that [MASK] fine [MASK] i don ' t have any [MASK] . [SEP] [MASK] know . but [MASK] ' [MASK] sorry . i was [MASK] [MASK] [MASK] [MASK] . [SEP] what [MASK] [MASK] [MASK] on [MASK] [MASK] [SEP] [MASK] ’ [MASK] really [MASK] ! i [MASK] [MASK] doctor [MASK] too cold . [MASK] ------> thanks . see you again . [SEP]
+what are [MASK] up [MASK]o [MASK] [MASK] [MASK] ' m [MASK] home . [MASK] yes [MASK] you can [MASK] [MASK] [MASK] [MASK] [MASK] [MASK]ing . [MASK] [MASK] [MASK] fine . [MASK] don [MASK] [MASK] [MASK] any plans [MASK] [SEP] i know [MASK] but i ' [MASK] sorry [MASK] i [MASK] really glad [MASK] [MASK] [MASK] [SEP] what are you [MASK] on making [MASK] [SEP] it ’ s [MASK] [MASK] [MASK] i hope the [MASK] was too [MASK] [MASK] [MASK] thanks [MASK] see [MASK] [MASK] . [MASK] ------> what ' s wrong with your help . [SEP]
+what are [MASK] upto [MASK] [SEP] [MASK] [MASK] m going home [MASK] [MASK] yes [MASK] you [MASK] [MASK] . i have no [MASK] [MASK] . [MASK] that [MASK] fine [MASK] [MASK] [MASK] ' [MASK] have any plans [MASK] [SEP] i know . but [MASK] [MASK] [MASK] sorry . i was really glad to go . [SEP] what are you going on [MASK] ? [SEP] [MASK] ’ s really fun ! [MASK] [MASK] the [MASK] [MASK] [MASK] cold . [MASK] [MASK] . see [MASK] [MASK] . [SEP] what ' s wrong [MASK] [MASK] help . [SEP] ------> thanks . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i ' m going home .
+yes , you can do . i have no helping .
+that sounds fine . i don ' t have any plans .
+i know . but i ' m sorry . i was really glad to go .
+what are you going on making ?
+it ’ s really fun ! i hope the doctor was too cold .
+thanks . see you again .
+what ' s wrong with your help .
+thanks .

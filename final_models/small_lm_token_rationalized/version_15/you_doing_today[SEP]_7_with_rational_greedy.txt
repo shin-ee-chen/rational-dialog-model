@@ -1,0 +1,23 @@
+Rationalized input ------> Response
+how [MASK] [MASK] [MASK] today [MASK] [SEP] ------> i ’ d like to see the book . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i ’ [MASK] like [MASK] see the [MASK] [MASK] [SEP] ------> ok ! [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i ’ [MASK] like [MASK] see the [MASK] . [SEP] ok ! [SEP] ------> thanks for your money to my friend ’ s house . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i ’ [MASK] like [MASK] see the [MASK] . [SEP] ok ! [SEP] thanks for [MASK] money to my friend ’ s [MASK] [MASK] [SEP] ------> what is it for ? [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i ’ [MASK] like [MASK] see the [MASK] . [SEP] ok ! [SEP] thanks for [MASK] money to my friend ’ s [MASK] [MASK] [SEP] what is [MASK] for [MASK] [SEP] ------> i ’ m not a good idea . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i ’ [MASK] like [MASK] see the [MASK] . [SEP] ok ! [SEP] thanks for [MASK] money to my friend ’ s [MASK] [MASK] [SEP] what is [MASK] for ? [SEP] i ’ m not a good idea . [SEP] ------> why didn ’ t you ask you for a job ? [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i ’ [MASK] like [MASK] see the [MASK] . [SEP] ok ! [SEP] thanks for [MASK] money to my friend ’ s [MASK] [MASK] [SEP] what is [MASK] for ? [SEP] i ’ m not a good idea . [SEP] why didn ’ t [MASK] [MASK] [MASK] [MASK] a job ? [SEP] ------> yeah , i ’ m glad you like it . i will do that . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i ’ [MASK] like [MASK] see the [MASK] . [SEP] ok ! [SEP] thanks for [MASK] money to my friend ’ s [MASK] [MASK] [SEP] what is [MASK] for ? [SEP] i ’ m not a good idea . [SEP] why didn ’ t [MASK] [MASK] [MASK] [MASK] a job ? [SEP] yeah , i ’ m glad [MASK] like [MASK] . i will do that . [SEP] ------> really ? you ’ re welcome . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i ’ [MASK] like [MASK] see the [MASK] . [SEP] ok ! [SEP] thanks for [MASK] money to my friend ’ s [MASK] [MASK] [SEP] what is [MASK] for ? [SEP] i ’ m not a good idea . [SEP] why didn ’ t [MASK] [MASK] [MASK] [MASK] a job ? [SEP] yeah , i ’ m glad [MASK] like [MASK] . i will do that . [SEP] really ? [MASK] ’ [MASK] welcome . [SEP] ------> i think i will . i don ' t think you ’ re going to have to do anything . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i ’ d like to see the book .
+ok !
+thanks for your money to my friend ’ s house .
+what is it for ?
+i ’ m not a good idea .
+why didn ’ t you ask you for a job ?
+yeah , i ’ m glad you like it . i will do that .
+really ? you ’ re welcome .
+i think i will . i don ' t think you ’ re going to have to do anything .

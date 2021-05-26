@@ -4,27 +4,34 @@ language_model:
   embedding_dim: 128
   num_layers: 2
   hidden_state_size: 128
-  save_location: './models/small_lm_test.pt'
+  load_location: './models/small_lm.pt'
+  save_location: './models/small_lm_utterance_rationalized.pt'
 dataset:
   type: 'daily_dialogue'
   size_train: 250
   size_test: 100
-  batch_size: 16
+  batch_size: 32
   subsets: start
-  remove_top_n: 0
+  remove_top_n: 10
 tokenizer:
   type: 'daily_dialogue'
   link: './daily_dialog/tokenizer.json'
 hparams:
-  learning_rate: 0.001
+  learning_rate: 0.0001
   freeze_language_model: False
 loss_module: crossentropyloss
 trainer:
   type: policy #Type of the pytorch lighntning model we are training.
-  max_epochs: 2
+  max_epochs: 10
   log_every_n_steps: 1
 rational_extractor:
   type: policy_utterance
+  pretrained: False
+  save_location: './models/policy_utterance_simple.pt'
+  load_location: './models/policy_utterance_simple.pt'
+  parameters:
+    fussed_lasso_weight: 0 # We do not want any fused lasso in this case.
+    sparsity_weight: 0.1
 
 
 

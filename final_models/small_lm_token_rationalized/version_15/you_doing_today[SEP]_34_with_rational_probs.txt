@@ -1,0 +1,27 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] ------> what ' s that kind of you ? [SEP]
+how [MASK] [MASK] doing today ? [SEP] what [MASK] [MASK] [MASK] [MASK] [MASK] you [MASK] [SEP] ------> what did you do in ? [SEP]
+how [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ' s [MASK] kind of [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> you must have been getting there . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] [MASK] did [MASK] do [MASK] [MASK] [MASK] you must have [MASK] [MASK] [MASK] [MASK] [SEP] ------> i see . [SEP]
+[MASK] [MASK] you [MASK] [MASK] [MASK] [SEP] what [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] you do in [MASK] [MASK] [MASK] [MASK] have been [MASK] [MASK] . [SEP] [MASK] [MASK] . [MASK] ------> that sounds great . i like a job in a few years ago . [SEP]
+how [MASK] [MASK] doing [MASK] [MASK] [MASK] [MASK] [MASK] s that kind of [MASK] [MASK] [SEP] [MASK] did [MASK] [MASK] [MASK] [MASK] [MASK] you must have [MASK] getting there [MASK] [MASK] [MASK] see [MASK] [MASK] [MASK] sounds [MASK] [MASK] i like a job [MASK] [MASK] few years [MASK] [MASK] [SEP] ------> yes , you are so kind as well . [SEP]
+how are you [MASK] [MASK] [MASK] [MASK] what [MASK] [MASK] that kind [MASK] [MASK] ? [SEP] what did you do in [MASK] [SEP] you [MASK] [MASK] been [MASK] there [MASK] [MASK] i [MASK] [MASK] [MASK] that [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] a [MASK] years [MASK] . [SEP] [MASK] , you [MASK] so [MASK] [MASK] well . [MASK] ------> that sounds interesting . [SEP]
+how are you [MASK] today [MASK] [SEP] [MASK] [MASK] [MASK] that [MASK] of [MASK] [MASK] [MASK] what did [MASK] [MASK] in [MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] sounds great . i like a job [MASK] [MASK] few years [MASK] . [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] kind as [MASK] [MASK] [SEP] that [MASK] interesting [MASK] [MASK] ------> i know i don ’ t think you ’ re so good . i think it will help . [SEP]
+[MASK] [MASK] [MASK] [MASK] today [MASK] [MASK] [MASK] ' [MASK] that kind [MASK] [MASK] [MASK] [SEP] what did you [MASK] [MASK] [MASK] [SEP] [MASK] must have [MASK] getting [MASK] [MASK] [SEP] i [MASK] [MASK] [MASK] [MASK] [MASK] great [MASK] i like [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ago [MASK] [MASK] yes [MASK] [MASK] are [MASK] [MASK] as well [MASK] [SEP] that sounds [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ’ [MASK] [MASK] [MASK] [MASK] [MASK] so [MASK] . i think it [MASK] [MASK] . [MASK] ------> you ’ re a lot . [SEP]
+[MASK] are [MASK] [MASK] today [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] you ? [MASK] [MASK] [MASK] you [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] have been [MASK] there [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] that sounds great . i like [MASK] job in a few [MASK] ago [MASK] [MASK] yes , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] that [MASK] interesting . [SEP] [MASK] [MASK] i [MASK] [MASK] t think [MASK] [MASK] re [MASK] good [MASK] [MASK] think [MASK] [MASK] [MASK] . [MASK] you ’ [MASK] a lot [MASK] [MASK] ------> really ! [SEP]
+how [MASK] [MASK] [MASK] [MASK] ? [MASK] [MASK] [MASK] [MASK] that kind [MASK] [MASK] ? [MASK] [MASK] [MASK] [MASK] [MASK] in [MASK] [MASK] [MASK] [MASK] have [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] that [MASK] great [MASK] i like [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] you are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] that [MASK] interesting [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ’ t [MASK] you [MASK] re so good [MASK] i [MASK] [MASK] [MASK] help [MASK] [MASK] [MASK] ’ [MASK] [MASK] lot [MASK] [MASK] really [MASK] [SEP] ------> i ’ m going to have my money now . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+what ' s that kind of you ?
+what did you do in ?
+you must have been getting there .
+i see .
+that sounds great . i like a job in a few years ago .
+yes , you are so kind as well .
+that sounds interesting .
+i know i don ’ t think you ’ re so good . i think it will help .
+you ’ re a lot .
+really !
+i ’ m going to have my money now .

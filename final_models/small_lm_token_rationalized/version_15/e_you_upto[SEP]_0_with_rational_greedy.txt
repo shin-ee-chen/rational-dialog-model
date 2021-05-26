@@ -1,0 +1,29 @@
+Rationalized input ------> Response
+what are you upt [MASK] [MASK] [SEP] ------> i ' m going to go to school . [SEP]
+what are you upt [MASK] [MASK] [SEP] i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> why do you want to go to school ? [SEP]
+what are you upt [MASK] [MASK] [SEP] i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] why do you want [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> don ’ t you have a great idea about what i want to do ? [SEP]
+what are you upt [MASK] [MASK] [SEP] i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] why do you want [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ’ [MASK] you have a great idea about what i want [MASK] [MASK] [MASK] [SEP] ------> you ' re going to go home . [SEP]
+what are you upt [MASK] [MASK] [SEP] i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] why do you want [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ’ [MASK] you have a great idea about what i want [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] home . [SEP] ------> why ? [SEP]
+what are you upt [MASK] [MASK] [SEP] i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] why do you want [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ’ [MASK] you have a great idea about what i want [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] home . [SEP] why [MASK] [SEP] ------> i think i ' ll go . [SEP]
+what are you upt [MASK] [MASK] [SEP] i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] why do you want [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ’ [MASK] you have a great idea about what i want [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] home . [SEP] why [MASK] [SEP] i think i ' [MASK] [MASK] [MASK] [MASK] ------> yes , i know . [SEP]
+what are you upt [MASK] [MASK] [SEP] i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] why do you want [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ’ [MASK] you have a great idea about what i want [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] home . [SEP] why [MASK] [SEP] i think i ' [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [SEP] ------> thank you for asking you . [SEP]
+what are you upt [MASK] [MASK] [SEP] i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] why do you want [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ’ [MASK] you have a great idea about what i want [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] home . [SEP] why [MASK] [SEP] i think i ' [MASK] [MASK] [MASK] [MASK] [MASK] , i know [MASK] [MASK] thank you for asking [MASK] [MASK] [SEP] ------> that sounds like a good idea . [SEP]
+what are you upt [MASK] [MASK] [SEP] i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] why do you want [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ’ [MASK] you have a great idea about what i want [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] home . [SEP] why [MASK] [SEP] i think i ' [MASK] [MASK] [MASK] [MASK] [MASK] , i know [MASK] [MASK] thank you for asking [MASK] [MASK] [SEP] that sounds like a good idea . [SEP] ------> what happened ? [SEP]
+what are you upt [MASK] [MASK] [SEP] i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] why do you want [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ’ [MASK] you have a great idea about what i want [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] home . [SEP] why [MASK] [SEP] i think i ' [MASK] [MASK] [MASK] [MASK] [MASK] , i know [MASK] [MASK] thank you for asking [MASK] [MASK] [SEP] that sounds like a good idea . [SEP] what [MASK] [MASK] [SEP] ------> how old are you ? [SEP]
+what are you upt [MASK] [MASK] [SEP] i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] why do you want [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ’ [MASK] you have a great idea about what i want [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] home . [SEP] why [MASK] [SEP] i think i ' [MASK] [MASK] [MASK] [MASK] [MASK] , i know [MASK] [MASK] thank you for asking [MASK] [MASK] [SEP] that sounds like a good idea . [SEP] what [MASK] [MASK] [SEP] [MASK] old [MASK] [MASK] [MASK] [SEP] ------> you are welcome . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i ' m going to go to school .
+why do you want to go to school ?
+don ’ t you have a great idea about what i want to do ?
+you ' re going to go home .
+why ?
+i think i ' ll go .
+yes , i know .
+thank you for asking you .
+that sounds like a good idea .
+what happened ?
+how old are you ?
+you are welcome .

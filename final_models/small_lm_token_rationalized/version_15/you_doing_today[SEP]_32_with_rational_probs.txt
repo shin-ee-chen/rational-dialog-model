@@ -1,0 +1,29 @@
+Rationalized input ------> Response
+how [MASK] [MASK] [MASK] today [MASK] [MASK] ------> my mother was my job ? [SEP]
+how are you [MASK] [MASK] [MASK] [SEP] [MASK] mother [MASK] [MASK] [MASK] [MASK] [SEP] ------> i ’ m so sorry ! [SEP]
+how are [MASK] doing [MASK] ? [MASK] [MASK] mother was [MASK] [MASK] ? [MASK] [MASK] [MASK] [MASK] so [MASK] ! [SEP] ------> that sounds good . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] my mother [MASK] [MASK] job [MASK] [MASK] i [MASK] m [MASK] sorry [MASK] [MASK] that sounds good [MASK] [SEP] ------> ok . i ' ll be back for the job . [SEP]
+how are [MASK] doing [MASK] ? [MASK] my mother was [MASK] [MASK] [MASK] [SEP] [MASK] ’ [MASK] [MASK] sorry ! [SEP] [MASK] [MASK] good . [MASK] ok [MASK] [MASK] [MASK] ll [MASK] back for [MASK] [MASK] [MASK] [SEP] ------> i see . [SEP]
+[MASK] [MASK] you doing [MASK] [MASK] [MASK] [MASK] [MASK] was my job ? [MASK] [MASK] [MASK] m [MASK] sorry [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] ' ll be [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] ------> you are a good job . [SEP]
+how are [MASK] doing today ? [MASK] [MASK] mother [MASK] [MASK] [MASK] ? [SEP] i [MASK] m [MASK] sorry ! [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] ' ll be [MASK] [MASK] the [MASK] [MASK] [MASK] i [MASK] . [MASK] you are [MASK] [MASK] [MASK] [MASK] [SEP] ------> really ? did you get anything to eat ? [SEP]
+how are [MASK] [MASK] today [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] job [MASK] [MASK] [MASK] ’ [MASK] so [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] ' [MASK] [MASK] [MASK] for [MASK] job [MASK] [MASK] [MASK] see [MASK] [MASK] [MASK] are a good [MASK] [MASK] [SEP] [MASK] ? [MASK] [MASK] [MASK] [MASK] to eat ? [SEP] ------> i think i ’ ve had a great chance . [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] job [MASK] [MASK] i [MASK] m [MASK] sorry [MASK] [MASK] that [MASK] [MASK] [MASK] [MASK] ok [MASK] [MASK] ' ll be [MASK] [MASK] [MASK] job [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] a [MASK] [MASK] [MASK] [MASK] really [MASK] [MASK] you get [MASK] to eat [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] a [MASK] [MASK] [MASK] [MASK] ------> i ' ve never seen that . [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] was [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] sorry [MASK] [SEP] [MASK] sounds good [MASK] [MASK] [MASK] . [MASK] ' [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] i see [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] job [MASK] [MASK] [MASK] [MASK] did [MASK] [MASK] anything [MASK] eat ? [SEP] i [MASK] i ’ [MASK] had [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] ------> i see . [SEP]
+[MASK] [MASK] [MASK] [MASK] today [MASK] [MASK] my mother was [MASK] [MASK] [MASK] [MASK] i ’ [MASK] so [MASK] [MASK] [MASK] [MASK] [MASK] good [MASK] [SEP] ok . i [MASK] [MASK] [MASK] [MASK] for [MASK] job [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] really [MASK] [MASK] [MASK] [MASK] anything to eat [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] had [MASK] [MASK] [MASK] . [MASK] i [MASK] [MASK] [MASK] seen that . [MASK] [MASK] [MASK] [MASK] [MASK] ------> i see . i ’ ve just got to be the same to my exam . [SEP]
+[MASK] [MASK] [MASK] doing today ? [MASK] [MASK] mother [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ’ m [MASK] sorry ! [SEP] [MASK] sounds good [MASK] [SEP] [MASK] . [MASK] [MASK] [MASK] be [MASK] [MASK] [MASK] job [MASK] [MASK] [MASK] see [MASK] [MASK] [MASK] are [MASK] [MASK] job [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] eat [MASK] [MASK] i think i [MASK] [MASK] had [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] never [MASK] that . [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] see . [MASK] [MASK] ve just got to be [MASK] [MASK] [MASK] my [MASK] . [SEP] ------> what ' s the matter with you ? [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+my mother was my job ?
+i ’ m so sorry !
+that sounds good .
+ok . i ' ll be back for the job .
+i see .
+you are a good job .
+really ? did you get anything to eat ?
+i think i ’ ve had a great chance .
+i ' ve never seen that .
+i see .
+i see . i ’ ve just got to be the same to my exam .
+what ' s the matter with you ?

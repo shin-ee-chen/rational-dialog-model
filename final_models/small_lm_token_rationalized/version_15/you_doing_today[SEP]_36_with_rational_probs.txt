@@ -1,0 +1,21 @@
+Rationalized input ------> Response
+how [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ' m sorry . you ’ d better get it . [SEP]
+[MASK] [MASK] you [MASK] [MASK] ? [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] better [MASK] [MASK] [MASK] [MASK] ------> what did you do to do with your company ? [SEP]
+how [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] ' [MASK] sorry . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] [MASK] do [MASK] [MASK] company [MASK] [MASK] ------> i ’ m going to the job . [SEP]
+[MASK] [MASK] you [MASK] today [MASK] [MASK] i [MASK] [MASK] sorry [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] did you [MASK] to [MASK] with [MASK] company [MASK] [MASK] i [MASK] [MASK] [MASK] to [MASK] job [MASK] [MASK] ------> why are you going to work on the internet ? [SEP]
+[MASK] [MASK] you [MASK] [MASK] ? [MASK] i ' [MASK] sorry . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] what [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] you [MASK] [MASK] work [MASK] [MASK] [MASK] ? [MASK] ------> i ' ll try to see you there . i ' ll do something . [SEP]
+[MASK] [MASK] [MASK] [MASK] today [MASK] [SEP] [MASK] [MASK] m sorry [MASK] you [MASK] [MASK] [MASK] get it . [MASK] [MASK] did [MASK] do [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to [MASK] [MASK] . [MASK] why [MASK] you [MASK] to work [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] see [MASK] there [MASK] i [MASK] ll [MASK] [MASK] . [MASK] ------> you know , i don ’ t mind my best . you ’ d like to see the tr ##ut [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] [MASK] [MASK] [MASK] d [MASK] [MASK] it . [MASK] [MASK] did you [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] are you [MASK] to [MASK] on the [MASK] [MASK] [MASK] i [MASK] ll [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] you [MASK] , i [MASK] [MASK] [MASK] [MASK] [MASK] best [MASK] you ’ [MASK] [MASK] [MASK] see [MASK] tr [MASK] [SEP] ------> oh , you ’ re all right . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] [MASK] ' m [MASK] [MASK] [MASK] ’ [MASK] [MASK] get it [MASK] [SEP] [MASK] did you do to do with your company [MASK] [MASK] [MASK] [MASK] m [MASK] to the [MASK] [MASK] [SEP] [MASK] [MASK] you [MASK] [MASK] work on [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] there [MASK] [MASK] ' [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] know , i don ’ t [MASK] [MASK] best [MASK] [MASK] [MASK] [MASK] like [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] , you [MASK] [MASK] [MASK] right [MASK] [MASK] ------> i ' ll be careful . i think i should have an account with you . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i ' m sorry . you ’ d better get it .
+what did you do to do with your company ?
+i ’ m going to the job .
+why are you going to work on the internet ?
+i ' ll try to see you there . i ' ll do something .
+you know , i don ’ t mind my best . you ’ d like to see the trut
+oh , you ’ re all right .
+i ' ll be careful . i think i should have an account with you .

@@ -1,0 +1,19 @@
+Rationalized input ------> Response
+[MASK] are you [MASK] [MASK] ? [SEP] ------> i want a little to ##ug ##h . do you want to go with me ? [SEP]
+[MASK] are [MASK] [MASK] [MASK] ? [MASK] i want a [MASK] [MASK]ug [MASK] . [MASK] you want to [MASK] [MASK] [MASK] ? [MASK] ------> yes , i know . the first thing you need to make it to get to a new car at [SEP]
+[MASK] [MASK] [MASK] doing today [MASK] [SEP] [MASK] [MASK] [MASK] little to [MASK]h . do you want to [MASK] [MASK] me [MASK] [SEP] [MASK] [MASK] [MASK] know [MASK] [MASK] first thing [MASK] [MASK] [MASK] make it to get [MASK] a [MASK] car at [MASK] ------> i see . [SEP]
+[MASK] are you doing [MASK] ? [SEP] i want a [MASK] [MASK] [MASK] [MASK] . do [MASK] [MASK] [MASK] [MASK] with [MASK] ? [SEP] [MASK] [MASK] i [MASK] [MASK] the [MASK] [MASK] [MASK] [MASK] to [MASK] it to [MASK] to a [MASK] [MASK] [MASK] [SEP] i [MASK] [MASK] [SEP] ------> yes . i think that will be all of the new house ##s . [SEP]
+how are you doing [MASK] [MASK] [SEP] [MASK] [MASK] a little tough . do [MASK] [MASK] to [MASK] with me [MASK] [SEP] [MASK] [MASK] i know . the first thing you [MASK] to [MASK] it [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] . [MASK] [MASK] . i think that [MASK] [MASK] all [MASK] the [MASK] house [MASK] . [SEP] ------> i hope so . i don ’ t understand . [SEP]
+[MASK] [MASK] you doing [MASK] ? [MASK] i [MASK] a [MASK] [MASK] [MASK]h . [MASK] [MASK] want to [MASK] with me [MASK] [MASK] [MASK] , [MASK] know . the [MASK] thing [MASK] [MASK] [MASK] make it [MASK] get [MASK] a [MASK] car at [SEP] [MASK] see [MASK] [MASK] yes . i [MASK] [MASK] will be all of [MASK] new [MASK] [MASK] . [SEP] [MASK] [MASK] so . [MASK] [MASK] ’ [MASK] [MASK] . [MASK] ------> you ' ll get a job to make it in the future . [SEP]
+[MASK] [MASK] you doing today [MASK] [SEP] [MASK] want a [MASK] [MASK]ugh . do you want to go [MASK] me ? [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] first [MASK] [MASK] need to [MASK] [MASK] to get [MASK] [MASK] new car at [SEP] [MASK] see . [MASK] [MASK] [MASK] [MASK] [MASK] that will be all of the [MASK] house [MASK] . [MASK] i hope so [MASK] i don [MASK] t understand . [SEP] [MASK] ' [MASK] get a [MASK] [MASK] [MASK] it [MASK] the [MASK] [MASK] [MASK] ------> i ' m sorry , but i ' m just thinking about that . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i want a little tough . do you want to go with me ?
+yes , i know . the first thing you need to make it to get to a new car at
+i see .
+yes . i think that will be all of the new houses .
+i hope so . i don ’ t understand .
+you ' ll get a job to make it in the future .
+i ' m sorry , but i ' m just thinking about that .

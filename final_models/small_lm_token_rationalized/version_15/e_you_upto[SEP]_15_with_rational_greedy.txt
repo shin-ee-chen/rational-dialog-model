@@ -1,0 +1,17 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i think there ' s a big problem with me . i ' d love to . i ' m [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] me [MASK] [MASK] [MASK] [MASK] love to [MASK] [MASK] [MASK] m [SEP] ------> no , thanks . i hope i could go to see my name . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] me [MASK] [MASK] [MASK] [MASK] love to [MASK] [MASK] [MASK] m [MASK] no , [MASK] [MASK] i hope i [MASK] [MASK] [MASK] [MASK] my name [MASK] [MASK] ------> i was in this city , and i ' ll do my hair cut . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] me [MASK] [MASK] [MASK] [MASK] love to [MASK] [MASK] [MASK] m [MASK] no , [MASK] [MASK] i hope i [MASK] [MASK] [MASK] [MASK] my name [MASK] [MASK] i was in [MASK] city , and i [MASK] [MASK] [MASK] my hair cut [MASK] [MASK] ------> well , i ' m really tired of my job . i ' t have to help . you should [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] me [MASK] [MASK] [MASK] [MASK] love to [MASK] [MASK] [MASK] m [MASK] no , [MASK] [MASK] i hope i [MASK] [MASK] [MASK] [MASK] my name [MASK] [MASK] i was in [MASK] city , and i [MASK] [MASK] [MASK] my hair cut [MASK] [MASK] well , i [MASK] m really tired of my job [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> you ' re kidding ! [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] me [MASK] [MASK] [MASK] [MASK] love to [MASK] [MASK] [MASK] m [MASK] no , [MASK] [MASK] i hope i [MASK] [MASK] [MASK] [MASK] my name [MASK] [MASK] i was in [MASK] city , and i [MASK] [MASK] [MASK] my hair cut [MASK] [MASK] well , i [MASK] m really tired of my job [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> well , if you have a good time ! i know how to work again . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i think there ' s a big problem with me . i ' d love to . i ' m
+no , thanks . i hope i could go to see my name .
+i was in this city , and i ' ll do my hair cut .
+well , i ' m really tired of my job . i ' t have to help . you should
+you ' re kidding !
+well , if you have a good time ! i know how to work again .

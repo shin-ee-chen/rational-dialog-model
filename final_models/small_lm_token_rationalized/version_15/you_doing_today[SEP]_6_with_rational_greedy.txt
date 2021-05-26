@@ -1,0 +1,23 @@
+Rationalized input ------> Response
+how [MASK] [MASK] [MASK] today [MASK] [MASK] ------> i ' m a student . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i [MASK] m a [MASK] [MASK] [MASK] ------> how are you feeling ? you ’ re right . you ’ d better go for a couple days [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i [MASK] m a [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] feeling ? [MASK] ’ [MASK] right . [MASK] ’ [MASK] better [MASK] [MASK] a couple [MASK] [SEP] ------> you see , i don ' t have to stay here . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i [MASK] m a [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] feeling ? [MASK] ’ [MASK] right . [MASK] ’ [MASK] better [MASK] [MASK] a couple [MASK] [SEP] [MASK] [MASK] , i [MASK] [MASK] [MASK] [MASK] [MASK] stay [MASK] . [MASK] ------> you are welcome , i hope it was so bad [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i [MASK] m a [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] feeling ? [MASK] ’ [MASK] right . [MASK] ’ [MASK] better [MASK] [MASK] a couple [MASK] [SEP] [MASK] [MASK] , i [MASK] [MASK] [MASK] [MASK] [MASK] stay [MASK] [MASK] [MASK] [MASK] are welcome , i hope [MASK] was so bad [SEP] ------> what ’ s it for ? [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i [MASK] m a [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] feeling ? [MASK] ’ [MASK] right . [MASK] ’ [MASK] better [MASK] [MASK] a couple [MASK] [SEP] [MASK] [MASK] , i [MASK] [MASK] [MASK] [MASK] [MASK] stay [MASK] [MASK] [MASK] [MASK] are welcome , i hope [MASK] was so bad [SEP] what ’ s [MASK] [MASK] [MASK] [MASK] ------> i don ' t have enough time . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i [MASK] m a [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] feeling ? [MASK] ’ [MASK] right . [MASK] ’ [MASK] better [MASK] [MASK] a couple [MASK] [SEP] [MASK] [MASK] , i [MASK] [MASK] [MASK] [MASK] [MASK] stay [MASK] [MASK] [MASK] [MASK] are welcome , i hope [MASK] was so bad [SEP] what ’ s [MASK] for [MASK] [SEP] i [MASK] [MASK] [MASK] [MASK] [MASK] time . [SEP] ------> that ’ s too bad . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i [MASK] m a [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] feeling ? [MASK] ’ [MASK] right . [MASK] ’ [MASK] better [MASK] [MASK] a couple [MASK] [SEP] [MASK] [MASK] , i [MASK] [MASK] [MASK] [MASK] [MASK] stay [MASK] [MASK] [MASK] [MASK] are welcome , i hope [MASK] was so bad [SEP] what ’ s [MASK] for [MASK] [SEP] i [MASK] [MASK] [MASK] [MASK] [MASK] time . [SEP] that ’ s too bad . [SEP] ------> what ' s it at the next dance ? [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [SEP] i [MASK] m a [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] feeling ? [MASK] ’ [MASK] right . [MASK] ’ [MASK] better [MASK] [MASK] a couple [MASK] [SEP] [MASK] [MASK] , i [MASK] [MASK] [MASK] [MASK] [MASK] stay [MASK] [MASK] [MASK] [MASK] are welcome , i hope [MASK] was so bad [SEP] what ’ s [MASK] for [MASK] [SEP] i [MASK] [MASK] [MASK] [MASK] [MASK] time . [SEP] that ’ s too bad [MASK] [MASK] what [MASK] s [MASK] at the next [MASK] [MASK] [SEP] ------> well , what ’ s it about ? [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i ' m a student .
+how are you feeling ? you ’ re right . you ’ d better go for a couple days
+you see , i don ' t have to stay here .
+you are welcome , i hope it was so bad
+what ’ s it for ?
+i don ' t have enough time .
+that ’ s too bad .
+what ' s it at the next dance ?
+well , what ’ s it about ?

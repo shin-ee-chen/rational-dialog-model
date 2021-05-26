@@ -1,0 +1,25 @@
+Rationalized input ------> Response
+[MASK] are [MASK] [MASK] [MASK]o [MASK] [MASK] ------> i ’ m looking for a new place with you , so i am not working . [SEP]
+[MASK] [MASK] [MASK] [MASK]t [MASK] [MASK] [SEP] [MASK] ’ [MASK] looking for [MASK] new [MASK] with [MASK] [MASK] [MASK] i am not [MASK] [MASK] [MASK] ------> what ' s the problem ? [SEP]
+what are you up [MASK]o [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] for [MASK] [MASK] [MASK] with you [MASK] [MASK] i am not working [MASK] [SEP] [MASK] [MASK] s [MASK] problem ? [MASK] ------> no - i ’ t . [SEP]
+what are [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] place [MASK] [MASK] [MASK] so [MASK] am not working [MASK] [SEP] [MASK] ' [MASK] the problem ? [MASK] no [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ' m not sure , but don ’ t worry about that . [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] m [MASK] for [MASK] new place with [MASK] [MASK] [MASK] i [MASK] not working . [MASK] what ' s the problem ? [SEP] no - i [MASK] t . [MASK] i [MASK] m [MASK] [MASK] , but don [MASK] t [MASK] about [MASK] [MASK] [MASK] ------> what happened ? [SEP]
+[MASK] [MASK] [MASK] up [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] m looking for a [MASK] place [MASK] [MASK] , so i am not [MASK] . [MASK] [MASK] [MASK] s [MASK] [MASK] ? [SEP] no - [MASK] [MASK] [MASK] [MASK] [SEP] i ' m [MASK] [MASK] , [MASK] don ’ t [MASK] [MASK] [MASK] . [MASK] what [MASK] ? [SEP] ------> you ’ re right . [SEP]
+what [MASK] [MASK] up [MASK]o ? [MASK] [MASK] ’ m [MASK] [MASK] a [MASK] place with [MASK] , so i [MASK] [MASK] [MASK] . [SEP] [MASK] [MASK] s [MASK] [MASK] ? [MASK] no [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] don ’ [MASK] worry about that [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] you ’ [MASK] right . [SEP] ------> that ' s great ! [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] ’ m [MASK] for a [MASK] [MASK] with [MASK] , so [MASK] [MASK] [MASK] working [MASK] [SEP] [MASK] [MASK] s the problem [MASK] [MASK] no [MASK] [MASK] ’ [MASK] [MASK] [SEP] [MASK] [MASK] m [MASK] sure , [MASK] don ’ [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] what [MASK] ? [SEP] [MASK] [MASK] [MASK] right . [MASK] that [MASK] s great ! [SEP] ------> you ’ ve got a good time . [SEP]
+[MASK] are [MASK] [MASK]t [MASK] [MASK] [SEP] [MASK] ’ m looking [MASK] a [MASK] place [MASK] you [MASK] [MASK] i am not working . [MASK] what ' s the [MASK] [MASK] [SEP] [MASK] - [MASK] ’ t . [SEP] [MASK] ' m [MASK] sure , [MASK] [MASK] [MASK] [MASK] [MASK] about [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] ’ ve [MASK] a [MASK] [MASK] . [MASK] ------> thanks . we ’ re so busy . [SEP]
+[MASK] [MASK] [MASK] upto [MASK] [MASK] i ’ m looking for a [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] not [MASK] . [SEP] what [MASK] s [MASK] problem [MASK] [SEP] no [MASK] [MASK] ’ t [MASK] [MASK] [MASK] [MASK] m not [MASK] [MASK] [MASK] don ’ [MASK] worry [MASK] [MASK] [MASK] [SEP] what happened ? [SEP] you [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] great ! [MASK] you [MASK] [MASK] [MASK] a good [MASK] [MASK] [SEP] [MASK] . [MASK] ’ [MASK] [MASK] [MASK] [MASK] [MASK] ------> thanks . it ’ s a good way . you ’ re welcome . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i ’ m looking for a new place with you , so i am not working .
+what ' s the problem ?
+no - i ’ t .
+i ' m not sure , but don ’ t worry about that .
+what happened ?
+you ’ re right .
+that ' s great !
+you ’ ve got a good time .
+thanks . we ’ re so busy .
+thanks . it ’ s a good way . you ’ re welcome .

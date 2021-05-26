@@ -1,0 +1,29 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] ------> yes , we can go . [SEP]
+[MASK] [MASK] [MASK] [MASK]to [MASK] [SEP] [MASK] , we [MASK] go [MASK] [MASK] ------> thank you . i ' m sure you have to do that . [SEP]
+[MASK] [MASK] [MASK] up [MASK]o [MASK] [MASK] yes , [MASK] [MASK] go [MASK] [MASK] thank [MASK] [MASK] [MASK] [MASK] m sure [MASK] [MASK] [MASK] do that [MASK] [SEP] ------> yes . i ’ ll go , thanks . [SEP]
+what are you upt [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] go [MASK] [SEP] thank [MASK] . i [MASK] m sure [MASK] have [MASK] [MASK] that [MASK] [SEP] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] thanks . [SEP] ------> i know you can ’ ve got ##ten about this . [SEP]
+[MASK] [MASK] [MASK] upt [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] you have to [MASK] [MASK] . [SEP] [MASK] . [MASK] ’ [MASK] [MASK] , [MASK] [MASK] [SEP] [MASK] [MASK] you can [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] ------> yes . [SEP]
+[MASK] [MASK] you [MASK] [MASK]o [MASK] [MASK] [MASK] [MASK] [MASK] can [MASK] [MASK] [MASK] [MASK] you . i ' m [MASK] [MASK] [MASK] to [MASK] [MASK] . [MASK] yes . i ’ ll [MASK] , [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] ve [MASK]ten about [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] ------> thanks . i ’ m not interested on . [SEP]
+what are [MASK] upt [MASK] ? [SEP] yes [MASK] [MASK] can go [MASK] [MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] have to [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] ’ ve gotten about [MASK] [MASK] [MASK] yes . [MASK] thanks [MASK] i ’ m not [MASK] on [MASK] [MASK] ------> yes , of course ! [SEP]
+what are you [MASK] [MASK]o ? [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] thank you [MASK] i [MASK] m sure you [MASK] to do that [MASK] [SEP] yes . i ’ [MASK] go , [MASK] [MASK] [SEP] [MASK] know [MASK] can [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] yes . [MASK] [MASK] [MASK] [MASK] [MASK] m not [MASK] on . [MASK] yes , of [MASK] [MASK] [SEP] ------> how would you like to go ? [SEP]
+[MASK] [MASK] you [MASK]t [MASK] ? [MASK] [MASK] , we [MASK] [MASK] [MASK] [MASK] [MASK] you . [MASK] [MASK] m [MASK] [MASK] [MASK] [MASK] do that [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , thanks . [SEP] [MASK] [MASK] you [MASK] [MASK] [MASK] gotten [MASK] this [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] m not [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] of [MASK] ! [MASK] [MASK] [MASK] [MASK] like [MASK] [MASK] ? [SEP] ------> yes , of course . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK]o [MASK] [MASK] yes , we can [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] ' [MASK] sure [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] ll go , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] can ’ ve got [MASK] about [MASK] [MASK] [SEP] [MASK] [MASK] [SEP] [MASK] . i [MASK] [MASK] not interested on . [MASK] yes , of [MASK] ! [MASK] how [MASK] [MASK] [MASK] [MASK] go ? [MASK] yes [MASK] [MASK] course . [SEP] ------> bye , let ’ s come . [SEP]
+what are [MASK] [MASK] [MASK]o ? [MASK] [MASK] , we can go . [MASK] thank [MASK] [MASK] [MASK] ' m [MASK] [MASK] [MASK] [MASK] do that [MASK] [SEP] yes . i ’ [MASK] go , thanks [MASK] [SEP] [MASK] [MASK] you [MASK] ’ ve gotten [MASK] this . [SEP] [MASK] [MASK] [MASK] [MASK] . i [MASK] m [MASK] interested on [MASK] [SEP] yes [MASK] [MASK] course [MASK] [MASK] [MASK] would [MASK] [MASK] to [MASK] [MASK] [MASK] yes , of [MASK] . [MASK] bye , [MASK] [MASK] [MASK] [MASK] . [SEP] ------> thank you . [SEP]
+[MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] yes , [MASK] [MASK] [MASK] . [MASK] [MASK] you [MASK] i [MASK] m sure [MASK] [MASK] [MASK] do that [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] gotten about this [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] m not [MASK] on [MASK] [MASK] [MASK] [MASK] [MASK] course [MASK] [SEP] how [MASK] you like [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] of course [MASK] [SEP] bye , let [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] you . [SEP] ------> what about the best for a week ? [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+yes , we can go .
+thank you . i ' m sure you have to do that .
+yes . i ’ ll go , thanks .
+i know you can ’ ve gotten about this .
+yes .
+thanks . i ’ m not interested on .
+yes , of course !
+how would you like to go ?
+yes , of course .
+bye , let ’ s come .
+thank you .
+what about the best for a week ?

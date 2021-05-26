@@ -1,0 +1,23 @@
+Rationalized input ------> Response
+what [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] ------> well , i don ’ t think i can ’ t help my best . [SEP]
+what are [MASK] upto [MASK] [SEP] well , [MASK] don [MASK] t [MASK] i [MASK] [MASK] t [MASK] [MASK] best [MASK] [MASK] ------> why not ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] [MASK] , [MASK] [MASK] [MASK] t [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] not [MASK] [MASK] ------> what is the date you want ? [SEP]
+what are [MASK] upto [MASK] [SEP] well , i don ’ [MASK] [MASK] i [MASK] ’ [MASK] [MASK] my best . [SEP] why not ? [MASK] what [MASK] the date you want ? [MASK] ------> i ’ m sure i should go to it . [SEP]
+what are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] think i [MASK] ’ t help my best . [SEP] [MASK] not [MASK] [SEP] [MASK] [MASK] the date [MASK] want [MASK] [MASK] [MASK] ’ [MASK] sure [MASK] should go to [MASK] [MASK] [MASK] ------> no problem . [SEP]
+[MASK] [MASK] [MASK] [MASK]t [MASK] [MASK] [SEP] well [MASK] [MASK] [MASK] [MASK] [MASK] think [MASK] [MASK] ’ t [MASK] my [MASK] [MASK] [SEP] why [MASK] ? [MASK] [MASK] [MASK] the date [MASK] want [MASK] [MASK] i ’ [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] problem [MASK] [MASK] ------> i ’ m sorry . i don ’ t know what you mean . [SEP]
+[MASK] [MASK] [MASK] upt [MASK] [MASK] [MASK] well , i [MASK] [MASK] t think i can ’ t help [MASK] [MASK] [MASK] [MASK] why [MASK] ? [SEP] [MASK] [MASK] [MASK] date you want [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] go to [MASK] [MASK] [SEP] no problem [MASK] [MASK] [MASK] ’ [MASK] sorry . [MASK] [MASK] ’ t know what [MASK] [MASK] [MASK] [MASK] ------> you ’ re right . i ’ d rather have a try . [SEP]
+[MASK] [MASK] [MASK] [MASK]to ? [MASK] well [MASK] i don ’ [MASK] [MASK] [MASK] can [MASK] [MASK] help my [MASK] [MASK] [MASK] why [MASK] [MASK] [MASK] what [MASK] the date [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m sure [MASK] [MASK] [MASK] [MASK] it [MASK] [SEP] [MASK] problem . [SEP] i ’ m sorry [MASK] [MASK] don ’ [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] ’ [MASK] right . i [MASK] d [MASK] have [MASK] try [MASK] [MASK] ------> well , i ’ m sorry to say it ’ s going to be the same time . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] well [MASK] i don ’ [MASK] think i [MASK] [MASK] t help my [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] is the [MASK] you [MASK] [MASK] [MASK] i [MASK] [MASK] sure i should go [MASK] [MASK] [MASK] [MASK] [MASK] problem . [MASK] [MASK] ’ m [MASK] [MASK] [MASK] don [MASK] t [MASK] what you [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] have [MASK] try [MASK] [SEP] well , i [MASK] m [MASK] to [MASK] it [MASK] s [MASK] to be [MASK] same time . [MASK] ------> you have a good time . i will . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+well , i don ’ t think i can ’ t help my best .
+why not ?
+what is the date you want ?
+i ’ m sure i should go to it .
+no problem .
+i ’ m sorry . i don ’ t know what you mean .
+you ’ re right . i ’ d rather have a try .
+well , i ’ m sorry to say it ’ s going to be the same time .
+you have a good time . i will .

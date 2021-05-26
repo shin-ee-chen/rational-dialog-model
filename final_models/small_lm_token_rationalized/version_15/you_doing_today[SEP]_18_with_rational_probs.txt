@@ -1,0 +1,29 @@
+Rationalized input ------> Response
+how are you [MASK] [MASK] [MASK] [SEP] ------> i want to be ready to do . [SEP]
+[MASK] [MASK] you [MASK] [MASK] ? [SEP] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> what about the first time we get a job ? [SEP]
+[MASK] [MASK] you [MASK] today [MASK] [MASK] [MASK] want [MASK] [MASK] ready to [MASK] [MASK] [MASK] what about the [MASK] [MASK] [MASK] get a job ? [SEP] ------> yes , of course . how are you going to see him ? [SEP]
+how are [MASK] [MASK] [MASK] ? [SEP] [MASK] [MASK] [MASK] be ready to do [MASK] [SEP] [MASK] about [MASK] first time [MASK] [MASK] [MASK] [MASK] ? [SEP] [MASK] , [MASK] [MASK] [MASK] how [MASK] [MASK] [MASK] [MASK] [MASK] him [MASK] [MASK] ------> i think i can ’ t . [SEP]
+[MASK] are you [MASK] today [MASK] [MASK] i want to be [MASK] [MASK] [MASK] . [SEP] [MASK] [MASK] [MASK] first time we [MASK] a job ? [SEP] [MASK] , of course [MASK] how [MASK] [MASK] going [MASK] see him ? [SEP] [MASK] think [MASK] can ’ [MASK] [MASK] [SEP] ------> ok . let ’ s take a check ##ing account . [SEP]
+how are [MASK] doing [MASK] ? [SEP] [MASK] want [MASK] [MASK] [MASK] [MASK] do [MASK] [MASK] [MASK] [MASK] [MASK] first time [MASK] [MASK] a [MASK] ? [SEP] yes , of course [MASK] how [MASK] [MASK] going [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] i can [MASK] t . [MASK] ok . let [MASK] s [MASK] [MASK] check [MASK] [MASK] [MASK] [MASK] ------> thanks . i ’ ll check . [SEP]
+how are you [MASK] [MASK] ? [SEP] [MASK] want [MASK] [MASK] [MASK] [MASK] do [MASK] [SEP] what about [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] job ? [SEP] yes , of [MASK] [MASK] [MASK] are you going to [MASK] [MASK] [MASK] [MASK] i [MASK] i can [MASK] [MASK] . [MASK] [MASK] . [MASK] ’ [MASK] take [MASK] [MASK]ing account . [SEP] [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> thanks . [SEP]
+[MASK] are [MASK] doing today ? [SEP] [MASK] want [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] what [MASK] [MASK] first [MASK] we [MASK] a [MASK] [MASK] [SEP] [MASK] , [MASK] course [MASK] how are you [MASK] [MASK] see [MASK] [MASK] [MASK] [MASK] [MASK] i can [MASK] [MASK] [MASK] [MASK] ok . [MASK] [MASK] s take a [MASK] [MASK] account [MASK] [SEP] [MASK] [MASK] i ’ [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] ------> i ' m going to be a good time . [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] to be [MASK] to do . [MASK] [MASK] [MASK] the [MASK] [MASK] we get [MASK] job ? [SEP] [MASK] [MASK] of [MASK] [MASK] how are you [MASK] [MASK] [MASK] him [MASK] [MASK] i [MASK] i [MASK] [MASK] [MASK] . [MASK] [MASK] . let [MASK] s [MASK] [MASK] [MASK] [MASK] account . [SEP] [MASK] . [MASK] [MASK] ll [MASK] [MASK] [MASK] thanks . [SEP] i [MASK] m going [MASK] be [MASK] [MASK] [MASK] . [SEP] ------> i know . i will . [SEP]
+[MASK] are you [MASK] [MASK] ? [SEP] [MASK] [MASK] to [MASK] ready to [MASK] . [SEP] what about the first time [MASK] get [MASK] [MASK] ? [MASK] yes [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] you going [MASK] [MASK] him ? [SEP] i think [MASK] can [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] let [MASK] [MASK] take [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] . [MASK] [MASK] [MASK] m going to be [MASK] [MASK] time [MASK] [SEP] [MASK] know . i will . [MASK] ------> that ' s true . [SEP]
+how [MASK] you [MASK] today [MASK] [SEP] i [MASK] to [MASK] ready to do . [SEP] what about the first time we [MASK] [MASK] job ? [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] are [MASK] [MASK] [MASK] [MASK] him [MASK] [SEP] i [MASK] i [MASK] ’ t . [MASK] [MASK] . [MASK] [MASK] s [MASK] [MASK] [MASK]ing [MASK] [MASK] [MASK] [MASK] . [MASK] ’ [MASK] check [MASK] [MASK] [MASK] [MASK] [MASK] i ' [MASK] going to be a good [MASK] . [MASK] i know [MASK] [MASK] will . [MASK] [MASK] [MASK] [MASK] true . [SEP] ------> thanks . [SEP]
+[MASK] are you doing today [MASK] [MASK] [MASK] want [MASK] [MASK] [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] the [MASK] [MASK] we [MASK] a job ? [MASK] [MASK] [MASK] of course [MASK] [MASK] are [MASK] [MASK] [MASK] [MASK] him [MASK] [SEP] [MASK] [MASK] i [MASK] [MASK] t [MASK] [SEP] ok [MASK] let ’ [MASK] [MASK] [MASK] [MASK]ing account [MASK] [SEP] thanks . i [MASK] [MASK] check . [MASK] thanks [MASK] [MASK] i ' [MASK] going [MASK] [MASK] [MASK] good [MASK] [MASK] [SEP] [MASK] [MASK] . [MASK] will . [MASK] that [MASK] [MASK] true [MASK] [SEP] [MASK] [MASK] [SEP] ------> you ’ re welcome . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i want to be ready to do .
+what about the first time we get a job ?
+yes , of course . how are you going to see him ?
+i think i can ’ t .
+ok . let ’ s take a checking account .
+thanks . i ’ ll check .
+thanks .
+i ' m going to be a good time .
+i know . i will .
+that ' s true .
+thanks .
+you ’ re welcome .

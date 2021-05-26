@@ -1,0 +1,33 @@
+Rationalized input ------> Response
+what are [MASK] [MASK]t [MASK] [MASK] [SEP] ------> my favorite . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [SEP] my favorite . [SEP] ------> i know . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [SEP] my favorite . [SEP] i [MASK] [MASK] [SEP] ------> i see . what ' s that ? [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [SEP] my favorite . [SEP] i [MASK] [MASK] [SEP] i see [MASK] what [MASK] s that ? [SEP] ------> my favorite movie is a wonderful day ! [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [SEP] my favorite . [SEP] i [MASK] [MASK] [SEP] i see [MASK] what [MASK] s that ? [SEP] my favorite movie is a wonderful day ! [SEP] ------> how do you like this movie ? [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [SEP] my favorite . [SEP] i [MASK] [MASK] [SEP] i see [MASK] what [MASK] s that ? [SEP] my favorite movie is a wonderful day ! [SEP] how do [MASK] like [MASK] movie [MASK] [SEP] ------> do you like your family ? [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [SEP] my favorite . [SEP] i [MASK] [MASK] [SEP] i see [MASK] what [MASK] s that ? [SEP] my favorite movie is a wonderful day ! [SEP] how do [MASK] like [MASK] movie ? [SEP] do [MASK] like your family [MASK] [SEP] ------> i ' d love to do you again . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [SEP] my favorite . [SEP] i [MASK] [MASK] [SEP] i see [MASK] what [MASK] s that ? [SEP] my favorite movie is a wonderful day ! [SEP] how do [MASK] like [MASK] movie ? [SEP] do [MASK] like your family ? [SEP] i [MASK] d love to do [MASK] again . [SEP] ------> i like your new friends . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [SEP] my favorite . [SEP] i [MASK] [MASK] [SEP] i see [MASK] what [MASK] s that ? [SEP] my favorite movie is a wonderful day ! [SEP] how do [MASK] like [MASK] movie ? [SEP] do [MASK] like your family ? [SEP] i [MASK] d love to do [MASK] again . [SEP] i like your [MASK] [MASK] [MASK] [MASK] ------> i like the same . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [SEP] my favorite . [SEP] i [MASK] [MASK] [SEP] i see [MASK] what [MASK] s that ? [SEP] my favorite movie is a wonderful day ! [SEP] how do [MASK] like [MASK] movie ? [SEP] do [MASK] like your family ? [SEP] i [MASK] d love to do [MASK] again . [SEP] i like your [MASK] [MASK] [MASK] [SEP] i like the same . [SEP] ------> that sounds wonderful . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [SEP] my favorite . [SEP] i [MASK] [MASK] [SEP] i see [MASK] what [MASK] s that ? [SEP] my favorite movie is a wonderful day ! [SEP] how do [MASK] like [MASK] movie ? [SEP] do [MASK] like your family ? [SEP] i [MASK] d love to do [MASK] again . [SEP] i like your [MASK] [MASK] [MASK] [SEP] i like the same . [SEP] that sounds wonderful [MASK] [SEP] ------> it is very nice . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [SEP] my favorite . [SEP] i [MASK] [MASK] [SEP] i see [MASK] what [MASK] s that ? [SEP] my favorite movie is a wonderful day ! [SEP] how do [MASK] like [MASK] movie ? [SEP] do [MASK] like your family ? [SEP] i [MASK] d love to do [MASK] again . [SEP] i like your [MASK] [MASK] [MASK] [SEP] i like the same . [SEP] that sounds wonderful [MASK] [SEP] [MASK] is very nice . [SEP] ------> yeah , i ' m not . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [SEP] my favorite . [SEP] i [MASK] [MASK] [SEP] i see [MASK] what [MASK] s that ? [SEP] my favorite movie is a wonderful day ! [SEP] how do [MASK] like [MASK] movie ? [SEP] do [MASK] like your family ? [SEP] i [MASK] d love to do [MASK] again . [SEP] i like your [MASK] [MASK] [MASK] [SEP] i like the same . [SEP] that sounds wonderful [MASK] [SEP] [MASK] is very nice . [SEP] yeah , i ' m not . [SEP] ------> really ? is it really out ? [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [SEP] my favorite . [SEP] i [MASK] [MASK] [SEP] i see [MASK] what [MASK] s that ? [SEP] my favorite movie is a wonderful day ! [SEP] how do [MASK] like [MASK] movie ? [SEP] do [MASK] like your family ? [SEP] i [MASK] d love to do [MASK] again . [SEP] i like your [MASK] [MASK] [MASK] [SEP] i like the same . [SEP] that sounds wonderful [MASK] [SEP] [MASK] is very nice . [SEP] yeah , i ' m not . [SEP] really ? is it really out ? [SEP] ------> yes . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+my favorite .
+i know .
+i see . what ' s that ?
+my favorite movie is a wonderful day !
+how do you like this movie ?
+do you like your family ?
+i ' d love to do you again .
+i like your new friends .
+i like the same .
+that sounds wonderful .
+it is very nice .
+yeah , i ' m not .
+really ? is it really out ?
+yes .

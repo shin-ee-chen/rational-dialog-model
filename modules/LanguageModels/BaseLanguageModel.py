@@ -72,7 +72,7 @@ class BaseLanguageModel(nn.Module):
             next_token = self.generate_next_token(tokens)
             # print(next_token, end=' ')
         #append sep token in the end
-        utterances = torch.cat([utterances, torch.tensor([sep_token])], dim=-1)
+        utterances = torch.cat([utterances, torch.tensor([sep_token]).to(utterances.device)], dim=-1)
         return utterances.long()
 
     def get_next_token_from_logits(self, logits, top=10):

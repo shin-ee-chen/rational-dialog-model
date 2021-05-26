@@ -1,0 +1,31 @@
+Rationalized input ------> Response
+[MASK] [MASK] you [MASK] today [MASK] [MASK] ------> i ' m a doctor , and i am going to be an excellent job . [SEP]
+how are [MASK] doing [MASK] [MASK] [SEP] [MASK] ' [MASK] a doctor , and i am [MASK] [MASK] [MASK] an excellent [MASK] [MASK] [MASK] ------> oh , i ’ d like to know . [SEP]
+[MASK] [MASK] [MASK] doing today [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] to be an excellent [MASK] [MASK] [SEP] oh [MASK] [MASK] [MASK] [MASK] like [MASK] [MASK] [MASK] [SEP] ------> i know . i ' ll see the movie . [SEP]
+how [MASK] you [MASK] [MASK] ? [MASK] i [MASK] [MASK] [MASK] doctor [MASK] and i [MASK] [MASK] to [MASK] [MASK] [MASK] [MASK] . [SEP] [MASK] , [MASK] [MASK] [MASK] [MASK] to [MASK] . [SEP] [MASK] [MASK] [MASK] i ' ll see the [MASK] [MASK] [MASK] ------> thank you . [SEP]
+how [MASK] you [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] a doctor [MASK] [MASK] i [MASK] going [MASK] [MASK] [MASK] excellent [MASK] . [MASK] [MASK] , i ’ d like to [MASK] . [MASK] i know . i [MASK] ll [MASK] [MASK] movie [MASK] [MASK] thank [MASK] . [MASK] ------> what ’ s going on ? [SEP]
+how [MASK] [MASK] doing [MASK] ? [SEP] [MASK] ' m a doctor [MASK] [MASK] i [MASK] [MASK] to be an [MASK] [MASK] . [SEP] [MASK] [MASK] [MASK] [MASK] d like [MASK] [MASK] [MASK] [MASK] i know [MASK] [MASK] [MASK] ll [MASK] [MASK] [MASK] . [SEP] [MASK] [MASK] [MASK] [MASK] what [MASK] s [MASK] on ? [MASK] ------> well , i ’ d be happy to see what i mean . [SEP]
+[MASK] [MASK] [MASK] [MASK] today [MASK] [SEP] [MASK] ' [MASK] a doctor , [MASK] [MASK] am [MASK] [MASK] be [MASK] [MASK] [MASK] . [SEP] [MASK] , [MASK] [MASK] d [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] know [MASK] i ' ll see [MASK] movie [MASK] [MASK] thank [MASK] [MASK] [SEP] [MASK] [MASK] s [MASK] on [MASK] [SEP] well [MASK] i ’ [MASK] [MASK] happy to see [MASK] [MASK] [MASK] [MASK] [MASK] ------> thanks . [SEP]
+[MASK] are [MASK] [MASK] [MASK] ? [MASK] [MASK] ' [MASK] [MASK] doctor [MASK] [MASK] i [MASK] going to [MASK] [MASK] excellent job [MASK] [MASK] [MASK] [MASK] i [MASK] d like [MASK] [MASK] [MASK] [MASK] [MASK] know [MASK] [MASK] ' [MASK] see the movie [MASK] [MASK] thank [MASK] [MASK] [MASK] [MASK] ’ [MASK] going [MASK] [MASK] [MASK] well , i [MASK] [MASK] [MASK] [MASK] to [MASK] what i mean [MASK] [SEP] thanks [MASK] [MASK] ------> yes . [SEP]
+how are you [MASK] today ? [MASK] [MASK] [MASK] [MASK] a doctor , [MASK] i am [MASK] [MASK] be [MASK] excellent [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] d [MASK] to [MASK] [MASK] [MASK] i [MASK] . i ' [MASK] see [MASK] [MASK] . [MASK] thank [MASK] [MASK] [SEP] [MASK] [MASK] s [MASK] [MASK] [MASK] [MASK] well [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] yes [MASK] [MASK] ------> thanks . [SEP]
+[MASK] are [MASK] [MASK] today [MASK] [MASK] i ' [MASK] a doctor [MASK] and [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] excellent job [MASK] [MASK] oh [MASK] i ’ d like [MASK] know [MASK] [SEP] [MASK] [MASK] . [MASK] ' [MASK] see the movie [MASK] [MASK] [MASK] you [MASK] [MASK] [MASK] ’ [MASK] [MASK] [MASK] ? [MASK] well [MASK] [MASK] [MASK] [MASK] be [MASK] to see what i mean [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] . [MASK] thanks . [SEP] ------> you ’ re so nice . [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m a [MASK] , and i am [MASK] to be [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , i ’ [MASK] like [MASK] know [MASK] [MASK] i know . i [MASK] [MASK] see the movie [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] s going on [MASK] [SEP] [MASK] , [MASK] [MASK] d [MASK] [MASK] [MASK] see [MASK] [MASK] mean [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] so [MASK] [MASK] [MASK] ------> i ’ ve heard so much . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] i ' m a doctor , [MASK] i [MASK] going to be [MASK] [MASK] job [MASK] [MASK] oh [MASK] i ’ d [MASK] [MASK] know [MASK] [MASK] i [MASK] . [MASK] [MASK] ll [MASK] the [MASK] [MASK] [MASK] thank [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] well , i [MASK] [MASK] [MASK] happy to [MASK] [MASK] i mean . [SEP] [MASK] . [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [SEP] you [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [SEP] ------> bye ! [SEP]
+how [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] a [MASK] , and i [MASK] [MASK] to be [MASK] [MASK] job [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] like [MASK] know [MASK] [SEP] [MASK] [MASK] [MASK] i ' [MASK] see the [MASK] [MASK] [MASK] thank you . [MASK] what [MASK] s going on ? [MASK] [MASK] [MASK] i ’ d [MASK] happy [MASK] [MASK] what i [MASK] [MASK] [MASK] thanks [MASK] [MASK] [MASK] [MASK] [MASK] thanks [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] . [SEP] i [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [SEP] ------> thanks . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i ' m a doctor , and i am going to be an excellent job .
+oh , i ’ d like to know .
+i know . i ' ll see the movie .
+thank you .
+what ’ s going on ?
+well , i ’ d be happy to see what i mean .
+thanks .
+yes .
+thanks .
+you ’ re so nice .
+i ’ ve heard so much .
+bye !
+thanks .

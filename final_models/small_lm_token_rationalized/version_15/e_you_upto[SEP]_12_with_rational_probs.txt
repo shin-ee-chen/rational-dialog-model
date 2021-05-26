@@ -1,0 +1,27 @@
+Rationalized input ------> Response
+[MASK] are [MASK] up [MASK] [MASK] ? [MASK] ------> i am not sure . thanks for asking you to . [SEP]
+what are you upt [MASK] [MASK] [SEP] [MASK] [MASK] not [MASK] [MASK] [MASK] for asking you [MASK] . [MASK] ------> thank you . i ' m going to get a job , but i will take the internet . [SEP]
+what [MASK] [MASK] [MASK]to [MASK] [MASK] i am not sure [MASK] [MASK] for [MASK] [MASK] [MASK] [MASK] [SEP] thank you . [MASK] ' m going to [MASK] a [MASK] [MASK] [MASK] i [MASK] take [MASK] [MASK] [MASK] [MASK] ------> i see . do you have a deposit for tonight ? [SEP]
+what are [MASK] up [MASK] [MASK] [MASK] [SEP] i am not [MASK] [MASK] [MASK] for [MASK] you to . [SEP] thank [MASK] . i ' m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] but [MASK] will take the internet [MASK] [MASK] i [MASK] . [MASK] [MASK] [MASK] [MASK] deposit [MASK] tonight [MASK] [SEP] ------> what is your problem ? [SEP]
+[MASK] are [MASK] [MASK]t [MASK] [MASK] [SEP] [MASK] [MASK] not [MASK] . [MASK] [MASK] asking [MASK] to . [SEP] [MASK] [MASK] . [MASK] ' m going to get a job [MASK] [MASK] i will [MASK] [MASK] internet . [SEP] i see [MASK] [MASK] [MASK] have a [MASK] [MASK] tonight ? [MASK] [MASK] is [MASK] problem [MASK] [MASK] ------> i ' ll go and talk to the party . [SEP]
+what are you upt [MASK] [MASK] [SEP] [MASK] [MASK] not sure [MASK] thanks for asking you [MASK] [MASK] [SEP] [MASK] you [MASK] [MASK] ' [MASK] [MASK] [MASK] [MASK] [MASK] job , [MASK] i will take the [MASK] . [SEP] i see . [MASK] you [MASK] a [MASK] [MASK] [MASK] [MASK] [SEP] what is [MASK] [MASK] ? [MASK] i [MASK] [MASK] [MASK] and [MASK] to [MASK] [MASK] [MASK] [MASK] ------> thanks . [SEP]
+[MASK] [MASK] [MASK] up [MASK] [MASK] [MASK] [SEP] [MASK] am [MASK] sure . [MASK] for asking [MASK] to . [MASK] thank you . [MASK] [MASK] m going [MASK] [MASK] a [MASK] [MASK] [MASK] i will take [MASK] internet [MASK] [SEP] [MASK] see [MASK] do you [MASK] [MASK] deposit for [MASK] [MASK] [MASK] [MASK] [MASK] your problem ? [MASK] i ' ll [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [SEP] ------> good for you . i want a good job . how about you ? [SEP]
+what [MASK] [MASK] upto [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] thanks for asking you [MASK] [MASK] [SEP] [MASK] you . [MASK] ' [MASK] [MASK] [MASK] [MASK] [MASK] job [MASK] but i will [MASK] [MASK] [MASK] [MASK] [MASK] i see [MASK] do [MASK] [MASK] a deposit for [MASK] [MASK] [MASK] [MASK] is your problem ? [MASK] i [MASK] ll [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] thanks [MASK] [SEP] [MASK] [MASK] you . i [MASK] [MASK] [MASK] job [MASK] [MASK] [MASK] you [MASK] [SEP] ------> ok ! [SEP]
+[MASK] are you [MASK]to [MASK] [MASK] [MASK] [MASK] [MASK] sure . [MASK] [MASK] [MASK] [MASK] to [MASK] [MASK] [MASK] you [MASK] i [MASK] [MASK] [MASK] [MASK] get [MASK] [MASK] , [MASK] i [MASK] take the [MASK] . [SEP] i [MASK] . [MASK] [MASK] have a [MASK] [MASK] [MASK] ? [MASK] [MASK] is [MASK] [MASK] ? [SEP] i ' ll go and [MASK] [MASK] the [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] for you . [MASK] want a [MASK] job [MASK] [MASK] [MASK] [MASK] ? [SEP] ok [MASK] [SEP] ------> thanks . [SEP]
+[MASK] are you upto [MASK] [MASK] i [MASK] not [MASK] [MASK] [MASK] [MASK] asking you to [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] to [MASK] a job [MASK] [MASK] i will [MASK] [MASK] internet [MASK] [SEP] [MASK] see [MASK] [MASK] you have a [MASK] [MASK] [MASK] [MASK] [SEP] what [MASK] your [MASK] ? [MASK] i ' [MASK] [MASK] and talk [MASK] [MASK] [MASK] . [SEP] [MASK] [MASK] [SEP] good [MASK] you [MASK] i want a [MASK] [MASK] [MASK] how [MASK] you [MASK] [MASK] ok [MASK] [MASK] [MASK] . [SEP] ------> good . [SEP]
+what are you [MASK] [MASK]o ? [MASK] i [MASK] [MASK] sure . thanks for [MASK] you [MASK] . [MASK] thank [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] job , but i will take the [MASK] . [MASK] i [MASK] . [MASK] you [MASK] [MASK] [MASK] [MASK] tonight [MASK] [MASK] what is your problem [MASK] [MASK] [MASK] ' ll [MASK] and [MASK] [MASK] the party [MASK] [MASK] thanks . [SEP] good for [MASK] [MASK] [MASK] want a [MASK] [MASK] [MASK] how about [MASK] ? [SEP] [MASK] ! [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [SEP] ------> that ’ s my pleasure . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i am not sure . thanks for asking you to .
+thank you . i ' m going to get a job , but i will take the internet .
+i see . do you have a deposit for tonight ?
+what is your problem ?
+i ' ll go and talk to the party .
+thanks .
+good for you . i want a good job . how about you ?
+ok !
+thanks .
+good .
+that ’ s my pleasure .

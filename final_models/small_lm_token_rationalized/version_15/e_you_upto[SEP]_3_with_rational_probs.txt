@@ -1,0 +1,31 @@
+Rationalized input ------> Response
+what [MASK] [MASK] up [MASK]o ? [SEP] ------> it ' s a bad cold , but you ' ll see , what do you plan ? [SEP]
+what [MASK] you up [MASK]o [MASK] [SEP] [MASK] ' s a bad cold [MASK] but you [MASK] [MASK] see [MASK] [MASK] [MASK] [MASK] plan ? [SEP] ------> it wasn will just go . [SEP]
+what are [MASK] [MASK] [MASK]o [MASK] [SEP] [MASK] [MASK] s [MASK] bad cold , but [MASK] ' [MASK] see [MASK] what [MASK] [MASK] [MASK] ? [SEP] [MASK] [MASK] will just [MASK] . [MASK] ------> what about you ? [SEP]
+what are [MASK] [MASK]to [MASK] [SEP] it [MASK] [MASK] [MASK] [MASK] [MASK] , but you ' [MASK] see , [MASK] do you plan ? [SEP] it [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] ------> what ? [SEP]
+what are you [MASK]t [MASK] ? [MASK] [MASK] [MASK] s a bad cold [MASK] but you [MASK] ll see , what [MASK] [MASK] [MASK] ? [SEP] it wasn [MASK] just [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [SEP] what ? [SEP] ------> what happened ? [SEP]
+[MASK] are [MASK] upto ? [SEP] it ' [MASK] [MASK] bad cold , [MASK] [MASK] ' [MASK] [MASK] [MASK] [MASK] do [MASK] plan ? [MASK] it wasn will [MASK] [MASK] . [SEP] what [MASK] [MASK] ? [SEP] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [SEP] ------> what about a moment ? [SEP]
+what are you [MASK]to [MASK] [SEP] it ' s a bad cold , but [MASK] ' [MASK] [MASK] [MASK] [MASK] do [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] just go . [MASK] what about you ? [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] ? [MASK] [MASK] [MASK] a [MASK] ? [SEP] ------> yes , we have it . [SEP]
+what are you upto [MASK] [MASK] it [MASK] s [MASK] [MASK] cold , [MASK] you [MASK] [MASK] see [MASK] what [MASK] [MASK] plan ? [SEP] it wasn [MASK] [MASK] [MASK] [MASK] [MASK] what about [MASK] ? [SEP] what [MASK] [MASK] what [MASK] [MASK] [MASK] what [MASK] [MASK] moment ? [MASK] yes , [MASK] have it . [MASK] ------> i know . i think i have a lot of time . [SEP]
+what are you up [MASK]o [MASK] [SEP] it [MASK] [MASK] a bad [MASK] [MASK] but [MASK] ' [MASK] see [MASK] what do [MASK] plan [MASK] [MASK] [MASK] [MASK] will [MASK] [MASK] [MASK] [MASK] what [MASK] you [MASK] [SEP] what ? [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] about a [MASK] ? [SEP] yes , we have it . [MASK] i know [MASK] i [MASK] [MASK] [MASK] [MASK] lot [MASK] time . [MASK] ------> that ' s fine . [SEP]
+[MASK] [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] [MASK] [MASK] s [MASK] bad cold , [MASK] you [MASK] ll see , what [MASK] you plan ? [SEP] it wasn will just [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [SEP] [MASK] [MASK] [MASK] what [MASK] [MASK] [SEP] what about a [MASK] [MASK] [SEP] yes , [MASK] [MASK] it [MASK] [MASK] [MASK] know . [MASK] [MASK] i [MASK] [MASK] [MASK] of time [MASK] [MASK] that [MASK] s fine . [MASK] ------> how do i do that ? [SEP]
+what [MASK] you [MASK]t [MASK] [MASK] [MASK] [MASK] ' s [MASK] [MASK] cold [MASK] but you ' [MASK] see , [MASK] do you plan [MASK] [MASK] it [MASK] will just [MASK] [MASK] [MASK] what about you ? [SEP] [MASK] ? [SEP] what [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] moment [MASK] [SEP] yes , we [MASK] [MASK] [MASK] [MASK] i know [MASK] [MASK] [MASK] [MASK] have a [MASK] [MASK] time [MASK] [SEP] that ' [MASK] [MASK] . [SEP] how [MASK] i [MASK] that ? [MASK] ------> i ' ll go to bed at 8 ##5 . [SEP]
+[MASK] [MASK] [MASK] up [MASK]o ? [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , but [MASK] ' [MASK] [MASK] [MASK] what do you [MASK] [MASK] [MASK] [MASK] wasn [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] ? [SEP] what [MASK] [MASK] what [MASK] ? [MASK] what about [MASK] moment [MASK] [MASK] yes [MASK] we [MASK] [MASK] . [MASK] [MASK] [MASK] . [MASK] think [MASK] have a lot of time . [SEP] [MASK] [MASK] s [MASK] [MASK] [SEP] [MASK] do [MASK] [MASK] [MASK] ? [MASK] [MASK] [MASK] ll [MASK] [MASK] [MASK] at 8 [MASK] . [MASK] ------> yes . [SEP]
+what [MASK] you [MASK]t [MASK] [MASK] [MASK] [MASK] ' [MASK] a [MASK] cold , but [MASK] [MASK] [MASK] see , what [MASK] you [MASK] ? [SEP] it [MASK] [MASK] just [MASK] [MASK] [SEP] what about [MASK] [MASK] [MASK] [MASK] ? [MASK] what happened ? [SEP] [MASK] [MASK] [MASK] moment ? [SEP] yes , we have [MASK] [MASK] [SEP] i [MASK] [MASK] i think [MASK] have a lot [MASK] time [MASK] [MASK] [MASK] [MASK] [MASK] fine [MASK] [MASK] how [MASK] i do [MASK] ? [SEP] [MASK] [MASK] [MASK] [MASK] to bed [MASK] 85 [MASK] [SEP] [MASK] [MASK] [MASK] ------> i think we will do anything . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+it ' s a bad cold , but you ' ll see , what do you plan ?
+it wasn will just go .
+what about you ?
+what ?
+what happened ?
+what about a moment ?
+yes , we have it .
+i know . i think i have a lot of time .
+that ' s fine .
+how do i do that ?
+i ' ll go to bed at 85 .
+yes .
+i think we will do anything .

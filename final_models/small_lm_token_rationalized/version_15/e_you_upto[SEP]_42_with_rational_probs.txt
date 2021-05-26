@@ -1,0 +1,23 @@
+Rationalized input ------> Response
+what are you [MASK] [MASK] [MASK] [MASK] [MASK] ------> i have been feeling pretty busy ! [SEP]
+[MASK] are [MASK] up [MASK] [MASK] [MASK] [SEP] i [MASK] [MASK] feeling [MASK] [MASK] ! [MASK] ------> i ’ d better have a look here . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK]o [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] look [MASK] [MASK] [MASK] ------> no , i am not sure i can do this . i ' ll go home and have some help [SEP]
+[MASK] are you up [MASK] [MASK] ? [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ’ d better [MASK] [MASK] look [MASK] . [MASK] [MASK] , i [MASK] [MASK] sure i [MASK] do [MASK] . i [MASK] [MASK] go home [MASK] have [MASK] [MASK] [MASK] ------> what time are we going to take you to the bank ? [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] been [MASK] pretty [MASK] [MASK] [MASK] [MASK] [MASK] d better [MASK] a look here [MASK] [SEP] [MASK] , i am [MASK] sure [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] ll [MASK] [MASK] and have some [MASK] [MASK] [MASK] time are [MASK] going [MASK] [MASK] [MASK] to [MASK] [MASK] [MASK] [MASK] ------> thank you very much . [SEP]
+what [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] i have been feeling pretty [MASK] [MASK] [MASK] [MASK] [MASK] d [MASK] have [MASK] [MASK] [MASK] . [MASK] [MASK] , [MASK] [MASK] not [MASK] [MASK] [MASK] do [MASK] [MASK] [MASK] [MASK] ll go [MASK] and [MASK] some [MASK] [MASK] what [MASK] are we going to [MASK] [MASK] [MASK] [MASK] [MASK] ? [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ' m really sorry . [SEP]
+what [MASK] [MASK] [MASK] [MASK]o ? [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] no , [MASK] am [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ' ll [MASK] [MASK] and have [MASK] help [SEP] [MASK] [MASK] [MASK] we going to [MASK] [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] much [MASK] [MASK] [MASK] [MASK] m [MASK] [MASK] . [MASK] ------> how much would you like to have ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK]o [MASK] [MASK] i have been [MASK] [MASK] busy ! [SEP] [MASK] ’ d better have [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] am [MASK] [MASK] i can [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] go [MASK] and have some [MASK] [MASK] what [MASK] [MASK] [MASK] [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] much . [MASK] [MASK] [MASK] [MASK] really [MASK] [MASK] [MASK] [MASK] much would [MASK] like to have ? [MASK] ------> i don ' t like it very good ! we will go to the office . [SEP]
+[MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] been [MASK] [MASK] busy ! [MASK] [MASK] [MASK] [MASK] [MASK] have [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] am not [MASK] [MASK] [MASK] do [MASK] . i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] some help [MASK] [MASK] time [MASK] we [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] [MASK] you [MASK] much [MASK] [MASK] i ' m [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] like [MASK] [MASK] [MASK] [MASK] [MASK] don ' [MASK] [MASK] it [MASK] [MASK] ! [MASK] [MASK] [MASK] to the [MASK] [MASK] [MASK] ------> that would be great to meet you . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i have been feeling pretty busy !
+i ’ d better have a look here .
+no , i am not sure i can do this . i ' ll go home and have some help
+what time are we going to take you to the bank ?
+thank you very much .
+i ' m really sorry .
+how much would you like to have ?
+i don ' t like it very good ! we will go to the office .
+that would be great to meet you .

@@ -1,0 +1,23 @@
+Rationalized input ------> Response
+how [MASK] you [MASK] [MASK] [MASK] [MASK] ------> you can take your job in your field . [SEP]
+[MASK] [MASK] [MASK] [MASK] today [MASK] [MASK] [MASK] can [MASK] [MASK] job [MASK] [MASK] [MASK] . [MASK] ------> yes , i ' ll go to the office , sir . i ' m in your name . [SEP]
+how [MASK] you doing [MASK] [MASK] [MASK] you [MASK] [MASK] [MASK] job [MASK] [MASK] field . [MASK] [MASK] , i [MASK] ll [MASK] to [MASK] office [MASK] [MASK] . [MASK] [MASK] m in [MASK] [MASK] . [MASK] ------> i am sorry . i will . [SEP]
+how [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] take your job [MASK] your field . [MASK] yes , i ' [MASK] [MASK] [MASK] the [MASK] , [MASK] . [MASK] ' m [MASK] your [MASK] [MASK] [SEP] i [MASK] sorry [MASK] [MASK] [MASK] . [SEP] ------> thanks for your compl ##ain ##ar , i ' ll take a look and you ' ll see me for [SEP]
+[MASK] [MASK] you doing [MASK] [MASK] [MASK] you [MASK] take [MASK] [MASK] in your [MASK] . [SEP] yes [MASK] i [MASK] ll [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m in [MASK] name [MASK] [MASK] i am sorry [MASK] [MASK] will . [MASK] thanks for [MASK] [MASK]ainar , [MASK] [MASK] [MASK] [MASK] a [MASK] and you ' [MASK] see [MASK] for [MASK] ------> that ’ s all of the new house . [SEP]
+how [MASK] [MASK] [MASK] today [MASK] [MASK] [MASK] can take [MASK] [MASK] [MASK] your field . [MASK] [MASK] [MASK] [MASK] ' [MASK] go to the office , [MASK] . i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] sorry [MASK] [MASK] will . [SEP] [MASK] [MASK] [MASK] compl [MASK] [MASK] [MASK] i [MASK] [MASK] take a look [MASK] you [MASK] ll [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] s [MASK] [MASK] the new [MASK] [MASK] [MASK] ------> thank you , too . [SEP]
+how are you [MASK] [MASK] ? [SEP] [MASK] [MASK] take [MASK] [MASK] [MASK] [MASK] [MASK] . [SEP] [MASK] , i [MASK] ll go [MASK] [MASK] office , [MASK] . [MASK] [MASK] m [MASK] your name . [MASK] i am sorry . i [MASK] [MASK] [MASK] thanks [MASK] [MASK] [MASK]ain [MASK] [MASK] i ' [MASK] [MASK] [MASK] look and [MASK] [MASK] [MASK] [MASK] [MASK] for [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] you , [MASK] [MASK] [MASK] ------> thank you very much . [SEP]
+[MASK] [MASK] [MASK] doing today [MASK] [MASK] you [MASK] [MASK] [MASK] job in [MASK] field . [SEP] yes , [MASK] [MASK] [MASK] [MASK] [MASK] the [MASK] , [MASK] . [MASK] ' m in [MASK] [MASK] [MASK] [SEP] i am sorry . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK]ar [MASK] [MASK] ' [MASK] [MASK] [MASK] [MASK] and you [MASK] [MASK] see [MASK] for [SEP] that [MASK] [MASK] [MASK] [MASK] [MASK] new house [MASK] [MASK] thank you [MASK] too . [MASK] thank [MASK] [MASK] [MASK] [MASK] [MASK] ------> yes , i ' m not good at all ! [SEP]
+[MASK] [MASK] you doing [MASK] ? [MASK] you can [MASK] [MASK] job in [MASK] field [MASK] [MASK] [MASK] , i [MASK] ll [MASK] to [MASK] office , [MASK] [MASK] [MASK] [MASK] m in [MASK] [MASK] [MASK] [MASK] i am sorry [MASK] [MASK] [MASK] . [MASK] [MASK] for [MASK] [MASK]ainar , i [MASK] ll [MASK] [MASK] look [MASK] you [MASK] ll see me for [MASK] that [MASK] [MASK] [MASK] of [MASK] [MASK] house . [MASK] [MASK] you , too . [MASK] [MASK] [MASK] [MASK] much [MASK] [MASK] yes , [MASK] [MASK] [MASK] not good [MASK] [MASK] [MASK] [MASK] ------> thank you so much . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+you can take your job in your field .
+yes , i ' ll go to the office , sir . i ' m in your name .
+i am sorry . i will .
+thanks for your complainar , i ' ll take a look and you ' ll see me for
+that ’ s all of the new house .
+thank you , too .
+thank you very much .
+yes , i ' m not good at all !
+thank you so much .

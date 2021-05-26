@@ -1,0 +1,25 @@
+Rationalized input ------> Response
+[MASK] [MASK] you doing [MASK] [MASK] [MASK] ------> i was looking at the same time . but don ' t mention it . i ’ m really busy [SEP]
+[MASK] [MASK] [MASK] [MASK] today [MASK] [MASK] [MASK] [MASK] looking at the [MASK] time [MASK] but [MASK] [MASK] t mention it [MASK] i [MASK] m really [MASK] [MASK] ------> you can say you like to buy a movie for me to have a good time . [SEP]
+how are [MASK] [MASK] [MASK] [MASK] [MASK] i was [MASK] at [MASK] [MASK] [MASK] . [MASK] don [MASK] [MASK] mention [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] busy [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] a [MASK] [MASK] [MASK] to have a good time [MASK] [MASK] ------> how did you get my own decision ’ s ? [SEP]
+how [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] looking at the [MASK] [MASK] [MASK] but [MASK] [MASK] [MASK] mention [MASK] [MASK] [MASK] [MASK] m [MASK] busy [MASK] [MASK] [MASK] [MASK] you [MASK] [MASK] buy [MASK] movie [MASK] [MASK] to have [MASK] [MASK] time [MASK] [MASK] [MASK] [MASK] [MASK] get [MASK] own decision [MASK] s [MASK] [MASK] ------> sure . [SEP]
+how are you [MASK] [MASK] [MASK] [SEP] i [MASK] [MASK] at [MASK] [MASK] time . [MASK] [MASK] [MASK] [MASK] [MASK] it [MASK] i ’ m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] like to buy [MASK] movie [MASK] me [MASK] have a [MASK] time . [MASK] [MASK] [MASK] [MASK] get my [MASK] decision [MASK] s [MASK] [MASK] [MASK] [MASK] [MASK] ------> thanks . [SEP]
+[MASK] [MASK] you [MASK] [MASK] ? [MASK] [MASK] was [MASK] at the [MASK] time [MASK] [MASK] [MASK] [MASK] t mention [MASK] [MASK] i ’ [MASK] really [MASK] [MASK] [MASK] [MASK] say [MASK] [MASK] to buy a [MASK] [MASK] [MASK] [MASK] have [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] you [MASK] my [MASK] decision [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] thanks [MASK] [MASK] ------> i ’ ll be able to take a walk and see them , too . [SEP]
+[MASK] [MASK] [MASK] [MASK] today ? [MASK] i [MASK] looking [MASK] the [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] t mention it . [MASK] [MASK] [MASK] really [MASK] [MASK] [MASK] can [MASK] you [MASK] [MASK] [MASK] a movie for [MASK] [MASK] [MASK] a [MASK] [MASK] [MASK] [MASK] how did [MASK] [MASK] [MASK] own [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] ll be [MASK] to take [MASK] [MASK] [MASK] [MASK] them [MASK] too . [SEP] ------> that sounds interesting ! [SEP]
+[MASK] [MASK] [MASK] doing today [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] same time [MASK] but don [MASK] [MASK] mention [MASK] . [MASK] [MASK] m [MASK] [MASK] [MASK] you [MASK] [MASK] you [MASK] to buy [MASK] movie for me to [MASK] a good time . [MASK] how [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] s [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ll [MASK] [MASK] [MASK] take [MASK] [MASK] and see them [MASK] [MASK] [MASK] [MASK] [MASK] sounds interesting ! [MASK] ------> thank you . [SEP]
+[MASK] are [MASK] doing [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] at [MASK] [MASK] [MASK] . but [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] you can [MASK] [MASK] like to [MASK] a [MASK] [MASK] me to [MASK] a [MASK] time [MASK] [SEP] [MASK] did [MASK] [MASK] [MASK] own [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [SEP] [MASK] . [MASK] [MASK] [MASK] ll be able to take [MASK] walk [MASK] [MASK] [MASK] , [MASK] . [MASK] [MASK] [MASK] interesting ! [SEP] [MASK] [MASK] [MASK] [MASK] ------> what about the first time ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] i was looking [MASK] [MASK] [MASK] [MASK] . but [MASK] [MASK] t mention it [MASK] i [MASK] m [MASK] busy [SEP] you [MASK] [MASK] [MASK] like to buy [MASK] movie for [MASK] to [MASK] a good [MASK] [MASK] [SEP] [MASK] [MASK] you [MASK] [MASK] [MASK] decision [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] thanks [MASK] [MASK] i ’ ll be able to [MASK] a walk [MASK] [MASK] them , [MASK] . [MASK] [MASK] sounds [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] about [MASK] [MASK] [MASK] ? [MASK] ------> not really , that ’ s the best movie of the same thing . the teacher had a lot of [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i was looking at the same time . but don ' t mention it . i ’ m really busy
+you can say you like to buy a movie for me to have a good time .
+how did you get my own decision ’ s ?
+sure .
+thanks .
+i ’ ll be able to take a walk and see them , too .
+that sounds interesting !
+thank you .
+what about the first time ?
+not really , that ’ s the best movie of the same thing . the teacher had a lot of

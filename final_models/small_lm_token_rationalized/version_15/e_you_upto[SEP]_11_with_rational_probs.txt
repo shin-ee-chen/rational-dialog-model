@@ -1,0 +1,23 @@
+Rationalized input ------> Response
+[MASK] [MASK] you [MASK] [MASK]o [MASK] [SEP] ------> i see . [SEP]
+what are [MASK] [MASK]to [MASK] [SEP] [MASK] [MASK] [MASK] [SEP] ------> you are very busy , but what is your favorite ? [SEP]
+what [MASK] you [MASK] [MASK] [MASK] ? [SEP] i see [MASK] [SEP] you [MASK] very [MASK] , [MASK] [MASK] [MASK] your [MASK] ? [SEP] ------> of course , but i am very good at all . [SEP]
+what are you [MASK] [MASK]o [MASK] [SEP] i [MASK] [MASK] [MASK] you [MASK] [MASK] busy [MASK] [MASK] [MASK] [MASK] your favorite [MASK] [SEP] of course [MASK] but i [MASK] very good at all . [SEP] ------> why didn ' t you try it ? [SEP]
+what [MASK] [MASK] [MASK] [MASK]o [MASK] [SEP] i see [MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] but [MASK] is your favorite [MASK] [MASK] of [MASK] , but i am [MASK] good at [MASK] . [MASK] why didn ' [MASK] [MASK] [MASK] it [MASK] [MASK] ------> i really enjoy to you . [SEP]
+[MASK] [MASK] you upt [MASK] [MASK] [SEP] i see . [SEP] [MASK] [MASK] very [MASK] , but what is [MASK] favorite [MASK] [MASK] [MASK] course , but [MASK] [MASK] [MASK] good at all . [MASK] why didn ' t [MASK] try [MASK] ? [MASK] i [MASK] enjoy to you [MASK] [SEP] ------> what ’ s the problem ? [SEP]
+what are [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] i [MASK] [MASK] [SEP] [MASK] are very [MASK] [MASK] [MASK] what is your favorite ? [MASK] [MASK] course , [MASK] i am very [MASK] at all [MASK] [MASK] why didn [MASK] [MASK] you try it ? [SEP] i really [MASK] [MASK] [MASK] . [SEP] [MASK] ’ [MASK] the [MASK] [MASK] [MASK] ------> i ’ m sorry , but not bad ! [SEP]
+[MASK] [MASK] you [MASK] [MASK]o ? [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] are [MASK] [MASK] [MASK] but what is [MASK] favorite [MASK] [SEP] of [MASK] , [MASK] i am very good [MASK] [MASK] [MASK] [SEP] why didn [MASK] t [MASK] try it [MASK] [SEP] [MASK] [MASK] enjoy [MASK] [MASK] . [SEP] [MASK] ’ [MASK] the [MASK] ? [SEP] [MASK] ’ m sorry , but [MASK] [MASK] [MASK] [MASK] ------> why don ’ t we go to the movie , you ’ re on your way for you , then [SEP]
+[MASK] [MASK] you upto ? [SEP] [MASK] see . [MASK] [MASK] [MASK] very busy [MASK] but what [MASK] your favorite ? [MASK] [MASK] course , [MASK] [MASK] am [MASK] [MASK] at [MASK] . [MASK] [MASK] [MASK] ' [MASK] [MASK] [MASK] [MASK] ? [MASK] i really enjoy [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s the problem ? [MASK] i ’ [MASK] sorry [MASK] [MASK] not bad [MASK] [MASK] why don [MASK] [MASK] we [MASK] to the [MASK] , [MASK] ’ re [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] then [MASK] ------> well . i ' m just trying to do something that you ' re right . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i see .
+you are very busy , but what is your favorite ?
+of course , but i am very good at all .
+why didn ' t you try it ?
+i really enjoy to you .
+what ’ s the problem ?
+i ’ m sorry , but not bad !
+why don ’ t we go to the movie , you ’ re on your way for you , then
+well . i ' m just trying to do something that you ' re right .

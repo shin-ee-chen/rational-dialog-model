@@ -1,0 +1,27 @@
+Rationalized input ------> Response
+[MASK] are you upt [MASK] [MASK] [MASK] ------> well , i want to meet you . [SEP]
+what [MASK] [MASK] upt [MASK] [MASK] [SEP] well , i [MASK] [MASK] [MASK] [MASK] . [MASK] ------> i hope so . [SEP]
+what are you [MASK]t [MASK] [MASK] [SEP] well , [MASK] want [MASK] meet [MASK] [MASK] [MASK] i hope so [MASK] [SEP] ------> thank you . [SEP]
+[MASK] are [MASK] upt [MASK] [MASK] [MASK] [MASK] , [MASK] want to meet you . [SEP] i [MASK] so [MASK] [SEP] thank [MASK] [MASK] [MASK] ------> good . what kind of books can i do for you ? [SEP]
+[MASK] are [MASK] upto [MASK] [SEP] well , i want [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] . [SEP] thank [MASK] . [MASK] good [MASK] what [MASK] of [MASK] can i do [MASK] you [MASK] [SEP] ------> what are you in your mo ##od ? [SEP]
+[MASK] are you [MASK]t [MASK] ? [SEP] [MASK] , [MASK] want [MASK] meet you [MASK] [MASK] [MASK] [MASK] so . [SEP] [MASK] you . [MASK] good [MASK] what kind of books [MASK] i do [MASK] [MASK] [MASK] [SEP] [MASK] are you in [MASK] mood [MASK] [MASK] ------> what are you doing this weekend ? [SEP]
+what [MASK] you up [MASK]o ? [MASK] [MASK] , i want to meet you [MASK] [SEP] i hope [MASK] [MASK] [MASK] [MASK] you [MASK] [SEP] good . what kind of [MASK] [MASK] [MASK] [MASK] for [MASK] [MASK] [MASK] [MASK] are you in [MASK] mo [MASK] [MASK] [SEP] [MASK] are you [MASK] this [MASK] [MASK] [SEP] ------> what do you do in a good time with me ? [SEP]
+what [MASK] you [MASK]to ? [SEP] [MASK] [MASK] i [MASK] to [MASK] [MASK] . [MASK] i hope [MASK] . [SEP] thank [MASK] . [SEP] [MASK] . [MASK] [MASK] [MASK] books [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] what are [MASK] in [MASK] mood ? [MASK] [MASK] [MASK] [MASK] doing this weekend [MASK] [MASK] what do [MASK] do in [MASK] good [MASK] [MASK] [MASK] [MASK] [SEP] ------> thanks . [SEP]
+what [MASK] [MASK] upt [MASK] [MASK] [SEP] [MASK] [MASK] i [MASK] [MASK] [MASK] you . [SEP] i [MASK] [MASK] [MASK] [MASK] [MASK] you [MASK] [MASK] good . what [MASK] [MASK] books can i do [MASK] [MASK] ? [SEP] what are you in your [MASK]od [MASK] [MASK] what [MASK] [MASK] doing this weekend [MASK] [SEP] [MASK] do [MASK] do [MASK] a good time [MASK] me [MASK] [MASK] [MASK] [MASK] [SEP] ------> i ' d like to have to get it . [SEP]
+[MASK] [MASK] [MASK] [MASK]to [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] you . [MASK] [MASK] hope so . [MASK] thank you . [SEP] [MASK] [MASK] [MASK] [MASK] of books can i [MASK] [MASK] you ? [MASK] what are [MASK] [MASK] [MASK] [MASK]od [MASK] [SEP] [MASK] [MASK] [MASK] doing this [MASK] [MASK] [MASK] [MASK] [MASK] you do in a good time with me ? [SEP] [MASK] . [MASK] i ' [MASK] [MASK] to [MASK] [MASK] get [MASK] . [MASK] ------> thanks a lot . [SEP]
+what are you up [MASK]o ? [SEP] [MASK] [MASK] i want to meet [MASK] [MASK] [SEP] i hope so . [SEP] [MASK] you [MASK] [SEP] good [MASK] [MASK] kind of books can i [MASK] for you ? [SEP] what [MASK] you [MASK] [MASK] mood ? [MASK] what are [MASK] doing [MASK] weekend [MASK] [SEP] what do you [MASK] [MASK] a good time with [MASK] ? [SEP] [MASK] [MASK] [SEP] [MASK] ' [MASK] like to [MASK] [MASK] get it . [MASK] [MASK] a lot . [SEP] ------> i ’ ll take care about the bus , but i can ' t . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+well , i want to meet you .
+i hope so .
+thank you .
+good . what kind of books can i do for you ?
+what are you in your mood ?
+what are you doing this weekend ?
+what do you do in a good time with me ?
+thanks .
+i ' d like to have to get it .
+thanks a lot .
+i ’ ll take care about the bus , but i can ' t .

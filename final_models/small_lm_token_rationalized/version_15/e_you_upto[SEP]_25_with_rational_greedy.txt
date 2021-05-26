@@ -1,0 +1,17 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> oh , you ' re really busy at the moment . do you want me to go there to get [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] oh , [MASK] [MASK] [MASK] really [MASK] at [MASK] moment [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i am so sorry . i am looking for the interview . you are going to have to pay the [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] oh , [MASK] [MASK] [MASK] really [MASK] at [MASK] moment [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] sorry [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] ------> i am not really well , but we can get the same time . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] oh , [MASK] [MASK] [MASK] really [MASK] at [MASK] moment [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] sorry [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to [MASK] to [MASK] [MASK] [MASK] i am not really well , but [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ' m really glad to hear that . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] oh , [MASK] [MASK] [MASK] really [MASK] at [MASK] moment [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] sorry [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to [MASK] to [MASK] [MASK] [MASK] i am not really well , but [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] m really glad to [MASK] [MASK] [MASK] [MASK] ------> i ' m sorry , sir . my friend is just too busy you have . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] oh , [MASK] [MASK] [MASK] really [MASK] at [MASK] moment [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] sorry [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to [MASK] to [MASK] [MASK] [MASK] i am not really well , but [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] m really glad to [MASK] [MASK] [MASK] [MASK] i [MASK] m [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] too [MASK] [MASK] [MASK] [MASK] [MASK] ------> i don ' t care about that . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+oh , you ' re really busy at the moment . do you want me to go there to get
+i am so sorry . i am looking for the interview . you are going to have to pay the
+i am not really well , but we can get the same time .
+i ' m really glad to hear that .
+i ' m sorry , sir . my friend is just too busy you have .
+i don ' t care about that .

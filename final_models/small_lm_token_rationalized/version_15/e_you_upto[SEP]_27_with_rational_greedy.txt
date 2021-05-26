@@ -1,0 +1,15 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i think you ' ve got that all , but i ’ ve got some more . i don ' [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] that all , but i [MASK] [MASK] [MASK] some [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> well , we don ' t have any ##more for your money . i think i ' ll make some [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] that all , but i [MASK] [MASK] [MASK] some [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] t have anymore for [MASK] money . i think i [MASK] [MASK] make some [MASK] ------> that is a good choice . it ' s not the same as you are . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] that all , but i [MASK] [MASK] [MASK] some [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] t have anymore for [MASK] money . i think i [MASK] [MASK] make [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> well , you ' re so sorry to hear that . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] that all , but i [MASK] [MASK] [MASK] some [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] t have anymore for [MASK] money . i think i [MASK] [MASK] make [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] sorry to [MASK] [MASK] [MASK] [MASK] ------> well , there ’ s a big one . it ’ s not easy to get . i think the [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i think you ' ve got that all , but i ’ ve got some more . i don '
+well , we don ' t have anymore for your money . i think i ' ll make some
+that is a good choice . it ' s not the same as you are .
+well , you ' re so sorry to hear that .
+well , there ’ s a big one . it ’ s not easy to get . i think the

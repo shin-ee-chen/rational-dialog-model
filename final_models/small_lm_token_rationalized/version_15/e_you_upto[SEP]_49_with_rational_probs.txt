@@ -1,0 +1,19 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] ------> i ’ m a little bit of the same to the same thing . it ' s very important , [SEP]
+[MASK] [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] a little bit [MASK] the [MASK] to [MASK] same thing . it [MASK] [MASK] [MASK] [MASK] , [MASK] ------> you ’ re welcome . [SEP]
+[MASK] [MASK] [MASK] up [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] the [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] very [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> yes , i ' m not sure . i would like to have to do something i should do that [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ’ [MASK] a little [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] thing [MASK] [MASK] [MASK] s [MASK] important [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ' [MASK] not [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ’ m so excited to go there , but i ’ ve got to be there to go to [SEP]
+[MASK] are you [MASK] [MASK] [MASK] ? [MASK] [MASK] [MASK] [MASK] a [MASK] [MASK] [MASK] [MASK] same to [MASK] same [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] important [MASK] [MASK] [MASK] [MASK] [MASK] welcome . [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] . i would [MASK] to have to [MASK] [MASK] [MASK] should [MASK] that [MASK] i ’ [MASK] [MASK] [MASK] to go [MASK] , [MASK] i [MASK] [MASK] [MASK] to [MASK] [MASK] [MASK] [MASK] to [MASK] ------> what happened ? [SEP]
+[MASK] are you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m a [MASK] bit [MASK] the [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] yes , [MASK] [MASK] m [MASK] sure . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] i [MASK] do [MASK] [MASK] i ’ [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] but [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to [MASK] [MASK] [SEP] what happened [MASK] [MASK] ------> you mean i ’ ll have to go to the party . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ’ [MASK] [MASK] little [MASK] of the [MASK] to the [MASK] thing [MASK] it [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] welcome [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] [MASK] . [MASK] [MASK] like [MASK] [MASK] to do [MASK] i [MASK] [MASK] that [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] ve [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] mean [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> you ’ re welcome . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i ’ m a little bit of the same to the same thing . it ' s very important ,
+you ’ re welcome .
+yes , i ' m not sure . i would like to have to do something i should do that
+i ’ m so excited to go there , but i ’ ve got to be there to go to
+what happened ?
+you mean i ’ ll have to go to the party .
+you ’ re welcome .

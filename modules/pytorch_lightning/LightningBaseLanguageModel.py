@@ -10,11 +10,11 @@ from tokenizers import Tokenizer
 
 class LightningBaseLanguageModel(pl.LightningModule):
 
-    def __init__(self, language_model, tokenizer, loss_module=None, hparams=None):
+    def __init__(self, language_model, tokenizer,  hparams=None):
         super().__init__()
         self.language_model = language_model
         self.tokenizer = tokenizer
-        self.loss_module = loss_module
+
         self.log_list = [
             "loss", "perplexity", "acc"
         ]

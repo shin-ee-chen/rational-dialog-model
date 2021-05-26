@@ -1,0 +1,21 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i think you can make my new house and i ' ll have an appointment , please . [SEP]
+[MASK] [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] make my new [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] ------> i ' m not sure i will . i ' m not feeling . [SEP]
+[MASK] [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] make my new [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] i [MASK] m not sure i will [MASK] i [MASK] m [MASK] feeling [MASK] [MASK] ------> oh , yes . the manager is no problem ! [SEP]
+[MASK] [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] make my new [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] i [MASK] m not sure i will [MASK] i [MASK] m [MASK] feeling [MASK] [MASK] oh , [MASK] [MASK] [MASK] manager [MASK] [MASK] [MASK] [MASK] [MASK] ------> thanks a lot . [SEP]
+[MASK] [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] make my new [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] i [MASK] m not sure i will [MASK] i [MASK] m [MASK] feeling [MASK] [MASK] oh , [MASK] [MASK] [MASK] manager [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> you know ! thank you . [SEP]
+[MASK] [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] make my new [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] i [MASK] m not sure i will [MASK] i [MASK] m [MASK] feeling [MASK] [MASK] oh , [MASK] [MASK] [MASK] manager [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> thanks . you know i have never been to the hosp ##ital . [SEP]
+[MASK] [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] make my new [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] i [MASK] m not sure i will [MASK] i [MASK] m [MASK] feeling [MASK] [MASK] oh , [MASK] [MASK] [MASK] manager [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] never been to [MASK] [MASK] [MASK] [MASK] [MASK] ------> no ! thanks ! [SEP]
+[MASK] [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] make my new [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] i [MASK] m not sure i will [MASK] i [MASK] m [MASK] feeling [MASK] [MASK] oh , [MASK] [MASK] [MASK] manager [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] never been to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> that would be very good for you , but i have a great job . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i think you can make my new house and i ' ll have an appointment , please .
+i ' m not sure i will . i ' m not feeling .
+oh , yes . the manager is no problem !
+thanks a lot .
+you know ! thank you .
+thanks . you know i have never been to the hospital .
+no ! thanks !
+that would be very good for you , but i have a great job .

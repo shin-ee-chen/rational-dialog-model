@@ -1,0 +1,23 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK]t [MASK] [MASK] [SEP] ------> not much . [SEP]
+[MASK] [MASK] [MASK] up [MASK] [MASK] [MASK] [MASK] [MASK] much [MASK] [MASK] ------> the first thing we ' re looking forward to . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] not [MASK] . [MASK] [MASK] [MASK] thing [MASK] [MASK] [MASK] [MASK] forward [MASK] . [MASK] ------> i ' m sorry to hear that . i ’ m a teacher . [SEP]
+[MASK] [MASK] [MASK] upt [MASK] [MASK] [MASK] not [MASK] . [SEP] [MASK] [MASK] thing we [MASK] [MASK] looking [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] [MASK] hear [MASK] . [MASK] ’ [MASK] a teacher [MASK] [MASK] ------> that ’ s good to hear about this . i ’ m sure that ’ s a good job . [SEP]
+what [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] much . [SEP] [MASK] [MASK] thing [MASK] [MASK] [MASK] looking [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] hear that [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] ’ s a good [MASK] [MASK] [MASK] ------> i see . [SEP]
+[MASK] [MASK] you [MASK]t [MASK] [MASK] [MASK] not [MASK] [MASK] [MASK] [MASK] [MASK] thing we [MASK] [MASK] [MASK] forward [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to [MASK] that [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] this . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] ------> what is the weather like in the city ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] much [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] a teacher . [MASK] [MASK] [MASK] s [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i ’ [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] see . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] city [MASK] [SEP] ------> i know that , but i have to take care of it . [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] much [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ' [MASK] [MASK] [MASK] [MASK] that . [MASK] [MASK] m [MASK] [MASK] . [MASK] [MASK] ’ [MASK] good [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] a good job . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] is [MASK] weather [MASK] in [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , but i have [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> yes . [SEP]
+[MASK] are [MASK] up [MASK] [MASK] [MASK] [MASK] not [MASK] [MASK] [MASK] [MASK] [MASK] thing we ' [MASK] looking forward [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] to [MASK] [MASK] . [MASK] ’ m a [MASK] . [MASK] that [MASK] s [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] m [MASK] [MASK] [MASK] [MASK] a good [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] is [MASK] [MASK] [MASK] in the [MASK] [MASK] [MASK] i [MASK] that , but [MASK] [MASK] [MASK] take [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> you ’ re not going to have to have the same day . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+not much .
+the first thing we ' re looking forward to .
+i ' m sorry to hear that . i ’ m a teacher .
+that ’ s good to hear about this . i ’ m sure that ’ s a good job .
+i see .
+what is the weather like in the city ?
+i know that , but i have to take care of it .
+yes .
+you ’ re not going to have to have the same day .

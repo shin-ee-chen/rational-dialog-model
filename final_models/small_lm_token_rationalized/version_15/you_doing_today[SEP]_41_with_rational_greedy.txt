@@ -1,0 +1,15 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i am not very well . you should get some advice , you have to get a job to work [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] some [MASK] , [MASK] have [MASK] [MASK] [MASK] [MASK] to work [MASK] ------> i know i ' d rather have an interview with you , you ' ll see you . how can [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] some [MASK] , [MASK] have [MASK] [MASK] [MASK] [MASK] to work [MASK] i [MASK] i [MASK] [MASK] [MASK] have [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> that sounds like a good idea . i think i ' ll have some help . i want to be [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] some [MASK] , [MASK] have [MASK] [MASK] [MASK] [MASK] to work [MASK] i [MASK] i [MASK] [MASK] [MASK] have [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] like [MASK] good idea . i [MASK] i [MASK] [MASK] have [MASK] [MASK] [MASK] i [MASK] to [MASK] [MASK] ------> i see . you ' d better take a look at the bus . i ' m going to be [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] some [MASK] , [MASK] have [MASK] [MASK] [MASK] [MASK] to work [MASK] i [MASK] i [MASK] [MASK] [MASK] have [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] like [MASK] good idea . i [MASK] i [MASK] [MASK] have [MASK] [MASK] [MASK] i [MASK] to [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to [MASK] [MASK] ------> i think we should go with a new job that ’ s so many people . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i am not very well . you should get some advice , you have to get a job to work
+i know i ' d rather have an interview with you , you ' ll see you . how can
+that sounds like a good idea . i think i ' ll have some help . i want to be
+i see . you ' d better take a look at the bus . i ' m going to be
+i think we should go with a new job that ’ s so many people .

@@ -1,0 +1,23 @@
+Rationalized input ------> Response
+[MASK] are [MASK] [MASK]t [MASK] [MASK] [MASK] ------> you ' ve got a job with my boss in a job ! [SEP]
+what [MASK] [MASK] up [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ! [SEP] ------> really ? do you like watching football or tea ? [SEP]
+what are you up [MASK]o [MASK] [MASK] [MASK] [MASK] [MASK] got [MASK] job with [MASK] boss [MASK] [MASK] job ! [SEP] really ? [MASK] [MASK] [MASK] [MASK] football [MASK] [MASK] [MASK] [MASK] ------> what ? are you kidding ? how can you have your help ? [SEP]
+what [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] got [MASK] [MASK] with [MASK] [MASK] [MASK] [MASK] job [MASK] [SEP] really [MASK] [MASK] [MASK] [MASK] [MASK] football [MASK] [MASK] [MASK] [MASK] what ? are [MASK] [MASK] [MASK] how can [MASK] have [MASK] [MASK] [MASK] [MASK] ------> why not ? [SEP]
+[MASK] are you upt [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] job [MASK] my boss in a [MASK] [MASK] [SEP] really ? [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] kidding [MASK] [MASK] [MASK] [MASK] have [MASK] [MASK] [MASK] [MASK] why not [MASK] [SEP] ------> i am . i ' m going to have to talk to that many things in this place . [SEP]
+what [MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] with [MASK] boss in a [MASK] [MASK] [MASK] really ? [MASK] you like [MASK] football [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] have [MASK] [MASK] [MASK] [SEP] why [MASK] [MASK] [MASK] [MASK] am . [MASK] [MASK] m [MASK] [MASK] have [MASK] [MASK] [MASK] that [MASK] [MASK] in [MASK] place [MASK] [MASK] ------> i ' m glad that you have to work . [SEP]
+what are [MASK] up [MASK]o [MASK] [MASK] [MASK] ' [MASK] got a [MASK] [MASK] my [MASK] in [MASK] [MASK] ! [SEP] [MASK] [MASK] [MASK] [MASK] like watching football [MASK] [MASK] [MASK] [MASK] [MASK] ? are you [MASK] [MASK] [MASK] [MASK] you [MASK] your help [MASK] [MASK] [MASK] not [MASK] [SEP] i [MASK] . i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] to [MASK] many things [MASK] [MASK] [MASK] [MASK] [MASK] i ' m [MASK] that [MASK] [MASK] to work [MASK] [MASK] ------> no . what ’ s the matter ? [SEP]
+[MASK] [MASK] [MASK] [MASK]t [MASK] ? [MASK] you [MASK] ve got [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do you [MASK] watching [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] you kidding [MASK] [MASK] can you have [MASK] [MASK] [MASK] [MASK] [MASK] not [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] going [MASK] [MASK] to talk to [MASK] [MASK] things in [MASK] [MASK] [MASK] [MASK] i [MASK] m glad [MASK] you have [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] ------> that ’ s ok . thanks . [SEP]
+[MASK] [MASK] [MASK] up [MASK]o ? [MASK] [MASK] [MASK] ve [MASK] a [MASK] [MASK] my boss [MASK] a [MASK] [MASK] [SEP] really [MASK] do [MASK] like watching football [MASK] [MASK] [MASK] [SEP] what [MASK] are you [MASK] ? how can you have [MASK] help [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i am [MASK] [MASK] ' [MASK] [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] in [MASK] place [MASK] [MASK] i [MASK] [MASK] glad [MASK] [MASK] have to work [MASK] [SEP] no [MASK] what ’ s [MASK] [MASK] ? [MASK] [MASK] [MASK] s ok [MASK] thanks [MASK] [SEP] ------> i will . thank you for your reservation . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+you ' ve got a job with my boss in a job !
+really ? do you like watching football or tea ?
+what ? are you kidding ? how can you have your help ?
+why not ?
+i am . i ' m going to have to talk to that many things in this place .
+i ' m glad that you have to work .
+no . what ’ s the matter ?
+that ’ s ok . thanks .
+i will . thank you for your reservation .

@@ -1,0 +1,23 @@
+Rationalized input ------> Response
+[MASK] [MASK] you [MASK] today [MASK] [MASK] ------> no problem ! what ' s up , you have to go to a ha ##t ? [SEP]
+how [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s [MASK] , you [MASK] [MASK] go [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] ------> i ' ll try for the next dance . [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [SEP] no [MASK] [MASK] [MASK] [MASK] s [MASK] [MASK] [MASK] [MASK] to [MASK] to [MASK] [MASK] [MASK] ? [MASK] [MASK] [MASK] [MASK] try [MASK] [MASK] [MASK] dance [MASK] [MASK] ------> i ' m really sorry . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] up [MASK] [MASK] have to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ll try for the [MASK] [MASK] . [MASK] i [MASK] m [MASK] sorry [MASK] [MASK] ------> thank you . i hope that we are all my wife ' s very interesting . [SEP]
+how [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] up , [MASK] [MASK] [MASK] [MASK] [MASK] a [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ll [MASK] for [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] really sorry . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] wife [MASK] [MASK] very interesting [MASK] [MASK] ------> how come ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] problem [MASK] [MASK] [MASK] [MASK] [MASK] , you have [MASK] go [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] try for [MASK] [MASK] dance [MASK] [MASK] [MASK] [MASK] m [MASK] [MASK] . [MASK] [MASK] you [MASK] i hope that [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] ------> no , i don ' t . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] no [MASK] ! [MASK] [MASK] [MASK] up [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK]t ? [MASK] [MASK] [MASK] [MASK] [MASK] for [MASK] [MASK] dance . [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] thank you . [MASK] hope [MASK] we [MASK] [MASK] [MASK] wife [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] t [MASK] [MASK] ------> thank you ! i can ’ t wait for the tr ##ut ##h ! we are going to have a [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] up [MASK] [MASK] have [MASK] go [MASK] [MASK] ha [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] try [MASK] the [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m really [MASK] [MASK] [SEP] thank you [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s very interesting [MASK] [MASK] [MASK] [MASK] ? [SEP] [MASK] [MASK] i don [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] the [MASK] [MASK]h [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] ------> what ’ s the problem ? [SEP]
+[MASK] [MASK] [MASK] [MASK] today [MASK] [MASK] [MASK] problem [MASK] [MASK] [MASK] s [MASK] [MASK] you have to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ll [MASK] for [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] m [MASK] sorry [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] my [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] t wait for [MASK] [MASK] [MASK]h [MASK] [MASK] [MASK] going [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] ------> no , it ' s not the same . i ' ll be there to see it . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+no problem ! what ' s up , you have to go to a hat ?
+i ' ll try for the next dance .
+i ' m really sorry .
+thank you . i hope that we are all my wife ' s very interesting .
+how come ?
+no , i don ' t .
+thank you ! i can ’ t wait for the truth ! we are going to have a
+what ’ s the problem ?
+no , it ' s not the same . i ' ll be there to see it .

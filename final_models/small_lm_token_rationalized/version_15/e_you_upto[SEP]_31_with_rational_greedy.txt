@@ -1,0 +1,19 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> yes , we have a good one . i have a try . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] have [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] ------> what ' s the matter , sir ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] have [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] ------> yes , sir . i ' d like to see it in the hotel . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] have [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] i [MASK] [MASK] like to see [MASK] [MASK] [MASK] hotel [MASK] [MASK] ------> i am not . how can i ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] have [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] i [MASK] [MASK] like to see [MASK] [MASK] [MASK] hotel [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] ------> yes , i am . what kind of room do you want to take a look in mind ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] have [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] i [MASK] [MASK] like to see [MASK] [MASK] [MASK] hotel [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] want to [MASK] [MASK] look [MASK] [MASK] [MASK] [MASK] ------> i would like to know . i am glad you can help . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] have [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] i [MASK] [MASK] like to see [MASK] [MASK] [MASK] hotel [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] , i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] want to [MASK] [MASK] look in [MASK] [MASK] [MASK] i [MASK] like to know [MASK] i [MASK] glad [MASK] [MASK] [MASK] [MASK] [MASK] ------> ok . let ' s have a look at the moment . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+yes , we have a good one . i have a try .
+what ' s the matter , sir ?
+yes , sir . i ' d like to see it in the hotel .
+i am not . how can i ?
+yes , i am . what kind of room do you want to take a look in mind ?
+i would like to know . i am glad you can help .
+ok . let ' s have a look at the moment .

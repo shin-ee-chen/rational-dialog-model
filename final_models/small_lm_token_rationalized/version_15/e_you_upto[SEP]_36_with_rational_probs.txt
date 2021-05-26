@@ -1,0 +1,21 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] up [MASK] [MASK] [MASK] [SEP] ------> well , what ’ s going on and the ro ##ck ##s ? [SEP]
+[MASK] [MASK] [MASK] [MASK]t [MASK] ? [MASK] well [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] and [MASK] ro [MASK] [MASK] ? [MASK] ------> well , i guess i ' m just having some ##where , but i don ' t know what to [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] well [MASK] [MASK] [MASK] [MASK] going on [MASK] [MASK] [MASK]ck [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] having [MASK]where , but [MASK] don [MASK] t [MASK] what [MASK] [MASK] ------> what do you say ? [SEP]
+[MASK] [MASK] [MASK] up [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] going on [MASK] [MASK] ro [MASK] [MASK] ? [MASK] [MASK] , i guess i ' m [MASK] having some [MASK] [MASK] but [MASK] [MASK] [MASK] t know [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] ------> yes , i have . i don ' t know where to go ! [SEP]
+what are [MASK] [MASK]to [MASK] [MASK] [MASK] , [MASK] [MASK] s [MASK] [MASK] and [MASK] ro [MASK] [MASK] [MASK] [MASK] well [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , but i don [MASK] t [MASK] [MASK] to [SEP] what [MASK] you [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] have [MASK] i don [MASK] [MASK] [MASK] [MASK] to [MASK] ! [MASK] ------> i ' m so late . [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] what [MASK] s [MASK] [MASK] [MASK] [MASK] [MASK] [MASK]s ? [SEP] [MASK] , i guess i [MASK] m just [MASK] somewhere , but i [MASK] [MASK] t [MASK] [MASK] to [MASK] [MASK] do [MASK] [MASK] [MASK] [SEP] [MASK] , i [MASK] [MASK] i [MASK] ' [MASK] know where [MASK] [MASK] [MASK] [SEP] i ' m [MASK] late [MASK] [MASK] ------> i ' m really wor ##ried about that . [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] well [MASK] [MASK] [MASK] [MASK] [MASK] on [MASK] [MASK] ro [MASK] [MASK] [MASK] [MASK] well [MASK] i guess i [MASK] m just having somewhere , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] what do [MASK] say ? [MASK] [MASK] [MASK] i have [MASK] [MASK] don ' [MASK] [MASK] where to [MASK] ! [MASK] i [MASK] m [MASK] late [MASK] [SEP] i ' [MASK] really wor [MASK] about [MASK] [MASK] [MASK] ------> what about the first - bu ##n ##c ##s ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] ’ [MASK] [MASK] on and [MASK] ro [MASK]s [MASK] [MASK] [MASK] , i [MASK] i [MASK] m just having [MASK]where , [MASK] [MASK] [MASK] [MASK] [MASK] know [MASK] [MASK] [MASK] what do [MASK] say ? [MASK] [MASK] , [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] know [MASK] to [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] m [MASK] wor [MASK] about [MASK] [MASK] [SEP] [MASK] [MASK] the [MASK] - bu [MASK] [MASK] [MASK] [MASK] [MASK] ------> no , i was bor ##n for my parents first . it ' s hard to say , but you [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+well , what ’ s going on and the rocks ?
+well , i guess i ' m just having somewhere , but i don ' t know what to
+what do you say ?
+yes , i have . i don ' t know where to go !
+i ' m so late .
+i ' m really worried about that .
+what about the first - buncs ?
+no , i was born for my parents first . it ' s hard to say , but you

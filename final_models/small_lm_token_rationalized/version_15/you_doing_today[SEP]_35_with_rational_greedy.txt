@@ -1,0 +1,19 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ' ll see my hair , sir . can i do anything i ’ ve done ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] see [MASK] hair , sir [MASK] can i do anything [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ' m looking forward to to get my best . it ' ll be the same way to see [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] see [MASK] hair , sir [MASK] can i do anything [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] forward to to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to see [MASK] ------> i ' ll try some new . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] see [MASK] hair , sir [MASK] can i do anything [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] forward to to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to see [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> what ’ s your pleasure . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] see [MASK] hair , sir [MASK] can i do anything [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] forward to to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to see [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> that sounds great . i ' m afraid you will have to be in the back . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] see [MASK] hair , sir [MASK] can i do anything [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] forward to to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to see [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . i [MASK] m [MASK] you [MASK] have to be [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ’ ll be waiting for you , sir . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] see [MASK] hair , sir [MASK] can i do anything [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] forward to to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to see [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . i [MASK] m [MASK] you [MASK] have to be [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] ll be waiting for [MASK] , [MASK] [MASK] [MASK] ------> i am sure there are a lot of money . what do you need me with ? [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i ' ll see my hair , sir . can i do anything i ’ ve done ?
+i ' m looking forward to to get my best . it ' ll be the same way to see
+i ' ll try some new .
+what ’ s your pleasure .
+that sounds great . i ' m afraid you will have to be in the back .
+i ’ ll be waiting for you , sir .
+i am sure there are a lot of money . what do you need me with ?

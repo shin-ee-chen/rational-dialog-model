@@ -1,0 +1,29 @@
+Rationalized input ------> Response
+what [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] ------> i am just going to work with you . [SEP]
+what [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] i am just [MASK] [MASK] work with [MASK] [MASK] [MASK] ------> i ' m going to get a chance in my office . [SEP]
+what [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] i am just [MASK] [MASK] work with [MASK] [MASK] [MASK] i [MASK] m [MASK] [MASK] get a [MASK] in my office [MASK] [MASK] ------> why ? [SEP]
+what [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] i am just [MASK] [MASK] work with [MASK] [MASK] [MASK] i [MASK] m [MASK] [MASK] get a [MASK] in my office [MASK] [MASK] why [MASK] [MASK] ------> i ’ m not doing that . [SEP]
+what [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] i am just [MASK] [MASK] work with [MASK] [MASK] [MASK] i [MASK] m [MASK] [MASK] get a [MASK] in my office [MASK] [MASK] why [MASK] [SEP] i [MASK] m not [MASK] that [MASK] [MASK] ------> yes . [SEP]
+what [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] i am just [MASK] [MASK] work with [MASK] [MASK] [MASK] i [MASK] m [MASK] [MASK] get a [MASK] in my office [MASK] [MASK] why [MASK] [SEP] i [MASK] m not [MASK] that [MASK] [MASK] [MASK] [MASK] [MASK] ------> well , thanks for your help . [SEP]
+what [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] i am just [MASK] [MASK] work with [MASK] [MASK] [MASK] i [MASK] m [MASK] [MASK] get a [MASK] in my office [MASK] [MASK] why [MASK] [SEP] i [MASK] m not [MASK] that [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , thanks for [MASK] [MASK] [MASK] [MASK] ------> i ' m a bit excited about getting married . [SEP]
+what [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] i am just [MASK] [MASK] work with [MASK] [MASK] [MASK] i [MASK] m [MASK] [MASK] get a [MASK] in my office [MASK] [MASK] why [MASK] [SEP] i [MASK] m not [MASK] that [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , thanks for [MASK] [MASK] [MASK] [MASK] i [MASK] m a bit excited about getting married [MASK] [MASK] ------> what ? [SEP]
+what [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] i am just [MASK] [MASK] work with [MASK] [MASK] [MASK] i [MASK] m [MASK] [MASK] get a [MASK] in my office [MASK] [MASK] why [MASK] [SEP] i [MASK] m not [MASK] that [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , thanks for [MASK] [MASK] [MASK] [MASK] i [MASK] m a bit excited about getting married [MASK] [MASK] what [MASK] [MASK] ------> you ' ve had a chance to see my friends and then go up . [SEP]
+what [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] i am just [MASK] [MASK] work with [MASK] [MASK] [MASK] i [MASK] m [MASK] [MASK] get a [MASK] in my office [MASK] [MASK] why [MASK] [SEP] i [MASK] m not [MASK] that [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , thanks for [MASK] [MASK] [MASK] [MASK] i [MASK] m a bit excited about getting married [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] see my [MASK] and [MASK] [MASK] [MASK] [MASK] [MASK] ------> you should have a look . [SEP]
+what [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] i am just [MASK] [MASK] work with [MASK] [MASK] [MASK] i [MASK] m [MASK] [MASK] get a [MASK] in my office [MASK] [MASK] why [MASK] [SEP] i [MASK] m not [MASK] that [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , thanks for [MASK] [MASK] [MASK] [MASK] i [MASK] m a bit excited about getting married [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] see my [MASK] and [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] a look [MASK] [MASK] ------> why not ? [SEP]
+what [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] i am just [MASK] [MASK] work with [MASK] [MASK] [MASK] i [MASK] m [MASK] [MASK] get a [MASK] in my office [MASK] [MASK] why [MASK] [SEP] i [MASK] m not [MASK] that [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , thanks for [MASK] [MASK] [MASK] [MASK] i [MASK] m a bit excited about getting married [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] see my [MASK] and [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] a look [MASK] [MASK] why not [MASK] [MASK] ------> you ' re welcome . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i am just going to work with you .
+i ' m going to get a chance in my office .
+why ?
+i ’ m not doing that .
+yes .
+well , thanks for your help .
+i ' m a bit excited about getting married .
+what ?
+you ' ve had a chance to see my friends and then go up .
+you should have a look .
+why not ?
+you ' re welcome .

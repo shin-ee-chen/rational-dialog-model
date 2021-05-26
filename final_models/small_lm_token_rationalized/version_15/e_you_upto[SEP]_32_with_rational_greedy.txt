@@ -1,0 +1,17 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> my favorite is the best to you and have a good idea . i ' m really looking forward to [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] best to [MASK] [MASK] have [MASK] [MASK] idea [MASK] i [MASK] m really [MASK] [MASK] to [MASK] ------> i don ’ t have a new game . i can ’ t wait to help . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] best to [MASK] [MASK] have [MASK] [MASK] idea [MASK] i [MASK] m really [MASK] [MASK] to [MASK] i [MASK] [MASK] t have [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i know , thanks . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] best to [MASK] [MASK] have [MASK] [MASK] idea [MASK] i [MASK] m really [MASK] [MASK] to [MASK] i [MASK] [MASK] t have [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] t [MASK] to [MASK] [MASK] [MASK] i [MASK] , [MASK] [MASK] [MASK] ------> i know , but i ’ m not surpr ##ised , i know you ’ ll have to be able [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] best to [MASK] [MASK] have [MASK] [MASK] idea [MASK] i [MASK] m really [MASK] [MASK] to [MASK] i [MASK] [MASK] t have [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] t [MASK] to [MASK] [MASK] [MASK] i [MASK] , [MASK] [MASK] [MASK] i know , but i [MASK] m [MASK] [MASK]ised , i [MASK] [MASK] [MASK] [MASK] [MASK] to be [MASK] [MASK] ------> i ’ m so busy . i like to do something , i ’ m watching tv . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] best to [MASK] [MASK] have [MASK] [MASK] idea [MASK] i [MASK] m really [MASK] [MASK] to [MASK] i [MASK] [MASK] t have [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] t [MASK] to [MASK] [MASK] [MASK] i [MASK] , [MASK] [MASK] [MASK] i know , but i [MASK] m [MASK] [MASK]ised , i [MASK] [MASK] [MASK] [MASK] [MASK] to be [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] i like to do [MASK] , i [MASK] m watching [MASK] [MASK] [MASK] ------> what did you do after school ? [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+my favorite is the best to you and have a good idea . i ' m really looking forward to
+i don ’ t have a new game . i can ’ t wait to help .
+i know , thanks .
+i know , but i ’ m not surprised , i know you ’ ll have to be able
+i ’ m so busy . i like to do something , i ’ m watching tv .
+what did you do after school ?

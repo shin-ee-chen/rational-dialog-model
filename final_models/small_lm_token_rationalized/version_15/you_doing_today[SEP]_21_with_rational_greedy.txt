@@ -1,0 +1,19 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> what did you do that ? i didn ’ t get to work with me . i ’ m not [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do that [MASK] i didn [MASK] [MASK] get to work with me [MASK] i [MASK] m not [MASK] ------> that ’ s what i need ##ing to get a new year ' s conc ##ert . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do that [MASK] i didn [MASK] [MASK] get to work with me [MASK] i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i need [MASK] to get a new year [MASK] s concert [MASK] [MASK] ------> yes . we can see what you want . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do that [MASK] i didn [MASK] [MASK] get to work with me [MASK] i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i need [MASK] to get a new year [MASK] s concert [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] see [MASK] [MASK] [MASK] [MASK] [MASK] ------> ok . you ’ re welcome , sir . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do that [MASK] i didn [MASK] [MASK] get to work with me [MASK] i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i need [MASK] to get a new year [MASK] s concert [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] see [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] ------> yes , i am very sorry , but i am not interested in a second time . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do that [MASK] i didn [MASK] [MASK] get to work with me [MASK] i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i need [MASK] to get a new year [MASK] s concert [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] see [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] welcome , [MASK] [MASK] [MASK] [MASK] , i am very sorry , but i am not interested in [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ' d better do anything you need to do . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do that [MASK] i didn [MASK] [MASK] get to work with me [MASK] i [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i need [MASK] to get a new year [MASK] s concert [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] see [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] welcome , [MASK] [MASK] [MASK] [MASK] , i am very sorry , but i am not interested in [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] do anything [MASK] need to [MASK] [MASK] [MASK] ------> yes , i ’ ll be able to go to the air ##port in this morning . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+what did you do that ? i didn ’ t get to work with me . i ’ m not
+that ’ s what i needing to get a new year ' s concert .
+yes . we can see what you want .
+ok . you ’ re welcome , sir .
+yes , i am very sorry , but i am not interested in a second time .
+i ' d better do anything you need to do .
+yes , i ’ ll be able to go to the airport in this morning .

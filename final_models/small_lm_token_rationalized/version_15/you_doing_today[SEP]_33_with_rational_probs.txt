@@ -1,0 +1,25 @@
+Rationalized input ------> Response
+[MASK] [MASK] you [MASK] today [MASK] [MASK] ------> i think i have a nice day , so i ' m really glad to tell you what you are [SEP]
+[MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] i think [MASK] [MASK] [MASK] nice day , so i [MASK] [MASK] [MASK] [MASK] to tell [MASK] [MASK] [MASK] [MASK] [MASK] ------> no . it is . i ' m going to have a p ##im ##p ##ir ##m . [SEP]
+[MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] i think [MASK] [MASK] a nice day [MASK] [MASK] i [MASK] m really glad [MASK] tell [MASK] [MASK] you are [MASK] no [MASK] [MASK] is . [MASK] [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] ------> why not ? [SEP]
+[MASK] are you [MASK] today [MASK] [MASK] [MASK] [MASK] [MASK] have [MASK] [MASK] day [MASK] so i ' m [MASK] [MASK] [MASK] tell [MASK] what [MASK] are [MASK] no [MASK] [MASK] [MASK] . i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK]ir [MASK] [MASK] [MASK] why not ? [MASK] ------> i ' m sure you ’ ll go with me ! [SEP]
+how are [MASK] [MASK] today ? [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] nice [MASK] , so i [MASK] [MASK] [MASK] [MASK] to tell you [MASK] [MASK] [MASK] [SEP] [MASK] . it [MASK] . i [MASK] [MASK] [MASK] to have a [MASK]impir [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] i [MASK] m [MASK] you ’ ll [MASK] [MASK] me [MASK] [MASK] ------> i ' ve got a new car . [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] think [MASK] [MASK] [MASK] [MASK] day , [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] you [MASK] [MASK] are [MASK] [MASK] [MASK] it [MASK] . i [MASK] m [MASK] to have [MASK] [MASK] [MASK]p [MASK] [MASK] [MASK] [MASK] [MASK] not [MASK] [SEP] i ' [MASK] [MASK] [MASK] [MASK] ll [MASK] [MASK] [MASK] ! [SEP] i ' [MASK] got [MASK] new car . [SEP] ------> you ' re kidding . [SEP]
+how [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] think [MASK] have [MASK] [MASK] [MASK] , [MASK] i [MASK] m really glad to [MASK] you what [MASK] [MASK] [MASK] no [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m going [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ' [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ' [MASK] [MASK] [MASK] [MASK] ------> i ' m sure to hear that . [SEP]
+how [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i think i have [MASK] nice [MASK] , [MASK] [MASK] ' [MASK] [MASK] [MASK] [MASK] [MASK] you what [MASK] are [MASK] [MASK] [MASK] it [MASK] . [MASK] ' m [MASK] to [MASK] a p [MASK] [MASK]ir [MASK] [MASK] [MASK] why not ? [SEP] i [MASK] [MASK] [MASK] you ’ [MASK] go with [MASK] [MASK] [SEP] i ' [MASK] [MASK] a [MASK] [MASK] [MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] to [MASK] [MASK] . [SEP] ------> i see . [SEP]
+how are [MASK] [MASK] today [MASK] [MASK] i [MASK] i [MASK] a nice [MASK] [MASK] so i [MASK] [MASK] really glad [MASK] tell [MASK] what [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] i ' [MASK] [MASK] to have a [MASK]im [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] [MASK] [MASK] m [MASK] you [MASK] [MASK] go with me ! [MASK] [MASK] ' [MASK] [MASK] [MASK] [MASK] car [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [SEP] i [MASK] m [MASK] [MASK] [MASK] that . [SEP] [MASK] see [MASK] [MASK] ------> you should do that . [SEP]
+[MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] think i [MASK] a nice day [MASK] so [MASK] ' [MASK] [MASK] glad [MASK] [MASK] [MASK] what [MASK] are [MASK] no [MASK] [MASK] is [MASK] [MASK] [MASK] [MASK] [MASK] to [MASK] a pim [MASK] [MASK]m [MASK] [SEP] [MASK] [MASK] ? [MASK] [MASK] [MASK] [MASK] sure [MASK] [MASK] [MASK] [MASK] [MASK] me [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ' [MASK] kidding [MASK] [MASK] i [MASK] [MASK] [MASK] to hear [MASK] . [SEP] i see [MASK] [MASK] [MASK] [MASK] [MASK] that [MASK] [MASK] ------> well . i have to go ! [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i think i have a nice day , so i ' m really glad to tell you what you are
+no . it is . i ' m going to have a pimpirm .
+why not ?
+i ' m sure you ’ ll go with me !
+i ' ve got a new car .
+you ' re kidding .
+i ' m sure to hear that .
+i see .
+you should do that .
+well . i have to go !

@@ -1,0 +1,17 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] today [MASK] [MASK] ------> it was about a long time ago ! but i didn ’ t like it , but you have to [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] was about [MASK] long [MASK] [MASK] [MASK] but i didn [MASK] [MASK] like [MASK] [MASK] but you have to [MASK] ------> you ’ re going to have a p ##ity that i ’ m in bed with new . [SEP]
+[MASK] [MASK] you doing [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] a long time ago [MASK] [MASK] i didn ’ t [MASK] [MASK] [MASK] but you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] going to [MASK] [MASK] pity [MASK] [MASK] ’ [MASK] in bed [MASK] [MASK] [MASK] [MASK] ------> you don ’ t need to study english about that . [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] it was [MASK] [MASK] long time [MASK] [MASK] but [MASK] [MASK] [MASK] t like it [MASK] [MASK] you [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] going to [MASK] [MASK] p [MASK] [MASK] i ’ [MASK] [MASK] bed [MASK] new [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] need to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i ’ m not feeling well . i guess i don ' t know what to get . [SEP]
+[MASK] [MASK] [MASK] [MASK] today [MASK] [MASK] [MASK] [MASK] [MASK] a [MASK] time [MASK] ! but [MASK] [MASK] ’ t [MASK] [MASK] , [MASK] you [MASK] to [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] a p [MASK] that [MASK] [MASK] m in bed with [MASK] [MASK] [MASK] [MASK] don [MASK] [MASK] need [MASK] study [MASK] about that . [SEP] i ’ m [MASK] feeling [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] [SEP] ------> well , you ’ ve heard that about it . [SEP]
+how [MASK] you [MASK] [MASK] [MASK] [MASK] it [MASK] [MASK] a [MASK] [MASK] ago ! but i [MASK] [MASK] t [MASK] it [MASK] [MASK] you have [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to have a p [MASK] [MASK] [MASK] [MASK] m [MASK] bed [MASK] [MASK] [MASK] [MASK] [MASK] don ’ t need [MASK] [MASK] english [MASK] that [MASK] [MASK] [MASK] ’ [MASK] not feeling well . i [MASK] i [MASK] [MASK] [MASK] know [MASK] [MASK] [MASK] . [MASK] well [MASK] [MASK] [MASK] [MASK] [MASK] that about [MASK] [MASK] [MASK] ------> that ’ s why you had a big problem . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+it was about a long time ago ! but i didn ’ t like it , but you have to
+you ’ re going to have a pity that i ’ m in bed with new .
+you don ’ t need to study english about that .
+i ’ m not feeling well . i guess i don ' t know what to get .
+well , you ’ ve heard that about it .
+that ’ s why you had a big problem .

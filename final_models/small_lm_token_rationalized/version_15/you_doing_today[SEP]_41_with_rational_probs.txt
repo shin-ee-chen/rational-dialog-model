@@ -1,0 +1,21 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] doing [MASK] [MASK] [SEP] ------> not really . you are going to make a lot of money . i am going to be a problem [SEP]
+how [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] really [MASK] [MASK] are [MASK] to make a [MASK] of [MASK] . i [MASK] [MASK] to [MASK] a [MASK] [MASK] ------> how long is the manager ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] to make a lot of money [MASK] [MASK] [MASK] [MASK] [MASK] be [MASK] [MASK] [MASK] [MASK] long [MASK] [MASK] [MASK] [MASK] [SEP] ------> you are welcome . what ' s the problem ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] not [MASK] [MASK] you [MASK] [MASK] to make [MASK] lot [MASK] money . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] manager [MASK] [MASK] [MASK] [MASK] [MASK] . what [MASK] [MASK] [MASK] problem [MASK] [MASK] ------> the first date is . you have to pay the change . do you have any other questions in beijing [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] are going to [MASK] a lot [MASK] [MASK] [MASK] [MASK] am going [MASK] be a problem [SEP] how [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] welcome [MASK] [MASK] [MASK] s [MASK] problem [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] . you have to [MASK] [MASK] [MASK] [MASK] [MASK] you [MASK] [MASK] [MASK] questions [MASK] beijing [MASK] ------> i will . you ’ ve got a good idea . [SEP]
+[MASK] are [MASK] [MASK] today [MASK] [MASK] [MASK] really [MASK] [MASK] are [MASK] to make [MASK] [MASK] [MASK] money . [MASK] [MASK] [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] manager [MASK] [MASK] you [MASK] welcome . [MASK] [MASK] [MASK] [MASK] problem ? [MASK] [MASK] [MASK] date [MASK] [MASK] [MASK] have to [MASK] [MASK] [MASK] [MASK] do you [MASK] [MASK] other questions in beijing [MASK] [MASK] will [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] idea . [SEP] ------> do you like to live with that ? [SEP]
+[MASK] [MASK] [MASK] doing today [MASK] [MASK] not [MASK] [MASK] [MASK] are [MASK] [MASK] make [MASK] [MASK] of [MASK] . i [MASK] going [MASK] be a problem [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] welcome [MASK] [MASK] ' [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] is . [MASK] [MASK] to pay [MASK] [MASK] [MASK] do you [MASK] any [MASK] questions in beijing [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] got a [MASK] [MASK] . [SEP] do you [MASK] [MASK] live [MASK] [MASK] [MASK] [SEP] ------> i think that ' s a hard time . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] [MASK] [MASK] [MASK] you [MASK] [MASK] to make [MASK] [MASK] of money . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] long [MASK] [MASK] manager [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s [MASK] [MASK] ? [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] have [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] other [MASK] in [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] like to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] think [MASK] [MASK] [MASK] [MASK] [MASK] time [MASK] [MASK] ------> yes . i think i am working . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+not really . you are going to make a lot of money . i am going to be a problem
+how long is the manager ?
+you are welcome . what ' s the problem ?
+the first date is . you have to pay the change . do you have any other questions in beijing
+i will . you ’ ve got a good idea .
+do you like to live with that ?
+i think that ' s a hard time .
+yes . i think i am working .

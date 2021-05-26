@@ -10,7 +10,8 @@ class PolicyBasedUtteranceRationalExtractor(nn.Module):
 
     def __init__(self, embedding_input_size, embedding_size=32, mask_token=0, sep_token=None):
         assert sep_token != None, "sep_token_id must be provided"
-        
+
+        print(embedding_input_size)
         super().__init__()
         self.embedding_size = embedding_size
         self.embedding = Embedding(embedding_input_size, embedding_size)
@@ -27,6 +28,7 @@ class PolicyBasedUtteranceRationalExtractor(nn.Module):
             the mask that was used and the masked x.
             x has dimensions L x B, where L is length of sequences, B is batch size
         '''
+
         u, l = self.get_utterance_representations(x, device=x.device)
 
         # Calculate mask for utterances
@@ -82,7 +84,7 @@ class PolicyBasedUtteranceRationalExtractor(nn.Module):
         '''
         Calculates the representation of an utterance, as the mean of the embeddings of the tokens
         '''
-        u_embed = torch.stack([self.embedding(torch.tensor(token_id).to(device)) for token_id in utterance])
+        u_embed = torch.stack([self.embedding(torch.tensor(token_id).long().to(device)) for token_id in utterance])
         u_rep = torch.mean(u_embed, dim=0)
         return u_rep
 

@@ -1,0 +1,23 @@
+Rationalized input ------> Response
+[MASK] are you [MASK] today ? [SEP] ------> yeah , i was told you i can go to the job . [SEP]
+how [MASK] you doing [MASK] ? [MASK] yeah [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> i don ' t like to do you , but i don ’ t know what i want . [SEP]
+[MASK] [MASK] [MASK] doing [MASK] [MASK] [MASK] yeah [MASK] i [MASK] told you i can [MASK] [MASK] the job . [MASK] i [MASK] ' t like [MASK] [MASK] you [MASK] [MASK] i don [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] [SEP] ------> i have a problem with my company . i ' m not working in the company . [SEP]
+[MASK] are you [MASK] [MASK] ? [MASK] [MASK] [MASK] i was [MASK] you [MASK] [MASK] go to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] t like [MASK] do you [MASK] but i don ’ [MASK] [MASK] [MASK] i want . [MASK] [MASK] [MASK] a problem with [MASK] company . [MASK] ' m [MASK] working [MASK] the [MASK] [MASK] [MASK] ------> i ’ ve got a look . [SEP]
+how are [MASK] doing today [MASK] [SEP] yeah [MASK] i [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] job [MASK] [MASK] [MASK] [MASK] ' t [MASK] [MASK] [MASK] [MASK] , but [MASK] don ’ t [MASK] what i want [MASK] [SEP] i [MASK] [MASK] [MASK] [MASK] my [MASK] . i ' m not [MASK] [MASK] [MASK] company . [SEP] i ’ [MASK] got [MASK] look . [MASK] ------> good ! [SEP]
+how [MASK] [MASK] doing today [MASK] [SEP] [MASK] [MASK] i was told you i can go to the job [MASK] [MASK] i don [MASK] [MASK] like [MASK] [MASK] [MASK] , but [MASK] [MASK] ’ t [MASK] [MASK] i want . [SEP] i [MASK] a problem [MASK] [MASK] [MASK] [MASK] i [MASK] m [MASK] working [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] look [MASK] [MASK] [MASK] ! [SEP] ------> i have been working at home ? [SEP]
+how are you [MASK] today ? [SEP] yeah , [MASK] was told [MASK] i can [MASK] to [MASK] [MASK] [MASK] [MASK] i don ' t [MASK] [MASK] do you , [MASK] i don [MASK] [MASK] [MASK] [MASK] [MASK] want . [MASK] i have [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] not [MASK] in [MASK] company [MASK] [MASK] [MASK] [MASK] [MASK] got [MASK] look [MASK] [SEP] [MASK] [MASK] [MASK] i have been working at home ? [SEP] ------> i was thinking about going to work in a few minutes . [SEP]
+[MASK] are [MASK] doing [MASK] [MASK] [SEP] yeah , [MASK] [MASK] told [MASK] [MASK] [MASK] [MASK] to the [MASK] . [MASK] [MASK] don ' [MASK] like to [MASK] [MASK] , [MASK] i [MASK] ’ t [MASK] [MASK] i [MASK] [MASK] [MASK] i have [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i ' m not working in [MASK] [MASK] . [MASK] i [MASK] ve [MASK] a [MASK] . [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] been [MASK] at [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] going [MASK] [MASK] [MASK] [MASK] few minutes [MASK] [SEP] ------> how long is the ticket ? [SEP]
+how [MASK] [MASK] [MASK] today ? [SEP] yeah [MASK] i [MASK] told [MASK] [MASK] [MASK] go [MASK] [MASK] [MASK] . [SEP] i [MASK] [MASK] [MASK] [MASK] to do you , but i don ’ [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] a [MASK] with [MASK] company . [MASK] [MASK] m not working in [MASK] company . [SEP] [MASK] ’ ve got [MASK] look . [SEP] [MASK] [MASK] [MASK] i [MASK] been [MASK] at home [MASK] [SEP] [MASK] was thinking [MASK] [MASK] to [MASK] [MASK] [MASK] [MASK] minutes . [SEP] how long [MASK] the [MASK] [MASK] [SEP] ------> i am going to the movies . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+yeah , i was told you i can go to the job .
+i don ' t like to do you , but i don ’ t know what i want .
+i have a problem with my company . i ' m not working in the company .
+i ’ ve got a look .
+good !
+i have been working at home ?
+i was thinking about going to work in a few minutes .
+how long is the ticket ?
+i am going to the movies .

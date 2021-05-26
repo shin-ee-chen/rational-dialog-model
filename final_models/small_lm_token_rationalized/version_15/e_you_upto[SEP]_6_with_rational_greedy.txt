@@ -1,0 +1,29 @@
+Rationalized input ------> Response
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] ------> what happened ? [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] ------> what happened ? [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] ------> my major is working here . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] my major is working here . [SEP] ------> yes , i have no chance . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] my major is working here . [SEP] [MASK] , i have no [MASK] [MASK] [MASK] ------> what happened ? [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] my major is working here . [SEP] [MASK] , i have no [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] ------> well , you have to be very good at the same thing . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] my major is working here . [SEP] [MASK] , i have no [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] very good at the same thing . [SEP] ------> what do you think you are doing at college ? [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] my major is working here . [SEP] [MASK] , i have no [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] very good at the same thing . [SEP] what do you think [MASK] [MASK] [MASK] at college ? [SEP] ------> i am going to work . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] my major is working here . [SEP] [MASK] , i have no [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] very good at the same thing . [SEP] what do you think [MASK] [MASK] [MASK] at college ? [SEP] i am going [MASK] work [MASK] [SEP] ------> it is really exciting news . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] my major is working here . [SEP] [MASK] , i have no [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] very good at the same thing . [SEP] what do you think [MASK] [MASK] [MASK] at college ? [SEP] i am going [MASK] work [MASK] [MASK] [MASK] is really exciting [MASK] [MASK] [MASK] ------> you can find me a long time , we ' ll go to work . [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] my major is working here . [SEP] [MASK] , i have no [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] very good at the same thing . [SEP] what do you think [MASK] [MASK] [MASK] at college ? [SEP] i am going [MASK] work [MASK] [MASK] [MASK] is really exciting [MASK] [MASK] [MASK] [MASK] [MASK] find me a long time , we [MASK] ll [MASK] [MASK] work [MASK] [SEP] ------> why not ? [SEP]
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] my major is working here . [SEP] [MASK] , i have no [MASK] [MASK] [MASK] what [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] very good at the same thing . [SEP] what do you think [MASK] [MASK] [MASK] at college ? [SEP] i am going [MASK] work [MASK] [MASK] [MASK] is really exciting [MASK] [MASK] [MASK] [MASK] [MASK] find me a long time , we [MASK] ll [MASK] [MASK] work . [MASK] why not ? [SEP] ------> i ' ll go on a dance time to me . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+what happened ?
+what happened ?
+my major is working here .
+yes , i have no chance .
+what happened ?
+well , you have to be very good at the same thing .
+what do you think you are doing at college ?
+i am going to work .
+it is really exciting news .
+you can find me a long time , we ' ll go to work .
+why not ?
+i ' ll go on a dance time to me .

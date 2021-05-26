@@ -1,0 +1,17 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> it ' s a new ##come ##r you know of you , mr . t ##ai ##r . have you [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] new [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , mr [MASK] t [MASK] [MASK] [MASK] have [MASK] [MASK] ------> no problem , i ' ll have you come back a party with you . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] new [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , mr [MASK] t [MASK] [MASK] [MASK] have [MASK] [MASK] [MASK] problem , i [MASK] ll have [MASK] [MASK] [MASK] [MASK] [MASK] with [MASK] [MASK] [MASK] ------> thank you very much . thank you . and you can ' t call me . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] new [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , mr [MASK] t [MASK] [MASK] [MASK] have [MASK] [MASK] [MASK] problem , i [MASK] ll have [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> thank you , mr . z ##h ##ang . what would you recommend ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] new [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , mr [MASK] t [MASK] [MASK] [MASK] have [MASK] [MASK] [MASK] problem , i [MASK] ll have [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> thank you . what time should i get there ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] new [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , mr [MASK] t [MASK] [MASK] [MASK] have [MASK] [MASK] [MASK] problem , i [MASK] ll have [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] , [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] ------> thanks a lot . i ' ll just have to take some time . [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+it ' s a newcomer you know of you , mr . tair . have you
+no problem , i ' ll have you come back a party with you .
+thank you very much . thank you . and you can ' t call me .
+thank you , mr . zhang . what would you recommend ?
+thank you . what time should i get there ?
+thanks a lot . i ' ll just have to take some time .

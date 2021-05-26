@@ -1,0 +1,21 @@
+Rationalized input ------> Response
+[MASK] are [MASK] upt [MASK] [MASK] [MASK] ------> i ’ m sorry , but i ’ m not feeling sure we can ’ t ! i ’ m [SEP]
+[MASK] are you [MASK]t [MASK] ? [MASK] [MASK] [MASK] m [MASK] [MASK] [MASK] i [MASK] [MASK] not feeling sure [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] ------> that sounds great ! [SEP]
+what are [MASK] [MASK] [MASK]o [MASK] [SEP] [MASK] ’ [MASK] [MASK] [MASK] but [MASK] [MASK] m [MASK] feeling [MASK] we [MASK] [MASK] t [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> you mean it should be better in your mind ? [SEP]
+[MASK] [MASK] you up [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ’ [MASK] not [MASK] [MASK] [MASK] [MASK] ’ t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] better [MASK] [MASK] [MASK] ? [SEP] ------> it ' s very good . [SEP]
+[MASK] [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] but [MASK] [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] t [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ! [SEP] [MASK] [MASK] [MASK] should be [MASK] in your mind [MASK] [MASK] it [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] ------> i ’ m going to the doctor , i ’ ll just try . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] m [MASK] [MASK] [MASK] i [MASK] [MASK] not [MASK] sure [MASK] can [MASK] [MASK] [MASK] [MASK] ’ [MASK] [SEP] [MASK] sounds [MASK] ! [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] mind [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] i [MASK] [MASK] [MASK] [MASK] [MASK] doctor [MASK] [MASK] [MASK] ll just try [MASK] [SEP] ------> well , you ’ re right . what ’ s the problem ? i was bor ##ll with a good [SEP]
+[MASK] [MASK] [MASK] [MASK]to [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] but [MASK] [MASK] [MASK] [MASK] feeling sure [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] [MASK] sounds great [MASK] [MASK] [MASK] [MASK] it [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] [MASK] [MASK] [MASK] very [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] doctor [MASK] [MASK] ’ [MASK] just [MASK] [MASK] [MASK] well [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ? [MASK] was [MASK] [MASK] [MASK] a [MASK] [MASK] ------> oh , i ' ll try a great idea . [SEP]
+[MASK] [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] i ’ [MASK] [MASK] [MASK] but [MASK] [MASK] [MASK] not [MASK] [MASK] [MASK] can ’ t [MASK] [MASK] [MASK] [MASK] [MASK] that [MASK] great [MASK] [MASK] you [MASK] [MASK] [MASK] be better [MASK] your [MASK] [MASK] [MASK] [MASK] [MASK] s very good [MASK] [MASK] i [MASK] [MASK] going [MASK] [MASK] doctor [MASK] [MASK] ’ [MASK] just [MASK] [MASK] [MASK] [MASK] , [MASK] ’ [MASK] [MASK] [MASK] [MASK] ’ [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] bor [MASK] [MASK] a good [MASK] [MASK] [MASK] [MASK] ' [MASK] [MASK] a [MASK] [MASK] . [MASK] ------> oh , yeah . but my parents live out who ’ ve got a job in the same way . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i ’ m sorry , but i ’ m not feeling sure we can ’ t ! i ’ m
+that sounds great !
+you mean it should be better in your mind ?
+it ' s very good .
+i ’ m going to the doctor , i ’ ll just try .
+well , you ’ re right . what ’ s the problem ? i was borll with a good
+oh , i ' ll try a great idea .
+oh , yeah . but my parents live out who ’ ve got a job in the same way .

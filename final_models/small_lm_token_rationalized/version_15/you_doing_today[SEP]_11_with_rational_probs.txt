@@ -1,0 +1,21 @@
+Rationalized input ------> Response
+how are [MASK] [MASK] today [MASK] [MASK] ------> i ’ m doing fine . do you have the bill or a computer ? [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] ? [SEP] i [MASK] m doing [MASK] [MASK] [MASK] [MASK] have the bill or [MASK] computer [MASK] [SEP] ------> no . i ' ve got a bad kind of great idea . [SEP]
+[MASK] are [MASK] [MASK] today ? [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . do you have [MASK] bill [MASK] a [MASK] [MASK] [MASK] [MASK] . i ' ve got [MASK] bad [MASK] of [MASK] [MASK] [MASK] [SEP] ------> yes . you have an important . [SEP]
+how [MASK] [MASK] doing [MASK] ? [SEP] i ’ [MASK] doing fine [MASK] [MASK] you [MASK] [MASK] bill or [MASK] [MASK] [MASK] [SEP] [MASK] . i [MASK] [MASK] got [MASK] [MASK] kind [MASK] [MASK] idea [MASK] [MASK] [MASK] [MASK] [MASK] have an [MASK] . [MASK] ------> you don ’ t know . [SEP]
+[MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] m [MASK] fine [MASK] do you [MASK] [MASK] bill [MASK] [MASK] [MASK] ? [SEP] no . i ' [MASK] got [MASK] [MASK] [MASK] of great idea . [SEP] [MASK] [MASK] [MASK] [MASK] an important . [MASK] you don ’ t know [MASK] [SEP] ------> you are not interested ! i will . i ' m just looking . [SEP]
+how [MASK] [MASK] [MASK] [MASK] ? [SEP] i [MASK] m doing [MASK] . do [MASK] have [MASK] [MASK] or a computer ? [SEP] [MASK] . i [MASK] ve got a [MASK] kind of great idea . [SEP] [MASK] . [MASK] [MASK] [MASK] important . [SEP] you don [MASK] t know . [MASK] [MASK] [MASK] not [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ' [MASK] [MASK] [MASK] [MASK] [SEP] ------> i don ’ t want to go to the g ##y ##m . [SEP]
+[MASK] are [MASK] [MASK] [MASK] ? [SEP] i ’ [MASK] [MASK] [MASK] . [MASK] [MASK] have [MASK] bill or [MASK] [MASK] [MASK] [SEP] no [MASK] i [MASK] ve got [MASK] [MASK] kind of [MASK] idea [MASK] [SEP] [MASK] [MASK] [MASK] have [MASK] important . [MASK] you [MASK] [MASK] t [MASK] [MASK] [MASK] [MASK] are [MASK] [MASK] ! [MASK] will [MASK] i [MASK] m just looking . [SEP] [MASK] [MASK] ’ [MASK] want [MASK] go [MASK] the [MASK] [MASK] [MASK] [MASK] [SEP] ------> thanks . what time would you like ? [SEP]
+[MASK] [MASK] [MASK] [MASK] today ? [MASK] i [MASK] [MASK] doing [MASK] . do [MASK] have [MASK] [MASK] or [MASK] [MASK] [MASK] [MASK] no [MASK] i [MASK] ve got a [MASK] [MASK] of great [MASK] . [SEP] yes . [MASK] [MASK] [MASK] important . [SEP] you [MASK] [MASK] t [MASK] [MASK] [SEP] you [MASK] [MASK] interested ! [MASK] will . [MASK] ' m just [MASK] . [MASK] [MASK] [MASK] ’ t want [MASK] [MASK] to [MASK] [MASK] [MASK]m . [MASK] thanks . [MASK] [MASK] [MASK] [MASK] like [MASK] [MASK] ------> well , that ’ s why my mother will be fine ! [SEP]
+
+
+Completed dialogue:
+how are you doing today ?
+i ’ m doing fine . do you have the bill or a computer ?
+no . i ' ve got a bad kind of great idea .
+yes . you have an important .
+you don ’ t know .
+you are not interested ! i will . i ' m just looking .
+i don ’ t want to go to the gym .
+thanks . what time would you like ?
+well , that ’ s why my mother will be fine !

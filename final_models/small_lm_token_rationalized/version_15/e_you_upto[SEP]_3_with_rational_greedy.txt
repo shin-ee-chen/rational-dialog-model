@@ -1,0 +1,27 @@
+Rationalized input ------> Response
+what are [MASK] [MASK]t [MASK] [MASK] [MASK] ------> i ' m going to work with me . [SEP]
+what are [MASK] upt [MASK] [MASK] [MASK] i [MASK] m [MASK] to work with me [MASK] [MASK] ------> i ' m going to have a lot of things for you . [SEP]
+what are [MASK] upt [MASK] [MASK] [MASK] i [MASK] m [MASK] to work with me [MASK] [MASK] i [MASK] m [MASK] to have [MASK] lot of things for [MASK] [MASK] [MASK] ------> what is everything like that ? [SEP]
+what are [MASK] upt [MASK] [MASK] [MASK] i [MASK] m [MASK] to work with me [MASK] [MASK] i [MASK] m [MASK] to have [MASK] lot of things for [MASK] [MASK] [MASK] what is everything like that [MASK] [SEP] ------> i have to work at school [SEP]
+what are [MASK] upt [MASK] [MASK] [MASK] i [MASK] m [MASK] to work with me [MASK] [MASK] i [MASK] m [MASK] to have [MASK] lot of things for [MASK] [MASK] [MASK] what is everything like that ? [SEP] i have to work at school [MASK] ------> what ? [SEP]
+what are [MASK] upt [MASK] [MASK] [MASK] i [MASK] m [MASK] to work with me [MASK] [MASK] i [MASK] m [MASK] to have [MASK] lot of things for [MASK] [MASK] [MASK] what is everything like that ? [SEP] i have to work at [MASK] [MASK] what [MASK] [MASK] ------> i ' m going to work . [SEP]
+what are [MASK] upt [MASK] [MASK] [MASK] i [MASK] m [MASK] to work with me [MASK] [MASK] i [MASK] m [MASK] to have [MASK] lot of things for [MASK] [MASK] [MASK] what is everything like that ? [SEP] i have to work at [MASK] [MASK] what [MASK] [MASK] i [MASK] m [MASK] to work [MASK] [MASK] ------> i don ’ t think so . [SEP]
+what are [MASK] upt [MASK] [MASK] [MASK] i [MASK] m [MASK] to work with me [MASK] [MASK] i [MASK] m [MASK] to have [MASK] lot of things for [MASK] [MASK] [MASK] what is everything like that ? [SEP] i have to work at [MASK] [MASK] what [MASK] [MASK] i [MASK] m [MASK] to work [MASK] [MASK] i [MASK] ’ [MASK] think [MASK] [MASK] [MASK] ------> i ’ d like this game else is not a good job . [SEP]
+what are [MASK] upt [MASK] [MASK] [MASK] i [MASK] m [MASK] to work with me [MASK] [MASK] i [MASK] m [MASK] to have [MASK] lot of things for [MASK] [MASK] [MASK] what is everything like that ? [SEP] i have to work at [MASK] [MASK] what [MASK] [MASK] i [MASK] m [MASK] to work [MASK] [MASK] i [MASK] ’ [MASK] think so . [SEP] i ’ [MASK] [MASK] [MASK] game else is not a good job [MASK] [MASK] ------> i guess you ' re right . [SEP]
+what are [MASK] upt [MASK] [MASK] [MASK] i [MASK] m [MASK] to work with me [MASK] [MASK] i [MASK] m [MASK] to have [MASK] lot of things for [MASK] [MASK] [MASK] what is everything like that ? [SEP] i have to work at [MASK] [MASK] what [MASK] [MASK] i [MASK] m [MASK] to work [MASK] [MASK] i [MASK] ’ [MASK] think so . [SEP] i ’ [MASK] like [MASK] game else is not a good job . [SEP] i [MASK] [MASK] [MASK] [MASK] right [MASK] [MASK] ------> i ' m very glad to me . [SEP]
+what are [MASK] upt [MASK] [MASK] [MASK] i [MASK] m [MASK] to work with me [MASK] [MASK] i [MASK] m [MASK] to have [MASK] lot of things for [MASK] [MASK] [MASK] what is everything like that ? [SEP] i have to work at [MASK] [MASK] what [MASK] [MASK] i [MASK] m [MASK] to work [MASK] [MASK] i [MASK] ’ [MASK] think so . [SEP] i ’ [MASK] like [MASK] game else is not a good job . [SEP] i [MASK] [MASK] [MASK] [MASK] right [MASK] [MASK] i [MASK] m very glad [MASK] [MASK] [MASK] [MASK] ------> you can get my own work and the most interesting day . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i ' m going to work with me .
+i ' m going to have a lot of things for you .
+what is everything like that ?
+i have to work at school
+what ?
+i ' m going to work .
+i don ’ t think so .
+i ’ d like this game else is not a good job .
+i guess you ' re right .
+i ' m very glad to me .
+you can get my own work and the most interesting day .

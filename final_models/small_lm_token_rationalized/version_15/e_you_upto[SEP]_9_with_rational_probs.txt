@@ -1,0 +1,25 @@
+Rationalized input ------> Response
+[MASK] are [MASK] up [MASK] [MASK] [MASK] [SEP] ------> i am glad to do that ! [SEP]
+what are you upto [MASK] [MASK] i [MASK] glad [MASK] do that [MASK] [SEP] ------> i ' m a great idea to meet you . [SEP]
+what are [MASK] up [MASK] [MASK] [MASK] [SEP] i am glad to [MASK] that [MASK] [SEP] i ' m [MASK] [MASK] idea [MASK] meet [MASK] [MASK] [SEP] ------> i was thinking of having a lot of things with the job . [SEP]
+[MASK] [MASK] you up [MASK]o ? [SEP] i [MASK] glad [MASK] [MASK] that ! [SEP] i ' [MASK] [MASK] [MASK] idea to [MASK] you . [SEP] [MASK] was [MASK] of having [MASK] lot of [MASK] [MASK] [MASK] job . [MASK] ------> what are you major ##ing in at college ? [SEP]
+[MASK] are you upt [MASK] [MASK] [MASK] [MASK] [MASK] glad to do that ! [MASK] [MASK] ' [MASK] a [MASK] [MASK] to meet you . [SEP] [MASK] [MASK] thinking [MASK] [MASK] [MASK] [MASK] of things with the [MASK] [MASK] [SEP] what [MASK] [MASK] major [MASK] [MASK] at college ? [SEP] ------> my pleasure . [SEP]
+what are you [MASK]to [MASK] [SEP] [MASK] [MASK] glad [MASK] do [MASK] [MASK] [SEP] i [MASK] m [MASK] [MASK] idea [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] of [MASK] [MASK] [MASK] of [MASK] with [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] you majoring [MASK] at college [MASK] [SEP] my [MASK] [MASK] [SEP] ------> that ’ s a good idea . [SEP]
+[MASK] [MASK] [MASK] [MASK]to [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] that [MASK] [SEP] [MASK] [MASK] m a great idea [MASK] meet you . [MASK] [MASK] [MASK] thinking [MASK] [MASK] a lot of things with [MASK] [MASK] . [SEP] [MASK] are [MASK] majoring in at [MASK] [MASK] [SEP] my [MASK] . [MASK] [MASK] [MASK] [MASK] a good idea . [MASK] ------> i have a little tired . my mother ’ s t ##ie in the morning of the company . [SEP]
+what [MASK] you upt [MASK] [MASK] [SEP] i am [MASK] [MASK] do [MASK] ! [SEP] [MASK] [MASK] m [MASK] great [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] was thinking of having [MASK] lot [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] are [MASK] [MASK]ing [MASK] at [MASK] [MASK] [MASK] [MASK] pleasure [MASK] [SEP] that [MASK] s a good idea . [SEP] i [MASK] [MASK] little tired [MASK] my mother [MASK] [MASK] tie [MASK] the morning [MASK] [MASK] [MASK] [MASK] [MASK] ------> i don ' t think so ! [SEP]
+what are you [MASK] [MASK]o [MASK] [MASK] [MASK] [MASK] glad [MASK] [MASK] [MASK] ! [MASK] i ' m [MASK] great idea to meet [MASK] [MASK] [MASK] i [MASK] [MASK] of having a lot [MASK] [MASK] with the [MASK] . [MASK] [MASK] are [MASK] major [MASK] [MASK] [MASK] [MASK] ? [MASK] [MASK] pleasure [MASK] [SEP] [MASK] ’ [MASK] [MASK] [MASK] idea . [SEP] [MASK] [MASK] [MASK] little [MASK] . my mother [MASK] [MASK] tie in [MASK] morning [MASK] the [MASK] . [MASK] i don ' t think so ! [MASK] ------> how much ? [SEP]
+[MASK] [MASK] you upto ? [SEP] [MASK] am [MASK] to [MASK] [MASK] ! [SEP] [MASK] ' m a [MASK] [MASK] to [MASK] [MASK] [MASK] [SEP] i was [MASK] [MASK] having a [MASK] [MASK] things with [MASK] [MASK] [MASK] [MASK] what [MASK] you [MASK] [MASK] in [MASK] college ? [MASK] my pleasure [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] good [MASK] . [MASK] [MASK] have a little [MASK] [MASK] my mother ’ [MASK] [MASK] [MASK] [MASK] the [MASK] of [MASK] company [MASK] [SEP] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] how much [MASK] [SEP] ------> you should have a lot of money . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i am glad to do that !
+i ' m a great idea to meet you .
+i was thinking of having a lot of things with the job .
+what are you majoring in at college ?
+my pleasure .
+that ’ s a good idea .
+i have a little tired . my mother ’ s tie in the morning of the company .
+i don ' t think so !
+how much ?
+you should have a lot of money .

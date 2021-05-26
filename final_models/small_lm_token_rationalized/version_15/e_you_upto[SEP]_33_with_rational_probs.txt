@@ -1,0 +1,31 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] up [MASK] [MASK] [MASK] [MASK] ------> oh , you look a good idea ! [SEP]
+[MASK] [MASK] you [MASK]to [MASK] [MASK] oh [MASK] you [MASK] a good [MASK] [MASK] [SEP] ------> i ’ ve heard . [SEP]
+what are [MASK] [MASK]to [MASK] [SEP] [MASK] , you look [MASK] good idea ! [MASK] [MASK] [MASK] [MASK] heard . [SEP] ------> why ? [SEP]
+[MASK] are [MASK] up [MASK]o [MASK] [MASK] oh [MASK] you look [MASK] good idea [MASK] [MASK] i [MASK] ve heard . [MASK] [MASK] [MASK] [SEP] ------> no . thanks . [SEP]
+[MASK] are [MASK] upt [MASK] [MASK] [MASK] oh [MASK] you [MASK] [MASK] [MASK] idea ! [SEP] [MASK] ’ ve heard [MASK] [MASK] [MASK] [MASK] [MASK] no . thanks [MASK] [MASK] ------> why not ? [SEP]
+[MASK] are [MASK] [MASK]t [MASK] [MASK] [MASK] [MASK] , you [MASK] [MASK] good [MASK] [MASK] [MASK] [MASK] [MASK] ve [MASK] [MASK] [SEP] why [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] ------> you ' ve thought of your help . [SEP]
+what [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] oh , [MASK] look a [MASK] idea [MASK] [MASK] i [MASK] ve heard [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] . [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] thought of [MASK] help . [MASK] ------> that sounds good . what about you ? [SEP]
+[MASK] are [MASK] [MASK]to [MASK] [MASK] oh , [MASK] look [MASK] [MASK] idea ! [MASK] i ’ [MASK] heard [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] thanks . [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] ' ve [MASK] of your [MASK] [MASK] [MASK] that sounds [MASK] [MASK] [MASK] about [MASK] [MASK] [MASK] ------> oh , really ! i think it ' s so easy . [SEP]
+[MASK] [MASK] you [MASK] [MASK]o [MASK] [MASK] oh [MASK] you [MASK] a [MASK] [MASK] ! [MASK] [MASK] ’ ve [MASK] . [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] your [MASK] [MASK] [MASK] [MASK] [MASK] good . [MASK] [MASK] [MASK] ? [MASK] oh , really ! [MASK] think it ' [MASK] [MASK] easy [MASK] [SEP] ------> yes . i ’ ll be back again ! [SEP]
+what [MASK] you up [MASK] [MASK] ? [SEP] [MASK] , you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] ve [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] why [MASK] ? [MASK] [MASK] [MASK] ve thought [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] sounds [MASK] [MASK] [MASK] about you [MASK] [MASK] oh , [MASK] ! i think [MASK] [MASK] s [MASK] easy . [SEP] [MASK] [MASK] i ’ ll be [MASK] [MASK] ! [SEP] ------> that ' s fine ! [SEP]
+[MASK] are [MASK] up [MASK] [MASK] [MASK] [MASK] oh , [MASK] [MASK] [MASK] [MASK] [MASK] ! [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] why [MASK] [MASK] no . [MASK] [MASK] [SEP] why [MASK] [MASK] [MASK] [MASK] ' ve thought [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] what [MASK] you [MASK] [MASK] oh , [MASK] ! [MASK] [MASK] [MASK] ' [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . i [MASK] [MASK] [MASK] [MASK] [MASK] ! [MASK] [MASK] [MASK] [MASK] fine [MASK] [MASK] ------> thanks . i ' m glad you like it ! [SEP]
+what [MASK] [MASK] [MASK]t [MASK] ? [SEP] oh , you look a good idea ! [SEP] [MASK] ’ ve [MASK] . [MASK] [MASK] [MASK] [SEP] no [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [SEP] [MASK] [MASK] [MASK] . [MASK] [MASK] you ? [MASK] [MASK] , really ! i think [MASK] [MASK] s [MASK] easy [MASK] [MASK] yes . [MASK] [MASK] [MASK] be [MASK] [MASK] ! [MASK] [MASK] [MASK] s [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] glad you [MASK] [MASK] [MASK] [SEP] ------> that sounds great ! [SEP]
+[MASK] are [MASK] [MASK]to [MASK] [MASK] oh [MASK] [MASK] [MASK] a good [MASK] [MASK] [MASK] [MASK] ’ [MASK] heard . [MASK] [MASK] ? [MASK] [MASK] [MASK] thanks [MASK] [MASK] why [MASK] [MASK] [MASK] you ' [MASK] thought [MASK] [MASK] help . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] about you [MASK] [MASK] oh , [MASK] [MASK] [MASK] think [MASK] [MASK] s [MASK] [MASK] . [MASK] yes . [MASK] ’ [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] fine [MASK] [MASK] [MASK] . [MASK] ' m [MASK] you [MASK] it ! [MASK] [MASK] sounds great ! [MASK] ------> you ' re right ! [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+oh , you look a good idea !
+i ’ ve heard .
+why ?
+no . thanks .
+why not ?
+you ' ve thought of your help .
+that sounds good . what about you ?
+oh , really ! i think it ' s so easy .
+yes . i ’ ll be back again !
+that ' s fine !
+thanks . i ' m glad you like it !
+that sounds great !
+you ' re right !

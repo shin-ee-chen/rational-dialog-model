@@ -1,0 +1,25 @@
+Rationalized input ------> Response
+[MASK] [MASK] [MASK] [MASK]to [MASK] [SEP] ------> i ' m looking for an interview right now . i hope you can help you with your decision . [SEP]
+what [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] looking [MASK] [MASK] [MASK] right [MASK] . [MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] decision [MASK] [MASK] ------> i ' ll try that right now . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] looking for [MASK] interview [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] can [MASK] [MASK] with [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] now [MASK] [MASK] ------> you are welcome . [SEP]
+what [MASK] [MASK] up [MASK] [MASK] [MASK] [MASK] [MASK] ' [MASK] looking for [MASK] [MASK] right now [MASK] [MASK] hope [MASK] [MASK] help [MASK] with [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] right now [MASK] [MASK] you [MASK] [MASK] . [MASK] ------> that ' s right . how much do i do ? [SEP]
+[MASK] are [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] looking for [MASK] [MASK] [MASK] now [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] try that [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] that [MASK] [MASK] right [MASK] how [MASK] do [MASK] [MASK] [MASK] [MASK] ------> i ’ m very sorry to hear about this . [SEP]
+[MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] i [MASK] [MASK] looking for [MASK] interview right [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] with [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] try [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] m [MASK] sorry [MASK] hear [MASK] this . [MASK] ------> what is the p ##ip ##e ? [SEP]
+what are [MASK] up [MASK]o ? [MASK] i [MASK] [MASK] [MASK] for an [MASK] [MASK] [MASK] [MASK] [MASK] hope [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] decision [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] s right . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] this [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ------> thank you , goodbye . [SEP]
+what [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [SEP] [MASK] [MASK] [MASK] [MASK] for [MASK] [MASK] [MASK] now [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] ' [MASK] right . [MASK] [MASK] [MASK] i [MASK] ? [MASK] [MASK] [MASK] [MASK] very [MASK] [MASK] [MASK] [MASK] this . [MASK] [MASK] [MASK] [MASK] [MASK] [MASK]e [MASK] [MASK] [MASK] [MASK] [MASK] goodbye [MASK] [MASK] ------> goodbye . [SEP]
+what [MASK] [MASK] [MASK]to [MASK] [MASK] [MASK] [MASK] [MASK] looking for [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] try [MASK] right [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] how [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] to [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] goodbye . [MASK] ------> thank you . [SEP]
+[MASK] [MASK] [MASK] [MASK]t [MASK] [MASK] [MASK] i [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] right [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] with [MASK] [MASK] [MASK] [MASK] [MASK] ' ll [MASK] [MASK] right [MASK] [MASK] [MASK] you [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] do i [MASK] ? [MASK] [MASK] [MASK] m [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK] [MASK]e [MASK] [MASK] thank [MASK] , [MASK] [MASK] [MASK] goodbye [MASK] [MASK] [MASK] you [MASK] [MASK] ------> yes . i ' m not going to have to be able to help my best for you . [SEP]
+
+
+Completed dialogue:
+what are you upto ?
+i ' m looking for an interview right now . i hope you can help you with your decision .
+i ' ll try that right now .
+you are welcome .
+that ' s right . how much do i do ?
+i ’ m very sorry to hear about this .
+what is the pipe ?
+thank you , goodbye .
+goodbye .
+thank you .
+yes . i ' m not going to have to be able to help my best for you .
