@@ -19,7 +19,7 @@ hparams:
 loss_module: crossentropyloss
 trainer:
   type: normal #normal vs rationalized type
-  max_epochs: 4
+  max_epochs: 6
   log_every_n_steps: 1
 
 
