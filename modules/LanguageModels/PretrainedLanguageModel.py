@@ -42,25 +42,27 @@ class PretrainedLanguageModel(BaseLanguageModel):
 
     def generate_next_tokens_from_embedding(self, embedding, n_tokens=10):
         tokens = []
-        ## Initialize:
-        logits = self.forward_embedding(embedding)
-        logits = logits[-1]
-        next_token = self.get_next_token_from_logits(logits)
+        tokens_embedding = embedding.clone()
+        # ## Initialize:
+        # logits = self.forward_embedding(embedding)
+        # logits = logits[-1]
+        # next_token = self.get_next_token_from_logits(logits)
         
-        # torch.cat(tokens, next_token)
-        tokens.append(next_token)
-        next_token_tensor = torch.tensor([[next_token]]).to(embedding.device)
-        next_embedding = self.embedding(next_token_tensor)
+        # # torch.cat(tokens, next_token)
+        # tokens.append(next_token)
+        # next_token_tensor = torch.tensor([[next_token]]).to(embedding.device)
+        # next_embedding = self.embedding(next_token_tensor)
         for i in range(n_tokens - 1):
-            next_embedding = next_embedding.reshape(1, 1, -1)
+            # next_embedding = next_embedding.reshape(1, 1, -1)
 
-            logits = self.forward_embedding(next_embedding)
+            logits = self.forward_embedding(tokens_embedding)[-1]
 
             next_token = self.get_next_token_from_logits(logits)
             # torch.cat(tokens, next_token)
             tokens.append(next_token)
             next_token_tensor = torch.tensor([[next_token]]).to(embedding.device)
             next_embedding = self.embedding(next_token_tensor)
+            tokens_embedding = torch.cat((tokens_embedding, next_embedding),dim = 0)
         return tokens
         # return torch.tensor(tokens).to(embedding.device)
 
