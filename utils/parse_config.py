@@ -9,6 +9,7 @@ from modules.LanguageModels.PretrainedLanguageModel import PretrainedLanguageMod
 from modules.RationalExtractors.KumaRationalExtractor import KumaRationalExtractor
 from modules.RationalExtractors.PolicyBasedRationalExtractor import PolicyBasedRationalExtractor
 from modules.RationalExtractors.PolicyBasedUtteranceRationalExtractor import PolicyBasedUtteranceRationalExtractor
+from modules.RationalExtractors.RandomRationalExtractor import RandomRationalExtractor
 from modules.pytorch_lightning.LightningLanguageModel import LightningLanguageModel
 import pytorch_lightning as pl
 from transformers import AutoTokenizer
@@ -53,12 +54,16 @@ def parse_config(config_ref):
 
     # Load the pytorch lightning module and the trainer
     if "rational_extractor" in config.keys():
-        if config['rational_extractor']['type'] == 'policy_based' or config['rational_extractor']['type'] == 'policy_utterance':
+        if "policy" in config['rational_extractor']['type']:
             lightning_language_model = LightingReinforceRationalizedLanguageModel(language_model, RE, tokenizer,
-                                                                                  hparams=hparams, **config["rational_extractor"]["parameters"])
+                                                                                  hparams=hparams,
+                                                                                  **config["rational_extractor"][
+                                                                                      "parameters"])
         else:
             lightning_language_model = LightingBaseRationalizedLanguageModel(language_model, RE, tokenizer,
-                                                                             hparams=hparams, **config["rational_extractor"]["parameters"])
+                                                                             hparams=hparams,
+                                                                             **config["rational_extractor"][
+                                                                                 "parameters"])
     else:
         lightning_language_model = LightningLanguageModel(language_model, tokenizer,
                                                           hparams=hparams)
@@ -96,8 +101,8 @@ def get_datasets(config, tokenizer, load_train=True):
 
             dataloader_train = DataLoader(
                 dataset_train,
-                batch_size = config["batch_size"],
-                collate_fn = UtterancesDataset.get_collate_fn(padding_value=get_token_id(tokenizer, "pad_token"))
+                batch_size=config["batch_size"],
+                collate_fn=UtterancesDataset.get_collate_fn(padding_value=get_token_id(tokenizer, "pad_token"))
             )
         else:
             dataloader_train = None
@@ -109,7 +114,7 @@ def get_datasets(config, tokenizer, load_train=True):
             remove_top_n=config["remove_top_n"],
             shuffle=False,
             max_length=config["max_length"] if "max_length" in config.keys() else 0,
-        )# We do not have to shuffle the test dataset.
+        )  # We do not have to shuffle the test dataset.
 
         dataloader_test = DataLoader(
             dataset_test,
@@ -191,12 +196,17 @@ def get_rational_extractor(config, tokenizer, embedding_size=32):
         else:
             return KumaRationalExtractor(embedding_size)
 
+    if config["type"] == "policy_based_random":
+        return RandomRationalExtractor(
+            mask_token=get_token_id(tokenizer, "mask_token"),
+            percentage=config["percentage"]
+        )
 
     if config["type"] == "policy_utterance":
         return PolicyBasedUtteranceRationalExtractor(get_vocab_size(tokenizer),
                                                      mask_token=get_token_id(tokenizer, "mask_token"),
                                                      sep_token=get_token_id(tokenizer, "sep_token"),
-                                                    )
+                                                     )
 
 
 def get_trainer(information):
