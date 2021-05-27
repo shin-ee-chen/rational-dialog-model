@@ -10,7 +10,7 @@ dataset:
   type: 'daily_dialogue'
   size_train: 10000
   size_test: 10000
-  batch_size: 8
+  batch_size: 32
   subsets: start
   remove_top_n: 0
   max_length: 200

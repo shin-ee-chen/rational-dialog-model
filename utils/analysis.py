@@ -130,7 +130,6 @@ def calc_change_in_perplexity(model, dataloader, n_extra_mask=1):
         contexts = contexts.permute(1, 0, ).to(model.device)
         targets = targets.permute(1, 0, ).to(model.device)
         n_targets = targets.shape[0]
-
         # Get the rational
         rational = model.get_rational(contexts)
 
@@ -196,7 +195,7 @@ def rational_analysis(model, dataloader):
 
         # Get the mask
         rational = model.get_rational(contexts)
-        mask = ~rational["mask"]
+        mask = rational["mask"]
 
         #                print("Mask: ", mask, mask.size(), len(mask[0]))
         num_positions = len(mask[0])
