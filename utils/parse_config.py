@@ -82,28 +82,35 @@ def get_tokenizer(tokenizer_config):
     return tokenizer
 
 
-def get_datasets(config, tokenizer):
+def get_datasets(config, tokenizer, load_train=True):
     if config["type"] == 'daily_dialogue':
+        if load_train:
+            dataset_train = UtterancesDataset(
+                tokenizer,
+                subsets="start",
+                split="train",
+                size=config["size_train"],
+                remove_top_n=config["remove_top_n"],
+                max_length=config["max_length"] if "max_length" in config.keys() else 0,
+            )
 
-        dataset_train = UtterancesDataset(
-            tokenizer,
-            subsets="start",
-            split="train",
-            size=config["size_train"],
-            remove_top_n=config["remove_top_n"]
-        )
+            dataloader_train = DataLoader(
+                dataset_train,
+                batch_size = config["batch_size"],
+                collate_fn = UtterancesDataset.get_collate_fn(padding_value=get_token_id(tokenizer, "pad_token"))
+            )
+        else:
+            dataloader_train = None
         dataset_test = UtterancesDataset(
             tokenizer,
             subsets="start",
             split="test",
             size=config["size_test"],
-            remove_top_n=config["remove_top_n"]
-        )
-        dataloader_train = DataLoader(
-            dataset_train,
-            batch_size=config["batch_size"],
-            collate_fn=UtterancesDataset.get_collate_fn(padding_value=get_token_id(tokenizer, "pad_token"))
-        )
+            remove_top_n=config["remove_top_n"],
+            shuffle=False,
+            max_length=config["max_length"] if "max_length" in config.keys() else 0,
+        )# We do not have to shuffle the test dataset.
+
         dataloader_test = DataLoader(
             dataset_test,
             batch_size=config["batch_size"],

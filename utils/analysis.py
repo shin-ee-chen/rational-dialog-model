@@ -32,7 +32,7 @@ def parse_config_for_analysis(config_ref):
     # First we load the tokenizer and the dataset
     tokenizer = get_tokenizer(config["tokenizer"])
     result["tokenizer"] = tokenizer
-    datasets = get_datasets(config["dataset"], tokenizer)
+    datasets = get_datasets(config["dataset"], tokenizer, load_train=False)
     result = {**result, **datasets}
 
     # Get language model
@@ -82,17 +82,16 @@ def get_results(model, dataloader):
     mean_mask_percentage = 0
     total_samples = len(dataloader.dataset)
     for batch in tqdm(dataloader):
-
         contexts = batch[0].to(model.device)
         targets =  batch[1].to(model.device)
         results = model.batch_to_out((contexts, targets))
         samples_in_batch = batch[0].shape[0]
-        mean_acc += results["acc"] * (samples_in_batch) / total_samples
+        mean_acc += results["acc"].item() * (samples_in_batch) / total_samples
 
         if "mask_mean" in results.keys():
-            mean_mask_percentage += results["mask_mean"] * (samples_in_batch) / total_samples
+            mean_mask_percentage += results["mask_mean"].item() * (samples_in_batch) / total_samples
 
-        mean_perplexity += results["perplexity"] * (samples_in_batch) / total_samples
+        mean_perplexity += results["perplexity"].item() * (samples_in_batch) / total_samples
     return {"mean_acc": mean_acc, "mean_perplexity": mean_perplexity, "mean_mask_percentage": mean_mask_percentage}
 
 
@@ -106,7 +105,7 @@ def get_results_RE(model, dataloader, n_experiments):
     for i in range(n_experiments):
         total_results.append(get_results(model, dataloader))
     for key in total_results[0].keys():
-        all_values = [r[key].item() for r in total_results]
+        all_values = [r[key] for r in total_results]
         results[key] = {"mean": np.mean(all_values), "std": np.std(all_values)}
     return results
 
@@ -117,7 +116,7 @@ def calc_change_in_perplexity_experiment(model, dataloader, n_experiments=2, n_e
     for i in range(n_experiments):
         total_results.append(calc_change_in_perplexity(model, dataloader, n_extra_mask=n_extra_mask))
     for key in total_results[0].keys():
-        all_values = [r[key].item() for r in total_results]
+        all_values = [r[key] for r in total_results]
         results[key] = {"mean": np.mean(all_values), "std": np.std(all_values)}
     return results
 
@@ -128,10 +127,9 @@ def calc_change_in_perplexity(model, dataloader, n_extra_mask=1):
 
     for (contexts, targets) in dataloader:
         # Make batch second
-        contexts = contexts.permute(1, 0, )
-        targets = targets.permute(1, 0, )
+        contexts = contexts.permute(1, 0, ).to(model.device)
+        targets = targets.permute(1, 0, ).to(model.device)
         n_targets = targets.shape[0]
-
         # Get the rational
         rational = model.get_rational(contexts)
 
@@ -197,7 +195,7 @@ def rational_analysis(model, dataloader):
 
         # Get the mask
         rational = model.get_rational(contexts)
-        mask = ~rational["mask"]
+        mask = rational["mask"]
 
         #                print("Mask: ", mask, mask.size(), len(mask[0]))
         num_positions = len(mask[0])
