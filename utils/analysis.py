@@ -54,7 +54,7 @@ def parse_config_for_analysis(config_ref):
     hparams = config["hparams"]
     result["hparams"] = hparams
 
-    if config['rational_extractor']['type'] == 'policy_based':
+    if "policy" in config['rational_extractor']['type']:
         lightning_language_model_RE = LightingReinforceRationalizedLanguageModel(language_model_RE, RE, tokenizer,
                                                                               hparams=hparams,
                                                                               **config["rational_extractor"][
@@ -180,8 +180,8 @@ def mask_extra(masked_input, n_extra_mask, mask_token_id):
     return result
 
 
-def rational_analysis(model, dataloader):
-    n = 0
+def rational_analysis(model, dataloader, greedy=False):
+    n = 1
     abs_averages = 0.0
     rel_averages = 0.0
     ## We also want to keep track of the distribution
@@ -190,36 +190,74 @@ def rational_analysis(model, dataloader):
 
     for (contexts, _) in dataloader:
         # This assumes a batch consists of a list of (context, response) pairs
-        contexts = contexts.to(model.device)
+        contexts = contexts.permute(1,0).to(model.device)
+
         #                print("Context: ", context)
 
         # Get the mask
-        rational = model.get_rational(contexts)
+        if greedy:
+            rational = model.get_rational(contexts, greedy=greedy)
+        else:
+            rational = model.get_rational(contexts)
         mask = rational["mask"]
 
         #                print("Mask: ", mask, mask.size(), len(mask[0]))
-        num_positions = len(mask[0])
-        positions_reversed = torch.tensor(list(range(num_positions, 0, -1))).to(model.device)
-        #                print(positions_reversed)
-
-        mask_positions = torch.mul(mask, positions_reversed).float()
-        #                print("Positions: ", mask_positions)
-
-        abs_pos_count += Counter(list(mask_positions.flatten().detach().cpu().numpy()))
-        rel_pos_count += Counter(list(( 10*torch.round(10 * mask_positions/ num_positions)).flatten().detach().cpu().numpy()))
-        average_absolute = mask_positions.sum(dim=1) / mask.sum(dim=1)
-        average_relative = average_absolute / num_positions
+        pad_id = get_token_id(model.tokenizer, "pad_token")
+        abs_pos_count_batch, rel_pos_count_batch = get_abs_and_relative_positions(mask, contexts, pad_id=pad_id)
+        abs_pos_count += abs_pos_count_batch
+        rel_pos_count += rel_pos_count_batch
 
 
         # print("Average absolute: ", average_absolute)
         # print("Average relative: ", average_relative)
-        abs_averages += torch.sum(average_absolute)
-        rel_averages += torch.sum(average_relative)
-        n += len(contexts)
     abs_average = abs_averages / n
     rel_average = rel_averages / n
     return {"abs_average": abs_average, "rel_average": rel_average, "abs_pos_count": abs_pos_count , "rel_pos_count": rel_pos_count}
 
+
+def get_abs_and_relative_positions(mask, tokens, pad_id, batch_first=False):
+
+    #Make batch first:
+    if not batch_first:
+        mask = mask.permute(1,0)
+        tokens = tokens.permute(1,0)
+
+    non_paddings = (tokens != pad_id).bool()
+    lengths = non_paddings.sum(dim=-1)
+
+    length_copy = list(lengths.detach().cpu().numpy())
+    mask = non_paddings * mask
+
+
+
+    reverse_positions =  torch.tensor(list(range(mask.shape[1], 0, -1))).to(mask.device)
+
+
+
+
+    mask_positions = torch.mul(mask, reverse_positions).float()
+    #                print("Positions: ", mask_positions)
+
+
+    lengths = lengths.reshape(-1, 1).repeat(1, mask_positions.shape[1])
+    abs_pos = mask_positions.detach().cpu().numpy()
+
+    rel_positions = (10 * torch.round(10 * (1/lengths) * mask_positions )).detach().cpu().numpy()
+
+    mask = mask.detach().cpu().numpy()
+    abs_pos = flatten([list([ p for p, keep in zip(pos[-l:], m[-l: ]) if keep ])for pos,m,  l in zip(abs_pos, mask,  length_copy)])
+    rel_positions = flatten([list([ p for p, keep in zip(pos[-l:], m[-l: ]) if keep ])for pos,m,  l in zip(rel_positions, mask,  length_copy)])
+
+    abs_pos_count = Counter(list(abs_pos))
+    rel_pos_count = Counter(rel_positions)
+
+    return abs_pos_count, rel_pos_count,
+
+def flatten(l):
+    result = []
+    for r in l:
+        result += r
+    return result
 
 def pretty_print_completed_dialogues(completed_dialogues):
     print("context ----> response")
